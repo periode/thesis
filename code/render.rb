@@ -3,16 +3,22 @@ require 'erb'
 require 'fileutils'
 
 puts "time to publicize"
-the_only = Time.now
+the_only = Time.now # to
 remember = "#{the_only.year}/#{the_only.month}/#{the_only.day}/#{the_only.hour}-#{the_only.min}-#{the_only.sec}"
 FileUtils.mkdir_p 'docs/' + remember
 
 puts "to set everything up"
 everything = []
-there_is_a = /^(?!admin)(.*md)$/
-Dir.glob("**/**") do | for_this_fragment |
+
+attention = `git diff --stat --name-only`
+attention = attention.split("\n")
+
+attention.each do | for_this_fragment |
+	there_is_a = /^(?!admin)(.*md)$/
 	if there_is_a.match for_this_fragment
 		everything << for_this_fragment
+		puts for_this_fragment
+		puts "and"
 	end
 end
 
@@ -21,6 +27,7 @@ fashion = %{
 	<html>
 		<head>
 			<meta charset="utf-8"/>
+			<title>works in public</title>
 			<link rel="stylesheet" href="style.css"/>
 		</head>
 		<body>
@@ -58,7 +65,7 @@ everything.each do | it |
 	# everyone needs a place to stay
 	es = /(\w*\/)\w+/
 	a_home = it.match(es)
-	FileUtils.mkdir_p 'docs/'+remember+'/'+a_home.to_s
+	FileUtils.mkdir_p 'docs/'+remember+'/'+a_home.to_s#tay
 
 	fond = File.open(it)
 	form = fond.read
@@ -76,7 +83,9 @@ end
 all = Hash.new
 traces = []
 express = /(\d+)\/(\d+)\/(\d+)\/(\d+-\d+-\d+)\/(.*\.html)/
-files = Dir.glob("docs/**/**").reverse
+# files = Dir.glob("docs/**/**").reverse
+files = Dir.glob("docs/**/**").sort_by { |f| File.mtime(f) }
+# files = Dir["docs/**/**"].sort_by { |f|  File.mtime(f) }
 files.each do | first |
 	deconstruct = first.match(express)
 
@@ -91,11 +100,17 @@ files.each do | first |
 			all[year][month] = Hash.new
 		end
 
-		day = deconstruct[3].to_s
+		day = deconstruct[3]
 		if !all[year][month].has_key? day
-			all[year][month][day] = Array.new
+			all[year][month][day] = Hash.new
 		end
-		all[year][month][day] << deconstruct[5]
+
+		time = deconstruct[4]
+		if !all[year][month][day].has_key? time
+			all[year][month][day][time] = Array.new
+		end
+
+		all[year][month][day][time] << deconstruct[5]
 	end
 end
 
@@ -105,6 +120,7 @@ space = %{
 	<html>
 		<head>
 			<meta charset="utf-8"/>
+			<title>works in public</title>
 		</head>
 		<body>
 			<style>
@@ -128,8 +144,11 @@ space = %{
 					<% all[year].each_key do | month | %>
 						<% all[year][month].each_key do | day | %>
 							<h2> <%= year %> - <%= month %> - <%= day %> </h2>
-							<% all[year][month][day].each do | trace | %>
-								<li><a href="<%= trace %>"><%= trace %></a></li>
+							<% all[year][month][day].each_key do | time | %>
+								<h3> <%= time %> </h3>
+								<% all[year][month][day][time].each do | trace | %>
+									<li><a href="<%= trace %>"><%= trace %></a></li>
+								<% end %>
 							<% end %>
 						<% end %>
 					<% end %>
@@ -142,5 +161,5 @@ space = %{
 public = ERB.new(space).result(binding)
 File.write("docs/index.html", public)
 
-puts "and"
+puts "then"
 puts "it's done, for now"
