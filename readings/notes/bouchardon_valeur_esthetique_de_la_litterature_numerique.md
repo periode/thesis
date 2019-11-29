@@ -1,6 +1,9 @@
 # valeur heuristique de la litterature numerique
 ## serge bouchardon
 
+
+### intro
+
 digital literature exists in the wake of things like:
 - combinatorial lit (oulipo)
 - constraint lit (idem)
@@ -36,3 +39,24 @@ source code could be a *particular modality/mode* of text (now i need to define 
 relationship between literature and communication??
 
 *"the interrogative stance can not only stand in what has been done, but also in what can be anticipated, through conception and creation"* (epistemological constructivism, hacking, 1983). *"the creative moment sets up the conditions to observe a phenomenon"*
+
+### the digital lit object
+
+
+halfway between the concrete object that belong in the observation field and the scientific object which has alread-established explanations of the real
+
+the digital lit object is complex: need to explicit these webs of relationships (historical, geographical, means vs. ends, broadcasting techniques); it stands at the frontier of a lot of domains.
+
+in the poetic dimension of technical objects, there is this idea that, as we realize a technical object, new ideas appear and transform the initial project. **it is a literature OF the technical apparatus**.
+
+is there really a tension between the imperative formal semantics of programming and the cultural forms of writing? writing is an apparatus of externalizing memory and thought, while the program is *"a means to certify the future, to eliminate uncertainty and the unlikely in order to bring it back under control, mastery"*. (while i don't see this as a tension), the author says that out of this initial seemingly-impossibility. (closeness of the program, openness of the language)
+
+question of the *architectural literature*. <<<
+
+**L'INTERSEMIOTISATION DU LANGUAGE ET DU TEXTE** (how these systems of signs interact with each other)
+
+the aesthetic experience can result from the tension between materiality and the revelation of meaning/direction (transcendance). it is a bit like the double-coding that CPB was talking about, but perhaps could be extended by defining (precise/multiple) what materiality and transcendentality; but nonetheless advancing an aesthetics of materiality.
+
+dual-positioning of source code text
+1. against text (literary)
+2. against text (productive software)
