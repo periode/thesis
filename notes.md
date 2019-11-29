@@ -36,12 +36,16 @@
 - which languages for which sets of aesthetic relationships?
 - - this is kinda what los pequenos glazier was saying when he was asking "how does materiality influence the text itself?"
 
+- there is the reader, and there is the act of reading. does it need to be out loud? how are things pronounced?
+- who is the subject, in a code-text?
 - what are the tensions between lit and code?
 - - lit can create any word (joyce), code cannot --but that is changing with OOP?
 
 - what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even?
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
+
+- art works to shape our basic sense of what is and what matters *in all of life* (heidegger)
 
 ## structure
 

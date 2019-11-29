@@ -4,6 +4,8 @@ require 'fileutils'
 
 puts "time to publicize"
 the_only = Time.now # to
+
+# TODO: franchement, faire un dossier avec tous les chiffres concatenes, plus simple pour trier
 remember = "#{the_only.year}/#{the_only.month}/#{the_only.day}/#{the_only.hour}-#{the_only.min}-#{the_only.sec}"
 FileUtils.mkdir_p 'docs/' + remember
 

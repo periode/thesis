@@ -34,6 +34,8 @@
 - s/z, barthes
 - program code poetry, cramer
 - execut[up]?able statements, cramer
+- language and symbolic power, bourdieu
+- radiant textuality, mcgann
 
 ## digital art
 - poetic computation, choi
