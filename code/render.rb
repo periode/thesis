@@ -23,6 +23,8 @@ attention.each do | for_this_fragment |
 	end
 end
 
+return
+
 fashion = %{
 	<!DOCTYPE html>
 	<html>
@@ -53,7 +55,7 @@ fashion = %{
 				}
 			</style>
 			<div class="way">
-				<a href="/index.html">cover</a>
+				<a href="/thesis/index.html">cover</a>
 			</div>
 			<div class="holding tight">
 				<%= rest %>
