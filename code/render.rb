@@ -5,7 +5,7 @@ require 'fileutils'
 puts "time to publicize"
 the_only = Time.now # to
 
-remember = "#{the_only.year}-#{the_only.month}-#{the_only.day}-#{the_only.hour}-#{the_only.min}"
+remember = "#{the_only.year}-#{the_only.month}-#{the_only.day}-#{the_only.hour}#{the_only.min}"
 FileUtils.mkdir_p 'docs/' + remember
 
 puts "to set everything up"
@@ -53,7 +53,7 @@ fashion = %{
 				}
 			</style>
 			<div class="way">
-				<a href="/index.html">back</a>
+				<a href="/index.html">cover</a>
 			</div>
 			<div class="holding tight">
 				<%= rest %>
@@ -83,7 +83,7 @@ end
 # and then all the
 all = Hash.new
 traces = []
-express = /(\d+)-(\d+)-(\d+)-(\d+)-(\d+)\/(.*\.html)/
+express = /(\d+)-(\d+)-(\d+)-(\d+)\/(.*\.html)/
 
 files = Dir.glob("docs/**/**").sort_by { |f| File.mtime(f) }
 chaos = files.reverse
@@ -107,12 +107,12 @@ chaos.each do | bit |
 			all[year][month][day] = Hash.new
 		end
 
-		time = deconstruct[4] + deconstruct[5]
+		time = deconstruct[4]
 		if !all[year][month][day].has_key? time
 			all[year][month][day][time] = Array.new
 		end
 
-		all[year][month][day][time] << deconstruct[6]
+		all[year][month][day][time] << deconstruct[5]
 	end
 end
 
@@ -149,7 +149,7 @@ space = %{
 							<% all[year][month][day].each_key do | time | %>
 								<h3> <%= time %> </h3>
 								<% all[year][month][day][time].each do | trace | %>
-									<li><a href="<%= trace %>"><%= trace %></a></li>
+									<li><a href="<%= year+"-"+month+"-"+day+"-"+time+"/"+trace %>"><%= trace %></a></li>
 								<% end %>
 							<% end %>
 						<% end %>
