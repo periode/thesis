@@ -50,7 +50,6 @@ la theorie critique fait de l'apprehension de l'autre, et par l'universalite de 
 voix singuliere et voix collective, par l'experience partagee, rentre dans une narration partagee (qui peut entrainer desobeissance civile, mobilisation inshallah)
 
 la confiance en soi ne vient pas de soi mais du mouvement hors de soi
-
 l'expressivite vise mieux la forme de vie que l'expression
 
 gemissement comme alternative au silence, les deux comme alternative au logos
