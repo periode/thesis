@@ -5,23 +5,35 @@
 - decide between **writing** and **reading**? **usage** and **possibilities**?
 - what definition of **code** do i want to choose?
 
+---
+
 ## questions
 
 - what are the literary standards to which code can be held to?
+
+### tools
 - what is *source code*, as a literary object? (aka does it need to be defined from the definitions of lit / e-lit? )
 - what are the *unique* ways that code can demonstrate/express an aesthetic sentiment?
 - - what are its *structures*, *vocabularies* and *syntaxes* (Cayley)?
 - - what are the (interpretative, critical) *techniques* to identify these aforementioned?
-- how does the creative/aesthetic use of code start to involve the rest of the world rather than simply the self-reference?
+- - how do those establish a *tension*? (tension being a prerequisite for an aesthetic experience -or a (re)solving of said tension)
+- what are the useful conceptual tools that i use from the research on e-lit (e.g. combinations, potential, interactivity, ... **check the book by hannes bajohr, code und Konzept**)?
+- - if compilation make the source code poem lose its specificity, how does that help us define what that specificity is?
 - are existing theories applicable? to what extent do we need to modify them? to what extent do we need new ones?
 - - theories for what? theories to explain *how* source code can be a means of creating aesthetic objects.
+- what are the notions of literature? text, fiction, account, figure, materiality, author, literarity, context, commitment (?), fragment (**this one works with source code modules**, in space rather than time)
+
+### typology
 - how can source code lit be categorized according to different periods?
 - - historically?
 - - linguistically (i.e. different programming languages)
 - - socio-economically (enterprise, hack, poet)?
-- what are the useful conceptual tools that i use from the research on e-lit (e.g. combinations, potential, interactivity, ...)?
-- if compilation make the source code poem lose its specificity, how does that help us define what that specificity is?
+
+### object (object of code's discourse)
 - what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even? how (semiotically and aesthetically)?
+- how does the creative/aesthetic use of code start to involve the rest of the world rather than simply the self-reference?
+
+---
 
 ## thoughts
 
@@ -31,12 +43,15 @@
 - referring to software itself
 - referring to the environment in which software exists
 - - productive software
-- - - what is the place of uselessness in productivity?
+- - - need to identify the place of uselessness in productivity
 - - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
-- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do**.
+- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity")
 
 - programming languages define sets of aesthetic relationships
 - - this is kinda what los pequenos glazier was saying when he was asking "how does materiality influence the text itself?"
+- - on a less formal level, the sociohistorical approach to literature implies that literature judges a society, and a society can explain its literature.
+- - - e lit can therefore help us formulate our being in this society (bouchardon)
+- - - this could be extended to *programming languages-as-literature*.
 
 - there is the reader, and there is the act of reading. does it need to be out loud? how are things pronounced?
 - who is the subject, in a code-text?
@@ -45,6 +60,9 @@
 
 - the opposite of an aesthetic of the frustration (in which the reader can not know everything) is an aesthetic of the XXX (sublime? demiurgic?), in which the reader is presented with everything, computationally, but still always reduced to the words used and read
 
+- *In linguistics, prosody is concerned with those elements of speech that are not individual phonetic segments (vowels and consonants) but are properties of syllables and larger units of speech, including linguistic functions such as intonation, tone, stress, and rhythm. Such elements are known as suprasegmentals.
+
+Prosody may reflect various features of the speaker or the utterance: the emotional state of the speaker; the form of the utterance (statement, question, or command); the presence of irony or sarcasm; emphasis, contrast, and focus. It may otherwise reflect other elements of language that may not be encoded by grammar or by choice of vocabulary.* (wiki)
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
 
@@ -54,12 +72,19 @@
 ## structure
 
 - recap of existing work on why code is an object of study
-- extending that range of study,  **(1)** theoretically (other philosophical help -such as?), **(2)** empirically (other domains, such as style guides, comments, new corpuses that have been released since the previous studies (source code poetry, etc.)) and **(3)** practically (new reading postures -readers as compilers and interpreters)
-- include a linguistic/semiotic study of programming languages, starting from perl and extending
-- close reading of {source code poetry}
-- and then some of the poems i write also
+- extending that range of study (what has been explored so far are *themes*, *distribution*, *communities* (at least CPB, Bouchardon)):
+- - **(1)** stylistically, at the micro-level (style), (developing theoretical tools, frames of analysis, close readings, new reading postures -readers as compilers and interpreters)
+- - **(2)** empirically, at the macro-level (genre), (other domains, such as style guides, comments, new corpuses that have been released since the previous studies (source code poetry, etc.))
+- - **(3)** linguistically (analysis and design of programming languages) (parts 1 and 2 will have to solidly argue as to why one should care about languages/materiality)
+- and then some of the poems/languages i write also
 
 *art is a breach in the system*
+
+
+## corpuses
+- **the poem**
+
+- **the novel**
 
 - **the comment** asks the question of the voice of the programmer
 - - do github commits count?

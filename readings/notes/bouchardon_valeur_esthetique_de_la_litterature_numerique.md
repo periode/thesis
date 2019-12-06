@@ -60,3 +60,9 @@ the aesthetic experience can result from the tension between materiality and the
 dual-positioning of source code text
 1. against text (literary)
 2. against text (productive software)
+
+e-lit is at the frontier between print and digital, text and multimedia, litterature and art (??)
+e-lit is at the frontier surroundable, by authors, researchers, movements, and institutions
+e-lit is a laboratory, in which the researcher works on samples but those samples could influence the broader world
+
+but it has first and foremost a quadruple dimension (social, technical, semotic and aesthetic)

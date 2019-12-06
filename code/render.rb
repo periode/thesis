@@ -5,8 +5,7 @@ require 'fileutils'
 puts "time to publicize"
 the_only = Time.now # to
 
-# TODO: franchement, faire un dossier avec tous les chiffres concatenes, plus simple pour trier
-remember = "#{the_only.year}/#{the_only.month}/#{the_only.day}/#{the_only.hour}-#{the_only.min}-#{the_only.sec}"
+remember = "#{the_only.year}-#{the_only.month}-#{the_only.day}-#{the_only.hour}-#{the_only.min}"
 FileUtils.mkdir_p 'docs/' + remember
 
 puts "to set everything up"
@@ -84,12 +83,13 @@ end
 # and then all the
 all = Hash.new
 traces = []
-express = /(\d+)\/(\d+)\/(\d+)\/(\d+-\d+-\d+)\/(.*\.html)/
-# files = Dir.glob("docs/**/**").reverse
+express = /(\d+)-(\d+)-(\d+)-(\d+)-(\d+)\/(.*\.html)/
+
 files = Dir.glob("docs/**/**").sort_by { |f| File.mtime(f) }
-# files = Dir["docs/**/**"].sort_by { |f|  File.mtime(f) }
-files.each do | first |
-	deconstruct = first.match(express)
+chaos = files.reverse
+
+chaos.each do | bit |
+	deconstruct = bit.match(express)
 
 	if deconstruct
 		year = deconstruct[1]
@@ -107,12 +107,12 @@ files.each do | first |
 			all[year][month][day] = Hash.new
 		end
 
-		time = deconstruct[4]
+		time = deconstruct[4] + deconstruct[5]
 		if !all[year][month][day].has_key? time
 			all[year][month][day][time] = Array.new
 		end
 
-		all[year][month][day][time] << deconstruct[5]
+		all[year][month][day][time] << deconstruct[6]
 	end
 end
 
