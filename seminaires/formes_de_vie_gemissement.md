@@ -60,4 +60,5 @@ gemissement comme alternative au silence, les deux comme alternative au logos
 seminaire interessant, qui ramene:
 - la question de l'auteur (si ce n'est de sa voix)
 - l'actor network theory, la veritable voix des machines, et les languages de programmation en tant que language-as-a-machine
-- sans voix, est-ce qu'on est projete dans l'universel? (ca lit beckett en ce moment)
+
+**sans voix, est-ce qu'on est projete dans l'universel?** (ca lit beckett en ce moment)

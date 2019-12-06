@@ -23,8 +23,6 @@ attention.each do | for_this_fragment |
 	end
 end
 
-return
-
 fashion = %{
 	<!DOCTYPE html>
 	<html>
