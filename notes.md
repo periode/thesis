@@ -13,10 +13,13 @@
 
 ### tools
 - what is *source code*, as a literary object? (aka does it need to be defined from the definitions of lit / e-lit? )
+- how is the aesthetic value of source code different from the aesthetic value of digital art?
+
 - what are the *unique* ways that code can demonstrate/express an aesthetic sentiment?
 - - what are its *structures*, *vocabularies* and *syntaxes* (Cayley)?
 - - what are the (interpretative, critical) *techniques* to identify these aforementioned?
 - - how do those establish a *tension*? (tension being a prerequisite for an aesthetic experience -or a (re)solving of said tension)
+
 - what are the useful conceptual tools that i use from the research on e-lit (e.g. combinations, potential, interactivity, ... **check the book by hannes bajohr, code und Konzept**)?
 - - if compilation make the source code poem lose its specificity, how does that help us define what that specificity is?
 - are existing theories applicable? to what extent do we need to modify them? to what extent do we need new ones?
@@ -47,7 +50,7 @@
 - - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
 - - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity")
 
-- programming languages define sets of aesthetic relationships
+- programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation*
 - - this is kinda what los pequenos glazier was saying when he was asking "how does materiality influence the text itself?"
 - - on a less formal level, the sociohistorical approach to literature implies that literature judges a society, and a society can explain its literature.
 - - - e lit can therefore help us formulate our being in this society (bouchardon)
@@ -66,16 +69,23 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
 
-- art works to shape our basic sense of what is and what matters *in all of life* (heidegger)
+**problematiques importantes**: dispositifs et mediations
 
+## concepts / frames
+
+- the dynamic (living in space/time, calculated in real-time, reacting to external input)
+- a rhetoric of structs
+- non-linearity of reading/execution (back and forth between source and compiled result)
 
 ## structure
 
+*acknowledgment of socio-cultural context within which code poetry emerges, then formal examination of language through which these are written, and circling back towards what these formal uses have to contribute about the purpose/meaning of writing source code poetry (communities, hackers, exploitative economic systems, etc.), and allow for a new perspective on contemporary literature.*
+
 - recap of existing work on why code is an object of study
 - extending that range of study (what has been explored so far are *themes*, *distribution*, *communities* (at least CPB, Bouchardon)):
-- - **(1)** stylistically, at the micro-level (style), (developing theoretical tools, frames of analysis, close readings, new reading postures -readers as compilers and interpreters)
+- - **(1)** stylistically, at the micro-level (style), (developing theoretical tools, frames of analysis, close readings, new reading postures -e.g. readers as compilers and interpreters)
 - - **(2)** empirically, at the macro-level (genre), (other domains, such as style guides, comments, new corpuses that have been released since the previous studies (source code poetry, etc.))
-- - **(3)** linguistically (analysis and design of programming languages) (parts 1 and 2 will have to solidly argue as to why one should care about languages/materiality)
+- - **(3)** linguistically (analysis and design of programming languages) (parts 1 and 2 will have to solidly argue as to why one should care about languages/materiality -classes and structs are the new materiality??)
 - and then some of the poems/languages i write also
 
 *art is a breach in the system*
@@ -92,3 +102,4 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 - **the style guide**
 - - aesthetic of cooperation? what does that even mean?
 - - the style guide transforms a readerly text into a writerly text (barthes, le plaisir du texte)
+*tzvetan todorov*: "les effets de style ne pourraient exister que s'ils ne s'opposaient a une norme, a un usage etabli"
