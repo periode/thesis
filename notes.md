@@ -50,6 +50,8 @@
 - - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
 - - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity")
 
+- programming languages as actors in actor network theory?
+
 - programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation*
 - - this is kinda what los pequenos glazier was saying when he was asking "how does materiality influence the text itself?"
 - - on a less formal level, the sociohistorical approach to literature implies that literature judges a society, and a society can explain its literature.
@@ -103,3 +105,6 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 - - aesthetic of cooperation? what does that even mean?
 - - the style guide transforms a readerly text into a writerly text (barthes, le plaisir du texte)
 *tzvetan todorov*: "les effets de style ne pourraient exister que s'ils ne s'opposaient a une norme, a un usage etabli"
+
+**the programming languages**
+- esolangs have a "wimpmode"

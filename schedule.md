@@ -45,6 +45,10 @@
 - read
 - - mougin: moderne/contemporain
 - - sondheim: codeworks
+- - introduction to the wedge by william carlos williams
+- - virtual bodies and flickering signifiers - katherine hayles
+- - digital code and literary texts - cramer
+- - print is flat code is deep
 
 ## week dec 23
 

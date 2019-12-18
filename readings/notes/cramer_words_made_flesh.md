@@ -108,3 +108,32 @@ is computation a means to transcend limitations (max bense) or just a constraint
 
 **codeworks**
 *This is not simply a poetic metaphorization because the technical apparatus of writing becomes a part of the text. There is a feedback of textual input, output and processing inside the text and within the medium of code. This conflation of source code, data and processing could be called recursive, since recursion means that a process processes itself. Yet it is not a formal-mathematically “clean” recursion. The text is not a result of a pure computation, but involves human editing, rendering the recursion a simulation, rhetorical, reflexive.*
+
+---
+
+4. Automatisms
+
+- instruction code as synthesis (generative)
+- instruction code as analysis (condensation, recombination -sometimes through chance)
+- instruction code as reflexivity (recursion, imagination, speculation) reflection on computation as a cultural phenomenon (fulfilled promises? failed promises?) **how does literature address cultural phenomena?**
+
+georges perec's *Die Maschine* is a tribute to Goethe’s poem as a powerful text which makes all formal processing running amok and fail because its semantics resist syntactical processing.
+
+N.N codeworks
+
+
+5. What is software?
+
+apparently computation can be done in the medium of language itself??
+software = algorithms + data + speculative imagination + abstraction layer of control + human practices (expected or unexpected)
+and where is the limit to hardware?
+
+
+6. conclusion
+
+algorithms as tools (for sublime) vs. as material for aesthetic play
+algorithms as they relate to nature vs. as they relate to culture
+algorithms as a means to destroy semantics vs. as a means to create semantics
+freedom vs. enslavement
+synthesis vs. analysis
+chaos vs. structure
