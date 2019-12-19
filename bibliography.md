@@ -64,3 +64,4 @@
 - relational aesthetics, bourriaud
 - the craftsman, sennett
 - moderne/contemporain, bouchardon
+- theory after theory, birns

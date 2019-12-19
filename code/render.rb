@@ -141,7 +141,7 @@ space = %{
 			</style>
 			<div class="holding tight">
 				<h1>works in public</h1>
-				<p>here are the continuous notes for my doctoral work at the university of sorbonne nouvelle.</p>
+				<p>here are the continuous notes for my doctoral work at the university of sorbonne nouvelle. <a href="https://github.com/periode/thesis">repo</a></p>
 				<% all.each_key do | year | %>
 					<% all[year].each_key do | month | %>
 						<% all[year][month].each_key do | day | %>
