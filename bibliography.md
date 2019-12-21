@@ -23,7 +23,7 @@
 - aufschreibesysteme, kittler
 - language of new media, manovich
 - design des programmes, masure
-- understanding media, manovich
+- understanding media, mcluhan
 - 10 print, montfort et. al.
 - software arts, sack
 - coding literacy, vee
