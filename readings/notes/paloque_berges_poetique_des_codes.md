@@ -73,7 +73,7 @@
 - - they comment ironically existing languages, but also existing structures (qlb, trumpscript)
 - - process over result
 - - possibility of an "art language". what would that be?
-- - weird languages as:
+- - weird languages as (according to montfort):
 - - - parody
 - - - minimalism (love of computation as an idea)
 - - - puzzle
