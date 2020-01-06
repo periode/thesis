@@ -63,6 +63,11 @@
 
 - [everythingissomeone](https://everythingissomeone.github.io/) - object oriented night time stories
 - [if hemingway wrote javascript](https://nostarch.com/hemingway) - with a [repo](https://github.com/angus-c/literary.js) and a [blogpost](https://dzone.com/articles/if-hemingway-wrote-javascript)
+- [i speak myself into an object](http://carljohanrosen.com/) - code book
+- [basic computer games](https://www.atariarchives.org/basicgames/) - source code of basic computer games
+- [first screening: computer poems](http://www.vispo.com/bp/javascriptversion.htm) - kinetic poems from 1984, with the source code of the JS reimplementation
+- [generations](http://luckysoap.com/generations/) - short stories generated with python code and distributed as book/pdf with source code
+- [what to do after you hit return](https://archive.org/details/Whattodoafteryouhitreturn/page/n15) - decorated source code from old times published by the people's computer company
 - [google groups discussions about perl poems](https://groups.google.com/forum/?hl=en#!msg/comp.lang.perl/jVu7Zjn9JcY/yPMby6sCyyEJ)
 - [hastac code critique forums](http://www.hastac.org/forums/hastac-scholars-discussions/code-critiques)
 - [writeup on code poetry slam](https://www.i-programmer.info/news/200-art/6808-writing-code-as-poetry-poetry-as-code.html)

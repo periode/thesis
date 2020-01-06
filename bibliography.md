@@ -10,6 +10,7 @@
 - concepts of programming languages, sebesta
 - philosophy of computer science, rapaport
 - software and mind, alexei
+- thinking in c++, eckel
 
 ## media studies
 - rhetoric of video games, bogost

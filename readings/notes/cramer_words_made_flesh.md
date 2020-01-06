@@ -62,13 +62,13 @@ combinatorial poetics stands against individualism (and vice versa)
 
 the library of babel is objective, contingent, but it cannot prove that it is the book *the library of babel*. the world is still at the mercy of the observer.
 
-**concrete poetry**: *In the spirit ofhigh modernism and functionalist architecture, most of concrete poetry sought to systematically reduce, rationalize and functionalize literature.* (elaborated in gomriger, *from line to constellation* > "restriction -constraint and simplification- is the very essence of poetry")
+**concrete poetry**: *In the spirit of high modernism and functionalist architecture, most of concrete poetry sought to systematically reduce, rationalize and functionalize literature.* (elaborated in gomriger, *from line to constellation* > "restriction -constraint and simplification- is the very essence of poetry")
 
 dispositif of programming languages (even more so than natural languages): *self-reference which would make the system implode in a recursive paradox of text and context*
 
 intellectual father of concrete poetry: max bense and information aesthetics + abrahm moles manifesto
 
-- the first concept art show was called software (relation between software and conceputal art)
+- the first concept art show was called software (relation between software and conceptual art)
 
 the response to bense's objective formalism is the situationist internationale (`.walk` computer program implements psychogeography). psycho geographic demystifies computing (makes it simple) and liberates the imagination of what a computer can be and what a computer can serve
 

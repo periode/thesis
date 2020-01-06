@@ -9,3 +9,5 @@
 - keywords (lexicon)
 - compiler/interpreter (and the rigor of each)
 - metaphor vs. metonymy
+
+- copy/sort/compare/remove > relations
