@@ -23,7 +23,68 @@ Following literature and cultural studies, the last group of work is organized a
 
 Camille Paloque-Berges published, a couple of years later, *Poetique des Codes sur le reseau informatique* (Editions des Archives Contemporaines, 2009). This work deploys both linguistic and cultural studies theorists (Barthes, De Certeau) in order to explain the playful acts of source code poetry, esoteric languages and net.art. While the first chapter focuses on digital literature as executed code in order to develop a heuristic to approach source code, and while the third and last chapter focuses on the means of distribution of these works, and particularly the impact of the Internet on the development of net.art, 13375p34k and codeworks, the second chapter is the most relevant to the topic of a literary analysis of source code works. In that chapter, Paloque-Berges provides an introduction of creative acts in source code on both a conceptual level (drawing from Hayles and Montfort) and a technical level, looking at specific programming structures ("hello world", quines, etc.), technical syntax (`$`, `@` as perl tokens for expressing singular or plurals) and cultural paradigms (De Certeau's tactics vs. strategies). The second chapter of the book, in which she establishes these analyses is an example that I would like to build upon, developing closer readings of the formal, linguistic aspects of those source code pieces. Paloque-Berges's work establishes this field as a valid field of study which invites further work to be done.
 
-Finally, *10 PRNT CHR$(205.5+RND(1)) : GOTO 10;* is a collaborative work which examines the cultural intertwinings of a single line of code, through hardware, language, syntax, outputs and themes. This is an example of rigorous close-reading of source code, in a clearly deductive fashion, working from the words on the screen and elaborating the context within which these words exist, in order to establish the cultural relevance of source code. While the study itself, being a close-reading of only one work, and particularly a *one-liner*, is restricted in terms of broad aesthetic statements, it does show how it is possible to talk about code not as an abstract construct but as an instantiated reality.
+Finally, *10 PRNT CHR$(205.5+RND(1)) : GOTO 10;* is a collaborative work which examines the cultural intertwinings of a single line of code, through hardware, language, syntax, outputs and themes. This is an example of rigorous close-reading of source code, in a clearly deductive fashion, working from the words on the screen and elaborating the context within which these words exist, in order to establish the cultural relevance of source code. While the study itself, being a close-reading of only one work, and particularly a *one-liner*, is restricted in terms of broad aesthetic statements, it does show how it is possible to talk about code not as an abstract construct but as an instantiated reality. Similar to *Speaking Code*, the book also integrates practice-based research, in the form of ports of the original one-liner to other languages and environments.
+
+#### findings
+
+Overall, we can identify a dynamic which starts from broad theoretical work to establish a definition of software as a socio-technical and cultural object, towards close, deliberate readings of source code in more recent work. The specific texts of source code poetry have also been given attention, in particular in terms of socio-cultural practices, focusing particularly on Perl Poetry. Paloque-Berges's work comes closest when it comes to analyzing the specific forms that source code poetry takes, and in which they differ from natural languages, both by paying attention to tokens that make Perl uniquely suited to this kind of endeavour, but also by providing larger contexts. Between broad cultural definitions and close-readings, it seems relevant to focus my research specifically on the role of programming languages, both insofar as they provide the formal specificity of source code poetry, but also act as a *material* in terms of software production, opening up a broader field of exploration than the *traditional* perl poetry and IOCCC.
+
+Mikhail Bakhtine develops the concept of enunciation in his marxist critique of Saussure. Enunciation is the social event in which the speech takes on its full meaning, because it happens within a social environment, overcoming the limitations of both the purely formal, abstract structure of syntax and the impossible exclusive subjectivity of speech. The *enunciation*, then, could be a perspective to look at source code as the socially instantiated manifestation of historically-bound structures. A piece of source code, then, could be understood as a specific instance in broader intertwining of socio-technical requirements, depending both on formal designs (the language documentation), social practices (styles, paradigms, patterns) and individual preferences (comments, idiosyncratic variable naming). The hypothesis here would be that programming languages act as both tools and resources and enable through their structures textual games that make sense within a specific regime, the regime of computation.
+
+A second approach, building upon this examination of programming languages as material, would be to examine the mental constructions that are favored by programming languages (e.g. functional programming, object-oriented programming, model-view-controller, microservices, etc.). Building on works by Bogost's procedural rhetoric and Wardrip-Fruin's expressive processing, I hypothesize that it is possible to extract particular *figures de style* or rhetorical devices which happen to be particularly at play in the writing and reading of source code. The intent is then to use the lens of programming languages in order to (1) highlight the specificity of conceptual structures and how they relate to the socio-economic world that is being addressed in source code poetry and (2) offer a perspective on how languages themselves can become textual objects through a process of appropriation inside and outside of *"standard industry practices"*.
+
+#### corpus
+
+With this approach in mind, I've constituted a first draft for a corpus which encompasses both programs, languages, and meta-texts pertaining to programming language ecosystems, representing the evolution of the field since the publication of the last monographs focusing on the topic. A work-in-progress list of the corpus is attached in the annex.
+
+- Programming languages
+
+Programming languages gathered include both esoteric languages in the classical sense of the term (e.g. Brainfuck, Piet, etc.) but also "non-traditional" programming languages, such as قلب, TrumpScript, UrduScript Linotte, all addressing issues of languages, regionality, political systems and reading practices. While not esoteric languages as defined and studied by Montfort and Mateas, they help to shed a different light on linguistic and dialectical practices in software. On top of those two existing categories, "traditional" languages such as Java, C, C++, Lisp, Perl, Python and JavaScript are also included.
+
+- Peripheral texts
+
+These additional texts include man pages (for the `ic` binary in older versions of UNIX), the `perl::bleach` module, the white paper for the `chicken` programming language, published source code books in amateur communities, code critiques from forums, writeups on code poetry contests and individual blog posts on the relationship between poetry and code and books published which deal directly with source code (e.g. *If Hemingway wrote JavaScript*). They help to qualify the production and transformation process that code undergoes, through additional versions, comments, modules, libraries and readings, requalifying it as a mutable object through inter-textuality.
+
+- Source code pieces
+
+While the source code poems section of the corpus will include the "traditional" source code poetry included in previous studies (e.g. perl poetry and obfuscated code) in order to perform further close-readings on them, they will also take into account the evolution of the production in the last ten years, including the editions of the code poetry slam, and the source code poetry contests. A significant addition to that corpus is the publication in 2012 of *code { poems }*, edited by Ishac Bertran, the first print version of source code poetry. This particular collection appears to be a productive starting point to develop a renewed analysis of source code.
+
+These three areas -programming languages, source code, and meta-texts- will allow me to grasp the multi-faceted relationship of programming languages with its instantiations in source code and the discursive contexts within which they exist and evolve. Close readings of source code, along with esoteric and "non-traditional" languages will provide a different perspective on the formalism of programming languages, which will then be recontextualized, through the meta-texts, within broader social, economic, cultural and political contexts.
+
+Finally, following the direction of some previous research (*10 Print*, *Speaking Code*, along with Serge Bouchardon's *La Valeur Heuristique de la Litterature Numerique*), I intend to produce additional primary sources myself, in order to test out some of the theories outlined through the examination of existing texts. These additional primary sources would include both source code written in existing programming languages as well as the implementation of a new programming language.
+
+#### next steps
+
+Based on this preliminary research and a first pass on the constitution of the corpus, I intend to direct my research on the *mode(s) of representation* of programming languages, using source code poems and other non-functional (but still meaningful) pieces of code, by alternating analyses at the level of the text (broad organization of the source code) and at the level of the line (specific reading of syntax). These modes of representation, I assume, will not be separable from the social context in which they saw the light of day, and will therefore necessarily include an inquiry into the modes of creation, distribution and maintenance of programming languages.
+
+At this point, I envision the next steps of this research to complete my readings on specifically software as text (with Annette Vee's *Coding Literacy* and Chun's *Programmed Visions* and Berry's *The Philosophy of Software*). From there on, there are two possibilities, either focusing on programming textbooks and manuals (e.g. *The Art of Computer Programming*, *Thinking in C++*, *Software and Mind*, *Concepts of Programming Languages*, etc.) in order to approach the process of desgining languages, or rather to continue reading on literary criticism (particularly Ong's *Orality and Textuality*, Ranciere's *Mute Speech* and *Aisthesis*, along with Burke's *Language As Symbolic Action*) in order to then start the close-reading of the gathered poems. I would tend towards the second possibility, with the risk of remaining within a conceptual framework for longer and being only confronted later to the realities and practicalities of software/programming language development.
+
+
+#### III - broad questions
+
+we can make a parallel between enunciation (bakhtine) and programming langauges (python, js, etc.), in that programming languages are themselves a sort of materiality
+
+*code is the only language that is executable* -> find what are the formal/aesthetic features that surround (i.e. precede and follow from) this executability... i.e. the syntax and grammar of executability
+
+- code is definitely taken into account
+- - source code poems as artistic practices (limited very much on perl)
+- - obfuscation practices
+- - source code as a "concept", sourcery from chun, magic from cramer
+- - source code as a speech object
+
+- is there a possibility to develop a new vision on literature by looking at languages themselves?
+
+camille paloque berges focuses on the mode of production of these works (the network), and i would like to focus on the **mode of representation** of these works (the computation)
+
+the rhetorical uses of programming languages (code is more and more identified, less and less obfuscated, so there is room for closer examination)
+
+what kind of linearity does code have? how does it requalify our understanding of linearity?
+
+the differences between code and computation? gap between execution and expression (or the other way around)?
+
+**definition of software??**
+
+use of mental models
 
 #### transition
 
@@ -31,7 +92,6 @@ summary of contributions:
 - source code poetry is always acknowledged, as the creativity in software, but strongly limited to perl and C
 - useful concepts (double coding)
 - esoteric languages a little less
-- programming languages not at all
 - human and machine are mutually influenced, in speech and thought
 - separation between "art programming" and "regular programming" as sharing different sets of aesthetics
 - - could "art programming" be a gateway towards opening up the definition of literature
@@ -108,31 +168,7 @@ summary of contributions:
 regarding the corpus:
 - question about the limitation on corpus: source code poems vs. esolangs vs. everything
 
-#### III - broad questions
 
-we can make a parallel between enunciation (bakhtine) and programming langauges (python, js, etc.), in that programming languages are themselves a sort of materiality
-
-*code is the only language that is executable* -> find what are the formal/aesthetic features that surround (i.e. precede and follow from) this executability... i.e. the syntax and grammar of executability
-
-- code is definitely taken into account
-- - source code poems as artistic practices (limited very much on perl)
-- - obfuscation practices
-- - source code as a "concept", sourcery from chun, magic from cramer
-- - source code as a speech object
-
-- there is a possibility to develop a new vision on literature by looking at languages themselves
-
-camille paloque berges focuses on the mode of production of these works (the network), and i would like to focus on the **mode of representation** of these works (the computation)
-
-the rhetorical uses of programming languages (code is more and more identified, less and less obfuscated, so there is room for closer examination)
-
-what kind of linearity does code have? how does it requalify our understanding of linearity?
-
-the differences between code and computation? gap between execution and expression (or the other way around)?
-
-**definition of software??**
-
-use of mental models
 
 #### IV - next steps
 

@@ -33,10 +33,6 @@
 
 - [algol](http://www.softwarepreservation.org/projects/ALGOL/algol68impl) - with its dialects
 
-
-## modules
-- [perl::bleach](https://metacpan.org/pod/Acme::Bleach) - turns perl source code intwo whitespace code
-
 ## poems
 - [code poems](http://code-poems.com)
 - [coroutines](https://www.officialfan.club/product/coroutines-book)
@@ -45,7 +41,7 @@
 - [algol 69 - noel arnaud]() - poetry written in algol in 1968 (!!) ([brief discussion](https://intfiction.org/t/looking-for-poemes-algol-by-noel-arnaud/5752/2), and [here](http://www.memoire.theogoedert.com/corpus/poemes-algol))
 - [Code scares me – Jessica Loseby](http://www.rssgallery.com/pages/code.htm)
 - [poem by nari](http://www.heelstone.com/lascaux/warnell.html) - warnell
-- [source code poetry](https://www.sourcecodepoetry.com/) - contemporary contest (but it imposes rhyming which is weiird)
+- [source code poetry](https://www.sourcecodepoetry.com/) - contemporary contest (but it imposes rhyming which is weird)
 - [perl poetry](https://www.perlmonks.org/bare/?node=Perl%20Poetry)
 - [perl poetry contest](http://www.foo.be/docs/tpj/issues/vol5_1/tpj0501-0012.html)
 - [tutorial on writing code poems](https://www.smashingmagazine.com/2018/07/writing-code-poems/)
@@ -58,6 +54,7 @@
 - [code city](https://wettel.github.io/codecity.html) - metaphor for source code
 - [ching](https://www.unix.com/man-page/bsd/6/ching/) - example of creative man page
 - [perl poetry mode](https://www.oreilly.com/library/view/programming-perl-4th/9781449321451/ch24s02.html) - assumptions that a word is going to define a subroutine eventually
+- [perl::bleach](https://metacpan.org/pod/Acme::Bleach) - turns perl source code into whitespace code
 
 ## others
 

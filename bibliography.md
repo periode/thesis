@@ -18,9 +18,8 @@
 - speaking code, cox
 - behind the blip: essays on the culture of software, fuller
 - gaming: essays on algorithmic culture, galloway
-- my mother was a computer, hayles
 - speech, writing, code, hayles
-- my mither was a computer: digital subjects and literary texts, hayles
+- my mother was a computer: digital subjects and literary texts, hayles
 - aufschreibesysteme, kittler
 - language of new media, manovich
 - design des programmes, masure
