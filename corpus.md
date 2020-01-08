@@ -6,7 +6,7 @@
 - [tampio](https://github.com/fergusq/tampio) - finnish-looking programming language
 - [goto++](https://www.gotopp.org/index.en.html) - full parody
 - [linotte](http://langagelinotte.free.fr/wordpress/) - "if you can read a book, you can read a program"
-- [dolittle](https://en.wikipedia.org/wiki/Dolittle_(programming_language)) - japanese programming language using reverse word order
+- [dolittle](https://en.wikipedia.org/wiki/Dolittle_(programming_language)) - japanese programming language (using reverse word order, like japanese grammar)
 - [maude](http://tech.labs.oliverwyman.com/blog/2006/06/05/language-design-in-maude/) - meta language
 - [befunge](https://esolangs.org/wiki/Befunge) - two-dimensional playfield
 - [aheui](https://esolangs.org/wiki/Aheui) - korean version of befunge
@@ -20,7 +20,7 @@
 - [klingon](https://esolangs.org/wiki/Var%27aq) - klingon
 - [perl-klingon](https://metacpan.org/pod/Lingua::tlhInganHol::yIghun) - perl klingon
 - [unicode-obfuscated language proposal](http://www.madore.org/~david/weblog/d.2004-12-03.0813.html#d.2004-12-03.0813) - can not use ASCII characters
-- [qriollio](https://qriollo.github.io/) - language based on spanish dialect (rioplatense)
+- [qriollio](https://qriollo.github.io/) - language based on a hispanic dialect (rioplatense)
 - [urduscript](https://asadmemon.com/urduscript/) - also based on a dialect (urdish = urdu + english)
 - [APLBAONWSJAS](https://gist.github.com/hornc/dd2a6b9ed89a150d1627cc6e2b7d3189) - just one command
 - [light patterns](https://www.mitpressjournals.org/doi/10.1162/LEON_a_01091) - harvestworks + daniel temkin
@@ -32,6 +32,15 @@
 - [trumpscript](https://github.com/samshadwell/TrumpScript) - python in trump's america
 
 - [algol](http://www.softwarepreservation.org/projects/ALGOL/algol68impl) - with its dialects
+- [perl](https://www.perl.org/)
+- [c++](https://isocpp.org/)
+- [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [racket](https://racket-lang.org/)
+- [python](https://www.python.org/)
+- [lisp](https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node6.html)
+- [java](https://www.java.com/en/)
+- [clojure](https://clojure.org/)
+- [go](https://golang.org/)
 
 ## poems
 - [code poems](http://code-poems.com)
@@ -56,7 +65,7 @@
 - [perl poetry mode](https://www.oreilly.com/library/view/programming-perl-4th/9781449321451/ch24s02.html) - assumptions that a word is going to define a subroutine eventually
 - [perl::bleach](https://metacpan.org/pod/Acme::Bleach) - turns perl source code into whitespace code
 
-## others
+## others/misc
 
 - [everythingissomeone](https://everythingissomeone.github.io/) - object oriented night time stories
 - [if hemingway wrote javascript](https://nostarch.com/hemingway) - with a [repo](https://github.com/angus-c/literary.js) and a [blogpost](https://dzone.com/articles/if-hemingway-wrote-javascript)
