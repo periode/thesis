@@ -1,5 +1,50 @@
 # codes & coders: studying software in the making
 
+---
+
+
+### research questions
+- what sort of relationships do coders negotiate with style guides on version control websites?
+- what forms does the process of changing the unchangeable take?
+- how do style guides highlight the tension between commonality and unicity in human communities?
+
+### empirical methodology
+three main repos: airbnb / idiomatic / robocop (golang?) -> **justify why i choose those**
+
+- looking at issues/PR
+- looking at forks
+
+### theoretical framework
+- certeau > strategies & tacticss
+- aesthetics of organization
+- bourdieu ce que parler veut dire
+- quelque chose sur l'appartenance?
+
+### scientific interest
+- comprendre les situations d'overlap de l'open-source et du closed-source, de la liberte et de la contrainte dans le monde professionel
+
+### empirical data
+- same as above, no?
+
+negociation dans les guides de style
+
+le but de cette enquete est de voir comment s'approprient les objets du guide de style
+
+**DEFINIR** guide de style: objet para-textuel, influence le code mais n'est pas code, mais a la meme materialite que le code. comme le code, autre niveau d'objectivite vs. subjectivite. guide de style, c'est le point d'entree dans le *travail* du code, et non plus seulement dans sa *pratique*
+
+**DEFINIR** open-source: contributions pour le plus grand public ou pour des entreprises? quelles relations marchandes? quelles relations spontanees?
+
+**HYPOTHESES**: permet de saisir deux niveaux d'esthetiques (organisation vs. expression) -> revele differents niveaux d'appartenance? airbnb vs. rubocop vs.
+
+tension entre personalisation sur github et unicite sur la pratique
+
+demarche didactique vs. demarches innovantes?
+
+quel type d'esthetique? quel niveau d'arbitraire?
+
+
+---
+
 Finally, coding is often the result of writing by more than one hand. When
 achieved at a very large scale, as some successful free software projects
 have, coding has been studied as a form of distributed cognition (Conein,
