@@ -36,6 +36,8 @@
 - execut[up]?able statements, cramer
 - language and symbolic power, bourdieu
 - radiant textuality, mcgann
+- rhetorical code studies, brock
+- phantasmal media, harrell
 
 ## digital art
 - poetic computation, choi
@@ -65,3 +67,4 @@
 - the craftsman, sennett
 - moderne/contemporain, bouchardon
 - theory after theory, birns
+- de la programmation consideree comme un des beaux-arts, pierre levy

@@ -15,7 +15,7 @@ three main repos: airbnb / idiomatic / robocop (golang?) -> **justify why i choo
 - looking at forks
 
 ### theoretical framework
-- certeau > strategies & tacticss
+- certeau > strategies & tactics
 - aesthetics of organization
 - bourdieu ce que parler veut dire
 - quelque chose sur l'appartenance?
@@ -45,20 +45,9 @@ quel type d'esthetique? quel niveau d'arbitraire?
 
 ---
 
-Finally, coding is often the result of writing by more than one hand. When
-achieved at a very large scale, as some successful free software projects
-have, coding has been studied as a form of distributed cognition (Conein,
-2004). What are the practical modalities and the material conditions that
-enable the collective writing of software? The change of scale has been
-enabled by technical innovations, such as the modularity of the UNIX
-system, political movements and legal devices, like the Free Software
-movement or the GPL licence, but also by infrastructures dedicated to
-collaboration and sharing.
+Finally, coding is often the result of writing by more than one hand. When achieved at a very large scale, as some successful free software projects have, coding has been studied as a form of distributed cognition (Conein,2004). What are the practical modalities and the material conditions that enable the collective writing of software? The change of scale has been enabled by technical innovations, such as the modularity of the UNIX system, political movements and legal devices, like the Free Software movement or the GPL licence, but also by infrastructures dedicated to collaboration and sharing.
 
-To get a better sense of the meaning
-coders give to their practices could require exploring those professional
-communities that are built around each language and its “philosophy”, as
-well as the “good practices” that they promote and that vary significantly.
+To get a better sense of the meaning coders give to their practices could require exploring those professional communities that are built around each language and its “philosophy”, as well as the “good practices” that they promote and that vary significantly.
 
 
 https://journals.openedition.org/sociologie/3149 - liens sociaux numeriques
@@ -71,6 +60,15 @@ https://airbnb.io/projects/javascript/
 
 https://www.freecodecamp.org/news/adding-some-air-to-the-airbnb-style-guide-3df40e31c57a/
 
+https://dl.acm.org/doi/fullHtml/10.1145/238386.238572
+
+https://www.cs.colostate.edu/pubserv/pubs/Bieman-bieman-Pubs-BiemanSWQ02.pdf
+
+https://dl.acm.org/doi/10.1145/75427.75469
+
+https://ieeexplore.ieee.org/abstract/document/1311066
+
+GOOD > https://www.tandfonline.com/doi/abs/10.1080/17405900410001674524
 
 https://www.freecodecamp.org/news/adding-some-air-to-the-airbnb-style-guide-3df40e31c57a/
 
@@ -81,3 +79,5 @@ https://www.bookstack.cn/read/airbnb-js-style-en/readme-naming-conventions
 https://github.com/rwaldron/idiomatic.js/
 
 https://github.com/airbnb/javascript
+
+https://github.com/rubocop-hq/ruby-style-guide
