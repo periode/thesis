@@ -50,6 +50,8 @@
 - - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
 - - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity")
 
+- expressing vs. explaining (Kurosawa)
+
 - programming languages as actors in actor network theory?
 
 - programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation*
@@ -91,6 +93,21 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 - and then some of the poems/languages i write also
 
 *art is a breach in the system*
+
+**pat**
+Is there something that makes something inherently beautiful? As relations to humans/human condition of that time -studying tools.
+
+speed run vs. 100% of the game vs. elegant gaming
+
+which aesthetic standards are set by the machine vs. which aesthetic standards are set by human social context?
+
+does each type of software have different aesthetic standards?
+
+what is the aesthetic of a semantic system that is supposed to be understood by both humans and machines?
+
+beautiful proofs in geometry?
+
+how beautiful code defines its own beauty?
 
 
 ## corpuses

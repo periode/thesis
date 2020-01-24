@@ -38,6 +38,7 @@
 - radiant textuality, mcgann
 - rhetorical code studies, brock
 - phantasmal media, harrell
+- plain text: the poetics of computation, tenen
 
 ## digital art
 - poetic computation, choi
