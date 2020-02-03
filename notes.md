@@ -7,6 +7,28 @@
 
 ---
 
+the concept of clarity and understanding in source code
+
+"experientialism" / experiential realism
+
+questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within people?
+
+semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a sympbol without understanding it
+
+understanding the symbol vs. understanding what the symbol refers to
+
+there is always a bit of giving up the understanding (linux kernel, APIs, etc.). does it remove the essence or in contrary highlight it?
+
+the role of case studies: develop an outline from looking at code, then confront that outline (which will probably be multifaceted) with case studies (2-3)
+
+what do programmers have been implicitly saying in their discourses about code?
+
+what is the difference between poetics and aesthetics? poetics put together an effect (formal, subjective) vs. aesthetics are more universal, inherent, contemplative?
+
+draft a couple of paragraphs on machine understanding ++ the difference between poetics and aesthetics
+
+---
+
 ## questions
 
 - what are the literary standards to which code can be held to?
