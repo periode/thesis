@@ -1,55 +1,36 @@
-# weekly schedule 2019
+# overall schedule
 
-## week nov 11
-- write up notes from finished books
-- - goodman
-- - ranciere
-- - ed finn
-- - oulipo
-- - jakobson
+## semester 2019 - winter
 
-- organize bookmarks
+- write proposal
+- read the closely related literature
+- catch up on literary studies
 
-- read
-- - poetique des codes
-- - speaking code
+## semester 2020 - summer
 
-## week nov 18
+- gather all aesthetic judgments about code
+- read about questions of clarity, simplicity, elegance
+- - in both CS texts
+- - and in literary texts
+- establish feature set (list of adjectives with thorough definitions)
 
-- stolen bag :(
+## semester 2020 - winter
 
-## week nov 25
+- read about understanding (human-human)
+- read about understanding (human-machine)
+- relate feature set to understanding
 
-- write up
-- - poetique des codes
-- - plato.stanford.edu articles
-- - critical code studies
+## semester 2021 - summer
 
-## week dec 2
+- read about programming languages
+- relate feature set to each language
 
-- read
-- - speaking code
-- - valeur heuristique de la litterature numerique
+## semester 2021 - winter
 
-## week dec 9
+- case studies
+- conclusions and re-conceptualizing in light of findings
+- write
 
-- read
-- cox (coding praxis etc.)
-- cramer: words, flesh, code
+## semester 2022 - summer
 
-## week dec 16
-
-- gather
-- - corpus
-
-- read
-- - mougin: moderne/contemporain
-- - sondheim: codeworks
-- - introduction to the wedge by william carlos williams
-- - virtual bodies and flickering signifiers - katherine hayles
-- - digital code and literary texts - cramer
-- - print is flat code is deep
-
-## week dec 23
-
-## week dec 30
+- write
