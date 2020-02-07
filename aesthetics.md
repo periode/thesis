@@ -1,5 +1,7 @@
 # definitions and approaches
 
+## aesthetics
+
 *sensation, perception* > how does it make us feel?
 
 *an object with aesthetic properties is an objects that makes something (a sensation? a feeling?) happen*
@@ -8,7 +10,7 @@
 - - taste
 
 - jakobson
-- - innovation?
+- - innovation -> always seeking the new, a reconfiguration of experiences
 
 - goodman
 - - understanding
@@ -26,3 +28,20 @@ literature is the aesthetic usage of written language (tresor de la langue franc
 [adorno - the form of the phonograph record](https://www.jstor.org/stable/778936): the artwork only holds "truth-content", has fragments of true language once life has left it. it is, in a sense a threat to life/a judgment upon life.
 
 - art works to shape our basic sense of what is and what matters *in all of life* (heidegger)
+
+ranciere:
+- tissu du sensible
+
+
+## poetics
+
+linguistic -> language vs. poetics -> discourse
+
+is about *understanding* coherence, about *understanding* structure, and *understanding* pre-existing patterns (if poetics are prototypes, aesthetics are instances, maybe interfaces). it "an internal theory of literature", a conjuction of categories, but also a general direction from an author (not sure how that is different from the aesthetics?)
+
+*poetics will be called upon to elaborate a theory of description that will bring to light not only what all descriptions have in common but also what permits them to remain different* (todorov) - but it must also provide instruments to identify such occurences of, here, a description
+
+
+
+a poetics of beautiful code -> what is beautiful code?
+an aesthetics of beautiful code -> how is code beautiful?

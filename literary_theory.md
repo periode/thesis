@@ -14,6 +14,11 @@
 3. pragmatic (relationship between text and audience, reception theory/moral effect of art, their ideological baggage)
 4. objective (autotelic, the text for the text and nothing else, ontological approach)
 
+1. author
+2. work
+3. reader
+4. universe
+
 ---
 
 [koan](https://en.wikipedia.org/wiki/K%C5%8Dan)

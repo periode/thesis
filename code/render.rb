@@ -11,7 +11,7 @@ FileUtils.mkdir_p 'docs/' + remember
 puts "to set everything up"
 everything = []
 
-attention = `git diff --stat --name-only`
+attention = `git diff --stat --name-only && git ls-files --others --exclude-standard`
 attention = attention.split("\n")
 
 attention.each do | for_this_fragment |

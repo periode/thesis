@@ -7,7 +7,7 @@
 
 ---
 
-the concept of clarity and understanding in source code
+the aesthetics of clarity in executable source code
 
 "experientialism" / experiential realism
 

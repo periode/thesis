@@ -3,8 +3,6 @@
 
 #### meeting with alexandre gefen
 
-
-
 3 pathways:
 1. artistic properties of code? elegance, simplicity, density (it is beautiful **for** something), double-coding
 2. aestheticizing of code (beautiful in itself, with clarity, symmetry, harmony)
