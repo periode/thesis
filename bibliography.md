@@ -62,6 +62,8 @@
 - language as symbolic action, burke
 - languages of art, goodman
 - questions de poetique, jakobson
+- Style in Language, ed. Thomas A. Sebeok (Cambridge, Mass.:
+MIT Press, 1960
 - aiesthesis, ranciere
 - mute speech, ranciere
 - relational aesthetics, bourriaud

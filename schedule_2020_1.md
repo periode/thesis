@@ -21,9 +21,15 @@
 
 - writing second checkin
 
-## feb 10
+## feb 10 <---
 
 - establish list of coding textbooks/best practices
+- read perrin
+- read hill
+- read soare
+- read stabi books
+- read knuth, computer programming as art
+- read greene, coding guidelines
 - read geek sublime
 - read coding literacy
 
