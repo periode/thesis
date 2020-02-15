@@ -11,7 +11,7 @@ the aesthetics of clarity in executable source code
 
 "experientialism" / experiential realism
 
-questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within people?
+questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)?
 
 semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a sympbol without understanding it
 

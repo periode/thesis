@@ -11,6 +11,7 @@
 - philosophy of computer science, rapaport
 - software and mind, alexei
 - thinking in c++, eckel
+- the school of niklaus wirth: the art of simplicity, ed. böszörményi
 
 ## media studies
 - rhetoric of video games, bogost

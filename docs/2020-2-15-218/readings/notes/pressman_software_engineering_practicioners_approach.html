@@ -1,0 +1,183 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="software-engineering-a-practicioners-approach">software engineering: a practicioner’s approach</h1>
+<p>## roger s. pressman
+### mcgraw-hill, 1997, 4th ed.</p>
+
+<p>a very business approach:</p>
+
+<ul>
+  <li>types of software applications. should they be defined? am i encompassing all software applications? (system, real-time, business, engineering &amp; scientific, embedded, personal, AI)</li>
+</ul>
+
+<p>p.10: <em>Software is (1) instructions (computer programs) that when executed provide desired function and performance, (2) data structure that enables the program to adequately manipulate information and (3) documents that describe the operation and use of the program</em></p>
+
+<p>software quality is <em>“conformance to explicitly stated functional and performance requirements, explicitly documented development standards, and implicit characteristics that are expected of all professionally developed software”</em>
+- (EXPLICIT) REQUIREMENTS is the basis of quality measurements (i.e. what should the software <strong>do</strong>?) —— what should it do?
+- STANDARDS which define the criteria according to which the software should be developed ——- how should it do it?
+- (IMPLICIT) REQUIREMENTS ——- what should it (obviously) include?</p>
+
+<hr />
+
+<p>i like the idea of implicit vs. explicit requirements</p>
+
+<hr />
+
+<p>p. 13:
+standard is <em>reusability</em>, but how does it relate to source code?</p>
+
+<p>p. 188:
+standards are <em>uniform</em>, or at least <em>predictable</em>, in order to make work more <em>manageable</em>.</p>
+
+<p>there is a thing called <strong>software science</strong>, developed by a guy called <a href="https://en.wikipedia.org/wiki/Halstead_complexity_measures">Halstead</a>, which is highly (exclusively) quantitative -&gt; “intriguing” set of metrics at the source code level</p>
+
+<p>operator: built-in names
+operands: custom names (knuth’s identifiers)</p>
+
+<p>software isn’t just software as a compiled binary, it’s a <em>software configuration</em> (in the author’s words), which includes programs, documents, and data. which of those can be included in source code?</p>
+
+<ul>
+  <li>also what’s the difference between <strong>good</strong> and <strong>beautiful</strong>?</li>
+  <li>does the <em>“design process”</em> in software count as source code? or is it more like poetics. it’s more like poetics. or is it another kind of higher-higher-level language?
+amongst other requirements, he says that design should be:</li>
+  <li><strong>minimizing the intellectual distance between the software and the problem as it exists in the real world</strong> (that’s an interesting approach)</li>
+  <li>it should also exhibit <strong>uniformity</strong> and <strong>integration</strong>.</li>
+  <li>should be structured to <strong>accommodate change</strong>.</li>
+  <li>should <strong>handle errors gracefully/gently</strong></li>
+  <li><strong>no omissions, ambiguity, inconsistency</strong></li>
+</ul>
+
+<p>BUT PRINCIPLES</p>
+
+<ol>
+  <li>data design (related to data structures)</li>
+  <li>architectural design (relation between main components)</li>
+  <li>interface design (any kind of interface, not just <em>user</em> interface, but all the <em>flow</em> of information)</li>
+  <li>procedural design</li>
+</ol>
+
+<p>AND CONCEPTS</p>
+
+<ol>
+  <li>abstraction</li>
+  <li>refinement (from abstraction to details), also called elaboration</li>
+  <li>modularity (modular understandability, if the module can be understood as a standalone unit)</li>
+  <li>software architecture (not sure what that section actually does here? doesn’t seem like a design concept)</li>
+  <li>structural partitioning (partitioned horizontally and vertically, makes things <em>“easier”</em>)</li>
+  <li>data structure (we’ve seen this before, it’s a tricky place in between aesthetics and poetics)</li>
+  <li>software procedure (irrelevant, too high level? it’s about order of execution)</li>
+  <li>information hiding (only necessary information, if they have <em>no need</em>, it defines <em>access constraints</em>)</li>
+</ol>
+
+<p><strong>effective modular design</strong></p>
+
+<p>happens through <em>functional independence</em>, which is measured using two qualitative criteria: <em>cohesion</em> (the relative functional strength of the module, how much it does on its own) and <em>coupling</em> (the interdependence on modules).</p>
+
+<p>cohesion follows information hiding (we strive for high cohesion)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>LOW END OF COHESION SPECTRUM, if tasks relate to each other loosely</td>
+      <td> </td>
+      <td> </td>
+      <td>–coincidental———–functional—-</td>
+      <td> </td>
+      <td> </td>
+      <td>HIGH END(if tasks relate to each other closely)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>coupling needs to be minimized (and this is why global variables are bad, mkay), also content coupling should be avoided (when one module modifies data within another module)</p>
+
+<hr />
+
+<p>p. 410</p>
+
+<p><a href="https://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD268.html">structured programming</a> depends on <em>sequence</em>, <em>condition</em> and <em>repetition</em>. <strong>the use of a limited number of logical constructs also contributes to a human understanding process that psychologists call CHUNKING</strong>. <em>understanding is enhanced when readily recognizable logical forms are encountered</em>. but then flowcharts show that it can get quite complicated hahaha.</p>
+
+<p>p. 411</p>
+
+<p>apparently pseudocode is also called “structured english” lol</p>
+
+<p>and then there’s a whole section on OOP, but it’s probably better addressed somwhere else? even though <strong>it would be nice to compare differences between OOP in software engineering and OOP in computer science</strong>.</p>
+
+<p>p. 682</p>
+
+<p>problems of less formal approaches: (i.e. <em>standards for ugly code?</em>)
+- contradictions
+- ambiguities
+- vagueness
+- incompleteness
+- mixed levels of abstraction</p>
+
+<p>requirements/good parts of formal approaches:
+- data invariant (always the same)
+- state (stored data which the system accesses and alters)
+- operation (action in/of the system)
+- also <em>pre-</em> conditions and <em>post-</em> conditions</p>
+
+<p><strong>clearly associate operations with states, and the relationship to one another</strong></p>
+
+<p>how are these related when it comes to the actual <em>writing</em>!?</p>
+
+<p><a href="http://selab.csuohio.edu/~nsridhar/teaching/fall09/eec521/readings/10c10yearslater.pdf">the ten commandments of formal methods</a> - interesting because it does specify what a good method would b, even only some of those methods are related to formal writing (1, 6).</p>
+
+<p>BUT ITS NOT BEAUTIFUL (?). people adhere to what is beautiful, and they are slow to adopt that which is only good, but not beautiful by their standards.</p>
+
+<p>p. 768
+<strong>reverese engineering</strong>: what is the process of reading source code?</p>
+
+<p>it has multiple <em>levels</em>:
+- system
+- program
+- module
+- pattern
+- statement</p>
+
+<p>p. 834 - future topics in software engineering</p>
+
+<p>switch in terminology when talking about this field:
+- data: no associativity (data processing was the early term)
+- information: associativity in one context (information technology)
+- knowledge: associativity within multiple contexts (knowledge industry? machine learning? data science?)
+- wisdom: creation of generalized principles based on existing knowledge from different sources (the future? inshallah)
+—</p>
+
+<p>interestingly, the author is more in love with the process than with the object (he also refers to it as “generating code” rather than “writing code”)</p>
+
+			</div>
+		</body>
+	</html>
