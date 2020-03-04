@@ -45,3 +45,11 @@ is about *understanding* coherence, about *understanding* structure, and *unders
 
 a poetics of beautiful code -> what is beautiful code?
 an aesthetics of beautiful code -> how is code beautiful?
+
+
+## architecture
+[plato](https://plato.stanford.edu/entries/architecture/)
+
+"The aesthetics of architecture, by itself, spans traditional issues mooted in philosophy of art, as well as aesthetics of the everyday, and environmental aesthetics. Such traditional issues include **the nature of the work; the possibility of classes, kinds, or types in the domain; the character and roles of representation, intentionality, and expression; and the warranted foundations for criticism**."
+
+In distinct progressive and utopian traditions in architectural thought (Eaton 2002), advancement of social utility is a central motivation in architectural attempts to realize idealistic visions of modes of living and societal organization.

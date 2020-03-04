@@ -9,6 +9,8 @@
 
 the aesthetics of clarity in executable source code
 
+**are the aesthetics of clarity language-dependent?**
+
 "experientialism" / experiential realism
 
 questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)?
