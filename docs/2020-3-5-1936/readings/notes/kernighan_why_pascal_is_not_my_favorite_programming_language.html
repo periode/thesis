@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="why-pascal-is-not-my-favorite-programming-language">why pascal is not my favorite programming language</h1>
+<p>## brian kernighan
+### <a href="http://www.lysator.liu.se/c/bwk-on-pascal.html">link</a></p>
+
+<ul>
+  <li>comparisons between languages depend on whether the purpose of these languages is the same. <strong>and pascal is made for teaching, as he concludes</strong>.</li>
+</ul>
+
+<p><em>strong typing is telling the truth about data</em></p>
+
+<p>there is also additional literature: <a href="http://www.lysator.liu.se/c/bwk-on-pascal.html#lit-7">link</a></p>
+
+<hr />
+
+<h4 id="types-and-scope">types and scope</h4>
+
+<p>-&gt; strong typing is good because it prevents errors</p>
+
+<ol>
+  <li>
+    <p>the size of an array is part of its type (so it prevents from applying the same procedure to multiple arrays, from having common, general-pupose sub-routines). size shouldn’t be a part of the type. that’s obvious but <strong>WHY</strong></p>
+  </li>
+  <li>
+    <p>no static attributes to variables means its forcing global scoping and cognitive overload (partly because it is far removed from the place where it is actually used). the <em>locality</em> is important</p>
+  </li>
+  <li>
+    <p>procedures must be declared before they are used (which is the opposite of how they are used: separation of similar/related things). this is mitigated by <code>#include</code> statements. <em>this is for the convenience of the compiler rather than the convenience of the writer</em></p>
+  </li>
+  <li>
+    <p>no separate compilation, aka no <em>standard</em> for specifying that compilation</p>
+  </li>
+  <li>
+    <p>having to declare type names is useful for types that are used often (aka <code>vector3 = arr[0..2]</code>) but is a <em>distraction</em> for things used only once.</p>
+  </li>
+  <li>
+    <p>no casting (tihis seems to be a problem rather in terms of use than in terms of comprehension)</p>
+  </li>
+</ol>
+
+<h4 id="control-flow">control flow</h4>
+
+<ol>
+  <li>
+    <p>cannot guarantee the evaluation of a statement before the other (problem with <code>i &lt; max index &amp;&amp; arr[i]&gt; 0</code>).</p>
+  </li>
+  <li>
+    <p>no <code>break</code> statements to exit loops</p>
+  </li>
+  <li>
+    <p><code>case</code> statements do not have a <code>default</code>.</p>
+  </li>
+</ol>
+
+<h4 id="environment">environment</h4>
+
+<ol>
+  <li>hard to make a REPL environment (and hard to simulate input). but again, this is on purpose rather than appearance</li>
+</ol>
+
+<h4 id="cosmetic">cosmetic</h4>
+
+<ol>
+  <li>
+    <p>; is a separator, and not a terminator. he doesn’t like that because that means that <em>“one hsould have a sophisticated understanding of what a statement it”</em>. this implies that syntax should relieve us from cognitive load (cf. python indents)</p>
+  </li>
+  <li>
+    <p>no way to separate a function call from a variable: they both look like names (e.g. without the <code>()</code>)</p>
+  </li>
+</ol>
+
+<h4 id="perspective">perspective</h4>
+
+<p>it’s fine for non-efficient programs (i.e. non-real programs)</p>
+
+<p>enum data types are nice</p>
+
+<hr />
+
+<p><em>clumsiness</em></p>
+
+<hr />
+
+			</div>
+		</body>
+	</html>
