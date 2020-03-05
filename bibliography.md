@@ -12,6 +12,9 @@
 - software and mind, alexei
 - thinking in c++, eckel
 - the school of niklaus wirth: the art of simplicity, ed. böszörményi
+- elements of programming style, kerninghan
+- machine beauty, gelernter - [link](https://www.publishersweekly.com/978-0-465-04516-7)
+- the psychology of computer programming, weinberg - [link](http://www.dorsethouse.com/books/psy.html)
 
 ## media studies
 - rhetoric of video games, bogost
@@ -49,7 +52,7 @@
 - code as language, glazier
 - the art of code, black
 - poesie numerique, bootz
-- la valeur heuristique de la litterature numerique
+- la valeur heuristique de la litterature numerique, bouchardon
 - systems aesthetic, burnham
 - virtual muse, hartman
 - hamlet on the holodeck, murray

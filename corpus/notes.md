@@ -1,18 +1,6 @@
 beautiful code according to https://zinascii.com/2020/goodbye-joyent.html - https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308
 
-- hill, 2017, criteria that make code "elegant" > https://cacm.acm.org/blogs/blog-cacm/208547-what-makes-a-program-elegant/fulltext
-- soare, 2016, CS as art
-- decker et al., 2017, CS as creative expression
-- dennett, 2017
-- quine, 1987, beauty in science
-
-
-cultures of code: https://www.americanscientist.org/article/cultures-of-code
-semi-colon wars: https://www.americanscientist.org/article/the-semicolon-wars
-naming names: https://www.americanscientist.org/article/naming-names
-
-
-what is a "**pearl**"?
+find the best **programming pearls** -- what is a "**pearl**"?
 
 ---
 
