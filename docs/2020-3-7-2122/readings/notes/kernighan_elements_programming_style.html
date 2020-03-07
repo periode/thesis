@@ -1,0 +1,232 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="the-elements-of-programming-style">the elements of programming style</h1>
+<p>## brian w. kernighan, p.j. plauger
+### mcgraw-hill, new york, 1978</p>
+
+<h4 id="summary">summary</h4>
+<p><em>keep in mind that much of this is based on fortran programming</em></p>
+
+<p>this book is definitely dated, and some of those recommendations are highly time-sensitive (e.g. “reading input until <code>EOF</code> or marker). it also moves from aesthetics (first couple of chapters on expressions and control flows) towards higher-level heuristics (input/output and general comments).</p>
+
+<p>still, it is interesting for its laying out the standard, and dispelling myths about efficiency (not machine-based, but human-based)</p>
+
+<hr />
+
+<p>“after years of producting <code>write-only</code> code, students, teachers and professionals are realizing the benefit of <code>readable</code> code”</p>
+
+<p>the second edition includes a whole new chapter on structure: is structure on the aesthetics side or on the poetics side? is it a bridge between both? (cf. structured programming)</p>
+
+<p>the constant interplay of reading and writing</p>
+
+<p><strong>the assumption here is that “the principles of style […] are applicable in all languages, even in assembly</strong></p>
+
+<p>a direct correlation is made with <em>The Elements of Style</em>, by W. Strunk and E.B. White (look up!)</p>
+
+<hr />
+
+<h4 id="chap-1---intro">chap 1 - intro</h4>
+
+<p><strong>write clearly - don’t be too clever</strong></p>
+
+<p><em>example of the identity matrix</em></p>
+
+<p>you can write it in a clever way, but then it’s not actually readable <em>and not even be as fast!</em>. one of the first differences is <em>writing a comment</em>. “It is more important to make the code unmistakable than to display virtuosity”, because a “too clever program may not say what you thought it said”.</p>
+
+<p><em>real programs are like prose—they often violate simultaneously a number of rules of good practice.</em></p>
+
+<p><strong>the size of a program only reflects a need for improvement</strong></p>
+
+<p>there is style that is language-independent and style that is language-dependent</p>
+
+<p>also, a clear code doesn’t prevent it from being wrong, so <em>cleanliness is necessary but not sufficient</em>. as a corollary, a correct code doesn’t guarantee that it is right</p>
+
+<p>chap.3 announces the relationship between clean control-flow and clean data structure</p>
+
+<hr />
+
+<h4 id="chap-2---expression">chap 2 - expression</h4>
+
+<p><strong>say what you mean, simply and directly</strong></p>
+
+<p>difference between what the program does and what the program <em>should</em> do (difference between human understanding and machine understanding)</p>
+
+<p><strong>BROAD QUESTION</strong> what else could one be trying to do other than getting the job done?</p>
+
+<p>“Particular modes of expression often arise out of attempts to write ‘efficient’ code” (in the 1970s, this criteria for efficiency means knowing the compiler) &gt; cf. notes.md#materiality</p>
+
+<p><strong>avoid temporary variables</strong> (?? -disagree, since temp var allow for better understanding of the operations? there is a limit/balance. also the reason they give for that is that it might thwart the compiler)</p>
+
+<p><strong>let the machine do the dirty work</strong> &gt; this is the root of DRY; but also this is followed at the conclusion of the chapter by “don’t build <em>all</em> of your own tools”, which means that the process of tool building is also one that is integral to writing code) &gt; in chap.4, it phrases it in terms of placing the burden on the compiler rather than the programmer.</p>
+
+<p>which is then logically followed by <strong>replace repetitive expressions by calls to a common function</strong></p>
+
+<p>in naming, <strong>parenthesize to avoid ambiguity</strong>, make variable names <em>pronounceable</em>, be <em>consistent</em> (discussed further in chap. 8)</p>
+
+<blockquote>
+  <blockquote>
+    <p>statements should be understood in <em>relative isolation</em>: what are the criteria for such isolation? (again, cf. goodman?)</p>
+  </blockquote>
+</blockquote>
+
+<p><strong>avoid unnecessary branches</strong>, and <strong>don’t use conditional branches as a substitute for a logical expression</strong> »&gt; LINEARITY IS KEY</p>
+
+<p>(“a <code>null ELSE</code> serves no purpose whatosever”)</p>
+
+<p>the “telephone test”: if someone can understand your code while read aloud on the telephone, then it’s clear enough <strong>ORALITY AS UNIQUE TO HUMANS</strong> (cf. Ong)</p>
+
+<p>code aesthetics is also about <strong>taking into account that programs evolve</strong></p>
+
+<hr />
+
+<h4 id="chap-3---control-structure">chap 3 - control structure</h4>
+
+<p><strong>use indenting to delimit groups of statements</strong> (statement grouping)</p>
+
+<p>he is very happy about being able to group instructions under an <code>if-statement</code> (in PL/I it’s <code>DO; END;</code>), and the fact that Fortran doesn’t have that is considered a major failiing</p>
+
+<p>“<code>ELSE</code> serving no purpose” implies that <em>clarity is distinguishability</em>. <strong>UNIQUENESS</strong></p>
+
+<p><strong>use if/else to emphasize that only ONE of multiple actions is being done</strong> (decision-making a.k.a never use a <code>THEN</code> immediately after an <code>IF</code>, since it immediately increases the output complexity. and then once that decision is made, follow it as closely as possible with the associated <em>action</em>)</p>
+
+<p><strong>make loops explicit with <code>WHILE</code></strong></p>
+
+<p><strong>make your programs read from top to bottom</strong> (be human)</p>
+
+<p><strong>write first in an easy to understand language (PSEUDO-CODE) then write it in whatever language you have to use</strong></p>
+
+<p>“choosing a better data structure is often an art, which we cannot teach” &gt; the process is to repeat through program designs until computation becomes as easy as possible</p>
+
+<p>clarity &gt; optimizagtion, and regularity &gt; irregularities (does that mean that no beautiful program should have irregularities?)</p>
+
+<p><strong>DON’T STOP WITH YOUR FIRST DRAFT</strong></p>
+
+<hr />
+
+<h4 id="chap-4---program-structure">chap 4 - program structure</h4>
+
+<p><strong>modularize, use subroutines</strong>, which implies that any big enough program should be written <em>and tested</em> in small pieces</p>
+
+<p>“optimizing too early in the life of a program can kill its chances for growth”</p>
+
+<p>it must be possible to describe the function as simply as possible, then minimize external relationships, and make those relationships as explicit. aka find the best way to make something explicit</p>
+
+<p><strong>make the coupling between modules visible</strong></p>
+
+<p><strong>each module should do ONE thing well</strong> (UNIX)</p>
+
+<p><strong>each module should HIDE something</strong>; the hiding means compartmentalizing, abstracting, encapsulating, etc. (terms that didn’t exist when the book was written because OOP was still in its infancy (<code>smalltalk</code> is developed in 1972, 2 years before the book))</p>
+
+<p>the authors advocate that <em>program structure is related to the output generated</em>, which then concludes into <strong>let the data structure the program</strong>.</p>
+
+<hr />
+
+<h4 id="chap-5---input-and-output">chap 5 - input and output</h4>
+
+<p>the very first lesson is “never trust any data”; which implies that all programs should be self-sufficient. the input data that they get should be some sort of self-fulfilled prophecy (the data i describe is the data i get)</p>
+
+<p>aka <strong>test input for validity and plausibility</strong>, such that bad input is caught and recovered early, and that the input doesn’t violate the limits of the program</p>
+
+<p>output (just like the rest of things that programmers have control over), should be <em>self-explanatory</em></p>
+
+<p>some things that might appear like they are inherent to a domain (“garbage in, garbage out”), can actually be sometimes attributed to particular practices in this domain (not sanitizing input)</p>
+
+<p>they talk about the act of sanitizing input, but the <em>how</em> to sanitize input implies the “mnemonics” (aka the correct naming of variables)</p>
+
+<hr />
+
+<h4 id="chap-6---common-blunders">chap 6 - common blunders</h4>
+
+<p>this section deals more specifically with practices:
+- initializa variables
+- don’t stop at one bug
+- know thy audience (e.g. for an electrical engineering program, should the voltage be V (for most people) or E (for engineers)?)
+- use debugging compilers (not reinventing the wheel applies to metatools)
+- avoid multiple exists from loops (aka limit the branching + not repeating yourself)</p>
+
+<p>labels should be used often as long as they do not imply a jump in the flow of the program</p>
+
+<p><strong>programming defensively</strong> is the assumption of the worst, and the repair of that worst.</p>
+
+<h4 id="chap-7---efficiency-and-instrumentation">chap 7 - efficiency and instrumentation</h4>
+
+<p>“efficiency” is the reduction of <strong>overall</strong> cost, not just sub-costs
+writing readable code is actually human-efficient » <a href="https://www.youtube.com/watch?v=H4RELGc9su8">be humble</a></p>
+
+<p>another suggestion which is actually a strategy is:
+- make it <em>right</em> before you make it clear
+- make it <em>clear</em> before you make it faster</p>
+
+<p>and then: <strong>keep it simple to make it faster</strong>, so there they make a distinction between clear and simple, even though they often overlap. (clear is <em>what</em> it does and simple is <em>how</em> it does it?)</p>
+
+<p>if you’re going to make efficiency changes, make sure that those changes are actually based on <em>measurements</em> (i.e. profilers), such that you know WHAT you’re aiming to do, and you can then focus on the HOW.</p>
+
+<h4 id="chap-8---documentation">chap 8 - documentation</h4>
+
+<p>the best documentation for a computer program is a clean structure (it helps if it is well formatted, mnemonics, labels, comments): because <strong>CODE DOES WHAT IT IS</strong> (galloway)</p>
+
+<p>“whenever there exists multiple representations of a program, the chance for discrepancy exists” (understanding is about mental representations)</p>
+
+<p>documentation: what each program is supposed to do, how it is used, how it interacts with other programs, and on what principles is it based (thanks, pseudo-code. as pseudo code gets included in the source code as comments, it looses it’s pseudo-ness and becomes source code)</p>
+
+<p>reference to weinberg’s <em>The Psychology of Computer Programming</em>, about a detail on layout, but interesting that there is a connection between style and psychology</p>
+
+<p><strong>make sure comments and code agree</strong></p>
+
+<p><strong>don’t just echo the code with comments—make every comment count</strong> (repeat of DRY lol)</p>
+
+<p><strong>don’t comment bad code - rewrite it</strong></p>
+
+<p><strong>formatting is facilitating understanding</strong>: even though a piece of code might be properly formatted, it might not be easily <em>understood</em>. understanding comes first and then formatting as sugar. again, control flow and expressions are first and foremost.</p>
+
+<hr />
+
+<h4 id="epilogue">epilogue</h4>
+
+<p><em>“one excuse for writing an unintelligible program is that it is a private matter”</em>. code is, more often than not, social</p>
+
+<p>in the end, style is an attitude</p>
+
+<hr />
+<hr />
+
+<p>review of the book: <a href="https://archive.org/stream/kilobaudmagazine-1980-01/Kilobaud_Microcomputing_1980_January#page/n7/mode/2up">kilobaud magazine</a></p>
+
+<blockquote>
+  <p>the <em>real</em> problem is to have a program do what it is intended to do</p>
+</blockquote>
+
+			</div>
+		</body>
+	</html>
