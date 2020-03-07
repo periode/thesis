@@ -6,7 +6,7 @@
 - essentials of programming languages, friedman
 - mechanical intelligence, turing (ince)
 - C programming language, kernighan
-- art of computer programming, knuth
+- art of computer programming, knuth - [x]
 - concepts of programming languages, sebesta
 - philosophy of computer science, rapaport
 - software and mind, alexei
@@ -61,7 +61,7 @@
 - a poem is a machine to think with, baldwin
 
 
-# aesthetics
+## aesthetics
 - aesthetic theory, adorno
 - language as symbolic action, burke
 - languages of art, goodman

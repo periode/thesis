@@ -2,6 +2,7 @@
 
 ## locii of action
 - data (input, output)
+- data (structure)
 - logic
 - control flow
 - error correction/management

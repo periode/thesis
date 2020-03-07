@@ -31,6 +31,12 @@ draft a couple of paragraphs on machine understanding ++ the difference between 
 
 ---
 
+STRATEGY VS. TACTICS
+
+but tactics could actually be the tip of the manifestation of a yet unknown (the personal?) strategy.
+
+---
+
 ## questions
 
 - what are the literary standards to which code can be held to?
@@ -59,6 +65,12 @@ draft a couple of paragraphs on machine understanding ++ the difference between 
 ### object (object of code's discourse)
 - what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even? how (semiotically and aesthetically)?
 - how does the creative/aesthetic use of code start to involve the rest of the world rather than simply the self-reference?
+
+---
+
+## materiality
+
+"efficient code" depends on knowing the material that you are working with: in the 1970s, it was the compiler (kernighan, *elements of programming style*). in the 2000s, it might be just the language spec.
 
 ---
 
