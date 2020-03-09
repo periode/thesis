@@ -37,6 +37,12 @@ but tactics could actually be the tip of the manifestation of a yet unknown (the
 
 ---
 
+ENGINEERING VS. CRAFT
+
+could these be viewed as two kinds of writing?
+
+---
+
 ## questions
 
 - what are the literary standards to which code can be held to?

@@ -23,7 +23,7 @@
 
 ## feb 10 <---
 
-- establish list of coding textbooks/best practices
+- ~~establish list of coding textbooks/best practices~~
 - ~~read perrin~~
 - ~~read hill~~
 - ~~read stabi books~~
@@ -35,7 +35,7 @@
 ## feb 17
 
 - write first draft of intro
-- gather online posts and comments on programming
+- ~ather online posts and comments on programming~~
 
 ## feb 24
 

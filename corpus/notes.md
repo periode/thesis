@@ -1,6 +1,6 @@
 beautiful code according to https://zinascii.com/2020/goodbye-joyent.html - https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308
 
-find the best **programming pearls** -- what is a "**pearl**"?
+find the best **programming pearls** -- what is a "**pearl**"? perl, smells, heuristics (cf. *Clean Code*)
 
 ---
 
