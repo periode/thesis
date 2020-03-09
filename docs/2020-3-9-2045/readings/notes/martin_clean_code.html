@@ -1,0 +1,366 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="clean-code">clean code</h1>
+<p>## robert c. martin
+### prentice hall, pearson education, 2008</p>
+
+<p>the author is one of the main creators of the Agile Manifesto, and a leading figure in professional software development. The book is written with <code>JAVA</code>.</p>
+
+<p>software architecture can draw its parallels from japanese 5S:
+- seiri ( +- naming, details)
+- seiton ( +- putting things where they belong)
+- seiso ( +- clean)
+- seiketsu ( +- standardization, consistency)
+- shutsuke ( +- self-discipline (opposite of emotional programming?))</p>
+
+<p>“we had some back-of-the-enveloped findings indicating that suggested that consistent indentation style was one of the most statistically significant indicators of low-bug density”</p>
+
+<p>style distinguishes excellence from competence, and it is beauty, but <em>what kind of beauty</em>? is clean code beautiful code? what is the step to beauty? beauty could/should also be seen as some sort of efficiency. something beautiful is something that is <em>efficient</em> at communicating sth (sth = a task, a concept)</p>
+
+<p>why does bad code even exist? lack of experience? external constraints? lack of knowledge (is that the same as lack of experience?)</p>
+
+<h4 id="definitions-by-authors">definitions by authors</h4>
+
+<ul>
+  <li>bjarne soustrup (c++ creator): “clean code does one thing well” + clean code is efficient, <strong>and pays attention to details</strong></li>
+  <li>grady brooch: “<em>crisp abstraction</em>”, clean code should be like a fiction, with setting up tensions and clearly solving them into a “a-ha!” moment. <strong>code should be matter of fact rather than speculative</strong> (that’s opposed to all the software art field)</li>
+  <li>dave thomas: code should be read by others, have minimal dependencies and APIs, and should be literate (cf. kunth - literate programming)</li>
+  <li>michael feathers: code that has been cared for: SIMPLE AND ORDERLY</li>
+  <li>ron jeffries: no duplication. minimized (and not minified). <strong>expressiveness goes beyond words</strong></li>
+  <li>ward cunningham: “you can call it beautiful code when it looks like the language was made for the problem” &gt; it is not the language that makes the program appear simple, but the programmer that makes the language appear simple</li>
+</ul>
+
+<p>the <code>@author</code> field of a Javadoc leaves no doubt as to who is doing what act (writing, for a group of readers)</p>
+
+<hr />
+
+<p><strong>expressiveness goes beyond words</strong></p>
+
+<hr />
+
+<h4 id="naming">naming</h4>
+
+<ul>
+  <li>they should reveal intent</li>
+  <li>they should not add <strong>NOISE</strong> (refer to shannon as noise + semantics)</li>
+  <li>pronounceable names (human-oriented, which then can enmable conversations)</li>
+  <li>do not try to please the compiler (aka change only one letter in a var name to allow for compilation -but there is also clever code, which takes into account the compiler, cf. the perl poem in which the mythical programmer knew the compiler better, except now we don’t know compilers so much anymore)</li>
+  <li>no artificial encoding (e.g. Hungarian Notation)</li>
+  <li>say what you mean, mean what you say</li>
+  <li>lexicon can come from the <em>problem-domain</em> (real world) or <em>solution domain</em> (software engineering world)</li>
+  <li>pay attention to context: place variables in the correct context, and if there isn’t create such a context (comments)</li>
+</ul>
+
+<p>names require a shared contextual background, rather than program-linguistic background.</p>
+
+<h4 id="functions">functions</h4>
+
+<ul>
+  <li>do not mix multiple levels of abstraction</li>
+  <li>make functions small (verbatim: in a beautiful program, “each told a story”)</li>
+  <li>functions should have at best 0 arguments. maybe 1, perhaps 2, rarely more.</li>
+  <li>kinda disagree about flags in functions (he says we should have no flags and separate functions. how is this not a version of cognitive overload? how are flags not a way to abstraction?)</li>
+</ul>
+
+<p>coupling: degree of dependence between software modules (cna be temporal)</p>
+
+<p>“the art of programming is the art of language design” - to what extent is literature language design?
+“the real goal is to tell the story of the system”</p>
+
+<hr />
+
+<p>jump to the conclusion chapter</p>
+
+<hr />
+
+<h4 id="heuristics-for-bad-code">heuristics for bad code</h4>
+
+<ul>
+  <li>comments:</li>
+  <li>
+    <ul>
+      <li>inappropriate information</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>obsolete comment</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>redundant comment</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>poorly written</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>commented-out code (no draft in craft!)</li>
+    </ul>
+  </li>
+  <li>environment</li>
+  <li>
+    <ul>
+      <li>building happens in more than one step</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>testing requires more than one step</li>
+    </ul>
+  </li>
+  <li>functions</li>
+  <li>
+    <ul>
+      <li>too many arguments</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>no output arguments (he says that, if a function should change the state of sth, it should be called on the object it is change » THAT IS HIGHLY <code>JAVA</code> SPECIFIC)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>flag argument (mixed feelings)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>dead function (never called)</li>
+    </ul>
+  </li>
+  <li>general</li>
+  <li>
+    <ul>
+      <li>multiple languages per file (no HTML, XML, etc. snippets)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>obvious behaviour is not implemented (<strong>that’s a tricky one, what constitutes an obvious behaviour?</strong>)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>incorrect behaviour at boundaries</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>overriden safeties</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>duplication (DRY)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>wrong levels of abstraction</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>base classes depending on their derivatives (<code>JAVA</code> specific)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>too much information</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>dead code</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>vertical separation (geographic distance, loin des yeux, loin du coeur)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>inconsistency</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>clutter (related to dead code, commented out code) <strong>the word <em>dead</em> is interesting in light of alexander’s patterns as life-giving</strong></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>feature-envy (trying to do more, access more than one’s own class <code>JAVA</code> specific)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>selector arguments (essentially flags, he doesn’t like flags because they’re hard to show at the next abstraction layer – how do you make it obvious what the flag is when you don’t have access to the internal name that the function gives it to?)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>obscured intent (bad naming)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>misplaced responsibility (abide by the principle of <em>least surprise</em>)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>inappropriate static (this is <code>java</code> specific, but inappropriate keywords are just a subclass of noise, between naming and dead code, aka manage expectations)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>understanding the algorith (i.e. the sort of <em>conceptual</em> data structure)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>prefer polymorphism to if/else (also <code>java</code>)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>you should follow conventions (which is funny because the book itself is not following the convention it started with (i.e. list the aspects of bad code), cause now it transitioned to listing aspects of good code)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>be precise</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>favor structure (consistency) over convention</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>encapsulate conditionals (i.e. have a function that checks for those conditions and return true or false)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>avoid negative conditionals (hinders readability)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>functions should do one thing</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>if forced to do some temporal couplings, make them obivous and MARK THEIR DEPENDENCIES BY PASSING EACH AS THE ARGUMENT TO OTHERS</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>encapsulate boundary conditions (which then allows you to make them easier to follow)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>functions should descend only one level of abstraction</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>keep configurable data at high level</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>make sure the modules don’t know too much about the overall architecture (soft architecture. hard writing for soft reading)</li>
+    </ul>
+  </li>
+  <li>java specific (implying some of those before weren’t)</li>
+  <li>
+    <ul>
+      <li>avoid long lists by using wildcards</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>don’t inherit constants</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>use constants instead of enums (this is a time-sensitive comment)</li>
+    </ul>
+  </li>
+  <li>name</li>
+  <li>
+    <ul>
+      <li>be descriptive/unambiguous (re-evaluate as you write) (describe side-effects)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>choose names at the appropriate level of abstraction</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>use standard nomenclature if possible</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>the length of a name can be proportional to the size of its scope</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>avoid encodings (no hungarian notation)</li>
+    </ul>
+  </li>
+  <li>tests (this is more structure-oriented)</li>
+</ul>
+
+			</div>
+		</body>
+	</html>
