@@ -15,6 +15,19 @@
 - elements of programming style, kerninghan
 - machine beauty, gelernter - [link](https://www.publishersweekly.com/978-0-465-04516-7)
 - the psychology of computer programming, weinberg - [link](http://www.dorsethouse.com/books/psy.html)
+- code: the hidden langauge of computer hardware and software, petzold
+- types and programming languages, pierce
+- code complete, mcconnell
+- the pragmatic programmer, andy hunt
+- introduction to algorithms, cormen
+- clean code: a handbook, robert c. martin [x]
+- programming pearls, bentley
+- smalltalk: the language and its implementation
+- eloquent javascript
+- head first java
+- the design of the unix operating system
+- algorithms + data structures = programs
+- why's poignant guide to ruby
 
 ## media studies
 - rhetoric of video games, bogost

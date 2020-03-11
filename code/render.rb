@@ -142,7 +142,7 @@ space = %{
 			<div class="holding tight">
 				<h1>the role of aesthetics in source code understandings</h1>
 				<p>what you see here is the automatic rendering of all the notes taken during <a href="https://pierredepaz.net">my</a> thesis. since it is a thesis on source code, i thought i might as well show its own source code.</p>
-				<p>to provide some context, the topic i'm looking at is how aesthetics enable understanding in source code, and what kind of understanding might derive from their presence of absence. this touches upon issues of style, clarity, epistemology, psychology, programming and literature.</p>
+				<p>the main question i'm asking is: how so aesthetics enable understanding in source code, and what kind of understanding might derive from their presence, or absence. this touches upon issues of style, clarity, epistemology, psychology, programming and literature.</p>
 				<p>this doctoral work is being done at the university of sorbonne nouvelle, under the joint direction of alexandre gefen and nick montfort.</p>
 				<p><a href="https://github.com/periode/thesis">the github version</a></p>
 				<hr/>
