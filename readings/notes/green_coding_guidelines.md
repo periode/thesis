@@ -2,6 +2,13 @@
 ## robert green
 ### [link](https://cacm.acm.org/magazines/2011/12/142527-coding-guidelines-finding-the-art-in-the-science/fulltext)
 
+---
+summary
+
+this paper explains what makes you move from good code to great code, and shows how "artistic flare" (a combination of hard and soft practices) can help us make the transition. the emphasis is on the act of *reading*, on the decryption of the concepts that the machine is acting upon/executing
+
+---
+
 objective components of beautiful code (hard ideas):
 - design patterns
 - project structures
@@ -18,12 +25,14 @@ it takes a great programmer to fill in the gaps left by "objective components" w
 
 interesting parallel between artworks, code and plurality of meanings: if code is like art, does that mean it has a plurality of meanings? (not sure i agree)
 
-also seeing programming as **encyrption**: you encrypt the solution in a certain way and then you have to decrypt it later when you return to it.
+also seeing programming as **encryption**: you encrypt the solution in a certain way and then you have to decrypt it later when you return to it.
 
 
 MOVING FROM FUNDAMENTAL PRINCIPLES OF COMMUNICATION TOWARDS CODING CONVENTIONS (i.e. the relationship between clean code and human communication)
 
 he use of vertical alignment to show symmetry; his is a powerful method of communication:
+
+**poul-henning kamp: quality only happens when somebody is responsible for it [link](https://queue.acm.org/detail.cfm?id=2349257)**. consequences: that somebody can be a group of people, and aesthetics is a way to implicate responsibility.
 
 ---
 

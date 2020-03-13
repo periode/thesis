@@ -1,4 +1,5 @@
 beautiful code according to https://zinascii.com/2020/goodbye-joyent.html - https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308
+beautiful code exists: https://queue.acm.org/detail.cfm?id=1454458
 
 find the best **programming pearls** -- what is a "**pearl**"? perl, smells, heuristics (cf. *Clean Code*)
 
@@ -7,6 +8,7 @@ find the best **programming pearls** -- what is a "**pearl**"? perl, smells, heu
 ACM Library results:
 - aesthetics and programming, superprogrammers describe: https://dl.acm.org/doi/abs/10.1145/800045.801620
 - correct software at JPL: coding process and coders: https://dl.acm.org/doi/abs/10.1145/2038642.2038674
+- sometimes style really does matter: https://dl.acm.org/doi/10.5555/1747137.1747172
 - source code documentation from paratexts: https://dl.acm.org/doi/abs/10.1145/2597008.2597799
 - discovering the main important terms in source code: https://dl.acm.org/doi/abs/10.1145/2889160.2891037
 - understanding misunderstanding in source code: https://dl.acm.org/doi/abs/10.1145/3106237.3106264

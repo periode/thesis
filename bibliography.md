@@ -12,16 +12,17 @@
 - software and mind, alexei
 - thinking in c++, eckel
 - the school of niklaus wirth: the art of simplicity, ed. böszörményi
-- elements of programming style, kerninghan
+- elements of programming style, kerninghan [x]
 - machine beauty, gelernter - [link](https://www.publishersweekly.com/978-0-465-04516-7)
 - the psychology of computer programming, weinberg - [link](http://www.dorsethouse.com/books/psy.html)
 - code: the hidden langauge of computer hardware and software, petzold
 - types and programming languages, pierce
 - code complete, mcconnell
-- the pragmatic programmer, andy hunt
+- the pragmatic programmer, andy hunt [x]
 - introduction to algorithms, cormen
 - clean code: a handbook, robert c. martin [x]
 - programming pearls, bentley
+- the practice of programming, kernighan
 - smalltalk: the language and its implementation
 - eloquent javascript
 - head first java

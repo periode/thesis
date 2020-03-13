@@ -30,7 +30,6 @@
 - ~~read knuth, computer programming as art~~
 - ~~read greene, coding guidelines~~
 - read geek sublime
-- read coding literacy
 
 ## feb 17
 
@@ -39,7 +38,7 @@
 
 ## feb 24
 
-- read clean code
+- ~~read clean code~~
 - gather online posts and comments on programming
 
 ## mar 2
