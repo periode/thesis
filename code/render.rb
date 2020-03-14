@@ -122,7 +122,7 @@ space = %{
 	<html>
 		<head>
 			<meta charset="utf-8"/>
-			<title>thèse publique</title>
+			<title>the role of aesthetics in source code understandings</title>
 		</head>
 		<body>
 			<style>

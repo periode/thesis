@@ -29,12 +29,12 @@
 - ~~read stabi books~~
 - ~~read knuth, computer programming as art~~
 - ~~read greene, coding guidelines~~
-- read geek sublime
+- ~~read geek sublime~~
 
 ## feb 17
 
 - write first draft of intro
-- ~ather online posts and comments on programming~~
+- ~~gather online posts and comments on programming~~
 
 ## feb 24
 
@@ -66,7 +66,7 @@
 
 - find sources for defining aesthetic standards
 - - **TODO** update the schedule once the list of aesthetic standards is done
-- read art of programming
+- ~~read art of programming~~
 
 ## apr 13
 

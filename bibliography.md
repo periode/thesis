@@ -31,27 +31,27 @@
 - why's poignant guide to ruby
 
 ## media studies
-- rhetoric of video games, bogost
-- programmed visions, chun
-- speaking code, cox
+- rhetoric of video games, bogost [x]
+- programmed visions, chun [x]
+- speaking code, cox [x]
 - behind the blip: essays on the culture of software, fuller
 - gaming: essays on algorithmic culture, galloway
-- speech, writing, code, hayles
-- my mother was a computer: digital subjects and literary texts, hayles
+- speech, writing, code, hayles [x]
+- my mother was a computer: digital subjects and literary texts, hayles [x]
 - aufschreibesysteme, kittler
 - language of new media, manovich
-- design des programmes, masure
+- design des programmes, masure [x]
 - understanding media, mcluhan
-- 10 print, montfort et. al.
+- 10 print, montfort et. al. [x]
 - software arts, sack
 - coding literacy, vee
 - hacker manifesto, wark
 - deep time of the media, zielinski
-- le plaisir du texte, barthes
+- le plaisir du texte, barthes [x]
 - extreme inscription - towards a grammatology of the hard drive, kirschenbaum
-- s/z, barthes
-- program code poetry, cramer
-- execut[up]?able statements, cramer
+- s/z, barthes [x]
+- program code poetry, cramer [x]
+- execut[up]?able statements, cramer [x]
 - language and symbolic power, bourdieu
 - radiant textuality, mcgann
 - rhetorical code studies, brock
@@ -59,18 +59,18 @@
 - plain text: the poetics of computation, tenen
 
 ## digital art
-- poetic computation, choi
-- code.surface || code.depth, raley
-- on code and codework, sondheim
-- words made flesh, cramer
+- poetic computation, choi [x]
+- code.surface || code.depth, raley [x]
+- on code and codework, sondheim [x]
+- words made flesh, cramer [x]
 - code as language, glazier
 - the art of code, black
-- poesie numerique, bootz
-- la valeur heuristique de la litterature numerique, bouchardon
-- systems aesthetic, burnham
-- virtual muse, hartman
-- hamlet on the holodeck, murray
-- poetique des codes, paloque-berges
+- poesie numerique, bootz [x]
+- la valeur heuristique de la litterature numerique, bouchardon [x]
+- systems aesthetic, burnham [x]
+- virtual muse, hartman [x]
+- hamlet on the holodeck, murray [x]
+- poetique des codes, paloque-berges [x]
 - the role of programming in digital art, andrews
 - a poem is a machine to think with, baldwin
 
@@ -78,14 +78,14 @@
 ## aesthetics
 - aesthetic theory, adorno
 - language as symbolic action, burke
-- languages of art, goodman
-- questions de poetique, jakobson
+- languages of art, goodman [x]
+- questions de poetique, jakobson [x]
 - Style in Language, ed. Thomas A. Sebeok (Cambridge, Mass.:
 MIT Press, 1960
 - aiesthesis, ranciere
 - mute speech, ranciere
 - relational aesthetics, bourriaud
 - the craftsman, sennett
-- moderne/contemporain, bouchardon
-- theory after theory, birns
+- moderne/contemporain, bouchardon [x]
+- theory after theory, birns [x]
 - de la programmation consideree comme un des beaux-arts, pierre levy
