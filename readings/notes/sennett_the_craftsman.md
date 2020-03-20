@@ -27,3 +27,25 @@ all craftsmanship has an impersonality in their character, which at the same tim
 there are two imperatives in the modern world to do good work:
 - moral imperative to do work for the community
 - competition imperative of performing better than others
+
+the solution he finds is cooperation (examples of Nokia, Motorola), and the *sharp, mutual exchanges and mutual commitments* in the "total quality control" world of japanese industry: everyone aims for the best, and that gives an excuse to speak truth to power.
+
+**the separation of head and hand**: practice is the sustained exploration of problem-finding and problem-solving, which builds and expands skillsets, and then raises the bar.
+
+"The 'Eureka' moments that turn the lock in a practice that has jammed are embedded in routine". this develops embodied knowledge, but without disregarding the craftsman as a social outcast. the more practice one has, the more practical they become, and the easier it becomes to make the distinction between *correct* and *practical*
+
+"to do good work means to be curious about, to investigate, and to learn from *ambiguity*
+
+"Embedding" is making tacit, instinctive, but this experiential standard for making judgments/decisions is still seen as suspect by some.
+
+craftsmanship is relational thinking, not settling for quick fixes, *the conflict between tacit knowledge and explicit critique*
+
+#### the workshop
+
+*the workshop is a productive space in which people deal face-to-face with issues of authority* (authority vs. autonomy)
+
+the apprentice would learn by imitation, by copying. the journeyman had to show managerial competence, negotiating travel and stability.
+
+the difference between arts and crafts lies in part in the difference between private/subjectivity/autonomous/dominant agent/sudden (artist) and public/objectivity/interdependent/collective agent/slow (craftsman), which also introduces the question of the *original*, and what kind of social foundation it could provide (spoiler: a brooding one)
+
+originality also put a deadline on the workshop's life, since originality is by definition hard to pass on.

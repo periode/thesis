@@ -63,8 +63,8 @@ however, structuralism (internal dynamics of language) is different from formali
 
 relations between successive linguistic units are called *paradigmatic*, while the relations of the system as a whole is *paradigmatic*.
 
-for jakobson, the *dominant* is the element which holds the structure together (rhyme, meters, etc.)
-**bakhtin** talks, in *Art as Technique*, if the process of *defamiliarization*, through which art serves as a form of resistance to the world. discourse = language anchored in the current world. structuralism is the study of a "virtual" text (discourse) rather than the "physical" text (paper) stylization (new ends for a discourse) vs parody. and the **carnivalesque** is an inversion of hierarchy.
+for jakobson, the *dominant* is the element which holds the structure together (rhyme, meters, etc.) `>> is there a dominant in source code? if so, what could it be?`
+**bakhtin** talks, in *Art as Technique*, of the process of *defamiliarization*, through which art serves as a form of resistance to the world. discourse = language anchored in the current world. structuralism is the study of a "virtual" text (discourse) rather than the "physical" text (paper) stylization (new ends for a discourse) vs parody. and the **carnivalesque** is an inversion of hierarchy.
 **heteroglossia** is the environment in which a language lives and takes shape. it is this inclusion of social norms and values in the analysis of language which moves from formalism to structuralism (e.g. levi-strauss breaks down a myth a the level of its shortest possible sentence and then determines the function of each sentence and its relation to other sentences).
 
 #### cultural and critical theory
