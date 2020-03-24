@@ -2,13 +2,7 @@
 
 ## introduction
 
-"with this work we propose to demonstrate the thesis that aesthetics play a *particular* role in understanding code; the previous research has left many questions unanswered, and the data gathered is still insufficient."
-
-in the first chapter, bla
-
-in the second chapter, bla
-
-in conclusion, we will attempt to demonstrate, bla, ble and blu
+see [introduction.md]
 
 ---
 
