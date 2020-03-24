@@ -33,29 +33,29 @@
 
 ## feb 17
 
-- write first draft of intro
 - ~~gather online posts and comments on programming~~
 
 ## feb 24
 
 - ~~read clean code~~
-- gather online posts and comments on programming
+- ~~gather online posts and comments on programming~~
 
 ## mar 2
 
-- practice of programmers
+- ~~practice of programmers~~
 
 ## mar 9
 
-- practice of programmers
+- ~~practice of programmers~~
 
 ## mar 16
 
-- go through list established `week feb 17+24`
+- ~~nothing~~
 
 
 ## mar 23
 
+- write flourished outline of intro
 - go through list established `week feb 17+24`
 
 ## mar 30

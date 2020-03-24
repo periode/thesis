@@ -30,8 +30,14 @@ literature is the aesthetic usage of written language (tresor de la langue franc
 - art works to shape our basic sense of what is and what matters *in all of life* (heidegger)
 
 ranciere:
+
 - tissu du sensible
 
+"In the discourse of semiotics, recurrent features of form and style within the various expressive arts (poetry, drama, painting, sculpture, music, etc.) or expressive and poetic functions (sometimes termed aesthetic functions) which may be evoked within any kind of text. These tend to celebrate connotation and diversity of interpretation in contrast to logical or scientific codes which seek to suppress these values. See also [communicative functions](https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095627943)."
+[source](https://www.oxfordreference.com/view/10.1093/oi/authority.20110803095353999)
+
+
+[applied aesthetics](https://en.wikipedia.org/wiki/Applied_aesthetics), particularly on education, see [chap. 11 of understanding curriculum](https://eric.ed.gov/?id=ED410788)
 
 ## poetics
 

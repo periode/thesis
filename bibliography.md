@@ -29,6 +29,7 @@
 - the design of the unix operating system
 - algorithms + data structures = programs
 - why's poignant guide to ruby
+- programming classics: implementing the world's best algorithms, oliver
 
 ## media studies
 - rhetoric of video games, bogost [x]
