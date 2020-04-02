@@ -57,6 +57,7 @@
 
 - write flourished outline of intro
 - go through list established `week feb 17+24`
+- read the comparison of sudoku: http://ravimohan.blogspot.com/2007/04/learning-from-sudoku-solvers.html
 
 ## mar 30
 
@@ -71,7 +72,7 @@
 ## apr 13
 
 - the following month is dedicated to gathering and analyzing discourses and ideas about the aesthetic standards i've found
-
+- fishwick, aesthetic computing
 - find sources for aesthetic standards (e.g. simplicity, etc.)
 
 ## apr 20

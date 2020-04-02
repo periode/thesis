@@ -74,6 +74,12 @@ this second approach contrasts with the functional component of the first one, b
 
 this subsection also allow us to introduce the concept of *craftsmanship* and integrate it within a larger tradition of sennett/de certeau/rancière, and connect the practice of programmer to a longer history of craft, a history which in itself has beauty standards `TODO`
 
+the zen of python could tie in to that tradition
+
+[this](http://www.csharplearningsquare.com/2017/07/eight-golden-rules-for-better.html)  includes practical tips and software craftsmanship
+
+"to grok"
+
 ### 2.2 -  approaches to clarity in aesthetics and literature
 
 this section justifies the aesthetic framework that is chosen in order to apprehend our body of text. namely, it includes contributions from nelson goodman, kenneth burke, roland barthes, amongst others. perhaps a bit of bakhtin and jakobson and wittgenstein. all in all, it groups together both linguistics and aesthetics in a toolbox which will allow us to further investigate (on a more conceptual level) the elements we've excavated in [2.1.2] and [2.1.3]
@@ -96,9 +102,9 @@ this section takes on barthes distinction between the readerly and the writerly 
 
 #### 2.2.4 - bakhtin and social aesthetics
 
-this section concludes our framework construction by enriching it with a relational component, which, while at least implicit in previous contributions, is here expanded on a more social level. it's hard to separate an exploration of source code aesthetics while side-stepping the heightened features of the social group/s that programmers constitute. it might be possible to consider a piece of source as a "distributed *énonciation*", both towards the computer and the fellow human, but also a "delayed *énonciation*", because it isn't as immediate. and because it isn't immediate, there needs to be an adaptation of the concept of *presence* in craftsmanship; presence, a requisite in craftsmanship, is manifested through aesthetics. (`<-` that indeed tells us *why* we need aesthetics, but doesn't tell us *what* these aesthetics are. a closer reading of craftsmanship/aesthetics sources would however have more weight in light of this necessity for presence)
+this section concludes our framework construction by enriching it with a relational component, which, while at least implicit in previous contributions, is here expanded on a more social level. it's hard to separate an exploration of source code aesthetics while side-stepping the heightened features of the social group/s that programmers constitute. it might be possible to consider a piece of source as a "distributed *énonciation*", both towards the computer and the fellow human, but also a "delayed *énonciation*", because it isn't as immediate. and because it isn't immediate, there needs to be an adaptation of the concept of *presence* in craftsmanship; presence, a requisite in craftsmanship, is manifested through aesthetics. (`<-` that indeed tells us *why* we need aesthetics, but doesn't tell us *what* these aesthetics are. a closer reading of craftsmanship/aesthetics sources would however have more weight in light of this necessity for presence).
 
-before transitioning 
+this could also be related: **communities of practice**, by Jean Lave and Etienne Wenger [link](https://www.learning-theories.com/communities-of-practice-lave-and-wenger.html), which imples an **ethos**. this is taken from [this post](https://queue.acm.org/detail.cfm?id=3380777)
 
 ### 2.3 - clarity in computer philosophy and science/epistemology
 
@@ -165,6 +171,7 @@ this section looks at how language-dependent the previously exhibited features o
 #### 3.3.0 - a discussion of "idiomatic"
 
 `TODO` how does it relate to "understanding"?
+programming idioms - [c2](https://wiki.c2.com/?ProgrammingIdiom) - [so](https://stackoverflow.com/questions/302459/what-is-a-programming-idiom)
 
 #### 3.3.1 - language-dependent features
 
