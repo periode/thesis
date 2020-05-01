@@ -54,12 +54,12 @@ could these be viewed as two kinds of writing?
 - what are the *unique* ways that code can demonstrate/express an aesthetic sentiment?
 - - what are its *structures*, *vocabularies* and *syntaxes* (Cayley)?
 - - what are the (interpretative, critical) *techniques* to identify these aforementioned?
-- - how do those establish a *tension*? (tension being a prerequisite for an aesthetic experience -or a (re)solving of said tension)
+- - how do those establish a *tension*? (tension being a prerequisite for an aesthetic experience -or a (re)solving of said tension) > the tension is already established from the get go as a programming is inherently hard to comprehend (**why**?)
 
 - what are the useful conceptual tools that i use from the research on e-lit (e.g. combinations, potential, interactivity, ... **check the book by hannes bajohr, code und Konzept**)?
 - - if compilation make the source code poem lose its specificity, how does that help us define what that specificity is?
 - are existing theories applicable? to what extent do we need to modify them? to what extent do we need new ones?
-- - theories for what? theories to explain *how* source code can be a means of creating aesthetic objects.
+- - theories for what? theories to explain *how* source code can be a means of creating aesthetic objects. <- **this is important**
 - what are the notions of literature? text, fiction, account, figure, materiality, author, literarity, context, commitment (?), fragment (**this one works with source code modules**, in space rather than time)
 
 ### typology
@@ -69,7 +69,7 @@ could these be viewed as two kinds of writing?
 - - socio-economically (enterprise, hack, poet)?
 
 ### object (object of code's discourse)
-- what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even? how (semiotically and aesthetically)?
+- what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even? how (semiotically and aesthetically)? -> making the thought process visible
 - how does the creative/aesthetic use of code start to involve the rest of the world rather than simply the self-reference?
 
 ---
@@ -90,7 +90,7 @@ could these be viewed as two kinds of writing?
 - - productive software
 - - - need to identify the place of uselessness in productivity
 - - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
-- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity")
+- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity"). but that's really just a subsection of the whole thesis
 
 - expressing vs. explaining (Kurosawa)
 
