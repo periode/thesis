@@ -5,7 +5,10 @@
 ---
 summary
 
-making is thinking
+making is thinking: overall a focus on *externalizing*, on the making-other. emphasis on materiality, on the bodily, on restraint. fairly decent historical account but sometimes reads like he's drawing conclusions without enough evidence. nice line of thought, though. reconnects with rancière and dewey on the philosophical part of craftmanship. chapter on "the honest brick", i.e. what is a good material realization? bringing forth.
+
+arousing tools and resistance/ambiguity. exploration, curiosity.  how do you negotiate that with the need for "the definite". can a thing be "definite enough"? most likely. too much definition locks the future down, while practicality aims at supporting multiple futures (lit: open-ended narration? eye of the beholder?)
+
 ---
 
 #### prologue
