@@ -115,7 +115,20 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
 
+
+can source code support multiple readings? should it?
+however, ideally source code has no depth: it is what it does > but hidden depths have to do with the nature/function of the work
+"What it means for something to have “depth” is that its explanation requires bringing in something like that, something of a different nature, something that does a kind of work no additional detail ever could."
+perceivable (but still hidden) vs. shown
+looking harder vs. looking differently
+
+style as managing ambivalent attachments to big social forms > mcgurl, d.a. miller
+
 **problematiques importantes**: dispositifs et mediations
+
+DRY is actually a problem: humans understand if you repeat them over and over. how do you compromise that?
+
+**IS THERE A RIGHT WAY TO WRITE BEAUTIFUL CODE?**
 
 ## concepts / frames
 
@@ -132,7 +145,6 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 - - **(1)** stylistically, at the micro-level (style), (developing theoretical tools, frames of analysis, close readings, new reading postures -e.g. readers as compilers and interpreters)
 - - **(2)** empirically, at the macro-level (genre), (other domains, such as style guides, comments, new corpuses that have been released since the previous studies (source code poetry, etc.))
 - - **(3)** linguistically (analysis and design of programming languages) (parts 1 and 2 will have to solidly argue as to why one should care about languages/materiality -classes and structs are the new materiality??)
-- and then some of the poems/languages i write also
 
 *art is a breach in the system*
 
@@ -167,3 +179,5 @@ how beautiful code defines its own beauty?
 
 **the programming languages**
 - esolangs have a "wimpmode"
+
+**turing paper 1936**: the first instance of source code makes the explicit distinctions about layout of binary ("this is less easy to follow..."). can be a good starting example of the importance of form.

@@ -378,95 +378,242 @@ EXPLICITNESS is valuable
 
 [link](https://realpython.com/python-pep8/)
 
-use blank lines sparingly inside function definitions to show clear steps (like the "decisive moment")
+use blank lines sparingly inside function definitions to show clear steps (like sennett's "decisive moment")
 
 ## learning and finding out the beauty of cobol
 
 [link](https://devops.com/the-beauty-of-the-cobol-programming-language-v2/)
 
+*"Well-written code is a work of art. Always has been, always will be. A programmer pulls a thought pretty much out of nowhere and transforms it into a working idea that can be used by others. It’s abstract expression made real"*
+
+COBOL is forcing layout through its division/section/paragraph/statement/character
+
+also considered "natural-language" expressive: the author says it's similar to `chai` in `nodeJS`
+
 ## the beauty of doom's source code
 
 [link](https://kotaku.com/the-exceptional-beauty-of-doom-3s-source-code-5975610)
+
+*Code should be locally coherent and single-functioned: One function should do exactly one thing. It should be clear about what it’s doing.*
+
+*Local code should explain, or at least hint at the overall system design.*
+
+*Self-documenting*
+
+*The const rule, and no input/output parameters is probably the single most important thing, in my eyes, that separate good code from beautiful code.*
+
+examples of ugly libraries (unreadable because of C's Standard Template Library's complexity) http://loki-lib.sourceforge.net/index.php?n=Main.Download / https://www.boost.org/
+
+reading id's source code, there is the hint that "good practice" isn't beautiful. beautiful could mean leaving "best practice" behind
+
+Doom is beautiful because it is "anti-generic", 
+
+
+PARSING BY THE MACHINE VS. PARSING BY THE HUMAN
+
+
+**const** and **no input/output**. Why??
+
+beautiful code can be edited (using brackets {} everywhere even when optional)
 
 ## more detailed version
 
 [link](http://fabiensanglard.net/doom3/index.php)
 
+**TODO**
+
 ## princeton's guide to writing clear code
 
 [link](https://introcs.cs.princeton.edu/java/11style/)
+
+*"You will appreciate the importance of good style when it is your task to understand and maintain someone else's code!"*
+
+- short and manageable
+- language-specific idioms
+- straightforward control flow
+- no magic numbers
+
+they hint at the difference between *meaning* and *value*
+
+again, the comments are the *why*
+
+## how to write unmaintainable code
+
+[link1](https://archive.is/Pn5hH#selection-233.172-233.174) - [link2](https://www.mindprod.com/jgloss/unmain.html)
+
+definition by the opposite
 
 ## freecodecamp opinion on writing comments in code
 
 [link](https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/)
 
+comments:
+- documentation (for APIs and such, because it's reading the software (applications) and not the code (actual lines)). still, it should be as close as possible to the actual code.
+- clarification (others + future self)
+
 ## review of "beautiful code"
 
 [link](https://blog.eisele.net/2011/01/review-beautiful-code-leading.html)
+
+"you have to understand the equations before you understand the beauty of the code"
+
+excerpt from an interview with the editor:
+
+"Safari: What was the most challenging part of putting together Beautiful Code?
+Wilson: Believe it or not, it was persuading people that they actually had something to contribute. Many of the authors' first reaction when we approached them was, "That sounds great, but I don't think I've ever written any code I'd call 'beautiful'.""
+
+this relates to craftsmanship
 
 ## testimony on why someone loves to code (re: psychology of programming)
 
 [link](https://www.regpacks.com/blog/5-reasons-im-passionate-coding-whats-passion/)
 
+- code is "usable art"
+- collaborative effort
+- has a positive effect (...)
+- "if i can think it, i can make it reality"
+
 ## clean code in angular
 
 [link](https://itnext.io/clean-code-checklist-in-angular-%EF%B8%8F-10d4db877f74)
+
+"Programmers are really authors and other developers are their target audience."
+
+usual coherence, meaningfulness
+
+"code never lies, comments do"
+
+otherwise it's highly specific to Angular, advising a lot of tool uses (TS, etc.), but at the same time remaining at the level of "write readable code that is easy to understand" -> this is not a definition at all
 
 ## best comments in source code from stackoverflow
 
 [link](https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered)
 
+classic, mostly about fun, personality, emotions
+also about stupidity.
+
+there are no "beautiful comments" (ornament is crime?)
+
 ## interview with one of the authors included in *beautiful code*
 
 [link](https://www.zdnet.com/article/the-secret-to-creating-pretty-code/)
+
+"blending theory": code that is included should blend in with the original style
 
 ## personal account of coding
 
 [link](http://letsblogalot.blogspot.com/2014/01/code-code-beautiful-code.html)
 
+different kinds of learning: documentation or examples or trial and error (these could be separate fields of practice)
+
+the author is a highschool kid who's very excited
+
 ## javascript specific clean code
 
 [link](https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/)
+
+yet another *clean code* quote\
+
+meaningful naming is *intention-revealing* names
+
+we never want side-effects
+
+stepdown rule of function declaration (always have the more general functions at the top, the more specific at the bottom)
 
 ## summary of *clean code*
 
 [link](https://cvuorinen.net/2014/04/what-is-clean-code-and-why-should-you-care/)
 
+easy to understand:
+- the execution flow of the entire application (HOWb)
+- how the different objects collaborate with each other (HOW)
+- the role and responsibility of each class (WHAT)
+- what each method does (WHAT)
+- what is the purpose of each expression and variable (WHY)
+
 ## personal take on the aesthetics of code
 
 [link](http://theorangeduck.com/page/aesthetics-code)
+
+this is written by an **artist**, who assigns to programming "the joy of self-expression".
+
+*"The key is this: to express yourself within programming all decisions must be personal. They cannot be prescribed from a boss, textbook, or dogma. They must come from the head and heart."*
+
+"At my most cynical Java, and Design Patterned Object Orientation are paint by numbers. No one would dispute that guidelines, techniques and study are important in all craft - but just ensuring not to color outside the lines doesn't give any satisfaction. One could never write poetry in Java. It wouldn't compile."
+
+the tension between individual creativity/genius and need to work in a group
 
 ## stackoverflow: do you care about the aesthetics of your code?
 
 [link](https://stackoverflow.com/questions/1079645/are-you-concerned-about-the-aesthetics-of-your-code)
 
+this was asked in 2009, so a little dated
+
+"beautiful code is not always good, but good code is always beautiful"
+
+David Hall: "I always make my code look good. It's a visual representation of who I am"
+
 ## art of readable code (book), chap. 4
 
 [link](https://www.oreilly.com/library/view/the-art-of/9781449318482/ch04.html)
+
+mostly about layout. (not as relevant with color-coded IDEs?)
+
+again, the author states that it's OBVIOUS that it's easier to work with code that is aesthetically pleasing. and that is because aesthetics alleviate cognitive pain, by leveraging "the emotional side of our brain" (for lack of a better phrase describing the non reason-side of things). there are also two means of understanding: understanding groups of people, understanding groups of languages, and understanding groups of languages
+
+and does code-as-craftmanship have anything to do with language/litterature?
+
+still, code as paragraphs.
+
+consistency is more important than correctness
 
 ## sql aesthetics
 
 [link](https://sql.marcus-belz.de/?p=143)
 
+sql is unique because is doesn't have a "style" --> does that mean you require a certain level of complexity to get into that style?
+
+sql is based on mathematical set theory
+
+beauty = structure + format (because meaning and intent can be derived from appearance only)
+
+the rest of the article is more about making it IDE-friendly (another level of machine-understanding?) than about the syntax of sql itself
+
 ## interesting personal post on aesthetics, understanding and familiarity in code
 
 [link](https://avraam.dev/posts/greek-to-me/)
+
+understanding languages is about familiarity, and not ability
+
+*Idiomatic: Using, containing, or denoting expressions that are natural to a native speaker.*
+
+**who is reading?** (here, ideally it's the least experienced developer on the team)
+
+"there is no space for poetry in production systems" > doom? unix?
 
 ## medium post on clean code
 
 [link](https://medium.com/@raihansyah.dean/clean-code-aesthetics-of-coding-6ff207f08771)
 
+"clean code should make you smile, the way something that makes you happy would" > emotion in reading
+
 ## refactoring and aesthetics
 
 [link](https://www.sitepoint.com/cleaning-up-code-is-refactoring-for-aesthetics-worth-it/)
+
+obvious summary + examples of clean code
 
 ## discussion on improving the aesthetics of perl code
 
 [link](https://www.perlmonks.org/?node_id=423968)
 
-## perl user-generated style-guide
+from [this comment](https://developers.slashdot.org/comments.pl?sid=126697&cid=10598210), one of the interesting things is "do not use `unless` because it's unique to Perl and confusing"... but what about idiomatic?
 
-[link](https://developers.slashdot.org/comments.pl?sid=126697&cid=10598210)
+and then in the original post comes a lot of (polite) disagreements
+
+AnonymousMonk: "When I was a programming novice, I didn't comment much.
+When I was a programming acolyte, I commented a lot.
+Now I am a programming master, and I try to minize the comments in my programs. "
 
 ## personal account of beautiful code
 
@@ -474,4 +621,4 @@ use blank lines sparingly inside function definitions to show clear steps (like 
 
 
 
-"why is it hard to write clean code?"****
+"why is it hard to write clean code?"
