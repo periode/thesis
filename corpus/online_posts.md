@@ -1,5 +1,26 @@
 # online posts and comments on aesthetics of code
 
+## overall review
+
+a lot of conventional wisdom about what it means to write beautiful code. a lot of blogs posts repeating best practices (clean code, software craftsmanship), constant re-appearance of structure vs. layout.
+
+things that come back over and over:
+
+- structure vs. layout vs. (meaningful) naming
+- write for other programmers, not for yourself
+- aesthetics are subjective, but I give the same advice as everyone else
+
+but then there are disagreements:
+
+- idiomatic vs. not idiomatic?
+- clever vs. explicit?
+- keeping vs. not keeping curly braces
+
+
+really what this highlights is both some sort of common knowledge, based on practices and thinkers/mentors ("uncle bob"), but at the same time a diversity of communities of practices, and different levels of expertise.
+
+---
+
 ## beautiful code according to blogger
 
 [link 1](https://zinascii.com/2020/goodbye-joyent.html) - [link 2](https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308)
