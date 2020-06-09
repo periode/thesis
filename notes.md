@@ -7,6 +7,8 @@
 
 ---
 
+aesthetics in software engineering is not about the program, it's about the programmer.
+
 the aesthetics of clarity in executable source code
 
 **are the aesthetics of clarity language-dependent?**
@@ -94,6 +96,8 @@ could these be viewed as two kinds of writing?
 
 - expressing vs. explaining (Kurosawa)
 
+- 'There is no such thing as elegance or subtlety in the way I use software.' Belgrade-based sound artist Svetlana Maraš > there are other aesthetics: brutality, organicness, rococo, etc. elegance and subtly are only subsets
+
 - programming languages as actors in actor network theory?
 
 - programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation*
@@ -115,12 +119,14 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
 
-
 can source code support multiple readings? should it?
-however, ideally source code has no depth: it is what it does > but hidden depths have to do with the nature/function of the work
+
+however, ideally source code has no depth: it is what it does > but hidden depths have to do with the nature/function of the work **and the social field in which it exists**
 "What it means for something to have “depth” is that its explanation requires bringing in something like that, something of a different nature, something that does a kind of work no additional detail ever could."
 perceivable (but still hidden) vs. shown
 looking harder vs. looking differently
+
+*Some col-leagues (such as Thomas Kühne from Victoria University of Wellington) have taken thisfurther to explicitly define the limited properties of any model. Kühne (2005) describesthis in three ways:mapping–(i.e. acknowledging that models are projections of an orig-inal);reduction–(i.e. acknowledging that models only represent a selection of relevantproperties of the original); andpragmatics–(i.e. acknowledging that any model isaccepted as a proxy for the original only for a specific purpose).*
 
 style as managing ambivalent attachments to big social forms > mcgurl, d.a. miller
 

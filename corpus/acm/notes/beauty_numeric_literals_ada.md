@@ -3,7 +3,7 @@
 
 recalling his first encounter with numeric literals in Ada, a gem
 
-fun fact: you can insert underscores to separate groups of digits: `3.14159_26535_etc`
+fun fact: you can insert underscores to separate groups of digits: `3.14159_26535_etc` (fun fact? beautiful fact?)
 
 based literal methods: in C, it's unintuitive/strange (arbitrary), while in Ada you can write it consistently (formal) in however many bases you want (structural, base 2, 8, 10, 16)
 

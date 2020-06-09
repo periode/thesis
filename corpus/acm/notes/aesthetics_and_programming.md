@@ -6,7 +6,7 @@ he interviews programmers and shows how essential aesthetics and emotions are to
 
 ---
 
-practice of 'super-programmers', whom visualize the program as 3d structures. the suggestion of the paper is that there is such a thing as **absolute beauty**.
+practice of *"super-programmers"*, whom visualize the program as 3d structures. the suggestion of the paper is that there is such a thing as **absolute beauty**.
 
 maybe there is a correlation between absolute and functional. that which is absolute (objective), is that which works (functions)
 

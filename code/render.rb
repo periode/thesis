@@ -64,7 +64,8 @@ fashion = %{
 
 everything.each do | it |
 	# everyone needs a place to stay
-	es = /(\w*\/)\w+/
+	es = /(\w*\/?\w*\/?\w*\/?)\w+/
+	puts it
 	a_home = it.match(es)
 	FileUtils.mkdir_p 'docs/'+remember+'/'+a_home.to_s#tay
 
