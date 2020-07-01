@@ -18,3 +18,7 @@
 - brief names of variables so that the reader can focus on the structure [source](http://syedirfanhyder.blogspot.com/2013/03/beauty-is-our-business-mathematics-and.htmlhttp://syedirfanhyder.blogspot.com/2013/03/beauty-is-our-business-mathematics-and.html). **verbs are functions, variables are nouns**
 
 - conciseness > brevity
+
+code only stops being literature when it is directed at other technological apparatuses
+- corollary: is there anything related to literature at all when talking about code/hardware?
+  - isn't it just that it's focused on linguistics? what is the connection between linguistics and lit?

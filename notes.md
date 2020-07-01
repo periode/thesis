@@ -1,6 +1,7 @@
 # notes
 
 ## meta-questions
+
 - what is the distinction between **creative** and **aesthetic** writing of source code?
 - decide between **writing** and **reading**? **usage** and **possibilities**?
 - what definition of **code** do i want to choose?
@@ -11,25 +12,13 @@ aesthetics in software engineering is not about the program, it's about the prog
 
 the aesthetics of clarity in executable source code
 
-**are the aesthetics of clarity language-dependent?**
-
 "experientialism" / experiential realism
 
 questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)?
 
-semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a sympbol without understanding it
-
-understanding the symbol vs. understanding what the symbol refers to
+semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a symbol without understanding it -> understanding the symbol vs. understanding what the symbol refers to.
 
 there is always a bit of giving up the understanding (linux kernel, APIs, etc.). does it remove the essence or in contrary highlight it?
-
-the role of case studies: develop an outline from looking at code, then confront that outline (which will probably be multifaceted) with case studies (2-3)
-
-what do programmers have been implicitly saying in their discourses about code?
-
-what is the difference between poetics and aesthetics? poetics put together an effect (formal, subjective) vs. aesthetics are more universal, inherent, contemplative?
-
-draft a couple of paragraphs on machine understanding ++ the difference between poetics and aesthetics
 
 ---
 
@@ -37,21 +26,17 @@ STRATEGY VS. TACTICS
 
 but tactics could actually be the tip of the manifestation of a yet unknown (the personal?) strategy.
 
----
-
-ENGINEERING VS. CRAFT
-
-could these be viewed as two kinds of writing?
+aesthetics as a relationship to the human: if tactics is what makes the individual, strategy is what forces the group > as code matures, there is a switch to a different kind of individuality (mass-production of code)
 
 ---
 
 ## questions
 
-- what are the literary standards to which code can be held to?
+- what are the literary standards to which code can be held to? what are **OTHER** standards?
 
 ### tools
-- what is *source code*, as a literary object? (aka does it need to be defined from the definitions of lit / e-lit? )
-- how is the aesthetic value of source code different from the aesthetic value of digital art?
+
+- what is *source code*, as a ~~literary~~ **linguistic** object? (theoretical linguistics, craft linguistics, literary linguistics)
 
 - what are the *unique* ways that code can demonstrate/express an aesthetic sentiment?
 - - what are its *structures*, *vocabularies* and *syntaxes* (Cayley)?
@@ -65,13 +50,15 @@ could these be viewed as two kinds of writing?
 - what are the notions of literature? text, fiction, account, figure, materiality, author, literarity, context, commitment (?), fragment (**this one works with source code modules**, in space rather than time)
 
 ### typology
+
 - how can source code lit be categorized according to different periods?
 - - historically?
 - - linguistically (i.e. different programming languages)
 - - socio-economically (enterprise, hack, poet)?
 
 ### object (object of code's discourse)
-- what is code trying to make visible (following deleuze on bacon)? forces? hysteria? time? space? can it, even? how (semiotically and aesthetically)? -> making the thought process visible
+
+- what is code trying to make visible (following deleuze on bacon)? rather it doesn't make visible, but rather "intelligible"? how (semiotically and aesthetically > how do those two differ)? -> making the thought process visible/graspable/embodied/emmaterialized
 - how does the creative/aesthetic use of code start to involve the rest of the world rather than simply the self-reference?
 
 ---
@@ -80,6 +67,8 @@ could these be viewed as two kinds of writing?
 
 "efficient code" depends on knowing the material that you are working with: in the 1970s, it was the compiler (kernighan, *elements of programming style*). in the 2000s, it might be just the language spec.
 
+code as substitute-material
+
 ---
 
 ## thoughts
@@ -87,16 +76,16 @@ could these be viewed as two kinds of writing?
 - double-meaning (paloque) is the fact that one can play between machine-language and human-language
 - - possible triple-meaning with an interplay in conceptual structures (OOP)
 - - creativity might then be that we're applying software metaphors to classes of concordance
-- referring to software itself
-- referring to the environment in which software exists
-- - productive software
-- - - need to identify the place of uselessness in productivity
-- - but also the fact that the domain of application of software can always expand can always expand (from a computational perspective)
-- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity"). but that's really just a subsection of the whole thesis
+- referring to software itself **done** > hardware, language, algorithm
+- referring to the environment in which software exists > problem domain, collaborators
+- - productive software **done**
+- - - need to identify the place of uselessness in productivity **yes! important**
+- - is it relevant that the domain of application of software can always expand? (from a computational perspective, and from a practical perspective)
+- - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity"). we also need to assess **what** it is that it is intended to do.
 
-- expressing vs. explaining (Kurosawa)
+- expressing vs. explaining (Kurosawa) / hinting at (Tolstoi)
 
-- 'There is no such thing as elegance or subtlety in the way I use software.' Belgrade-based sound artist Svetlana Maraš > there are other aesthetics: brutality, organicness, rococo, etc. elegance and subtly are only subsets
+- 'There is no such thing as elegance or subtlety in the way I use software.' Belgrade-based sound artist Svetlana Maraš > there are other aesthetics: brutality, organicness, rococo, etc. elegance and subtlelty are only subsets, but very very large ones
 
 - programming languages as actors in actor network theory?
 
@@ -119,14 +108,14 @@ Prosody may reflect various features of the speaker or the utterance: the emotio
 
 - marino: *"Much of this preliminary work on code has tried to determine what constitutes this unique semiotic system, work that prepares the discussion of code analysis, but CCS needs techniques for developing particular coding structures."*
 
-can source code support multiple readings? should it?
+can source code support multiple readings? should it?$$
 
 however, ideally source code has no depth: it is what it does > but hidden depths have to do with the nature/function of the work **and the social field in which it exists**
 "What it means for something to have “depth” is that its explanation requires bringing in something like that, something of a different nature, something that does a kind of work no additional detail ever could."
 perceivable (but still hidden) vs. shown
 looking harder vs. looking differently
 
-*Some col-leagues (such as Thomas Kühne from Victoria University of Wellington) have taken thisfurther to explicitly define the limited properties of any model. Kühne (2005) describesthis in three ways:mapping–(i.e. acknowledging that models are projections of an orig-inal);reduction–(i.e. acknowledging that models only represent a selection of relevantproperties of the original); andpragmatics–(i.e. acknowledging that any model isaccepted as a proxy for the original only for a specific purpose).*
+*Some colleagues (such as Thomas Kühne from Victoria University of Wellington) have taken this further to explicitly define the limited properties of any model. Kühne (2005) describesthis in three ways:mapping–(i.e. acknowledging that models are projections of an orig-inal);reduction–(i.e. acknowledging that models only represent a selection of relevantproperties of the original); andpragmatics–(i.e. acknowledging that any model isaccepted as a proxy for the original only for a specific purpose).*
 
 style as managing ambivalent attachments to big social forms > mcgurl, d.a. miller
 
@@ -171,6 +160,7 @@ how beautiful code defines its own beauty?
 
 
 ## corpuses
+
 - **the poem**
 
 - **the novel**
@@ -187,3 +177,12 @@ how beautiful code defines its own beauty?
 - esolangs have a "wimpmode"
 
 **turing paper 1936**: the first instance of source code makes the explicit distinctions about layout of binary ("this is less easy to follow..."). can be a good starting example of the importance of form.
+
+
+## OBSOLETE
+
+what is the difference between poetics and aesthetics? poetics put together an effect (formal, subjective) vs. aesthetics are more universal, inherent, contemplative? **solved**
+
+the role of case studies: develop an outline from looking at code, then confront that outline (which will probably be multifaceted) with case studies (2-3) **solved**
+
+how is the aesthetic value of source code different from the aesthetic value of digital art? **irrelevant**

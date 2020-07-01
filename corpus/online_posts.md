@@ -16,8 +16,7 @@ but then there are disagreements:
 - clever vs. explicit?
 - keeping vs. not keeping curly braces
 
-
-really what this highlights is both some sort of common knowledge, based on practices and thinkers/mentors ("uncle bob"), but at the same time a diversity of communities of practices, and different levels of expertise.
+really what this highlights is both some sort of common knowledge, based on practices and thinkers/mentors ("uncle bob"), but at the same time a diversity of communities of practices, and different levels of expertise, which ultimately results in different understandings.
 
 ---
 
@@ -25,7 +24,7 @@ really what this highlights is both some sort of common knowledge, based on prac
 
 [link 1](https://zinascii.com/2020/goodbye-joyent.html) - [link 2](https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308)
 
-he talks about a beautiful patch for a faster clocktime on illumos, a version of BSD. `reached out to the author for explanation`.
+he talks about a beautiful patch for a faster clocktime on illumos, a version of BSD. `reached out to the author for explanation`. (he never replied)
 
 ## beautiful code exists (acm queue)
 
@@ -60,7 +59,7 @@ these are recommendations on reading *Beautiful Code*, *Literate Programming*.
 
 the author states that ugliness is self-explanatory, but that beauty is elusive (they still don't define ugliness).
 
-his main arugment is that of *hamon*, the wavy pattern on the edge of a japanese blade which indicates its quality. they see the same thing with code, there's a pattern that's an indicator of its quality.
+his main argument is that of *hamon*, the wavy pattern on the edge of a japanese blade which indicates its quality. they see the same thing with code, there's a pattern that's an indicator of its quality.
 
 - indentation
 - spacing
@@ -73,7 +72,8 @@ this introduces the possibility of **different scales** at which we read code. a
 
 [link](http://www.literateprogramming.com/)
 
-a series of excerpts from the knuth fan club. one interesting point is that Lit Programming is a *paradigm*, a sort of *meta-text* that goes on top. it's a target. but is it still source code? does it qualify as a craft, or does it just move the craft to another layer, that of writing TeX docs? (which is def a fucking craft). however, while LP highlights the human reader more than the machine reader, i'd argue that the way that humans read source code is different from the way humans read books, and that there are techniques in source code which help understand the code better (conceptual distances, metaphors, separating concerns), and that those are poorly represented in LP. in fact, LP is efficient, but not elegant on the aesthetic level; because it abstracts the details, some of the beauty is lost.
+a series of excerpts from the knuth fan club. one interesting point is that Lit Programming is a *paradigm*, a sort of *meta-text* that goes on top. it's a target. but is it still source code? does it qualify as a craft, or does it just move the craft to another layer, that of writing TeX docs? (which is def a fucking craft). however, while LP highlights the human reader more than the machine reader, i'd argue that the way that humans read source code is different from the way humans read books (i.e. you should be able to understand what the code does by reading/jumping to any part of it *and yet* you should be able to read it linearly without jumping back and forth: this multiple requirement of code-reading represents the multiple expected uses of code),
+and that there are techniques in source code which help understand the code better (conceptual distances, metaphors, separating concerns), and that those are poorly represented in LP. in fact, LP is efficient, but not elegant on the aesthetic level; because it abstracts the details, some of the beauty is lost.
 
 ## stackexchange answer on explaining beautiful code ot non-programmers
 
@@ -91,7 +91,7 @@ Mason Wheeler: "When it requires a lot of explanation like that, it's not "beaut
 
 asoundmove: adds "it must also subjectively feel perfect & light"
 
-user21007 (as above): adds that if it's self-explanatory, it must also be non-trivial. and it must take into account that it is **maintainable**, and in the **right language**. given that, `hello, world!`, couldn't be called beautiful.
+user21007 (as above): adds that if it's self-explanatory, it must also be non-trivial. and it must take into account that it is **maintainable**, and in the **right language**. given that, `hello, world!`, couldn't be called beautiful; because the *why* and the *how* are actually already solved before even looking at it.
 
 Macneil: "coding problems are about conceptualization, so beautiful code represents a remarkable conceptualization of the problem", and a beautiful execution. (programming really is just the craft of ideas). "for instance, when a problem can be reduced to an existing problem, it gives us an insight into the nature of the problem itself." (and elegance uses simple trucks to achieve difficult tasks). he concludes with `quicksort`.
 
@@ -157,7 +157,7 @@ Lucas Wiman: difference between two attemps of solving sudoku (norvig vs. ron je
 
 Alexey Spizhevoy: the balance between easiness (to read, maintain) and smart ideas, originality. he refers to *Zen and The Art of Motorcycle Maintenance* (craft)
 
-John Rainey: quoting his college prof, "elegant code provides the simplest soolution to a problem"
+John Rainey: quoting his college prof, "elegant code provides the simplest solution to a problem"
 
 Mario Hines: gives an example, but doesn't say why.
 
@@ -193,11 +193,11 @@ he calls small enough functions "pure" functions
 
 [link](https://medium.com/swlh/excellent-code-clean-and-beautiful-code-b541ca4b5a39)
 
-follows bob marting (*Clean Code*) a lot. following this idea of software craftsmanship, describes two components necessary to it: *knowledge* (heuristics, patterns, principles) and *work* (the emobided component). it's all about practice.
+follows bob martin (*Clean Code*) a lot. following this idea of software craftsmanship, describes two components necessary to it: *knowledge* (heuristics, patterns, principles) and *work* (the embodided component). it's all about practice.
 
 the name of a variable/function should answer: why it exists, what it does, and how it is used. this requires descriptive/syntactical skills but also a shared cultural background.
 
-"master programmers think of functions as stories to be told rather than code to be written"
+"master programmers think of functions as stories to be told rather than code to be written" > but to what extent is that a fantasy? is it confirmed anywhere? by yukihiro matsumoto, i guess.
 
 cleanly formatted code is a matter of presentation, of communication, of reputation
 
@@ -315,7 +315,7 @@ quotes [this post](https://docs.microsoft.com/en-us/archive/msdn-magazine/2004/j
 
 "Elegance combines simplicity, efficiency, and brilliance, and produces a feeling of pride. Elegance is when you replace a procedure with a table, or realize that you can use recursion—which is almost always elegant"
 
-and then he gives the example of `fibonacci`, so i'd need to investigate if fibonacci is elegant on its own, or if it's a playground for elegance.
+and then he gives the example of `fibonacci`, so i'd need to investigate if fibonacci is elegant on its own, or if it's a playground for elegance. (a couple of months later: nah. there are definitely ugly implementations of fibonacci)
 
 Clarity of code. Clarity of design. Clarity of purpose.  (related to the differrent scales of appreciation)
 
@@ -405,7 +405,7 @@ use blank lines sparingly inside function definitions to show clear steps (like 
 
 [link](https://devops.com/the-beauty-of-the-cobol-programming-language-v2/)
 
-*"Well-written code is a work of art. Always has been, always will be. A programmer pulls a thought pretty much out of nowhere and transforms it into a working idea that can be used by others. It’s abstract expression made real"*
+> "Well-written code is a work of art. Always has been, always will be. A programmer pulls a thought pretty much out of nowhere and transforms it into a working idea that can be used by others. It’s abstract expression made real"
 
 COBOL is forcing layout through its division/section/paragraph/statement/character
 
@@ -419,7 +419,7 @@ also considered "natural-language" expressive: the author says it's similar to `
 
 *Local code should explain, or at least hint at the overall system design.*
 
-*Self-documenting*
+*Self documenting*
 
 *The const rule, and no input/output parameters is probably the single most important thing, in my eyes, that separate good code from beautiful code.*
 
@@ -427,13 +427,11 @@ examples of ugly libraries (unreadable because of C's Standard Template Library'
 
 reading id's source code, there is the hint that "good practice" isn't beautiful. beautiful could mean leaving "best practice" behind
 
-Doom is beautiful because it is "anti-generic", 
-
+Doom is beautiful because it is "anti-generic". in that, it has style.
 
 PARSING BY THE MACHINE VS. PARSING BY THE HUMAN
 
-
-**const** and **no input/output**. Why??
+**const** and **no input/output**. Why?? (a couple of months later: local coherence)
 
 beautiful code can be edited (using brackets {} everywhere even when optional)
 
@@ -441,7 +439,7 @@ beautiful code can be edited (using brackets {} everywhere even when optional)
 
 [link](http://fabiensanglard.net/doom3/index.php)
 
-**TODO**
+**TODO** lol
 
 ## princeton's guide to writing clear code
 
@@ -469,6 +467,7 @@ definition by the opposite
 [link](https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/)
 
 comments:
+
 - documentation (for APIs and such, because it's reading the software (applications) and not the code (actual lines)). still, it should be as close as possible to the actual code.
 - clarification (others + future self)
 
@@ -489,7 +488,7 @@ this relates to craftsmanship
 
 [link](https://www.regpacks.com/blog/5-reasons-im-passionate-coding-whats-passion/)
 
-- code is "usable art"
+- code is "usable art" (within the realm of softare engineering)
 - collaborative effort
 - has a positive effect (...)
 - "if i can think it, i can make it reality"
@@ -533,7 +532,7 @@ the author is a highschool kid who's very excited
 
 [link](https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/)
 
-yet another *clean code* quote\
+yet another *clean code* quote
 
 meaningful naming is *intention-revealing* names
 
@@ -546,7 +545,8 @@ stepdown rule of function declaration (always have the more general functions at
 [link](https://cvuorinen.net/2014/04/what-is-clean-code-and-why-should-you-care/)
 
 easy to understand:
-- the execution flow of the entire application (HOWb)
+
+- the execution flow of the entire application (HOW)
 - how the different objects collaborate with each other (HOW)
 - the role and responsibility of each class (WHAT)
 - what each method does (WHAT)
@@ -558,19 +558,21 @@ easy to understand:
 
 this is written by an **artist**, who assigns to programming "the joy of self-expression".
 
-*"The key is this: to express yourself within programming all decisions must be personal. They cannot be prescribed from a boss, textbook, or dogma. They must come from the head and heart."*
+> "The key is this: to express yourself within programming all decisions must be personal. They cannot be prescribed from a boss, textbook, or dogma. They must come from the head and heart."
 
-"At my most cynical Java, and Design Patterned Object Orientation are paint by numbers. No one would dispute that guidelines, techniques and study are important in all craft - but just ensuring not to color outside the lines doesn't give any satisfaction. One could never write poetry in Java. It wouldn't compile."
+and
+
+> "At my most cynical Java, and Design Patterned Object Orientation are paint by numbers. No one would dispute that guidelines, techniques and study are important in all craft - but just ensuring not to color outside the lines doesn't give any satisfaction. One could never write poetry in Java. It wouldn't compile."
 
 the tension between individual creativity/genius and need to work in a group
 
-## stackoverflow: do you care about the aesthetics of your code?
+## stackoverflow: do you care about the aesthetics of your code
 
 [link](https://stackoverflow.com/questions/1079645/are-you-concerned-about-the-aesthetics-of-your-code)
 
 this was asked in 2009, so a little dated
 
-"beautiful code is not always good, but good code is always beautiful"
+"beautiful code is not always good, but good code is always beautiful" bauhaus as fuck
 
 David Hall: "I always make my code look good. It's a visual representation of who I am"
 
@@ -580,7 +582,7 @@ David Hall: "I always make my code look good. It's a visual representation of wh
 
 mostly about layout. (not as relevant with color-coded IDEs?)
 
-again, the author states that it's OBVIOUS that it's easier to work with code that is aesthetically pleasing. and that is because aesthetics alleviate cognitive pain, by leveraging "the emotional side of our brain" (for lack of a better phrase describing the non reason-side of things). there are also two means of understanding: understanding groups of people, understanding groups of languages, and understanding groups of languages
+again, the author states that it's OBVIOUS that it's easier to work with code that is aesthetically pleasing. and that is because aesthetics alleviate cognitive pain, by leveraging "the emotional side of our brain" (for lack of a better phrase describing the non reason-side of things). there are also two means of understanding: understanding groups of people, understanding groups of languages, (and understanding groups of concepts?)
 
 and does code-as-craftmanship have anything to do with language/litterature?
 
@@ -592,11 +594,11 @@ consistency is more important than correctness
 
 [link](https://sql.marcus-belz.de/?p=143)
 
-sql is unique because is doesn't have a "style" --> does that mean you require a certain level of complexity to get into that style?
+sql is unique because is doesn't have a "style" --> does that mean you require a certain level of complexity to get into that style? cf. unix v6
 
 sql is based on mathematical set theory
 
-beauty = structure + format (because meaning and intent can be derived from appearance only)
+beauty = structure + format (because meaning and intent can be derived from appearance only, if the appearance is well-enough made)
 
 the rest of the article is more about making it IDE-friendly (another level of machine-understanding?) than about the syntax of sql itself
 
@@ -611,6 +613,7 @@ understanding languages is about familiarity, and not ability
 **who is reading?** (here, ideally it's the least experienced developer on the team)
 
 "there is no space for poetry in production systems" > doom? unix?
+probably what they meant is that there is no space for poetry in production organizations.
 
 ## medium post on clean code
 
@@ -639,7 +642,5 @@ Now I am a programming master, and I try to minize the comments in my programs. 
 ## personal account of beautiful code
 
 [link](http://hennessy.iat.sfu.ca/wp/stc2018/2018/03/22/programming-esthetics/)
-
-
 
 "why is it hard to write clean code?"
