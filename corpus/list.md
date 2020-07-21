@@ -65,6 +65,7 @@
 - [rasta software](https://rastasoft.org/) - wtf really
 
 ### peripheral
+
 - [code city](https://wettel.github.io/codecity.html) - metaphor for source code
 - [ching](https://www.unix.com/man-page/bsd/6/ching/) - example of creative man page
 - [perl poetry mode](https://www.oreilly.com/library/view/programming-perl-4th/9781449321451/ch24s02.html) - assumptions that a word is going to define a subroutine eventually

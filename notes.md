@@ -12,8 +12,6 @@ aesthetics in software engineering is not about the program, it's about the prog
 
 the aesthetics of clarity in executable source code
 
-"experientialism" / experiential realism
-
 questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)?
 
 semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a symbol without understanding it -> understanding the symbol vs. understanding what the symbol refers to.
@@ -24,7 +22,7 @@ there is always a bit of giving up the understanding (linux kernel, APIs, etc.).
 
 STRATEGY VS. TACTICS
 
-but tactics could actually be the tip of the manifestation of a yet unknown (the personal?) strategy.
+but tactics could actually be the tip of the manifestation of a yet unknown (the personal?) strategy. *two months later: hmmm....*
 
 aesthetics as a relationship to the human: if tactics is what makes the individual, strategy is what forces the group > as code matures, there is a switch to a different kind of individuality (mass-production of code)
 
@@ -79,7 +77,7 @@ code as substitute-material
 - referring to software itself **done** > hardware, language, algorithm
 - referring to the environment in which software exists > problem domain, collaborators
 - - productive software **done**
-- - - need to identify the place of uselessness in productivity **yes! important**
+- - - need to identify the place of uselessness in productivity **yes! important** (that's what the russian says: that beauty is essential to motivation)
 - - is it relevant that the domain of application of software can always expand? (from a computational perspective, and from a practical perspective)
 - - there is also the idea that, even when the code might not work properly, or might barely work (in a functional perspective), it might *still* work in a literary perspective, the same way that flaubert works, or that beckett works, i.e. **does what is intended of it to do** (how do we know that? we need critical tools to assess the "aestheticity"). we also need to assess **what** it is that it is intended to do.
 

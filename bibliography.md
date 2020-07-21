@@ -1,6 +1,7 @@
 # bibliography
 
 ## computer science & programming
+
 - structure and interpretation of computer programs, abelson and sussman
 - masterminds of programming, biancuzzi
 - essentials of programming languages, friedman
@@ -32,6 +33,7 @@
 - programming classics: implementing the world's best algorithms, oliver
   
 ## media studies
+
 - rhetoric of video games, bogost [x]
 - programmed visions, chun [x]
 - speaking code, cox [x]
@@ -60,6 +62,7 @@
 - plain text: the poetics of computation, tenen
 
 ## digital art
+
 - poetic computation, choi [x]
 - code.surface || code.depth, raley [x]
 - on code and codework, sondheim [x]
@@ -77,8 +80,9 @@
 
 
 ## aesthetics
+
 - aesthetic theory, adorno
-- language as symbolic action, burke
+- language as symbolic action, burke [x]
 - languages of art, goodman [x]
 - questions de poetique, jakobson [x]
 - Style in Language, ed. Thomas A. Sebeok (Cambridge, Mass.:
@@ -86,7 +90,7 @@ MIT Press, 1960
 - aiesthesis, ranciere
 - mute speech, ranciere
 - relational aesthetics, bourriaud
-- the craftsman, sennett
+- the craftsman, sennett [x]
 - moderne/contemporain, bouchardon [x]
 - theory after theory, birns [x]
 - de la programmation consideree comme un des beaux-arts, pierre levy

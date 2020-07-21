@@ -25,7 +25,7 @@ ACM Library results:
 - code commits: [link](https://dl.acm.org/doi/abs/10.1145/2856457)
 - beauty in computer programming: [link](https://dl.acm.org/doi/abs/10.1145/2077808.2077824)
 - teaching how to contribute to Open Source: [link](https://dl.acm.org/doi/abs/10.1145/3183377.3183394)
-- code quality based on # of developers on project (interesting for "what is code quality?") https://dl.acm.org/doi/abs/10.1145/1852786.1852864
+- code quality based on # of developers on project (interesting for "what is code quality?") [link](https://dl.acm.org/doi/abs/10.1145/1852786.1852864)
 - representing concerns in source code: [link](https://dl.acm.org/doi/abs/10.1145/1189748.1189751)
 - uniqueness and redundancy in source code: [link](https://dl.acm.org/doi/abs/10.1145/1882291.1882315)
 - clarity in source code lexicon: [link](https://dl.acm.org/doi/abs/10.5555/2486788.2487012)

@@ -1,5 +1,7 @@
-# topics in programming languageS: a philosophical analysis through the case of prolog
+# topics in programming languages: a philosophical analysis through the case of prolog
+
 ## luís homem
+
 ### chartridge, 2013
 
 looking at the philosophy of computation through the duality of programming languages and natural languages

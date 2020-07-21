@@ -27,7 +27,6 @@ interesting parallel between artworks, code and plurality of meanings: if code i
 
 also seeing programming as **encryption**: you encrypt the solution in a certain way and then you have to decrypt it later when you return to it.
 
-
 MOVING FROM FUNDAMENTAL PRINCIPLES OF COMMUNICATION TOWARDS CODING CONVENTIONS (i.e. the relationship between clean code and human communication)
 
 he use of vertical alignment to show symmetry; his is a powerful method of communication:
@@ -41,6 +40,7 @@ the true challenge is not *creating a name based on a concept*, but rather **inf
 ---
 
 they advocate for names to be based on english usage:
+
 - class names as collective nouns
 - variable names as proper nouns
 - procedure names as verbs
@@ -55,10 +55,8 @@ try to make name pronounceable!
 
 they dictate the use of white space without justifying why: this reeks of tradition
 
-
-*letting the structure drive the layout, not the syntax of the programming language*
+> letting the structure drive the layout, not the syntax of the programming language> 
 
 comments are good, but they are also an indicator of lack of clarity in the code
-
 
 finally, we find another occurrence of the textbook/academic style vs. industry/practical style
