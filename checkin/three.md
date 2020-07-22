@@ -54,6 +54,7 @@ This approach also allows me to requalify our definition of aesthetics: building
     - differentiate between *meaning/intention* of a variable and *value* of a variable
      - variable name length can hint at the importance/hierarchy of the variable
      - some vocab in languages is haram (`unless` in perl, `*` in C, etc.)
+     - **naming seems to be universal across practicioners, and common with literature**
 
   - **syntax**
     - cross-referencing language knowledge is a tricky subject. using the idiomaticity of one language into another one (using ideas from C++ into C code is good, but writing ruby the way you write java is not good)
