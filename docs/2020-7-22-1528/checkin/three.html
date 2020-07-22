@@ -1,0 +1,223 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="the-aesthetics-of-source-code---pierre-depaz">The Aesthetics of Source Code - Pierre Depaz</h1>
+
+<h2 id="further-definition-of-topic-and-future-outline-of-work">Further definition of topic and future outline of work</h2>
+
+<h3 id="section">10.06.2020</h3>
+
+<h4 id="main-report">main report</h4>
+
+<h5 id="catch-up">catch-up</h5>
+
+<p>At the beginnning of the Spring semester 2020, I had established a clear research direction, directed at what role aesthetics have in the process of understanding source code. While the definition of aesthetics upon which this research relies is based on <em>aesthetics as a physical manifestation which can be grasped by the senses</em>. The limitation of this starting point is justified mainly by the object of this study. By approaching source code as an object (or, rather, as multiplicity of objects, “texts” written and read), rather than as a concept, I therefore put its graspable aspects in the foreground. While the social, cultural, intellectual and emotional components are still significant in the appreciation of beauty in source code, the comparative lack of close examination of <em>how</em> code is written is the justification for such a definition of aesthetics.</p>
+
+<p>What still needed to be defined, however, was the meaning of “understanding”. The work conducted this semester has therefore focused on the gathering and examination of the corpus of source code texts, along with the accompanying explanations, justifications and overall meta-texts, in order to find out how are references to “beauty” and “understanding” made. Amongst the vast majority of the corpus elements, practicioners tend to present or discuss a piece of source code which they consider “beatiful”, “aesthetically pleasing”, and accompany this presentation with justifications about <em>how</em> to make a piece of code beautiful and/or <em>why</em> make a piece of code beautiful, and it is these discourses that are used to elaborate on what source code aesthetics look like <em>in practice</em>, as well as what kind of role they play in the life of source code text.
+This process has also led to the constitution of an initial set of aesthetic properties that are repeatedly highlighted by a certain sub-set of practictioners. In effect, the group of those who write and read source code is far from being homogeneous, and can actually be grouped into at least three distinct categories: computer science, computational science and software development (Brian Hayes <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>). While additional sources establish their own distinctions<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>, the multiplicity of contexts within which code is written leaves litte doubt. Leaving aside a thorough defintion of each of these, I’ve identified five main categories of individuals writing and reading source code, which I group under the umbrella term <em>code practicioners</em>. These categories include: computer scientist, software engineer, hacker, amateur/student and artist. These categories intend to provide heuristics, rather than strict definitions, and each of these categories can overlap within one individual or group of individuals.
+The sub-sets of practicioners examined so far include software engineers and artists—and thanks to the aforementioned overlap of categories, I am making the hypothesis that the initial findings made through the comparison of how aesthetics are conceived of by engineers and artists will be reinforced and further qualified during the examination of how the remaining categories (scientists, hackers, amateurs).
+This approach also allows me to requalify our definition of aesthetics: building on Rancière and Goodman, aesthetics can also be understood as a relationship to the human. In the midst of this tension between individual and group, I intend to leave room for individual aesthetics, and group aesthetics.</p>
+
+<h5 id="established-software-engineering-practices">established software engineering practices</h5>
+
+<ul>
+  <li>explain why this is: most important aspect of writing in code so far
+    <ul>
+      <li>programmers have been saying, both implicitly and explicitly, that aesthetics is <em>for</em> something (beautiful code: “beauty that you can <em>use</em>)</li>
+      <li>where that really shines though is also in the “unexpected” in saying you care about one thing, but you also display something else (i.e. the phenomenon of “coming across”)</li>
+      <li>“aesthetics alleviate cognitive pain” (from: the art of readable code)</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="sum-up-those-aesthetic-standards">sum up those aesthetic standards</h5>
+
+<ul>
+  <li><strong>structures</strong>
+    <ul>
+      <li><em>conceptual distancing</em> everything is close to each other in a semantic way (having variables together, then functions together). there seems to be a first, superficial level of beautiful code as beautifully laid out code (it is an indicator, at least, somehow a requirement? but only for larger code bases), but then the deeper beauty is when that layout actually reflects the conceptual structure of the code because, before the code, there is the data.
+        <ul>
+          <li>regarding layout vs. structure: it’s an <em>indicator</em> but not a <em>proof</em>.</li>
+        </ul>
+      </li>
+      <li><em>clean</em> structure is a structure in which only one intent can and should be perceived. all the statements relate to only one task (but they relate <em>to</em>, which implies transitivity) <strong>how does that conflict with paloque berges’ double-meaning?</strong></li>
+      <li>related to the above: minimalism “the code that does the job while using the least amount of different ideas”. <strong>restraint</strong> (re: python code guide)</li>
+      <li>separation of concerns</li>
+      <li>code symmetry: using the same constructs for the same tasks</li>
+      <li>linear relationship between the number of lines of code and the amount to be understood (the existence of this + one liners being a thing considered beautiful proves that there are mulitple kinds of beauty)</li>
+      <li>SOLID
+        <ul>
+          <li>single responsibility of classes</li>
+          <li>open/close principle</li>
+          <li>liskov substitution</li>
+          <li>interface segregation</li>
+          <li>dependency inversion</li>
+        </ul>
+      </li>
+      <li>blank space to show important separate steps (like senett’s decisive moment). that, at least has something in common with literatur insofar as they’re <strong>paragraphs</strong></li>
+      <li>when not enforced by the language, <em>stepdown rule of function declaration</em> (always have the more general functions at the top, the more specific at the bottom)</li>
+      <li>no input/output rule: everything that happens in locally coherent</li>
+    </ul>
+  </li>
+  <li><strong>vocabularies</strong>
+    <ul>
+      <li>nouns as variables, verbs as functions, and both replace comments (comments are only acceptable for the “why” of programming logic)
+        <ul>
+          <li>variables should answer <em>why</em> it exists, <em>what</em> it does and <em>how</em> it is used (not certain that all of these can be attained at the same time)</li>
+        </ul>
+      </li>
+      <li>ways of calling functions <em>on</em> objects or calling functions <em>from</em> objects (aka no output arguments)</li>
+      <li>requirement of idiomatic usage</li>
+      <li>pronounceable names</li>
+      <li>one word per concept (1:1 relationship), don’t try to do multiple things at the same time, unless this is exactly what you would want to do</li>
+      <li>functions don’t have too many arguments (&lt; 3)</li>
+      <li>no magic numbers</li>
+      <li>differentiate between <em>meaning/intention</em> of a variable and <em>value</em> of a variable</li>
+      <li>variable name length can hint at the importance/hierarchy of the variable</li>
+      <li>some vocab in languages is haram (<code>unless</code> in perl, <code>*</code> in C, etc.)</li>
+      <li><strong>naming seems to be universal across practicioners, and common with literature</strong></li>
+    </ul>
+  </li>
+  <li><strong>syntax</strong>
+    <ul>
+      <li>cross-referencing language knowledge is a tricky subject. using the idiomaticity of one language into another one (using ideas from C++ into C code is good, but writing ruby the way you write java is not good)</li>
+      <li>do not reference variable name in comments (redundancy, <em>DRY</em>)</li>
+      <li>regarding comments, there are no beautiful comments, apparently. does that mean that <em>ornament is crime</em></li>
+      <li>all caps is constant (bringing heuristics from C to more modern languages)</li>
+      <li>natural language flows (ruby can shine at this, because ruby has multiple ways of doing it: <code>if people.include? person</code> vs. <code>if person.in? people</code>)</li>
+      <li>as similar as possible as natural language while retaining as much as possible the CLARITY of code</li>
+      <li>eliminate nesting (one line instead of three)</li>
+      <li>line alignment/indentation</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="shifted-from-singular-understanding-to-plural-understandings">shifted from singular understanding to plural understandings</h5>
+
+<ul>
+  <li>knowing <strong>how</strong>, knowing <strong>what</strong> and knowing <strong>why</strong></li>
+  <li>there could actually be multiple kinds of writing, which can all differ and relate to each other (craft vs. engineering vs. literary)</li>
+</ul>
+
+<h5 id="highlighted-codes-uncertainty-as-a-literary-object-and-rather-as-a-crafting-resource">highlighted code’s uncertainty as a literary object, and rather as a crafting resource</h5>
+
+<ul>
+  <li>code never lies (craft), comments do (literature)</li>
+</ul>
+
+<h5 id="next-steps">next steps</h5>
+
+<ul>
+  <li>establish textbook aesthetics (relation to mathematics)</li>
+  <li>leave room for language aesthetics</li>
+  <li>esolangs and code poetry additional</li>
+  <li>hardware aesthetics?</li>
+  <li>the difference between the act of reading and the act of writing</li>
+  <li>“experientialism” / experiential realism -&gt; the use of metaphors to make sense of the world. <strong>to what extent is a programming language, a piece of source code, a metaphor?</strong></li>
+</ul>
+
+<p>these understandings could be the interplay between theoretical, craft and literature</p>
+
+<p>https://www.americanscientist.org/article/cultures-of-code</p>
+
+<p>https://josephg.com/blog/3-tribes/</p>
+
+<p>https://blog.codinghorror.com/the-two-types-of-programmers/</p>
+
+<p>https://mkdev.me/en/posts/the-three-types-of-programmers</p>
+
+<hr />
+
+<h4 id="keep-in-mind">keep in mind</h4>
+
+<p>giving up the understanding in order to understand better (cognitive noise is related to the level of skill)
+a problem of a lot of research is <strong>inventing a new language without inventing new ideas</strong></p>
+
+<h4 id="questions-that-i-need-help-with">questions that i need help with</h4>
+
+<ul>
+  <li>am i reinventing the wheel at any point?
+    <ul>
+      <li>e.g. surface vs. depth, syntax as beauty for the unexperienced and semantics for the experienced</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>words as problem solvers</strong>
+(in reference to the book pat found, where the author states that programming is treated as a management problem, and not a mathematical one: but in both cases, we’re still talking about source code (and to what extent is it always the “same” source code?), a unique object/practice/paradigm which enables us to solve problems (and now, to what extent are these problems dependent on source code? or is it because source code (as computation) can solve theoretically any problem? and is that beautiful in itself?))</p>
+
+<h3 id="notes-from-xcoax">notes from xcoax</h3>
+
+<p>while it’s nice to have an overview of humanities at the beginning, it would be interesting to have reconciliation/reconsideration of those views by the end of this paper</p>
+
+<ul>
+  <li>notion of beauty in non-artistic contexts
+    <ul>
+      <li>perhaps there is an underlying common process? (degree of complexitiy/satisfaction? to be happy about it?)</li>
+      <li>confusion vs. beauty <strong>YES</strong> (almost presupposed by this thesis)</li>
+      <li>~~brain scans?~~ <strong>NO</strong> (but programmer psychology yes)</li>
+      <li>~~address the node-based programming environments?~~ <strong>NO</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p>relationship to art? <strong>yes, but tangential question</strong>
+question to the understanding of beauty? <strong>yes, but tangential question</strong></p>
+
+<p>~~apparent symmetry vs. assymetry of reading vs. writing~~ taken into account, see above</p>
+
+<p>information <em>is</em> value, or information <em>has</em> value? (just because you have it, or because you know how to use it?)</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+
+      <p><a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+
+      <p><a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+
+      <p><a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+
+      <p><a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+			</div>
+		</body>
+	</html>
