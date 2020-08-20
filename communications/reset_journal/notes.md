@@ -11,3 +11,18 @@ jérôme denis - [le travail invisible des données](https://journals.openeditio
 galloway, protocols
 
 code of the city: standards
+- questions of origin and diffusion
+  - how were design standards first generated and adopted?
+  - did the industry become dependent on it (when?)? how are they disseminated, practiced, enforced?
+- questions of performance and outcome
+  - what forms of software have resulted form it? what are its deficiencies?
+  - what impact did standards have on the industry (if any?)
+  - how are standards viewed by those who administer them, and those who are administered by them?
+- questions of transformation and opportunity
+  - what are the implications of restructuring design standards?
+  - what processes and tools can foster change?
+  - can tech and software provide more flexible/open working environments?
+
+style as managing ambivalent attachments to big social forms > mcgurl, d.a. miller
+
+*tzvetan todorov*: "les effets de style ne pourraient exister que s'ils ne s'opposaient a une norme, a un usage etabli"
