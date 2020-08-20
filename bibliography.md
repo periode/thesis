@@ -39,6 +39,7 @@
 - speaking code, cox [x]
 - behind the blip: essays on the culture of software, fuller
 - gaming: essays on algorithmic culture, galloway
+- the interface effect, galloway [x]
 - speech, writing, code, hayles [x]
 - my mother was a computer: digital subjects and literary texts, hayles [x]
 - aufschreibesysteme, kittler

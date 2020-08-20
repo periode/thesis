@@ -1,6 +1,22 @@
 # definitions and approaches
 
-## aesthetics
+## code aesthetics
+
+aesthetic of the frustration (in which the reader can not know everything) **SKILL**
+aesthetic of the XXX (sublime? demiurgic? **clarity**) in which the reader can know everything. **SIMPLICITY**
+aesthetic of the absurd (perl poetry, code poetry), in which the writer, reader and symbol system used all create new layers of meaning through their entanglements **IMAGINATION**
+
+code is a summarizing art, just like poetry [source](https://medium.com/@tuga/responses)
+
+Matthew Fuller, in Software Studies, on *Elegance*:
+
+> "In Literate Programming, Donald Knuth suggests that the best programs can be said to possess the quality of elegance. Elegance is defined by four criteria: the leanness of the code; the clarity with which the problem is defined; spareness of use of resources such as time and processor cycles; and, implementation in the most suitable language on the most suitable system for its execution.
+
+beauty as a lack of ambiguity, as efficient achievement of an aim (aim of frustration/clarity/imagination)
+
+whether or not the computer understands is not an aesthetic problem, but an engineering problem.
+
+## general aesthetics
 
 *sensation, perception* > how does it make us feel?
 a poetics of beautiful code -> what is beautiful code?

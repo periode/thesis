@@ -4,6 +4,8 @@
 
 see [introduction.md]
 
+quote from **turing paper 1936**: the first instance of source code makes the explicit distinctions about layout of binary ("this is less easy to follow..."). can be a good starting example of the importance of form, since one can follow it if it's laid out properly.
+
 ---
 
 ## 1 - the stakes of source code as understandable text
@@ -70,7 +72,11 @@ this first approach, by comparing both source and comment at the same time (taki
 
 this second approach contrasts with the functional component of the first one, but nonetheless stands in relationship with it. the creative beauty, by defying traditional beauty standards, does help us highlight, through deviance, what the norm is. these texts on "creative beauty" include the classical perl poetry, code poems, IOCC, code poetry contest, etc.
 
-#### 2.1.3 - craft and beauty
+#### 2.1.3 - mathematical beauty
+
+beautiful proofs in geometry?
+
+#### 2.1.4 - craft and beauty
 
 this subsection also allow us to introduce the concept of *craftsmanship* and integrate it within a larger tradition of sennett/de certeau/rancière, and connect the practice of programmer to a longer history of craft, a history which in itself has beauty standards `TODO`
 
@@ -156,6 +162,9 @@ talk a little bit about formal systems, church and lambda, *backus-naur form* no
 
 each of these sections will highlight both the *paradigms* as well as the *syntactic* features of the main categories of programming languages. the point will be to highlight what they share, and how they differ, and that what they share is a very core concept. how that concept is implemented however differs, which is inherently an aesthetic decision (as we will see with Ruby or Go for instance). this categorical approach will also necessarily include a historical dimension, as well as a discussion of which programming communities gravitate around which languages
 
+- notes
+- - which aesthetic standards are set by the machine vs. which aesthetic standards are set by human social context?
+
 #### 3.2.1 - functional programming
 
 #### 3.2.2 - declarative programming
@@ -188,6 +197,8 @@ language dependent features will be:
 - white space and layout
 - scope of actions (e.g. just one action at a time)
 - double-coding and metaphors
+
+what is the aesthetic of a semantic system that is supposed to be understood by both humans and machines? **if there is a collapse of both those systems, it hints at the fact that the human becomes machine**
 
 ---
 
