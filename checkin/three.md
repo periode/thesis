@@ -80,38 +80,30 @@ The situation in which comments seem to be tolerated is when they provide contex
 
 ### aesthetics as a purposeful, functioning device
 
-Define understanding (knowing how/why). I don't have a clear definition of what kind of understanding is given. For instance, for software developers, *is beautiful that which provides an understandings which enables action*. For hackers, *is beautiful that which challenges understanding*, by removing agency, or doesn't pre-suppose it. For academic, *is beautiful that which provides an understanding beyond what is immediately there*. For artists, *is beautiful that which offers personal understanding*.
+This set of criteria is only the first of a multiple (composed of artists, hackers and academics), and is intended to be limited to the community of practicionners it stems from, as well as inform a consolidated set of principles which could possibly apply to any piece of source code. While the content of the framework seem to consistently apply to any commentary on source code found in the gathered corpus, its organization in structure/syntax/vocabulary could mirror a parallel structure in the aesthetic *experience* of the reader of a code-text. Such an aesthetic experience could be organized in terms of cognitive depths: reading (e.g. code is properly formatted, can be read), understanding (e.g. code communicates what it does), enlightening (code communicates more than what it does). This parallel structure also reflects the important fact that **reading code is a different process than writing code**. Further research on this is needed, particularly along the axes of linear/non-linear reading, the requirement (or not) of paratexts, as well as reader positions.
 
-**is there a relationship between all these understandings?** and **is code the example of aesthetic practice which always require an interaction with understanding?**
+At this point, this set of criteria for software developers points to a close relationship between beauty and understanding (i.e. *is beautiful that which I can easily understand and act upon/within*). Preliminary examination of the other groups of software practicioners also point to the presence of understanding as a writer and a reader engage with a code-text. For instance, for hackers, *is beautiful that which challenges understanding*, by removing agency, or doesn't pre-suppose it. For academic, *is beautiful that which provides an understanding beyond what is immediately there*. For artists, *is beautiful that which offers a different, subjective understanding through poetic interpretation*. Following this, arises the question of whether a similar set of aesthetic criteria can be used to elicit multiple kinds of understanding, or if separate kinds of understandings require separate kinds of aesthetic criteria? If providing the understanding of something is akin to the act of *making clear* of that thing, then one could see *the art of programming* as the art of the obvious/of the transparent. This requirement to make intelligible/explicit/understandable would locate code in-between an art and a craft. A piece of code which has to involve some concept to be understood implies that writing code is a *functional aesthetic practice*, an aesthetic practice which needs to *do* something in order to be appreciated as such. Could it then help reconsider the separation between arts and craft, and perhaps seeing art as something which necessarily deals with the addition and/or modification of understanding?
 
-This set of criteria is only the first of a multiple (composed of artists, hackers and academics), and is intended to be limited to the community of practicionners it stems from, as well as inform a consolidated set of principles which could possibly apply to any piece of source code (whether or not such a set exists, and which principles it contains is another one of the research questions of this project). While the content of the framework seem to consistently apply to any commentary on source code found in the gathered corpus, its organization in structure/syntax/vocabulary could mirror a parallel structure in the aesthetic *experience* of the reader of a code-text. Such an aesthetic experience could be organized in terms of cognitive depths: reading (e.g. code is properly formatted, can be read), understanding (e.g. code communicates what it does), enlightening (code communicates more than what it does). This parallel structure also reflects the important fact that **reading code is a different process than writing code**. Further research on this is needed, particularly along the axes of linear/non-linear reading, the requirement (or not) of paratexts.
+Approaching code as a functional artistic practice ties into the considerations of code as craft, or code as art, and whether or not these practices should or should not be separated. Indeed, architecture is in a similar situation (though obviously not identical). Between craft and practice, architecture is first and foremost meant to be used; can architecture also elicit similar (multiple) understandings?
 
-expand from just practicioners
-
-- even though there are other communities of practice, with different kinds of understanding/language domain, there seems to always be the need to *communicate a concept*, and to communicate it clearly in order to enable understanding. obviously understanding in software dev is craft = know-how. what about the others? understanding of the world and understanding of the skill?
-
-is it that a knowledge-how (reading/writing) can transform into a knowledge-that?
-
-by understanding what it does, you understand what it is
-
-- the corollary is: are there forms of source code which do not aim at an understanding
-- knowing **how**, knowing **that** (classic epistemology) and knowing **why**
-- there could actually be multiple kinds of writing, which can all differ and relate to each other (craft vs. engineering vs. literary)
+A further implication would touch upon artistic practices in general. Do all aesthetic objects communicate some knowledge that is to be understood by the audience? And therefore, can it be said that a good artwork is an artwork which reaches beyond itself, and always refers to the "problem domain"? But for that we must first inspect the relationship between code and literature.
 
 ### code-texts as literature (review code's existence as a literary object, and consider it as a crafting resource)
 
 - code never lies (craft), comments do (literature)
+- the use of metaphors -> of what "beautiful code" is a metaphor?
 - the connection with literature seems to exist at multiple levels:
 - - minimal literature
 - - absurd literature
 - - technical literature (does that count as literature? literature which should disappear?)
+- there could actually be multiple kinds of writing, which can all differ and relate to each other (craft vs. engineering vs. literary)
+
 
 ### next steps
 
 - establish theoretical aesthetics (relation to mathematics)
 - leave room for language aesthetics (?)
 - esolangs and code poetry additional
-- hardware aesthetics?
 - the difference between the act of reading and the act of writing
 - "experientialism" / experiential realism -> while there is a lot of it that doesn't seem to be too relevant for this work, what is interesting is the use of metaphors to make sense of the world. **to what extent is a programming language, a piece of source code, a metaphor?**
   - e.g. spaghetti code

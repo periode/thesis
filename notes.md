@@ -73,7 +73,9 @@ code as substitute-material
 
 ## thoughts
 
-- double-meaning (paloque) is the fact that one can play between machine-language and human-language
+by understanding what it does, you understand what it is -> relationships of knowledge
+
+~~- double-meaning (paloque) is the fact that one can play between machine-language and human-language~~
 - - ~~possible triple-meaning with an interplay in conceptual structures (OOP)~~ this is more in the realm of creativity rather than aesthetics.
 - - ~~creativity might then be that we're applying software metaphors to classes of concordance~~
     - this means that there are two aspects of beautiful code:
