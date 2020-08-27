@@ -88,7 +88,7 @@
 - questions de poetique, jakobson [x]
 - Style in Language, ed. Thomas A. Sebeok (Cambridge, Mass.:
 MIT Press, 1960
-- aiesthesis, ranciere
+- aiesthesis, ranciere [x]
 - mute speech, ranciere
 - relational aesthetics, bourriaud
 - the craftsman, sennett [x]
