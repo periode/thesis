@@ -1,0 +1,494 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="the-aesthetics-of-source-code---pierre-depaz">The Aesthetics of Source Code - Pierre Depaz</h1>
+
+<h2 id="further-definition-of-topic-and-future-outline-of-work---082020">Further definition of topic and future outline of work - 08.2020</h2>
+
+<h3 id="aesthetics-and-understanding">Aesthetics and understanding</h3>
+
+<p>At the beginnning of the Spring semester 2020, I had established a clear research direction, directed at what role aesthetics have in the process of understanding source code. While the definition of aesthetics upon which this research relies is based on <em>aesthetics as a physical manifestation which can be grasped by the senses</em>. The limitation of this starting point is justified mainly by the object of this study. By approaching source code as an object (or, rather, as multiplicity of objects, “texts” written and read), rather than as a concept, I therefore put its graspable aspects in the foreground. While the social, cultural, intellectual and emotional components are still significant in the appreciation of beauty in source code, the comparative lack of close examination of <em>how</em> code is written is the justification for such a definition of aesthetics.</p>
+
+<p>What still needed to be defined, however, was the meaning of “understanding”. The work conducted this semester has therefore focused on the gathering and examination of the corpus of source code texts, along with the accompanying explanations, justifications and overall meta-texts, in order to find out how are references to “beauty” and “understanding” made. Amongst the vast majority of the corpus elements, practicioners tend to present or discuss a piece of source code which they consider “beatiful”, “aesthetically pleasing”, and accompany this presentation with justifications about <em>how</em> to make a piece of code beautiful and/or <em>why</em> make a piece of code beautiful, and it is these discourses that are used to elaborate on what source code aesthetics look like <em>in practice</em>, as well as what kind of role they play in the life of source code text.
+This process has also led to the constitution of an initial set of aesthetic properties that are repeatedly highlighted by a certain sub-set of practictioners. In effect, the group of those who write and read source code is far from being homogeneous, and can actually be grouped into at least three distinct categories: computer science, computational science and software development<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. While additional sources establish their own distinctions<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup><sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>, the multiplicity of contexts within which code is written leaves litte doubt. Leaving aside a thorough defintion of each of these, I’ve identified five main categories of individuals writing and reading source code, which I group under the umbrella term <em>code practicioners</em>. These categories include: computer scientist, software engineer, hacker, amateur/student and artist. These categories intend to provide heuristics, rather than strict definitions, and each of these categories can overlap within one individual or group of individuals.
+The sub-sets of practicioners examined so far include software engineers and artists—and thanks to the aforementioned overlap of categories, I am making the hypothesis that the initial findings made through the comparison of how aesthetics are conceived of by engineers and artists will be reinforced and further qualified during the examination of how the remaining categories (scientists, hackers, amateurs)<sup id="fnref:4b"><a href="#fn:4b" class="footnote">5</a></sup>.</p>
+
+<h3 id="established-software-engineering-practices">Established software engineering practices</h3>
+
+<p>The vast majority of code written today has been done by software engineers. As previously mentioned, while not the only group of people to write and read code, they are by far the most significant. The appearance of the profession in the late 1950s and early 1960s, emerging from a purely academic or military activity, brought with it a change in discourses relating to how code should be written, most eloquently by E. W. Djikstra <sup id="fnref:5"><a href="#fn:5" class="footnote">6</a></sup>, along with Knuth <sup id="fnref:6"><a href="#fn:6" class="footnote">7</a></sup>, Kernighan <sup id="fnref:7"><a href="#fn:7" class="footnote">8</a></sup> and Martin <sup id="fnref:8"><a href="#fn:8" class="footnote">9</a></sup> amongst others. Since these earlier (1960s) texts focused on defining the practice of software development at a professional level, the inclusion from the get-go of an artistic component (<em>“The Art of Programming”</em>), as well as a cognitive one (<em>“GOTO Statement Considered Harmful”</em>) is a significant indicator that writing software isn’t an exclusively mechanical activity. Despite its title, <em>The Art of Programming</em> doesn’t address <em>what</em> exactly it is that makes writing code an artistic process and source code a beautiful object. Ever since, this question of “beautiful code” has been addressed by members of the profession itself, at various levels: a couple of monographs<sup id="fnref:9"><a href="#fn:9" class="footnote">10</a></sup><sup id="fnref:10"><a href="#fn:10" class="footnote">11</a></sup>, conferences, academic articles, blog posts and Q&amp;A websites.</p>
+
+<p>The analysis of this corpus has led to mulitple insights for this research project. First, it has helped anchor further what role aesthetics play for one of the categories of software practitioners. These findings complement the statements by more leading figures among software development, and confirm, or qualify the statements of said figures. Second, it has allowed me to constitute a significant part of the taxonomy of the features of beautiful code, based on John Cayley’s distinction between <em>structures</em>, <em>syntaxes</em> and <em>vocabularies</em><sup id="fnref:11"><a href="#fn:11" class="footnote">12</a></sup>. When offering their opinion on the oft-repeated topic of beautiful code, these comments and explanations of code do not contain uni-dimensional criteria, but rather criteria which can be applied at multiple levels of reading. Some of those tend to relate more to the over-arching design of the code examined while others, closer to our working definition of aesthetics, focus on the specific formal features exhibited by a piece of source code. Cayley’s framework is used here to create a bridge with literature and literary studies without imposing too rigid of a grid (leaving aside, for the time being, concepts such as fiction, account, authorship, literarity, etc.). Third, it has refined the relationship between “aesthetics” and “understanding”. The necessity for code to be understood and the desire for code to be beautiful are often intertwined and highlight how the latter facilitates the latter. While this relationship seems to be an argument in favor of Goodman’s aesthetic theory—aesthetics as a means of communicating concepts—, the hypothesis I have formed here is that there are multiple (and sometimes conflicting) aesthetic criteria among and across software practicioners because there are multiple concepts to be communicated.</p>
+
+<h3 id="the-role-of-beauty-in-code">The role of beauty in code</h3>
+
+<p><em>“Aesthetics alleviate cognitive pain”</em><sup id="fnref:12"><a href="#fn:12" class="footnote">13</a></sup>. This excerpt from <em>The Art of Readable Code</em>, presented as an industry manual for professional software developers, sums up the overall sentiment of software developers as surveyed through my corpus analysis. While most code can be understood, sometimes after considerable effort, beautiful code not only bypasses any need for additional commetary, reaching a highly sought-after status of “self-explanatory”. This status for aesthetics to ease understanding of the text also answers one of the early research questions of this thesis regarding the necessity for code to be beautiful. While the existence of beautiful code quickly manifested itself at the beginning of this research, two questions then seemed to arise due to its tight connection to complexity, intelligibility and understandability.
+First, <em>what and how do aesthetics in code make intelligible</em>? What is made intelligible isn’t exclusively what the program (and, by extension, the computer) <em>does</em>, but can also refer to the knowledge of an existing algorithm, a given idiomacy in a programming language, an architecture of hardware or a practice of reading and writing of fellow programmers. That is, what should be made intelligible is an intent, within a particular context (a socio-technical context composed at least of a writer, a reader, a language and a hardware). How it makes such an action understandable is addressed in the following section, in which I sketch out a typology of aesthetic criteria. These are the backdrop against which a practical, empirical examination of source code can take place. These criteria are established from the analysis of a given community, of which a vast majority of practictioners are part of, and which has consequently informed aesthetic standards in other communities of software practictioners (e.g. obfusctation contests, esolangs, code poetry).
+Second, <em>do aesthetics in any kind of code always aim at making intelligible</em>? That is, is the aesthetic in the code exclusively transitive, relating to something other than itself, or intransitive, referring only to itself? This enters a discussion on whether or not functionality is an essential part of aesthetics (i.e. <em>“Beauty that you can use”</em><sup id="fnref:13"><a href="#fn:13" class="footnote">14</a></sup>), and to what extent there are contexts and mediums in which beauty cannot exist without an external aim.</p>
+
+<p>Therefore, there seems to be a necessity for beauty: since programming is an inherently complex activity<sup id="fnref:14"><a href="#fn:14" class="footnote">15</a></sup>, dealing with abstract concepts as raw materials, an aesthetically pleasant piece of source code is therefore an easily-understandable one. In other words, aesthetics enable the development of mental models<sup id="fnref:15"><a href="#fn:15" class="footnote">16</a></sup>, mainly through the process of metaphors, connecting immediate sensual manifestations to abstract, shared ideas<sup id="fnref:16"><a href="#fn:16" class="footnote">17</a></sup>. The constraint here is to communicate what the program is (as a conjunction of <em>what</em> a program does and <em>how</em> a program does it), based on the writer-programmer’s mental model of the problem at hand, to the reader-programmer, by using a symbolic language which is theoretically able to compute any finite problem, while at the same time limited in practice to instruction sets and syntax which doesn’t adequately cover the need for expressing the intent of the work.</p>
+
+<p>Source code thus needs to communicate something beyond itself. This can be what the code does, how it does it, and how it approaches the problem domain. The object, the manner and the context are all the primary focii of the reader; that is, if the code were to be written differently, it would not ultimately harm the purpose of reading it (even though it would still slow down the process of doing so). However remains the component of the skill of a given writer. Just because a significant part of code can be considered a semantic interface which should ultimately become as invisible as possible<sup id="fnref:17"><a href="#fn:17" class="footnote">18</a></sup> (self-explanatory, it allows the reader to get directly to the problem, without stumbling on the syntax), the aesthetic nature of a code-text can be a testament to the skill of a writer; as the number of lines of code diminish, each of them become more and more essential<sup id="fnref:18"><a href="#fn:18" class="footnote">19</a></sup>. Throughout the corpus analysis, various references to Antoine de Saint-Éxupéry’s quote appear regularly: <em>“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”</em>. Beyond highlighting a desire for a literary connection, this citation also hints at the iterative process of writing code: adding, then removing (possibly in a loop).</p>
+
+<p>Such a process is echoed in the practices of craftsmanship, rather than science, and it seems necessary not to oversee that connection, and to ask <em>what are the relationships between the aesthetic criteria of craftsmanship the aesthetic criteria of source code?</em> Indeed, several<sup id="fnref:19"><a href="#fn:19" class="footnote">20</a></sup> authors<sup id="fnref:20"><a href="#fn:20" class="footnote">21</a></sup> have alluded at programming as a craft<sup id="fnref:21"><a href="#fn:21" class="footnote">22</a></sup>, but haven’t focused specifically on the parallels in form. Some of these criteria include clarity, mastery, cooperativity and utility and will be further explored in this research. Particularly, the criteria of mastery excludes, for some, any code-text which doesn’t solve an interesting problem (e.g. <em>“a user-login form cannot be beautiful”</em>). Particularly, deeply-engrained mottos and heuristics such as DRY (<em>Do Not Repeat Yourself</em>), KISS (<em>Keep It Simple, Stupid</em>) and SOLID<sup id="fnref:21b"><a href="#fn:21b" class="footnote">23</a></sup> act as essential heuristics for writing software in a professional context and underpin all other aesthetic standards in this community of practicioners.</p>
+
+<h3 id="aesthetic-criteria">Aesthetic criteria</h3>
+
+<p>As mentioned above, the corpus of textbooks, essays, online blog posts and comments addressing what makes source code beautiful or aesthetically pleasing has been analyzed according to three main categories. These categories of structure, syntax and vocabulary are all related to formal manifestations in source code. <em>Structure</em> is defined by the relative location of a particular statement within the broader context of the code-text, as well as the groupings of particular statements in relation to each other and in relation to the other groups of statements within the code-text. This also includes questions of formatting, indenting and linting as purely pattern-based formal arrangements. <em>Syntax</em> is defined by the local arrangement of tokens within a statement, including control-flow statements (and therefore not restricted to single-line statements). It also includes language-specific choices, referred to as idioms, and generally the kind of statements needed to achieve the kind of task required (e.g. using an <code>Array</code> or a <code>struct</code>). Finally, the <em>vocabulary</em> refers to the user-defined elements of the source code, in the form of variables, functions, classes and interfaces. Unlike the two precedent categories, this is the only where the writer can come up with new tokens.</p>
+
+<ul>
+  <li>Structure</li>
+</ul>
+
+<p>Structure, as the highest-level group of criteria, is both easy to grasp and somewhat superficial: most of the criteria which compose it are <em>indicators</em> and not <em>proof</em> of beautiful code, indeed necessary,  but not sufficient. Indeed, it can be separated between surface-structure, and deep-structure. The criteria for beauty in surface-structure is <strong>layout</strong>, as the spatial organization of statements, through the use of line breaks and indentations. While serving additional ends towards understanding, proper layout (whether according to conventions, or deliberately positioning themselves against these conventions) seems to be the first requirement for beautiful code. In terms of aiding undertsanding, blank space creates semantic groupings which enable the reader to understand, at a glance, what the decisive moments<sup id="fnref:22"><a href="#fn:22" class="footnote">24</a></sup> are in the code’s execution, and presented by some as akin to paragraphs in litterature<sup id="fnref:23"><a href="#fn:23" class="footnote">25</a></sup>.</p>
+
+<p>This aid to understanding is further highlighted by a deep-structure paradigm of <strong>conceptual distancing</strong>: the criteria according to which statements that have to do with each other are located close to each other, when visual appearance reflects the conceptual structure of the code (some argue that the data that the code processes is predates the code itself in dictating its layout). While an over-arching principle, it is vague enough to be open to interpretation by practitioners and is therefore unable to act as a strict normative criteria (e.g. should every code-text follow the <em>stepdown rule of function declaration</em> when writing in a language which doesn’t enforce it? should local variables all be declared at the beginning of the highest scope at which they belong, or at the closest location of their next use? should all data be prepared, and then processed, or should each data be prepared and processed in each of their contexts?). The explicit criteria of <em>local coherence</em> (what is next to each other is related to each other) echoes similar questions about the coherence and consistence in traditional aesthetic theory<sup id="fnref:24"><a href="#fn:24" class="footnote">26</a></sup>. Indeed, proponents of local coherence in source code imply that a beautiful piece of code should not have to rely on input and output and therefore be entirely autotelic. Such an assumption runs contrary to the reality of software development as a practice, and as an object entangled in the world, and therefore could not qualify as an aesthetic criteria which would apply to code bases accross communities of practicioners.</p>
+
+<p>A correlation to conceptual distancing is <strong>conceptual symmetry</strong>, which states that groups of statement which do the same thing should look the same. It then becomes possible to catche a glimpse of patterns, in which readers know what does what according to a brief overview. Conceptual distancing can be further improved by <strong>conceptual uniqueness (unicity?)</strong>, which demands that all the statements that are grouped together only refer to one single action: complex enough to be useful, and simple enough to be graspable. Following this, then, beautiful code is <em>“the code that does the job while using the least amount of different ideas”</em>, which, according to the DRY principle, implies the ideal of a linear relationship between the number of lines of code and the amount to be understood. This is possibly an aesthetic standard, but it is unclear to what extent it is a sublime standard.</p>
+
+<p>Interestingly, this last statement contradicts a different aesthetic that exists among different software practicioners—hackers. In their case, beautiful code is the code which manages to pack the maximum number of ideas in a minimal amount of lines of code, both in obfuscation practices and in the writing of one-liners. This apparent conflict between clarity and complexity can be resolved in certain codebases, in which the lines of code are few, but the implications are many<sup id="fnref:25"><a href="#fn:25" class="footnote">27</a></sup>.</p>
+
+<ul>
+  <li>Syntax</li>
+</ul>
+
+<p>Syntax, as the mid-level group of criteria, deals most specifically with the two main components of the implementation: the algorithm and the language. Beautiful syntax would denote a conceptual understanding (Knuth states that these understandings are the ones that make writing code an art, and has devoted his magnum opus to the study and communication of algorithms). However, I will argue that algorithms cannot be separated from the language that they are written in. Indeed, most algorithms are expressed first as pseudo-code and then implemented in the language that is most suited to it; this seems to be a contemporary version of the 1950s, when computer scientists would devise those algorithms through pencil and paper, and then leave their implementation at the hands of entirely different individuals—computers.</p>
+
+<p>Beautiful syntax in code responds to this limitation. Since algorithms must be implemented in a certain context, with a certain language, it is the task of the writer to best do so with respect to the language that she is currently working in. Therefore, <em>beautiful syntax is idiomatic syntax</em>. This involves knowing what are the possibilities that a given language offers and, in the spirit of the craftsmanship ethos noted previously, working with the language rather than against it. These sets of aesthetic criteria thus become entirely dependent on the syntactical context of the language itself, and can only be established with regards to each of the language (e.g. knowing which keywords shouldn’t be used, such as <code>unless</code> in perl, or <code>*</code> in C, knowing when to use decorators in python, <code>...</code> operator in ECMAScript, etc.). Here, syntax also follows the idea of conciseness that has been touched upon at the structure-level: a writer can only be concise if she knows how the language enables her to be concise. Knowing the algorithm and the problem domain will not help to match this criteria. To what extent a syntax is <strong>idiomatic</strong> syntax is a good indicator of the aesthetic value of a code-text.</p>
+
+<p>It is difficult to establish a hierarchy between separate idioms, since they operate under different paradigms and assumptions. A developer who finds that she can best communicate her ideas according to Java will find Java beautiful. A developer who finds that she can best communicate her ideas while writing in Go will find Go beautiful. This state of affairs seems to be part of the reason as to why online platforms are full of “which language is better?” endless discussions. An syntactical criteria which acts as a responses to these discusssions is <strong>consistency</strong>. While there might be minor reasons as to why one would want to be calling functions <em>on</em> objects rather than calling functions <em>from</em> objects (in order to prevent output arguments), this minor increase in aesthetic value through display of skill and removal of cognitive noise doesn’t compensate for the possible increase in cognitive noise if those two ways of calling functions are used alternatively in an arbitrary manner. This hints at the possibility that aesthetics here is also a game of tradeoffs.</p>
+
+<p>Beyond the state of syntactic consistency, the question of bringing heuristics from one language to another is yet another aesthetic criteria, that of <strong>linguistic reference</strong>. Being able to implicitly reference another language in a code-text (e.g. <em>“this is how we do it now that we have C++, but the current code is written in C, so one can bring in ideas and syntax that are native to C++”</em> or <em>“since Ruby can qualify as a Lisp-like language, one can write lambda functions in an otherwise object-oriented language”</em>), a code-switching of sorts, can both communicate a deep understanding of not just a language, but an ecosystem of languages while satisfying the purpose of maintaining clarity. This communicates a feeling of higher-understanding, akin to perceiving all programming languages as ultimately just “tools for the job” and whose ultimate purpose is nonetheless to get a concept across minds as fully and clearly as possible. However, a misguided intention of switching between two languages, or a mis-handled implementation can propel a code-text further down the gradient of ugliness. The concept communicated would in such a case be obscured by the conflicting idioms (e.g. writing p5.js—as a JavaScript implementation of a Java-based syntax—within an HTML document forces the co-existence of two distinct syntaxes which are made to cohabit more for purposes of platform-distribution rather than code clarity), reveal of lack of mastery of the unique aspects of the working language, and therefore fail to fulfill the aesthetic criterion of idiomaticity.</p>
+
+<p>Finally, a syntax with high aesthetic value is a syntax which favors <strong>natural language reading flow</strong>. For instance, of the two alternatives in Ruby: <code>if people.include? person</code> vs. <code>if person.in? people</code>, the second one is going to be considered more beautiful than the first one, since it adapts to the readers habit of reading human languages. However, the succintness and clarity of compilable code is not to be sacrificed for the sake of human-like reading qualities. Indeed, a criteria for ugliness in code-text is <em>verbosity</em>, or useless addition of statements without equivalent addition of functionality. This testifies to the precedence of machine-idioms over human-idioms, the former only coming into play if the verbosity of the statement remains the same.</p>
+
+<ul>
+  <li>Vocabulary</li>
+</ul>
+
+<p>Vocabulary, as the only component in this frameworks which involves words that can be (almost) entirely invented by the writers, is often the most looked at in the literature regarding beautiful code among professional software developers. Aesthetics here deal mostly with beautiful names, and respect for conventional knowledge. It is the level of aesthetic standards which takes into account first and foremost the readership of a given code-text.</p>
+
+<p>Of the two big problems of programming, the most frequent one is <em>naming</em><sup id="fnref:26"><a href="#fn:26" class="footnote">28</a></sup>. One reason as to why that is might be that naming (as language) is an inherently social activity<sup id="fnref:27"><a href="#fn:27" class="footnote">29</a></sup> and therefore a name is an utterance which only makes sense when done in the expectation of someone else. The process of creating a variable or function name on one’s own is often more time-consuming when done alone<sup id="fnref:28"><a href="#fn:28" class="footnote">30</a></sup>. Naming, furthermore, aims not just at describing, but at capturing the essence of an object, or of a concept. Flusser sees poetry as the briging-forth that which is conceivable but not yet speakable through its essence in order to make it speakable through prose<sup id="fnref:29"><a href="#fn:29" class="footnote">31</a></sup>. So it can be argued that good, efficient names in code, are those who can communicate the essence of the concept “at hand”, and through this touch of sublime are the key to beautiful code.</p>
+
+<p>On a purely sensory level (visual and auditory), aesthetic criteria related to naming are that of <strong>character length</strong> and <strong>pronounceability</strong>. Visually, character length can indicate the relative importance of a named concept within the greater structure of the code-text. Variables with shorter names are variables that are more important, demand more cognitive attention, offer greater intelligibility in comparison with longer variable names, which only need to be “stored in memory” of the reader for a shorter amount of time. These visual cues, again, alleviate cognitive pain when trying to understand code, and therefore, within the aims of source code aesthetics, hold greater aesthetic value when respected. Pronounceability, meanwhile, take into account the basic human action of “speaking into one’s head” and therefore acknowledge the requirement for communicability of source code amongst human readers. This criterion exists in the category of aesthetic criteria which are required, but not sufficient, for beautiful code.</p>
+
+<p>Equally visual, but aesthetically pleasing for a different reason, a typographical one, is the <strong>casing</strong> of names. Dealing with the constraint that variable names cannot have whitespace characters as part of them, casing has resulted into the establishment of conventions which pre-exists the precise understanding of what a word denotes, by first bringing that word into a category (all-caps denotes a constant, camelCasing denotes a multi-word variable and first-capitalized words indicate classes or interfaces. By using multiple cues (here, typographical, then semantical, as explicited below), casing again helps with understandability. Further more, casing, by its existence as a convention, implies that it exists within a social community of writers and readers, and acknowledges the mutual belonging to that community of both writer and reader to a given community, and turns the code-text from a <em>readerly</em> text further into a <em>writerly</em> one<sup id="fnref:30"><a href="#fn:30" class="footnote">32</a></sup>.</p>
+
+<p>Following these visual, auditory and typographical criteria, an aesthetically-pleasing vocabulary is a vocabulary which strictly names <strong>functions as verbs and variables as nouns</strong>. In the vein of making a correspondance between machine language and human language, there is here a clear mapping between the two: functions <em>do</em> things and variables <em>are</em> things. If it’s the other way around, while respecting the criteria for consistency, functions as nouns and variables as verbs hints at what it is not, are counter-intuitive and ultimately confusing—confusion which brings ugliness. Furthermore, the noun given to a variable should be a hint towards the concept addressed, and ideally address <em>what</em> it is, <em>how</em> it is used, and <em>why</em> it is present. Each of these three aims aren’t necessarily easily achieved at the same time, but finding one word, which through multiple means, point to the same end, is an aesthetic goal of source code writers. Particularly, limiting the naming to be the answer to only one of those questions (only <em>what</em>, only <em>what</em>, or only <em>why</em>) confuses the reader more than it enlightens her. A beautiful name is a name which differentiates between <em>value</em> (obviuous, decontextualized, and therefore unhelpful, as seen by the general frowning-upon of using <em>magic numbers</em>) and <em>intention</em>, informing the reader not just about the current use, but also about future possible use, in code that is written or yet to be written. So here we see a paradox between direct conceptual relationship between a name and what it denotes, and the multiple meanings that it embodies (its description, its desired immediate behaviour, and its purpose).</p>
+
+<p>While, in the community of software developers, variable names should then have a 1:1 mapping with the object or concept they denote, this isn’t the case in other communities, whether those that rely on obfuscation, in which confusion becomes beautiful, or in poetic code, in which <strong>double-meaning</strong> brings an additional, different understanding which ultimately enriches the complexity of the reading<sup id="fnref:32"><a href="#fn:32" class="footnote">33</a></sup>. Indeed, it is the easiest way for writers to offer metaphors, and provides an entry point in to the possibility that all source code is itself a metaphor for the task—and therefore the problem—at hand. This aesthetic criteria of double-meaning comes from poetry in human languages, in which layered meanings are aesthetically pleasing, because they point to the un-utterable, and as such, the sublime. The way that these two communities address the aesthetic problem of naming and, more generally, how source code and literature make use of metaphors, is part of the next steps that will be taken in this research.</p>
+
+<p>A final aesthetic criterion for vocabularies is the <strong>limitation of function arguments</strong>. Going back to the structural criterion above of limiting input/output and keeping groups of statements conceputally independent, function arguments solves this requirement at the level of vocabulary, demonstrating in passing the relative porosity of those categories. Indeed, the naming of variables also reveals the pick of <strong>adequate data-structures</strong>, echoing those who claim that the data on which the code operates can never be ignored, and that beautiful code is code which takes into account that data and communicates it, and its mutations, in the clearest (most intelligible) possible way.</p>
+
+<ul>
+  <li>Comments</li>
+</ul>
+
+<p>Comments in code do not seem to fall clearly in any of the three categories above. By definition ignored by the compiler/interpreter, comments can be erroneous statements which will persist in an otherwise functional codebase, and are therefore not trusted by experienced, professional software practicioners. In this configuration, comments seem to exist as a compensation for a lack of functional aesthetic exchange. By functional aesthetic exchange I mean an exchange in which a skilled writer is able to be understood by a skilled reader with regards to <em>what</em> is being done and <em>how</em>. If any of these conditions fail (the writer isn’t skilled enough and relies on comments to explain what is going on and how it is happening, or the reader isn’t skilled enough to understand it without comments), then comments are here to remedy to that failure, and therefore are an indicator (but, again, not a proof) of non-beautiful code. For instance, referencing a variable name in a comment is a sure indicator of a message which refers to the what/how of a group of statements and is on the verge of stating the obvious (if not already stating the obivous).</p>
+
+<p>The situation in which comments seem to be tolerated is when they provide contextual information, therefore (re-)anchoring the code in a broader world. For instance, this is achieved by offering an indication as to <em>why</em> such an action is being taken at a particular moment of the code. This particular use of comments seems to bypass the aesthetic criteria of code being self-explanatory, but nonetheless integrates the criteria of code being writable, a piece of code which, by its appearance, invites the reader to contribute to it, to modify it. As such, in an educational setting (from a classroom to an open-source project), comments are welcome, but rarely quoted as criteria for beautiful code, which seems to indicate that the appreciation of beautiful code does require a certain level of skill, even though this requirement isn’t uni-dimensional: skills can exist along multiple, independent axes.</p>
+
+<h3 id="aesthetics-as-a-purposeful-functioning-device">aesthetics as a purposeful, functioning device</h3>
+
+<p>This set of criteria is only the first of a multiple (including those of artists, hackers and academics), and is intended to be limited to the community of practicioners it stems from, as well as inform a consolidated set of principles which could possibly apply to any piece of source code. While the content of the framework seem to consistently apply to any commentary on source code found in the gathered corpus, its organization in structure/syntax/vocabulary could mirror a parallel structure in the aesthetic <em>experience</em> of the reader of a code-text. Such an aesthetic experience could be organized in terms of cognitive depths: reading (e.g. code is properly formatted, can be read), understanding (e.g. code communicates what it does), enlightening (code communicates more than what it does). This parallel structure also reflects the important fact that reading code is a different process than writing code. Indeed, one could argue that, while writing code can have similarities with writing prose or poetry, reading code, on the other hand, is more akin to investigative work and dissection than to leisurely skimming over a novel. Further research on this is needed, particularly along the axes of linear/non-linear reading, the requirement (or not) of paratexts, as well as reader positions, which then ties back into the existence of social contexts of aesthetics.</p>
+
+<p>At this point, this set of criteria for software developers points to a close relationship between beauty and understanding (i.e. <em>is beautiful that which I can easily understand and act upon/within</em>). Preliminary examination of the other groups of software practicioners also point to the presence of understanding as a writer and a reader engage with a code-text. For instance, for hackers, <em>is beautiful that which challenges understanding, that which is not understandable</em>, by removing agency, or doesn’t pre-suppose agency. For academics, <em>is beautiful that which provides an understanding beyond what is immediately there</em>, and provides deeper insights into theoretical realms of computation, algorithms or language design. For artists, <em>is beautiful that which offers a different, subjective understanding through poetic interpretation</em>.</p>
+
+<p>Following this, arises the question of whether a similar set of aesthetic criteria can be used to elicit multiple kinds of understanding, or if separate kinds of understandings require separate kinds of aesthetic criteria? If providing the understanding of something is akin to the act of <em>making clear</em> of that thing, then one could see <em>the art of programming</em> as the art of the obvious/of the transparent. This requirement to make intelligible would go against certain definitions of art as a self-sustaining, self-referential practice, and would locate code in-between an art and a craft. A piece of code which has to involve some concept to be understood implies that writing code is what I would call a <em>functional aesthetic practice</em>, an aesthetic practice which needs to <em>do</em> something in order to be appreciated as such. Could it then help to reconsider the separation between arts and craft, and perhaps seeing art as something which necessarily deals with the addition and/or modification of understanding?</p>
+
+<p>Approaching code as a functional artistic practice ties into the considerations of code as craft, or code as art, and whether or not these practices should be distinguished. Indeed, architecture is in a similar situation (though obviously not identical). Between craft and practice, architecture is first and foremost meant to be used; and architecture can also elicit similar (multiple) understandings.</p>
+
+<p>A further implication would touch upon artistic practices in general. Do all aesthetic objects communicate some knowledge that is to be understood by the audience? And therefore, can it be said that a good artwork is an artwork which reaches beyond itself, and always refers to the “problem domain” (a metaphor for the “real world” in programming)? But for that we must first inspect the relationship between code and literature.</p>
+
+<h3 id="code-and-literature">code and literature</h3>
+
+<p>The relationship between writing and reading code and reading and writing literature, while much<sup id="fnref:31"><a href="#fn:31" class="footnote">34</a></sup> written<sup id="fnref:32:1"><a href="#fn:32" class="footnote">33</a></sup> about<sup id="fnref:32b"><a href="#fn:32b" class="footnote">35</a></sup>, doesn’t however seem immediately obvious. Indeed, most literary theorists and humanities scholars focus on the literary implications of <em>executed code</em>, while often overlooking the potential aesthetic renewals which could stem from a closer examination of source code. On the opposite, computer science practicioners have indeed claimed similarities between code and literature. What is exactly at stake here is still unclear to me, but it could stem from reasons such as: legitimizing their field through connections with additional fields, pointing out the similarity of using words as a base material, highlighting the fact that their activity is not just a scientific one. However, while no consistent theory of source code as a <em>subset</em> of literature exists today, I would rather look at it as two separate endeavours, which nonetheless:</p>
+
+<ul>
+  <li>use similar materials (languages, or coherent systems of syntactic tokens)</li>
+  <li>involve similar approaches (blank pages, drafts, attention to details, recourse to imagination)</li>
+  <li>overcome similar problems (need to clarify complex cognitive structures, lack of clear communication between two subjective minds)</li>
+  <li>and desire to achieve similar ends (share an understanding of a broader concept).</li>
+</ul>
+
+<p>These two endeavours can be placed along the gradient of personal interpretation and objective efficiency. Where they stand depends on what they attempt at representing, at making understandable. For instance, if the aim is to make understandable the operations of a hardware timer, then the interpretation must be of the strictest nature<sup id="fnref:33"><a href="#fn:33" class="footnote">36</a></sup>. The writing must also subject to that requirement, in order to prevent any confusion in the reader and, ultimately, faulty usage with practical consequences. Further along that gradient, if the aim is to make understandable the implementation of a high-level algorithm, or pattern (say, a regular expression search<sup id="fnref:34"><a href="#fn:34" class="footnote">37</a></sup>), there is a little more room for an interpretative <em>approach</em> towards a set understanding of the idea of a regular expression, providing some agency to the reader to form a <em>comprehensive</em> mental model of a regular expression, rather than reading and assimilating an <em>exhaustive</em> one. On the other side of the spectrum, close to the interpretation, that which is intended to be communicated is part of human endeavours (e.g. employee management systems, user-facing software, and more generally the kind of software which has hugely benefited from the OOP paradigm). Since part of the complexity of software resides in the necessity to encode discreetely that which is continuous, code gets closer to literature. It does so as it inherently leaves room for uncertainty, for interpretation and for imagination with regards to what a user could do or would do, hinting at broad themes and possibilities of action, on top of the strict operation of its own code.</p>
+
+<p>The distinction that some of the more technically-savy practicioners operate between code and comments illustrates this relationship quite well: <em>code never lies, comments do</em>. Comments, by virtue of being completely ignored by the compiler or interpreter, are closest to prose. To what extent are comments helpful because they lie, or because of their unreliable nature? Comments are only necessary when one wants to explicit <em>why</em> a section of code does something. The question <em>why</em> hints at broader, more metaphysical concerns, concerns that are harder to communicate through code, and easier to communicate through literature. Another example is that of Donald Knuth’s work <em>literate programming</em><sup id="fnref:35"><a href="#fn:35" class="footnote">38</a></sup>, a set of languages, tools and practices which attempts at establishing comments as the canonical source of any compilable or interpretable source code. The aim was to allow the writer to write in “plain English”, and then generate source code from this description. Such an approach both claims that there are ties between writing source code and writing texts, yet crystallizes the difference between both since a <code>.web</code> file (to take the example of the first literate programming processor) is but a markup language which weaves in both natural and machine languages but does only so superficially, ultimately splitting each of those languages in separate files (<code>.tex</code> and <code>.pas</code>, respectively). I would therefore argue that, given fact that literate programming can be seen as <em>inserting code within literature</em>, code and literature are distinct practices which have the potential to mutually inform each other, as word-based crafts.</p>
+
+<p>If there are indeed parallels that can be made between code and literature, without claiming that code <em>is</em> a new form of literature, to what extent does code and literature use the same techniques (of conceptual distancing, naming, etc.), and to what end? One approach would be to compare both practices in terms of <strong>metaphors</strong>: how they are used (to clarify or to mystify), and to what purpose (i.e. for which kind of understanding). Furthermore, it seems that, just as there isn’t a single kind of code, there also isn’t a single genre of literature. While examining parallels, it will be useful to acknowledge that code can draw from styles such as minimalism, absurdist fiction or technical/scientific writing. Without a single monolithic vector against which the beauty of a code-text is evaluated, this would assess such aesthetics along different axes, between craft, literature and engineering.</p>
+
+<h3 id="next-steps">next steps</h3>
+
+<p>The work so far has established main aesthetic criteria for a particular kind of software practicioners: software developers constituting the vast majority of people writing and reading source code. Through this endeavour, I have highlighted the role that these criteria have with regards to understanding source code, in terms of reducing cognitive friction and facilitating more or less strict interpretations of the concepts and ideas that are being constructed and communicated by the writer. These preliminary findings support a <em>functional approach to aesthetics</em>. This implies that aesthetics can (and, in this specific context, should) have a transitive role: if the concept that they represent isn’t interesting or novel to the reader, then the code will not be considered “beautiful”. The code here is meant to be “self-documenting”, “transparent”, in that it doesn’t bring too much attention to itself, but rather point to the problem that it is attempting to solve by showing <em>what it does</em>. This corresponds to Nelson Goodman’s theory on the symbolic meaning of art<sup id="fnref:36"><a href="#fn:36" class="footnote">39</a></sup>. He argues that art, as an aesthetic manifestation, always communicates concepts to the viewer/reader, facilitated through formal cues through the use of denotation, connotation and representation. The practice of writing source code could therefore support a conception of art as a useful and functional communication tool.</p>
+
+<p>These cues, organized under the distinction of structure/syntax/vocabulary, can provide different depths of understanding, but it isn’t yet clear as to whether it can provide different <em>kinds</em> of understandings, and whether the same set of critieria can help understand different concepts (between say, hardware architecture, algorithm implementation, real-world situation or poetic imagination). The immediate next aspect that I will be focusing on is therefore to highlight the aesthetic criteria which support two other communities of practice: hackers and artists. This will help identify to what extent aesthetics can operate across communities of practice, or to what extent these communities of practice can operate independently. Particular attention will be paid to how each of these communities involve metaphors in their work (under what form and for which purpose). This will involve close readings of selected source code poems one one side and analysis of accounts and descriptions of “hacks” on the other side. The questions here are: what are practicioners trying to make understandable? and what aesthetic mechanisms are they using to do so?</p>
+
+<p>Another direction in which to answer the potential cross-domain nature of aesthetic critieria, I intend to further analyze the perceptions around beauty and languages. So far, it seems that there are some languages that are considered more beautiful than others (e.g. Ruby, Lisp vs. Java, JavaScript), and the reasons why that is could give further insight into the nature of aesthetic criteria in source code, particularly in further defining <em>“elegance”</em> and <em>“clarity”</em>, broad terms often employed by practicioners to describe beautiful code. The hypothesis here is that some languages are more prone to support aesthetic criteria for beautiful code, both intrinsically (through idiomatic features) and extrinsically (due to external discourses and paratexts confirming this “beauty”); however, it would be interesting to see why some languages (like Lisp) are deemed beautiful for other reasons.</p>
+
+<p>Finally, there needs to be additional research undertaken regarding metaphors, and how they relate to mental models and knowledge representation. While a broad field, I intend to approach it through literary theory, as well as through the small field of programming psychology. As explicited above, it seems that code and literature are only loosely related, more through the process of writing than the process of reading. The abundant use of metaphors in literature, and the essential quality of code to execute commands which stand for something else (e.g. keywords such as <code>open</code>, <code>close</code>, <code>listen</code>, <code>break</code>, but also vocabularies created by the writers while naming variables, functions, classes) would be a fruitful terrain for a comparative examination. Such a comparison would help in defining exactly what are the roles of metaphors in writing and reading code, how they are manifested through aesthetics and how they can illustrate the similarities and differences between code and literature.</p>
+
+<h3 id="questions">questions</h3>
+
+<ul>
+  <li>is it necessary to include academic/theoretical aesthetics? scope too large</li>
+  <li>how should i approach metaphors? from a philosophical stand, a psychological one or a literary one?</li>
+  <li>should i also look into what metaphors are used to make sense of code?</li>
+</ul>
+
+<hr />
+
+<p>https://www.americanscientist.org/article/cultures-of-code</p>
+
+<p>https://josephg.com/blog/3-tribes/</p>
+
+<p>https://blog.codinghorror.com/the-two-types-of-programmers/</p>
+
+<p>https://mkdev.me/en/posts/the-three-types-of-programmers</p>
+
+<p>to what extent these categories match what Wittgenstein has called <em>forms of life</em>, socio-cultural contexts of use, underpinned by normative activities (e.g. technical writing)</p>
+
+<p>Notes On Structured Programming</p>
+
+<p>The Art of Programming</p>
+
+<p>Elements of Programming Style</p>
+
+<p>Clean Code</p>
+
+<p>Beautiful Code</p>
+
+<p>Geek Sublime</p>
+
+<p>Cayley, The Code Is Not The Text (Unless It Is The Text)</p>
+
+<p>The Art of Readable Code</p>
+
+<p>Beautiful Code</p>
+
+<p>Djikstra’s luncheon talk</p>
+
+<p>Jay Wright Forrester</p>
+
+<p>Goodman, Languages of Art</p>
+
+<p>Galloway, Interface Effect</p>
+
+<p>Nabokov on Flaubert</p>
+
+<p>Sennett</p>
+
+<p>Djikstra, craftsman vs. scientist</p>
+
+<p>Software Craftsmanship</p>
+
+<p>single responsibility of classes, open/close principle, liskov substitution, interface segregation, dependency inversion</p>
+
+<p>Sennett</p>
+
+<p>Matz</p>
+
+<p>further-research-needed</p>
+
+<p>Doom</p>
+
+<p>(attributed to Phil Karlton), <a href="http://karlton.hamilton.com/quotes/index.cgi">link</a></p>
+
+<p>Bakhtin</p>
+
+<p>why is it that functions are easier to name than variables?</p>
+
+<p>Flusser, on doubt</p>
+
+<p>Barthes</p>
+
+<p>Treating Programming as an Essay</p>
+
+<p>Literate Programming</p>
+
+<p>hardware timer post</p>
+
+<p>beautiful code</p>
+
+<p>Geek Sublime</p>
+
+<p>Literate Programming</p>
+
+<p>Languages of Art</p>
+
+<hr />
+
+<ul>
+  <li><strong>structures</strong>
+    <ul>
+      <li><em>conceptual distancing</em> everything is close to each other in a semantic way (having variables together, then functions together, as <strong>separation of concerns</strong>). but only for larger code bases, but then the deeper beauty is when that layout actually reflects the conceptual structure of the code because, before the code, there is the data.</li>
+    </ul>
+  </li>
+  <li>regarding layout vs. structure: it’s an <em>indicator</em> but not a <em>proof</em>.</li>
+  <li><em>clean</em> structure is a structure in which only one intent can and should be perceived. all the statements relate to only one task</li>
+  <li>related: minimalism “the code that does the job while using the least amount of different ideas”.</li>
+  <li>code symmetry: using the same constructs for the same tasks</li>
+  <li>linear relationship between the number of lines of code and the amount to be understood (the existence of this + one liners being a thing considered beautiful proves that there are mulitple kinds of beauty)</li>
+  <li>blank space to show important separate steps (like senett’s decisive moment). that, at least has something in common with literatur insofar as they’re <strong>paragraphs</strong></li>
+  <li>when not enforced by the language, <em>stepdown rule of function declaration</em> (always have the more general functions at the top, the more specific at the bottom)</li>
+  <li>no input/output rule: everything that happens in locally coherent</li>
+</ul>
+
+<pre><code>- **syntax**
+- idiomatic usage and practice is a requirement.
+- some vocab in languages is haram (`unless` in perl, `*` in C, etc.) (related to vocabulary, except no because it's a `keyword`)
+- cross-referencing language knowledge is a tricky subject. using the idiomaticity of one language into another one (using ideas from C++ into C code is good, but writing ruby the way you write java is not good).
+- do not reference variable name in comments (redundancy, *DRY*)
+- natural language flows (ruby can shine at this, because ruby has multiple ways of doing it: `if people.include? person` vs. `if person.in? people`)
+- as similar as possible as natural language while retaining as much as possible the CLARITY of code
+- eliminate nesting (one line instead of three)
+- ways of calling functions *on* objects or calling functions *from* objects (aka no output arguments)
+</code></pre>
+
+<ul>
+  <li><strong>vocabularies</strong>
+    <ul>
+      <li>nouns as variables, verbs as functions, and both replace comments (comments are only acceptable for the “why” of programming logic)</li>
+      <li>variables should answer <em>why</em> it exists, <em>what</em> it does and <em>how</em> it is used (not certain that all of these can be attained at the same time)</li>
+      <li>pronounceable names</li>
+      <li>all caps is constant (bringing idiom from C to more modern languages)</li>
+      <li><strong>paloque berges’ double-meaning?</strong></li>
+      <li>one word per concept (1:1 relationship), don’t try to do multiple things at the same time, unless this is exactly what you would want to do</li>
+      <li>functions don’t have too many arguments (&lt; 3)</li>
+      <li>differentiate between <em>meaning/intention</em> of a variable and <em>value</em> of a variable (this is why: no magic number)</li>
+      <li>variable name length can hint at the importance/hierarchy of the variable</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="keep-in-mind">keep in mind</h3>
+
+<p>giving up the understanding in order to understand better (cognitive noise is related to the level of skill)
+a problem of a lot of research is <strong>inventing a new language without inventing new ideas</strong></p>
+
+<h3 id="questions-that-i-need-help-with">questions that i need help with</h3>
+
+<ul>
+  <li>am i reinventing the wheel at any point?
+    <ul>
+      <li>e.g. surface vs. depth, syntax as beauty for the unexperienced and semantics for the experienced</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>words as problem solvers</strong>
+(in reference to the book pat found, where the author states that programming is treated as a management problem, and not a mathematical one: but in both cases, we’re still talking about source code (and to what extent is it always the “same” source code?), a unique object/practice/paradigm which enables us to solve problems (and now, to what extent are these problems dependent on source code? or is it because source code (as computation) can solve theoretically any problem? and is that beautiful in itself?))</p>
+
+<h3 id="notes-from-xcoax">notes from xcoax</h3>
+
+<p>while it’s nice to have an overview of humanities at the beginning, it would be interesting to have reconciliation/reconsideration of those views by the end of this paper <strong>still important</strong></p>
+
+<ul>
+  <li>notion of beauty in non-artistic contexts
+    <ul>
+      <li>perhaps there is an underlying common process? (degree of complexitiy/satisfaction? to be happy about it?)</li>
+      <li>confusion vs. beauty <strong>YES</strong> (almost presupposed by this thesis)</li>
+      <li>~~brain scans?~~ <strong>NO</strong> (but programmer psychology yes)</li>
+      <li>~~address the node-based programming environments?~~ <strong>NO</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p>relationship to art? <strong>yes, but tangential question</strong>
+question to the understanding of beauty? <strong>yes, but tangential question</strong></p>
+
+<p>~~apparent symmetry vs. assymetry of reading vs. writing~~ taken into account, see above</p>
+
+<p>information <em>is</em> value, or information <em>has</em> value? (just because you have it, or because you know how to use it?)</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+
+      <p><a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+
+      <p><a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+
+      <p><a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+
+      <p><a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4b">
+
+      <p><a href="#fnref:4b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+
+      <p><a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+
+      <p><a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+
+      <p><a href="#fnref:7" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+
+      <p><a href="#fnref:8" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+
+      <p><a href="#fnref:9" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:10">
+
+      <p><a href="#fnref:10" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:11">
+
+      <p><a href="#fnref:11" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:12">
+
+      <p><a href="#fnref:12" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:13">
+
+      <p><a href="#fnref:13" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:14">
+
+      <p><a href="#fnref:14" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:15">
+
+      <p><a href="#fnref:15" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:16">
+
+      <p><a href="#fnref:16" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:17">
+
+      <p><a href="#fnref:17" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:18">
+
+      <p><a href="#fnref:18" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:19">
+
+      <p><a href="#fnref:19" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20">
+
+      <p><a href="#fnref:20" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:21">
+
+      <p><a href="#fnref:21" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:21b">
+
+      <p><a href="#fnref:21b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:22">
+
+      <p><a href="#fnref:22" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:23">
+
+      <p><a href="#fnref:23" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:24">
+
+      <p><a href="#fnref:24" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:25">
+
+      <p><a href="#fnref:25" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:26">
+
+      <p><a href="#fnref:26" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:27">
+
+      <p><a href="#fnref:27" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:28">
+
+      <p><a href="#fnref:28" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:29">
+
+      <p><a href="#fnref:29" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:30">
+
+      <p><a href="#fnref:30" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:32">
+
+      <p><a href="#fnref:32" class="reversefootnote">&#8617;</a> <a href="#fnref:32:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:31">
+
+      <p><a href="#fnref:31" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:32b">
+
+      <p><a href="#fnref:32b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:33">
+
+      <p><a href="#fnref:33" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:34">
+
+      <p><a href="#fnref:34" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:35">
+
+      <p><a href="#fnref:35" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:36">
+
+      <p><a href="#fnref:36" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+			</div>
+		</body>
+	</html>

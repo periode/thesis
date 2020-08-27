@@ -287,7 +287,7 @@ a problem of a lot of research is **inventing a new language without inventing n
 
 ### notes from xcoax
 
-~~while it's nice to have an overview of humanities at the beginning, it would be interesting to have reconciliation/reconsideration of those views by the end of this paper~~
+while it's nice to have an overview of humanities at the beginning, it would be interesting to have reconciliation/reconsideration of those views by the end of this paper **still important**
 
 - notion of beauty in non-artistic contexts
   - perhaps there is an underlying common process? (degree of complexitiy/satisfaction? to be happy about it?)
