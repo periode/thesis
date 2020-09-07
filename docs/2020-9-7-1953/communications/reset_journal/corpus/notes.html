@@ -1,0 +1,193 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="corpora">corpora</h1>
+
+<hr />
+
+<p>if having a style guide most commonly seen as something good, why is the process to get there so damn complicated?</p>
+
+<p>three approaches:</p>
+
+<ul>
+  <li>how the style guides present themselves</li>
+  <li>how people discuss them/fork them on github (issues, tagged as enhancement)</li>
+  <li>how people comment them on other places on the web</li>
+</ul>
+
+<p>they use the word “opinionated” a lot. <strong>the interesting thing is that there are not objectively correct answers but questions of style, even though these questions are approached as if they are</strong> &gt; open-source as objectifying the subjective</p>
+
+<p><a href="https://www.freebsd.org/doc/en/books/faq/misc.html#bikeshed-painting">“it is about personal pride and prestige”</a></p>
+
+<p>there might also be <em>radical difference</em> (style wars, tabs vs. space) as well as <em>incremental difference</em> (e.g. “making this change, in combination with AirBnB’s style guide…” etc.)</p>
+
+<p>also issues of bugs! you need to hack the config when a bug makes it necessary (more actor-network theory) -&gt; to what extent is style used/linked/intricated with a tool?</p>
+
+<h2 id="categories">categories</h2>
+
+<ol>
+  <li>personal pride, prestige and preference</li>
+  <li>technical argument (negative: tool not supporting X, etc. <strong>or</strong> positive: <a href="https://prettier.io/docs/en/why-prettier.html">prettier is the only fully automated style guide</a>)</li>
+  <li>rationale argument</li>
+</ol>
+
+<p>categories 1. uses the pronoun “i”, first person singluar, the 3. uses “we”: hints at the relationship between organizations (while at the same time being for interoperability)</p>
+
+<hr />
+<hr />
+<hr />
+
+<p>javascript doesn’t actually have a style guide
+ruby has one
+go has everything
+python has a style guide as well</p>
+
+<h2 id="prettierhttpsprettieriodocsenwhy-prettierhtml"><a href="https://prettier.io/docs/en/why-prettier.html">prettier</a></h2>
+
+<hr />
+
+<p>stats: 37k stars, 2.5k forks</p>
+
+<hr />
+
+<p>the core principle is “fully automatic”; on their website, they acknowledge that there are multiple reasons why one would want to use Prettier, and they list the different categories</p>
+
+<p>one of the main devs is confused that there are so little forks, because the issue is a <code>technical argument</code> rather than a <code>personal one</code> <a href="https://github.com/prettier/prettier/issues/3101#issuecomment-606764384">src</a>. as it turns out, it’s actually a different kind of <code>technical</code>, because forking perttier involves forking other plugins/files which come with it (you can fork a project, and it’s more difficult to fork an ecosystem)</p>
+
+<blockquote>
+  <p>it’s annoying until you don’t notice anymore
+<a href="https://github.com/prettier/prettier/issues/3101#issuecomment-674176352">src</a></p>
+</blockquote>
+
+<blockquote>
+  <p>many people have seen the value of “team” over “individual”
+<a href="https://github.com/prettier/prettier/issues/3101#issuecomment-683836592">src</a></p>
+</blockquote>
+
+<p>at the end of issue 3101, it just gets redirected to <a href="https://github.com/brodybits/prettierx">a fork</a>, and it is also the closing argumentation of <a href="https://github.com/prettier/prettier/issues/8507">this</a> (funny, cause this fork of prettier actually uses <strong>standardJS</strong> as some style inspiration)</p>
+
+<p><a href="https://github.com/prettier/prettier/issues/8507">interesting example of when a maintainer is angry, and a contributor rational</a></p>
+
+<blockquote>
+  <p>The requests for configuration are vocal. The requests to stay simple are often silent.
+<a href="https://github.com/prettier/prettier/issues/40">src</a></p>
+</blockquote>
+
+<h3 id="open-issues">open issues</h3>
+
+<p>component props being each on their own line</p>
+
+<h3 id="closed-issues">closed issues</h3>
+
+<p>tabs v space, semis (solved by having options)</p>
+
+<h2 id="standardjshttpsgithubcomstandardstandard"><a href="https://github.com/standard/standard/">standardJS</a></h2>
+
+<hr />
+
+<p>stats: 24k stars, 1.8k forks</p>
+
+<hr />
+
+<p>the core principle is “no configuration”, “automatically format code”, “catch style issues” )(save you time) <a href="https://github.com/standard/standard/issues/1356">src from founder</a></p>
+
+<h3 id="issues">issues</h3>
+
+<p>this guys wants to hack a config, understands why he shouldn’t do it, argues that it’s because the linter currently doesn’t support his request: <a href="https://github.com/standard/standard/issues/1500">link</a></p>
+
+<p>“based on ESLint”</p>
+
+<blockquote>
+  <p>There is a new set of ts plugins in town
+good metaphor of the JS ecosystem <a href="https://github.com/standard/standard/pull/1101">link</a></p>
+</blockquote>
+
+<h3 id="the-websitehttpsstandardjscomwhy-should-i-use-javascript-standard-style"><a href="https://standardjs.com/#why-should-i-use-javascript-standard-style">the website</a></h3>
+
+<p>“i disagree, can i change it?” answer is NO</p>
+
+<p>the point is to save <strong>time</strong> and give an answer to unsolved (unsolvable?) debates. therefore, it is seen as “not an actual, real problem”.</p>
+
+<p>the point of <em>standard</em> is that it is both an indicator of <em>standard of quality</em> and basis for a <em>style standard</em></p>
+
+<p>justification from the founder: <a href="https://feross.org/never-use-semicolons/">link</a>, it is about technical, about “being kept safe”</p>
+
+<p>the first comment is “sorry, this doesn’t make sense to me”</p>
+
+<p>response in support of “no semi-colon”, user “Chipotle”
+&gt; “the simplest approach is the one with fewer rules and characters”</p>
+
+<p>response against, user “Heheh”
+&gt; “The people are divided on those who are real programmer (they are use semicolons). And hobbysts who have never programmed in another language.”</p>
+
+<h3 id="eslint">eslint</h3>
+
+<hr />
+
+<p>stats: 17k, forks 3k</p>
+
+<hr />
+
+<h3 id="airbnb">airbnb</h3>
+
+<h4 id="commentaries">commentaries</h4>
+
+<p><a href="https://medium.com/docon/airbnb-javascript-style-guide-key-takeaways-ffd0370c053">medium post</a></p>
+
+<ul>
+  <li><a href="https://www.freecodecamp.org/news/adding-some-air-to-the-airbnb-style-guide-3df40e31c57a/">freecodecamp</a></li>
+</ul>
+
+<p>it’s about productivity and maintainability</p>
+
+<p>javascript has a lot of tools and everything else (and it’s typical of javascript)</p>
+
+<p>aesthetics is the prime justification of the author: breathing some air, making it lighter, nicer
+&gt; indentation is one of the rules that breathes more “air” into AirBnB’s default style guide. As a result, your code doesn’t crowd on the left side of editor so badly.</p>
+
+<p>call to personal judgment
+&gt; I encourage you to give them a try. I think you’ll quickly experience what a difference this makes.</p>
+
+<h2 id="ruby-style-guidehttpsrubystyleguide"><a href="https://rubystyle.guide/">ruby style guide</a></h2>
+
+<h2 id="golinthttpsgithubcomgolanglint"><a href="https://github.com/golang/lint">golint</a></h2>
+
+<h2 id="black---pythonhttpsgithubcompsfblack"><a href="https://github.com/psf/black/">black - python</a></h2>
+
+<p>very nice and polite discussion: [https://github.com/psf/black/issues/51]</p>
+
+<p>the big difference is PEP-8. indeed, even google just builds on top of it</p>
+
+			</div>
+		</body>
+	</html>
