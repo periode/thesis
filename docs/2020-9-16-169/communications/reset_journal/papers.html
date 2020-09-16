@@ -1,0 +1,239 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/thesis/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="papers-about-code-style-acm-etc">papers about code style (acm, etc.)</h1>
+
+<h2 id="judgment-of-code-style">judgment of code style</h2>
+
+<p>automated tool to help students, machine learning, acknowledging pylint, etc.</p>
+
+<h2 id="what-is-style-by-david-garland">what is style? by david garland</h2>
+
+<p>applies style to software architecture (supe macro), but doesn’t quite define style</p>
+
+<blockquote>
+  <p>architectural styles define a semantic interpretation whereby compositions of design elements, suitably constrained by the configuration rules, have well-defined meanings</p>
+</blockquote>
+
+<p>but he seems quite limited by OOP / unix style</p>
+
+<h2 id="teaching-programming-style-with-ugly-code">teaching programming style with ugly code</h2>
+
+<p>refers to McConnell, 2004: “the details of a specific method of structuring a program are much less important than the fact that the program is structured consistently”</p>
+
+<h2 id="linux-kernel-coding-style">linux kernel coding style</h2>
+
+<p>The religious tone by excellence, mentions “heretic”, “heed the warning”.</p>
+
+<p>claims that K&amp;R is the one and only rationale needed</p>
+
+<p>“First off, I’d suggest printing out a copy of the GNU coding standards, and NOT read it. Burn them, it’s a great symbolic gesture.”</p>
+
+<p>also provides a linter file for emacs</p>
+
+<h2 id="programming-style-ontology-driven-tools">programming style ontology-driven tools</h2>
+
+<p>three levels of knowledge representation:</p>
+
+<ul>
+  <li>formal description of the programming style</li>
+  <li>informatl knowledge of the programming style</li>
+</ul>
+
+<h2 id="recommended-c-style-and-coding-standards">recommended C style and coding standards</h2>
+
+<p>“mixed coding style is harder to maintain than bad coding style” -&gt; this is what brings us to the automatic linters</p>
+
+<h2 id="sometimes-style-really-does-matter-david-reed">sometimes style really does matter, david reed</h2>
+
+<p>he explains that style is more than aesthetics, and helps understanding</p>
+
+<p>there are uniquivocal rules (everyone agrees on) (e.g. naming conventions)</p>
+
+<p>there are also competing, yet equivalent styles: no real answers, so the answer becomes “consistency” which is enforced by linters</p>
+
+<h2 id="fractal-analysis-of-programming-style">fractal analysis of programming style</h2>
+
+<p>Tools like <code>indent</code> are a staple of softeng: it’s not about what is beauty, but what is knowable about it, and thus enforceable</p>
+
+<blockquote>
+  <p>Aesthetic value is not the same as readability</p>
+</blockquote>
+
+<p>this is from: Posnett, Daryl, Hindle, Abram &amp; Devanbu, Prem, (2011) “A Simpler Model of Software Readability”,</p>
+
+<blockquote>
+  <p>Gabriel  argues against clarity and conceptual beauty as primary goals of software in favour of what the author calls “habitability.”</p>
+</blockquote>
+
+<p>Gabriel, Richard, (1996) Patterns of Software, Oxford</p>
+
+<h2 id="using-javascript-type-checkers-on-github-systems">using javascript type checkers on github systems</h2>
+
+<p>js as an important part of the web</p>
+
+<p>linters have warnings about bad code logic (i don’t care), and bad code style (i care)</p>
+
+<p>doesn’t state what are “commonly accepted rules”</p>
+
+<p>teams know about mistakes, because they’ve customized it</p>
+
+<p>baseline: for large projects, custom static code analyzers are used</p>
+
+<h2 id="visual-studio-refactoring">visual studio refactoring</h2>
+
+<p>some guy’s master thesis from prague</p>
+
+<p>there is a large gap between knowing the rules and following them: so we need tools not just to detect, but also to take action</p>
+
+<h2 id="style-is-substance---ken-arnolds---httpswwwartimacomweblogsviewpostjspthread74230">style is substance - ken arnolds - [https://www.artima.com/weblogs/viewpost.jsp?thread=74230]</h2>
+
+<p>the guy argues that style should be built into the language grammar</p>
+
+<blockquote>
+  <p>Of course, you will never enforce any style globally unless people have literally no choice</p>
+</blockquote>
+
+<p>the important part is that it comes <em>from the language</em>, therefore limitation on the power of community in the sense that the community should be able to crowd-decide what is best.</p>
+
+<h2 id="programming-style-examples-and-counter-examples---kernighan">programming style: examples and counter examples - kernighan</h2>
+
+<p>foundational paper written in 1974, it surveys the beginning of modern style concerns (expression, structure)</p>
+
+<h2 id="a-taxonomy-for-programming-styles---oman-httpsdlacmorgdoi101145100348100385---1990">a taxonomy for programming styles - oman [https://dl.acm.org/doi/10.1145/100348.100385] - 1990</h2>
+
+<p>sets the stage for an empirically-backed style checking process</p>
+
+<h2 id="paradigm-for-programming-style-research---oman---1988---httpswwwresearchgatenetderefhttp3a2f2fdxdoiorg2f1011452f5766957675">paradigm for programming style research - oman - 1988 - [https://www.researchgate.net/deref/http%3A%2F%2Fdx.doi.org%2F10.1145%2F57669.57675]</h2>
+
+<p>difference between typographic and structural style</p>
+
+<hr />
+
+<p>github papers</p>
+
+<hr />
+
+<h2 id="got-issues-who-cares-about-it">got issues? who cares about it?</h2>
+
+<p>good references for ground work in OSS user contributions</p>
+
+<blockquote>
+  <p>Our study exploits data from GitHub, a super-repositoryof software projects containing millions of projects. GitHubis free for open source projects and implements an in-houseissue tracking system where users can file issues and tag theminto self-defined categories. The issue tracking system is easyto use and is systematically provided to all projects hostedin GitHub.</p>
+</blockquote>
+
+<ul>
+  <li>Bagozzi etal. [3], Iivari [14], Hendry [10] and Singh et al. [22] haveinvestigated the role of users in open source communities. Inthese studies they make the point that users actually drive thesoftware project and its evolution.</li>
+  <li>G. Hendry, “Public participation in proprietary software developmentthrough user roles and discourse,” Int. J. Hum.-Comput. Stud., vol. 66,no. 7, pp. 545–557, Jul. 2008</li>
+  <li>Iivari, “Empowering the users? a critical textual analysis of the roleof users in open source software development,” AI Soc., vol. 23, no. 4,pp. 511–528, Oct. 2008.</li>
+</ul>
+
+<h2 id="perceived-language-complexity-in-github-issuediscussions-and-their-effect-on-issue-resolution">Perceived Language Complexity in GitHub IssueDiscussions and Their Effect on Issue Resolution</h2>
+
+<blockquote>
+  <p>Rhetoric and technical language are on opposite endsof a language complexity spectrum: the former is stylisticallynatural; the latter is terse and concise. Issue discussions embodythis duality, as developers use rhetoric to describe technical issues.The style mix in any discussion can define group culture andaffect performance, e.g., issue resolution times may be longer ifdiscussion is imprecise.</p>
+</blockquote>
+
+<p>findings:</p>
+
+<blockquote>
+  <p>We find that experienced users conform to project-specific languagenorms, popular individuals use overall GitHub language ratherthan project-specific language, and conformance to project-specific language norms reduces issue resolution times</p>
+</blockquote>
+
+<p>technical language vs. community language (both subject to <em>perceived language complexity</em>)</p>
+
+<blockquote>
+  <p>project-specificterms and perceived language complexity exist, andsomeprojects have more project-specific perceived languagecomplexity than others.</p>
+</blockquote>
+
+<p>as for users,</p>
+
+<blockquote>
+  <p>they gravitate towards the project languagenormandpopular users (measured by the number of timesthey are @mentioned in issue discussions) are betterrepresented by the GitHub global language model thanproject-specific language models.</p>
+</blockquote>
+
+<p>a <strong>speech community</strong> describes a group of people who use language in a way that is mutually accepted among the group, which requires communitative competence (they must speak in a manner that is standard within the speech community—norm conformity) — less structured, end users</p>
+
+<p>a <strong>community a practice</strong> (wenger &amp; lave) have shared practices, membership is internally constructed, co-construction of personal and group identities, with a shared social/instrumental goal. Kleinnijenhuis describes <strong>networks of practice</strong> — more structured, developers of project</p>
+
+<blockquote>
+  <p>GitHub discussions are a push-and-pull effort betweenthe push to use technical language that is relevant to theproject, and the pull to provide a narrative which frames one’sposition through rhetoric</p>
+</blockquote>
+
+<h2 id="tool-choice-matters-javascript-quality-assurancetools-and-usage-outcomes-in-github-projects">Tool Choice Matters: JavaScript Quality AssuranceTools and Usage Outcomes in GitHub Projects</h2>
+
+<blockquote>
+  <p>Based on these anecdotes, we hypothesize that a complexproject with project-specific code style requirements may bemore likely to useESLintorJSHint, while a smaller projectmay opt forstandardJSbecause it is easier to set up.While highly configurable tools likeESLintandJSHintrequire more effort in configuration, they may nullify disputesover code formatting and facilitate code review.standardJSrequires less initial effort from project maintainers and maybe appealing to new contributors who are familiar with thecommon code style. However, since its adoption likely entailedless configuration effort, maintainers may need to spend moretime on code review or address more issues about code styling.</p>
+</blockquote>
+
+<h2 id="open-source-style-collaborative-development-practices-in-commercial-projects-using-github---101109icse201574">Open-Source Style Collaborative Development Practices in Commercial Projects Using GitHub - 10.1109/ICSE.2015.74</h2>
+
+<p>commercial projects and corporations are influenced by the OSS style of working</p>
+
+<h2 id="social-coding-in-github-transparency-and-collaboration-in-an-open-software-repository">Social Coding in GitHub: Transparency and Collaboration in an Open Software Repository</h2>
+
+<blockquote>
+  <p>We find  that  people  makea  surprisinglyrich  set  ofsocialinferences   from   the networked activity information in GitHub, such as inferring someoneelse’s technical goals and vision when they edit  code, or  guessing which of several  similar  projects  has  the  best  chance  of  thriving  in the long term.</p>
+</blockquote>
+
+<p>In the end, communication happens at the end of transparency: when the information isn’t readily available, when it is unclear. also signs of attentions.</p>
+
+<h2 id="on-measuring-affects-of-github-issues-commenters---httpsdlacmorgdoiabs10114531949323194936">On measuring affects of github issues’ commenters - [https://dl.acm.org/doi/abs/10.1145/3194932.3194936]</h2>
+
+<p>there are <em>users</em> (regulars) and <em>commenters</em> (only post without opening issues or source code changes)</p>
+
+<p>commenters are less polite than users, and more negative</p>
+
+<p>commenters are also more aggressive (but only aggressive, actually; there is few variation in their emotion)</p>
+
+<h2 id="lets-talk-about-it-evaluating-contributions-through-discussion-in-github-jason-tsay-laura-dabbish">Let’s Talk About It: Evaluating Contributions through Discussion in GitHub (jason tsay, laura dabbish)</h2>
+
+<blockquote>
+  <p>We  found  that  developers raisedissues around contributions over  both  the  appropriateness of  the  problem  that thesubmitter  attemptedto  solve  and  the correctness   of   the   implemented   solution.</p>
+</blockquote>
+
+<p>I’m only interested in the first part (appropriateness)</p>
+
+<p>They also resort to external stakeholders: dependent projects or companies</p>
+
+<blockquote>
+  <p>Tsay et al. [23]found in a study of contributions in GitHub that a number  of  social  and  technical  factors influenced  the  probability of a contribution being accepted. When contributions were highly discussed,  contributions  were  much  less  likely  to  be  accepted.</p>
+</blockquote>
+
+<p>in the end it’s just a typology of discussions, not sure how useful</p>
+
+<p>similar to [https://doi.org/10.1145/2568225.2568315]</p>
+
+			</div>
+		</body>
+	</html>
