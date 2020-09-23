@@ -35,6 +35,9 @@ ruby has one
 go has everything
 python has a style guide as well
 
+
+in Standard, the tool *is* the convention
+
 ## [prettier](https://prettier.io/docs/en/why-prettier.html)
 
 ---

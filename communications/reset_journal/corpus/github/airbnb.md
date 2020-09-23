@@ -7,6 +7,10 @@
 
 ---
 
+overall, the main dude `ljhard` has the dual role of community building and code-fixing, and explains the rationale, thus moving the debate from personal preferences to technical know-how to practical implementation (eslint configs)
+
+---
+
 ## OPEN ISSUES
 
 at the bottom of the README, there is:
