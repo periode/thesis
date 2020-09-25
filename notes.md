@@ -23,7 +23,6 @@ this could be an interesting theory about the reading process: [https://www.fabu
 
 questions:
 
-
 - would you like to see the corpus? how should i display/save it?
 
 - categories of people are relevant? should i look into academic as well? i'm afraid there might not be so much information/sources
@@ -34,7 +33,6 @@ questions:
 
 the intent overall is to see to what extent there is an overlap between each of those communities of practice
 
-
 next steps:
 
 - do the same with code poetry for this semester
@@ -44,6 +42,18 @@ next steps:
   - psychology of programming
 
 ---
+
+## chat w/ alexandre
+
+- question de lecture/lectorat?
+- - pareillement à ce qu'a dit Nick, il faut se pencher sur la compréhension machine vs. compréhension humaine (aka, il a été établi que la lecture est plus qu'un procédé d'encodage, décodage)
+- - et c'est peut-être justement cette double lecture (machine/humain) qui fait que le code est beau
+- ~~place de la métaphore?~~
+- ~~question du corpus? comment le mettre en page?~~
+- relation avec la littérature?
+- - RESULTAT: rechercher d'avantage les approches cognitives de l'esthétique/littérature, notamment avec [francoise lavocat](https://www.wiko-berlin.de/en/fellows/academic-year/2014/lavocat-francoise/), [terrence cave](https://global.oup.com/academic/product/thinking-with-literature-9780198749417?cc=de&lang=en&) et [jean-marie schaeffer](https://www.nebraskapress.unl.edu/university-of-nebraska-press/9780803217584/)
+- - mais aussi considérer la poésie/littérature comme programmatique (oulipo, etc.), en ce que "si le code est beau, il est beau de la même manière que la poésie".
+- et puis **faire attention aux mots** (keywords, etc.), en ce que ces mots-là ont un pouvoir/une contrainte
 
 ## chat w/ nick
 
@@ -86,6 +96,6 @@ Relationship between architect and craftsman
 Style as social order
 Artists: building as statement
 Academics: sketches
-Hacker: tricky because hackers operate as underdogs, architects operate as overdogs, so to speak. i don't know enough, but i would imagine things like louvre abu dhabi's dome / mies van der rohe / starchitects who 
+Hacker: tricky because hackers operate as underdogs, architects operate as overdogs, so to speak. i don't know enough, but i would imagine things like louvre abu dhabi's dome / mies van der rohe / starchitects who push boundaries of the possible?
 
 > Details: Some claims are understated, some may need substantiation. "The vast majority of code written today has been done by software engineers" doesn't seem like a controversial claim, but how exactly do you know? Lots of code has been written by students, researchers, hobbyists. When you describe code practitioners, you say "These categories include" ... but you mean "These categories are ..." And a very minor item: Beautiful Code, because it is an edited collection, can be called a book but is not a monograph.

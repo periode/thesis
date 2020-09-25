@@ -2,7 +2,6 @@
 
 Contributors are invited to consider one or other of these topics:
 
-
 ## themes
 
 - AI's fiction: robots, cyborgs, computers; **language** amongst the computer scientists
@@ -10,11 +9,11 @@ Contributors are invited to consider one or other of these topics:
 
 ## notes
 
-this contribution looks at how the early communities of AI development have built up a series of narratives around the power of language, and particularly logical language
+this contribution looks at how the early communities of AI development have built up a series of narratives around the power of language, and particularly logical language, and how assumptions about form and content allowed the development of modern computation and contemporary artificial intelligence.
 
 ### part on lisp itself, what it makes it special as a computer
 
-list processing, abstracting away details, functions-as-data, eliza
+list processing, abstracting away details, functions-as-data, eliza, tree-like structure
 
 ### the socio-historical context
 
@@ -22,7 +21,7 @@ leibniz, first AI dartmouth, SICP, lots of dialects
 
 ### what that tells us today
 
-??? it's not so much language dependent as concept dependent: the list, the group, which together form a pattern, from the line to the surface
+??? it's not so much language dependent as concept independent: the list, the group, which together form a pattern, from the line to the surface
 
 ## bibliography
 

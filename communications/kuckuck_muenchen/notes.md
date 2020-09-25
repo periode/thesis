@@ -41,3 +41,4 @@ sennett
 uncle bob
 ruskin
 simmel
+[https://www.editionsladecouverte.fr/catalogue/index-De_la_programmation_consideree_comme_un_des_Beaux_Arts-9782707121547.html]

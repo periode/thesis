@@ -8,7 +8,7 @@ three approaches:
 
 - how the style guides present themselves
 - how people discuss them/fork them on github (issues, tagged as enhancement)
-- how people comment them on other places on the web
+- how it compares across projects and what it says about the development of open source projects, the justification against personal style
 
 they use the word "opinionated" a lot. **the interesting thing is that there are not objectively correct answers but questions of style, even though these questions are approached as if they are** > open-source as objectifying the subjective
 
@@ -22,21 +22,19 @@ also issues of bugs! you need to hack the config when a bug makes it necessary (
 
 1. personal pride, prestige and preference
 2. technical argument (negative: tool not supporting X, etc. **or** positive: [prettier is the only fully automated style guide](https://prettier.io/docs/en/why-prettier.html))
-3. rationale argument
+3. social argument
 
-categories 1. uses the pronoun "i", first person singluar, the 3. uses "we": hints at the relationship between organizations (while at the same time being for interoperability)
+categories 1. uses the pronoun "i", first person singular, the 3. uses "we": hints at the relationship between organizations (while at the same time being for interoperability)
 
 ---
 ---
 ---
 
-javascript doesn't actually have a style guide
-ruby has one
-go has everything
-python has a style guide as well
+in Standard, the tool *is* the convention: most of it is about functional as well as aesthetic (they are intertwined)
 
+in Airbnb, the organization is the convention: the discourse is didactic, explain to the users why they do something, and providing the users with explanations AND alternatives to the code they post
 
-in Standard, the tool *is* the convention
+in Prettier, the opinion is the convention?
 
 ## [prettier](https://prettier.io/docs/en/why-prettier.html)
 
@@ -70,6 +68,9 @@ component props being each on their own line
 ### closed issues
 
 tabs v space, semis (solved by having options)
+
+---
+---
 
 ## [standardJS](https://github.com/standard/standard/)
 
@@ -108,7 +109,7 @@ response in support of "no semi-colon", user "Chipotle"
 response against, user "Heheh"
 > "The people are divided on those who are real programmer (they are use semicolons). And hobbysts who have never programmed in another language."
 
-### eslint
+## eslint
 
 ---
 
@@ -116,9 +117,11 @@ stats: 17k, forks 3k
 
 ---
 
-### airbnb
+this one is the base on which all others are setup
 
-#### commentaries
+## airbnb
+
+### commentaries
 
 [medium post](https://medium.com/docon/airbnb-javascript-style-guide-key-takeaways-ffd0370c053)
 
