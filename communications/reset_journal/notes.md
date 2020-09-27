@@ -17,7 +17,7 @@ beatrice fraenkel, actes d'écriture [https://www.cairn.info/revue-langage-et-so
 
 béatrice fraenkel, actes d'écritures inséparables des lieux [https://www.cairn.info/revue-l-homme-2018-3-page-7.htm] - github est un lieu!
 
-**les objets intermédiaires** un concept de l'ANT qui place les objets au sein du processus du travail:
+**les objets intermédiaires** un concept de l'ANT qui place les objets au sein du processus du travail: un guide de style est un objet intermédiaire.
 
 - Jeantet A. (1998). " Les objets intermédiaires dans les processus de conception des produits ", Sociologie du travail, (3), p. 291-316.
 - Vinck D. (1999a). “ Les objets intermédiaires dans les réseaux de coopération scientifique. Contribution à la prise en compte des objets dans les dynamiques sociales “, Revue Française de Sociologie. XI, p. 385-414
@@ -56,17 +56,44 @@ style as managing ambivalent attachments to big social forms > mcgurl, d.a. mill
 
 *tzvetan todorov*: "les effets de style ne pourraient exister que s'ils ne s'opposaient a une norme, a un usage etabli"
 
-style negotiations in open source platform are a conflict between personal initiative and group direction, and in that mimicks the productive tensions in open-source software.
+style negotiations in open source platform are a conflict between personal initiative and group direction
 
-This study has implications for understanding...... `TO BE COMPLETED` (the limitations of do wtf you want lol)
+This study has implications for understanding...... `TO BE COMPLETED` the discursive references at play when attempting to solve intractable problems of personal preferences
 
 What are the objectives?
 
-This paper examines the discursive strategies at play when deciding on a programming style in the context of open-source development
+This paper examines the discursive strategies at play when deciding on a programming style in the context of open-source development, and to highlight what they depend on.
 
-which concepts do i rely on? (readerly/writerly texts is a good start)
+which concepts do i rely on? (readerly/writerly texts is a good start, socio-technical assemblages, discourse analysis, types of open source participation, **canonical text**)
 
 what is the existing research on this topic? (keywords: style, written approach, organizational aesthetics)
+
+the canonical text is outside of the discursive space.
+
+---
+
+## arguments
+
+arguments provide reasons to do so
+
+appeal to authority is not an argument
+
+do not caricature the opposing side
+
+start from reliable premises (is personal preference a reliable premise? how about personal experience? how about community support? technical soundness? readability?)
+
+- arguments by example
+- - are the examples numerous? representative? are there counterexamples?
+- - you need background info to be able to judge them
+- arguments by analogy
+- - metaphors, need to be sufficiently similar
+- arguments by authority
+- - sources should be cited
+- - sources should be informed
+- arguments about causes
+- - correlation: how cause leads to effect (but you need to prove both, actually)
+- deductive arguments
+- - classic syllogism, `if p then q`, etc.
 
 ---
 
@@ -88,51 +115,3 @@ there is:
 \# of participants
 
 ---
-
-# introduction
-
-## style in organizations/groups
-
-### simmel and artistic style
-
-### literary style and goody
-
-## the readerly and the writerly
-
-## the need for style in programming
-
-### the start of programming as art
-
-### the development of programming as group-based activities
-
-## the ecosystem of programming
-
-### github
-
-### linters
-
-## the connection with actor network theory
-
-question: what are some of the discursive strategies in place regarding style guide adoption and modification? how are these connected to, and affected by github?
-
-hypothesis: the technological milieu in which these discussions happen affects the argumentation
-
-# research methods
-
-## locus of research
-
-### on github
-
-### outside github (additional texts)
-
-## analytical categories
-
-### emotional justification
-
-### rational justification
-
-### technical justification
-
-# findings
-
-# conclusion

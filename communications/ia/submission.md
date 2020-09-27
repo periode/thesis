@@ -23,6 +23,11 @@ leibniz, first AI dartmouth, SICP, lots of dialects
 
 ??? it's not so much language dependent as concept independent: the list, the group, which together form a pattern, from the line to the surface
 
+## references that people in AI have
+
+- mind/body problem
+- the universal language (McCarthy, who made LISP)
+
 ## bibliography
 
 - cramer, executupable statements
@@ -33,3 +38,4 @@ leibniz, first AI dartmouth, SICP, lots of dialects
 - that paper about romanticism
 - computer power and human reason
 - vilem flusser, line surface
+- mccorduck, machines who think

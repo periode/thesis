@@ -1,9 +1,11 @@
 # airbnb repo
 
-- how many issues? comments?
+---
 
 76 open
 947 closed
+100k stars
+20k forks
 
 ---
 
