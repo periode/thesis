@@ -69,7 +69,6 @@ next steps:
 - how are authors reading their manuscript?
 - how is related to craftsmanship? to architectural reading? an architect doesn't look at the whole plan when they read it, only the parts they need to change
 
-
 ### whole email
 
 > Your four categories could be refined a bit. I think data scientists working for businesses are very much like the "academics" you identify, in that they don't ship their software to others and their outcomes are external research and insight. A minor issue, but it leads to thinking about the distinction between custom software development for corporate clients (only one piece of software is made) and massively distributed games, apps, operating systems, etc. that run on a variety of platforms and need to be maintained in that context. What a "software engineer" does in these contexts is fairly different, and even if the category holds, I would expect different style guides (for instance) to be used in both cases.
@@ -91,11 +90,17 @@ This is a very good point, and it bridges the aesthetics (form) and the poetics 
 
 > The connection to architecture is a great one. As I was reading the beginning of the paragraph, I was wondering if you were going there, and you were. Can you continue this and map your emerging understanding of code aesthetics into architectural aesthetics? Are the intentionally obfuscated productions of hackers similar in any way to sometimes uninhabitable but structural follies (see https://urldefense.proofpoint.com/v2/url?u=https-3A__en.wikipedia.org_wiki_Folly-29-3F&d=DwIDaQ&c=slrrB7dE8n7gBJbeO0g-IQ&r=PzETIgMD0q9M9MuN-Qfb-8mokR3XuAfMcQJfIzs3Lys&m=NWnwPwQw3df5Qif9i4gZntsF5Wd7PucZ9dvI6UO9zcE&s=M5hUoJLmyfuK-BGayUtxsFeWlFC3xvaZd_TWrjdXkKs&e=
 
-Questions of ornament and structure
-Relationship between architect and craftsman
-Style as social order
-Artists: building as statement
-Academics: sketches
-Hacker: tricky because hackers operate as underdogs, architects operate as overdogs, so to speak. i don't know enough, but i would imagine things like louvre abu dhabi's dome / mies van der rohe / starchitects who push boundaries of the possible?
+I was particularly interested by a keynote that Christopher Alexander gave at the ACM OOPSIG a couple of decades ago, in which he presented his work on patterns as "patterns which support living", and am now wondering to what extent beautiful code could be made up of "patterns which support thinking" (obviously, thinking implies "good and easy" thinking here, as I'm assuming Alexander means "good and easy life").
+
+Some of the other thoughts that I have a regard the relationship between architect and craftsman (even though the dawn of the architect foresees the demise of the craftsman?). Do physical architects only relate to software architects (designing the overall concept rather than figuring out the building blocks).
+
+In terms of style, I can actually see some kind of correlation (similarly to alexander's patterns above). Style can be seen in both as a form of social order, not in Foucault's sense, but rather that a sylistic imperative in software connotes group cohesion, the same way that stylistic choices in architecture connote group cohesion as well.
+
+Finally, in terms of mapping the groups I've identified of code practitioners, here's a parallel that I can think of.
+Artists: building as statement, software as a statement (e.g. brandlhuber vs. I/O/D)
+Academics: sketches, concepts, ideas over realizations
+Hacker: I can't seem to make a connection here, because hackers operate as underdogs, architects operate as overdogs, so to speak. i don't know enough, but i would imagine things like louvre abu dhabi's dome / mies van der rohe / starchitects who push boundaries of the possible? I would need to read up more on hackers and their practices before giving a further answer, though.
 
 > Details: Some claims are understated, some may need substantiation. "The vast majority of code written today has been done by software engineers" doesn't seem like a controversial claim, but how exactly do you know? Lots of code has been written by students, researchers, hobbyists. When you describe code practitioners, you say "These categories include" ... but you mean "These categories are ..." And a very minor item: Beautiful Code, because it is an edited collection, can be called a book but is not a monograph.
+
+Yes, these are all very good points. If the metric is the number of lines of codes, then we can safely assume that software developers are indeed the main contributors to code, if only just by taking Microsoft and Google products into account (I would also put open-source developers in that category, as they do ship "commercial" products). Source: https://docs.google.com/spreadsheets/d/1s9u0uprmuJvwR2fkRqxJ4W5Wfomimmk9pwGTK4Dn_UI/edit#gid=5

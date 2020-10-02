@@ -1,6 +1,18 @@
 - voices of the programmers
 - wihtout style wars, there wouldn't be a craft [link](https://www.artima.com/weblogs/viewpost.jsp?thread=74230)
 
+---
+
+page count:
+
+2 intro
+3 context
+2 research methodology
+3 findings
+2 conclusion
+
+---
+
 [link](http://theorangeduck.com/page/aesthetics-code)
 
 jack goody - the logic of writing
