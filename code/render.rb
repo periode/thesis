@@ -53,7 +53,7 @@ fashion = %{
 				}
 			</style>
 			<div class="way">
-				<a href="/thesis/index.html">cover</a>
+				<a href="/index.html">cover</a>
 			</div>
 			<div class="holding tight">
 				<%= rest %>

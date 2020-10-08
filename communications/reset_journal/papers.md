@@ -107,7 +107,7 @@ good references for ground work in OSS user contributions
 
 > Our study exploits data from GitHub, a super-repositoryof software projects containing millions of projects. GitHubis free for open source projects and implements an in-houseissue tracking system where users can file issues and tag theminto self-defined categories. The issue tracking system is easyto use and is systematically provided to all projects hostedin GitHub.
 
-- Bagozzi etal. [3], Iivari [14], Hendry [10] and Singh et al. [22] haveinvestigated the role of users in open source communities. Inthese studies they make the point that users actually drive thesoftware project and its evolution. 
+- Bagozzi etal. [3], Iivari [14], Hendry [10] and Singh et al. [22] haveinvestigated the role of users in open source communities. Inthese studies they make the point that users actually drive the software project and its evolution. 
 - G. Hendry, “Public participation in proprietary software developmentthrough user roles and discourse,” Int. J. Hum.-Comput. Stud., vol. 66,no. 7, pp. 545–557, Jul. 2008
 - Iivari, “Empowering the users? a critical textual analysis of the roleof users in open source software development,” AI Soc., vol. 23, no. 4,pp. 511–528, Oct. 2008.
 
@@ -157,7 +157,7 @@ commenters are also more aggressive (but only aggressive, actually; there is few
 
 ## Let's Talk About It: Evaluating Contributions through Discussion in GitHub (jason tsay, laura dabbish)
 
-> We  found  that  developers raisedissues around contributions over  both  the  appropriateness of  the  problem  that thesubmitter  attemptedto  solve  and  the correctness   of   the   implemented   solution.
+> We  found  that  developers raised issues around contributions over  both  the  appropriateness of  the  problem  that the submitter  attemptedto  solve  and  the correctness   of   the   implemented   solution.
 
 I'm only interested in the first part (appropriateness)
 
