@@ -53,15 +53,13 @@ seems the guide is based on experience rather than imposition: [https://github.c
 
 the above dude is refering specifically to AirBnB (as the org)
 
-
 which also makes sense: the guide itself is not up to debate, only its implementation
 
 but then [here](https://github.com/airbnb/javascript/issues/216#issuecomment-448377793) he says that the guide is more important than the linter (#1 guide, which is solved for airbnb, #2 linter)
 
-
 ---
 
-[polling all contributors](https://github.com/airbnb/javascript/issues/1089) -> by opening the issue, they control the narrative, and also ruling out aeshtetic preferences, which commenters follow    
+[polling all contributors](https://github.com/airbnb/javascript/issues/1089) -> by opening the issue, they control the narrative, and also ruling out aeshtetic preferences, which commenters follow
 
 reference to [https://github.com/airbnb/javascript/issues/1089#issuecomment-400710202] tc39, which `ljhard` works for
 
