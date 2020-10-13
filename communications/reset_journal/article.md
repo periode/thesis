@@ -14,7 +14,7 @@ To do so, I propose to look at the discussions happening on three GitHub reposit
 
 In the first part, I will address the origin of style in programming and, consequently, the need for style guides in contemporary, commercial programming practices, inscribing it further into both the sociology of style and the sociology of organizations. In particular, I will highlight continuities and breaks between style guides for human languages and style guides for programming languages, specificaly in terms of objective efficiency and subjective perception. Building on this dichotomy, the second part of this article highlights the specific technical intermediary objects[^9] involved in those discussions and implementations, which exist in this field at both a macro- and micro-level. Both GitHub and linters are significant components of the creation and implementation of style guides and will thus occupy a central role in this analysis. After developing on the research methods used in this study, which are centered qualitative discourse analysis of issues and pull requests, I will develop on the findings of this research, summing up discursive and structural differences between the three targeted repositories. I will conclude by focusing on the place of tools, read-only documents and read-write documents, as well as invisible communities, in the development of style guides and how these can inform our understanding of daily programming practices.
 
-### The need for style in programming
+## The need for style in programming
 
 The problem of style is a problem which echoes Simmel's statement regarding the observation that *"the practical existence of humanity is absorbed in the struggle between individuality and generality"*[^10]. Simmel's investigation of the topic, which will serve as the foundation for our definition of style, focuses on the dichotomy between works of fine art and mass-produced works of applied arts. Indeed, Simmel draws a distinction between the former, as indiosyncratic objects displaying the subjectivity of its maker, and the latter, as industrially produced and replicated, in which the copy cannot be told apart from the original. The work of fine art, according to him, is *"a world unto itself, is its own end, symbolizing by its very frame that it refuses any participation in the movements of a practical life beyond itself"*, while the work of applied arts only exists beyond this individuality, first and foremost as a practical object. As these two kinds of work exist at the opposite extremes of a single continuum, we can insert a third approach: that of the crafted object. The work of craftsmanship exists in-between, as a repeated display of its maker's subjectivity, destined for active use rather than passive contemplation[^11]. So while style can be seen as a general principle which either mixes with, replaces or displaces individuality, style in programming doesn't stand neatly at either extreme, and needs to be problematized further.
 
@@ -26,13 +26,13 @@ This phenomenon of explicitly written rules, dependent no longer on their writer
 
 The digital word, the word stored on and communicated via computers, presents two important differences. First, it can be as easily modified as it can be retrieved. Since one of the basic operations of the computing machine is the act of copy and the act of retrieval, it is important here to remember that anything that can be said on a digital medium always holds within itself the possibility of duplication, modification and, therefore, variation[^20], illustrated on the most obvious-level by the ubiquity of "copy and paste" actions offered as a default by any word processor application on a modern computer. Second, source code written in programming languages is *executable*. This means that, beyond the linguistic act of writing a statement, the result of this writing act can be automatically executed and enforced, without stating the need for personal or social performance as a requirement. So while written code still exists within "chains of acts of writing"[^21], once its validity has been confirmed and merged into active code bases, its enforcement is significantly easier than that of guides and protocols written in human languages[^21a].
 
-### The GitHub development platform
+## The GitHub development platform
 
 Along with the low barrier to reproducibility and enforceability of code explicited above, another difference between organizations centered primarily on code and software and organizations in which code only constitutes a technical background is the porosity of the distinction between public and private. Particularly, when organizations maintain, or depend on, open-source software, the delimitation of which individual contributes to the organization's product becomes more fluid and temporary than in more traditional organizations[^21b]. At its most radical form, it is entirely non-hierarchical and horizontal[^22], a structure in which anyone can comment on the product and suggest modifications, even though actual contribution remains subject to additional social and economic constraints[^23]. This configuration directly affects the scope of a style guide. If anyone can potentially contribute to any code base within a given language, then the potential scope for any style guide is that of universal adoption. This relatively loose set of mutually-beneficial work relations (between private companies, open-source organizations and individual contributors) constitutes the background of our research field and is accentuated by the specificity of the GitHub platform.
 
 As all platforms, GitHub conects multiple actors and provides the backdrop for economic, social and cultural practices[^24]. Economically, GitHub provides a way to store, retrieve and modify text files (usually source code) for distributed teams of contributors, grouped into projects (called repositories), themselves administrated by either personal or organizational accounts. Any public repository is accessible to anyone, and these projects can then be built to add to the value of a given commercial product (e.g. Apache's `nginx`, Facebook's `create-react-app`). Socially, GitHub requires user registration to contribute to any of those repositories, and maintains a transparency policy which makes available all of a given users contributions on any given public repository. These contributions overwhelmingly take the form of commits (direct modification of text files), pull requests (requests to a given organization to integrate suggested changes to a text file), and issue creation and comment (asking or answering a question on a given project repository). Culturally, user interactions on GitHub depend on agreed-upon practices and discourses, specifically when a user raises an issue, responds to it, or concludes (closes) it[^25].
 
-### Three repositories
+## Three repositories
 
 Within this context, this article looks at the discussions taking place in three particular open-source repositories on the GitHub platform. Since our aim is to examine how discursive strategies are successful in the enforcement and popularization of style guides, a guiding criterion for narrowing our research field was first to use the common indicators of stars (number of users interested in the development of the repository, the GitHub equivalent of a bookmark)[^25b] and in forks (number of users having copied the repository to their own account, possibly to modify it further, and to submit these changes back into the original repository). For the JavaScript language, the top three most popular repositories are `airbnb/javascript` (100k stars, 19.5k forks), `prettier/prettier` (37.4k stars, 2.5k forks) and `standard/standard` (24k stars, 1.9k forks). Additional JavaScript style guides include the IdiomaticJS style guide[^26], the Google JavaScript Style Guide[^27] and the style presented by Douglas Crockford[^28], but do not meet either the popularity criteria, or do not exist primarily on GitHub.
 
@@ -40,61 +40,81 @@ These three repositories, while sharing the same effective outcome of providing 
 
 This study focuses on the issues sections of each of these repositories. Traditionally used to keep track of bugs and technical enhancements for project maintainers[^34] and have a dedicated section on each repository. An issue can be created by anyone with a GitHub user account, can be commented on by anyone with a user account, but can only be closed (or "resolved", in GitHub's terminology) by the original creator, or by project maintainers. Additional features is that they can reference other issues across repositories, as well as internal and external code requests, essentially creating a web of inter-textuality, and displaying the complexity and inter-dependency of software packages. While originally designed as a bug-tracker, research has shown that they are now the locus of more complext discussion, involving affective rhetoric and over-arching design inquiries, well beyond specific technical fixes[^35][^36].
 
-### Automatic writing with code linters
+## Automatic writing with code linters
 
 A final relevant element constituting our research field is the code linter. Present in every examined repositories, and beyond the JavaScript ecosystem, a code linter is a piece of software which, given a set of syntactical rules, modifies one or multiple source code files to match said rules. This programmatic element, which can be seamlessly integrated into more complex workflows, represents both a transfer of agency from the human to the non-human, as well as an improvement in the systematic enforcing of style rules.
 
 Due to the overwhelming presence of automatic tooling in modern development[^36b], programming style guides make configuration files for linters one of the most essential part of their project, effectively connecting intimately human-readable texts with their machine-executable counterpart. The most popular of those linters in the JavaScript ecosystem is `eslint`, with over 13 million weekly downloads[^37]. While not proposing entirely new linters, our examined repositories focus on maintaining configuration files for `eslint` which implement their own human-readable styleguides. As a tool in a programmer's workflow, these linters with their associated configuration files are what Latour and Woolgar have called *intermediary objects*[^38], objects which contribute essentially to labour and knowledge-creation. Previous research in the sociology of work focused on how these intermediary objects affect the work processes (both conception, discussion and realization)[^39], particularly in establishing a framework within which work can take place[^40]; coupled with the automated normativity of code[^41][^42], these linters represent a significant part of the life and impact of a style guide.
 
-### Methodology
+## Methodology
 
-After having provided the context in which this study takes place, we turn to our methodological approach. The methodology employed here to analyze (1) how different actors negotiate the adoption and negotiation of both subjective and both objective stylistic norms, and (2) the influence of the technical environment in which those discussions take place on them, is based on the discourse analysis of individual issues and pull requests in each examined repository. This approach will focus equally on the most debated (i.e. those with the most comments) issues, highlighting the discursive strategies and patterns of the participants; since most of the least-commented issues are overwhelmingly related to technical issues and bugs which, by implying a single fix, stand outside of the field of argumentation. Specifically, this methodology aims at linking the meanings of the corpus not just to existing social realities[^43], to different kinds of communicative competences but to technical realities as well. Habermas provides a useful typology of communicative competence, composed of "a statement of fact, an expression of feeling, or a command"[^44]; this typology will serve not as a normative framework, but rather as a starting point for approaching the positions, assumptions and aims of contributors in the discussion. Regarding the restriction of the analysis to the exclusive locus of issues and pull requests, as it has been mentionned above, GitHub is composed of an intricate web of texts which cross-reference each other. As such, we will consider that a read-only document (such as `README.md`) will be relevant to our analysis insofar as it *addresses* a specific user, with a specific voice: if this linguistic interaction doesn't imply discussion, it certainly implies discourse.
+After having provided the context in which this study takes place, we turn to our methodological approach. The methodology employed here to analyze (1) how different actors negotiate the adoption and negotiation of both subjective and both objective stylistic norms, and (2) the influence of the technical environment in which those discussions take place, is based on the discourse analysis of individual issues and pull requests in each examined repository. This approach will focus mainly on the most debated (i.e. those with the most comments) issues, highlighting the discursive strategies and patterns of the participants; since most of the least-commented issues are overwhelmingly related to technical issues and bugs which, by implying a single fix, stand outside of the field of argumentation. Specifically, this methodology aims at linking the meanings of the corpus not just to existing social realities[^43], and to different kinds of communicative competences but to technical realities as well. Habermas provides a useful typology of communicative competence, composed of "a statement of fact, an expression of feeling, or a command"[^44]; and this typology will serve not as a normative framework, but rather as a starting point for approaching the positions, assumptions and aims of contributors in the discussion. Regarding the restriction of the analysis to the exclusive locus of issues and pull requests, as it has been mentionned above, GitHub is composed of an intricate web of texts which cross-reference each other, and therefore renders any clear distinction blurry. As such, we will consider that a read-only document (such as `README.md`) will be relevant to our analysis insofar as it *addresses* a specific user, with a specific voice: if this linguistic interaction doesn't imply discussion, it certainly implies discourse.
 
-Several studies have previously looked into the discourses on open-source communities[^45], mostly through the use of large-scale computational techniques[^46][^47]. The proposed approach intends to look more specifically at the nuances and implicit assumptions within the arguments deployed by the user, working under the assumption that, while broad strategies have been identified for issue resolution[^48], a more detailed approach in the specific field of styleguide adoption might provide insights in the daily practices of programmers, and to what extent they implement, re-appropriate, or hijack (*détournent*) the broad strategies of technical resolution assumed by the GitHub platform[^49].
+Several studies have previously looked into the discourses on open-source communities[^45], mostly through the use of large-scale computational techniques[^46][^47]. The proposed approach intends to examine more specifically the nuances and implicit assumptions within the arguments deployed by the user, working under the hypothesis that, while broad strategies have been identified for issue resolution[^48], a more detailed approach in the specific field of styleguide adoption might provide insights in the daily practices of programmers, and to what extent they implement, re-appropriate, or hijack (*détournent*) the broad strategies of technical resolution assumed by the GitHub platform[^49].
 
-### Analysis of corpus
+## Analysis of corpus
 
-This is what came up, looking at issue discussions across the three repositories:
-
-#### Airbnb
+### Airbnb
 
 As pointed out by *mylestan*, the `airbnb/javascript` issues presents itself as much as a question-and-answer platform rather than as a traditional bug-reporting and fixing platform[^50].
 
 *Hi! First off, thanks for this package. Also, I'll preface this with: I'm not 100% sure I'm using the react/whitespace option correctly, so this is more of a question than a bug report.*
 
-With a low ratio of open-to-closed issues, the `airbnb/javascript` style guide consists of bug reports on `eslint`[^51], individual projects[^52] or the guide itself[^53], even though all issues that are labeled as "bugs" represent less than 1% of the total issues opened. In this case, bugs are understood as inconsistencies between the *eslint* output and `airbnb/javascript`'s guide lines[^54]. What would be deemed inconsistencies internal to the guide itself are labeled as *editorial*, reflecting a broader concern with communication and understanding of concepts and paradigms over strict technical implementation issues.
+With a low ratio of open-to-closed issues, the `airbnb/javascript` style guide consists of bug reports on `eslint`[^51], individual projects[^52] or the guide itself[^53], even though all issues that are labeled as "bugs" represent less than 1% of the total issues opened. In this case, bugs are understood as inconsistencies between the *eslint* output and `airbnb/javascript`'s guidelines[^54]. What would be deemed inconsistencies internal to the guide itself are labeled as *editorial*, reflecting a broader concern with communication and understanding of concepts and paradigms over strict technical implementation issues.
 
-Indeed, the unique aspect of `airbnb/javascript` is its dependency on the internal, well-organized structure of a private company. The constitution of the rules are, therefore, not up to debate. Such an implicit existence of the origin of the guide is made explicit both by the creator of the publicly available guide, for whom the pronouns *we* and *our* do not refer to the open-source community of commenters and contributors, but rather to the internal team at Airbnb[^55][^55b], as well as references through discussions to the practices of the company (*"airbnb pushes for [...]"*[^56], *"I'd like to see this covered by Airbnb's standards"*[^57]) or to the codebase from which the styleguide emerged[^58]. On a chronological level, it is then interesting to see that the actual negotiations that happened on the repositories issues (mostly issues #1-#40) in which most of the interactions happen between Airbnb employees and take place as multi-sided discussions on how to improve the guide[^58a][^58aa][^58aaa] or on bug- and inconsistency-fixing[^58b]. What we see here is an instance of a private company using the tools and infrastructure of open-source processes embedded in the GitHub platform in order to improve their productivity by writing internally consistent code[^58c], as well as asking community members for their inputs without promising to implement them[^58d].
+Indeed, the unique aspect of `airbnb/javascript` is its dependency on the internal, well-organized structure of a private company. The constitution of the rules are, therefore, not up to debate. Such an implicit, private, out-of-reach existence of the origin of the guide is made explicit both by the creator of the publicly available guide, for whom the pronouns *we* and *our* do not refer to the open-source community of commenters and contributors, but rather to the internal team at Airbnb[^55][^55b], as well as references by both parties in discussions to the practices of the company (*"airbnb pushes for [...]"*[^56], *"I'd like to see this covered by Airbnb's standards"*[^57]) or to the codebase from which the styleguide emerged[^58]. On a chronological level, it is then interesting to see that the actual negotiations which happened on the repository's issues (mostly issues #1-#40) are those in which most of the interactions happen between Airbnb employees and take place as multi-sided discussions on how to improve the guide[^58a][^58aa][^58aaa] or on bug- and inconsistency-fixing[^58b]. What we see here is an instance of a private company using the tools and infrastructure of open-source processes embedded in the GitHub platform in order to improve their productivity by writing internally consistent code[^58c], while, in a second moment, asking community members for their inputs without promising to implement them[^58d].
 
-From this early period of a public interaction between fellow members of the same private organzaiton, to the current situation of a large-scale interaction of distributed individuals and organizations over one of the most popular JavaScript styleguides, the discursive strategies of both the maintainers and of the commenters and contributors have shifted. This is due in part to the fact that the creation of the styleguide is not collaborative, in the open-source sense of the term. Since rational discussion leading to a possible change of mind of the maintainer isn't possible, the alternative chosen by the Airbnb team is the didactic explanation of non-negotiable rules. One example is featured in the explanation of one of the early issues opened on the styleguide about the broader need for styleguides; the creator responds with a pedagogical *métaphore filée* of painters and fine artists rather than logically, rationally approaching the need for consistent codebases[^59]. While this interaction reveals the desire for the maintainers of the project (i.e. Airbnb employees) to explain, rather than discuss, the conclusion of this particular discussion also sheds light on the forking mechanism as used in a discursive situation. Along with this particular issue, others also confirm the fact that forking is an end-all conclusion to the debate, in which another discussion is created, taking as its axiom the contentious proposals evoked in the base branch[^60][^61][^62].
+From this early period of a public interaction between fellow members of the same private organization, to the current situation of a large-scale interaction of distributed individuals and organizations over one of the most popular JavaScript styleguides, the discursive strategies of both the maintainers and of the commenters and contributors have shifted. This is due in part to the fact that the creation of the styleguide is not collaborative, in the open-source sense of the term. Since rational discussion leading to a possible change of mind of the maintainer isn't possible, the alternative chosen by the Airbnb team is the didactic explanation of non-negotiable rules. One example is featured in the explanation of an early issue opened on the styleguide about the broader need for styleguides; the creator responds with a pedagogical *métaphore filée* of painters and fine artists rather than logically, rationally approaching the need for consistent codebases[^59]. Along with the fact that this interaction reveals the desire for the maintainers of the project (i.e. Airbnb employees) to explain, rather than discuss, the conclusion of this particular discussion also sheds light on the forking mechanism as used in a discursive situation. Along with this particular issue, others also confirm the fact that forking acts as an end-all conclusion to the debate, in which another discussion is created, taking as its axiom the contentious proposals evoked in the base branch[^60][^61][^62].
 
-In parallel, a particular aspect of `airbnb/javascript` is the progressive inclusion of *why* such a rule has been decided in the read-only `README.md`[^62b]. By coupling exhaustivity with justification, the main task remaining to the maintainers of the project is then to continue the explanation of why things are the way they are[^62c]. The case of `prefer-default-exports` highlights the pattern of a maintainer repeating the same justification for recurring questions[^63][^64][^65]. What happens on the repository is then the development of a pedagogical discussion in which the "bugs" opened are presented as misunderstandings from the commenter's point of view, asking the maintainers, not to justify their style choices, but rather to *explain* how one can write code that would better match the guidelines explained[^66]. If that explanation fails, as in the `prefer-default-export` examples above, another strand of conversation is engaged in by one of the core maintainers, user `ljhard`, former Airbnb employee, and then member of TC39, the technical commitee in charge of the design of ECMAScript, of which JavaScript is an offshoot. These conversations essentially consist in him providing *ad hoc* explanations when external users are confused about the purpose of a rule or, even further, in re-organizing their code[^67][^68]. In this case, `ljhard` not only acts as a community manager rather than a project maintainer *per se*, but eschews any discussions based on subjective preferences by providing a technical solution to any question asked, therefore showing that the `airbnb/javascript` style guide is not only consistent, but also implementable.
+Additionally, a particular aspect of `airbnb/javascript` is the progressive inclusion of *why* such a rule has been decided in the read-only `README.md`[^62b]. By coupling exhaustivity with justification, the main task remaining for the maintainers of the project is to continue the explanation of why things are the way they are[^62c]. The case of `prefer-default-exports` highlights the pattern of a maintainer repeating the same justification for recurring questions[^63][^64][^65]. What happens on the repository is the development of a pedagogical discussion in which the "bugs" opened are presented as misunderstandings from the commenter's point of view, asking the maintainers, not to justify their style choices, but rather to *explain* how one can write code that would better match the guidelines explained[^66]. If that explanation fails, as in the `prefer-default-export` examples above, another strand of conversation is engaged in by one of the core maintainers, user `ljhard`, former Airbnb employee, and then member of TC39, the technical commitee in charge of the design of ECMAScript, of which JavaScript is an offshoot. These conversations essentially consist in him providing *ad hoc* explanations when external users are confused about the purpose of a rule or, even further, in re-organizing their code[^67][^68]. In this case, `ljhard` not only acts as a community manager rather than a project maintainer *per se*, but also eschews any discussions based on subjective preferences by providing a technical solution to any question asked, therefore showing that the `airbnb/javascript` style guide is not only exhaustive, consistent, but also implementable.
 
-What we've seen in `airbnb/javascript` here is that the technical environment of GitHub issues have been re-purposed from actual bug-tracking for Airbnb's employees, towards rather as a didactic platform using a pedagogical approach, in a balance of both closed-source documents and open-source practices. The combination between one canonical document—un-editable beyond those with priviledges, despite GitHub's pull request mechanism—which exhaustively covers almost all controversial use-cases in the language, along with a skilled individual individually explaining issues to the commenters (in a reversal of the classical format of a bug in the software which needs to match the code, into a bug in the code, which needs to match the software), and ultimately the recourse to the process of forking as a concluding argument can explain both `airbnb/javascript`'s popularity and its high number of forks.
+What we've seen in `airbnb/javascript` here is that the technical environment of GitHub issues have been re-purposed from actual bug-tracking for Airbnb's employees, towards rather as a didactic platform using a pedagogical approach, in a balance of both closed-source documents and open-source practices. The combination between one canonical document—uneditable beyond those with privileges, despite GitHub's pull request mechanism—which exhaustively covers almost all controversial use-cases in the language, along with a skilled maintainer explaining issues to the commenters individually (in a reversal of the classical format of a bug in the software which needs to match the code, into a bug in the code, which needs to match the software), and ultimately the recourse to the process of forking as a concluding argument; all of these can explain both `airbnb/javascript`'s popularity and its high number of forks.
 
----
+### StandardJS
 
-particularly, that means that the issues are re-purposed not as actual bug-tracking, but rather as a didactic platform using a pedagogical approach. this means that it's about "proving that the code works within the given framework". the given framework ("airbnb uses it, so should be good") is justified symbolically and the fact that it functions acts as an argument to prove that it's the correct solution.
+`standard/standard` is the second most popular project in the JavaScript ecosystem, and provides a somewhat different approach. While `airbnb/airbnb` provides a main `README.md`, with all the style rules immediately available at first glance, along with a `eslintrc.json` configuration file as the result of the closed-source work of a private company, `standard/standard` puts forth the `standard` binary, an immediate, "out-of-the-box" solution which applies the project's rules to any file where the program is executed[^68b]. This approach comes out of a more traditional open-source pattern, spearheaded by a single individual, `feross`, which then turned into a proper organization once enough community traction had been garnered[^69][^69a].
 
-#### StandardJS
+#### Goals
 
-it seems like they are trying to develop a set of arguments in terms of:
+The self-stated goal of `standard/standard` of *"no configuration"*[^69b][^69c] has led its maintainers (mainly `feross`, along with rotating members such as `linusU` and `rstacruz`, amongst others) to inflect their discourse under the influence of technical efficiency, rather than rule justification as `airbnb/javascript` does. Indeed, the rules themselves are both stated by `feross` as well as discussed by the community for each version release of the package. By leaving open the possibility of modifying their style rules, and subsequently making them immediately enforceable by their `standard` binary package, the discursive focus isn't so the number of discussions of so-called "religious" issues, for the amount of devotion and heat that they attract (e.g. `semicolons`[^70][^71][^72], `parentheses`[^73][^74], `indentation`[^75]), but rather on technical implementation, alternative possibilities and community support.
 
-- what eslint does (and the main selling point being that `standard` does all of it out of the box)
-- the explanation of why decisions are taken (and further development in the documentation)
-- - the consistency and technical exhaustiveness of the package **technical argument**
-- - moving from readability as an important part to functionality (const, let, etc.) -- *semantics over stylistics* **functional/rational argument**
-- - trying not to break the community's repos / not to break backwards compatibility **social argument**
+#### Technical requirement from ESLint
 
-they are trying as much as possible to focus on including the community (but the community isn't always that willing to be included)
+The first category of arguments laid out in the `standard/standard` repository is related to the actual, technical feasibility of the arbitrary[^75a], but not non-sensical, rules laid out in the `README.md`. The status of `feross` as *"benevolent dictator"*[^76][^76a][^76b] nullifies most of the arguments (e.g. *"All very subjective though. I think @feross will just have to pick something :)"*[^76c]), the remaining of which can sometimes be rationally argumented[^77][^77a]. Given this status of rules being somewhat indiscutable, upon what does the agreement of `standard/standard` rules rely? The status of the project as a convenient wrapper (i.e. a seamless *intermediary object* in a developer's workflow) around `eslint` poses that core technology as one of the final assessments of the validity of a given argument (e.g. *"Probably better off making your case at eslint first, then coming back here"*[^78]). While this effectively avoids bikeshedding[^79] in cases where the ultimate goal is to settle with one choice rather than debating multiple of them, this technological dependency also prevents some desired changes[^80].
 
-#### Prettier
+#### Package ecosystem Justifications
 
-tbd lol.
+If the stylistic preference of a commenter still weighs more than the ease-of-use of the `standard/standard` package, then the strategy of the maintainers is to redirect them towards another part of the ecosystem, be it the direct configuration file which implements all of the style rules[^81], or the adoption of other packages maintained by the `standard` organization[^82][^83][^84][^84a]. Different from the dismissive tone of the `airbnb/javascript` maintainer's repository, this redirection is an acknowledgement of the fact that opinions matter less than building a community, apparently in line with the open-source ethos of group participation (e.g. the use of the *"we"* pronoun by `feross`[^85]). Indeed, the word *community* is used most often on `airbnb/javascript` by the commenteers, while it is used most often on `standard/standard` by the maintainers (given an equivalent number of issues on each, respectively [^86] vs. 39[^87]). This emphasis on community-building as a part of the overall strategy of `standard/standard` also affects their discursive strategy.
 
-It actually creates a bunch of issues on the airbnb issue tracker. intertwining of technical tools??
+#### Community-breaking changes
 
-### Findings
+With a set of rules overwhelmingly decided upon by `feross`, some rational argumentations for the modification of these rules, the reliance on `eslint` as a ground for whether or not a rule can be applied, and the redirection of unsatisfied, or unconvinced community members towards other packages of the `standard` ecosystem, such as `standard/standardx`, `standard/semistandard` or `standard/doublestandard` for "religious" issues, the last remaining argument deployed for the adoption or rejection of style rules is the extent to which the community is using the existing rules.
+
+On the one hand, this project has garnered visibilty and is currently deeply embedded in an institutional network of projects using the `standard/standard` guide[^88], including GitHub itself for its JavaScript project, and such a network provides credibility by association[^90]. Even though these associations have been documented in order to further grow the community of users[^89].
+
+In practice, the biggest role that the community has in the negotiation of style guides is in whether or not any change in the guide would be a breaking change, and for how many projects using `standard/standard`. Used by project maintainers (*"This is one of those decisions that we can't revisit. Nearly every repo that uses standard would break, and that's not acceptable -- even with major version bump."*[^91], *"Although personally I agree with the fundamental reasons that you argue for this. As it stands, this would be so much of a breaking change, it will never be accepted."*[^92]). The closing argument is therefore the number of existing projects which would have to refactor their code in order to comply with the new rule, and is often the last comment to take place on an issue before that issue is closed[^93][^94][^95], acting as a unilateral reason.
+
+The discursive strategies that the commenters and maintainers deploy in `standard/standard` then revolve around issues of convenience, which then enabled a form of social path-dependency[^96], in a productive sense. The figure and work of `feross`, both agreeable and engaging in his exchanges and unilateral in his decisions, include in their discourse references to technical limitations in order to bypass subjective issues. Indeed, while the affordances of `eslint` are inherently digital, the adherence of silent majority of `standard/standard` users is represented in a quantified manner, through unit tests resulting the a percentage of organizations and packages failing or succeeding said tests; and such an approach seems to manifest itself as the reification of community choices in order to increase its effective discursive power.
+
+### Prettier
+
+crazy the number of issues they have (both opened and closed)
+
+given the amount of thing it tries to cover, it might get unnecessary hardships
+
+it tries to be 100% automatic (standard isn't, it just flags inconsistencies)
+
+“Was built by the same people as React & React Native.”[https://github.com/prettier/prettier/blob/master/docs/why-prettier.md]
+
+looks like they do take into account the wish of the users: [https://github.com/prettier/prettier/issues/7884#issuecomment-605519802]
+
+much higher quality of exchanges (mention habermas!), and even an ESL dude says "I didn't read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit"[https://github.com/prettier/prettier/issues/7884#issuecomment-619147696]
+
+actual co-creation of a styleguide [https://github.com/prettier/prettier/issues/73#issuecomment-272537791]
+
+It actually creates a bunch of issues references on the airbnb issue tracker. intertwining of technical tools??
+
+## Findings
 
 - analytical categories
   
@@ -111,7 +131,14 @@ It actually creates a bunch of issues on the airbnb issue tracker. intertwining 
 - calls to "fork" are always the conclusion of an argument
 - github issues can have multiple functions (pedagogical, antagonistic, reporting)
 
-### Conclusion
+### Interplay of different repos
+
+just search the issues for each, it can just be a side note
+
+- [https://github.com/standard/standard/issues/811]
+- [https://github.com/standard/standard/issues/811#issuecomment-292714647]
+
+## Conclusion
 
 This is how I wrap everything up.
 
@@ -123,16 +150,10 @@ in the end it's affected by github's:
 
 ---
 
-- ~~simmel and artistic style~~
-
-- + ~~talks about how style has an inherent tension between individual and group~~
-- - ~~our focus on style as a group action (both rancière & standardjs)~~
-
 - connect to organizational style, communication, etc.
 - - add reference to the CNRS book
 - - develop on how the style guide embodies administrative work -> **how?**
 
-- ~~the readerly and the writerly in barthes~~
 - - the necessity to be able to write when you read (the assumption that, when you read, you will write)
 
 - locus of research outside github (additional texts)
@@ -394,5 +415,116 @@ E. Kalliamvakou, D. Damian, K. Blincoe, L. Singer and D. M. German, "Open Source
 [^68]:
 [https://github.com/airbnb/javascript/issues/851#issuecomment-215479719]
 
+[^68b]:
+[https://github.com/standard/standard/issues/94#issuecomment-87332587]
+
 [69]:
 [https://github.com/airbnb/javascript/issues/851#issuecomment-213834028]
+
+[^69]:
+[https://github.com/standard/standard/issues/846]
+
+[^69a]:
+[https://github.com/standard/standard/issues/259#issuecomment-141881255]
+
+[^69b]:
+[https://github.com/standard/standard/blob/master/README.md]
+
+[^69c]:
+[https://github.com/standard/standard/issues/3#issuecomment-71952384]
+
+[70]:
+[https://github.com/standard/standard/issues/78]
+
+[^71]:
+[https://github.com/standard/standard/issues/962]
+
+[72]:
+[https://github.com/standard/standard/issues/176#issuecomment-116312615]
+
+[^73]:
+[https://github.com/standard/standard/issues/414#issuecomment-183459932]
+
+[^74]:
+[https://github.com/standard/standard/issues/219#issuecomment-170877700]
+
+[^75]:
+[https://github.com/standard/standard/issues/58#issuecomment-77710035]
+
+[^75a]:
+[https://github.com/standard/standard/issues/3#issuecomment-71950165]
+
+[^76]:
+[https://github.com/standard/standard/issues/108#issuecomment-90990325]
+
+[^76a]:
+[https://github.com/standard/standard/issues/710#issuecomment-521095379]
+
+[^76b]:
+[https://github.com/standard/standard/issues/628#issuecomment-366484860]
+
+[^76c]:
+[https://github.com/standard/standard/issues/309#issuecomment-152899586]
+
+[^77]:
+[https://github.com/standard/standard/issues/111#issuecomment-116885571]
+
+[^77a]:
+[https://github.com/standard/standard/issues/309#issuecomment-180208214]
+
+[^78]:
+[https://github.com/standard/standard/issues/720#issuecomment-266878246]
+
+[^79]:
+[https://github.com/standard/standard/issues/1356#issue-480058723]
+
+[^80]:
+[https://github.com/standard/standard/issues/257#issuecomment-142417059]
+
+[^81]:
+[https://github.com/standard/standard/issues/240#issuecomment-224125128]
+
+[^82]:
+[https://github.com/standard/standard/issues/771#issuecomment-375609384]
+
+[^83]:
+[https://github.com/standard/standard/issues/1155#issuecomment-399769283]
+
+[^84]:
+[https://github.com/standard/standard/issues/962#issuecomment-319714580]
+
+[^84a]:
+[https://github.com/standard/standard/issues/1500#issuecomment-648019851]
+
+[^85]:
+[https://github.com/standard/standard/issues/1356#issue-480058723]
+
+[^86]:
+[https://github.com/airbnb/javascript/issues?q=is%3Aissue+is%3Aclosed+community]
+
+[^87]:
+[https://github.com/standard/standard/issues?q=is%3Aissue+is%3Aclosed+community]
+
+[^88]:
+[https://github.com/standard/standard#who-uses-javascript-standard-style]
+
+[^89]:
+[https://github.com/standard/standard/issues/744#issue-200237553]
+
+[^90]:
+sth about bourdieu and symbolic belonging idk
+
+[^91]:
+[https://github.com/standard/standard/issues/219#issuecomment-127446961]
+
+[^92]:
+[https://github.com/standard/standard/issues/240#issuecomment-135968036]
+
+[^93]:
+[https://github.com/standard/standard/issues/298#issuecomment-179571496]
+
+[^94]:
+[https://github.com/standard/standard/issues/720#issuecomment-515722463]
+
+[^96]:
+[https://github.com/prettier/prettier/issues/40#issuecomment-271769512]
