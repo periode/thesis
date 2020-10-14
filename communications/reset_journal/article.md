@@ -72,19 +72,19 @@ What we've seen in `airbnb/javascript` here is that the technical environment of
 
 ### StandardJS
 
-`standard/standard` is the second most popular project in the JavaScript ecosystem, and provides a somewhat different approach. While `airbnb/airbnb` provides a main `README.md`, with all the style rules immediately available at first glance, along with a `eslintrc.json` configuration file as the result of the closed-source work of a private company, `standard/standard` puts forth the `standard` binary, an immediate, "out-of-the-box" solution which applies the project's rules to any file where the program is executed[^68b]. This approach comes out of a more traditional open-source pattern, spearheaded by a single individual, `feross`, which then turned into a proper organization once enough community traction had been garnered[^69][^69a].
+`standard/standard` is the third most popular project in the JavaScript ecosystem, and offers a different approach. While `airbnb/airbnb` provides a main `README.md`, with all the style rules immediately available at first glance, along with a `eslintrc.json` configuration file as the result of the closed-source work of a private company, `standard/standard` puts forth the `standard` binary, an immediate, "out-of-the-box" solution which applies the project's rules to any file where the program is executed[^68b]. The overall approach comes out of a more traditional open-source pattern, initiatet and spearheaded by a single individual, `feross`, which then turned into a proper organization once enough community traction had been garnered[^69][^69a].
 
 #### Goals
 
-The self-stated goal of `standard/standard` of *"no configuration"*[^69b][^69c] has led its maintainers (mainly `feross`, along with rotating members such as `linusU` and `rstacruz`, amongst others) to inflect their discourse under the influence of technical efficiency, rather than rule justification as `airbnb/javascript` does. Indeed, the rules themselves are both stated by `feross` as well as discussed by the community for each version release of the package. By leaving open the possibility of modifying their style rules, and subsequently making them immediately enforceable by their `standard` binary package, the discursive focus isn't so the number of discussions of so-called "religious" issues, for the amount of devotion and heat that they attract (e.g. `semicolons`[^70][^71][^72], `parentheses`[^73][^74], `indentation`[^75]), but rather on technical implementation, alternative possibilities and community support.
+The self-stated goal of `standard/standard` of *"no configuration"*[^69b][^69c] has led its maintainers (mainly `feross`, along with rotating members such as `linusU` and `rstacruz`) to inflect their discourse under the influence of technical efficiency, rather than rule justification as `airbnb/javascript` does. Indeed, the rules themselves are both stated by `feross` as well as discussed by the community—groups of users, members and contributors—for each release of the package. By leaving open the possibility of modifying their style rules, and subsequently making them immediately enforceable by their `standard` binary, the discursive focus isn't so the number of discussions of so-called "religious" issues, known for the amount of devotion and heat that they attract (e.g. `semicolons`[^70][^71][^72], `parentheses`[^73][^74], `indentation`[^75]), but rather on technical implementation, alternative possibilities and community support.
 
 #### Technical requirement from ESLint
 
-The first category of arguments laid out in the `standard/standard` repository is related to the actual, technical feasibility of the arbitrary[^75a], but not non-sensical, rules laid out in the `README.md`. The status of `feross` as *"benevolent dictator"*[^76][^76a][^76b] nullifies most of the arguments (e.g. *"All very subjective though. I think @feross will just have to pick something :)"*[^76c]), the remaining of which can sometimes be rationally argumented[^77][^77a]. Given this status of rules being somewhat indiscutable, upon what does the agreement of `standard/standard` rules rely? The status of the project as a convenient wrapper (i.e. a seamless *intermediary object* in a developer's workflow) around `eslint` poses that core technology as one of the final assessments of the validity of a given argument (e.g. *"Probably better off making your case at eslint first, then coming back here"*[^78]). While this effectively avoids bikeshedding[^79] in cases where the ultimate goal is to settle with one choice rather than debating multiple of them, this technological dependency also prevents some desired changes[^80].
+The first category of arguments laid out in the `standard/standard` repository is related to the actual, technical feasibility of the arbitrary[^75a], but not non-sensical, rules laid out in the `README.md`. The status of `feross` as *"benevolent dictator"*[^76][^76a][^76b] nullifies most of the arguments (e.g. *"All very subjective though. I think @feross will just have to pick something :)"*[^76c]), the remaining of which can sometimes be rationally discussed[^77][^77a]. Given this status of most rules being somewhat indiscutable, upon what does the agreement of `standard/standard` rules rely? The status of the project as a convenient wrapper (i.e. a seamless *intermediary object* in a developer's workflow) around `eslint` poses that core technology as one of the final assessments of the validity of a given argument (e.g. *"Probably better off making your case at eslint first, then coming back here"*[^78]). While this effectively avoids bikeshedding[^79] in cases where the ultimate goal is to settle with one choice rather than debating multiple of them, this technological dependency also prevents some desired changes[^80].
 
 #### Package ecosystem Justifications
 
-If the stylistic preference of a commenter still weighs more than the ease-of-use of the `standard/standard` package, then the strategy of the maintainers is to redirect them towards another part of the ecosystem, be it the direct configuration file which implements all of the style rules[^81], or the adoption of other packages maintained by the `standard` organization[^82][^83][^84][^84a]. Different from the dismissive tone of the `airbnb/javascript` maintainer's repository, this redirection is an acknowledgement of the fact that opinions matter less than building a community, apparently in line with the open-source ethos of group participation (e.g. the use of the *"we"* pronoun by `feross`[^85]). Indeed, the word *community* is used most often on `airbnb/javascript` by the commenteers, while it is used most often on `standard/standard` by the maintainers (given an equivalent number of issues on each, respectively [^86] vs. 39[^87]). This emphasis on community-building as a part of the overall strategy of `standard/standard` also affects their discursive strategy.
+If the stylistic preference of a commenter still weighs more than the ease-of-use of the `standard/standard` package, then the strategy of the maintainers is to redirect them towards another part of the ecosystem, be it the direct configuration file which implements all of the style rules[^81], or the adoption of other packages maintained by the `standard` organization[^82][^83][^84][^84a]. Different from the dismissive tone of the `airbnb/javascript` maintainer's repository, this redirection is an acknowledgement of the fact that opinions matter less than building a community, in line with the open-source ethos of group participation (e.g. the use of the *"we"* pronoun by `feross`[^85]). Indeed, the word *community* is used most often on `airbnb/javascript` by the commenteers, while it is used most often on `standard/standard` by the maintainers (given an equivalent number of issues on each, respectively 34[^86] vs. 39[^87]). This emphasis on community-building as a part of the overall strategy of `standard/standard` also affects their discursive strategy.
 
 #### Community-breaking changes
 
@@ -94,37 +94,47 @@ On the one hand, this project has garnered visibilty and is currently deeply emb
 
 In practice, the biggest role that the community has in the negotiation of style guides is in whether or not any change in the guide would be a breaking change, and for how many projects using `standard/standard`. Used by project maintainers (*"This is one of those decisions that we can't revisit. Nearly every repo that uses standard would break, and that's not acceptable -- even with major version bump."*[^91], *"Although personally I agree with the fundamental reasons that you argue for this. As it stands, this would be so much of a breaking change, it will never be accepted."*[^92]). The closing argument is therefore the number of existing projects which would have to refactor their code in order to comply with the new rule, and is often the last comment to take place on an issue before that issue is closed[^93][^94][^95], acting as a unilateral reason.
 
-The discursive strategies that the commenters and maintainers deploy in `standard/standard` then revolve around issues of convenience, which then enabled a form of social path-dependency[^96], in a productive sense. The figure and work of `feross`, both agreeable and engaging in his exchanges and unilateral in his decisions, include in their discourse references to technical limitations in order to bypass subjective issues. Indeed, while the affordances of `eslint` are inherently digital, the adherence of silent majority of `standard/standard` users is represented in a quantified manner, through unit tests resulting the a percentage of organizations and packages failing or succeeding said tests; and such an approach seems to manifest itself as the reification of community choices in order to increase its effective discursive power.
+The discursive strategies that the commenters and maintainers deploy in `standard/standard` then revolve around issues of convenience, which have enabled what could be called a certain form of social path-dependency[^96], in a productive sense. The figure and work of `feross`, both agreeable and engaging in his exchanges and unilateral in his decisions, include in their discourse references to technical limitations in order to bypass subjective issues. Indeed, while the affordances of `eslint` are inherently digital, the adherence of silent majority of `standard/standard` users is represented in a quantified manner, through unit tests resulting the a percentage of organizations and packages failing or succeeding said tests; and such an approach seems to manifest itself as the reification of community choices in order to increase its effective discursive power.
 
 ### Prettier
 
-crazy the number of issues they have (both opened and closed)
+The `prettier/prettier` project is both the most recent and the most popular (based on both stars and weekly downloads[^97]), and offers a third approach in our analysis. Developped in 2017 at Facebook, one of the world's largest and most profitable companies, and maintainer of the `react` project, the most popular front-end development framework by the end of 2019[^98]. Beyond this institutional backing, `prettier/prettier` presents two specificities which differentiate from `airbnb/javascript` and `standard/standard`. First, it doesn't offer a clear and accessible style guide itself, and its `README.md` only offers one example to show the kind of work `prettier/prettier` does. Second, the kind of work that it does is essentially different that the two previous examples looked, since it analyzes the source code, parses it and its inconsistencies and entirely reformats it according to internal rules—neither `airbnb/javascript` nor `standard/standard` offer default reformatting solutions. Such a language-independent approach (dealing directly with *Abstract Syntax Trees*, a context-free structure) might explain its popularity across different langauges. So, while not a style guide *de jure*[^98a], it is *de facto* through its enforcement of rules, more thoroughly than its alternatives.
 
-given the amount of thing it tries to cover, it might get unnecessary hardships
+#### The co-creation of a style guide
 
-it tries to be 100% automatic (standard isn't, it just flags inconsistencies)
+Along with the absence of a clear styleguide announcing, if not explaining, the individual decisions, the maintainers of the project (e.g. `jlongster`, `vjeux`, founders of the project while Facebook employees) tend to engage in conversations about the possibility to change existing styling rules[^99][^100]. This willingness to change the behavior of their tool, along with its automation power and the founders institutional capital might explain the fact that the `prettier/prettier` repository has about four times more issues in total than the two other repositories examined, with more thoughtful, thorough and rational explanations[^101][^101a], including detailed description of desired behaviour[^102]. In particular, `prettier/prettier` distinguishes itself by allowing contributors to open up discussions and negotiate changes not through pure discursive argumentation, but rather by offering practical, safe and thorough implementations of an alternative[^103], including of "religious" issues[^104]—in effect, long and elaborate argumentation always require examples[^104a]. The process seems to be as follows: `prettier/prettier` formats a given code, the developer who might not agree with such a formatting opens up an issue, argues for her case through the presentation of practical use-cases and actionable pull-requests and, depending on the technical soundess of the solution and the size of the community already using the package, might get their change accepted. Finally, while the thoroughness and politeness of most replies on this repository point towards a healthy community, it should be noted that the verbosity of some of the contributions are considered intimidating for comments who consider they English level sub-par(e.g. *"I didn't read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit"*[^105]).
 
-“Was built by the same people as React & React Native.”[https://github.com/prettier/prettier/blob/master/docs/why-prettier.md]
+#### Technical efficiency as an argument
 
-looks like they do take into account the wish of the users: [https://github.com/prettier/prettier/issues/7884#issuecomment-605519802]
+Without a reference document, and with the recurring statement that "readability" and "preference" are subjective arguments, `prettier/prettier` relies on technical arguments to solve debates, sometimes even before they happen. Before they even happen, because the seamlessness of the integration, as both a visible and invisible mediation, can eschew those debates altogether (*"Hi @jlongster, just would like to chime in and let you know that your project has hit the jackpot and solved something that even (the self-proclaimed) Standard and Semi-Standard couldn't solve for me [...] Easy team-wide style enforcement that's based on an unbiased 3rd party algorithm to produce a one and only definitive way to indent absolutely each line of code"*[^106]). This approach is reminiscent of the power of interfaces in their ambiguity, in which a self-implementing tool acts as its own rationale[^106a].
 
-much higher quality of exchanges (mention habermas!), and even an ESL dude says "I didn't read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit"[https://github.com/prettier/prettier/issues/7884#issuecomment-619147696]
+However, most of the official discourse of `prettier/prettier` (through the official website and through oft-referenced conference talks) presents the project not as a style-guide *per se*, but as an AST-parser and printer. These technical definitions steer the debate towards technical argumentation, rather than adoption by the community (standard), or explanation of practical raitonale (airbnb), explicitly mentioning AST representation as grounds for the final stylistic decision (*"It will be interesting to figure this out because the way it formats it now is because of how the AST is structured, which is based on operator precedence"*[^106b][^107][^108]), and sometimes used as counter-examples[^109].
 
-actual co-creation of a styleguide [https://github.com/prettier/prettier/issues/73#issuecomment-272537791]
+Finally, `prettier/prettier`'s argument is that it is both opionated and efficient, which has led to the early development of a "no-options" philosophy[^110], which has moved from a read-write text, discussed by both maintainers and commenters, to a read-only text, as a canonical text on the official website[^111], which is then used subsequently as an argument to respond negatively to requests for personal additions[^112][^113][^114]. This particular phenomenon echoes practices found in the `airbnb/javascript` project in Goody's investigations of the immutability and canonization of written texts.
 
-It actually creates a bunch of issues references on the airbnb issue tracker. intertwining of technical tools??
+#### Size of community and noise
+
+[https://github.com/prettier/prettier/issues/5814] this is hell: 120+ comments about nested ternary operators, where the main argument becomes the "stubborness" of prettier
+
+basically this section an analysis of the issue
+
+mention bikeshedding: the problem with large scale repositories is that, at some point, it becomes noise, in which everyone chips in with their particular preference and there is no clean way to keep track of the conversation (is there research to back it up?)
+
+the biggest problem in this issue is actually that it is *inconsistent* -> ultimate subjective counterargument?
 
 ## Findings
 
-- analytical categories
-  
-- - emotional justification
-- - rational justification
-- - technical justification
+### Categories used to argument
 
-- - socio: founding texts
-- - socio: community/project
-- - technical: the functional
+- emotional justification -> they are from the commenters, and  immediately deflected by the maintainers
+- rational justification -> impossible, because always obscured by subjectivity
+- technical justification -> different levels of technical justifications
+
+- socio: founding texts
+- socio: community/project
+- technical: the functional
+
+broad conclusions
 
 - objects are multifaceted and entangled/entangling
 - personal preferences (means) can always be subsumed by calls to "efficiency" and "precedence" (reference to a canonical document)
@@ -133,10 +143,11 @@ It actually creates a bunch of issues references on the airbnb issue tracker. in
 
 ### Interplay of different repos
 
-just search the issues for each, it can just be a side note
+just search the issues for each, it can just be a line of flight
 
 - [https://github.com/standard/standard/issues/811]
 - [https://github.com/standard/standard/issues/811#issuecomment-292714647]
+- [https://github.com/prettier/prettier/pull/123#issuecomment-272029925]
 
 ## Conclusion
 
@@ -528,3 +539,72 @@ sth about bourdieu and symbolic belonging idk
 
 [^96]:
 [https://github.com/prettier/prettier/issues/40#issuecomment-271769512]
+
+[^97]:
+[https://www.npmjs.com/package/prettier]
+
+[^98]:
+[https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190]
+
+[^98a]:
+[https://github.com/prettier/prettier/issues/5246#issuecomment-429788464]
+
+[^99]:
+[https://github.com/prettier/prettier/issues/7884#issuecomment-605519802]
+
+[^100]:
+[https://github.com/prettier/prettier/issues/73#issuecomment-272537791]
+
+[^101]:
+[https://github.com/prettier/prettier/issues/840#issuecomment-689978905]
+
+[^101a]:
+[https://github.com/prettier/prettier/issues/4125#issuecomment-588725113]
+
+[^102]:
+[https://github.com/prettier/prettier/issues/3368#issuecomment-357312678]
+
+[^103]:
+[https://github.com/prettier/prettier/issues/3368#issuecomment-374764905]
+
+[^104]:
+[https://github.com/prettier/prettier/issues/736]
+
+[^104a]:
+[https://github.com/prettier/prettier/issues/7884#issuecomment-605898046]
+
+[^105]:
+[https://github.com/prettier/prettier/issues/7884#issuecomment-619147696]
+
+[^106]:
+[https://github.com/prettier/prettier/issues/40#issuecomment-271804674]
+
+[^106a]:
+galloway, the interface effect
+
+[^106b]:
+[https://github.com/prettier/prettier/issues/2#issuecomment-269872486]
+
+[^107]:
+[https://github.com/prettier/prettier/issues/5814#issuecomment-468827633]
+
+[^108]:
+[https://github.com/prettier/prettier/issues/9358#issuecomment-705940711]
+
+[^109]:
+[https://github.com/prettier/prettier/issues/7884#issuecomment-605755932]
+
+[^110]:
+[https://github.com/prettier/prettier/issues/40]
+
+[^111]:
+[https://prettier.io/docs/en/option-philosophy.html]
+
+[^112]:
+[https://github.com/prettier/prettier/issues/8559#issuecomment-643796145]
+
+[^113]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-627906479]
+
+[^114]:
+[https://github.com/prettier/prettier/issues/840#issuecomment-458280945]
