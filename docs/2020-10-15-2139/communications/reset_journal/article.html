@@ -1,0 +1,1233 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="discursive-strategies-in-style-guides-negotiation-on-github">Discursive Strategies in Style Guides Negotiation on GitHub</h1>
+
+<p>Pierre Depaz - pierre.depaz@nyu.edu</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Written and published in 1983 on a Usenet board, The story of Mel, the Real Programmer<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> recounts^[this is an inline footnote] the tale of Mel Kaye, an individual who wrote software on the 1959 ACT-1 compiler and has become a recurring reference in programmer’s lore<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. The moral of the story focuses on Kaye’s ability to write both excellently efficient and completely inscrutable code. This obfuscating aspect of a code that only its writer can read, while being considered in this context a laudable feature of model programming work and informing ideals of programmers, slowly began to phase out in the 1970s. With the growth of the commercial software market<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>, more and more private companies started to constitute what is today a large part of the technology industry, composed of teams of multiple programmers working on the same codebase on the long-term. This evolution, from the individual programmer implementing ad hoc and personal solutions to a group of programmers coordinating across time to build and maintain large, distributed pieces of software, brought the necessity to harmonize and standardize how code is written. In response, style guides started to be published to normalize the visual aspect of source code, and became a recurring topic in both the software development and computer science research<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>; particularly, debates about programming style implementations and best practices have remained significant, if under-examined, parts of a given programmer’s practice in a commercial context.</p>
+
+<p>In light of this tension between individual technical prowess and the social existence of source code, this article examines the production and communication processes involved in the construction of styleguides for the JavaScript programming language within contemporary software development environments. Specifically, it looks at the discursive techniques deployed to negotiate the adoption of styleguides within a particular socio-technical environment—the collaborative development platform GitHub. While style guides and written documents have been enforced in formal, more traditional professional institutions<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup>, the GitHub development platform presents a couple of specific aspects. As the most popular repository of open-source software, it is the locus of semi-formal participation and enables by default the copying and modifying any document (a process known as forking). Large-scale private companies interact with distributed non-profit organizations and individual contributors in order to collaborate on software products, both free of charge and for-profit, which can then be modified seamlessly by other users of the platform. While GitHub is organized around self-contained software components, style guides are concerned with programming languages and aim at enforcing behaviour across projects. These discussions therefore cut across projects and applications to involve the aforementionned multiplicity of actors.</p>
+
+<p>JavaScript is today both one of the most popular programming languages on GitHub, used by both amateurs and professionals alike. However, the language itself lacks a clear, original style standard, and therefore has been the subject of various discussions on what a style guide should enforce and how it should enforce it, relative to other languages. The discussions taking place on the GitHub platform therefore represent a wide variety of opinions, skill levels, and institutional belongings. In this context, this article aims at investigating <em>which discursive strategies are used by contributors around the formation of style guides? Furthermore, how are those strategies affected by the specificity of a socio-technical environment such as GitHub? How are users of these style guides defined and taken into account in these negotiations?</em> The answers to these questions will help further qualify the nature of linguistic exchanges in a complex, digital-first, working environment and uncover the arguments and attitudes towards practices in software development.</p>
+
+<p>To do so, I propose to look at the discussions happening on three GitHub repositories, each representing different approaches to style guides. From least-open to most-open, they include the JavaScript style guide as published by the Airbnb company<sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup>, the popular, independent StandardJS<sup id="fnref:7"><a href="#fn:7" class="footnote">7</a></sup> and the exclusively format-oriented Prettier<sup id="fnref:8"><a href="#fn:8" class="footnote">8</a></sup>. Building on previous critical discourse theory as applied to open-source discussions (Berry, 2006), these three repositories, their issues, pull requests and forks, will highlight the language deployed both from the maintainers, the contributors and the users and how different discursive approaches are used to justify arbitrary formal choices (e.g. single quotes vs. double quotes) through didactic approaches to non-arbitrary ends (code interoperability between teams) to improve productivity.</p>
+
+<p>In the first part, I will address the origin of style in programming and, consequently, the need for style guides in contemporary, commercial programming practices, inscribing it further into both the sociology of style and the sociology of organizations. In particular, I will highlight continuities and breaks between style guides for human languages and style guides for programming languages, specificaly in terms of objective efficiency and subjective perception. Building on this dichotomy, the second part of this article highlights the specific technical intermediary objects<sup id="fnref:9"><a href="#fn:9" class="footnote">9</a></sup> involved in those discussions and implementations, which exist in this field at both a macro- and micro-level. Both GitHub and linters are significant components of the creation and implementation of style guides and will thus occupy a central role in this analysis. After developing on the research methods used in this study, which are centered qualitative discourse analysis of issues and pull requests, I will develop on the findings of this research, summing up discursive and structural differences between the three targeted repositories. I will conclude by focusing on the place of tools, read-only documents and read-write documents, as well as invisible communities, in the development of style guides and how these can inform our understanding of daily programming practices.</p>
+
+<h2 id="the-need-for-style-in-programming">The need for style in programming</h2>
+
+<p>The problem of style is a problem which echoes Simmel’s statement regarding the observation that <em>“the practical existence of humanity is absorbed in the struggle between individuality and generality”</em><sup id="fnref:10"><a href="#fn:10" class="footnote">10</a></sup>. Simmel’s investigation of the topic, which will serve as the foundation for our definition of style, focuses on the dichotomy between works of fine art and mass-produced works of applied arts. Indeed, Simmel draws a distinction between the former, as indiosyncratic objects displaying the subjectivity of its maker, and the latter, as industrially produced and replicated, in which the copy cannot be told apart from the original. The work of fine art, according to him, is <em>“a world unto itself, is its own end, symbolizing by its very frame that it refuses any participation in the movements of a practical life beyond itself”</em>, while the work of applied arts only exists beyond this individuality, first and foremost as a practical object. As these two kinds of work exist at the opposite extremes of a single continuum, we can insert a third approach: that of the crafted object. The work of craftsmanship exists in-between, as a repeated display of its maker’s subjectivity, destined for active use rather than passive contemplation<sup id="fnref:11"><a href="#fn:11" class="footnote">11</a></sup>. So while style can be seen as a general principle which either mixes with, replaces or displaces individuality, style in programming doesn’t stand neatly at either extreme, and needs to be problematized further.</p>
+
+<p>Source code, understod as the product resulting from programming work, finds some of its roots in craftmanship, as a practice both analyzed by scholars<sup id="fnref:12"><a href="#fn:12" class="footnote">12</a></sup> and claimed by practicioners<sup id="fnref:13"><a href="#fn:13" class="footnote">13</a></sup>. Programming work has developed since the 1950s from an invisible labour to a fully organized and codified practice, through individual, glorified work. While computers were originally referencing female clerks implementing male mathematicians’ algorithms on mainframe computers<sup id="fnref:14"><a href="#fn:14" class="footnote">14</a></sup>, the development of programming as a recognized practice brought about with it the figure of the individual (male) programmer, equally obsessed and talented<sup id="fnref:15"><a href="#fn:15" class="footnote">15</a></sup>, echoing in some ways the portraits of the genius artist<sup id="fnref:16"><a href="#fn:16" class="footnote">16</a></sup><sup id="fnref:16b"><a href="#fn:16b" class="footnote">17</a></sup>. This individual, free-form implementation of specific computational problems came to an end with the rise of commercial software, and led to a re-examination of the practices and processes of software developers. This was led in part by the work of Edsger Dijkstra whom, in his 1972 publication of <em>Notes On Structured Programming</em><sup id="fnref:16:1"><a href="#fn:16" class="footnote">16</a></sup>, set forward clear practices for writing source code which would be meant to achieve two aims: be readable by someone else than the original author, as well as being more reliable and error-free<sup id="fnref:17"><a href="#fn:17" class="footnote">18</a></sup>.</p>
+
+<p>The emergence of style in computer programming is therefore concomitant of the development of the software industry, starting in the 1970s. A self-proclaimed highly complex undertaking<sup id="fnref:18"><a href="#fn:18" class="footnote">19</a></sup>, the understanding of source code by someone who hasn’t written it (or, being the writer, hasn’t read it in a while) quickly proved itself to be particularly difficult; as a response, corporate literature arose in order to serve as a reference for best practices<sup id="fnref:18b"><a href="#fn:18b" class="footnote">20</a></sup>. Style guides, in the context of programming, are textual documents whose rationale involve both social and technical components. On the social side, they are only truly useful if they are inconditionally adopted by all members working on a particular code-base, since <em>“all code in any code-base should look like a single person typed it, no matter how many people contributed.”</em><sup id="fnref:18c"><a href="#fn:18c" class="footnote">21</a></sup>; in the strict sense, guidelines are therefore reference documents which should provide an answer to the question of what is the preferred way of writing a particular programming statement (e.g. <code>var</code> vs. <code>let</code>, or <code>camelCase</code> vs. <code>snake_case</code>). Beyond aesthetic preferences aimed at optimizing the clarity of a given source code<sup id="fnref:18d"><a href="#fn:18d" class="footnote">22</a></sup>, style guides also include a technical component which aims at reducing programming errors by catching erroneous patterns in a given codebase (e.g. variable declaration before intialization, loose reference to the function-calling context). This technical component, because it can be judged by an objective standard (i.e. the amount of breaking errors in a program), is seldom the reason for internal disagreements within teams. In contrast, the aesthetic component, due to this lack of subjective criteria, opens itself up to discussion. It is both of these components which style guides aim at resolving.</p>
+
+<p>This phenomenon of explicitly written rules, dependent no longer on their writer, but rather on the organization to which the writer belongs, presents similar patterns as those highlighted in the formalization of knowledge as it happened during the transition of societies from oral communication (and their constituting organizations) to written communication<sup id="fnref:19"><a href="#fn:19" class="footnote">23</a></sup>. For instance, the written codification of hitherto implicit, idiosyncratic rulesets, has had the result of further preventing modification of said rules, and elevating them from a “personal” reach to a “universal” one; and these are patterns that re-emerge in the use of styleguides. However, the technical context for those studies of the impact of literacy is one in which the written word, once put down, is significantly harder to modify than both its spoken counterpart and its digital counterpart.</p>
+
+<p>The digital word, the word stored on and communicated via computers, presents two important differences. First, it can be as easily modified as it can be retrieved. Since one of the basic operations of the computing machine is the act of copy and the act of retrieval, it is important here to remember that anything that can be said on a digital medium always holds within itself the possibility of duplication, modification and, therefore, variation<sup id="fnref:20"><a href="#fn:20" class="footnote">24</a></sup>, illustrated on the most obvious-level by the ubiquity of “copy and paste” actions offered as a default by any word processor application on a modern computer. Second, source code written in programming languages is <em>executable</em>. This means that, beyond the linguistic act of writing a statement, the result of this writing act can be automatically executed and enforced, without stating the need for personal or social performance as a requirement. So while written code still exists within “chains of acts of writing”<sup id="fnref:21"><a href="#fn:21" class="footnote">25</a></sup>, once its validity has been confirmed and merged into active code bases, its enforcement is significantly easier than that of guides and protocols written in human languages<sup id="fnref:21a"><a href="#fn:21a" class="footnote">26</a></sup>.</p>
+
+<h2 id="the-github-development-platform">The GitHub development platform</h2>
+
+<p>Along with the low barrier to reproducibility and enforceability of code explicited above, another difference between organizations centered primarily on code and software and organizations in which code only constitutes a technical background is the porosity of the distinction between public and private. Particularly, when organizations maintain, or depend on, open-source software, the delimitation of which individual contributes to the organization’s product becomes more fluid and temporary than in more traditional organizations<sup id="fnref:21b"><a href="#fn:21b" class="footnote">27</a></sup>. At its most radical form, it is entirely non-hierarchical and horizontal<sup id="fnref:22"><a href="#fn:22" class="footnote">28</a></sup>, a structure in which anyone can comment on the product and suggest modifications, even though actual contribution remains subject to additional social and economic constraints<sup id="fnref:23"><a href="#fn:23" class="footnote">29</a></sup>. This configuration directly affects the scope of a style guide. If anyone can potentially contribute to any code base within a given language, then the potential scope for any style guide is that of universal adoption. This relatively loose set of mutually-beneficial work relations (between private companies, open-source organizations and individual contributors) constitutes the background of our research field and is accentuated by the specificity of the GitHub platform.</p>
+
+<p>As all platforms, GitHub conects multiple actors and provides the backdrop for economic, social and cultural practices<sup id="fnref:24"><a href="#fn:24" class="footnote">30</a></sup>. Economically, GitHub provides a way to store, retrieve and modify text files (usually source code) for distributed teams of contributors, grouped into projects (called repositories), themselves administrated by either personal or organizational accounts. Any public repository is accessible to anyone, and these projects can then be built to add to the value of a given commercial product (e.g. Apache’s <code>nginx</code>, Facebook’s <code>create-react-app</code>). Socially, GitHub requires user registration to contribute to any of those repositories, and maintains a transparency policy which makes available all of a given users contributions on any given public repository. These contributions overwhelmingly take the form of commits (direct modification of text files), pull requests (requests to a given organization to integrate suggested changes to a text file), and issue creation and comment (asking or answering a question on a given project repository). Culturally, user interactions on GitHub depend on agreed-upon practices and discourses, specifically when a user raises an issue, responds to it, or concludes (closes) it<sup id="fnref:25"><a href="#fn:25" class="footnote">31</a></sup>.</p>
+
+<h2 id="three-repositories">Three repositories</h2>
+
+<p>Within this context, this article looks at the discussions taking place in three particular open-source repositories on the GitHub platform. Since our aim is to examine how discursive strategies are successful in the enforcement and popularization of style guides, a guiding criterion for narrowing our research field was first to use the common indicators of stars (number of users interested in the development of the repository, the GitHub equivalent of a bookmark)<sup id="fnref:25b"><a href="#fn:25b" class="footnote">32</a></sup> and in forks (number of users having copied the repository to their own account, possibly to modify it further, and to submit these changes back into the original repository). For the JavaScript language, the top three most popular repositories are <code>airbnb/javascript</code> (100k stars, 19.5k forks), <code>prettier/prettier</code> (37.4k stars, 2.5k forks) and <code>standard/standard</code> (24k stars, 1.9k forks). Additional JavaScript style guides include the IdiomaticJS style guide<sup id="fnref:26"><a href="#fn:26" class="footnote">33</a></sup>, the Google JavaScript Style Guide<sup id="fnref:27"><a href="#fn:27" class="footnote">34</a></sup> and the style presented by Douglas Crockford<sup id="fnref:28"><a href="#fn:28" class="footnote">35</a></sup>, but do not meet either the popularity criteria, or do not exist primarily on GitHub.</p>
+
+<p>These three repositories, while sharing the same effective outcome of providing a style reference for other JavaScript programmers, do present differences in their approaches to achieving that goal, and in their organizational practices. The <code>airbnb/javascript</code> repository is the public-facing result of the guide used internally at the Airbnb company, a startup company privately valued at USD31 billion<sup id="fnref:29"><a href="#fn:29" class="footnote">36</a></sup>. It consists of a main document, <code>README.md</code>, the first page displayed on any GitHub repository, as well as configuration files for linters. The <code>standard/standard</code> repository is a non-profit open-source organization aiming at providing a non-modifiable, non-extensible way to programmatically enforce both stylistic choices and technical error-checking through the use of the <code>standard</code> software, a command-line utility which aims at automatically enforcing the style described on an additional <code>RULES.md</code> document<sup id="fnref:30"><a href="#fn:30" class="footnote">37</a></sup>. Finally the <code>prettier/prettier</code> repository limits itself to the strict formatting of source code, following the rules laid out on an external website<sup id="fnref:31"><a href="#fn:31" class="footnote">38</a></sup> and providing, similarly to <code>standard/standard</code>, a command-line utility to automatically enforce those changes<sup id="fnref:32"><a href="#fn:32" class="footnote">39</a></sup>. GitHub is therefore a combination of read-write texts and read-only texts. The read-write texts consisting of the main text files of the repository, while the read-write texts are composed of all the discussions and suggestions taking place in the issues and pull requests sections. Drawing from literary theory<sup id="fnref:33"><a href="#fn:33" class="footnote">40</a></sup>, this distinction allows us to identify the more authoritative text and the more negotiable ones.</p>
+
+<p>This study focuses on the issues sections of each of these repositories. Traditionally used to keep track of bugs and technical enhancements for project maintainers<sup id="fnref:34"><a href="#fn:34" class="footnote">41</a></sup> and have a dedicated section on each repository. An issue can be created by anyone with a GitHub user account, can be commented on by anyone with a user account, but can only be closed (or “resolved”, in GitHub’s terminology) by the original creator, or by project maintainers. Additional features is that they can reference other issues across repositories, as well as internal and external code requests, essentially creating a web of inter-textuality, and displaying the complexity and inter-dependency of software packages. While originally designed as a bug-tracker, research has shown that they are now the locus of more complext discussion, involving affective rhetoric and over-arching design inquiries, well beyond specific technical fixes<sup id="fnref:35"><a href="#fn:35" class="footnote">42</a></sup><sup id="fnref:36"><a href="#fn:36" class="footnote">43</a></sup>.</p>
+
+<h2 id="automatic-writing-with-code-linters">Automatic writing with code linters</h2>
+
+<p>A final relevant element constituting our research field is the code linter. Present in every examined repositories, and beyond the JavaScript ecosystem, a code linter is a piece of software which, given a set of syntactical rules, modifies one or multiple source code files to match said rules. This programmatic element, which can be seamlessly integrated into more complex workflows, represents both a transfer of agency from the human to the non-human, as well as an improvement in the systematic enforcing of style rules.</p>
+
+<p>Due to the overwhelming presence of automatic tooling in modern development<sup id="fnref:36b"><a href="#fn:36b" class="footnote">44</a></sup>, programming style guides make configuration files for linters one of the most essential part of their project, effectively connecting intimately human-readable texts with their machine-executable counterpart. The most popular of those linters in the JavaScript ecosystem is <code>eslint</code>, with over 13 million weekly downloads<sup id="fnref:37"><a href="#fn:37" class="footnote">45</a></sup>. While not proposing entirely new linters, our examined repositories focus on maintaining configuration files for <code>eslint</code> which implement their own human-readable styleguides. As a tool in a programmer’s workflow, these linters with their associated configuration files are what Latour and Woolgar have called <em>intermediary objects</em><sup id="fnref:38"><a href="#fn:38" class="footnote">46</a></sup>, objects which contribute essentially to labour and knowledge-creation. Previous research in the sociology of work focused on how these intermediary objects affect the work processes (both conception, discussion and realization)<sup id="fnref:39"><a href="#fn:39" class="footnote">47</a></sup>, particularly in establishing a framework within which work can take place<sup id="fnref:40"><a href="#fn:40" class="footnote">48</a></sup>; coupled with the automated normativity of code<sup id="fnref:41"><a href="#fn:41" class="footnote">49</a></sup><sup id="fnref:42"><a href="#fn:42" class="footnote">50</a></sup>, these linters represent a significant part of the life and impact of a style guide.</p>
+
+<h2 id="methodology">Methodology</h2>
+
+<p>After having provided the context in which this study takes place, we turn to our methodological approach. The methodology employed here to analyze (1) how different actors negotiate the adoption and negotiation of both subjective and both objective stylistic norms, and (2) the influence of the technical environment in which those discussions take place, is based on the discourse analysis of individual issues and pull requests in each examined repository. This approach will focus mainly on the most debated (i.e. those with the most comments) issues, highlighting the discursive strategies and patterns of the participants; since most of the least-commented issues are overwhelmingly related to technical issues and bugs which, by implying a single fix, stand outside of the field of argumentation. Specifically, this methodology aims at linking the meanings of the corpus not just to existing social realities<sup id="fnref:43"><a href="#fn:43" class="footnote">51</a></sup>, and to different kinds of communicative competences but to technical realities as well. Habermas provides a useful typology of communicative competence, composed of “a statement of fact, an expression of feeling, or a command”<sup id="fnref:44"><a href="#fn:44" class="footnote">52</a></sup>; and this typology will serve not as a normative framework, but rather as a starting point for approaching the positions, assumptions and aims of contributors in the discussion. Regarding the restriction of the analysis to the exclusive locus of issues and pull requests, as it has been mentionned above, GitHub is composed of an intricate web of texts which cross-reference each other, and therefore renders any clear distinction blurry. As such, we will consider that a read-only document (such as <code>README.md</code>) will be relevant to our analysis insofar as it <em>addresses</em> a specific user, with a specific voice: if this linguistic interaction doesn’t imply discussion, it certainly implies discourse.</p>
+
+<p>Several studies have previously looked into the discourses on open-source communities<sup id="fnref:45"><a href="#fn:45" class="footnote">53</a></sup>, mostly through the use of large-scale computational techniques<sup id="fnref:46"><a href="#fn:46" class="footnote">54</a></sup><sup id="fnref:47"><a href="#fn:47" class="footnote">55</a></sup>. The proposed approach intends to examine more specifically the nuances and implicit assumptions within the arguments deployed by the user, working under the hypothesis that, while broad strategies have been identified for issue resolution<sup id="fnref:48"><a href="#fn:48" class="footnote">56</a></sup>, a more detailed approach in the specific field of styleguide adoption might provide insights in the daily practices of programmers, and to what extent they implement, re-appropriate, or hijack (<em>détournent</em>) the broad strategies of technical resolution assumed by the GitHub platform<sup id="fnref:49"><a href="#fn:49" class="footnote">57</a></sup>.</p>
+
+<h2 id="analysis-of-corpus">Analysis of corpus</h2>
+
+<h3 id="airbnb">Airbnb</h3>
+
+<p>As pointed out by <em>mylestan</em>, the <code>airbnb/javascript</code> issues presents itself as much as a question-and-answer platform rather than as a traditional bug-reporting and fixing platform<sup id="fnref:50"><a href="#fn:50" class="footnote">58</a></sup>.</p>
+
+<p><em>Hi! First off, thanks for this package. Also, I’ll preface this with: I’m not 100% sure I’m using the react/whitespace option correctly, so this is more of a question than a bug report.</em></p>
+
+<p>With a low ratio of open-to-closed issues, the <code>airbnb/javascript</code> style guide consists of bug reports on <code>eslint</code><sup id="fnref:51"><a href="#fn:51" class="footnote">59</a></sup>, individual projects<sup id="fnref:52"><a href="#fn:52" class="footnote">60</a></sup> or the guide itself<sup id="fnref:53"><a href="#fn:53" class="footnote">61</a></sup>, even though all issues that are labeled as “bugs” represent less than 1% of the total issues opened. In this case, bugs are understood as inconsistencies between the <em>eslint</em> output and <code>airbnb/javascript</code>’s guidelines[^54]. What would be deemed inconsistencies internal to the guide itself are labeled as <em>editorial</em>, reflecting a broader concern with communication and understanding of concepts and paradigms over strict technical implementation issues.</p>
+
+<p>Indeed, the unique aspect of <code>airbnb/javascript</code> is its dependency on the internal, well-organized structure of a private company. The constitution of the rules are, therefore, not up to debate. Such an implicit, private, out-of-reach existence of the origin of the guide is made explicit both by the creator of the publicly available guide, for whom the pronouns <em>we</em> and <em>our</em> do not refer to the open-source community of commenters and contributors, but rather to the internal team at Airbnb<sup id="fnref:55"><a href="#fn:55" class="footnote">62</a></sup><sup id="fnref:55b"><a href="#fn:55b" class="footnote">63</a></sup>, as well as references by both parties in discussions to the practices of the company (<em>“airbnb pushes for […]”</em><sup id="fnref:56"><a href="#fn:56" class="footnote">64</a></sup>, <em>“I’d like to see this covered by Airbnb’s standards”</em><sup id="fnref:57"><a href="#fn:57" class="footnote">65</a></sup>) or to the codebase from which the styleguide emerged<sup id="fnref:58"><a href="#fn:58" class="footnote">66</a></sup>. On a chronological level, it is then interesting to see that the actual negotiations which happened on the repository’s issues (mostly issues #1-#40) are those in which most of the interactions happen between Airbnb employees and take place as multi-sided discussions on how to improve the guide<sup id="fnref:58a"><a href="#fn:58a" class="footnote">67</a></sup><sup id="fnref:58aa"><a href="#fn:58aa" class="footnote">68</a></sup><sup id="fnref:58aaa"><a href="#fn:58aaa" class="footnote">69</a></sup> or on bug- and inconsistency-fixing<sup id="fnref:58b"><a href="#fn:58b" class="footnote">70</a></sup>. What we see here is an instance of a private company using the tools and infrastructure of open-source processes embedded in the GitHub platform in order to improve their productivity by writing internally consistent code<sup id="fnref:58c"><a href="#fn:58c" class="footnote">71</a></sup>, while, in a second moment, asking community members for their inputs without promising to implement them<sup id="fnref:58d"><a href="#fn:58d" class="footnote">72</a></sup>.</p>
+
+<p>From this early period of a public interaction between fellow members of the same private organization, to the current situation of a large-scale interaction of distributed individuals and organizations over one of the most popular JavaScript styleguides, the discursive strategies of both the maintainers and of the commenters and contributors have shifted. This is due in part to the fact that the creation of the styleguide is not collaborative, in the open-source sense of the term. Since rational discussion leading to a possible change of mind of the maintainer isn’t possible, the alternative chosen by the Airbnb team is the didactic explanation of non-negotiable rules. One example is featured in the explanation of an early issue opened on the styleguide about the broader need for styleguides; the creator responds with a pedagogical <em>métaphore filée</em> of painters and fine artists rather than logically, rationally approaching the need for consistent codebases<sup id="fnref:59"><a href="#fn:59" class="footnote">73</a></sup>. Along with the fact that this interaction reveals the desire for the maintainers of the project (i.e. Airbnb employees) to explain, rather than discuss, the conclusion of this particular discussion also sheds light on the forking mechanism as used in a discursive situation. Along with this particular issue, others also confirm the fact that forking acts as an end-all conclusion to the debate, in which another discussion is created, taking as its axiom the contentious proposals evoked in the base branch<sup id="fnref:60"><a href="#fn:60" class="footnote">74</a></sup><sup id="fnref:61"><a href="#fn:61" class="footnote">75</a></sup><sup id="fnref:62"><a href="#fn:62" class="footnote">76</a></sup>.</p>
+
+<p>Additionally, a particular aspect of <code>airbnb/javascript</code> is the progressive inclusion of <em>why</em> such a rule has been decided in the read-only <code>README.md</code><sup id="fnref:62b"><a href="#fn:62b" class="footnote">77</a></sup>. By coupling exhaustivity with justification, the main task remaining for the maintainers of the project is to continue the explanation of why things are the way they are<sup id="fnref:62c"><a href="#fn:62c" class="footnote">78</a></sup>. The case of <code>prefer-default-exports</code> highlights the pattern of a maintainer repeating the same justification for recurring questions<sup id="fnref:63"><a href="#fn:63" class="footnote">79</a></sup><sup id="fnref:64"><a href="#fn:64" class="footnote">80</a></sup><sup id="fnref:65"><a href="#fn:65" class="footnote">81</a></sup>. What happens on the repository is the development of a pedagogical discussion in which the “bugs” opened are presented as misunderstandings from the commenter’s point of view, asking the maintainers, not to justify their style choices, but rather to <em>explain</em> how one can write code that would better match the guidelines explained<sup id="fnref:66"><a href="#fn:66" class="footnote">82</a></sup>. If that explanation fails, as in the <code>prefer-default-export</code> examples above, another strand of conversation is engaged in by one of the core maintainers, user <code>ljharb</code>, former Airbnb employee, and then member of TC39, the technical commitee in charge of the design of ECMAScript, of which JavaScript is an offshoot. These conversations essentially consist in him providing <em>ad hoc</em> explanations when external users are confused about the purpose of a rule or, even further, in re-organizing their code<sup id="fnref:67"><a href="#fn:67" class="footnote">83</a></sup><sup id="fnref:68"><a href="#fn:68" class="footnote">84</a></sup>. In this case, <code>ljharb</code> not only acts as a community manager rather than a project maintainer <em>per se</em>, but also eschews any discussions based on subjective preferences by providing a technical solution to any question asked, therefore showing that the <code>airbnb/javascript</code> style guide is not only exhaustive, consistent, but also implementable.</p>
+
+<p>What we’ve seen in <code>airbnb/javascript</code> here is that the technical environment of GitHub issues have been re-purposed from actual bug-tracking for Airbnb’s employees, towards rather as a didactic platform using a pedagogical approach, in a balance of both closed-source documents and open-source practices. The combination between one canonical document—uneditable beyond those with privileges, despite GitHub’s pull request mechanism—which exhaustively covers almost all controversial use-cases in the language, along with a skilled maintainer explaining issues to the commenters individually (in a reversal of the classical format of a bug in the software which needs to match the code, into a bug in the code, which needs to match the software), and ultimately the recourse to the process of forking as a concluding argument; all of these can explain both <code>airbnb/javascript</code>’s popularity and its high number of forks.</p>
+
+<h3 id="standardjs">StandardJS</h3>
+
+<p><code>standard/standard</code> is the third most popular project in the JavaScript ecosystem, and offers a different approach. While <code>airbnb/airbnb</code> provides a main <code>README.md</code>, with all the style rules immediately available at first glance, along with a <code>eslintrc.json</code> configuration file as the result of the closed-source work of a private company, <code>standard/standard</code> puts forth the <code>standard</code> binary, an immediate, “out-of-the-box” solution which applies the project’s rules to any file where the program is executed<sup id="fnref:68b"><a href="#fn:68b" class="footnote">85</a></sup>. The overall approach comes out of a more traditional open-source pattern, initiatet and spearheaded by a single individual, <code>feross</code>, which then turned into a proper organization once enough community traction had been garnered<sup id="fnref:69"><a href="#fn:69" class="footnote">86</a></sup><sup id="fnref:69a"><a href="#fn:69a" class="footnote">87</a></sup>.</p>
+
+<h4 id="goals">Goals</h4>
+
+<p>The self-stated goal of <code>standard/standard</code> of <em>“no configuration”</em><sup id="fnref:69b"><a href="#fn:69b" class="footnote">88</a></sup><sup id="fnref:69c"><a href="#fn:69c" class="footnote">89</a></sup> has led its maintainers (mainly <code>feross</code>, along with rotating members such as <code>linusU</code> and <code>rstacruz</code>) to inflect their discourse under the influence of technical efficiency, rather than rule justification as <code>airbnb/javascript</code> does. Indeed, the rules themselves are both stated by <code>feross</code> as well as discussed by the community—groups of users, members and contributors—for each release of the package. By leaving open the possibility of modifying their style rules, and subsequently making them immediately enforceable by their <code>standard</code> binary, the discursive focus isn’t so the number of discussions of so-called “religious” issues, known for the amount of devotion and heat that they attract (e.g. <code>semicolons</code>[^70]<sup id="fnref:71"><a href="#fn:71" class="footnote">90</a></sup>[^72], <code>parentheses</code><sup id="fnref:73"><a href="#fn:73" class="footnote">91</a></sup><sup id="fnref:74"><a href="#fn:74" class="footnote">92</a></sup>, <code>indentation</code><sup id="fnref:75"><a href="#fn:75" class="footnote">93</a></sup>), but rather on technical implementation, alternative possibilities and community support.</p>
+
+<h4 id="technical-requirement-from-eslint">Technical requirement from ESLint</h4>
+
+<p>The first category of arguments laid out in the <code>standard/standard</code> repository is related to the actual, technical feasibility of the arbitrary<sup id="fnref:75a"><a href="#fn:75a" class="footnote">94</a></sup>, but not non-sensical, rules laid out in the <code>README.md</code>. The status of <code>feross</code> as <em>“benevolent dictator”</em><sup id="fnref:76"><a href="#fn:76" class="footnote">95</a></sup><sup id="fnref:76a"><a href="#fn:76a" class="footnote">96</a></sup><sup id="fnref:76b"><a href="#fn:76b" class="footnote">97</a></sup> nullifies most of the arguments (e.g. <em>“All very subjective though. I think @feross will just have to pick something :)”</em><sup id="fnref:76c"><a href="#fn:76c" class="footnote">98</a></sup>), the remaining of which can sometimes be rationally discussed<sup id="fnref:77"><a href="#fn:77" class="footnote">99</a></sup><sup id="fnref:77a"><a href="#fn:77a" class="footnote">100</a></sup>. Given this status of most rules being somewhat indiscutable, upon what does the agreement of <code>standard/standard</code> rules rely? The status of the project as a convenient wrapper (i.e. a seamless <em>intermediary object</em> in a developer’s workflow) around <code>eslint</code> poses that core technology as one of the final assessments of the validity of a given argument (e.g. <em>“Probably better off making your case at eslint first, then coming back here”</em><sup id="fnref:78"><a href="#fn:78" class="footnote">101</a></sup>). While this effectively avoids bikeshedding<sup id="fnref:79"><a href="#fn:79" class="footnote">102</a></sup> in cases where the ultimate goal is to settle with one choice rather than debating multiple of them, this technological dependency also prevents some desired changes<sup id="fnref:80"><a href="#fn:80" class="footnote">103</a></sup>.</p>
+
+<h4 id="package-ecosystem-justifications">Package ecosystem Justifications</h4>
+
+<p>If the stylistic preference of a commenter still weighs more than the ease-of-use of the <code>standard/standard</code> package, then the strategy of the maintainers is to redirect them towards another part of the ecosystem, be it the direct configuration file which implements all of the style rules<sup id="fnref:81"><a href="#fn:81" class="footnote">104</a></sup>, or the adoption of other packages maintained by the <code>standard</code> organization<sup id="fnref:82"><a href="#fn:82" class="footnote">105</a></sup><sup id="fnref:83"><a href="#fn:83" class="footnote">106</a></sup><sup id="fnref:84"><a href="#fn:84" class="footnote">107</a></sup><sup id="fnref:84a"><a href="#fn:84a" class="footnote">108</a></sup>. Different from the dismissive tone of the <code>airbnb/javascript</code> maintainer’s repository, this redirection is an acknowledgement of the fact that opinions matter less than building a community, in line with the open-source ethos of group participation (e.g. the use of the <em>“we”</em> pronoun by <code>feross</code><sup id="fnref:85"><a href="#fn:85" class="footnote">109</a></sup>). Indeed, the word <em>community</em> is used most often on <code>airbnb/javascript</code> by the commenteers, while it is used most often on <code>standard/standard</code> by the maintainers (given an equivalent number of issues on each, respectively 34<sup id="fnref:86"><a href="#fn:86" class="footnote">110</a></sup> vs. 39<sup id="fnref:87"><a href="#fn:87" class="footnote">111</a></sup>). This emphasis on community-building as a part of the overall strategy of <code>standard/standard</code> also affects their discursive strategy.</p>
+
+<h4 id="community-breaking-changes">Community-breaking changes</h4>
+
+<p>With a set of rules overwhelmingly decided upon by <code>feross</code>, some rational argumentations for the modification of these rules, the reliance on <code>eslint</code> as a ground for whether or not a rule can be applied, and the redirection of unsatisfied, or unconvinced community members towards other packages of the <code>standard</code> ecosystem, such as <code>standard/standardx</code>, <code>standard/semistandard</code> or <code>standard/doublestandard</code> for “religious” issues, the last remaining argument deployed for the adoption or rejection of style rules is the extent to which the community is using the existing rules.</p>
+
+<p>On the one hand, this project has garnered visibilty and is currently deeply embedded in an institutional network of projects using the <code>standard/standard</code> guide<sup id="fnref:88"><a href="#fn:88" class="footnote">112</a></sup>, including GitHub itself for its JavaScript project, and such a network provides credibility by association<sup id="fnref:90"><a href="#fn:90" class="footnote">113</a></sup>. Even though these associations have been documented in order to further grow the community of users<sup id="fnref:89"><a href="#fn:89" class="footnote">114</a></sup>.</p>
+
+<p>In practice, the biggest role that the community has in the negotiation of style guides is in whether or not any change in the guide would be a breaking change, and for how many projects using <code>standard/standard</code>. Used by project maintainers (<em>“This is one of those decisions that we can’t revisit. Nearly every repo that uses standard would break, and that’s not acceptable – even with major version bump.”</em><sup id="fnref:91"><a href="#fn:91" class="footnote">115</a></sup>, <em>“Although personally I agree with the fundamental reasons that you argue for this. As it stands, this would be so much of a breaking change, it will never be accepted.”</em><sup id="fnref:92"><a href="#fn:92" class="footnote">116</a></sup>). The closing argument is therefore the number of existing projects which would have to refactor their code in order to comply with the new rule, and is often the last comment to take place on an issue before that issue is closed<sup id="fnref:93"><a href="#fn:93" class="footnote">117</a></sup><sup id="fnref:94"><a href="#fn:94" class="footnote">118</a></sup>[^95], acting as a unilateral reason.</p>
+
+<p>The discursive strategies that the commenters and maintainers deploy in <code>standard/standard</code> then revolve around issues of convenience, which have enabled what could be called a certain form of social path-dependency<sup id="fnref:96"><a href="#fn:96" class="footnote">119</a></sup>, in a productive sense. The figure and work of <code>feross</code>, both agreeable and engaging in his exchanges and unilateral in his decisions, include in their discourse references to technical limitations in order to bypass subjective issues. Indeed, while the affordances of <code>eslint</code> are inherently digital, the adherence of silent majority of <code>standard/standard</code> users is represented in a quantified manner, through unit tests resulting the a percentage of organizations and packages failing or succeeding said tests; and such an approach seems to manifest itself as the reification of community choices in order to increase its effective discursive power.</p>
+
+<h3 id="prettier">Prettier</h3>
+
+<p>The <code>prettier/prettier</code> project is both the most recent and the most popular (based on both stars and weekly downloads<sup id="fnref:97"><a href="#fn:97" class="footnote">120</a></sup>), and offers a third approach in our analysis. Developped in 2017 by Facebook employees, which is one of the world’s largest and most profitable companies, as well as the maintainer of the <code>react</code> project, the most popular front-end development framework by the end of 2019<sup id="fnref:98"><a href="#fn:98" class="footnote">121</a></sup>. Beyond this institutional backing and internal success<sup id="fnref:98a"><a href="#fn:98a" class="footnote">122</a></sup>, <code>prettier/prettier</code> presents two specificities which differentiate from <code>airbnb/javascript</code> and <code>standard/standard</code>. First, it doesn’t offer a clear and accessible style guide itself, and its <code>README.md</code> only contains one example to show the kind of work <code>prettier/prettier</code> does. Second, what it does is <em>essentially</em> different than the two previous examples looked, since it analyzes the source code, parses it and its inconsistencies and entirely reformats it according to internal rules—neither <code>airbnb/javascript</code> nor <code>standard/standard</code> offer default reformatting solutions. Such a language-independent approach (dealing directly with <em>Abstract Syntax Trees</em>, a context-free structure) might explain its popularity across different langauges, while the two other projects focus mainly on JavaScript. So, while not a style guide <em>de jure</em><sup id="fnref:98b"><a href="#fn:98b" class="footnote">123</a></sup>, it is <em>de facto</em> one, through its enforcement of rules, an enforcement much more thorough than its alternatives.</p>
+
+<h4 id="the-co-creation-of-a-style-guide">The co-creation of a style guide</h4>
+
+<p>Along with the absence of a clear styleguide announcing, if not explaining, the individual style decisions, the maintainers of the project (e.g. <code>jlongster</code>, <code>vjeux</code>, founders of the project while Facebook employees) tend to engage in conversations about the possibility to change existing styling rules<sup id="fnref:99"><a href="#fn:99" class="footnote">124</a></sup><sup id="fnref:100"><a href="#fn:100" class="footnote">125</a></sup><sup id="fnref:100a"><a href="#fn:100a" class="footnote">126</a></sup>. This willingness to change the behavior of their tool, along with its automation power and the founders institutional capital might explain the fact that the <code>prettier/prettier</code> repository has about four times more issues in total than the two other repositories examined, with more thoughtful, thorough and rational explanations<sup id="fnref:101"><a href="#fn:101" class="footnote">127</a></sup><sup id="fnref:101a"><a href="#fn:101a" class="footnote">128</a></sup>, including detailed description of desired behaviour<sup id="fnref:102"><a href="#fn:102" class="footnote">129</a></sup>. In particular, <code>prettier/prettier</code> distinguishes itself by allowing contributors to open up discussions and negotiate changes not through pure discursive argumentation, but rather by offering practical and thorough implementations of an alternative<sup id="fnref:103"><a href="#fn:103" class="footnote">130</a></sup>, including atlernatives which concern “religious” issues<sup id="fnref:104"><a href="#fn:104" class="footnote">131</a></sup>—in effect, long and elaborate argumentation always require <em>code</em> examples<sup id="fnref:104a"><a href="#fn:104a" class="footnote">132</a></sup><sup id="fnref:104b"><a href="#fn:104b" class="footnote">133</a></sup>. The process seems to be as follows: <code>prettier/prettier</code> formats a given code, the developer who might not agree with such a formatting result opens up an issue, argues for her opinion through the presentation of practical use-cases and actionable pull-requests and, depending on the technical soundess of the solution and the size of the community already using the package, might get their change accepted. Finally, while the thoroughness and politeness of most replies on this repository point towards a healthy community, it should be noted that the verbosity of some of the contributions are considered intimidating for comments who consider they English level sub-par(e.g. <em>“I didn’t read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit”</em><sup id="fnref:105"><a href="#fn:105" class="footnote">134</a></sup>).</p>
+
+<h4 id="technical-efficiency-as-an-argument">Technical efficiency as an argument</h4>
+
+<p>Without a reference document, and with the recurring statement that “readability” and “preference” are subjective arguments, <code>prettier/prettier</code> relies on technical arguments to solve debates, sometimes even before they happen. Before they even happen, because the seamlessness of the integration, as both a visible and invisible mediation, can eschew those debates altogether (<em>“Hi @jlongster, just would like to chime in and let you know that your project has hit the jackpot and solved something that even (the self-proclaimed) Standard and Semi-Standard couldn’t solve for me […] Easy team-wide style enforcement that’s based on an unbiased 3rd party algorithm to produce a one and only definitive way to indent absolutely each line of code”</em><sup id="fnref:106"><a href="#fn:106" class="footnote">135</a></sup>). This immediacy of programmatic action, and its adoption in return, is reminiscent of the power of interfaces in their ambiguity, in which a self-implementing tool acts as its own rationale<sup id="fnref:106a"><a href="#fn:106a" class="footnote">136</a></sup>.</p>
+
+<p>However, most of the official discourse of <code>prettier/prettier</code> (through its website and through oft-referenced conference talks) presents the project not as a style-guide <em>per se</em>, but as an AST-parser and printer. These technical definitions steer the debate towards technical argumentation, rather than adoption by the community (such as standard), or explanation of practical raitonale (such as airbnb); explicitly mentioning AST representation often becomes the grounds for the final stylistic decision (<em>“It will be interesting to figure this out because the way it formats it now is because of how the AST is structured, which is based on operator precedence”</em><sup id="fnref:106b"><a href="#fn:106b" class="footnote">137</a></sup><sup id="fnref:107"><a href="#fn:107" class="footnote">138</a></sup><sup id="fnref:108"><a href="#fn:108" class="footnote">139</a></sup><sup id="fnref:108a"><a href="#fn:108a" class="footnote">140</a></sup>), and sometimes even used as counter-examples<sup id="fnref:109"><a href="#fn:109" class="footnote">141</a></sup>.</p>
+
+<p>Finally, <code>prettier/prettier</code>’s argument is that it is both opionated and efficient, which has led to the early development of a “no-options” philosophy<sup id="fnref:110"><a href="#fn:110" class="footnote">142</a></sup>, which has moved from a read-write text, discussed by both maintainers and commenters, to a read-only text, as a canonical text on the official website<sup id="fnref:111"><a href="#fn:111" class="footnote">143</a></sup>, which is then used subsequently as an argument to respond negatively to requests for personal additions<sup id="fnref:112"><a href="#fn:112" class="footnote">144</a></sup><sup id="fnref:113"><a href="#fn:113" class="footnote">145</a></sup><sup id="fnref:114"><a href="#fn:114" class="footnote">146</a></sup>, combined with a request of responding through programming languages, rather than human languages<sup id="fnref:114a"><a href="#fn:114a" class="footnote">147</a></sup>. This particular phenomenon echoes practices found in the <code>airbnb/javascript</code> project in Goody’s investigations of the immutability and canonization of written texts. Because the tool gets its value and usefulness from its invariability—and the communities which depend on its invariability<sup id="fnref:114b"><a href="#fn:114b" class="footnote">148</a></sup>—, discussions around the tool itself can be made moot.</p>
+
+<h4 id="size-of-community-and-noise">Size of community and noise</h4>
+
+<p>A final feature of the <code>prettier/prettier</code> discussions stems from both their exhaustiveness, the popularity of the project and the maintainers’ decision to no longer accept options<sup id="fnref:115"><a href="#fn:115" class="footnote">149</a></sup>. This results in several seemingly intractable discussions with over 100 comments, while the majority of other issues have less than 10 comments each)<sup id="fnref:116"><a href="#fn:116" class="footnote">150</a></sup><sup id="fnref:117"><a href="#fn:117" class="footnote">151</a></sup><sup id="fnref:118"><a href="#fn:118" class="footnote">152</a></sup><sup id="fnref:119"><a href="#fn:119" class="footnote">153</a></sup>. These issues bring up the original tension of a styleguide, in which each writer has an opinion<sup id="fnref:120"><a href="#fn:120" class="footnote">154</a></sup> on what is the best way to solve a given dilemma<sup id="fnref:121"><a href="#fn:121" class="footnote">155</a></sup>, either as emotional, subjective statements<sup id="fnref:122"><a href="#fn:122" class="footnote">156</a></sup> (<em>“This issue is ridiculous. Just fix that”</em><sup id="fnref:122a"><a href="#fn:122a" class="footnote">157</a></sup>), or along with examples<sup id="fnref:123"><a href="#fn:123" class="footnote">158</a></sup> and offers of pull requests. The pattern we see here is that, due to the popularity of the project, first-time users weigh in on complicated debates, engage in the conversation with other commenters for a couple of replies, and then drop out of the discussion altogether). Coupled with the original intent of the maintainers to integrate community-argued changes, these issues remain open for all to chime in (most of them being over 3 years old).</p>
+
+<p>On the one hand, these discursive strategies seems to parallel the pattern of the dreaded <em>bikeshedding</em><sup id="fnref:124"><a href="#fn:124" class="footnote">159</a></sup>, in which anyone can chime in including linguistic patterns such as <em>“just my two cents”</em>, <em>“IMHO”</em> (“in my humble opinion”), <em>“just gonna weigh in here”</em>, apparently. As such, they don’t seem to appear very productive at first glance due to repeated arguments<sup id="fnref:125"><a href="#fn:125" class="footnote">160</a></sup><sup id="fnref:126"><a href="#fn:126" class="footnote">161</a></sup> and affect the maintainer’s ability to discuss (<em>“The Prettier issue tracker naturally attracts and concentrates code style discussions. They’ve been moved from basically everywhere to here. I think this is a big factor to the maintainer burnout I’ve seen lately.”</em><sup id="fnref:127"><a href="#fn:127" class="footnote">162</a></sup>).</p>
+
+<p>On the other hand, however, the overall quality of arguments presented (combining use cases, opinions and responses to previous proposals) has led to a switch in the discursive strategy in which the discussion is either summed up by the maintainers<sup id="fnref:128"><a href="#fn:128" class="footnote">163</a></sup><sup id="fnref:128a"><a href="#fn:128a" class="footnote">164</a></sup><sup id="fnref:128b"><a href="#fn:128b" class="footnote">165</a></sup> in order to provide moderation to the debate or to be pursued privately by the maintainers<sup id="fnref:129"><a href="#fn:129" class="footnote">166</a></sup><sup id="fnref:130"><a href="#fn:130" class="footnote">167</a></sup>. The result is that, emerging from community-created discursive noise inherent to any popular open-source projects, the <code>prettier/prettier</code> team engages less in terms of justifying the existing style, but in gauging how feasible an alternative is, once this discursive noise reaches a particular threshold, acting as a filter to turn quantitative input into qualitative decision making, the existence of the issue itself acting as an argument.</p>
+
+<h2 id="findings">Findings</h2>
+
+<p>Style guides existing on GitHub have to tend to the specific issue of convincing individual users with strong subjective preference of adopting their recommendations in the midst of a technical environment which favors copying and customization. Starting from an approach of arguments based on the framework of <em>communicative competence</em>, we’ve highlighted that, beyond emotional and subjective statements (sometimes disguised as rational ones) as well as the social justification of institutional origin or belonging, rational statements and commands are being affected, to some extent, by the techincal <em>milieu</em> in which programmers write, read and work.</p>
+
+<p>Particularly, we can see that there are multiple strategies which involve closely either source code, or compiled code. Source code acts as a prime argument when human languages fail to communicate the objectivity of their statement, and is often required by all parties of a discussion to base statements on what is considered a fact. Still, those comments are often overlooked: the requirement of <em>readability</em>, crucial to a decision in style guides, re-appears in all its subjectivity when it comes to reading the source code example provided, pitting the argument in multi-sided subjective perspectives. In <code>airbnb/javascript</code>’s case, when re-written code can act as an argument to the validity of the style guide, it is because previous code didn’t <em>work</em>, and became functional again through <code>ljharb</code>’s work.</p>
+
+<p>If source code seems to be a novel type of argument, adding to the traditional realm of human rhetoric, and yet remains trapped in subjective appreciation, compiled code can act as its own argument. In both <code>standard/standard</code> and <code>prettier/prettier</code>, both of the projects rely on the fact that their style guides <em>work</em>, that they are efficient in what they do, and any change must first and foremost comply with the <em>feasibiliy</em> of the argument, no matter how sound the conceptual proposal is; as we’ve seen, <code>prettier/prettier</code> can replace a didactic guide by an efficient tool, while <code>airbnb/javascript</code> has to rely on a strict didactic approach, on top of providing an <code>eslint</code> configuration file, leading us to the consideration that code as actionable words, a silent argument of sorts, is perhaps the most efficient in the adoption of a project.</p>
+
+<p>In terms of GitHub as a platform, the structure within which these projects take place, we’ve observed a multiplicity of approaches, preventing a unilateral interpretation of how technical environments can entirely shape the nature of a discussion. Between <code>airbnb/javascript</code>’s use of issues as a personalized question-answering forum, <code>standard/standard</code>’s desire to fix practical implementations of the tool they provide, and <code>prettier/prettier</code>’s use of a more classical open-source discussion, GitHub’s platform seems to be able to provide multiple kinds of discussions, ultimately geared by the social role of the maintainers and the ability to toggle between references to read-only (canonical) texts rather than keeping the discussion within read-write texts.</p>
+
+<p>However, GitHub does provide the interesting case of a highly-networked, highly-transparent working environment. This study has examined the role of a quantified community in argumenting for or against a particular stylistic choice, particularly present in <code>standard/standard</code>’s strategy, but also present in <code>prettier/prettier</code>; it is necessary to mention the entangled nature of cross-references to other projects hosted on GitHub. Beyond naming exisiting alternatives<sup id="fnref:131"><a href="#fn:131" class="footnote">168</a></sup>, being able to reference another project on an issue<sup id="fnref:132"><a href="#fn:132" class="footnote">169</a></sup>, or to mention explicitly the name of a maintainer of one given project on a different project<sup id="fnref:133"><a href="#fn:133" class="footnote">170</a></sup>, facilitates the interactions of maintainers<sup id="fnref:134"><a href="#fn:134" class="footnote">171</a></sup> and allows for an intricate web of intertextualities, allowing discussions happening on a given repository to act as arguments for another repository, or vice-versa. This added layer of complexity is beyond the scope of the current study, but offers a promising field for future research.</p>
+
+<hr />
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>calls to “fork” are always the conclusion of an argument</p>
+  </li>
+  <li>
+    <p>connect to organizational style, communication, etc.</p>
+  </li>
+  <li>
+    <p>add reference to the CNRS book</p>
+  </li>
+  <li>
+    <p>develop on how the style guide embodies administrative work -&gt; <strong>how?</strong> -&gt; CSCW, smoothing out kinks</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>Nather, Ed (2003-09-12) [1983-05-21], The story of Mel, a Real Programmer, FOLDOC</p>
+
+<p>https://www.gewina-studium.nl/articles/abstract/10.18352/studium.1459/</p>
+
+<p>ref needed</p>
+
+<p>ref needed</p>
+
+<p>ref needed -  formal institutions (goody?)</p>
+
+<p>https://github.com/airbnb/javascript</p>
+
+<p>https://github.com/standard/standard</p>
+
+<p>https://github.com/prettier/prettier</p>
+
+<p>objets intermediaires</p>
+
+<p>simmel, the problem of style</p>
+
+<p>ruskin, seven lamps</p>
+
+<p>sennett, the craftsman</p>
+
+<p>clean code, martin</p>
+
+<p>wendy huy kyong chun</p>
+
+<p>computer power and human reason</p>
+
+<p>the lives of artists</p>
+
+<p>the blog post where they compare picasso, matisse, etc.</p>
+
+<p>djikstra</p>
+
+<p>ref needed</p>
+
+<p>more books on professional dev</p>
+
+<p>IdiomaticJS readme</p>
+
+<p>knuth on style</p>
+
+<p>goody</p>
+
+<p>manovich</p>
+
+<p>frankel, 2006</p>
+
+<p>Brousseau et Moatty (2003), in [https://www.cairn.info/revue-anthropologie-des-connaissances-2012-1-page-21.htm?contenu=article]</p>
+
+<p>G. Hendry, “Public participation in proprietary software developmentthrough user roles and discourse,” Int. J. Hum.-Comput. Stud., vol. 66,no. 7, pp. 545–557, Jul. 2008</p>
+
+<p>wealth of networks</p>
+
+<p>Social Coding in GitHub: Transparency and Collaboration in an Open Software Repository</p>
+
+<p>Gillespie, T. What are platforms?</p>
+
+<p>Influence of social and technical factors for evaluating contribution in GitHub, [https://doi.org/10.1145/2568225.2568315]</p>
+
+<p>[https://doi.org/10.1016/j.jss.2018.09.016]</p>
+
+<p>[https://github.com/rwaldron/idiomatic.js/]</p>
+
+<p>[https://google.github.io/styleguide/jsguide.html]</p>
+
+<p>[https://www.crockford.com/style.html]</p>
+
+<p>[https://www.nytimes.com/2020/08/19/technology/airbnb-ipo.html]</p>
+
+<p>[https://github.com/standard/standard/blob/master/RULES.md]</p>
+
+<p>[https://prettier.io/docs/en/]</p>
+
+<p>[https://prettier.io/docs/en/install.html]</p>
+
+<p>Barthes, La plissure du texte</p>
+
+<p>[https://guides.github.com/features/issues/]</p>
+
+<p>got issues? who cares about it?</p>
+
+<p>Let’s Talk About It: Evaluating Contributions through Discussion in GitHub</p>
+
+<p>M. Hilton, T. Tunnell, K. Huang, D. Marinov and D. Dig, “Usage, costs, and benefits of continuous integration in open-source projects,” 2016 31st IEEE/ACM International Conference on Automated Software Engineering (ASE), Singapore, 2016, pp. 426-437.</p>
+
+<p>[https://www.npmjs.com/package/eslint]</p>
+
+<p>Latour, Woolgar, 1979</p>
+
+<p>Jeantet, A., 1998. Les objets intermédiaires dansla conception. Elémentspour une sociologie desprocessus de conception. Sociologie du travail,n°3/98, pp. 291-316</p>
+
+<p>Vinck, D. (2009). De l’objet intermédiaire à l’objet-frontière: Vers la prise en compte du travail d’équipement. Revue d’anthropologie des connaissances, vol. 3, 1(1), 51-72. https://doi.org/10.3917/rac.006.0051</p>
+
+<p>lessig, code is law</p>
+
+<p>galloway, protocol</p>
+
+<p>Bourdieu, Ce que parler veut dire</p>
+
+<p>Habermas, Theory of Communicative action</p>
+
+<p>David Berry</p>
+
+<p>Some computational approach to github</p>
+
+<p>Some other</p>
+
+<p>Perceived Language Complexity in GitHub IssueDiscussions and Their Effect on Issue Resolution</p>
+
+<p>The Practice of Everyday Life, Michou de Certeau</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1953#issue-379414953]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1967]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/2261]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/828]</p>
+
+<p>[54]:
+[https://github.com/airbnb/javascript/issues/1741#issuecomment-367442335]</p>
+
+<p>[https://github.com/airbnb/javascript/pull/455]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1532#issuecomment-326755515]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1365#issuecomment-350163209]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1660#issuecomment-419087604]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1185#issuecomment-262994841]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/4]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/18]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/9]</p>
+
+<p>[https://github.com/airbnb/javascript/pull/10]</p>
+
+<p>E. Kalliamvakou, D. Damian, K. Blincoe, L. Singer and D. M. German, “Open Source-Style Collaborative Development Practices in Commercial Projects Using GitHub,” 2015 IEEE/ACM 37th IEEE International Conference on Software Engineering, Florence, 2015, pp. 574-585, doi: [https://doi.org/10.1109/ICSE.2015.74]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1089]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/102#issuecomment-28157738]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/102#issuecomment-28259657]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1365#issuecomment-663973664]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1982#issuecomment-451191979]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/269]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1880]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/2302#issuecomment-703436286]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/2191#issuecomment-596139441]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1842#issuecomment-400194978]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/21]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/1103#issuecomment-400711388]</p>
+
+<p>[https://github.com/airbnb/javascript/issues/851#issuecomment-215479719]</p>
+
+<p>[https://github.com/standard/standard/issues/94#issuecomment-87332587]</p>
+
+<p>[69]:
+[https://github.com/airbnb/javascript/issues/851#issuecomment-213834028]</p>
+
+<p>[https://github.com/standard/standard/issues/846]</p>
+
+<p>[https://github.com/standard/standard/issues/259#issuecomment-141881255]</p>
+
+<p>[https://github.com/standard/standard/blob/master/README.md]</p>
+
+<p>[https://github.com/standard/standard/issues/3#issuecomment-71952384]</p>
+
+<p>[70]:
+[https://github.com/standard/standard/issues/78]</p>
+
+<p>[https://github.com/standard/standard/issues/962]</p>
+
+<p>[72]:
+[https://github.com/standard/standard/issues/176#issuecomment-116312615]</p>
+
+<p>[https://github.com/standard/standard/issues/414#issuecomment-183459932]</p>
+
+<p>[https://github.com/standard/standard/issues/219#issuecomment-170877700]</p>
+
+<p>[https://github.com/standard/standard/issues/58#issuecomment-77710035]</p>
+
+<p>[https://github.com/standard/standard/issues/3#issuecomment-71950165]</p>
+
+<p>[https://github.com/standard/standard/issues/108#issuecomment-90990325]</p>
+
+<p>[https://github.com/standard/standard/issues/710#issuecomment-521095379]</p>
+
+<p>[https://github.com/standard/standard/issues/628#issuecomment-366484860]</p>
+
+<p>[https://github.com/standard/standard/issues/309#issuecomment-152899586]</p>
+
+<p>[https://github.com/standard/standard/issues/111#issuecomment-116885571]</p>
+
+<p>[https://github.com/standard/standard/issues/309#issuecomment-180208214]</p>
+
+<p>[https://github.com/standard/standard/issues/720#issuecomment-266878246]</p>
+
+<p>[https://github.com/standard/standard/issues/1356#issue-480058723]</p>
+
+<p>[https://github.com/standard/standard/issues/257#issuecomment-142417059]</p>
+
+<p>[https://github.com/standard/standard/issues/240#issuecomment-224125128]</p>
+
+<p>[https://github.com/standard/standard/issues/771#issuecomment-375609384]</p>
+
+<p>[https://github.com/standard/standard/issues/1155#issuecomment-399769283]</p>
+
+<p>[https://github.com/standard/standard/issues/962#issuecomment-319714580]</p>
+
+<p>[https://github.com/standard/standard/issues/1500#issuecomment-648019851]</p>
+
+<p>[https://github.com/standard/standard/issues/1356#issue-480058723]</p>
+
+<p>[https://github.com/airbnb/javascript/issues?q=is%3Aissue+is%3Aclosed+community]</p>
+
+<p>[https://github.com/standard/standard/issues?q=is%3Aissue+is%3Aclosed+community]</p>
+
+<p>[https://github.com/standard/standard#who-uses-javascript-standard-style]</p>
+
+<p>[https://github.com/standard/standard/issues/744#issue-200237553]</p>
+
+<p>sth about bourdieu and symbolic belonging idk</p>
+
+<p>[https://github.com/standard/standard/issues/219#issuecomment-127446961]</p>
+
+<p>[https://github.com/standard/standard/issues/240#issuecomment-135968036]</p>
+
+<p>[https://github.com/standard/standard/issues/298#issuecomment-179571496]</p>
+
+<p>[https://github.com/standard/standard/issues/720#issuecomment-515722463]</p>
+
+<p>[https://github.com/prettier/prettier/issues/40#issuecomment-271769512]</p>
+
+<p>[https://www.npmjs.com/package/prettier]</p>
+
+<p>[https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-566173911]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5246#issuecomment-429788464]</p>
+
+<p>[https://github.com/prettier/prettier/issues/7884#issuecomment-605519802]</p>
+
+<p>[https://github.com/prettier/prettier/issues/73#issuecomment-272537791]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-313229534]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840#issuecomment-689978905]</p>
+
+<p>[https://github.com/prettier/prettier/issues/4125#issuecomment-588725113]</p>
+
+<p>[https://github.com/prettier/prettier/issues/3368#issuecomment-357312678]</p>
+
+<p>[https://github.com/prettier/prettier/issues/3368#issuecomment-374764905]</p>
+
+<p>[https://github.com/prettier/prettier/issues/736]</p>
+
+<p>[https://github.com/prettier/prettier/issues/7884#issuecomment-605898046]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5814#issuecomment-468978755]</p>
+
+<p>[https://github.com/prettier/prettier/issues/7884#issuecomment-619147696]</p>
+
+<p>[https://github.com/prettier/prettier/issues/40#issuecomment-271804674]</p>
+
+<p>galloway, the interface effect</p>
+
+<p>[https://github.com/prettier/prettier/issues/2#issuecomment-269872486]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5814#issuecomment-468827633]</p>
+
+<p>[https://github.com/prettier/prettier/issues/9358#issuecomment-705940711]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-281097771]</p>
+
+<p>[https://github.com/prettier/prettier/issues/7884#issuecomment-605755932]</p>
+
+<p>[https://github.com/prettier/prettier/issues/40]</p>
+
+<p>[https://prettier.io/docs/en/option-philosophy.html]</p>
+
+<p>[https://github.com/prettier/prettier/issues/8559#issuecomment-643796145]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-627906479]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840#issuecomment-458280945]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840#issuecomment-482353176]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-646868677]</p>
+
+<p>[https://github.com/prettier/prettier/pull/8540s]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5814]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-282690495]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-345493031]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-669877250]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-385114296]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-350849520]</p>
+
+<p>[https://www.freebsd.org/doc/en/books/faq/misc.html#bikeshed-painting]</p>
+
+<p>[https://github.com/prettier/prettier/issues/187#issuecomment-383546996]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5814#issuecomment-597403394]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840#issuecomment-522295504]</p>
+
+<p>[https://github.com/prettier/prettier/issues/840#issuecomment-618186522]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5814#issuecomment-469736563]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-650607819]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-669877250]</p>
+
+<p>[https://github.com/prettier/prettier/issues/5377#issuecomment-650153308]</p>
+
+<p>[https://github.com/prettier/prettier/pull/123#issuecomment-272029925]</p>
+
+<p>[https://github.com/prettier/prettier/issues/3806#issuecomment-451615213]</p>
+
+<p>[https://github.com/standard/standard/issues/811#issuecomment-294034120]</p>
+
+<p>[https://github.com/prettier/prettier/issues/3503#issuecomment-352538566]</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+
+      <p><a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+
+      <p><a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+
+      <p><a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+
+      <p><a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+
+      <p><a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+
+      <p><a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+
+      <p><a href="#fnref:7" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+
+      <p><a href="#fnref:8" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+
+      <p><a href="#fnref:9" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:10">
+
+      <p><a href="#fnref:10" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:11">
+
+      <p><a href="#fnref:11" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:12">
+
+      <p><a href="#fnref:12" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:13">
+
+      <p><a href="#fnref:13" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:14">
+
+      <p><a href="#fnref:14" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:15">
+
+      <p><a href="#fnref:15" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:16">
+
+      <p><a href="#fnref:16" class="reversefootnote">&#8617;</a> <a href="#fnref:16:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:16b">
+
+      <p><a href="#fnref:16b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:17">
+
+      <p><a href="#fnref:17" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:18">
+
+      <p><a href="#fnref:18" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:18b">
+
+      <p><a href="#fnref:18b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:18c">
+
+      <p><a href="#fnref:18c" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:18d">
+
+      <p><a href="#fnref:18d" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:19">
+
+      <p><a href="#fnref:19" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:20">
+
+      <p><a href="#fnref:20" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:21">
+
+      <p><a href="#fnref:21" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:21a">
+
+      <p><a href="#fnref:21a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:21b">
+
+      <p><a href="#fnref:21b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:22">
+
+      <p><a href="#fnref:22" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:23">
+
+      <p><a href="#fnref:23" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:24">
+
+      <p><a href="#fnref:24" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:25">
+
+      <p><a href="#fnref:25" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:25b">
+
+      <p><a href="#fnref:25b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:26">
+
+      <p><a href="#fnref:26" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:27">
+
+      <p><a href="#fnref:27" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:28">
+
+      <p><a href="#fnref:28" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:29">
+
+      <p><a href="#fnref:29" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:30">
+
+      <p><a href="#fnref:30" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:31">
+
+      <p><a href="#fnref:31" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:32">
+
+      <p><a href="#fnref:32" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:33">
+
+      <p><a href="#fnref:33" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:34">
+
+      <p><a href="#fnref:34" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:35">
+
+      <p><a href="#fnref:35" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:36">
+
+      <p><a href="#fnref:36" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:36b">
+
+      <p><a href="#fnref:36b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:37">
+
+      <p><a href="#fnref:37" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:38">
+
+      <p><a href="#fnref:38" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:39">
+
+      <p><a href="#fnref:39" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:40">
+
+      <p><a href="#fnref:40" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:41">
+
+      <p><a href="#fnref:41" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:42">
+
+      <p><a href="#fnref:42" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:43">
+
+      <p><a href="#fnref:43" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:44">
+
+      <p><a href="#fnref:44" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:45">
+
+      <p><a href="#fnref:45" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:46">
+
+      <p><a href="#fnref:46" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:47">
+
+      <p><a href="#fnref:47" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:48">
+
+      <p><a href="#fnref:48" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:49">
+
+      <p><a href="#fnref:49" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:50">
+
+      <p><a href="#fnref:50" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:51">
+
+      <p><a href="#fnref:51" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:52">
+
+      <p><a href="#fnref:52" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:53">
+
+      <p><a href="#fnref:53" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:55">
+
+      <p><a href="#fnref:55" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:55b">
+
+      <p><a href="#fnref:55b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:56">
+
+      <p><a href="#fnref:56" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:57">
+
+      <p><a href="#fnref:57" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58">
+
+      <p><a href="#fnref:58" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58a">
+
+      <p><a href="#fnref:58a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58aa">
+
+      <p><a href="#fnref:58aa" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58aaa">
+
+      <p><a href="#fnref:58aaa" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58b">
+
+      <p><a href="#fnref:58b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58c">
+
+      <p><a href="#fnref:58c" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:58d">
+
+      <p><a href="#fnref:58d" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:59">
+
+      <p><a href="#fnref:59" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:60">
+
+      <p><a href="#fnref:60" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:61">
+
+      <p><a href="#fnref:61" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:62">
+
+      <p><a href="#fnref:62" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:62b">
+
+      <p><a href="#fnref:62b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:62c">
+
+      <p><a href="#fnref:62c" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:63">
+
+      <p><a href="#fnref:63" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:64">
+
+      <p><a href="#fnref:64" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:65">
+
+      <p><a href="#fnref:65" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:66">
+
+      <p><a href="#fnref:66" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:67">
+
+      <p><a href="#fnref:67" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:68">
+
+      <p><a href="#fnref:68" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:68b">
+
+      <p><a href="#fnref:68b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:69">
+
+      <p><a href="#fnref:69" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:69a">
+
+      <p><a href="#fnref:69a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:69b">
+
+      <p><a href="#fnref:69b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:69c">
+
+      <p><a href="#fnref:69c" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:71">
+
+      <p><a href="#fnref:71" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:73">
+
+      <p><a href="#fnref:73" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:74">
+
+      <p><a href="#fnref:74" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:75">
+
+      <p><a href="#fnref:75" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:75a">
+
+      <p><a href="#fnref:75a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:76">
+
+      <p><a href="#fnref:76" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:76a">
+
+      <p><a href="#fnref:76a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:76b">
+
+      <p><a href="#fnref:76b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:76c">
+
+      <p><a href="#fnref:76c" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:77">
+
+      <p><a href="#fnref:77" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:77a">
+
+      <p><a href="#fnref:77a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:78">
+
+      <p><a href="#fnref:78" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:79">
+
+      <p><a href="#fnref:79" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:80">
+
+      <p><a href="#fnref:80" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:81">
+
+      <p><a href="#fnref:81" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:82">
+
+      <p><a href="#fnref:82" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:83">
+
+      <p><a href="#fnref:83" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:84">
+
+      <p><a href="#fnref:84" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:84a">
+
+      <p><a href="#fnref:84a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:85">
+
+      <p><a href="#fnref:85" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:86">
+
+      <p><a href="#fnref:86" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:87">
+
+      <p><a href="#fnref:87" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:88">
+
+      <p><a href="#fnref:88" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:90">
+
+      <p><a href="#fnref:90" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:89">
+
+      <p><a href="#fnref:89" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:91">
+
+      <p><a href="#fnref:91" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:92">
+
+      <p><a href="#fnref:92" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:93">
+
+      <p><a href="#fnref:93" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:94">
+
+      <p><a href="#fnref:94" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:96">
+
+      <p><a href="#fnref:96" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:97">
+
+      <p><a href="#fnref:97" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:98">
+
+      <p><a href="#fnref:98" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:98a">
+
+      <p><a href="#fnref:98a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:98b">
+
+      <p><a href="#fnref:98b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:99">
+
+      <p><a href="#fnref:99" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:100">
+
+      <p><a href="#fnref:100" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:100a">
+
+      <p><a href="#fnref:100a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:101">
+
+      <p><a href="#fnref:101" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:101a">
+
+      <p><a href="#fnref:101a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:102">
+
+      <p><a href="#fnref:102" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:103">
+
+      <p><a href="#fnref:103" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:104">
+
+      <p><a href="#fnref:104" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:104a">
+
+      <p><a href="#fnref:104a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:104b">
+
+      <p><a href="#fnref:104b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:105">
+
+      <p><a href="#fnref:105" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:106">
+
+      <p><a href="#fnref:106" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:106a">
+
+      <p><a href="#fnref:106a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:106b">
+
+      <p><a href="#fnref:106b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:107">
+
+      <p><a href="#fnref:107" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:108">
+
+      <p><a href="#fnref:108" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:108a">
+
+      <p><a href="#fnref:108a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:109">
+
+      <p><a href="#fnref:109" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:110">
+
+      <p><a href="#fnref:110" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:111">
+
+      <p><a href="#fnref:111" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:112">
+
+      <p><a href="#fnref:112" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:113">
+
+      <p><a href="#fnref:113" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:114">
+
+      <p><a href="#fnref:114" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:114a">
+
+      <p><a href="#fnref:114a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:114b">
+
+      <p><a href="#fnref:114b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:115">
+
+      <p><a href="#fnref:115" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:116">
+
+      <p><a href="#fnref:116" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:117">
+
+      <p><a href="#fnref:117" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:118">
+
+      <p><a href="#fnref:118" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:119">
+
+      <p><a href="#fnref:119" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:120">
+
+      <p><a href="#fnref:120" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:121">
+
+      <p><a href="#fnref:121" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:122">
+
+      <p><a href="#fnref:122" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:122a">
+
+      <p><a href="#fnref:122a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:123">
+
+      <p><a href="#fnref:123" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:124">
+
+      <p><a href="#fnref:124" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:125">
+
+      <p><a href="#fnref:125" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:126">
+
+      <p><a href="#fnref:126" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:127">
+
+      <p><a href="#fnref:127" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:128">
+
+      <p><a href="#fnref:128" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:128a">
+
+      <p><a href="#fnref:128a" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:128b">
+
+      <p><a href="#fnref:128b" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:129">
+
+      <p><a href="#fnref:129" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:130">
+
+      <p><a href="#fnref:130" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:131">
+
+      <p><a href="#fnref:131" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:132">
+
+      <p><a href="#fnref:132" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:133">
+
+      <p><a href="#fnref:133" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:134">
+
+      <p><a href="#fnref:134" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+			</div>
+		</body>
+	</html>

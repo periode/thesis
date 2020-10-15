@@ -66,7 +66,7 @@ Indeed, the unique aspect of `airbnb/javascript` is its dependency on the intern
 
 From this early period of a public interaction between fellow members of the same private organization, to the current situation of a large-scale interaction of distributed individuals and organizations over one of the most popular JavaScript styleguides, the discursive strategies of both the maintainers and of the commenters and contributors have shifted. This is due in part to the fact that the creation of the styleguide is not collaborative, in the open-source sense of the term. Since rational discussion leading to a possible change of mind of the maintainer isn't possible, the alternative chosen by the Airbnb team is the didactic explanation of non-negotiable rules. One example is featured in the explanation of an early issue opened on the styleguide about the broader need for styleguides; the creator responds with a pedagogical *métaphore filée* of painters and fine artists rather than logically, rationally approaching the need for consistent codebases[^59]. Along with the fact that this interaction reveals the desire for the maintainers of the project (i.e. Airbnb employees) to explain, rather than discuss, the conclusion of this particular discussion also sheds light on the forking mechanism as used in a discursive situation. Along with this particular issue, others also confirm the fact that forking acts as an end-all conclusion to the debate, in which another discussion is created, taking as its axiom the contentious proposals evoked in the base branch[^60][^61][^62].
 
-Additionally, a particular aspect of `airbnb/javascript` is the progressive inclusion of *why* such a rule has been decided in the read-only `README.md`[^62b]. By coupling exhaustivity with justification, the main task remaining for the maintainers of the project is to continue the explanation of why things are the way they are[^62c]. The case of `prefer-default-exports` highlights the pattern of a maintainer repeating the same justification for recurring questions[^63][^64][^65]. What happens on the repository is the development of a pedagogical discussion in which the "bugs" opened are presented as misunderstandings from the commenter's point of view, asking the maintainers, not to justify their style choices, but rather to *explain* how one can write code that would better match the guidelines explained[^66]. If that explanation fails, as in the `prefer-default-export` examples above, another strand of conversation is engaged in by one of the core maintainers, user `ljhard`, former Airbnb employee, and then member of TC39, the technical commitee in charge of the design of ECMAScript, of which JavaScript is an offshoot. These conversations essentially consist in him providing *ad hoc* explanations when external users are confused about the purpose of a rule or, even further, in re-organizing their code[^67][^68]. In this case, `ljhard` not only acts as a community manager rather than a project maintainer *per se*, but also eschews any discussions based on subjective preferences by providing a technical solution to any question asked, therefore showing that the `airbnb/javascript` style guide is not only exhaustive, consistent, but also implementable.
+Additionally, a particular aspect of `airbnb/javascript` is the progressive inclusion of *why* such a rule has been decided in the read-only `README.md`[^62b]. By coupling exhaustivity with justification, the main task remaining for the maintainers of the project is to continue the explanation of why things are the way they are[^62c]. The case of `prefer-default-exports` highlights the pattern of a maintainer repeating the same justification for recurring questions[^63][^64][^65]. What happens on the repository is the development of a pedagogical discussion in which the "bugs" opened are presented as misunderstandings from the commenter's point of view, asking the maintainers, not to justify their style choices, but rather to *explain* how one can write code that would better match the guidelines explained[^66]. If that explanation fails, as in the `prefer-default-export` examples above, another strand of conversation is engaged in by one of the core maintainers, user `ljharb`, former Airbnb employee, and then member of TC39, the technical commitee in charge of the design of ECMAScript, of which JavaScript is an offshoot. These conversations essentially consist in him providing *ad hoc* explanations when external users are confused about the purpose of a rule or, even further, in re-organizing their code[^67][^68]. In this case, `ljharb` not only acts as a community manager rather than a project maintainer *per se*, but also eschews any discussions based on subjective preferences by providing a technical solution to any question asked, therefore showing that the `airbnb/javascript` style guide is not only exhaustive, consistent, but also implementable.
 
 What we've seen in `airbnb/javascript` here is that the technical environment of GitHub issues have been re-purposed from actual bug-tracking for Airbnb's employees, towards rather as a didactic platform using a pedagogical approach, in a balance of both closed-source documents and open-source practices. The combination between one canonical document—uneditable beyond those with privileges, despite GitHub's pull request mechanism—which exhaustively covers almost all controversial use-cases in the language, along with a skilled maintainer explaining issues to the commenters individually (in a reversal of the classical format of a bug in the software which needs to match the code, into a bug in the code, which needs to match the software), and ultimately the recourse to the process of forking as a concluding argument; all of these can explain both `airbnb/javascript`'s popularity and its high number of forks.
 
@@ -98,76 +98,51 @@ The discursive strategies that the commenters and maintainers deploy in `standar
 
 ### Prettier
 
-The `prettier/prettier` project is both the most recent and the most popular (based on both stars and weekly downloads[^97]), and offers a third approach in our analysis. Developped in 2017 at Facebook, one of the world's largest and most profitable companies, and maintainer of the `react` project, the most popular front-end development framework by the end of 2019[^98]. Beyond this institutional backing, `prettier/prettier` presents two specificities which differentiate from `airbnb/javascript` and `standard/standard`. First, it doesn't offer a clear and accessible style guide itself, and its `README.md` only offers one example to show the kind of work `prettier/prettier` does. Second, the kind of work that it does is essentially different that the two previous examples looked, since it analyzes the source code, parses it and its inconsistencies and entirely reformats it according to internal rules—neither `airbnb/javascript` nor `standard/standard` offer default reformatting solutions. Such a language-independent approach (dealing directly with *Abstract Syntax Trees*, a context-free structure) might explain its popularity across different langauges. So, while not a style guide *de jure*[^98a], it is *de facto* through its enforcement of rules, more thoroughly than its alternatives.
+The `prettier/prettier` project is both the most recent and the most popular (based on both stars and weekly downloads[^97]), and offers a third approach in our analysis. Developped in 2017 by Facebook employees, which is one of the world's largest and most profitable companies, as well as the maintainer of the `react` project, the most popular front-end development framework by the end of 2019[^98]. Beyond this institutional backing and internal success[^98a], `prettier/prettier` presents two specificities which differentiate from `airbnb/javascript` and `standard/standard`. First, it doesn't offer a clear and accessible style guide itself, and its `README.md` only contains one example to show the kind of work `prettier/prettier` does. Second, what it does is *essentially* different than the two previous examples looked, since it analyzes the source code, parses it and its inconsistencies and entirely reformats it according to internal rules—neither `airbnb/javascript` nor `standard/standard` offer default reformatting solutions. Such a language-independent approach (dealing directly with *Abstract Syntax Trees*, a context-free structure) might explain its popularity across different langauges, while the two other projects focus mainly on JavaScript. So, while not a style guide *de jure*[^98b], it is *de facto* one, through its enforcement of rules, an enforcement much more thorough than its alternatives.
 
 #### The co-creation of a style guide
 
-Along with the absence of a clear styleguide announcing, if not explaining, the individual decisions, the maintainers of the project (e.g. `jlongster`, `vjeux`, founders of the project while Facebook employees) tend to engage in conversations about the possibility to change existing styling rules[^99][^100]. This willingness to change the behavior of their tool, along with its automation power and the founders institutional capital might explain the fact that the `prettier/prettier` repository has about four times more issues in total than the two other repositories examined, with more thoughtful, thorough and rational explanations[^101][^101a], including detailed description of desired behaviour[^102]. In particular, `prettier/prettier` distinguishes itself by allowing contributors to open up discussions and negotiate changes not through pure discursive argumentation, but rather by offering practical, safe and thorough implementations of an alternative[^103], including of "religious" issues[^104]—in effect, long and elaborate argumentation always require examples[^104a]. The process seems to be as follows: `prettier/prettier` formats a given code, the developer who might not agree with such a formatting opens up an issue, argues for her case through the presentation of practical use-cases and actionable pull-requests and, depending on the technical soundess of the solution and the size of the community already using the package, might get their change accepted. Finally, while the thoroughness and politeness of most replies on this repository point towards a healthy community, it should be noted that the verbosity of some of the contributions are considered intimidating for comments who consider they English level sub-par(e.g. *"I didn't read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit"*[^105]).
+Along with the absence of a clear styleguide announcing, if not explaining, the individual style decisions, the maintainers of the project (e.g. `jlongster`, `vjeux`, founders of the project while Facebook employees) tend to engage in conversations about the possibility to change existing styling rules[^99][^100][^100a]. This willingness to change the behavior of their tool, along with its automation power and the founders institutional capital might explain the fact that the `prettier/prettier` repository has about four times more issues in total than the two other repositories examined, with more thoughtful, thorough and rational explanations[^101][^101a], including detailed description of desired behaviour[^102]. In particular, `prettier/prettier` distinguishes itself by allowing contributors to open up discussions and negotiate changes not through pure discursive argumentation, but rather by offering practical and thorough implementations of an alternative[^103], including atlernatives which concern "religious" issues[^104]—in effect, long and elaborate argumentation always require *code* examples[^104a][^104b]. The process seems to be as follows: `prettier/prettier` formats a given code, the developer who might not agree with such a formatting result opens up an issue, argues for her opinion through the presentation of practical use-cases and actionable pull-requests and, depending on the technical soundess of the solution and the size of the community already using the package, might get their change accepted. Finally, while the thoroughness and politeness of most replies on this repository point towards a healthy community, it should be noted that the verbosity of some of the contributions are considered intimidating for comments who consider they English level sub-par(e.g. *"I didn't read the whole conversation above because you guys really know how to speak English well slightly_smiling_face Makes me envy a bit"*[^105]).
 
 #### Technical efficiency as an argument
 
-Without a reference document, and with the recurring statement that "readability" and "preference" are subjective arguments, `prettier/prettier` relies on technical arguments to solve debates, sometimes even before they happen. Before they even happen, because the seamlessness of the integration, as both a visible and invisible mediation, can eschew those debates altogether (*"Hi @jlongster, just would like to chime in and let you know that your project has hit the jackpot and solved something that even (the self-proclaimed) Standard and Semi-Standard couldn't solve for me [...] Easy team-wide style enforcement that's based on an unbiased 3rd party algorithm to produce a one and only definitive way to indent absolutely each line of code"*[^106]). This approach is reminiscent of the power of interfaces in their ambiguity, in which a self-implementing tool acts as its own rationale[^106a].
+Without a reference document, and with the recurring statement that "readability" and "preference" are subjective arguments, `prettier/prettier` relies on technical arguments to solve debates, sometimes even before they happen. Before they even happen, because the seamlessness of the integration, as both a visible and invisible mediation, can eschew those debates altogether (*"Hi @jlongster, just would like to chime in and let you know that your project has hit the jackpot and solved something that even (the self-proclaimed) Standard and Semi-Standard couldn't solve for me [...] Easy team-wide style enforcement that's based on an unbiased 3rd party algorithm to produce a one and only definitive way to indent absolutely each line of code"*[^106]). This immediacy of programmatic action, and its adoption in return, is reminiscent of the power of interfaces in their ambiguity, in which a self-implementing tool acts as its own rationale[^106a].
 
-However, most of the official discourse of `prettier/prettier` (through the official website and through oft-referenced conference talks) presents the project not as a style-guide *per se*, but as an AST-parser and printer. These technical definitions steer the debate towards technical argumentation, rather than adoption by the community (standard), or explanation of practical raitonale (airbnb), explicitly mentioning AST representation as grounds for the final stylistic decision (*"It will be interesting to figure this out because the way it formats it now is because of how the AST is structured, which is based on operator precedence"*[^106b][^107][^108]), and sometimes used as counter-examples[^109].
+However, most of the official discourse of `prettier/prettier` (through its website and through oft-referenced conference talks) presents the project not as a style-guide *per se*, but as an AST-parser and printer. These technical definitions steer the debate towards technical argumentation, rather than adoption by the community (such as standard), or explanation of practical raitonale (such as airbnb); explicitly mentioning AST representation often becomes the grounds for the final stylistic decision (*"It will be interesting to figure this out because the way it formats it now is because of how the AST is structured, which is based on operator precedence"*[^106b][^107][^108][^108a]), and sometimes even used as counter-examples[^109].
 
-Finally, `prettier/prettier`'s argument is that it is both opionated and efficient, which has led to the early development of a "no-options" philosophy[^110], which has moved from a read-write text, discussed by both maintainers and commenters, to a read-only text, as a canonical text on the official website[^111], which is then used subsequently as an argument to respond negatively to requests for personal additions[^112][^113][^114]. This particular phenomenon echoes practices found in the `airbnb/javascript` project in Goody's investigations of the immutability and canonization of written texts.
+Finally, `prettier/prettier`'s argument is that it is both opionated and efficient, which has led to the early development of a "no-options" philosophy[^110], which has moved from a read-write text, discussed by both maintainers and commenters, to a read-only text, as a canonical text on the official website[^111], which is then used subsequently as an argument to respond negatively to requests for personal additions[^112][^113][^114], combined with a request of responding through programming languages, rather than human languages[^114a]. This particular phenomenon echoes practices found in the `airbnb/javascript` project in Goody's investigations of the immutability and canonization of written texts. Because the tool gets its value and usefulness from its invariability—and the communities which depend on its invariability[^114b]—, discussions around the tool itself can be made moot.
 
 #### Size of community and noise
 
-[https://github.com/prettier/prettier/issues/5814] this is hell: 120+ comments about nested ternary operators, where the main argument becomes the "stubborness" of prettier
+A final feature of the `prettier/prettier` discussions stems from both their exhaustiveness, the popularity of the project and the maintainers' decision to no longer accept options[^115]. This results in several seemingly intractable discussions with over 100 comments, while the majority of other issues have less than 10 comments each)[^116][^117][^118][^119]. These issues bring up the original tension of a styleguide, in which each writer has an opinion[^120] on what is the best way to solve a given dilemma[^121], either as emotional, subjective statements[^122] (*"This issue is ridiculous. Just fix that"*[^122a]), or along with examples[^123] and offers of pull requests. The pattern we see here is that, due to the popularity of the project, first-time users weigh in on complicated debates, engage in the conversation with other commenters for a couple of replies, and then drop out of the discussion altogether). Coupled with the original intent of the maintainers to integrate community-argued changes, these issues remain open for all to chime in (most of them being over 3 years old).
 
-basically this section an analysis of the issue
+On the one hand, these discursive strategies seems to parallel the pattern of the dreaded *bikeshedding*[^124], in which anyone can chime in including linguistic patterns such as *"just my two cents"*, *"IMHO"* ("in my humble opinion"), *"just gonna weigh in here"*, apparently. As such, they don't seem to appear very productive at first glance due to repeated arguments[^125][^126] and affect the maintainer's ability to discuss (*"The Prettier issue tracker naturally attracts and concentrates code style discussions. They've been moved from basically everywhere to here. I think this is a big factor to the maintainer burnout I've seen lately."*[^127]).
 
-mention bikeshedding: the problem with large scale repositories is that, at some point, it becomes noise, in which everyone chips in with their particular preference and there is no clean way to keep track of the conversation (is there research to back it up?)
-
-the biggest problem in this issue is actually that it is *inconsistent* -> ultimate subjective counterargument?
+On the other hand, however, the overall quality of arguments presented (combining use cases, opinions and responses to previous proposals) has led to a switch in the discursive strategy in which the discussion is either summed up by the maintainers[^128][^128a][^128b] in order to provide moderation to the debate or to be pursued privately by the maintainers[^129][^130]. The result is that, emerging from community-created discursive noise inherent to any popular open-source projects, the `prettier/prettier` team engages less in terms of justifying the existing style, but in gauging how feasible an alternative is, once this discursive noise reaches a particular threshold, acting as a filter to turn quantitative input into qualitative decision making, the existence of the issue itself acting as an argument.
 
 ## Findings
 
-### Categories used to argument
+Style guides existing on GitHub have to tend to the specific issue of convincing individual users with strong subjective preference of adopting their recommendations in the midst of a technical environment which favors copying and customization. Starting from an approach of arguments based on the framework of *communicative competence*, we've highlighted that, beyond emotional and subjective statements (sometimes disguised as rational ones) as well as the social justification of institutional origin or belonging, rational statements and commands are being affected, to some extent, by the techincal *milieu* in which programmers write, read and work.
 
-- emotional justification -> they are from the commenters, and  immediately deflected by the maintainers
-- rational justification -> impossible, because always obscured by subjectivity
-- technical justification -> different levels of technical justifications
+Particularly, we can see that there are multiple strategies which involve closely either source code, or compiled code. Source code acts as a prime argument when human languages fail to communicate the objectivity of their statement, and is often required by all parties of a discussion to base statements on what is considered a fact. Still, those comments are often overlooked: the requirement of *readability*, crucial to a decision in style guides, re-appears in all its subjectivity when it comes to reading the source code example provided, pitting the argument in multi-sided subjective perspectives. In `airbnb/javascript`'s case, when re-written code can act as an argument to the validity of the style guide, it is because previous code didn't *work*, and became functional again through `ljharb`'s work.
 
-- socio: founding texts
-- socio: community/project
-- technical: the functional
+If source code seems to be a novel type of argument, adding to the traditional realm of human rhetoric, and yet remains trapped in subjective appreciation, compiled code can act as its own argument. In both `standard/standard` and `prettier/prettier`, both of the projects rely on the fact that their style guides *work*, that they are efficient in what they do, and any change must first and foremost comply with the *feasibiliy* of the argument, no matter how sound the conceptual proposal is; as we've seen, `prettier/prettier` can replace a didactic guide by an efficient tool, while `airbnb/javascript` has to rely on a strict didactic approach, on top of providing an `eslint` configuration file, leading us to the consideration that code as actionable words, a silent argument of sorts, is perhaps the most efficient in the adoption of a project.
 
-broad conclusions
+In terms of GitHub as a platform, the structure within which these projects take place, we've observed a multiplicity of approaches, preventing a unilateral interpretation of how technical environments can entirely shape the nature of a discussion. Between `airbnb/javascript`'s use of issues as a personalized question-answering forum, `standard/standard`'s desire to fix practical implementations of the tool they provide, and `prettier/prettier`'s use of a more classical open-source discussion, GitHub's platform seems to be able to provide multiple kinds of discussions, ultimately geared by the social role of the maintainers and the ability to toggle between references to read-only (canonical) texts rather than keeping the discussion within read-write texts.
 
-- objects are multifaceted and entangled/entangling
-- personal preferences (means) can always be subsumed by calls to "efficiency" and "precedence" (reference to a canonical document)
-- calls to "fork" are always the conclusion of an argument
-- github issues can have multiple functions (pedagogical, antagonistic, reporting)
-
-### Interplay of different repos
-
-just search the issues for each, it can just be a line of flight
-
-- [https://github.com/standard/standard/issues/811]
-- [https://github.com/standard/standard/issues/811#issuecomment-292714647]
-- [https://github.com/prettier/prettier/pull/123#issuecomment-272029925]
-
-## Conclusion
-
-This is how I wrap everything up.
-
-in the end it's affected by github's:
-
-- forum mechanism (+ the ability to repurpose those, as in the case of airbnb)
-- cross-reference across repos
-- ability to fork
+However, GitHub does provide the interesting case of a highly-networked, highly-transparent working environment. This study has examined the role of a quantified community in argumenting for or against a particular stylistic choice, particularly present in `standard/standard`'s strategy, but also present in `prettier/prettier`; it is necessary to mention the entangled nature of cross-references to other projects hosted on GitHub. Beyond naming exisiting alternatives[^131], being able to reference another project on an issue[^132], or to mention explicitly the name of a maintainer of one given project on a different project[^133], facilitates the interactions of maintainers[^134] and allows for an intricate web of intertextualities, allowing discussions happening on a given repository to act as arguments for another repository, or vice-versa. This added layer of complexity is beyond the scope of the current study, but offers a promising field for future research.
 
 ---
 
+## Notes
+
+- calls to "fork" are always the conclusion of an argument
+
 - connect to organizational style, communication, etc.
-- - add reference to the CNRS book
-- - develop on how the style guide embodies administrative work -> **how?**
 
-- - the necessity to be able to write when you read (the assumption that, when you read, you will write)
+- add reference to the CNRS book
 
-- locus of research outside github (additional texts)
+- develop on how the style guide embodies administrative work -> **how?** -> CSCW, smoothing out kinks
 
 ---
 
@@ -547,6 +522,9 @@ sth about bourdieu and symbolic belonging idk
 [https://gist.github.com/tkrotoff/b1caa4c3a185629299ec234d2314e190]
 
 [^98a]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-566173911]
+
+[^98b]:
 [https://github.com/prettier/prettier/issues/5246#issuecomment-429788464]
 
 [^99]:
@@ -554,6 +532,9 @@ sth about bourdieu and symbolic belonging idk
 
 [^100]:
 [https://github.com/prettier/prettier/issues/73#issuecomment-272537791]
+
+[^100a]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-313229534]
 
 [^101]:
 [https://github.com/prettier/prettier/issues/840#issuecomment-689978905]
@@ -573,6 +554,9 @@ sth about bourdieu and symbolic belonging idk
 [^104a]:
 [https://github.com/prettier/prettier/issues/7884#issuecomment-605898046]
 
+[^104b]:
+[https://github.com/prettier/prettier/issues/5814#issuecomment-468978755]
+
 [^105]:
 [https://github.com/prettier/prettier/issues/7884#issuecomment-619147696]
 
@@ -591,6 +575,9 @@ galloway, the interface effect
 [^108]:
 [https://github.com/prettier/prettier/issues/9358#issuecomment-705940711]
 
+[^108a]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-281097771]
+
 [^109]:
 [https://github.com/prettier/prettier/issues/7884#issuecomment-605755932]
 
@@ -608,3 +595,78 @@ galloway, the interface effect
 
 [^114]:
 [https://github.com/prettier/prettier/issues/840#issuecomment-458280945]
+
+[^114a]:
+[https://github.com/prettier/prettier/issues/840#issuecomment-482353176]
+
+[^114b]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-646868677]
+
+[^115]:
+[https://github.com/prettier/prettier/pull/8540s]
+
+[^116]:
+[https://github.com/prettier/prettier/issues/5377]
+
+[^117]:
+[https://github.com/prettier/prettier/issues/187]
+
+[^118]:
+[https://github.com/prettier/prettier/issues/840]
+
+[^119]:
+[https://github.com/prettier/prettier/issues/5814]
+
+[^120]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-282690495]
+
+[^121]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-345493031]
+
+[^122]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-669877250]
+
+[^122a]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-385114296]
+
+[^123]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-350849520]
+
+[^124]:
+[https://www.freebsd.org/doc/en/books/faq/misc.html#bikeshed-painting]
+
+[^125]:
+[https://github.com/prettier/prettier/issues/187#issuecomment-383546996]
+
+[^126]:
+[https://github.com/prettier/prettier/issues/5814#issuecomment-597403394]
+
+[^127]:
+[https://github.com/prettier/prettier/issues/840#issuecomment-522295504]
+
+[^128]:
+[https://github.com/prettier/prettier/issues/840#issuecomment-618186522]
+
+[^128a]:
+[https://github.com/prettier/prettier/issues/5814#issuecomment-469736563]
+
+[^128b]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-650607819]
+
+[^129]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-669877250]
+
+[^130]:
+[https://github.com/prettier/prettier/issues/5377#issuecomment-650153308]
+
+[^131]:
+[https://github.com/prettier/prettier/pull/123#issuecomment-272029925]
+
+[^132]:
+[https://github.com/prettier/prettier/issues/3806#issuecomment-451615213]
+
+[^133]:
+[https://github.com/standard/standard/issues/811#issuecomment-294034120]
+
+[^134]:
+[https://github.com/prettier/prettier/issues/3503#issuecomment-352538566]
