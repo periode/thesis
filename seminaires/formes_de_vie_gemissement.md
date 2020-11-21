@@ -1,4 +1,4 @@
-# Estelle Ferrarese, "Le gémissement"
+# Estelle Ferrarese,"Le gémissement"
 ## 3/12/2019
 
 background: formes de vie / "care" / theorie critique / frankurt et cie.

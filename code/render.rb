@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require 'kramdown'
 require 'erb'
 require 'fileutils'

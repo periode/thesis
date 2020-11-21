@@ -24,21 +24,30 @@ an aesthetics of beautiful code -> how is code beautiful?
 
 an object with aesthetic properties is an objects that makes something (a sensation? a feeling?) happen. how it happens, is an open question: it can happen through sensation, through emotions, through intellect/concept
 
-- hume
-- - taste -> somewhat relevant, just because taste *as an individual manifestation* is actually very much frowned upon (see: style guides and linters)
+### hume
 
-- jakobson
-- - innovation -> always seeking the new, a reconfiguration of experiences -> somewhat relevant. it's not so much about *seeking* the new, but about *dealing with* the new. **need to dig more**.
+- taste -> somewhat relevant, just because taste *as an individual manifestation* is actually very much frowned upon (see: style guides and linters)
 
-- goodman
-- - understanding
-- - semiotics > metaphors and referral to higher classes of concepts
+### jakobson
 
-- rancière
-  - tissu du sensible -> very relevant, **need to dig more**
+- innovation -> always seeking the new, a reconfiguration of experiences -> somewhat relevant. it's not so much about *seeking* the new, but about *dealing with* the new. **need to dig more**.
 
-- wittgenstein
-- - aesthetics, as a field of conceptual inquiry, should start not from a presumption that the central task is to analyze the determinant properties that are named by aesthetic predicates, but rather with a full-blooded consideration of the activities of aesthetic life. -> yes, **relevant af** actually
+### goodman
+
+- understanding
+- semiotics > metaphors and referral to higher classes of concepts
+- concept of "concretum" -> phenomenal qualities, so-called qualia (phenomenal colors, phenomenal sounds, etc.) and thus faced the problem of concretion: how can concrete experiences be built up from abstract particulars? because they have **various relations of qualifications** (from *The Structure of Appearance*)
+- good artworks are "right"; they're right rendering, they have a correspondance to the notion of truth
+- art can do more than represent/refer, it can also express. and there is a difference between representation and expression: you can represent the same thing, and express it in different ways
+- anything is a symbol system if it refers to something else (`symbol` in programming?)
+
+### rancière
+
+- tissu du sensible -> very relevant, **need to dig more**
+
+### wittgenstein
+
+- aesthetics, as a field of conceptual inquiry, should start not from a presumption that the central task is to analyze the determinant properties that are named by aesthetic predicates, but rather with a full-blooded consideration of the activities of aesthetic life. -> yes, **relevant af** actually
 
 aesthetics are somewhat isolating, but at the same time connecting. *it isolates from the immediate, and then connects to the indirect*
 

@@ -19,6 +19,14 @@ https://dl.acm.org/doi/abs/10.1145/78607.78611 - typography is proven to be help
 
 this could be an interesting theory about the reading process: [https://www.fabula.org/actualites/luigi-pareyson-esthetique-theorie-de-la-formativite_21236.php]
 
+## programming languages
+
+> when we talk about esolangs, we are designing a perspective for someone to think through. -daniel temkin [src](https://www.artistsandhackers.org/Critical-Code)
+
+> There's a lot of attention to **COMPRESSION**, using the underlying programming language in a way that's easy to penetrate - richard gabriel [src](https://www.dreamsongs.com/PoetryOfProgramming.html)
+
+conceptual art aims at communicating concepts, ideas. experimental art don't know what they aim at but are motivated by an aesthetic criteria. (richard gabriel, keynote science is not enough)
+
 ## meeting with advisors
 
 questions:
