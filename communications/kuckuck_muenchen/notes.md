@@ -34,6 +34,11 @@ why is it important/interesting?
 - appreciate code as a practice, with the learning models appropriate
 - alternative to monopolies with highly-skilled workers distributing information for less highly-skilled workers? (bootcamp vs. workshop? leaning online was the online workshop? but there is also the fact that only a few maintainers contribute actively on a project)
 
+> According to Risatti, technique in craft (a sum of technical knowledge, set of procedures or rules) and technical skill (motor skill) requires two kinds of learning: (1) technical knowledge of the materials and how they are worked to create objects (theoria), and (2) technical manual skill to work the material (praxis) (Risatti 2007). Craftsmanship, on the other hand he says, fuses theoria and praxis into poiesis with both abstract and practical material concerns. In this dialectical, dialogical process and feedback system of craft, thinking and making; visualizing and executing; perception and action; knowledge and manual skill go hand in hand (Risatti 2007, 169). Anthropologist Tim Ingold argues that skill exists within a system of relations between the maker and his or her environment; and is transmitted through practical hands- on experience not abstract descriptions (Ingold 2000, 291). While Risatti writes that craft involves technical knowledge and skill, and Ingold writes that skill is a virtue of relations between the mind, body, and environment, Sennett argues that technical skill involves making and repairing (Sennett 2012). According to him, repairing things comprise restoration, remediation, and reconfiguration. The long-term goal of this study is to develop this concept of “repair” and craftsmanship through the lens of computation. 
+
+[src](http://papers.cumincad.org/cgi-bin/works/paper/cf2019_065)
+
+
 # bibliography
 
 certeau
