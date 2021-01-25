@@ -20,6 +20,8 @@ https://dl.acm.org/doi/abs/10.1145/78607.78611 - typography is proven to be help
 
 this could be an interesting theory about the reading process: [https://www.fabula.org/actualites/luigi-pareyson-esthetique-theorie-de-la-formativite_21236.php]
 
+this is not so much about code aligning with standards of literature, but maybe aligning to the standards of both epistemology and architecture, *architectural knowledge*
+
 ## programming languages
 
 > when we talk about esolangs, we are designing a perspective for someone to think through. -daniel temkin [src](https://www.artistsandhackers.org/Critical-Code)
@@ -27,6 +29,35 @@ this could be an interesting theory about the reading process: [https://www.fabu
 > There's a lot of attention to **COMPRESSION**, using the underlying programming language in a way that's easy to penetrate - richard gabriel [src](https://www.dreamsongs.com/PoetryOfProgramming.html)
 
 conceptual art aims at communicating concepts, ideas. experimental art don't know what they aim at but are motivated by an aesthetic criteria. (richard gabriel, keynote science is not enough)
+
+the question of operational meaning vs. denotational meaning should be explored. what means what to the computer? (and what is the role of the stack in this whole thing)
+
+----
+
+Abstraction in programming is the process of identifying common 
+patterns that have systematic variations; an abstraction represents 
+the common pattern and provides a means for specifying which vari-
+ation to use.
+An abstraction facilitates separation of concerns: The implemen-
+tor of an abstraction can ignore the exact uses or instances of the 
+abstraction, and the user of the abstraction can forget the details of 
+the implementation of the abstraction, so long as the implementation 
+fulfills its intention or specification. (Balzer et al. 1989)
+
+---
+
+**Compression** is the characteristic of a piece of text that the meaning 
+of any part of it is “larger” than that particular piece has by itself. 
+This characteristic is created by a rich context, with each part of the 
+text drawing on that context—each word draws part of its meaning 
+from its surroundings.
+**Habitability** is the characteristic of source code that enables pro-
+grammers, coders, bug-fixers, and people coming to the code later in 
+its life to understand its construction and intentions, and to change it 
+comfortably and confidently. 
+**Piecemeal growth** is the process of design and implementation in 
+which software is embellished, modified, reduced, enlarged, and 
+improved through a process of repair rather than of replacement
 
 ## meeting with advisors
 

@@ -87,7 +87,9 @@ the problem is that representation is in the mind of the beholder: in no way do 
 
 cf. Newell & Simon, 1976, "Computer Science as Empirical Enquiry" -> for the ability of computers to refer to themselves
 
-computers have **levels of abstraction**
+##### 7.2 levels of representation
+
+computers have **levels of representation** (abstraction?)
 
 - physical machine (components and copper)
 - logical machine (boole, circuits, gates)
@@ -96,6 +98,8 @@ computers have **levels of abstraction**
 - a representation scheme for "facts" (which we would call data today), like linked open data, relational, etc.
 
 > the subject domain is always the next higher level itself (p. 89)
+
+##### 7.3 can computers do more than told?
 
 some issues, though:
 
