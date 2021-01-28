@@ -13,7 +13,7 @@ Please send your Abstract to: L.Veprek@ekwee.uni-muenchen.de
 
 The deadline for finished papers and contributions is January 30th, 2021.
 
-# thoughts
+## thoughts
 
 code as the new craftsmanship (tying it with cultural histories)
 
@@ -31,12 +31,14 @@ how is it similar?
 - - transfer
 
 how is it different?
+
 - mentorship? (diffusion/acquisition of knowledge)
 - relationship with tools (communal rather than personal)
 - - therefore uncertainty as to what it does? (skilled labor vs. unskilled labor? is that a valid parallalel/distinction?)
 - the scale and nature of the network?
 
 why is it important/interesting?
+
 - appreciate code as a practice, with the learning models appropriate
 - alternative to monopolies with highly-skilled workers distributing information for less highly-skilled workers? (bootcamp vs. workshop? leaning online was the online workshop? but there is also the fact that only a few maintainers contribute actively on a project)
 
@@ -44,12 +46,12 @@ why is it important/interesting?
 
 [src](http://papers.cumincad.org/cgi-bin/works/paper/cf2019_065)
 
-
 ----
 
 ingold:
 
 conjecture and refutation between idea and practice
+
 - but this assumption places knowledge OUTSIDE, in the object observes (a way of knowing from the outside)
 
 thinking through making is a way of knowing from inside
@@ -58,7 +60,7 @@ also hackers are a good example of those who "find" ideas in the material
 
 ----
 
-robert gordon
+robert gordon (mechanical ideal into reality)
 
 interchangeability (modularity) can lead to a disappearance in craftsmanship, ad hoc.
 
@@ -108,11 +110,11 @@ hackers have "individual techno-heroism"
 
 [Why Hackers Do What They Do: Understanding Motivation and Effort in Free/Open Source Software Projects](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=443040)
 
-intrinsic motivation is #1 in FOSS 
+intrinsic motivation is #1 in FOSS
 
 ----
 
-programming has [inherent complexity](https://danluu.com/essential-complexity/)
+programming has [essential complexity](https://danluu.com/essential-complexity/)
 
 studying great designers is essential, says fred brooks in *no silver buller*, and he suggests to make them **apprentices**
 

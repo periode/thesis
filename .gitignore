@@ -1,3 +1,11 @@
 admin/
 summary.docx
 export.docx
+
+*.aux
+*.log
+*.synctex.*
+*.bbl
+*.bcf
+*.blg
+*.run.xml
