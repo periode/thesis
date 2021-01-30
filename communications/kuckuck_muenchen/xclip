@@ -1,0 +1,473 @@
+The Craft of Code: Practice and
+Knowledge in the Production of Software
+Pierre Depaz
+January 2021
+
+1
+
+Introduction
+
+Code has often been through the lens of computation[1], humanities [2],
+or social sciences[3], rather than as a result of programming as part of
+a tradition distinct from science. This article proposes to investigate the
+specificities of programming as a practice—the tradition of craftsmanship.
+Indeed, code isn’t just code, but rather a myriad of socio-technical assemblages composed of programming languages, operating systems and tools.
+Those assemblages are in turn used within a cultural context made up of
+stories, sayings and texts, both from academic and folklore origins. This
+approach relies on a shift from an abstract conception of code, to one
+in which code implies varieties of actors[4], in which the practices, selfidentifications and narratives from programmers themselves is put at the
+forefront. The main distinction this article starts with, then, is between the
+theoretical computer scientist, and the practical software developer, immersed in the practice of writing and reading code.
+Links between craftsmanship and programming have existed as selfproclaimed ones by programmers themselves, as well as by academics and
+writers [5, 6], they have not yet been elucidated under specific angles.
+Michel De Certeau describes the concept of tactics, bottom-up actions
+1
+
+designed and implemented by the users of a situation, product or technology as opposed to strategies[7], in which ways of doing are prescribed in
+a top-down fashion. It is two of these tactics that we investigate here—
+knowledge and beauty in programming.
+To do so, we start from a parallel with medieval architecture, then move
+on to the place of implicit knowledge in process of programmers learnging
+their craft, and conclude on the reality of code as a material. These incursions in programming as craftsmanship concludes on the possibility for
+programming to be a specific craft of the twenty-first century.
+
+2
+
+Parallels
+
+2.1 Craftsmanship through the ages
+Craftsmanship in our contemporary discourse is often seen both as that
+which was before manufacture[8], or as tool-based, intrinsically-motivated
+work which produces functional artefacts, and in the process of which is
+held the possibility for unique mistakes[5]. It stood out in the late MiddleAges for a couple of reasons: their socio-economic organization, and their
+relationship to knowledge. Organized in guilds[9], tightly-knit communities,
+they exhibited strong cohesion: between a master and their apprentices,
+and between equal practicioners[10, 11].
+While various crafts did include specific lexical fields to describe the details of their trade[12], the standards for quality were less explicit. Cennino
+Cennini, in his Libro dell’arte, one of the first codexes to map out technical
+know-how necessary to a painter in the early Renaissance, lays out practical advice on specific painting techniques, but does not explicitly mention
+how to make something good[13], and further work, at the eve of the Industrial Revolution, continued to try to formalize the practice[14]. Yet, studies
+have shown that craftsmanship, rather than standing at the opposite of
+the automated machine[15], was integrated into the process of modern
+2
+
+industrialization[16, 17].
+
+2.2
+
+Software developers as craftsmen
+
+Computer enthusiasts described as hackers developed organizational features similar to their historical counterparts: work was being done on distinct topics and fields in different geographic locations (Stanford, MIT, Bell
+Labs)[18], emphasis was put on engagement with tools[19], inquiring into
+peers’ work[20] and later formalized into bottom-up archives1 . Little accountability was required when it came to design explicitness: both the
+UNIX operating system and the TCP/IP protocol were originally realized
+without overarching supervision or extensive documentation[21, 18].
+As computer science solidified as a distinct field in the 1960s[22], there
+was a process of formalizing the hitherto ad hoc techniques of programming computers. As a response to the myth of carefully hand-made code2
+and unconstrained approaches to writing code came the structured programming approacha[23]. With the operating system and the personal
+computer revolutions, access to tools became widespread, and transformed tightly communities into a global network of exchange. Inquiries
+into the relationship of craftsmanship with programming started to take
+place in the mid-1970s from an educational perspective[24], from an organizational perspective[25] and an inter-personal perspective[26], and
+culminated with the publication of several trade books[27, 28], explicitly
+connecting the craft of programming with previous craft activities, and
+emphasizing the need for intrinsic motivation and the aim of a job welldone[29, 30], rather than passive execution3 .
+1 The most famous of which is the Jargon File, later to be published as the The New Hacker’s
+
+Dictionary: http://www.catb.org/jargon/html/
+2 See The Story of Mel, A Real Programmer, a folktale of early programmers: https://www.
+cs.utah.edu/~elb/folklore/mel.html
+3 See code monkey: http://www.techopedia.com/definition/31469/code-monkey
+
+3
+
+2.3 The case of architecture
+A counterpart to the computer scientist is the classical architect, except
+in an inverse relation: the architect emerged from centuries of hands-on
+work[31], while the computer scientist was first to a whole field of practicioners as programmers, followed by a need to regulate and structure
+those practices. Different sequences of events, perhaps, but nonetheless
+mirroring each other. On one side, construction work without an explicit
+architect, under the supervision of bishops and clerks, did indeed result in
+significant results (e.g. Notre Dame de Paris, Basilica of Sienna). On the
+other side, letting go of structured and restricted modes of working characterizing computer programming up to the 1980s was described in The
+Cathedral and the Bazaar. About the Linux project and its open-source
+philosophy, it showed how the quantity of self-motivated workers without
+rigid working structures can result in better work than if made by a few,
+highly-skilled individuals[18, 32]. In both cases, it seems that individuals
+can cooperate on a long-term basis out of intrinsic motivation, and without clear, individual ownership of the result; a parallel seen in the similar
+concepts of collective craftsmanship in the Middle-Ages and the egoless
+programming of today[25].
+
+3
+
+Knowledge acquisition and production
+
+3.1 Bus factor and implicit knowledge
+The problem of knowledge in software development can be examplified
+by the ”bus factor”4 . It describes the risk of crucial information being lost
+due to the disappearance or incapacity of one of the programmers of the
+project, a consequence of essential complexity5 . Given the inherent difficulty of programming, along with the compulsive behaviours sometimes
+4 https://en.wikipedia.org/w/index.php?title=Bus_factor
+5 See
+
+the No Silver Bullet essay in The Mythical Man-Month, op.cit.
+
+4
+
+Figure 1: Source: https://xkcd.com/844/
+exhibited by intrinsically motivated programmers[33], the gap between design and implementation—the domain of the craftsman—often relies on
+tacit knowledge[34].
+Explicit knowledge, in programming as in most disciplines, is carried
+through books, academic programs and, more recently, web-based content, but both seem insufficient to reach an expert level[35]. Without tacit
+knowledge, the road to good code is quite unclear.
+
+5
+
+3.2 Apprentices and masters
+The acquisition of such implicit knowledge in craftsmanship takes place
+in two different ways: the apprentice-master relationship, and the act of
+copying. First comes the apprentice-master relationship, in which a learner
+starts by imitating the way of working of the master (Sennett), resulting
+in a teaching by showing, where important aspects of the craft are being
+demonstrated to the apprentice by a more experienced practicioner, rather
+than formalized and learned a priori of the practice. Sometimes, this relationship to a master is implemented explicitly through practices such as
+pair programming[36] or corporate mentorship programmings (IBM’s Master programmer initiative). Other times, it is re-interpretated through fictional accounts designed to impart wisdom on the readers, and taking inspiration from Taoism and Zen[37, 38]. From higher-level programming
+wisdom featuring leading programmers such as Marvin Minsky and Donald Knuth, this sort of informal teaching by showing has been implemented
+in various languages as a practical learning experience6 . Without the presence of an actual master, the programming apprentice nonetheless takes
+the program writer as their master to achieve each of the tasks assigned to
+them. The experience historically assigned to the master craftsman is delegated into the code itself, containing both the problem, the solution and
+hints, straddling the line between formal exercises and interactive practice.
+Code’s ability to be copied complicates the argument of software as
+craftsmanship in terms of knowledge transmission. Since craftsmanship
+has been understood as that which is done by hand, and since craftsmen were working with unique artefacts (i.e. no artefact can be perfectly
+copied), copying someone else’s realization was physically inconceivable.
+The realm of software, on the opposite, relies on the technical affordance
+of code to be seamlessly duplicated[39]. This lets anyone inspect and use
+source code, but even though the ability to perfectly copy anyone else’s
+6 See,
+
+for instance: http://rubykoans.com/
+
+6
+
+work became widely available to programmers, the difference between
+amateur and expert programmers lied in the extent to which they indeed
+blindly copy external code, or write their ownproperly[40]7 .
+Eastern craftsmanship further qualify these different approaches to
+copying. Moxie, a Chinese term for copying and practice, is a key concept
+in how an apprentice can equal their master through thougtful replication
+[41], an approach equally present in Japanese crafts histor[42]—manually
+copying from established quality work to seize their elusive essence is an
+essential aspect to craftsmanship.
+
+3.3 The problem with copying
+So while programmers are to acquire implicit knowledge through a process
+of learning by doing, we need to assess how much of it happens through
+observing. Implied in the apprentice-master relationship is that what is observed should be of good quality; one learns through ones own mistakes,
+and through seeing examples of good work. Coming back to the relationship between architecture and software development, Christopher Alexander asks, in the preface of Richard P. Gabriel’s Patterns of Software[43],
+For a programmer, what is a comparable goal? What is the
+Chartres of programming? What task is at a high enough level
+to inspire people writing programs, to reach for the stars?
+If a craftsman learns their trade by comparing their work with work of a
+higher quality, assembled in a canon, the programmer is faced with a different problem: a lot of examples, but a few good ones[44]: copyright stands
+in the way of pedagogical copying. With software becoming protectable
+under copyright laws in the 1980s[45], great works of programming craft
+became unacessible to programmers, despite their knowledge-value[46].
+7 See
+
+the discussions on https://softwareengineering.stackexchange.com/
+
+questions/36978
+
+7
+
+One of the most famous examples is Lions’ Commentary on UNIX 6th Edition, with Source Code by John Lions, an annotated edition of the UNIX
+source code, which was circulated illegaly in classrooms for twenty years
+before its official publication was authorized by the copyright owners[47].
+
+4 Material aesthetics
+Complementing this process of knowledge acquisition is the practice of
+programming, and inherent in the practice is the good practice, the one
+leading to a beautiful result.
+
+4.1 The beauty of a thing well-made
+A traditional perspective is that of the motor skills, with dexterity, care and
+experience as essential features of a craftsman’s ability to realize something beautiful[48], along with self-assigned standards of quality[49, 5].
+These qualitative standards which, when pushed to their extreme, result in
+a craftsperson’s style, are to be gained through practice and experience,
+rather than by explicit measurements[49] 8 . Two things are concerned
+here: tools and materials[49]. A craftsperson should have a deep, implicit
+knowledge of both, what they use to manipulate (chisels, hammers, ovens,
+etc.) as well as what they manipulate (stone, wood, steel, etc).
+This relationship to tools and materials is expected to have a relationship
+to the hand, and at first seems to exclude the keyboard-based practice of
+programming. But even within a world in which automated machines have
+replaced hand-held tools, Osborne writes:
+In modern machine production judgement, experience, ingenuity, dexterity, artistry, skill are all concentrated in the program8 See
+
+Pye’s account of craftsmanship, and his intent to make explicit the question of qual-
+
+ity craftsmanship and ”answer factually rather than with a series of emotive noises such as
+protagonists of craftsmanship have too often made instead of answering it.”
+
+8
+
+ming before actual production starts.[48]
+He opens here up a solution to the paradox of the hand-made and the
+computer-automated, as programming emerges from the latter as a new
+skill. This very rise of automation has been criticized for the rise of a Osborne’s “soulless society”[48], and has triggered debates about authorship,
+creativity and humanity at the cross-roads between artificial intelligence
+and artistic practice[50]. One avenue out of this debate is human-machine
+cooperation, first envisioned by Licklider and proposed throughout the development of Human-Computer Interaction[51, 52]. If machines, more and
+more driven by computing systems, have replaced traditional craftsmanship’s skills and dexterity, this replacement can nonetheless suggest programming as a distinctly 21st-century craftsmanship, as well as other forms
+of cratsmanship-based work in an information economy.
+
+4.2 Code as material
+Beautiful code is an integral part of software craftsmanship[53]. More than
+just function for itself, code among programmers can, and should be held
+to beauty standards[54], and such standards are another relationship with
+traditional craftsmanship—form following function.
+A craftsman’s material consciousness is recognized by the anthropomorphic qualities ascribed by them to the material[5]. For code, adjectives
+such as ”clean”, ”elegant”, ”smelly” occur over and over in online discussions.
+They are indicators not just of the awareness of code as a raw material
+that should be worked with, but also of the necessities for code to exist
+in a social world. As software craftsmen assemble in loose hierarchies, an
+aesthetic standard is the respect of others[55].
+Another feature of software craftsmanship is its blending between tools
+and material: code, indeed, is both. This is, for instance, represented at its
+extreme by languages like LISP, in which functions and data are treated
+in the same way[56]. In that sense, code is a material which can be al9
+
+most seamlessly converted from information to information-processing,
+and vice-versa. Disregarding for now the very real impact of computing
+on the environment[57], code as a material is perhaps the only non-finite
+material that craftspeople can work with—along with words.
+As Fred Brooks put it,
+The programmer, like the poet, works only slightly removed from
+pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are
+so flexible, so easy to polish and rework, so readily capable of
+realizing grand conceptual structures.[25]
+
+4.3 The implications of beautiful code
+So while there are arguments for developing a more rigorous, engineering
+conception of software development[58], a crafts ethos based on a materiality of code holds some implications both for programmers and for society
+at large.
+On the one side, since craftsmanship aesthetic standard relies on the
+process and the immediate usage of the product, little attention might be
+given to the long-term consequences of such a product. When computing
+systems start to get entangled with complex domains such as culture[59]
+or education[60], programmers play a significant role in the development
+of these systems[61], and their intrinsic motivation to work with code
+for its own sake without a broader perspective might lead to undesired
+outcomes—a situation in which the function of the product is no longer
+beautiful.
+On the other side, this engagement with code-as-material opens up
+possibilities for the acknowledgement of a different moral standard. As
+Pye puts it,
+[...] but still the quality of the result is clear evidence of com10
+
+petence and assurance, and it is an ingredient of civilization to
+be continually faced with that evidence, even if it is taken for
+granted and unremarked.[49]
+If most commentators on the history of craftsmanship, following Ruskin,
+lament the disappearance of a better, long-gone way of doing things, locating software as a contemporary iteration of the age-old ethos of craftsmanship opens-up the possibility for a more conscious, careful and diligent
+way of building the future.
+
+References
+[1] David M. Berry. The Philosophy of Software: Code and Mediation in
+the Digital Age. Palgrave-Macmillan, 2011.
+[2] N. Katherine Hayles. My Mother Was a Computer: Digital Subjects
+and Literary Texts. University of Chicago Press, March 2010. GoogleBooks-ID: lwaRyOZfBzgC.
+[3] Adrian Mackenzie. Cutting Code: Software and Sociality. Peter Lang,
+2006. Google-Books-ID: 083BUgMnLKQC.
+[4] Brian Hayes. Cultures of Code, February 2017.
+[5] Richard Sennett. The Craftsman, volume 1. Yale University Press, New
+Haven, CT, 2009.
+[6] Vikram Chandra. Geek Sublime: The Beauty of Code, the Code of
+Beauty. Graywolf Press, September 2014.
+[7] Michel de Certeau, Luce Giard, and Pierre Mayol. L’invention du quotidien. Gallimard, 1990. Google-Books-ID: GAwEAQAAIAAJ.
+[8] Daniel V. Thompson. The Study of Medieval Craftsmanship. Bulletin
+of the Fogg Art Museum, 3:3–8, 1934. Publisher: [Harvard University
+11
+
+Art Museums, Harvard Art Museums, The President and Fellows of
+Harvard College].
+[9] Antony Black. Guilds and Civil Society in European Political Thought
+from the Twelfth Century to the Present. Methuen, 1984. GoogleBooks-ID: oQMOAAAAQAAJ.
+[10] Daniel Varney Thompson.
+
+The Materials and Techniques of Me-
+
+dieval Painting. Courier Corporation, January 1956. Google-Books-ID:
+I1DFuGQeG10C.
+[11] Francis Wolek. The managerial principles behind guild craftsmanship.
+Journal of Management History (Archive), 5:401–413, November 1999.
+[12] Associate Conservator Department of Decorative Arts and Sculpture
+Conservation Jane Bassett, Jane L. Bassett, Peggy Fogelman, David A.
+Scott, Getty Conservation Institute (Los Angeles Calif.), and Ronald C.
+Schmidtling. The Craftsman Revealed: Adriaen de Vries. Getty Publications, 2008. Google-Books-ID: E8oxCwAAQBAJ.
+[13] Cennino Cennini. The Craftsman’s Handbook. Courier Corporation,
+April 2012. Google-Books-ID: 4Z2jAQAAQBAJ.
+[14] John R. Pannabecker. Diderot, the Mechanical Arts, and the Encyclopdie: In Search of the Heritage of Technology Education. Journal
+of Technology Education, 6:45–57, 1994.
+[15] Matthew L. Jones.
+
+Reckoning with Matter: Calculating Machines,
+
+Innovation, and Thinking about Thinking from Pascal to Babbage.
+University of Chicago Press, Chicago ; London, 1st edition edition,
+November 2016.
+[16] Robert B. Gordon. Who Turned the Mechanical Ideal into Mechanical Reality? Technology and Culture, 29(4):744–778, 1988. Publisher:
+[The Johns Hopkins University Press, Society for the History of Technology].
+12
+
+[17] David McGee. From Craftsmanship to Draftsmanship: Naval Architecture and the Three Traditions of Early Modern Design. Technology and
+Culture, 40(2):209–236, 1999. Publisher: [The Johns Hopkins University Press, Society for the History of Technology].
+[18] Eric S. Raymond. The Cathedral & the Bazaar: Musings on Linux and
+Open Source by an Accidental Revolutionary. ”O’Reilly Media, Inc.”,
+2001. Google-Books-ID: W2t2d2KP6HsC.
+[19] Neal Stephenson. In the Beginning...was the Command Line. William
+Morrow Paperbacks, New York, first paperback edition edition,
+November 1999.
+[20] Steven Levy. Hackers: Heroes of the Computer Revolution - 25th
+Anniversary Edition. ”O’Reilly Media, Inc.”, May 2010. Google-BooksID: mShXzzKtpmEC.
+[21] Peter Seibel. Coders at Work: Reflections on the Craft of Programming. Apress, September 2009.
+[22] Matti Tedre. The development of computer science: a sociocultural
+perspective. In Proceedings of the 6th Baltic Sea conference on Computing education research: Koli Calling 2006, Baltic Sea ’06, pages
+21–24, New York, NY, USA, February 2006. Association for Computing
+Machinery.
+[23] Edsger W. Dijkstra. Chapter I: Notes on structured programming. In
+Structured programming, pages 1–82. Academic Press Ltd., 1972.
+[24] Edsger W. Dijkstra. “Craftsman or Scientist?”. In Edsger W. Dijkstra,
+editor, Selected Writings on Computing: A personal Perspective, Texts
+and Monographs in Computer Science, pages 104–109. Springer, New
+York, NY, 1982.
+
+13
+
+[25] Frederick Phillips Brooks and Frederick P. Brooks Jr. The Mythical
+Man-month: Essays on Software Engineering. Addison-Wesley Publishing Company, 1975. Google-Books-ID: gWgPAQAAMAAJ.
+[26] Gerald M. Weinberg.
+
+The Psychology of Computer Programming.
+
+Dorset House Pub., 1998. Google-Books-ID: j_MJAQAAMAAJ.
+[27] Robert C. Martin.
+
+Clean Code: A Handbook of Agile Software
+
+Craftsmanship. Pearson Education, August 2008. Google-Books-ID:
+_i6bDeoCQzsC.
+[28] Mike Hendrickson and Pete McBreen. Software Craftsmanship: The
+New Imperative. Addison-Wesley Professional, 2002. Google-BooksID: C9vvHV1lIawC.
+[29] Dave Hoover and Adewale Oshineye. Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman. ”O’Reilly Media, Inc.”, October 2009. Google-Books-ID: I3xFAoZT_5AC.
+[30] Pete Goodliffe. Code Craft: The Practice of Writing Excellent Code.
+No Starch Press, 2007. Google-Books-ID: i4zCzpkrt4sC.
+[31] N. Pevsner.
+
+The Term ’Architect’ in the Middle Ages.
+
+Speculum,
+
+17(4):549–562, 1942. Publisher: [Medieval Academy of America, Cambridge University Press, University of Chicago Press].
+[32] Erik Henningsen and Håkon Larsen. The Joys of Wiki Work: Craftsmanship, Flow and Self-externalization in a Digital Environment. In
+Ragnar Audunson, Herbjorn Andresen, and Cicilie Fagerlid, editors, Libraries, Archives and Museums as Democratic Spaces in a Digital Age,
+pages 345–362. De Gruyter Saur, September 2020.
+[33] Joseph Weizenbaum. Computer Power and Human Reason: From
+Judgment to Calculation. W H Freeman & Co, San Francisco, 1st edition edition, March 1976.
+
+14
+
+[34] Harry Collins. Tacit and Explicit Knowledge. University of Chicago
+Press, June 2010. Google-Books-ID: ONzRalXOtEMC.
+[35] Simon P. Davies. Models and theories of programming strategy. International Journal of Man-Machine Studies, 39(2):237–267, August
+1993.
+[36] Laurie Williams and Robert R. Kessler.
+minated.
+
+Pair Programming Illu-
+
+Addison-Wesley Professional, 2003.
+
+Google-Books-ID:
+
+LRQhdlrKNE8C.
+[37] Geoffrey James. The Tao of Programming. InfoBooks, 1987. GoogleBooks-ID: idkNAAAACAAJ.
+[38] Eric S. Raymond and Guy L. Steele. The New Hacker’s Dictionary. MIT
+Press, 1996. Google-Books-ID: g80P_4v4QbIC.
+[39] Lev. Manovich. The language of new media. MIT Press, Cambridge,
+MA, 2001.
+[40] C. Treude and M. P. Robillard. Understanding Stack Overflow Code
+Fragments. In 2017 IEEE International Conference on Software Maintenance and Evolution (ICSME), pages 509–513, September 2017.
+[41] Eva Kit Wah Man. Influence of Global Aesthetics on Chinese Aesthetics: The Adaptation of Moxie and the Case of Dafen Cun. In Eva
+Kit Wah Man, editor, Issues of Contemporary Art and Aesthetics in
+Chinese Context, Chinese Contemporary Art Series, pages 95–103.
+Springer, Berlin, Heidelberg, 2015.
+[42] Brenda G. Jordan and Victoria Louise Weston. Copying the Master
+and Stealing His Secrets: Talent and Training in Japanese Painting.
+University of Hawaii Press, January 2003. Google-Books-ID: TMCHpmDXUeIC.
+
+15
+
+[43] Richard P. Gabriel. Patterns of Software: Tales from the Software
+Community. Oxford University Press, 1998. Google-Books-ID: uwFLPwAACAAJ.
+[44] Paul Taylor. Patterns as Software Design Canon. ACIS 2001 Proceedings, January 2001.
+[45] Ralph Oman. Computer Software as Copyrightable Subject Matter:
+Oracle V. Google, Legislative Intent, and the Scope of Rights in Digital Works. Harvard Journal of Law and Technology, 31(Special Issue
+Spring 2018):639–652, 2018.
+[46] Richard P. Gabriel and Ron Goldman. Mob Software: The Erotic Life
+of Code, 2001.
+[47] John Lions.
+Code.
+
+Lions’ Commentary on UNIX 6th Edition with Source
+
+Peer-to-Peer Communications, 1996.
+
+Google-Books-ID:
+
+OlZ3QgAACAAJ.
+[48] Harold Osborne. The Aesthetic Concept of Craftsmanship. British
+Journal of Aesthetics, 17(2):138, 1977. Publisher: Oxford University
+Press.
+[49] David Pye. The Nature and Art of Workmanship. Herbert Press, illustrated edition edition, July 2008.
+[50] Marian Mazzone and Ahmed Elgammal. Art, Creativity, and the Potential of Artificial Intelligence. Arts, 8(1):26, March 2019. Number: 1
+Publisher: Multidisciplinary Digital Publishing Institute.
+[51] J. C. R. Licklider. Man-Computer Symbiosis. IRE Transactions on Human Factors in Electronics, HFE-1(1):4–11, March 1960. Conference
+Name: IRE Transactions on Human Factors in Electronics.
+[52] Jonathan Grudin. From Tool to Partner: The Evolution of HumanComputer Interaction. Synthesis Lectures on Human-Centered Infor16
+
+matics, 10(1):i–183, December 2016. Publisher: Morgan & Claypool
+Publishers.
+[53] Andy Oram and Greg Wilson, editors. Beautiful Code: Leading Programmers Explain How They Think.
+
+O’Reilly Media, Beijing ; Se-
+
+bastapol, Calif, 1st edition edition, July 2007.
+[54] Erik Pineiro. The aesthetics of code : on excellence in instrumental
+action. PhD thesis, KTH, Superseded Departments, Industrial Economics and Management., 2003. Publisher: Industriell ekonomi och
+organisation.
+[55] Harold Abelson, Gerald Jay Sussman, and Julie Sussman. Structure
+and Interpretation of Computer Programs - 2nd Edition. Justin Kelly,
+1979. Google-Books-ID: MXZQAwAAQBAJ.
+[56] John McCarthy, Michael I. Levin, Paul W. Abrahams, Massachusetts
+Institute of Technology Computation Center, and Daniel J. Edwards.
+LISP 1.5 Programmer’s Manual. MIT Press, 1965. Google-Books-ID:
+68j6lEJjMQwC.
+[57] Patrick Kurp. Green computing. Commun. ACM, 51(10):11–13, October
+2008.
+[58] Nathan L. Ensmenger. The Computer Boys Take Over: Computers,
+Programmers, and the Politics of Technical Expertise. The MIT Press,
+Cambridge, Mass., August 2012.
+[59] Nick Seaver. Captivating algorithms: Recommender systems as traps.
+Journal of Material Culture, 24(4):421–436, December 2019. Publisher:
+SAGE Publications Ltd.
+[60] Carlo Perrotta. Programming the platform university: Learning analytics and predictive infrastructures in higher education. Research in Education, page 0034523720965623, October 2020. Publisher: SAGE
+Publications Ltd STM.
+17
+
+[61] Pierre Lévy. De la programmation considérée comme un des beauxarts. Textes à l’appui. Anthropologie des sciences et des techniques.
+Éd. la Découverte, Paris, 1992.
+
+18
+
+
