@@ -1,0 +1,223 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="software-design-cognitive-aspects">software design: cognitive aspects</h1>
+
+<h2 id="francoise-detienne">francoise detienne</h2>
+
+<h3 id="springer-media-2012">springer media, 2012</h3>
+
+<hr />
+
+<p>an overview of the current research in psychology of programming: the most interesting aspects is the concepts used as theoretical frameworks and the fact that the mental model hypothesis is gaining traction.</p>
+
+<p>useful concepts:</p>
+
+<ul>
+  <li>program text</li>
+  <li>surface structure vs. deep structure</li>
+  <li>mental model (based on personal heuristics and goals)</li>
+  <li>beacons (like patterns, but with roles)</li>
+</ul>
+
+<hr />
+
+<h4 id="theoretical-foundations">1 - theoretical foundations</h4>
+
+<p>The starting points is a borrowing of cognitive (task-oriented) concepts</p>
+
+<blockquote>
+  <p>Mental activities construct representations and operate on them</p>
+</blockquote>
+
+<p>within a given <em>context</em>, <em>elements</em> are being <em>perceived</em>, processed through existing <em>knowledge schemas</em> in order to extract <em>meaning</em>.</p>
+
+<p>representations are circumstancial constructions, in a context, and for specific ends. they are determined by tasks, functions, goals, etc. p.7 (knowledge builds on this but it is more of a long-term process)</p>
+
+<p><strong>question</strong>: if it is task-oriented, what’s the relationship with aesthetics (passive contemplation)?</p>
+
+<p>working with the computer is comprised of the <em>prescriptive</em> (what the computer should) to the <em>effective</em> (what the computer actually does)</p>
+
+<p>categories of software psychology:</p>
+
+<ul>
+  <li>categorization</li>
+  <li>understanding of text (<strong>kintsch &amp; van dijk</strong>)</li>
+  <li>learning</li>
+  <li>modelling of knowledge (schema theory, Soloway)</li>
+  <li>problem solving</li>
+</ul>
+
+<p>this particular field is concerned with the relationship between (1) human representation and (2) the formal systems supporting this representation</p>
+
+<h4 id="representations-of-computer-programs">2 - representations of computer programs</h4>
+
+<p>data + algorithms (wirth)</p>
+
+<p>the interesting concept is drawn from chomsky: <em>surface-structure</em> (textual) vs. <em>deep-structure</em> (conceptual)</p>
+
+<p>there is a strange thing about linearity in programming: it is strictly linear but nonetheless jumps all over the place making it seemingly/effectively non-linear.</p>
+
+<ul>
+  <li>programs vs. narrative texts</li>
+</ul>
+
+<p>-&gt; there is an entanglement of the plan, of the arc, of the tension (not so often in narrative text)</p>
+
+<p>-&gt; program texts are dynamic, procedural texts (exhibiting complex causal relations between states and events)</p>
+
+<p>-&gt; the understanding of program text is a <em>general</em> one, not applied specifically to a particular situation</p>
+
+<ul>
+  <li>PL vs. natural languages</li>
+</ul>
+
+<p>they are <em>unambiguous</em>, while NL are <em>anaphoric</em> (variable names are, here, an overlap). software documentation and pseudo-code stands as a hybrid.</p>
+
+<h4 id="software-design">3 - software design</h4>
+
+<p>the first obstacle is that problems in programming are “ill-defined”, and that the <em>types</em> of problems affect the heuristics deployed by the individuals (e.g. data-heavy, procedure-heavy, varying requirements, etc.) and so there are 3 hypothetical approaches as to how to solve these problems:</p>
+
+<ul>
+  <li>knowledge
+    <ul>
+      <li>pre-existing schemas</li>
+    </ul>
+  </li>
+  <li>strategy
+    <ul>
+      <li>either bottom-up, top-down, breadth-first, depth-first, etc.)</li>
+    </ul>
+  </li>
+  <li>organization
+    <ul>
+      <li>a bit more meta, setting up heuristics in terms of hierarchy, or opportunity, practice, inquiry</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>the activity of designing programs consists in activating schemas</strong></p>
+
+<p>there’s a mutually-influencing triad of understanding the problem, researching it and implementing it.</p>
+
+<p>the work of programming is the reconciliation of 2 domains:</p>
+
+<ul>
+  <li>application/problem/business domain</li>
+  <li>computing domain</li>
+</ul>
+
+<p><strong>theory of schemas</strong></p>
+
+<p>there are multiple kinds of knowledge: <em>synctatic</em>, <em>semantic</em> and <em>schematic</em>. it’s also known as a frame, taken from the AI field, so it’s broader than a pattern. a schema is then a mental model, different from a ready-made solution plan, which would tend to be too precise.</p>
+
+<p>the difference between experts and novices is that experts have more meta, broader mental models. interestingly, the super expert is one who deploys more breadth than depth (what that means is that being able to bridge domains is more important!)</p>
+
+<p>cf. design patterns (i have that book)</p>
+
+<p><strong>Aesthetics in code is visualizing patterns through text</strong></p>
+
+<h4 id="understanding-software">6 - understanding software</h4>
+
+<p>starting with the fact that “understanding is constructing [useful] representations”, do we understand either as <em>text</em> or as <em>problem</em>?</p>
+
+<p>in any case, the sources of information are: the text, the self and the environment (you could say is actually situated, within the text). once we have these sources, there is a process of <em>inference</em> between pieces that lead to understanding.</p>
+
+<ul>
+  <li><strong>functional model</strong>
+    <ul>
+      <li>information is integrated into pre-existing schemas (such as in narrative texts)</li>
+    </ul>
+  </li>
+  <li><strong>structured model</strong>
+    <ul>
+      <li>understanding as means of relations (sometimes based on story grammars)</li>
+      <li>looking out for <em>roles</em> (or <em>goals</em>)</li>
+      <li>made of propositions (first morphemes, then syntax, then semantics by constructing connections, and reducing extraneous information) connected by links</li>
+      <li>this relies on “referential coherence”, in which textual elements are linked together</li>
+    </ul>
+  </li>
+  <li><strong>mental model</strong>
+    <ul>
+      <li>situated surface representation, constructing and conceptual</li>
+      <li>microstructure (loops, control) and macrostructure (routines)</li>
+      <li>identifying <em>static</em> and <em>dynamic</em> parts of a program</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>WHICH OF THE RULES OF PROGRAMMING DISCOURSE IS BEAUTIFUL?</strong></p>
+
+<p><strong>WHICH ONE ISN’T?</strong></p>
+
+<hr />
+
+<p>the most probable model is the last one, the mental model, with a highlight on <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315">beacons</a>, as thematic organizers, and a difference of experts in adding <em>situational</em> models.</p>
+
+<p>-&gt; program comprehension as problem-solving</p>
+
+<p>p.101</p>
+
+<p>the problem-solving approach focuses on the <em>goal-oriented</em> reading (i.e. given a text, we don’t understand the same thing/don’t have the same mental model if we have different goals) -&gt; this seems to be the most dominating now <a href="https://news.mit.edu/2020/brain-reading-computer-code-1215">mit study on reading code, neither as math or as language</a></p>
+
+<p>main question: <strong>how is surface structure transformed into deep structure?</strong></p>
+
+<p>finally, difficulties for understanding:</p>
+
+<ul>
+  <li>referential discontinuities (aka local incoherence)</li>
+  <li>ordering principle (when it is mentioned is when it is used)</li>
+  <li>delocalization (being scattered)</li>
+  <li>reconciling the three dimensions in a mental model:</li>
+  <li>
+    <ul>
+      <li>temporal</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>spatial</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>causal</li>
+    </ul>
+  </li>
+</ul>
+
+			</div>
+		</body>
+	</html>
