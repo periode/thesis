@@ -46,7 +46,7 @@ why is that? a partial function only maps a *subset* of the input to the full ou
 
 concepts in PL that don't exist anywhere else:
 
-- stream (continuity) (but continuity in interactive environments makes it hard to reason about)
+- stream (continuity) (but continuity in interactive environments makes it hard to reason about) [example on the issue of streams - patterns of distributed systems](https://martinfowler.com/articles/patterns-of-distributed-systems/)
 - monotonicity
 - types
 - powerdomains (i.e. domains with random branches)
@@ -98,7 +98,7 @@ they have basics:
 5. storage mgmt
 6. operating environment
 
-they have bidings:
+they have bindings:
 
 - execution time (value)
 - translation/compile time (type)

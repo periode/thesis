@@ -32,32 +32,21 @@ conceptual art aims at communicating concepts, ideas. experimental art don't kno
 
 the question of operational meaning vs. denotational meaning should be explored. what means what to the computer? (and what is the role of the stack in this whole thing)
 
+procedural rhetoric is just a very high level of programming semantics. processes with meaning assigned to it. <- this further extends the gradient.
+
+a class within a class [link](https://blog.royalsloth.eu/posts/the-complexity-that-lives-in-the-gui/) is a visual/spatio-mental pattern which means "complexity", "unmaintainability", "unsustainability"
+
+bad patterns make possible the kind of actions which result in bad patterns?
+
 ----
 
-Abstraction in programming is the process of identifying common 
-patterns that have systematic variations; an abstraction represents 
-the common pattern and provides a means for specifying which vari-
-ation to use.
-An abstraction facilitates separation of concerns: The implemen-
-tor of an abstraction can ignore the exact uses or instances of the 
-abstraction, and the user of the abstraction can forget the details of 
-the implementation of the abstraction, so long as the implementation 
-fulfills its intention or specification. (Balzer et al. 1989)
+Abstraction in programming is the process of identifying common patterns that have systematic variations; an abstraction represents the common pattern and provides a means for specifying which variation to use. An abstraction facilitates separation of concerns: The implementor of an abstraction can ignore the exact uses or instances of the abstraction, and the user of the abstraction can forget the details of the implementation of the abstraction, so long as the implementation fulfills its intention or specification. (Balzer et al. 1989)
 
----
+----
 
-**Compression** is the characteristic of a piece of text that the meaning 
-of any part of it is “larger” than that particular piece has by itself. 
-This characteristic is created by a rich context, with each part of the 
-text drawing on that context—each word draws part of its meaning 
-from its surroundings.
-**Habitability** is the characteristic of source code that enables pro-
-grammers, coders, bug-fixers, and people coming to the code later in 
-its life to understand its construction and intentions, and to change it 
-comfortably and confidently. 
-**Piecemeal growth** is the process of design and implementation in 
-which software is embellished, modified, reduced, enlarged, and 
-improved through a process of repair rather than of replacement
+**Compression** is the characteristic of a piece of text that the meaning of any part of it is “larger” than that particular piece has by itself. This characteristic is created by a rich context, with each part of the text drawing on that context—each word draws part of its meaning from its surroundings.
+**Habitability** is the characteristic of source code that enables programmers, coders, bug-fixers, and people coming to the code later in its life to understand its construction and intentions, and to change it comfortably and confidently. 
+**Piecemeal growth** is the process of design and implementation in which software is embellished, modified, reduced, enlarged, and improved through a process of repair rather than of replacement
 
 ## meeting with advisors
 

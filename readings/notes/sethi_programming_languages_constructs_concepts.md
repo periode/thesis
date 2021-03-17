@@ -67,7 +67,7 @@ There are (at least) two different kinds of beauty:
 
 From *Programming Languages: Design and Implementation*, p.508:
 
-> The difference among programming langauges are not quantitative differences in what can be done, by only qualitative differences in how elegantly, easily and effectively things can be done.
+> The difference among programming languages are not quantitative differences in what can be done, by only qualitative differences in how elegantly, easily and effectively things can be done.
 
 Beautiful languages:
 

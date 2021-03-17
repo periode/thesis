@@ -8,7 +8,7 @@ pat scanned it. thanks pat.
 
 ---
 
-> Simplicity enters in four guises: uniformity (rules are few and simple), generality (a small number of general functions provide as special cases a host of more specialized functions), familiarity (familiar symbols and usages are adopted whenever possible), and brevity (economy of ex­pression is sought). p. 20
+> Simplicity enters in four guises: uniformity (rules are few and simple), generality (a small number of general functions provide as special cases a host of more specialized functions, orthogonality), familiarity (familiar symbols and usages are adopted whenever possible), and brevity (economy of ex­pression is sought). p. 20
 
 thoughts:
 
@@ -33,4 +33,3 @@ pointer semantics:
 - a location can point to a value (*state*)
 
 a language without contingency, in which the context does not affect the meaning of expressions is said to be *referentially transparent* aka **the meaning of a sentence must remain unchanged when a part of a sentence is replaced by an expression having the same meaning** (frege, über sinn und bedeutung)
-

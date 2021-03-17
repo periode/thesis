@@ -1,0 +1,161 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="semantic-ideas-in-computing">Semantic Ideas in Computing</h1>
+
+<h2 id="robin-milner">Robin Milner</h2>
+
+<h3 id="cambridge-university-press-1996">Cambridge University Press, 1996</h3>
+
+<hr />
+
+<p>a high level reflection of the problem that computing presents: as a discipline, it presents new constructs that do not exist in maths/engineering (e.g. streams, types, powerdomains)</p>
+
+<hr />
+
+<p>starting question: is computing <em>a science</em> or <em>a material</em>?</p>
+
+<p>programming has moved over time from <em>prescribing</em> computers (application domain) to <em>describing</em> problems (problem domain), such that we center less and less around the specificity of the computer, and more and more around the specificity of the problem. the <em>specification</em> then removes the possibility for any blackbox (the whole internal functions are known, and so must the external environments on which these functions are supposed to operate)</p>
+
+<p>there are two sources for the origin of the computer:</p>
+
+<ul>
+  <li>maths (they do allow us to understand concept in programming, particularly formal logic, but it’s just a start)</li>
+  <li>practice</li>
+</ul>
+
+<p>programming languages themselves aren’t just deriving (partially) from the field of mathematics and formal logic, they’re also broadening it.</p>
+
+<blockquote>
+  <p>every formal expression has a meaning, and this meaning has conceptual content (p.8)</p>
+</blockquote>
+
+<p>and this meaning can, with great difficulty and clumsiness, be explained, but the conceptual content still eludes the computer, varying from the mundane (e.g. a counter) to the esoteric (e.g. a wish). as such, even the highest-level code, as beautiful as it  is, cannot deal with <em>new environments</em> (which would require it to adapt and anticipate).</p>
+
+<p>what he wants to lay out here is “a theory of software dynamics”, “a conception of the straight software material”</p>
+
+<p>the central question is <strong>what do (software) formations express?</strong></p>
+
+<p>these formations can be between:</p>
+
+<ul>
+  <li>the problem domain</li>
+  <li>the application domain</li>
+</ul>
+
+<p>and when you work in the application domain (code), are concepts about either math (one side or the world (other side) enough? for instance, when you work with communication systems, what is the concept of <em>routes</em>? and when you work with compilers, how does one approach the idea of <em>exact translation</em>?</p>
+
+<p>(the diversity of PL comes from a diversity of purposes)</p>
+
+<p>semantics themselves are based on <strong>domains</strong> (<a href="https://en.wikipedia.org/wiki/Semantic_domain">wiki</a> “a specific place that shares a set of meanings, or a language that holds its meaning, within the given context of the place.”)</p>
+
+<blockquote>
+  <p>partial functions have less meaning than full functions</p>
+</blockquote>
+
+<p>why is that? a partial function only maps a <em>subset</em> of the input to the full output range. a <em>full</em> function maps the totality of the input set to the totality of the output set.</p>
+
+<p>concepts in PL that don’t exist anywhere else:</p>
+
+<ul>
+  <li>stream (continuity) (but continuity in interactive environments makes it hard to reason about) <a href="https://martinfowler.com/articles/patterns-of-distributed-systems/">example on the issue of streams - patterns of distributed systems</a></li>
+  <li>monotonicity</li>
+  <li>types</li>
+  <li>powerdomains (i.e. domains with random branches)</li>
+</ul>
+
+<p><strong>states</strong></p>
+
+<p>a given state is:</p>
+
+<p><code>c
+STATE: NAMES -&gt; VALUES
+</code></p>
+
+<blockquote>
+  <p>to say how much information is needed, and when it is needed, is tantamount to defining the function</p>
+</blockquote>
+
+<p><strong>SEQUENTIALITY IS KEY</strong> in understanding the semantics of low-level code (one after the other, always)</p>
+
+<p>but this falls through as we get to higher-levels, as we become more “abstractly human” (expression mine)</p>
+
+<p>the <em>concrete domains</em> seem to be a foundation in the semantics of PL (<a href="https://www.sciencedirect.com/science/article/pii/030439759390089C">link</a>), (and in this paper they say that Christopher Stratchey was the first one to point out semantic issues in lambda-programming.)</p>
+
+<p>anyways, concrete domains, particularly, seem to want to deal with the issue of non-determinism: that is, non-sequentiality</p>
+
+<p><strong>links</strong></p>
+
+<p>links are higher-level concepts in programming, they can be:</p>
+
+<ul>
+  <li>pointers</li>
+  <li>references</li>
+  <li>channels</li>
+  <li>variables</li>
+  <li>locations</li>
+  <li>names</li>
+  <li>addresses</li>
+  <li>etc.</li>
+</ul>
+
+<p>(what is the equivalent for procedures/calls/methods/routines/etc.?)</p>
+
+<hr />
+<hr />
+
+<p>BASICS OF PL</p>
+
+<p>they have basics:</p>
+
+<ol>
+  <li>data</li>
+  <li>primitive operations</li>
+  <li>sequence control</li>
+  <li>data control</li>
+  <li>storage mgmt</li>
+  <li>operating environment</li>
+</ol>
+
+<p>they have bindings:</p>
+
+<ul>
+  <li>execution time (value)</li>
+  <li>translation/compile time (type)</li>
+  <li>language/definition (possible types)</li>
+  <li>language implementation (constants, properties of operators)</li>
+</ul>
+
+			</div>
+		</body>
+	</html>

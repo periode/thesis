@@ -10,6 +10,8 @@ an extensive overview of philosophical questions in computer science, particular
 
 ---
 
+note from [semantics of programming languages](https://archive.org/details/semanticsofprogr0000gunt/page/218/mode/2up): they say that the main thing helping in the semantics of programming languages is *higher-order functions*, which matches the *indigenous semantics* below.
+
 #### 1 - what is CS
 
 CS is unique from maths as it deals with two things that are not (immediately?) related to math:
@@ -72,4 +74,4 @@ being computer-understandable means that it is computer-decodable
 
 in order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97)
 
-the question "what does a Turin machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations)
+the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations)

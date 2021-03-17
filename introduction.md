@@ -2,6 +2,11 @@
 
 this is the intro of the intro (reduction ad absurdum lol)
 
+first distinguish: Carl Plantinga (2009, in Lavocat):
+
+- émotion pour l'artefact (surface)
+- émotion représentationelle (contenu)
+
 ### the context in which this study exists
 
 this is about the current situation/why this study needs to exist

@@ -1,0 +1,206 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				body {
+					background-color: white;
+					font-family: sans-serif, serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="review">review</h1>
+
+<h2 id="general">general</h2>
+
+<ul>
+  <li>[ ] make the paper shorter, get to the point faster</li>
+</ul>
+
+<h2 id="done">done</h2>
+
+<ul>
+  <li>[x] <strong>methodologies</strong>
+    <ul>
+      <li>[x] how was the discourse analysis done? (answer: identifying key words, identifying user backgrounds (users with strong statement approach would also require a “background check”, to contextualize their position in the debate + presented through <em>user/member/maintainer</em> typology.), taking into account the emojis—but acknowledge that this might not be a super reliable metric)</li>
+      <li>[x] highlight some limitations and biases (users on github might be a motivated subset of users)</li>
+    </ul>
+  </li>
+  <li>[x] <strong>effectiveness</strong>
+    <ul>
+      <li>[x] find some sources as to why these style guides are considered effective <a href="https://dl.acm.org/doi/abs/10.1145/57669.57675">paradigm for programming style research</a>, also <a href="https://books.google.de/books?hl=en&amp;lr=&amp;id=j9T6AgAAQBAJ&amp;oi=fnd&amp;pg=PR5&amp;dq=programming+style&amp;ots=PWLbxMuD08&amp;sig=SSvzaowOWh97nbCAmCt7sdoDyqk&amp;redir_esc=y">pike and kernighan feel strongly about it</a>, <a href="https://ieeexplore.ieee.org/abstract/document/7271316">curious about this one</a>, and finally <a href="https://ieeexplore.ieee.org/abstract/document/4782496">this one</a></li>
+      <li>[x] find some secondary sources/commentary proving that (“it just works”, etc.), either through posts or ACM studies, etc. (added the “why style matters article”)</li>
+    </ul>
+  </li>
+  <li>[x] <strong>negotiation or discussion</strong>
+    <ul>
+      <li>[x] highlight and discuss more the difference between negotiation and discussion (negotiation leads to a change, and discussion not: how does that manifest on). <strong>how often does one actually <em>negotiate</em> a style guide</strong>?</li>
+      <li>[x] touch upon these conflicting expectations from the users (in the end, it’s really just prettier who allows that)</li>
+    </ul>
+  </li>
+  <li>[x] <strong>analysis</strong>
+    <ul>
+      <li>[x] make the case studies talk to each other</li>
+      <li>[x] bring together the different case studies in the conclusion</li>
+    </ul>
+  </li>
+  <li>[x] <strong>references</strong>
+    <ul>
+      <li>[x] make clearer each field of research that is mentioned
+        <ul>
+          <li>[x] sociology of style (more of this, add the gaston ref (Essai d’une philosophie du style))</li>
+          <li>[x] and  (anthropology of the written word: fraenkel, goody))</li>
+          <li>[x] sociology of organizations (-&gt; scrap, replace with anthropology above)</li>
+          <li>[x] functions of language: better than habermas is jakobson (adding poetic, metalinguistic and phatic). explicit why i choose habermas over jakobson (in a nutshell, it’s political rather than literary)</li>
+          <li>[x] intermediary objects -&gt; add this at the beginning of the style guide section/presentation</li>
+          <li>[x] consolidate the different references that are scattered throughout the article</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>[x] <strong>description</strong>
+    <ul>
+      <li>[x] include more verbatim comments + pictures</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="reviewer-1">reviewer 1</h2>
+
+<ul>
+  <li>the explanation of github is rather late in the article (p.6-7), which could be a lot sooner, and serve the shortening up of the article (-&gt; shorten “the need for style in programming” section)</li>
+</ul>
+
+<h2 id="changes">changes</h2>
+
+<p>I shortened some parts:</p>
+
+<ul>
+  <li>the description of the plan (p.3)</li>
+  <li>consolidated the section <em>Source code, understood as […]</em> p.4 -&gt; the whole <em>need for style in programming</em> section, in order to make the section on github come sooner. (consider switching the whole section a block up? probs not)</li>
+</ul>
+
+<p>en gros, le début de “enjeux du style dans la programmation doit mettre en place les trois fondements théoriques:</p>
+
+<ul>
+  <li>style (simmel/gaston)</li>
+  <li>anthropologie de l’ecriture</li>
+  <li>sociologie (objets intermediaires)</li>
+</ul>
+
+<p>et ensuite je peux les re-mobiliser a travers l’article.</p>
+
+<p>I added a reference to “backwards compatibility on page 16.</p>
+
+<p>I added a reference to the “benevolent dictator” re: Linus Torvalds in a footnote. I didn’t feel like it would benefit the article much to expand on the role</p>
+
+<p>I added the assessment of programming style by including studies by Cox 1988 and Fisher 2008, showing that style isn’t commensurated with existing metrics, but def helps with program comprehension. I also linked the article that is on Prettier’s main page (while style matters). I’ve connected this to the limitations of the study: self-motivation is a big part of this community.</p>
+
+<p>I added a paragraph on limitations of the study: yes, it’s a subset, but also it’s ok cause it might be phenomena that we can find in the broader population as well.</p>
+
+<blockquote>
+  <p>It must be noted that a limitation of this study is that the surveyed population might just be a motivated subset of users, putting emphasis on the correct automation of the correct style of their code. While the findings here might not therefore represent the broader software development communities, they nonetheless embody heightened forms of socio-technical interactions, which might only be more faintly manifested in other developers.</p>
+</blockquote>
+
+<p>I clarified some of the metrics I have used for the study of the comments, as well as what was analyzed within these comments on page 11:</p>
+
+<blockquote>
+  <p>The gathered corpus consists of 12780 issues and pull requests, totalling 53673 comments. From these, we discarded the least commented issues, under the assumption that meaningful and diverse discursive interaction takes place after 15 or more comments, which leaves a core corpus of 80 issues for airbnb/javascript, 82 issues for standard/standard and 444 for prettier/prettier1. While these were the main point of focus, this study included cursory browsing of lesser issues. As a complementary to the data-heavy studies mentioned above, the approach for this analysis is qualitative: reading through all messages of the most commented issues, evaluating them on multiple dimensions: the lexical field they resort to (emotional, technical, rational, organizational), the subject’s stance (speaking as an individual or on behalf of a group), the user’s background (shown by their status as either Member, Contributor or User, as well as the other repositories of the corpus they might contribute to). Reaction emojis, used to express passive agreement or disagreement with a message, are considered qualifying markers, not creating new meanings in and of themselves.</p>
+</blockquote>
+
+<p>In terms of “negotiation vs. discussion”, I’ve developed on the different instances in which the discursive action takes these different forms. For airbnb/airbnb:</p>
+
+<blockquote>
+  <p>shifting the interactions from a negotiation, in which parties reach a compromise, to an explanation, in which the outcome of the exchange is ultimately the alignment of the user to the views of the maintainer (p.13)</p>
+</blockquote>
+
+<p>and reiterated in the conclusion:</p>
+
+<blockquote>
+  <p>and therefore shifting a process of negotiation in which all parties are equal, to one in which the maintainer has a larger bargaining power and, more often than not, only accepts to discuss why such a decision has been made, and not whether it should be changed (p.24)</p>
+</blockquote>
+
+<p>In terms of standard/standard, and prettier/prettier, I added a concluding sentence to clarify that the discussion is about the means, side-stepping a negotiation about the ends</p>
+
+<blockquote>
+  <p>This shift emphasizes that the most productive issues are those based on a discussion around implementation, rather than a negotiation around style itself. (p.16)</p>
+</blockquote>
+
+<blockquote>
+  <p>Once again, the negotiation over the stylistic validity of the automated style guide is superseded by dicussions over its technical implementation. (p.20)</p>
+</blockquote>
+
+<p>As for methodology of language, I’ve clarified why I use Habermas’s approach, particularly because he introduces a typology of discourses appearing within the context of communicative action. Additionally, I’ve added a footnote to specify that the linguistic elements I borrow from Habermas for analysis can be complemented by Jakobson’s <em>phatic</em> function of language. (footnote p.11)</p>
+
+<p>In terms of connecting the different use cases, I’ve added a sentence in the airbnb section about how the phenomenon identified (shift to the technical) foreshadows the same phenomenon in the other repositories:</p>
+
+<blockquote>
+  <p>This shift, from the stylistic to the technically feasible, is a recurring pattern which we’ll also observe under different manifestations in the standard/standard and prettier/prettier projects. (p. 14)</p>
+</blockquote>
+
+<p>I’ve also qualified further the description of the different projects by specifying how they resemble, and how they differ from each other (p. 15, p.18), and a qualification of how standard/standard and prettier/prettier engage in the same issue:</p>
+
+<blockquote>
+  <p>It has been shown that, while standard/standard shares this approach of « no-options », their justification is rather by broadening the scope of what is considered acceptable (standard/standardx, standard/doublestandard), therefore growing the community, and not relying on the fact that only one single project should exist. (p.22)</p>
+</blockquote>
+
+<p>In terms of clarifying the theoretical background I rely on, I’ve also made clearer the reliance on not the sociology of organization, but rather the social role of writing in organizations, tying it more clearly to the work of Goody and Frankel. I’ve also clarified how linters, as intermediary objects, are taken into account in this process.</p>
+
+<blockquote>
+  <p>Here again we see the role that intermediary objects play in the productive activity of writing source code: as objects that lie in between several elements (source code, compilation process, IDE), several actors (programmers in the same team) and successive stages of a work process (drafting code, reviewing it, and committing it to production) (Vinck &amp; Jeantet, 1995), this study will rely on this concept to highlight the very active role that linters play in these negotiations. (p. 6)</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <p>particularly, such a competence is backed « universals »: semantic positions taken as universal because they’re either based on experience (e.g. my truth), or on ontology (e.g. the truth). It is the confrontation of these universals between subjects which require communicative competence. We use here Habermas’s notion of a negotiation as a  bargain: in which both parties give up something in order to reach satisfaction, and contrast it with discussion, of which the result can be the change in stance of one, or both, parties. (pp. 9-10)</p>
+</blockquote>
+
+<p>Habermas doesn’t really fit: he states the necessary linguistic units of communicative competence in order to establish the best setup for talking about nice stuff like justice. His approach on “universals” is how there are those general structures of meaning which get formed, and manifest differently (e.g. subjective vs. intersubjective). There’s also a nice part about how exclusively working with dichotomies is absurd (basically).</p>
+
+<blockquote>
+  <p>The  empirical  evidence  of  comparative  ethno-linguistics  indicatesthat  the structures  of culturally  and  historically  changing world  views(Weltbilder) determine   a  system  of  basic,  <strong>mutually  interpreting  meaning-components</strong>  is to be presupposed</p>
+</blockquote>
+
+<p>Basically he wants to beat Chomsky at his own game. But it wouldn’t be impossible to still use it in the article this way: by highlighting the use of pronouns (airbnb, we vs. feross, community), the argument of space and time (backwards compatibility, but also letting others go fork their own repo), of causation and substance (programming and the possibility for automation), obviously the category of “what is and what ought to be”, being the main one in this case.</p>
+
+<p>But actually the most important parts of habermas could be <strong>mutually interpreting subjectivities</strong>, speaking from <strong>different worldviews</strong>, and how they attempt at reconciliating (or not, in which case they want to kick out). so it’s also about group cohesion, in some sense. <strong>how do you maintain group cohesion in a highly mediated/technical environment</strong>.</p>
+
+<p>But actually Jakobson could still hold.:</p>
+
+<ul>
+  <li>referential is the context in which we operate (airbnb vs. community, technical function or styling desirability)</li>
+  <li>poetic: for it’s own sake (???)</li>
+  <li>emotive: strong feelings (there’s a bunch haha)</li>
+  <li>conative: directed at someone, imperative (could that be the case where ljharb fixes the code?)</li>
+  <li>phatic function is increased by the technical environment: you <em>literally</em> close and open discussions</li>
+  <li>metalingual: which describe themselves</li>
+</ul>
+
+<p>the compromise would be to take jakobson’s referential (contexts), emotional (subjectivities) and phatic (open/close of technology)</p>
+
+			</div>
+		</body>
+	</html>
