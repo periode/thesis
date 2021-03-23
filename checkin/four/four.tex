@@ -1,0 +1,205 @@
+\documentclass{article}
+
+\usepackage[hyphens]{url}
+\usepackage{fontspec}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+
+\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\setmainfont{Inter Light}
+\setmonofont{Liberation Mono}
+\linespread{1.50}
+\sloppy
+
+\begin{document}
+\title{Thesis check-in - Role of aesthetics in understanding source code}
+\author{Pierre Depaz}
+\date{March 2021}
+\maketitle
+
+\section{Introduction}
+
+After establishing ground work on aesthetic manifestations in source code for software developers during the Spring 2020 semester, I have concluded with both an empirical manifestation of beautiful code, synthesized a typology of such manifestations (INCLUDE FINDINGS IN THREE.MD)—how code can be beautiful—and laid out a preliminary investigation as to why code could be beautiful. Aesthetic manifesations ("beauty") seem to occur whenever facilitate the clarity of intent of the writer, and the agency of the reader, are heightened. Beautiful code makes the underlying concepts clear and easily-graspable, and facilitates its modification by the reader by providing an error-free, and cognitively easy way to do so.
+
+Furthermore, I outlined several directions for further research. These included the exploration of aesthetic standards for two additional categories of code writers: \emph{source code poets} and \emph{hackers}. Following discussions around this outcome, I have added three other directions: literary metaphors, architectural parallels and machine understanding. First, the place of literary metaphors is a response to the cognitive stake at play in reading and writing code, since code can be understood as a formal representation of mental models emerging from complex data structures and their processing during execution time. Second, the parallels with architecture were suggested by a similar relationship to structure, planning and construction. These parallels are, as we will see below, claimed by software developers themselves, ranging from job titles to commercial best practices of software patterns; on a more theoretical level, the approaches to beauty in architecture will turn out to be productive lenses when thinking not just about executed code, but about source code as well. Third, when claiming that beautiful code facilitates understanding(s), it is important to clarify \emph{whose} understanding of \emph{what}. While previous work has focused on human understandings of human intentions, and human-made concepts, this document investigates to what extent do computers, as concrete machines, understand anything.
+
+I will start by examining instances of source code poetry, defining it, contextualizing it, and analyzing it through close-readings. This will allow us to highlight specific aesthetic standards emerging from this corpus, namely \emph{semantic layering} and \emph{procedural rhetoric}. Source code poetry, with this clear emphasis on \emph{poetry}, will then allow us to address the traditional relationship between literature and code, on an artistic level as well as on a linguistic one. The two concepts mentioned above will lead to an examination of the metaphor, from a literary and from a cognitive standpoint.
+
+Particularly, the relationship that metaphors maintain to the process of knowing and understanding will be highlighted both in human texts and in program texts\cite{detienne_software_2012}. Connecting it to mental models will allow us to start thinking of these program texts in terms of \emph{structure}, both surface-structure and deep-structure, and address how a theoretical framework of aesthetics might be connecting the two, including the place of imagination in acquiring knowledge and building understanding in these texts.
+
+Mentioning structure will thus lead us into the overlap between architecture and software. After a short overview of how the two are usually related, I examine a particular set of aesthetic standards developed by Christopher Alexander in his work on pattern languages. At the cursory level, these are tied to software patterns, techniques for developing better software that have emerged more out of practice rather than out of theory. At a deeper level, we will see that the standards of beauty—or, rather, of this \emph{Quality Without a Name}—can be applied productively to better understand what qualities are exhibited by a program that is deemed beautiful. In particular, Richard P. Gabriel's work will further provide a connection between software, architecture and poetry.
+
+One particular aspect of architecture—the folly, and to some extent large-scale installation artworks—will allow us to transition into our next corpus: hacking. Hacking, defined further as seemingly-exclusively functional code will further requalify the need for aesthetics in source code. We will see how this practice is focused much less on human understanding than on machine understanding, on producing code that is unreadable for the former, and yet crystal-clear for the latter—with an emphasis on human and machine performance. Despite a current lack of extensive research on hacking-related program texts, we will look into two instances of these: the one-liner and the demo to support our investigation in this domain.
+
+This brings us to the broader question of human understanding and machine understandings. Starting from the distinction between syntax and semantics, I highlight discrepancies between semantics in natural languages and semantics in programming languages to define machine understanding as an autotelic one, completely enclosed within a formal description. Coming back to Goodman, we will see how such a formal system fits as a \emph{language of art}, and yet remains ambiguous: is computation exclusively concerned with itself, or can it be said that it relates to the rest of the (non-computable) world? Additionally, the question of aesthetics within programming languages themselves will be approached in a dual approach: as linguistic constructs presenting affordances for creating program texts which exhibit aesthetic properties, and as objects with aesthetic properties themselves. Whether or not we can agree on machine understanding, the formalism of programming languages, and their aesthetic possibilities, provide an additional perspective on the communication of non-obvious concepts inherent to computing.
+
+In conclusion, we will see that aesthetics in code is not exclusively a literary affair in the strict sense of the term, but is rather at the intersection of literature, architecture and problem-solving, insofar as they manifest through the (re-)presentation of complex concepts and multi-faceted uses, involving their writers and readers in semantics-heavy cognitive processes and mental structures.
+
+Finally, I suggest further directions for research.
+
+\section{Source code poetry}
+
+This section focuses on source code poetry, as the closest use of "literary arts" in code. We will see how this particular way of writing software, to an explicitly aesthetic end, rather than a functional one, summons particular claims to art and beauty. These claims maintain a complex relationship to the nature and purpose of code, embracing the former, and moving away from the latter, but nonetheless allow us to more clearly define such a nature and such purposes. After an overview and further definition of the field, I will highlight to particular source code poems, chosen for their meaning-making affordances, and conclude on the aesthetic standards at play in their reading and writing.
+
+\subsection{Overview}
+
+Source code poetry is a distinct subset of electronic literature. A broad field encompassing natural language texts taking full advantage of the dynamic feature of computing to redefine the concept of text, authorship and readership, it nonetheless encompasses a variety of approaches, including generative literature, interactive fiction, visual poetry, source code poetry and esoteric programming languages, as well as certain aspects of software art. However, one of the distinctions that can be made in defining the elements of electronic literature which are included in our corpus In line with the framework of this research, the focus we propose here is shifted from output to input, for executable binary to latent source.
+
+A large section of the works which fall within electronic literature focus on the result of an executed program, often effectively obfuscating one of the many acts of writing which allow for the very existence of these works. For instance, the influence of \emph{Colossal Cave Adventure}\cite{crowthers_colossal_1977}, the first work of interactive fiction, has been focused more on the playable output of the software, rather than on its source code. Written in FORTRAN 4 exhibits several features which wouldn't fit within our typology previously established, particularly in terms of variable naming (e.g. variables named `KKKT`, `JSPK`, or `GOTO` statements, since then considered harmful\footnote{retrieved from: https://jerz.setonhill.edu/if/crowther/advf4.77-03-11}). Its source code was indeed only examined due to the recognition of the cultural influence of the game, decades later. Similarly, a more contemporary example would be that of the Twine game engine, lowering the barrier to entry for writing interactive fictions in the age of the hyperlink. The result, while aesthetically satisfying and recognized by the interactive fiction community, nonetheless consists in a single HTML document, comprising well-formatted and understandable HTML and CSS markups, and three single lines of "uglified" JavaScript\footnote{For instance, the source code of https://pierredepaz.net/-/who/ consists of 52980 characters, and only 682 whitespace characters}. In the case of visual poetry, one can see how the source code of works such as bpNichol\footnote{https://www.vispo.com/bp/download/FirstScreeningBybpNichol.txt}, is dictated exclusively by the desired output, with a by-product of visually pleasing artifacts throughout the code as foreshadowing the result to come\footnote{another artefact is the subroutine at line 1600, an "offscreen romance" only visible in the source.}. These examples of interactive fiction, while far from being exhaustive, nonetheless show how little attention is paid to the source code of these works, since they are clearly—and rightly so—not their most important part.
+
+Computer poetry, an artform based on the playful \emph{détournement} of the computer's constraints, gets closer to our topic insofar as the poems generated represent a closer application of the rule-based paradigm to the syntactical output of the program. Starting with Christopher Stratchey's love letters, generated (and signed!) by MUC, the Manchester Univac Computer, computer poems are generated by algorithmic processes, and as such rely essentially on this particular feature of programming, laying out rules in order to synthesize syntactically and semantically sound natural language poems.
+
+These works and their authors build on a longer tradition of rule-based composition, from Hebrew to the Oulipo and John Cage, amongst many others\cite{cramer_words_2003}, a tradition in which creativity and beauty can emerge from the strict application of rules. Nonetheless, the source code to these works is rarely released in conjunction with their output, hinting again at their lesser importance in terms of their overall artistic values. If computer poetry is composed of two texts, a natural-language output and a computer-language source, only the former is actually considered to be poetry, often leaving the latter in its shadow. The poem exists through the code, but the poem still isn't exclusively limited to the humanly-readable version of the code, as it only comes to life once interpreted or compiled by a machine. While much has been written on computer poetry, few of those commentaries focus on the soundness and the beauty of the source as an essential component of the work, and only in recent times have we seen the emergence of close-readings of the source of some of these works for their own sake\footnote{See the publications in the field of Critical Code studies, Software studies and Platform studies.}. These do constitute a body of work centered around the concept of generative aesthetics\cite{goriunova_read_2005}, in which beauty comes from the unpredictable and somewhat complex interplay of rule-based systems, and encompass not only written works, but games, visual and musical works as well; still, this attention to the result make these works fall on the periphery of our current research.
+
+\begin{itemize}
+    \item the more pure surface version of it (both code poetry slam and obfuscated c code)
+    \item address esolangs
+    \item then focus on the ones that i find the most relevant (SAY WHY) (code poems, perl poetry, speaking code\cite{cox_speaking_2013})
+\end{itemize}
+
+\subsection{Analysis of a poem}
+
+pick the most popular one (sharon hopkins? who wrote one of the first perl poems)
+
+also include a list of corpora
+
+and then pick one i like in the speaking code
+
+and then pick one i like in the code poems book
+
+\subsection{Aesthetic standards in source code poetry}
+
+particular, \emph{double-coding} and \emph{double-meaning}.
+
+\section{Metaphors}
+
+\subsection{In literature and software}
+
+Essentially a lot of Lakoff, and then the advance into cognition and literature. I also need a source on traditional metaphors.
+
+https://issuu.com/instituteofnetworkcultures/docs/tod14-binnenwerk-def-pdf
+
+\subsection{The place of imagination}
+
+Expand upon it both in lit and in code. How do they differ? Ambiguity
+
+\subsection{Mental models}
+
+What is a mental model? What is knowledge?
+
+Understanding: \emph{deep structure} vs. \emph{surface structure}
+
+And then transition into metaphors as architectures of thought.
+
+\section{Architecture}
+
+This section is mostly based on the work of \emph{patterns}, both in softdev and in architecture, and how they can be considered both functional and beautiful; furthermore I will develop on how these two relate (through habitability, QWaN).
+
+\subsection{General software architecture}
+
+Emergence of the field, planning vs. non planning.
+
+Planning as a consequence of the structured revolution.
+
+Non-planning as a consequence of low-barrier to contribution.
+
+\subsection{Beauty in architecture}
+
+Highlight how uncertain, elusive it is. And then focus a big part on Alexander's work.
+
+Movement of people is also some kind of structure
+
+\subsection{Applying architectural beauty in software}
+
+A lot of Gabriel's work, his connection to poetry, and also looking at how it applies well (softdev), and not so well (code poetry -> because the functionality of code poems isn't quite so obvious as the functional use of a building, or of a program)
+
+Transition with the case of the case of hacking: code that is not meant to be read.
+
+\section{Hacking}
+
+Is there beauty in inscrutability? Particularly, this redirects to the understanding of the machine (e.g. trying to reduce character counts for one-liners).
+
+\subsection{History of hacking}
+
+And a disambiguation of the term.
+
+\subsection{Unreadability and aesthetics}
+
+This shows you need a degree of expert knowledge in order to appreciate it.
+
+Example of the one-liners.
+
+Example of the demoscene.
+
+\subsection{Hacking and/or the lack of beauty}
+
+Why is there ne beauty in hacking? Does there need to be beauty anywhere?
+
+There doesn't seem to be so much because it's so much focused on what the machine understands; the real beauty is how they make the humans \emph{realize} what the machine \emph{really} understands.
+
+\section{Machine understandings}
+
+This is about whether or not the machine really understands anything.
+
+UNIX -> you are not expected to understand this
+
+\subsection{Computation}
+
+What is a computer? what is computation? There are differring approaches, and I should highlight what is mine (that of the formal, symbolic system). Cantell-Smith can be good here, if alone to explain that things are complicated to explain, but nonetheless intuitive to any serious practitioner of CS.
+
+\subsection{Programming languages}
+
+First, by what makes a PL (a bit of history, a bit of theory)
+
+Second, what makes a good PL.
+
+\subsection{Formal systems}
+
+Start by what is a formal system, then show two consequences: first, it fits with goodman and second, it actually seems to have trouble with meaning.
+
+\section{Programming Semantics}
+
+Answer the question as to whether they have semantics (they do according to the specs, but it's just another \emph{décalage})
+
+\subsection{Semantics in PL}
+
+Approach it first in a very practical way (parse trees, tokens, environments), and then in a more theoretical way (what are we even trying to communicate?)
+
+\subsection{Concepts of PL}
+
+The issue actually comes from the fact that some concepts might be very foreign and hard to communicate (which is why programming can be hard, and how the whole section has shown relative limitations of doing so).
+
+And so this is why we need aesthetics: to communicate both easy and complicated things, to reduce friction as much as possible. Example: Alan Perlis's Epigrams are poem-like sentences.
+
+Another example if thread concurrency. The book on parallel programming mentions an example of parallel thread processing which looks beautiful but is ugly on the inside: https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook-e2.pdf p. 105
+
+\section{Conclusion}
+
+Sum up a bit all that has been said.
+
+aesthetics matter, even in such a highly formal, syntactical, autotelic system as a computer. they connect a surface-structure with a deep structure.
+
+how does it contribute to the world? by showing that there is no separate domain of aesthetics, but also that they're not essential, but a mark of high-quality and, again *that they allow us to understand*.
+
+Recap on some of the concepts:
+
+- semantic compression
+- spatio-visual problem solving
+
+Finishing on the MIT study and Goodman:
+
+\begin{quote}
+    The emphasis placed on the symbolic, cognitive, planning aspects of the arts leads us to give value to the role played by problem-solving, seeing there a model in terms of which the moment-to-moment artist’s behavior at work can be described. “An analysis of behavior as a sequence of problem- solving and planning activities seems to be most promising [...]" (goodman)
+\end{quote}
+
+\subsection{Next steps}
+
+Close-reading of more source code.
+
+Gathering of more hacking resources and computer science/abstract resources.
+
+\bibliographystyle{unsrt}
+\bibliography{thesis}
+
+\end{document}

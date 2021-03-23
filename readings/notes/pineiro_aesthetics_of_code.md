@@ -63,13 +63,13 @@ however, he says that one possesses all the necessary knowledge to appreciate so
 
 are there canons of beauty in programming? probably, to a certain extent, but they are highly context-dependent.
 
-elegance is irreducible but not non-correlated with manifestations.
+elegance is irreducible but correlated with manifestations.
 
 metaphor of the colorful painting: colorful is not inherently beautiful or not, but when applied to something beautiful, it is correlated by the manifestation of a lot of colors, say in particularly rich or vivid palettes.
 
 apparently, sibley says that is impossible to define what is "beautifully combined". well if you take a goal-oriented approach, it becomes actually easy: does it do the job? (not completely explanatory but partially). because, yes, we don't use rules, but we use *heuristics*.
 
-coming back to the "what it does", there can be a parallel seen between the aesthetic aspect of software and its public aspect? re-use -> zusammenleben
+coming back to the "what it does", there can be a parallel seen between the aesthetic aspect of software and its public aspect? re-use -> zusammenleben -> *habitability*
 
 private aesthetics vs. public aesthetics?
 

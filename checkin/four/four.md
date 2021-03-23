@@ -6,21 +6,21 @@ The immediate next aspect that I will be focusing on is therefore to highlight t
 
 ## the overarching point
 
-aesthetics matter, even in such a highly formal, syntactical, autotelic system as a computer
+aesthetics matter, even in such a highly formal, syntactical, autotelic system as a computer. they connect a surface-structure with a deep structure.
 
-how does it contribute to the world? by showing that there is no separate domain of aesthetics, but also that they're not essential, but a mark of high-quality
+how does it contribute to the world? by showing that there is no separate domain of aesthetics, but also that they're not essential, but a mark of high-quality and, again *that they allow us to understand*.
 
 ## 0 - main points
 
 first i want to touch upon cursory work in source code poetry (paloque berges), and connect that to metaphor and literary tradition. then i want to talk about hacking (demoscene, folies, one-liners), and then connect that lack of aesthetic concern (qualify! different kinds of aesthetics) to the question of "what is there to understand" and therefore the question of **semantics**. i will close by exploring the different concepts in programming that are hard to communicate.
 
-**CONCEPT**: semantic compression
+**CONCEPTS**:
 
-**CONCEPT**: spatio-visual problem solving
+- semantic compression
+- spatio-visual problem solving
+- concepts to communicate? the stream? the map?
 
-**CONCEPT**: concepts to communicate? the stream? the map?
-
-this is not so much about code aligning with standards of literature, but maybe aligning to the standards of both epistemology and architecture, *architectural knowledge*
+this is not so much about code aligning with standards of literature, but maybe aligning to the standards of both epistemology and architecture, *architectural knowledge*, and how literature could also align with these.
 
 ## source code poems
 

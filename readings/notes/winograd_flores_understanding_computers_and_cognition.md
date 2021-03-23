@@ -14,7 +14,7 @@ approach through *design* (the interaction between creating and understanding), 
 
 > the computer is a device for creating, manipulating and transmitting symbolic (i.e. linguistic) objects.
 
-"every questioning grows out of a tradition" -> what is the tradition of this thesis? (also, meaning is relative to what is understood through the tradition)
+"every questioning grows out of a tradition" -> what is the tradition of this thesis? (also, meaning is relative to what is understood through the tradition), the analytical tradition
 
 #### chapter 5 - language, listening and commitment (pp.56-64)
 
@@ -40,7 +40,7 @@ theoretical language (rational) vs. practical (situated)
 
 > Language and cognition are fundamentally social (p.61).
 
-structural coupling (skills) with a consensual domain (piece of source code) is how an autopoeitic structure emerges (self-sustained attention? aesthetic experience?)
+structural coupling (skills) with a consensual domain (piece of source code) is how an autopoeitic structure emerges (self-sustained attention? aesthetic experience?) **????**
 
 there are **three basic kinds of grounding**:
 

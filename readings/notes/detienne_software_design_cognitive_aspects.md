@@ -101,7 +101,7 @@ in any case, the sources of information are: the text, the self and the environm
   - information is integrated into pre-existing schemas (such as in narrative texts)
 
 - **structured model**
-  - understanding as means of relations (sometimes based on story grammars)
+  - understanding as means of relations (sometimes based on story grammars, PL grammars)
   - looking out for *roles* (or *goals*)
   - made of propositions (first morphemes, then syntax, then semantics by constructing connections, and reducing extraneous information) connected by links
   - this relies on "referential coherence", in which textual elements are linked together

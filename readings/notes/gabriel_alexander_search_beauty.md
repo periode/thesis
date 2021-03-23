@@ -30,7 +30,7 @@ Alexander's successive conceptions of beauty:
 
 This is the Quality Without A Name.
 
-Well, the first and biggest difference is that architects deal with the animate and unexpected (people) and computer scientists deal with the inanimate and expected (computers), so that restricts the extent to which his criteria for beauty could be applied.
+Well, the first and biggest difference is that architects deal with the animate and unexpected (people) and computer scientists deal with the inanimate and expected (computers -but actually the unexpected because of streams, memory management and uncertainty of pointer arithmetic), so that restricts the extent to which his criteria for beauty could be applied.
 
 Still, his desire to look for *what **makes** the beautiful*, instead of *what **is** the beautiful*, is an interesting approach. And indeed, in the first part of this research, on the aesthetics of software developers, I've essentially found patterns.
 
