@@ -1,6 +1,7 @@
+#https://github.com/maca/Ruby-code-poem/blob/master/self_inspect.rb
 class Proc
-                                       def in_discomfort?; :me; end
-                                                                          end
+                            def in_discomfort?; :me; end
+                                                                end
 you_are = you = 
    
    ->(you) do

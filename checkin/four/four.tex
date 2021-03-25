@@ -3,6 +3,7 @@
 \usepackage[hyphens]{url}
 \usepackage{fontspec}
 \usepackage{graphicx}
+\usepackage{listings}
 
 \graphicspath{ {./images/} }
 
@@ -11,6 +12,12 @@
 \setmonofont{Liberation Mono}
 \linespread{1.50}
 \sloppy
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single
+}
 
 \begin{document}
 \title{Thesis check-in - Role of aesthetics in understanding source code}
@@ -38,53 +45,210 @@ In conclusion, we will see that aesthetics in code is not exclusively a literary
 
 Finally, I suggest further directions for research.
 
-\section{Source code poetry}
+\section{Computers and literary arts}
 
-This section focuses on source code poetry, as the closest use of "literary arts" in code. We will see how this particular way of writing software, to an explicitly aesthetic end, rather than a functional one, summons particular claims to art and beauty. These claims maintain a complex relationship to the nature and purpose of code, embracing the former, and moving away from the latter, but nonetheless allow us to more clearly define such a nature and such purposes. After an overview and further definition of the field, I will highlight to particular source code poems, chosen for their meaning-making affordances, and conclude on the aesthetic standards at play in their reading and writing.
+This section focuses on source code poetry, as the closest use of "literary arts" involving code. We will see how this particular way of writing software, to an explicitly aesthetic end, rather than a functional one, summons specific claims to art and beauty. These claims maintain a complex relationship to the nature and purpose of code, in certain ways embracing the former, and moving away from the latter, but nonetheless allow us to more clearly define such a nature and such purposes. After an overview of the field, including delimitation of our corpus, I will highlight and analyze particular source code poems, chosen for their meaning-making affordances, and conclude on the aesthetic standards at play in their reading and writing, expanding on notions of \emph{double-meaning} and \emph{double-coding}.
 
 \subsection{Overview}
 
-Source code poetry is a distinct subset of electronic literature. A broad field encompassing natural language texts taking full advantage of the dynamic feature of computing to redefine the concept of text, authorship and readership, it nonetheless encompasses a variety of approaches, including generative literature, interactive fiction, visual poetry, source code poetry and esoteric programming languages, as well as certain aspects of software art. However, one of the distinctions that can be made in defining the elements of electronic literature which are included in our corpus In line with the framework of this research, the focus we propose here is shifted from output to input, for executable binary to latent source.
+Source code poetry is a distinct subset of electronic literature. A broad field encompassing natural language texts taking full advantage of the dynamic feature of computing to redefine the concept of text, authorship and readership, it nonetheless encompasses a variety of approaches, including generative literature, interactive fiction, visual poetry, source code poetry and esoteric programming languages, as well as certain aspects of software art. However, one of the distinctions that can be made in defining the elements of electronic literature which are included in our corpus is, in line with the framework of this research, the shift from output to input, for executable binary to latent source.
 
-A large section of the works which fall within electronic literature focus on the result of an executed program, often effectively obfuscating one of the many acts of writing which allow for the very existence of these works. For instance, the influence of \emph{Colossal Cave Adventure}\cite{crowthers_colossal_1977}, the first work of interactive fiction, has been focused more on the playable output of the software, rather than on its source code. Written in FORTRAN 4 exhibits several features which wouldn't fit within our typology previously established, particularly in terms of variable naming (e.g. variables named `KKKT`, `JSPK`, or `GOTO` statements, since then considered harmful\footnote{retrieved from: https://jerz.setonhill.edu/if/crowther/advf4.77-03-11}). Its source code was indeed only examined due to the recognition of the cultural influence of the game, decades later. Similarly, a more contemporary example would be that of the Twine game engine, lowering the barrier to entry for writing interactive fictions in the age of the hyperlink. The result, while aesthetically satisfying and recognized by the interactive fiction community, nonetheless consists in a single HTML document, comprising well-formatted and understandable HTML and CSS markups, and three single lines of "uglified" JavaScript\footnote{For instance, the source code of https://pierredepaz.net/-/who/ consists of 52980 characters, and only 682 whitespace characters}. In the case of visual poetry, one can see how the source code of works such as bpNichol\footnote{https://www.vispo.com/bp/download/FirstScreeningBybpNichol.txt}, is dictated exclusively by the desired output, with a by-product of visually pleasing artifacts throughout the code as foreshadowing the result to come\footnote{another artefact is the subroutine at line 1600, an "offscreen romance" only visible in the source.}. These examples of interactive fiction, while far from being exhaustive, nonetheless show how little attention is paid to the source code of these works, since they are clearly—and rightly so—not their most important part.
+A large section of the works which fall within electronic literature focus on the result of an executed program, often effectively obfuscating one of the many chained acts of writing\footnote{See: Béatrice Fraenkel on chains of writing} which allow for the very existence of these works. For instance, the influence of \emph{Colossal Cave Adventure}\cite{crowthers_colossal_1977}, the first work of interactive fiction, has been centered around on the playable output of the software, rather than on its source code. Written in FORTRAN 4 between 1975 1977, it exhibits several features which wouldn't fit within the typology we've previously established, particularly in terms of variable naming (e.g. variables such as `KKKT`, `JSPK`; or `GOTO` statements, whose harm has been considered at the same time this code was written\footnote{retrieved from: https://jerz.setonhill.edu/if/crowther/advf4.77-03-11}). \emph{Colossal Cave Adventure}'s source code was indeed only examined due to the recognition of the cultural influence of the game, decades later, and not for its intrinsic properties.
 
-Computer poetry, an artform based on the playful \emph{détournement} of the computer's constraints, gets closer to our topic insofar as the poems generated represent a closer application of the rule-based paradigm to the syntactical output of the program. Starting with Christopher Stratchey's love letters, generated (and signed!) by MUC, the Manchester Univac Computer, computer poems are generated by algorithmic processes, and as such rely essentially on this particular feature of programming, laying out rules in order to synthesize syntactically and semantically sound natural language poems.
+A more contemporary example would be that of the Twine game engine, lowering the barrier to entry for writing interactive fictions in the age of the hyperlink. The result, while aesthetically satisfying, widely recognized and appreciated by the interactive fiction community, nonetheless consists in a single HTML document, comprising well-formatted and understandable HTML and CSS markups, along with three single lines of "uglified" JavaScript\footnote{For instance, the source code of https://pierredepaz.net/-/who/ consists of three lines of 52980 characters, and only 682 whitespace characters}. The explicit process of uglification\footnote{We could expand on this process of uglification, which consists of compacting humanly-laid out source code into the small possible number of characters, usually for a production-ready build, optimized for loading times and dependency processing.} relies on the assumption that no one would, or should, read the source code.
 
-These works and their authors build on a longer tradition of rule-based composition, from Hebrew to the Oulipo and John Cage, amongst many others\cite{cramer_words_2003}, a tradition in which creativity and beauty can emerge from the strict application of rules. Nonetheless, the source code to these works is rarely released in conjunction with their output, hinting again at their lesser importance in terms of their overall artistic values. If computer poetry is composed of two texts, a natural-language output and a computer-language source, only the former is actually considered to be poetry, often leaving the latter in its shadow. The poem exists through the code, but the poem still isn't exclusively limited to the humanly-readable version of the code, as it only comes to life once interpreted or compiled by a machine. While much has been written on computer poetry, few of those commentaries focus on the soundness and the beauty of the source as an essential component of the work, and only in recent times have we seen the emergence of close-readings of the source of some of these works for their own sake\footnote{See the publications in the field of Critical Code studies, Software studies and Platform studies.}. These do constitute a body of work centered around the concept of generative aesthetics\cite{goriunova_read_2005}, in which beauty comes from the unpredictable and somewhat complex interplay of rule-based systems, and encompass not only written works, but games, visual and musical works as well; still, this attention to the result make these works fall on the periphery of our current research.
+In the case of visual poetry, one can see how the source code of works such as bpNichol's \emph{First Screening}\footnote{https://www.vispo.com/bp/download/FirstScreeningBybpNichol.txt}, is dictated exclusively by the desired output, with a by-product of visually pleasing artifacts throughout the code as foreshadowing the result to come\footnote{Still, a lovely artefact is the subroutine at line 1600, an "offscreen romance" only visible in the source.}. It is a literal description of static, desired output, more akin to a cinematic timeline editor, in which there is a 1:1 relationship between the clips laid out and the final reel, and no room for unexpected developments. While computer-powered, such an example of visual poetry tend to side-step the \emph{potentiality} of computing, of which source code is one of the descriptive symbol systems: each execution of the code is going to be exactly the same as the previous one, and the same as the next one\footnote{Barring any programmer-independent variables, such as hardware and software platform differences.}. While this might be a drastic example, in which unknowns are reduced to a minimum, visual poetry and interactive do rely heavily on the dynamic aspect of computer procedures to create aesthetic experiences\footnote{For instance, see Text Rain, by Camille Utterbach and Romy Achituv}. The difference I am making here is that such aesthetic experience are claimed to take place in the realization of the computer-aided potentials of the work, rather than in the textual description of these potentials\footnote{Tellingly, the Smithsonian Museum, which acquired Text Rain, makes no mention of the source code of the piece.}. These examples, while far from being exhaustive, nonetheless show how little attention is paid to the source code of these works, since they are clearly—and rightly so—not their most important part.
 
-\begin{itemize}
-    \item the more pure surface version of it (both code poetry slam and obfuscated c code)
-    \item address esolangs
-    \item then focus on the ones that i find the most relevant (SAY WHY) (code poems, perl poetry, speaking code\cite{cox_speaking_2013})
-\end{itemize}
+Computer poetry, an artform based on the playful \emph{détournement} of the computer's constraints, gets closer to our topic insofar as the poems generated represent a more direct application of the rule-based paradigm to the syntactical output of the program. Starting with Christopher Stratchey's love letters, generated (and signed!) by MUC, the Manchester Univac Computer, computer poems are generated by algorithmic processes, and as such rely essentially on this particular feature of programming, laying out rules in order to synthesize syntactically and semantically sound natural language poems. Here, the rules themselves matter as much as the output, a fact highlighted by their ratio: a single rule for a seemingly-infinite amount of outputs.
 
-\subsection{Analysis of a poem}
+These works and their authors build on a longer tradition of rule-based composition, from Hebrew to the Oulipo and John Cage's indeterministic composition, amongst many others\cite{cramer_words_2003}, a tradition in which creativity and beauty can emerge from within a strict framework of formal rules. Nonetheless, the source code to these works is rarely released in conjunction with their output, hinting again at their lesser importance in terms of their overall artistic values. If computer poetry is composed of two texts, a natural-language output and a computer-language source, only the former is actually considered to be poetry, often leaving the latter in its shadow (as well as, sometimes, it's programmer, an individual sometimes different from the poet). The poem exists through the code, but isn't exclusively limited to the humanly-readable version of the code, as it only comes to life and can be fully appreciated, under the poet's terms, once interpreted or compiled. While much has been written on computer poetry, few of those commentaries focus on the soundness and the beauty of the source as an essential component of the work, and only in recent times have we seen the emergence of close-readings of the source of some of these works for their own sake\footnote{See the publications in the field of Critical Code studies, Software studies and Platform studies.}. These do constitute a body of work centered around the concept of generative aesthetics\cite{goriunova_read_2005}, in which beauty comes from the unpredictable and somewhat complex interplay of rule-based systems, and whose manifestations encompass not only written works, but games, visual and musical works as well; still, this attention to the result make these works fall on the periphery of our current research.
 
-pick the most popular one (sharon hopkins? who wrote one of the first perl poems)
+The aspects of electronic literature examined so far still require computer execution in order to be fully realized as aesthetic experiences. We now turn to these works which still function as works of explicit aesthetic value primarily through the reading of their source. We will examine obfuscated code and code poetry (both at the surface level and at the deep level), to finally delimitate our corpus around the last one.
 
-also include a list of corpora
+One of the earliest instances of computer source written exclusively to elicit a human emotional reaction, rather than fulfill any immediate, practical function, is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembler. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document.
 
-and then pick one i like in the speaking code
+\begin{lstlisting}{caption="AGC source code, LUNAR_LANDING_GUIDANCE_EQUATIONS, 1969"}
+663  STODL  CG
+664	 TTF/8
+665  DMP*  VXSC
+666	       GAINBRAK,1  # NUMERO MYSTERIOSO
+667        ANGTERM
+668	 VAD
+669		    LAND
+670     VSU	RTB
+\end{lstlisting}
 
-and then pick one i like in the code poems book
+Code comments allow a programmer to write in their mother tongue, rather than in the computer's, enabling more syntactic and semantic flexibility, and thus reveal a burgeoning desire for programmers to express themselves within their medium of choice.
 
-\subsection{Aesthetic standards in source code poetry}
+At the turn of the 1980s, following the transition to programming from an annex practice to full-fledged discipline and profession, along with the development of more expressive programming languages (e.g. Pascal in 1970, C in 1972), software development has become a larger field, growing exponentially\footnote{Source: \url{https://insights.stackoverflow.com/survey/2019#developer-profile-_-years-since-learning-to-code}}, and fostering practices, communities and development styles and patterns\footnote{From Djikstra's Notes on Structured Programming to Knuth's Literate Programming and Martin's Clean Code}. Source code becomes recognized as a text in its own, which can hold qualities and defects of its own, and to which engineering and artistic attention must be paid. No longer a transitional state from formula to binary, it becomes a semantic material, whose layout, organization and syntax are important to the eyes of its writers and readers. Pushing further into the direction of the visual layout of the code, such an endeavour becomes pursued for its own sake, equally important to the need for a program to be functional.
 
-particular, \emph{double-coding} and \emph{double-meaning}.
+The Obfuscated C Code Contest\footnote{\url{https://ioccc.org}} is the most popular and oldest organized production of such code, in which programmers submit code that is functional and visually meaningful beyond the exclusive standards of well-formatted code. If the source code's meaning was previously entirely subsumed into the output in computer poetry, and if such a meaning existed in parallel in the comments of the AGC routines, pointing at the overlay of computer-related semantics (e.g. line numbers) and human-related semantics (e.g. number of the beast), obfuscated code is a first foray into closely intertwining these separate meanings in the source code itself, making completely transparent, or completely opaque what the code does just by glancing at it.
 
-\section{Metaphors}
+\pagebreak
+\lstinputlisting{r.c}[language=C, Caption="r.c, 1988"]
 
-\subsection{In literature and software}
+The above submission to the 1988 IOCCC\footnote{Source: \url{https://web.archive.org/web/20131022114748/http://www0.us.ioccc.org/1988/westley.c}} is a procedure which does exactly what it shows: it deals with a circle. More precisely, it estimates the value of PI by computing its own circumference. While the process is far from being straightforward, relying mainly on bitwise arithmetic operations and a convoluted preprocessor definition, the result is nonetheless very intuitive—the same way that PI is intuitively related to PI. The layout of the code, carefully crafted by introducing whitespace at the necessary locations, doesn't follow any programming practice of indentation, and would probably be useless in any other context, but nonetheless represents another aspect of the \emph{concept} behind the procedure described, not relying on traditional programming syntax\footnote{For such a program, see for instance: \url{https://crypto.stanford.edu/pbc/notes/pi/code.html}}, but rather on an intuitive, human-specific understanding\footnote{Concrete poetry also makes such a use of visual cues in traditional literary works.}.
+
+Obfuscating practices, beyond their technical necessities (for security and efficiency), are traditionally tied to hacking practices, prominently with one-liners. As such, they rely on the brain-teasing process of deciphering, and on the pleasurable, aesthetic experience of resolving and uniting two parallel meanings: what we see in the code, and what it does\footnote{Also known informally as the "Aha!" moment, crucial in puzzle design.}. What we focus on here is the aspect of obfuscation which plays with the different layers of meaning: meaning to the computer, meaning to the human, and different ways of representing and communicating this meaning (from uglifying, to consistent formatting, to depicting a circle with dashes and underscores). While the aesthetics at play in hacking will be further explored below, we focus on the fact that obfuscating code practices, beyond hiding the meaning and the intent of the program, also manifest an attempt to represent such a meaning in different ways, leaving aside traditional code-writing practices and suggesting the meaning of the program by challenging the abilities of human interpretation at play in the process of deciphering programs.
+
+\subsection{Source code poetry}
+
+It is this overlap of meaning which appears clearly in source code poetry. In a broad sense, code poetry conflates classical poetry (in the sense of strict syntactical and phonetical form, and poetic expressivity) with computer code, but is primarily defined in the sense that it does not require the code to be executed, but only to be read by a human. Following the threads laid out by computer poetry and obfuscated code, it starts from the essential feature of computers to work with strictly defined formal rules, but departs from it in terms of utility. Source code poems are only functional insofar as they are accepted by the intepreter or compiler of the language in which they are written as such. To the computer, they are indeed functional, in that they are legal and can be parsed; but they do not do anything of \emph{use}. Such formal compliance is only a pre-requisite, a creative constraint, for their human writers.
+
+This reliance on creative constraints provided by a computing environment, the emphasis here is on the act of reading, rather than on the act of deciphering, as we've seen with obfuscated code (and in code in general). Source code poems are often easy to read\footnote{See perl haikus in particular}, and have an expressive power which operates beyond the realm of, but related to prose. Starting from Flusser's approach, I consider poetry here as a means to bring concepts into the thinkable, and to crystallize thoughts which are not immediately available to us\cite{flusser_doubt_2014}. In its different manifestations, code poems make the boundary between computer meaning and human meaning thinner and thinner, a feature often afforded by the use of higher-level programming languages. With the development of FLOWMATIC in 1955 by Grace Hopper, it was shown that an English-like syntactical system could be used to communicate concepts for the computer to process. From there, programming languages could be described along a gradient, with binary at the lowest end, and natural language (in an overwheling majority, English) at the highest end. This implies that they could be written and read similarly to English, including word order, word semantic, word pronouncation, along with the laxness on human laguages, which doesn't make the whole communication process fail whenever a specific word, or a word order isn't understood.
+
+\pagebreak
+\linespread{1.00}\selectfont
+\begin{lstlisting}{language=Perl, Caption="Black Perl, Anonymous, 1990, updated by kck, 2017"}
+    #!/usr/bin perl
+    no warnings;
+    
+    BEFOREHAND: close door, each window & exit; wait until time.
+      open spellbook, study, read (scan, $elect, tell us);
+    write it, print the hex while each watches,
+      reverse its, length, write, again;
+    kill spiders, pop them, chop, split, kill them.
+      unlink arms, shift, wait & listen (listening, wait),
+      sort the flock (then, warn "the goats" & kill "the sheep");
+    kill them, dump qualms, shift moralities,
+      values aside, each one;
+    die sheep? die to : reverse { the => system
+      ( you accept (reject, respect) ) };
+    next step,
+      kill `the next sacrifice`, each sacrifice,
+      wait, redo ritual until "all the spirits are pleased";
+    do { it => "as they say" }.
+      do { it => (*everyone***must***participate***in***forbidden**s*e*x*)
+    + }.
+      return last victim; package body;
+    exit crypt (time, times & "half a time") & close it,
+      select (quickly) & warn your (next victim);
+    AFTERWARDS: tell nobody.
+      wait, wait until time;
+    wait until next year, next decade;
+    sleep, sleep, die yourself,
+      die @last 
+\end{lstlisting}
+\linespread{1.50}\selectfont
+\normalfont
+
+The community of programmers writing in Perl\footnote{See: perlmonks, witht the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive commuities when it comes to code poetry. Starting in 1990, when the language creator Larry Wall shared some of the poems written in Perl, it gained further exposition through the work of Shannon Hopkins\cite{hopkins_camels_1992}. The poem \emph{Black Perl}, submitted anonymously, is a representative example of the productions of this community.
+
+The first thing that we see is that it can be read by anyone, including those without previous programming experience. Each word is valid both as English and as Perl. Second, there is an abundance of verbs. Perl belongs to a family of programming languages grouped under the \emph{imperative} paradigm, which matches a grammatical mood of the same, the \emph{imperative mood}. Such mood emphasizes actions to be takeIn principle any formatting can be used for the 'code' -- as long as the syntax does not interfere with TeX/LaTeX syntax all is well. n (or procedures to be executed) and thus create this feeling of relentless urgency when reading through the poem, a constant need to be taking actions. Here, the constraint of the formal system of the programming language interacts directly with the poetic evokation of the work in a first way: the nature of Perl is that of giving orders, addressing \emph{someone} to execute \emph{something}. Perl's flexibility leaves us wondering as to who and what are concerned by these orders. Is the writer directing their words to themselves? To the reader? Is Perl just ever talking to the computer? The ambiguity of the adressee adds to the ominousness of each verse.
+
+The object of each of these predicates presents a different kind of ambiguity: Perl functions in such a way that it ignores unknown tokens\footnote{e.g. undefined variables do not cause a core dump.}. Each of the non-keywords in the poem are therefore, to the Perl interpreter, inexistant, allowing for a large latitude of creative freedom from the writer's part, creating a tension between the strict, untoucheable meaning of Perl's reserved keywords, and the almost infinite combination of variable and procedure name and regular expressions. This tension nonetheless happens within a certain rhythm, resulting from the programming syntax: \lstinline{kill them, dump qualms, shit moralities}, here alternating the computer's lexicon and the poet's, both distinct and nonetheless intertwined to create a \emph{Gestalt}, a whole which is more than the sum of its parts.
+
+A clever use of Perl's handling of undefined variables and execution order allows the writer to use keywords for their human semantics, while subverting their actual computer function. For instance, the \lstinline{die} function should raise an exception, but wrapped within the \lstinline{exit ()} and \lstinline{exit} keywords, the command is not interpred and therefore never reaches the execution, bypassing the error being raised. The subversion here isn't purely semantic, in the sense of what each individual word means, but rather in how the control flow of the program operates. Finally, the use of the \lstinline{BEFOREHAND:} and \lstinline{AFTERWARDS:} words mimick computing concepts which do not actually exist in Perl's implementation: the pre-processor and post-processor directives. Present in languages such a C, these specify code which is to be executed respectively before and after the main routine is ran. In this poem, though, these patterns are co-opted to reminisce the reader of the prologue and epilogue sometimes present in literary texts. Again, these seem to be both valid in computer and human terms, and yet belong in very different realms.
+
+This instance of Perl poetry highlights a couple of concepts that are particularly present in code poetry. While it holds technical knowledge of how the language parses in common with obfuscation, it departs from obfuscated works, which operate through syntax compression, by highlighting the expressive power of ambiguity. Such an ambiguity is furthermore bi-directional: the computing keywords become imbued with natural language significance, bringing the lexicon of the machine into the realm of the poetic, while the human-defined variable and procedure names, and of the regular expressions, are chosen as to appear in line with the rhythm and structure of the language. Such a work highlights the cohabitation of human and machine meaning inherent to any program text\footnote{except perhaps those which deal exclusively with scientific and mathematical concepts}.
+
+\pagebreak
+
+\linespread{1.00}\selectfont
+\begin{lstlisting}{language=Ruby}
+  class Proc
+                              def in_discomfort?; :me; end
+                                                                  end
+  you_are = you = 
+     
+     ->(you) do
+         self.inspect until true
+           until nil
+                 break you
+                                                    end
+             puts you.in_discomfort?
+               you_are[you]
+                                                  end
+  
+  you[
+            you_are
+  ]
+  
+\end{lstlisting}
+\linespread{1.50}\selectfont
+\normalfont
+
+The poem above, written in Ruby by maca\footnote{\url{https://github.com/maca}} in 2011 and titled \lstinline{self_inspect.rb}, opens up an additional perspective in the relationship between aesthetics and expressivity in source code. Immediately, the layout of the poem is reminiscent both of obfuscated works and of free-verse poetry, such as E.E. Cummings' and Stéphane Mallarmé's works\footnote{Particularly \emph{Un coup de dés jamais n'abolira le hasard.}}. This particular layout highlights the ultimately arbitrary nature of whitespace use in source code formatting, \lstinline{self_inspect.rb}, breaking away from the implicit rhythm embraced in \emph{Black Perl}, linking the topics of the poem (introspection and \emph{unheimlichkeit}) to the abandonment of what are, ultimately, social convention, and reorganizing it to emphasize both keyword and topic, concentrated in the \lstinline{end} keyword, at the end of each line.
+
+The additional contributions of the poem however happen on an additional level, halfway between surface and deep structures of the program text. First, the writer makes additional use of the syntax of Ruby by involving data types. While \emph{Black Perl} remained evasive about the computer semantics of the variables, such semantics are coming here in the spotlight. The array and the symbol are used not just exclusively as syntactical necessities (since they don't fulfill any essential purpose), but rather as semantic ones. The use of \lstinline{:me} on line 2 is the only occurence of the first person pronouns, in a poem littered with references to \lstinline{you}. Symbols, unlike variable names, stand for variable or method names. While \lstinline{you} refers to a (hypothetical) defined value\footnote{A variable name is completed by a value and a memory addressed}, a symbol refers to a variable name, which is here undefined. The reference to a first-person, and it's ever elusiveness, is here communicated by the fact that it is expressed through this specific syntax, while the second-person is referred to through regular variable names. It is a subtlety which doesn't have it's equivalent in natural language, and a hint at a \emph{différance} between you and me.
+
+Continuing on this theme of the elusiveness of the self, maca plays with the ambiguity of the value of \lstinline{you}, until it is revealed to be an array. Basic data structures consisting of sequential values, representing \lstinline{you} as such reinforces the theme of the multiplicity of identities of the self. The discomfort of the poem's voice comes from, finally, from this lack of clear definition of who \lstinline{you} is. Using \lstinline{you_are} as an index to select an element of an array, subverts the role suggested by the declarative syntax of \emph{you are}. The index, here, doesn't define anything, but always refers to something, as expressed by the assignment of its value by the lambda expression \lstinline{->}, which further complicates the defintion of the self, returning the reverse expression \lstinline{you_are[you]}. While such an expression might have clear, even simple, semantics from a natural language perspective, knowledge of the programing language reveals such an assignment as added complexity.
+
+This brings us to the last feature exhibited by the poem: the execution of the procedure. When running the code, the result is an endless output of print statements of "me" (Ruby interprets the last statement of a program as a return value to be printed):
+
+\pagebreak
+\linespread{1.00}\selectfont
+\begin{lstlisting}
+...
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+Traceback (most recent call last):                 
+        11913: from poem.rb:16:in `<main>'
+        11912: from poem.rb:13:in `block in <main>'
+        11911: from poem.rb:13:in `block in <main>'
+        11910: from poem.rb:13:in `block in <main>'
+        11909: from poem.rb:13:in `block in <main>'
+        11908: from poem.rb:13:in `block in <main>'          
+        11907: from poem.rb:13:in `block in <main>'
+        11906: from poem.rb:13:in `block in <main>'                             
+         ... 11901 levels...                                                    
+            4: from poem.rb:13:in `block in <main>'                             
+            3: from poem.rb:13:in `block in <main>'                             
+            2: from poem.rb:12:in `block in <main>'                             
+            1: from poem.rb:12:in `puts'                                        
+poem.rb:12:in `puts': stack level too deep (SystemStackError)  
+\end{lstlisting}
+\linespread{1.50}\selectfont
+
+The computer interpretation of the poem provides an additional layer of meaning to our human interpretation. By calling and assigning the same values of \lstinline{you} and \lstinline{you_are} in a \lstinline{while} loop, the result is an endless succession of the literal interpretation of the symbol \lstinline{:me}. While we know that a symbol only refers to something \emph{else}, the concrete\footnote{Both in terms of actual, and in terms of concrete poetry} result is the insistence of the literal self. Such a repetition of what is at the same time a simple concept and a complex concept, represented in a concise source, and an extensive output, results in the impossibility of the machine to process the accumulation of these intertwined references of a first-person and a second-person, resulting in a stack overflow error.
+
+The added depth of meaning from this code poem departs from the syntactic and semantic interplay immediately visible when reading a source code, and execution provides a result whose meaning depends on the co-existence of both source and output. Beyond keywords, variable names and data structures, it is the procedure itself which gains expressive power: a poem about \emph{you} results in a humanly infinite, but hardware-bounded, series of \emph{me}\footnote{Another productive comparison could be found in Stein's work, \emph{Rose is a rose is a rose...}}.
+
+\begin{lstlisting}
+  also include a list of corpora  
+\end{lstlisting}
+
+\subsection{Aesthetics of source code poetry}
+
+The analysis of the program texts has highlighted some of the unique expressive features of source code to elicit an aesthetic experience. These can be expressed up into several concepts, which I introduce and qualify here.
+
+The first is \textbf{double-meaning} taken from Camille Paloque-Bergès's work on networked texts, and her analysis of code poetics\cite{paloque-berges_poetique_2009}. She defines it as the affordance provided by English-like syntax to represent keywords reserved for programming as natural-language signifiers. As we've seen in \emph{Black Perl}, the Perl functions can also be interpreted as regular words when the source is read as a human text. Starting from her analysis of \emph{codeworks}, a body of literature centered around a créole language halfway between humanspeak and computerspeak\footnote{See in particular the work of Alan Sondheim and mezangelle}, we can extend it into an aesthetically productive use of this overlap between syntactic realms. Previous research by Philippe Bootz has also highlighted the concept of the \emph{double-text}, a text which exists both in its prototypal, virtual, imagined form, under its source manifestation, and which exists as an instantiated, realized one\cite{bootz_problem_2005}. However, he asserts that, in its virtual form, "a work has no reality", because not realized. Here again, we meet again the dependence of the source on its realized output, a feature of generative computer poetry. As we've seen in the \lstinline{self_inspect.rb} poem, this work can very much exist in its prototypal form, and its output only provide an additional meaning, further qualifying the themes laid out in Ruby code beforehand. Indeed, the output of that poem would have next to no meaning if the source isn't first read and understood. For this double-meaning to take place, we can say that the sitation is inverted: the output becomes the virtual, imagined text, while the source is the concrete instantiation of the poem.
+
+Second, we draw on Geoff Cox and Alex McLean's concept of \textbf{double-coding}\cite{cox_speaking_2013}. According to them, double-coding "exemplifies the material aspects of code both on a functional and an expressive level" (p.9). Cox and McLean's work, in a deep exploration of source code as expressive power, focus on the political features of speaking through code and as a subversive praxis. What they focus on, then, are the broad social implications of written and spoken\footnote{Which they conflate with the practice of live-coding} code, rather than the specific features of what makes source code expressive in the first place. Double-coding nonetheless helps us identify the unique structural features of programming languages in order to support this expressivity. As we've briefly investigated, notably through the use of data types such as symbols and arrays in source code poetry, programming languages and their syntax hold within them a specific kind of semantics which hold, for those who are familiar with them and understand them, expressive power. The succint and relevant use of these linguistic features can thicken the meaning of a poem, bringing into the realm of the thinkable ways to approach metaphysical topics—such as the multiplicity and insistence of selves.
+
+Finally, the tight coupling of the source code and the executed result lines up with Ian Bogost's concept of \textbf{procedural rhetoric}\cite{bogost_rhetoric_2007}. Bogost presents procedures as a new means of persuasion, along verbal and visual rhetorics: the disposition and execution of processes afford, within the realm of videogames, particular stances which, in turn, influence a particular worldview, and makes arguments. Further work has shown that source code examination can already represent these procedures, and hence construct a potential dynamic world from the source\cite{tirrell_dumb_2012}. If procedures are expressive, if they can map unto particular versions of a world which the player/reader experiences\footnote{Versions of worlds can be explored further through Goodman's \emph{Ways of Worldmaking}}, then it follows that their textual description can also be persuasive, and elicit both rational and emotional reactions due to their depiction of higher-order concepts (e.g. consumption, urbanism, identity, morality). As its prototypal version, source code acts as the pre-requisite for such a rhetoric, and its expressive power also lies in the procedures it deploys (whether from value assignment or from its imperative forms). Manifested at the surface level through code, these procedures however run deeper into the conceptual structure of the code, conceptual structures which nonetheless can be echoed in the lived experiences of the reader.
+
+We've seen through this section on source code poetry that the poetic expressivity of these texts rely on several aesthetic mechanism, which can be combined for further expressive effect. From layout and syntactic obfuscation, to double-meaning through variables and procedure names, double-coding and the integration of data types and functional code into a program text and a rhetoric of procedures in their written form, all of these activate the connection between programming concepts and human concepts. The next section will explore this connection further, in terms of mental models, literary metaphors and cognitive structures.
+
+\section{Mental Models}
+
+\subsection{In literature}
 
 Essentially a lot of Lakoff, and then the advance into cognition and literature. I also need a source on traditional metaphors.
 
-https://issuu.com/instituteofnetworkcultures/docs/tod14-binnenwerk-def-pdf
+Also imagination
 
-\subsection{The place of imagination}
+In userland, metaphors also exist \url{https://issuu.com/instituteofnetworkcultures/docs/tod14-binnenwerk-def-pdf}
 
-Expand upon it both in lit and in code. How do they differ? Ambiguity
+\subsection{In Software}
 
-\subsection{Mental models}
+Warren McCulloch [1961]: What is a symbol, that intelligence may use it, and intelligence, that it may use a symbol? (from \url{https://www.cs.utexas.edu/~kuipers/readings/Newell+Simon-cacm-76.pdf}
+
+\subsection{Cognition and psychology}
 
 What is a mental model? What is knowledge?
 
@@ -154,6 +318,10 @@ First, by what makes a PL (a bit of history, a bit of theory)
 
 Second, what makes a good PL.
 
+Third, esoteric languages.
+
+Also, moods! Imperative programming creates a mood: \url{https://en.wikipedia.org/wiki/Imperative_mood}
+
 \subsection{Formal systems}
 
 Start by what is a formal system, then show two consequences: first, it fits with goodman and second, it actually seems to have trouble with meaning.
@@ -200,6 +368,6 @@ Close-reading of more source code.
 Gathering of more hacking resources and computer science/abstract resources.
 
 \bibliographystyle{unsrt}
-\bibliography{thesis}
+\bibliography{thesis.bib}
 
 \end{document}

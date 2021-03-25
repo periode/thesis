@@ -1,5 +1,13 @@
 # notes - fall 2020
 
+## introduction
+
+who is going to be impacted by this? how does it create discussion/connection?
+
+- literary theorists, for broadening scope and designers (as other functional artists)
+- practicioners, to deepen the understanding of the potential beauty of the work, and its use
+- for a more minute criticism to judge the quality of something (a book or a program)
+
 ## reading and writing
 
 there could be different beauties in writing and in reading (case of Mike's APL) - easier to read vs. easier to type
