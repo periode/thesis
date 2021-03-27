@@ -13,6 +13,43 @@ Please send your Abstract to: L.Veprek@ekwee.uni-muenchen.de
 
 The deadline for finished papers and contributions is January 30th, 2021.
 
+## edits
+
+"Elegant argumentation, concise linking of craft and programming. I recommend that this politically important argument of ethos and social embeddedness in a complex educational context should be made strong again at the end. If a cobbler makes bad shoes, the negative consequences are manageable and the capitalist commodity market "regulates" the quality issue. If a programmer programs in a cluelessly questionable or democratically dangerous, manipulative way, the consequences are incomparably more unmanageable and no one will regulate."
+
+"Deepen political perspective at the end"; "Expand conclusion"; "Conclusion is a bit well-behaved, could use more pepper; Flattens out at the end, may be a stronger conclusion".
+
+**conclusion**
+
+I added two sentences:
+
+"In this sense, conceptions of beauty and usability would gain from being extended from a short-term (readable and enjoyable by readers of the code) to a long-term one (legible and enjoyable by all). Our comparison with architecture is once again useful: while architects might hold themselves to the highest standard, external forces such as real-estate development, social segregation and budget stringency overwhelmingly thwart the attempts at creating beautiful spaces for all."
+
+and
+
+"As code becomes the defining medium of the early 21st century, it also reminds us of the possibility of the essential quality, and the positive social outcomes of a work well-done, rather than relying on the assumption that poor creation doesn’t affect anyone, since it is invisible to most."
+
+**references**
+
+- removed #7: black, guilds, two sources essentially making the same point
+- removed #11: diderot, more focused towards formalization of implicit knowledge, which is implied in the rest of the sentence.
+- removed #12: gordon, mechanical ideal: makes the same point as the following reference, but in broader terms.
+- removed #15: stephenson, in the beginning was the command line: a specific inquiry into a particular tool, which is also covered in Levy, Hackers.
+- removed #18: Djikstra is already cited in the more relevant "Craftsman or Scientist?"
+- removed #21: the psychological aspect of programming is on the edge of the subject
+- removed #23,24,25 since they are just offshoots of #22
+- removed #29: there is plenty of literature around the fact that CS education is trying to be formalized (i.e. the very existence of CS academic programs in universities across the world)
+- removed #30: the description of the activity is explicit enough
+- removed #33: understanding code snippets is perhaps a little too specific for the scope of the article
+- removed #35: since #34 also deals with it, except from a chinese perspective rather than a japanese perspective, and historically, japanese culture has tended to be influenced by mainland chinese, rather than the opposite way around.
+- removed #37 since it is about the educational value of software-reading, and the point on copyright is more important.
+- removed #38, since it was about backing up the 1980s date for the copyrightability of software
+- removed #39, since Gabriel's work is already mentioned, and touches upon the same topic
+- consolidated the various references to the same works (41-42)
+- removed #45: artificial intelligence is only a secondary point
+- removed #49: the reference to LISP might be a bit technical
+- removed #50: reference the environmental impact of computing, since it isn't the main point of the section
+
 ## thoughts
 
 code as the new craftsmanship (tying it with cultural histories)

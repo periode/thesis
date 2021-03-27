@@ -32,10 +32,6 @@ helps in setting the boundary between art and aesthetic.
 
 > A work of art has a character and a content, including formal (balance and unity), aesthetic (gracefulness, garrishness), expressive (melancholy, cheerfulness), representational (a woman, a data structure), semantic (meaning, metaphor), and symbolic (death, life, disintegration) (budd, aesthetic essence).
 
-look at a couple of code poems based on this.
-
-use goodman's languages to distinguish source poetry from regular code
-
 categories:
 
 Denotation is *standing for*, *symbolizing*.
