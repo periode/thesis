@@ -46,6 +46,8 @@ A depiction is a predicate: that is, it's not passive, it actively constitute it
 
 beardsley: metaphor can have a *designative role*. a metaphor gives two ideas instead of one (john crow ransom, p.263), which adds a "local texture of irrelevance", inserting a "foreign" component. it can also have a *connotative role*, where the meaning is peripheral.
 
+also beardsley: 'a literary work is a discourse in which an important part of the meaning is implicit’ -> true for source code poetry
+
 rich metaphor (source code poetry) vs. banal metaphor (softdev). the metaphor transforms a property into a sense. -> these are the metaphorical **degrees of meaning**.
 
 two metaphors:
