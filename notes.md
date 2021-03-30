@@ -8,6 +8,22 @@ who is going to be impacted by this? how does it create discussion/connection?
 - practicioners, to deepen the understanding of the potential beauty of the work, and its use
 - for a more minute criticism to judge the quality of something (a book or a program)
 
+## to read
+
+[conceptual blending, form and meaning](https://tecfa.unige.ch/tecfa/maltt/cofor-1/textes/Fauconnier-Turner03.pdf)
+
+[metaphors and the main problems of hermeneutics](https://aaaaarg.fail/upload/paul-ricoeur-metaphor-and-the-main-problem-of-hermeneutics.pdf)
+
+[the metaphorical process as cognition, imagination and feeling](https://aaaaarg.fail/upload/paul-ricoeur-the-metaphorical-process-as-cognition-imagination-and-feeling.pdf)
+
+[towards a model of text comprehension and production](https://psycnet.apa.org/record/1979-22783-001)
+
+[strategies of discourse comprehension](http://discourses.org/OldBooks/Teun%20A%20van%20Dijk%20&%20Walter%20Kintsch%20-%20Strategies%20of%20Discourse%20Comprehension.pdf)
+
+[mit study on cognition](https://elifesciences.org/articles/58906)
+
+[on knowldege in architecture and science](http://anzasca.net/wp-content/uploads/2014/08/ANZASCA-1998-Downton-Knowledge.pdf)
+
 ## reading and writing
 
 there could be different beauties in writing and in reading (case of Mike's APL) - easier to read vs. easier to type

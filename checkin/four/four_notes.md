@@ -1,102 +1,31 @@
 # March 2021
 
-## from the previous doc
-
-The immediate next aspect that I will be focusing on is therefore to highlight the aesthetic criteria which support two other communities of practice: **hackers** and **artists**.
-
-connect to pineiro and his aesthetics: i will compare his approach to mine, and that we've find is quite similar. particularly interesting (and to deal w/ last section on aesthetics) is his idea of public and private aesthetics.
-
-## the overarching point
-
-aesthetics matter, even in such a highly formal, syntactical, autotelic system as a computer
-
-how does it contribute to the world? by showing that there is no separate domain of aesthetics, but also that they're not essential, but a mark of high-quality
-
-## 0 - main points
-
-first i want to touch upon cursory work in source code poetry (paloque berges), and connect that to metaphor and literary tradition. then i want to talk about hacking (demoscene, folies, one-liners), and then connect that lack of aesthetic concern (qualify! different kinds of aesthetics) to the question of "what is there to understand" and therefore the question of **semantics**. i will close by exploring the different concepts in programming that are hard to communicate.
-
-**CONCEPT**: semantic compression
-
-**CONCEPT**: spatio-visual problem solving
-
-**CONCEPT**: concepts to communicate? the stream? the map?
-
-this is not so much about code aligning with standards of literature, but maybe aligning to the standards of both epistemology and architecture, *architectural knowledge*
-
-## source code poems
-
-Close-reading of source code poems?
-
-helps in setting the boundary between art and aesthetic.
-
-> A work of art has a character and a content, including formal (balance and unity), aesthetic (gracefulness, garrishness), expressive (melancholy, cheerfulness), representational (a woman, a data structure), semantic (meaning, metaphor), and symbolic (death, life, disintegration) (budd, aesthetic essence).
-
-categories:
-
-Denotation is *standing for*, *symbolizing*.
-
-A depiction is *system-relative*, more specific as to its target. Depiction is generative: interpreting one picture allows us to interpret others. allows us to interpret and understand *foreign objects*. (like the stream)
-
-A depiction is a predicate: that is, it's not passive, it actively constitute its subject/target.
-
-**double-coding in art code is a kind of metaphor, closer to litterature than in other code texts**.
-
-## the place of metaphor
-
-beardsley: metaphor can have a *designative role*. a metaphor gives two ideas instead of one (john crow ransom, p.263), which adds a "local texture of irrelevance", inserting a "foreign" component. it can also have a *connotative role*, where the meaning is peripheral.
-
-also beardsley: 'a literary work is a discourse in which an important part of the meaning is implicit’ -> true for source code poetry
-
-rich metaphor (source code poetry) vs. banal metaphor (softdev). the metaphor transforms a property into a sense. -> these are the metaphorical **degrees of meaning**.
-
-two metaphors:
-
-- **procedural** representation (algorithm based)
-- **declarative** representation (data-structure based)
-
-the question of operational meaning vs. denotational meaning should be explored. what means what to the computer?
-
-touch on the relationship between abstraction and metaphor (does metaphor require abstraction??). in terms of mental models, metaphors relate to schemas: **the activity of designing programs consists in activating schemas** (detienne)
-
-> [La littérature] permet de penser des choses qui sont difficile à penser autrement. p. 17 (terrence cave)
-
-elle est un objet de connaissance, aussi bien *sensuel* que *conceptuel*, with an inter-relation between rational thought and imaginative thought. (+ daily life aka reader's semantic field)
-
-en gros, la littérature décuple notre imaginaire, en particulier en recréant des sensations par le texte. mais quid? quand il s'agit d'un matériau qui n'a pas de sensations
-
-**CONNECTION TO NEXT PART**: metaphores are (a sort of) architecture of thought
-
-**question du caché et du manifeste dans le code?**
-
-la programmation est fiction (elle n'existe pas, ontologiquement, c'est l'expérience d'imaginer des contenus dont on n'est pas la source, et d'être—plus ou moins guidé—dans son imagination), et non-fiction car elle est essentielle au problèmes concrets: il est *approprié* de la traiter des deux manières, possiblement simultanément. c'est en cela que **le cadre de la programmation** diffère du cadre fictionnel. c'est tout de même un cadre pragmatique de traitement des représentations, au sens où il impose une étiquette cognitive (manière de penser), émotive et pratique. (pas certain de l'émotif, pour la prog).
-
 ## the connection to architecture (and style/structure)
 
-sir henry wotton on architecture: "commodity, firmness and delight", which could also be linked to programming. (in beardsley, aesthetic experience)
 
-one of beardsley's requirements for the aesthetic is "felt freedom" which matches the "feeling alive" sentiment of alexander, which occurs in a good place?
+Interestingly, beauty is never a factor, so it's going to be tricky to connect it back to aesthetics—basically the idea is that it can be a hint (e.g. if you have a gobal variable in a message-passing architecture, that should be a trigger that something ugly is going to come)
+
+TURNS OUT MAYBE WE DON'T SEE PATTERNS, BUT WE COULD APPLY THOSE PATTERNS TO LANGUAGES THEMSELVES
 
 ---
 
 gabriel: patterns of software / search for beauty
 
-Beauty is involved in moving from *disorganized complexity* towards *organized complexity*.
-
-Alexander's successive conceptions of beauty:
-
-- appropriateness
-- rightness to fit
-- not simple
-- wholeness (which comes before)
-
 "deep interlock and ambiguity create beauty" -> how much does that apply?
-
-the approach is similar, because it's about "the conditions" of the beautiful, and not "the essence" of the beautiful
 
 He then discovers the *"paradoxical interplay between symmetry and asymmetry"* (between simplicty and complexity).
 
 **Simplicity is not the geometrically banal.** Then Gabriel's addition is the focus on *evocative power*, on the possibility of signifying something else.
+
+---
+
+Patterns as Software Design Cannon, Paul Taylor: "The  time  and  effort  invested  in mastering software design alternatives is generally appreciated, but by contrast, architects of the physical worldassume that they can understand and digest canonical works from two-dimensional magazine images and brief commentaries from eloquent observers."
+
+[mofos on stackoverflow:](https://stackoverflow.com/questions/458242/quality-without-a-name-qwan-examples) 
+
+If we are talking about design, then the ability to tweak, expand or redefine the original behaviour with minimal changes would be something that I find appealing. Some, however, would claim that this quality attribute has a name: maintainability.
+
+Still, from a pure abstract perspective of software architecture, I would say that the ability to easily invoke in your mind an isomorphism between the concrete architecture and the intended domain/purpose, is a quality without name.
 
 ---
 
@@ -111,8 +40,6 @@ a class within a class [link](https://blog.royalsloth.eu/posts/the-complexity-th
 *bad patterns make possible the kind of actions which result in bad patterns?*
 
 ---
-
-detienne: **beacons** as psychological patterns? it's about direction (roles!) rather than inhabiting, though.
 
 patterns in arch: **how is surface structure transformed into deep structure?**
 
@@ -290,7 +217,12 @@ software is a model, a medium of thought, an environment (Mahoney, 2011)
 
 in order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97)
 
-the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations)s
+the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations)
+
+
+---
+
+Another example is thread concurrency. The book on parallel programming mentions an example of parallel thread processing which looks beautiful but is ugly on the inside: https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook-e2.pdf p. 105
 
 ## additional aesthetics
 
