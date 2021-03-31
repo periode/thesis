@@ -234,6 +234,8 @@ Finally, the tight coupling of the source code and the executed result brings up
 
 We've seen through this section that the poetic expressivity of source code poems rely on several aesthetic mechanisms, which can be combined for further expressive effect. From layout and syntactic obfuscation, to double-meaning through variables and procedure names, double-coding and the integration of data types and functional code into a program text and a rhetoric of procedures in their written form, all of these activate the connection between programming concepts and human concepts to bring the unthinkable within the reach of the thinkable. The next section will explore this connection further, in terms of mental models, literary metaphors and cognitive structures.
 
+\pagebreak
+
 \section{Metaphors and Mental Models}
 
 This section focuses on metaphors and mental models in both programming and literature, and how they're related to understanding and cognition, both in broad terms and in specific texts. The evokative power of the excerpts seen above make ample use of the multiple facets of understanding, switching from one frame to the other. This switch relates to the most commonly used definition of metaphor: that of labeling one thing in terms of another, thereby granting additional meaning to the subject at hand. Our approach  here will bypass some of the more minute distinctions made between metonymy (in which the two things mentioned are already conceptually closely related), comparison (explicitly assessing differences and similarities between two things, often from a value-based perspective) and synechdoche (representing a whole by a subset), as they all relate to a larger, more contemporary definition of the concept.
@@ -333,6 +335,8 @@ Going back to research in contemporary literary studies can start laying out thr
 Programming is then fiction, in that the pinpointing of its source of existence is difficult, and in that it affords the experience of imagining contents of which one is not the source, and of which the certainty of isn't defined. Furthermore, both programming and fiction suggest surface-level guiding points helping the process of constructing mental models and conceptual representations. It is also non-fiction, in that it deals with concrete issues and problems (more often than not, a pestering bug), and that it provides a pragmatic frame for processing representations, in which assumptions stemming from burgeoning mental models can be easily verified or falsified. It might then be appropriate to treat it as such, simultaneously fiction and non-fiction.
 
 To conclude this section, then, we can turn to Jerome Bruner, who considers that art allows us to \emph{"reading in others' minds"}, to anticipate what a writer has been intending for us to understand through their text, eithe program or narrative. This intent component relates to the interpretation issue mentioned above: the interpretation of the machine is different from the interpretation of the human, and therefore what also needs to be intepreted is the intent of the author. Reading is then akin to constructing a \emph{cognitive cartography}, allowing for an experience to be made intelligible, sensible. The repeated implication of spatial and visual components of metaphors and mental models allows us to consider metaphors as an architecture of thought\cite{forsythe_cathedrals_1986}. The next section is therefore dedicated to examining more closely the parallels between software architecture and physical architecture, and how the aesthetic standards of the latter could apply to the aesthetic standards of the former.
+
+\pagebreak
 
 \section{Architecture}
 
@@ -434,54 +438,73 @@ Finally, an \emph{eternal} program relates to the timelessness mentioned in the 
 
 Alexander did conduct empirical research to find examples of such qualities, in a study led at the University of Berkley which resulted in his most popular book, \emph{A Pattern Language}\cite{alexander_pattern_1977}. In it, he lists out 253 patterns which, he claims, form a language, akin to a Chomskian generative grammar, re-usable and extendable in a very concrete way. This study has had a significant impact on the computer science community, to which we turn to next.
 
+\subsection{Patterns in software}
+
+\emph{A Pattern Language} kickstarted a whole field of research based around this idea of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, \emph{which expresses a relation between a certain context, a problem, and a solution.}. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
+
+Besides the theoretical similarities between software and architecture mentioned above, it is the lack of learning from practical successes and failures in the field which prompted interest in Alexander's work, along with the development of Object-Oriented Programming, first through the Smalltalk language, then with C++, \footnote{today most of the programming languages allow for some object-oriented paradigm}. The similarity between a pattern and an object, and their promise of using them which would lead to better results on multiple dimensions, made it very attractive to software developers. Writing in \emph{Patterns of Software} (with a foreword by Alexander), Richard P. Gabriel illustrates that point:
+
+\begin{quote}
+  The promise of object-oriented programming—and of programming languages themselves—has yet to be fulfilled. That promise is to make plain to computers and to other programmers the communication of the computational intentions of a programmer or a team of programmers, throughout the long and change-plagued life of the program. The failure of programming languages to do this is the result of a variety of failures of some of us as researchers and the rest of us as practitioners to take seriously the needs of people in programming rather than the needs of the computer and the compiler writer.\cite{gabriel_patterns_1998}
+\end{quote}
+
+The real issue raised here in programming seems to be, again, not to speak to the machine, but to speak to other humans. This complexity of communication, had always asked to be solved, perhaps at this point in the form of object-orientation. Understanding software is hard. Creating, identifying, and formalizing patterns into re-usable solutions turns out to be at least as hard\cite{taylor_patterns_2001}. Part of this comes from a lack of visibility of code bases (most of them being closed source), but also from the series of various economic and time-sensitive constraints to which developers are subject to (and echoes those in the field of architecture), and which result in moving from making something great to making something good enough to ship. The promise of software patterns seemed to offer a way out by—laboriously—codifying know-how.
+
+Throughout his work, Gabriel weaves parallels between his experience as a software developer and as a poetry writer, drawing concepts from the latter field into the former, and inspecting it through the lens of pattern languages. Two concepts in particular are worth examining a bit further: \emph{compression} and \emph{habitability}.
+
+Compression, in narrative and poetic text, is the process through which a word is given additional meaning through the rest of the sentence. In a sentence such as "\emph{Last night I dreamt I went to Manderley again.}"\footnote{From Daphne DuMaurier, \emph{Rebecca}.}, the reader is unlikely to be familiar with the exact meaning of \emph{Manderley}, since this is the first sentence of the novel. However, we can infer some of the properties of Manderley from the rest of the sentence: it is most likely a place, and it most likely had something to do with the narrator's past, since it is being returned to. A similar phenomenon happens in source code, in which the meaning of a particular expression or statement can be derived from itself, or from a larger context. In object-oriented programming, the process of inheritance across classes allows for the meaning of a particular subclass to be mostly defined in terms of the fields and methods if its subclasses—its meaning is compressed by relying on a semantic environment, which might or not be immediately visible. This, Gabriel says, induces a tension between extendability (to create a new subclass, one must only extend the parent, and only add the differentiating aspects) and context-awareness (one has to keep in mind the whole chain of properties in order to know exactly what the definition of an interface that is being extended really is). Resolving such a tension, by including enough information to hint at the context, while not over-reaching into verbosity, is a thin line of being self-explanatory without being verbose.
+
+This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is 
+
+\begin{quote}
+  that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it.\cite{gabriel_patterns_1998}\footnote{He adds that this isn't so much an issue if one is using a powerful and efficient IDE—which opens up the question of the role of tools and technical mediators in the reading and writing process...}
+\end{quote}
+
+Finally, Gabriel, writing in 1998, mentions that compression isn't so much a problem in poetry since, ultimately, the definitions of each words aren't quite limited to the poet's own mind but, as we've seen, also existing in the broad conceptual structures which readers hold. However, since all aspects of a program is always by definition explicitly defined, programmers thus have the ultimate say on the definition of most of the data and functions described in code. Compression doesn't work as well because the reader cannot assume anything that is being mentioned in the code (and defined elsewhere), without risking the (error-raising) consequence of being wrong.
+
+His particular assumption that others will want to modify and extend source code is one that is influenced by his background as a commercial developer. Other pieces of code might just be satisfying in being read or deciphered (as we've seen in source code poetry) but this assumption of interaction with the code brings in another concept, that of \emph{habitability}. In his terms, it is
+
+\begin{quote}
+  the characteristic of source code that enables programmers, coders, bug-fixers, and people coming to the code later in its life to understand its construction and intentions and to change it comfortably and confidently.\cite{gabriel_patterns_1998}
+\end{quote}
+
+In a sense, then, beautiful code is also code that is clear enough to inform action and, well-organized enough to warrant actually taking that action\footnote{Recall the developer who mentioned that beautiful code he saw was code which clearly separated hardware dependent sections from hardware independent sections.}. It relates to Alexander's property of \emph{comfort}, by affording involvement instead of estrangement. A specific instance of habitability, in software patterns, might be difficult to pinpoint, but can pop up in some cases: a beautiful commit is a commit which adds a significant feature, and yet only change the lines of the code that are within well-defined boundaries (e.g. a single function), leaving the rest of the codebase untouched, and yet affecting it in a fundamental way.
+
+Still, such a feature of habitability, of supporting life, doesn't specify at all what it could, or should, look like. Rather, we get from Alexander a negative definition:
+
+\begin{quote}
+  The details of a building cannot be made alive when they are made from modular parts.... And for the same reason, the details of a building cannot be made alive when they are drawn at a drawing board.\cite{alexander_timeless_1979}
+\end{quote}
+
+If modularity itself is at odds with making good (software) constructions, then its implementation under the terms of an object-oriented programming paradigm becomes complicated.
+
+Indeed, the technical formalization of the field came with the release of the \emph{Design Patterns: Elements of Reusable Object-Oriented Software} book, which lists 23 design patterns implementable in software\cite{gamma_design_1994}. Its influence (in terms of copies sold, and in terms of papers, conferences and working groups created in its wake) is undeniable, with Alexander himself giving a keynote address at the ACM two years after the release. It has, however, been met with some criticism.
+
+Some of this criticism is that patterns are "external", they look like they come from somewhere else, and are not adapted to the code. In this sense, they join Alexander in being wary of constructions which do not integrate fully within their environments, which do not, in an organic sense, allow for a \emph{piecemeal growth}\footnote{Addressing this concern, the failure of strict top-down hierarchies in software development resulted in the agile methodology for business teams}. If patterns express relations between contexts, problems and solutions, then it seems that one of the main complaints of developers looking at their code and seeing chunks of foreign code dumped in the middle to fix some generic problem\footnote{The example of the best pattern to retro-fit an air conditionner on a building would be a non-problem if the air-conditionning had been designed in from the get-go \url{https://wiki.c2.com/?PatternsAreNotTheLesserOfTwoEvils}.}, is the lack of understanding of \emph{context} offered by those proposed solutions. In this, blindly applying patterns from a textbook might be a solution, but it's not an elegant one.
+
+The other criticism is that software patterns are often workarounds for features that a particular programming language doesn't allow from the get-go, or offer more convoluted implementations when written in Smalltalk and C++ than, for instance, Lisp\footnote{Peter Norvig highlights that most patterns in the original book have much simpler implementations in Lisp, see: url{http://www.norvig.com/design-patterns/design-patterns.pdf}}. One aspect that has been eluded so far, and perhaps the most inescapable context of all, is the programming language used. One doesn't write Ruby like one writes Java(tm), or C++, and certainly not Lisp.
+
+\vspace*{1\baselineskip}
+\centerline{\rule{0.3334\linewidth}{.4pt}}
+\vspace*{1\baselineskip}
+
+To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that \emph{form should follow function}, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow: \url{https://stackoverflow.com/questions/458242/quality-without-a-name-qwan-examples}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it \emph{habitable}. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. Circling back to our investigation of software as craftsmanship, we now turn to examine more closely both the tools and the material of programmers: programming languages.
+
 \vspace*{4\baselineskip}
 \centerline{\rule{0.3334\linewidth}{.4pt}}
 
 \pagebreak
 
-\subsection{Applying architectural beauty in software}
+\section{Programming languages}
 
-\begin{itemize}
-  \item Focus on Gabriel's work, his connection to poetry, and also looking at how it applies well (softdev), and not so well (code poetry, since the functionality of code poems isn't quite so obvious as the functional use of a building, or of a program)
-  \item Software patters as a design cannon, including the ambivalence of \emph{style}
-  \item Design patterns: one subset of these is the aesthetic, and the one I focus on. Not all patterns are beautiful, but according to Alexander, they help make something "good" (intrinsically linked to the beautiful, in the sense that aesthetics might be a condition for making something good).
-\end{itemize}
+Programming languages have so far been set aside when examining which sensual aspects of source code resulted in what could be deemed a "beautiful" program text. Since we're focusing on semantics (deep-structure) represented through syntax (surface-structure), and since programming languages are in essence the frame for defining legal syntax, this section examines the influence of programming languages in the aesthetic features of source code. To do, we first go over a broad description of programming languages, concluding on what makes a programming language expressive. Second, we relate their formal aspect to Goodman's \emph{Languages of Art}, and assess whether or not they are a good fit as an artistic, expressive system. Third, we touch upon the problem of semantics in programming languages, and how they might differ from a human understanding of semantics. Finally, we highlight a couple of computing-specific concepts which are made explicit by programming language research, and further define the kinds of concepts that are defined and manipulated when writing code.
 
-Transition with the case of the case of hacking: code that is not meant to be read.
-
-\section{Hacking}
-
-What beauty is there in machine-enforced inscrutability? Particularly, this redirects to the understanding of the machine (e.g. trying to reduce character counts for one-liners).
-
-\subsection{History of hacking}
-
-Starting with a disambiguation of the term, with a focus on the specific subversion of the machine. Connection to obfuscated code, but with the distinction made that this obfuscation isn't on purpose, but rather due to machine constraints.
-
-\subsection{Unreadability and aesthetics}
-
-\begin{itemize}
-  \item Example of the one-liners (trying to compress as much as possible, aspect of social competition of who can write it in the densest way)
-  \item Example of the demoscene (trying to extract as much as possible from the machine, along with dual presentation of the work: output, and code walkthrough)
-\end{itemize}
-
-This shows in an extreme way that you need a degree of expert knowledge in order to appreciate it—in this sense, aesthetics are also dependent on pre-existing knowledge.
-
-\subsection{Hacking and/or the lack of beauty}
-
-Starting from the limited number examples I have found for beauty in hacking, I inquire as to why is there no beauty (or not as much) in hacking? Does there need to be beauty anywhere, or does function not need it? Does it just never need to be read, or returned to? Is a hack, by definition, idiosyncratic, and thus only has its own aesthetic standard?
-
-There doesn't seem to be so many instances of individuals saying "look, this part is beautiful" because it's so focused on what the machine understands; the real beauty is how they make the humans \emph{realize} what the machine \emph{really} understands.
-
-\subsection{Computation}
-
-What is a computer? What is computation? There are differring approaches, and this allows me to highlight the one in this thesis (that of the formal, symbolic system). Cantell-Smith is quite relevant here, since he explain that things are complicated to explain, but nonetheless intuitive to any serious practitioner of CS.
-
-\subsection{Programming languages}
+All in all, this will allow us to highlight how programming languages engage with the problem of aesthetics and understanding from a systemic point of view, and how they act as an interface between human and machine understanding.
 
 \begin{itemize}
   \item What makes a PL (from historical and theoretical perspectives)
   \item Touching on programming paradigms as moods.
-  \item What makes a \emph{good} PL, with a sub-section on idiomaticity and how it can resolve the tension between the specific and the universal.
+  \item What makes an expressive and\emph{good} PL, with a sub-section on idiomaticity and how it can resolve the tension between the specific and the universal.
   \item Esoteric languages
 \end{itemize}
 
@@ -512,6 +535,35 @@ This sections aims at answering the question: under what form do semantics exist
 
 And so this is why we need aesthetics: to communicate both easy and complicated things, to reduce friction as much as possible. Example: Alan Perlis's Epigrams are poem-like sentences.
 
+\pagebreak
+
+\section{Hacking}
+
+What beauty is there in machine-enforced inscrutability? Particularly, this redirects to the understanding of the machine (e.g. trying to reduce character counts for one-liners).
+
+\subsection{History of hacking}
+
+Starting with a disambiguation of the term, with a focus on the specific subversion of the machine. Connection to obfuscated code, but with the distinction made that this obfuscation isn't on purpose, but rather due to machine constraints.
+
+\subsection{Unreadability and aesthetics}
+
+\begin{itemize}
+  \item Example of the one-liners (trying to compress as much as possible, aspect of social competition of who can write it in the densest way)
+  \item Example of the demoscene (trying to extract as much as possible from the machine, along with dual presentation of the work: output, and code walkthrough)
+\end{itemize}
+
+This shows in an extreme way that you need a degree of expert knowledge in order to appreciate it—in this sense, aesthetics are also dependent on pre-existing knowledge.
+
+\subsection{Hacking and/or the lack of beauty}
+
+Starting from the limited number examples I have found for beauty in hacking, I inquire as to why is there no beauty (or not as much) in hacking? Does there need to be beauty anywhere, or does function not need it? Does it just never need to be read, or returned to? Is a hack, by definition, idiosyncratic, and thus only has its own aesthetic standard?
+
+There doesn't seem to be so many instances of individuals saying "look, this part is beautiful" because it's so focused on what the machine understands; the real beauty is how they make the humans \emph{realize} what the machine \emph{really} understands.
+
+\subsection{Computation}
+
+What is a computer? What is computation? There are differring approaches, and this allows me to highlight the one in this thesis (that of the formal, symbolic system). Cantell-Smith is quite relevant here, since he explain that things are complicated to explain, but nonetheless intuitive to any serious practitioner of CS.
+
 \section{Conclusion}
 
 \begin{itemize}
@@ -531,6 +583,7 @@ And so this is why we need aesthetics: to communicate both easy and complicated 
   \item Gathering of more hacking program texts and computer science/research program texts.
   \item More rigorously tie in the analysis of source code poems more tightly with aesthetics (denotation, depictions, labelling, etc.)
   \item Actually answer the question of whether or not computers "care" about aesthetics.
+  \item Software patters as a design cannon, including the ambivalence of \emph{style}. And style in general?
 \end{itemize}
 
 \bibliographystyle{unsrt}

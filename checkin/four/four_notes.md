@@ -11,10 +11,6 @@ TURNS OUT MAYBE WE DON'T SEE PATTERNS, BUT WE COULD APPLY THOSE PATTERNS TO LANG
 
 gabriel: patterns of software / search for beauty
 
-"deep interlock and ambiguity create beauty" -> how much does that apply?
-
-He then discovers the *"paradoxical interplay between symmetry and asymmetry"* (between simplicty and complexity).
-
 **Simplicity is not the geometrically banal.** Then Gabriel's addition is the focus on *evocative power*, on the possibility of signifying something else.
 
 ---
@@ -29,12 +25,6 @@ Still, from a pure abstract perspective of software architecture, I would say th
 
 ---
 
-pineiro:
-
-coming back to the "what it does", there can be a parallel seen between the aesthetic aspect of software and its public aspect? re-use -> zusammenleben -> *habitability*
-
----
-
 a class within a class [link](https://blog.royalsloth.eu/posts/the-complexity-that-lives-in-the-gui/) is a visual/spatio-mental pattern which means "complexity", "unmaintainability", "unsustainability"
 
 *bad patterns make possible the kind of actions which result in bad patterns?*
@@ -46,6 +36,8 @@ patterns in arch: **how is surface structure transformed into deep structure?**
 ## hacking
 
 beauty in inscrutability?
+
+CCC: "you can create art and beauty on a computer"
 
 Hackers -> this redirects to the understanding of the machine (e.g. trying to reduce character counts for one-liners)
 
