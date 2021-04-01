@@ -69,7 +69,6 @@ Abstraction in programming is the process of identifying common patterns that ha
 ----
 
 **Compression** is the characteristic of a piece of text that the meaning of any part of it is “larger” than that particular piece has by itself. This characteristic is created by a rich context, with each part of the text drawing on that context—each word draws part of its meaning from its surroundings.
-**Habitability** is the characteristic of source code that enables programmers, coders, bug-fixers, and people coming to the code later in its life to understand its construction and intentions, and to change it comfortably and confidently. 
 **Piecemeal growth** is the process of design and implementation in which software is embellished, modified, reduced, enlarged, and improved through a process of repair rather than of replacement
 
 ## meeting with advisors

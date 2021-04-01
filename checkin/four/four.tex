@@ -65,7 +65,7 @@ These works and their authors build on a longer tradition of rule-based composit
 
 The aspects of electronic literature examined so far still require computer execution in order to be fully realized as aesthetic experiences. We now turn to these works which still function as works of explicit aesthetic value primarily through the reading of their source. We will examine obfuscated code and code poetry (both at the surface level and at the deep level), to finally delimitate our corpus around the last one.
 
-One of the earliest instances of computer source written exclusively to elicit a human emotional reaction, rather than fulfill any immediate, practical function, is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembler. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document.
+One of the earliest instances of computer source written exclusively to elicit a human emotional reaction, rather than fulfill any immediate, practical function, is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document.
 
 \begin{lstlisting}{caption="AGC source code, LUNAR_LANDING_GUIDANCE_EQUATIONS, 1969"}
 663  STODL  CG
@@ -296,7 +296,7 @@ The work of metaphors takes on an additional dimension when we introduce the con
 
 Moving away from userland, in which most of these metaphors exist, we now turn to examine the kinds of metaphors that are used by programmers and computer scientists themselves. Since the sensual reality of the computer is that it is a high-frequency vibration of electricity, one of the first steps taken to productively engage with computers is that of abstraction. The word computer itself can be considered as an abstraction: originally used to designate the women manually inputting the algorithms in room-scale mainframes, the distinction between the machine and its operator was considered to be unnecessary. The relation between metaphor and abstraction is a complex one, but we can say that metaphorical thought requires abstraction, and that the process of abstraction ultimately implies designating one thing by the name of another (a woman by a machine's, or a machine by a woman's), being able to use it interchangeably, and therefore lowering the cognitive friction inherent to the process of specification, freeing up mental resources to focus on the problem at hand.
 
-This need to get away from the specificities of the machines has been one of the essential drives in the development of programming languages. Since we cannot easily and intuitively deal with binary notation to represent complex concepts, programming helps us deal with this hurdle by presenting things in terms of other things. Most fundamentally, we represent binary signs in terms of English language (e.g. from binary to Assembler). This is, again, by no means a metaphorical process, but rather an encoding process, in which tokens are being separated and parsed into specific values, which are then processed by the CPU as binary signs. Still, this abstraction layer offered by programming languages allowed us to focus on \emph{what} we want to do, rather than on \emph{how} to do it. The metaphorical aspect comes in when the issue of interpretation arises, as the possibility to deal with more complex concepts required us to grasp them in a non-rigorous way, one which would have a one-to-one mapping between concepts. Allen Newell and Herbert A. Simon, in their 1975 Turing Award lecture, offer a good example of symbolic (i.e. conceptual) manipulation relates inherently to understanding and interpretation:
+This need to get away from the specificities of the machines has been one of the essential drives in the development of programming languages. Since we cannot easily and intuitively deal with binary notation to represent complex concepts, programming helps us deal with this hurdle by presenting things in terms of other things. Most fundamentally, we represent binary signs in terms of English language (e.g. from binary to Assembly). This is, again, by no means a metaphorical process, but rather an encoding process, in which tokens are being separated and parsed into specific values, which are then processed by the CPU as binary signs. Still, this abstraction layer offered by programming languages allowed us to focus on \emph{what} we want to do, rather than on \emph{how} to do it. The metaphorical aspect comes in when the issue of interpretation arises, as the possibility to deal with more complex concepts required us to grasp them in a non-rigorous way, one which would have a one-to-one mapping between concepts. Allen Newell and Herbert A. Simon, in their 1975 Turing Award lecture, offer a good example of symbolic (i.e. conceptual) manipulation relates inherently to understanding and interpretation:
 
 \begin{quote}
   In none of [Turing and Church's] systems is there, on the surface, a concept of the symbol as something that \emph{designates}.
@@ -490,9 +490,6 @@ The other criticism is that software patterns are often workarounds for features
 
 To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that \emph{form should follow function}, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow: \url{https://stackoverflow.com/questions/458242/quality-without-a-name-qwan-examples}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it \emph{habitable}. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. Circling back to our investigation of software as craftsmanship, we now turn to examine more closely both the tools and the material of programmers: programming languages.
 
-\vspace*{4\baselineskip}
-\centerline{\rule{0.3334\linewidth}{.4pt}}
-
 \pagebreak
 
 \section{Programming languages}
@@ -501,25 +498,138 @@ Programming languages have so far been set aside when examining which sensual as
 
 All in all, this will allow us to highlight how programming languages engage with the problem of aesthetics and understanding from a systemic point of view, and how they act as an interface between human and machine understanding.
 
+\subsection{Theoretical programming languages}
+
+A programming language is a strictly-defined set of syntactic rules and symbols for describing instructions to be executed by the processor. The history of programming languages is, amongst others, the history of decoupling the means of creating softwarefrom hardware. The earliest programming languages were embedded in hardware itself, such as piano rolls and punched cards for Jacquard looms. Similarly, the first electric computers then required manual re-wiring of the mainframes in order to implement any change in the algorithm being computed, which then gave way to the stack of cards fed into the machine (similar to those used to programmed the Apollo landing unit whose source code we've seen above). It is with the shift to the stored-program model, at the dawn of the 1950s, that the programs could be written, stored, recalled and executed in their electro(-mecha)nical form, essentially freeing the software result from any immediately material representation.
+
+This engineering tendency to separate software from hardware saw a parallel in the development of programming languages themselves. Based on Turing's design, any instruction processed by the machine, needs to, ultimately, execute one of the built-in (literally, hardwired) instructions of the processor. Also called \emph{machine language}, these instructions set describe the specific implementation of the most common operations executed by a computer (e.g. \lstinline{add, move, read, load}, etc.). While these are represented as binary numbers to the processing unit (as is everything else), some of the first programming languages did not require the writer to write those numbers themselves. Instead, they could use a family of languages called Assembly, which are instructions whose syntax is loosely based on English and translates in turn to machine instructions. Considered today as some of the most low-level code one can write, Assembly languages were machine-dependent, featuring a one-to-one translation from English keywords to the kind of instruction sets they were programmed to generate. As such, a program written on a particular model of a computer could not be executed without any modifications on a another machine.
+
+The first widely acknoweldged high-level language which allowed for a complete decoupling of hardware and software was FORTRAN\footnote{With Plankalkül, Short Code and Autocode as partial proposals before it.}. At this point, programmers did not need to care about the specifics of the machine that they were running on anymore. Moving away from "hand-crafted" Assembly code, FORTRAN, and the subsquent COBOL, Lisp and ALGOL 58 also started being concerned with the specific definition of their syntax in a non-ambiguous manner. Using BNF notation, it became possible to formalize their syntactic rules in order to prevent any unxepected behaviour and support rigorous reasoning for the implementation and research of current and subsequent languages. With such specifications, and with the decoupling from hardware, programming languages became, on paper, \emph{context-free}.
+
+The context-free grammatical basis for programming allowed for the further development of compilers and interpreters. These two are themselves binary programs which, given an syntactically-valid program text, output their machine code representation, a representation which can then be executed by the CPU\footnote{The main difference between a compiler and an interpreter is that the compiler parses the whole program text as once, resulting in a binary object, while interpreters parse only one line at a time, which is then immediately executed}. A defining aspect of programming languages henceforth is their theoretical \emph{lack of ambiguity}, both in their roots in formal mathematic notation (for instance, Plankalkül was based on Frege's \emph{Begriffschrift}) and their physical representation (punch cards are essentially discreete—hole or no hole).
+
+Nowadays, most programming languages are Turing-complete: their syntax can implement a Turing machine and therefore simulate any possible computational aspects of any physical computer. This means that any programming language that is Turing-complete is equivalent to any other Turin-complete programming language, creating essentially a chain of equivalency between all programming languages. And yet, programming language history is full of rise and fall of languages, of hypes and dissapointments, of self-claimed beautiful ones and criticized ugly ones. This is because, given such a wide, quasi-universal problem set, there are different approaches to doing so, echoing what Gilles Gaston-Granger calls \emph{style}, as a formal way to approach the production and communication of aesthetic, linguistic and scientific works\cite{granger_essai_1988}. We've already seen one difference in approaching the domain of computation: compilation vs. interpretation. Another high-level category we turn to now is that of programming paradigms.
+
+A programming paradigm is an approach to programming based on a coherent set of principles, sometimes involving mathematical theory. Some of these concepts include hierarchy (in OOP), symbol manipulation (in functional languages), events (such as in Java) or concurrency (in Go). Each paradigm supports a set of concepts that makes it the best for a certain kind of problem\cite{van_roy_programming_2012}. These concepts in turn act as stances which infleunce how to approach, represent and prioritize all basic components that are involved in a programming language:
+
 \begin{itemize}
-  \item What makes a PL (from historical and theoretical perspectives)
-  \item Touching on programming paradigms as moods.
-  \item What makes an expressive and\emph{good} PL, with a sub-section on idiomaticity and how it can resolve the tension between the specific and the universal.
-  \item Esoteric languages
+  \item \textbf{data} (what kinds of basic datatypes are built-in the language, e.g. signed integers, classes)
+  \item \textbf{primitive operations} (how can the programmer directly operate on data, e.g. boolean logic, assignments, arithmetic operations)
+  \item \textbf{sequence control} (how the flow of the program can be manipulated and constrained, e.g. if, while statements)
+  \item \textbf{data control} (how the data can be initialized and assigned, e.g. type-safe vs. type-unsafe)
+  \item \textbf{storage management} (how the programming language handles input/output pipelines)
+  \item \textbf{operating environment} (how the program can run, e.g. virtual machine or not)
 \end{itemize}
 
-\subsection{Formal systems in programming and art}
+Every programming language of practical use takes a particular approach to those basic components, sometimes backed by an extended rationale (e.g. ALGOL 68), or not (e.g. JavaScript). In the case in which we are circumscribed to context-free grammars, it would be possible to optimize a particular language for an objective standard (e.g. compile time, time use, cycles used). Still, computers exist to solve problems, those problems are diverse in nature and therefore necessitate different approaches (as we've seen in our discussion of the limitations of patterns above\footnote{See awk as a kind of fundamentally pattern-based scripting language.}). These different approaches to what is referred to as the \emph{problem domain} in turn influenced the development of those different paradigms, since a problem domain might have different data representations (e.g. objects, text strings, formal rules, dynamic models, etc.). Two of the early programming languages, FORTRAN and Lisp, addressed to very different problem domains: the accounting needs of businesses and the development of formal rules for artificial intelligence, respectively. Some of the overarching programming paradigms are imperative (FORTRAN), functional (Lisp), object-oriented (Smalltalk) or logic (Prolog). Without diving deeper in some of the worldmaking assumptions of each of these paradigms, they are here sufficient proof to show that, while there is only one Turing-completeness, there are widely different approaches to it, some being better than others when given a specific problem.
+
+What makes a good programming language is a matter which has been discussed amongst computer scientists, at least since the \lstinline{GOTO} statement has been publicly considered harmful. Some of these discussions include both subjective arguments over preferred languages, as well as objective arguments related to performance and ease-of-use. According to Pratt and Zelkowitz:
+
+\begin{quote}
+  The difference among programming languages are not quantitative differences in what can be done, by only qualitative differences in how elegantly, easily and effectively things can be done.\cite{pratt_programming_2000}
+\end{quote}
+
+Without  then jumping immediately to aesthetic details of the languages they write in, programmers still express preferences (if not outright allegiances, sometimes calling themselves Pythonistas, or Rubyists). One must also keep in mind that there is a difference between considering a programming language good or beautiful \emph{in itself}, and considered the programs written in the programming language. Turing-completeness offers an interesting challenge to the Sapir-Whorf hypothesis—if natural languages might only weakly affect the kinds of cognitive structures speakers of those languages can construct, programming languages are claimed to do so to large extents\footnote{See Alan Perlis's Epigrams on Programming: "A language that doesn't affect the way you think about programming, is not worth knowing.", \url{https://web.archive.org/web/19990117034445/http://www-pu.informatik.uni-tuebingen.de/users/klaeren/epigrams.html}}, even though they can all do the same thing in theory—only \emph{how} they do it matters. These differences in the ways of doing illustrates how, in reality, different programming languages are applicable to different domains, and do so through different kinds of notations—different aesthetic features when it comes to realizing the same task.
+
+Of the two programs presented below, the output result is exactly the same, but the aesthetic differences are obvious.
+
+\pagebreak
+
+\begin{lstlisting}{language=Go}
+  package main
+  import "fmt"
+
+  func main() {
+    var greeting = "Hey, there."
+    fmt.Println(greeting)
+  }
+\end{lstlisting}
+
+The code above is written in Go, a language designed by Pike, Thompson and Griesemer in 2009, while the code below is written in Java, designed by James Gosling in 1995. Both are statically typed, compiled languages that are heavily influenced by C/C++ syntax, but Go is significantly younger than Java (relatively to programming languages' short history)
+
+\begin{lstlisting}{language=Java}
+  import java.io.*;
+
+  public class Greeting
+  {
+    public static void main(String[] args)
+    {
+      String greeting = "Hey, there";
+      System.out.println(greeting);
+    }
+  }
+\end{lstlisting}
+
+These two snippets might seem very similar at first glance\footnote{For a radically different approach, see: \lstinline{greeting = "Hey there"; print greeting}, a valid program in Ruby, Python and Perl, all scripting languages.}From these two snippets, we can explore some of the most important criteria in programming language design: \emph{abstraction}, \emph{simplicity} and \emph{orthogonality}\cite{sebesta_concepts_2018}, and how they underpin the writing of good programs.
+
+Abstraction is the ability of the language to allow for the essential idea of a statement to be expressed without being encumbered by specifics which do not relate directly to the matter at hand, or to no matter at all. Abstract programming languages can lead to more succint code, and tend to hide complexity (of the machine, and of the language), from the programmer. For instance, the Java snippet above explicitly states the usage of the \lstinline{System} object, in order to access its \lstinline{out} attribute, and then call its \lstinline{println()} method. While a lot of code here might seem verbose, or superfluous, it is in part due to it being based on an object-oriented paradigm. However, \lstinline{out} object itself might seem to go particularly contrary to the requirement of programming languages to abstract out unnecessary details: \lstinline{println()} is definitely a system call dealing with I/O, and therefore already implicitly relates to the output; one shouldn't have to specify it explicitly. In contrast, Go abstracts away the system component of the print call inside the import statement \lstinline{import "fmt"}. Printing, in Java, does not abstract the machine, while printing, in Go, abstracts it away in order to focus on the actual appearance of the message ("fmt" stands for "format"). Another abstraction is that of the language name itself from the import statements. When we write in Java, we (hopefully) know that we write in Java, and therefore probably assume that the default imports come from the Java ecosystem—there shouldn't be any need to explicitly redeclare it. For instance, \lstinline{System.out.println()} isn't written \lstinline{java.io.System.out.println()}. In contrast, the Go snippet hides the implicit \lstinline{import "go/fmt"}, allow the programmer to focus, through visual clarity, on the real problem at hand, which is the logic of the program. In this direction, languages which provide more abstraction (such as Python), or which handle errors in an abstract way (such as Perl) tend to have greater readability by focusing on the most import tokens, rather than aggregating visual clutter—also called verbosity.
+
+Related to abstraction, and a topic in itself, is the criteria of \emph{typing}, the process of specifiying the type of a variable or of a return value (such as integer, string, etc.). A strictly-typed language such as C++ might end up being unreadable because of its verbosity, while a type-free language might be simple to read and write (at a small-scale), but dangerous to run in production. The tradeoff here is again between being explicit and safe (because a word cannot usually and intuitively be operated on in a similar way as a floating-point number), and being implicit, subtle, and dangerous (such as JavaScript's very liberal understanding of typing). With experience, typing can usually be inferred by purely aesthetic means: Python's boolean values are capitalized (\lstinline{True, False}) and its difference between string and byte is represented by the use of double-quotes for the former and single-quotes for the latter. In the case above, explicitly having to mention that \lstinline{greeting} is of type \lstinline{String} is again redundant, since it is already hinted at by the double-quotes (and, indeed, single quotes are byte types in Java as well). Go doesn't force programmers to explicitly declare variable types (they can, if they want to), but in this case they let the computers do the heavy lifting of specifying something that is already obvious to the programmer.
+
+A particularly note-worthy example of an elegant solution to the tradeoff between type safety and readability can be found in Go's handling of error values returned by functions:
+
+\pagebreak
+
+\begin{lstlisting}
+  d, _ := exec.LookPath("date")
+  fmt.Println("Today is %s", d)
+\end{lstlisting}
+
+The \lstinline{_} character which we see on the first line is the choice made by Go's designers to force the user to both acknowledge and ignore the potential error value that is returned by executing the external command. This particular character, acting as an empty line, \emph{represents absence}, not cluttering the layout of the source, while reminding subtly of the \emph{potential} of this particular statement to go wrong and crash the program. Abstraction is therefore a tradeoff between explicitly highlighting the computer concern (how to operate practically on some data or statement), and hiding anything but the human concern (whether or not that operation is of immediate concern to the problem at hand at all). As such, languages who offer powerful abstractions tend not to stand in the way of the thinking process of the programmer. This particular example of the way in which Go deals with error-handling is a great example of the designer's explicit stylistic choice. In the words of Niklaus Wirth:
+
+\begin{quote}
+  Stylistic arguments may appear to many as irrelevant in a technical environment, because they seem to be merely a matter of taste. I oppose this view, and on the contrary claim that stylistic elements are the most visible parts of a language. They mirror the mind and spirit of the designer very directly, and they are reflected in every program written.\cite{wirth_essence_2003}
+\end{quote}
+
+Orthogonality, in turn, relates to the ability of a small set of simple syntactics constructs to be recombined in order to achieve greater complexity, while remaining independent from each other. A direct consequence of such a feature is the ease with which the programmer can familiarize themselves with the number of constructs in the language, and therefore their ease in using them without resorting to the language's reference. Relating back to Ricoeur, the orthogonality of a language offers a simple but powerful solution to the polysemy of the word (here, token) as embedded within a broader sentence (here, statement). The expressivity of a statement comes not just from the individual keywords, but rather from their combination. For instance, the example of Lisp treats both data and functions in a similar way, essentially allowing the same construct to be recombined in powerful ways (again, the Lisp interpreter comes to mind), while the Ruby language, and its foundational design choice which makes every type (themselves abstracted away) a class allows for greater creativity, through familiarity, in writing code, making the language itself more habitable. Orthogonality also implies independence, since all constructs operate distinctly from each other, while remaining related, because in cooperation with each other. This offers a solution to the cognitive burden of the \emph{non-atomicity} of computer programs, in which data can end up being tangled in a non-linear program execution, and become unreadable. This unreadability is triggered, not by verbosity, but because of the uncertainty of, and confusion about, the potential side-effects caused by any statement. Such independence in all constructs in turn presents a kind \emph{symmetry}, itself is a well-accepted aesthetic feature of any artefact, in that the use of each of the constructs is similar. This similarity eases the cognitive friction in writing and reading code since an orthogonal language allows the programmer to rely on the fact that, deep down, everything is the same, and not a collection of quirks and arbitrary decisions. For example, the below C code is illegal:
+
+\begin{lstlisting}
+  int[] getListOfPrimeNumbers(){
+    //-- this function is illegal!
+  }
+\end{lstlisting}
+
+The above code is a specific instance of one of those quirks: the fact that C cannot return arrays from functions requires both a deep knowledge of the language implementation and a willingness to accept that this is how things are, even though other languages allow for such a feature. In this case, the language exhibits an un-orthogonal property since the two constructs (\lstinline{return} and \lstinline{int[]}) interact with each other in non-independent ways.
+
+Finally, one of the consequences of such a feature is the shift from computer semantic interpretation (usually connected to strongly-typed languages) to human-interpretation (and weakly-typed languages). Non-orthogonality implies that the compiler (as a procedural representation of the language) has the final say in what can be expressed, while orthogonal languages leave more leeway to the writer in keeping track of which value and statement does what, allowing for both more creativity and more uncertainty in the interpretation and execution of the program.
+
+Both of these features, abstraction and orthogonality, ultimately relate to simplicity:
+
+\begin{quote}
+  Simplicity enters in four guises: uniformity (rules are few and simple), generality (a small number of general functions provide as special cases a host of more specialized functions, orthogonality), familiarity (familiar symbols and usages are adopted whenever possible), and brevity (economy of ex­pression is sought).\cite{stansifer_study_1994}
+\end{quote}
+
+The point of a simple programming language is a programming language which does not stand in the way of the program being written, or of the problem being addressed. If one is to write a program related to an interactive fiction in which sentences are being input and output in C, then the apparently simple data structure \lstinline{char} of the language reveals itself to be cumbersone and complex when each word and the sentence that the programmer wants to deal with must be present not as words, but as series of \lstinline{char} (hence the origin of the name of the data type \lstinline{string}, as a continuous series of \lstinline{char}). As we've seen, a simple language does not mean that it is easy (perhaps the simplest language of all being lambda-calculus, is far from an easy construct to grasp), but that it is just a means to an end, akin to any other tool or instrument\footnote{For a further parallel on musical instruments, see Rich Hickey's keynote address at RailsConf 2012: \url{https://www.youtube.com/watch?v=rI8tNMsozo0}}.
+
+Programming languages, however, are \emph{symbolic} tools, manipulating \emph{symbolic} matter. As a formal system of symbols which can sustain creations with aesthetic features, programming languages do share commonalities with Goodman's \emph{Languages of Art}.
+
+Goodman develops in his opus a systematic approach to symbols in art, freed from any media-specificity (from pictorial symbols to musical notations and even time marks on clocks and watches). With it, he accomplished two things: he highlights the ways in which symbols systems have expressive and communicative power (through the dyads of denotation and exemplification, description and representation, possession and expression), and what are the kinds of requirement that such a system must have in order to develop these expressive and communicative abilities. These requirements are that of unambiguity, syntactic and semantic disjointedness, and differentiation. Looking at programming languages from this perspective argues for their communicative and expressive power. From the perspective of the computer, programming languages are unambiguous insofar as any expression or statement will ultimately result in an unambiguous result by the CPU (if any ambiguity remains, the program crashes). They are also syntactically and semantically disjointed (i.e. clearly distinguishable from one another). The use of formal notations, such as BNF, had for aim to resolve any possible ambiguity in the syntax of the language in a very clear fashion. The semantics of programming languages, as we will see below, also aim at being thoroughly disjointed: a variable cannot be of multiple types at the same time. Finally, programming languages are also differentiated systems since no symbol can refer to two things at the same time.
+
+The tension arises when it comes to the criteria of unambiguity, from a human perspective. The most natural-language-like component of programs, the variable and function names, always have the potential of being ambiguous (e.g. does \lstinline{int numberOfFlowers} refer to the current number of flowers in memory? To the total number of potential of flowers? To a specific kind of number whose denomination is that of a flower?). We consider this ambiguity a productive opportunity for creativity, and a hindrance for program effectiveness. So, given the qualification of programming languages as symbolic systems, we could expand our short analysis above by inspecting how programming languages allow for program texts which denote, label, represent, etc. in order to further argument how source code has the potential, and has examples, of being an artistic mean of expression and comprehension, from a cognitive point of view.
+
+If they are aesthetic symbol systems, then they can also elicit emotional responses. As we've seen with software patterns, what also matters to programming languages is not just their design, but their \emph{situated} use:
+
+\begin{quote}
+  Before closing, let me mention another essential ingredient, one that hardly ever gets mentioned: It must be a pleasure and a joy to work with a language, at least for the orderly mind. The language is the primary, daily tool. If the programmer cannot love his tool, he cannot love his work, and he cannot identify himself with it.\cite{wirth_essence_2003}
+\end{quote}
+
+In the next section, we turn the everyday use of programming languages, with a highlight on two aspects: \emph{idiomatic expressions} and \emph{esoteric languages}.
+
+\vspace*{4\baselineskip}
+\centerline{\rule{0.3334\linewidth}{.4pt}}
+
 
 \begin{itemize}
-  \item Define a formal system.
+  \item syntactic sugar, idioms and how it can resolve the tension between the specific and the universal by being a friend to the programmers (ruby is simple cause orthogonal, abstract, and fun to play with (problem: slow))
+  \item Esoteric languages
   \item Show how it matches Goodman's definition in \emph{Languages of Art} (density, disjointedness, boundedness).
 \end{itemize}
 
-\section{Programming Semantics}
+\subsection{Programming Semantics}
+
+The reasoning behind such a formal approach to programming languages, besides the very material machine requirements of a circuit design based on discreete distinctions, is, according to the designers of ALGOL 58, the dissatisfaction with the fact that subtle semantic questions remained unanswered remained unanswered due to a lack of clear description\cite{sethi_programming_1996}.
 
 This sections aims at answering the question: under what form do semantics exist, and to what extent can we say that computers understand?
-
-\subsection{Semantics in PL}
 
 \begin{itemize}
   \item Approach it first in a very practical way (parse trees, tokens, environments), and then in a more theoretical way (what are the meanings that we are trying to communicate?)

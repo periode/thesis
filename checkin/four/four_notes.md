@@ -35,6 +35,12 @@ patterns in arch: **how is surface structure transformed into deep structure?**
 
 ## hacking
 
+https://firstmonday.org/ojs/index.php/fm/article/view/647
+
+https://www.tandfonline.com/doi/abs/10.1080/14735780600961809
+
+https://books.google.de/books?hl=en&lr=&id=0FW3DMNhl1EC&oi=fnd&pg=PP13&dq=beauty+hacking&ots=tw-zDSARUw&sig=u-rw1gAEOWr8pXV6iCsVNSfb7QI&redir_esc=y#v=onepage&q=beauty%20hacking&f=false
+
 beauty in inscrutability?
 
 CCC: "you can create art and beauty on a computer"
@@ -68,10 +74,8 @@ Beautiful languages:
 
 - clear semantics and syntactic structure
 - natural representation for problem data and algorithms (**related to patterns**)
-- ease of ex tension (**related to patterns**)
+- ease of extension (**related to patterns**)
 - efficiency
-
-> Simplicity enters in four guises: uniformity (rules are few and simple), generality (a small number of general functions provide as special cases a host of more specialized functions, orthogonality), familiarity (familiar symbols and usages are adopted whenever possible), and brevity (economy of ex­pression is sought). p. 20
 
 winograd: theoretical language (rational) vs. practical (situated), this echoes the complaint of kernighan regarding Pascal (Pascal is useless in real situations, compared to PL and C)
 
@@ -81,6 +85,8 @@ winograd:
 > The first and most obvious point is that whenever someone writes a program, it is a program about something.
 
 (called the subject domain; interesting how it switched to being called problem-domain in software engineering)
+
+fedorenko et. al. (parallels between blocks: sentences and functions)
 
 ---
 
@@ -149,7 +155,6 @@ and wirth is actually saying that we don't really need to understand implementat
 
 more wirth:
 
-> Stylistic arguments may appear to many as irrelevant in a technical environment, because they seem to be merely a matter of taste. I oppose this view, and on the contrary claim that stylistic elements are the most visible parts of a language. They mirror the mind and spirit of the designer very directly, and they are reflected in every program written. (p.8)
 
 however, he's talking from a *scientist's* point of view, his anecdote of struggling to learn Smalltalk is proof: he wants to understand before experimenting.
 
@@ -211,7 +216,6 @@ in order to understand a computer program, we need to give it meaning, that's wh
 
 the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations)
 
-
 ---
 
 Another example is thread concurrency. The book on parallel programming mentions an example of parallel thread processing which looks beautiful but is ugly on the inside: https://mirrors.edge.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook-e2.pdf p. 105
@@ -234,7 +238,7 @@ goodman as a prelude to aesthetic cognition:
 
 carroll makes a point for a *content-first* approach to aesthetics: Aesthetic judgments in code aren't disinterested: they're vested in being able to *understand*.
 
-reconnect to pineiro 
+reconnect to pineiro? at least touch upon. (but it would make more sense in the first part, examining beauty in softdev)
 
 ## cognitive aspects
 
