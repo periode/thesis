@@ -24,6 +24,17 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [on knowldege in architecture and science](http://anzasca.net/wp-content/uploads/2014/08/ANZASCA-1998-Downton-Knowledge.pdf)
 
+[patterns, software and philosophy](http://legacy.earlham.edu/~peters/writing/software.htm)
+
+[software abstract artifact](https://www.academia.edu/1277741/Software_is_an_abstract_artifact) and https://link.springer.com/article/10.1007/s13347-012-0098-z
+
+Implementation as: **THIS GOES WITH GOODMAN**
+
+- individuation (from homo sapiens to delia derbyshire)
+- instantiation (from turing machine to macbook)
+- exemplification (from red to a specific acrylic)
+- reduction (from complex weather model to weather forecast)
+
 ## reading and writing
 
 there could be different beauties in writing and in reading (case of Mike's APL) - easier to read vs. easier to type
