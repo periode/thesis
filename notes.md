@@ -28,12 +28,24 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [software abstract artifact](https://www.academia.edu/1277741/Software_is_an_abstract_artifact) and https://link.springer.com/article/10.1007/s13347-012-0098-z
 
+[elegance in programming language design](https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html)
+
+[systems elegance](https://sci-hub.mksa.top/10.1109/JSYST.2018.2875152)
+
+[ontologies of computer programs](https://web.archive.org/web/20150707093557/http://home.mis.u-picardie.fr/~site-ic/site/IMG/pdf/ICSOFT2007_final.pdf)
+
 Implementation as: **THIS GOES WITH GOODMAN**
 
 - individuation (from homo sapiens to delia derbyshire)
 - instantiation (from turing machine to macbook)
 - exemplification (from red to a specific acrylic)
 - reduction (from complex weather model to weather forecast)
+
+ARCH:
+
+alexander vs. eisenman
+
+alexander = softdev, habitable vs. eisenman = hack, subversion
 
 ## reading and writing
 

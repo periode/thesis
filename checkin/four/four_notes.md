@@ -43,14 +43,10 @@ https://books.google.de/books?hl=en&lr=&id=0FW3DMNhl1EC&oi=fnd&pg=PP13&dq=beauty
 
 beauty in inscrutability?
 
-CCC: "you can create art and beauty on a computer"
+
 
 > when we talk about esolangs, we are designing a perspective for someone to think through. -daniel temkin [src](https://www.artistsandhackers.org/Critical-Code)
 
-
-Hackers -> this redirects to the understanding of the machine (e.g. trying to reduce character counts for one-liners)
-
-https://linusakesson.net/scene/a-mind-is-born/
 
 is hacking considered beautiful because it's:
 
@@ -58,6 +54,10 @@ is hacking considered beautiful because it's:
 - tight
 
 **and the intent is clear**
+
+elegance:
+
+math: [link](https://mathvault.ca/math-glossary/#elegance) - elegance is in the presentation, in the actual notation/form
 
 ## beautiful languages (PL theory/research)
 
