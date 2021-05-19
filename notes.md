@@ -34,6 +34,16 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [ontologies of computer programs](https://web.archive.org/web/20150707093557/http://home.mis.u-picardie.fr/~site-ic/site/IMG/pdf/ICSOFT2007_final.pdf)
 
+[programming paradigms - van roy](http://www.cs.albany.edu/~sdc/CSI500/Downloads/ProgrammingParadigmsVanRoyChapter.pdf)
+
+[linguistics and computational semantics - cantwell-smith](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.654.5768)
+
+[what is software? - peter suber](http://legacy.earlham.edu/~peters/writing/software.htm)
+
+[computational artefacts - peter suber](https://www.academia.edu/7875726/COMPUTATIONAL_ARTEFACTS)
+
+[programming languages as technical artefacs](https://link.springer.com/article/10.1007/s13347-012-0098-z)
+
 Implementation as: **THIS GOES WITH GOODMAN**
 
 - individuation (from homo sapiens to delia derbyshire)
@@ -46,6 +56,34 @@ ARCH:
 alexander vs. eisenman
 
 alexander = softdev, habitable vs. eisenman = hack, subversion
+
+design thinking book: The concept of good in architecture is one which says, among other things, that all architecture must engage its audience. It must foster understanding and be intelligible. This is clearly not the only concept necessarily at work, but it is one that would have broad adherence, across positions.
+
+## email from nick
+
+Pierre,
+
+> You have done well to begin exploring contemporary conceptual metaphor theory (Lakoff, Johnson, Turner, etc.) and its implications for what we call "metaphors" in for instance UI. In fact using a term like "desktop" or saying "I dragged the file to the desktop" is not, as you know at this point, a metaphor according to Lakoff. It is an expression related to the underlying conceptual or cognitive metaphor which might be something like THE GRAPHICAL USER INTERFACE IS A DESK ... that is not satisfying yet,because "interface" is itself a metaphorical expression ... so perhaps THE COMPUTER IS AN OFFICE?
+
+> I suggest you work to make your discussion of user-facing and programmer-facing metaphors even more clear and complete, for instance explaining the underlying conceptual metaphors that are surfaced by terms such as "cloud," "cloud instance," or "recipe." For instance the immateriality of the Internet and computing is what is highlighted by the metaphorical expression "store your data in the cloud," but I'll turn to you to ask two things: What actually is the underlying metaphor (along the lines of THE COMPUTER IS AN OFFICE)? How is that metaphor structured? Similarly, it seems that creating instances of things is an industrial metaphor in which material and identicality are foregrounded. What would you call the underlying conceptual metaphor there? How is it structured? Once you give the underlying metaphors names, you can explain how these are two dichotomous and highly opposed metaphors that come into an odd conflict in "cloud instance."
+
+These are very good points, and I can image how this could be connected further to the idea that COMPUTING IS WORK; but is this still a metaphor, or the cultural backdrop on which the subsequent metaphors (desk, folder, bin, dragging, pasting) take place? At this point, then, it seems that we're moving more towards a definition of computing, rather than a communication/comprehension through metaphorical means? I wonder to what extent we could replace it by COMPUTING IS PLAY, COMPUTING IS THOUGHT, etc. My personal intuition is that it would indeed be closer to work than to these other activities, with its implications of functionality, effectiveness, process and collaboration. However, I'm still not sure exactly what is meant by "structures of a metaphor". Is it the features I've mentioned above (functionality, effectiveness, something often made in a group for the service of another group?), or something else?
+
+Computing could be work, but computation is definitely closer to thought (cf. algorithms vs. their implementation), reflected in the ethereal properties of the "cloud" vs. the concrete manifestations of an "object". I tend to think that the combination of work and thought (reunited in practices like craftsmanship, architecture, scientific work) with specific aesthetic manifestations, then, is *a* work in which those implications are made clear and are "optimized/acute/heightened".
+
+> With that done, you can move to applying the contemporary theory (or theories) of metaphor to two other very important metaphors: SOFTWARE DEVELOPMENT IS ARCHITECTURE and PROGRAMMING LANGUAGES ARE LANGUAGES. By the way, your existing discussion of architecture and programming languages is very good. I think it is ready to be combined with your understanding of metaphor, once that is taken slightly further.
+
+Indeed, I was seeing languages and architecture both as a part of a broader a realm of knowledge representation and knowledge communication, and metaphors can be a tool to highlight the overlapping parts of the Venn diagram of computing, constituted in part by software engineering and programming languages (along with... field of scientific research? art practice?). This does lead me to another question: to what extent does one need to reconcile all of these different ways to communicate concepts and essences of computing? Should there be one single way to reconcile computing with computation (i.e. concrete and abstract)? Or is this way (which I consider being source code) just an overlap amongst others, and multiplicity something that should be embraced rather than solved? Meaning that *in some respects*, programming is architecture and, *in some respects* programming is a language, and so on. So far, I do see that aesthetics is something that is indeed trans-disciplinary (trans-metaphorical, so to speak), so perhaps it does provide a specific/privileged vantage point from which to observe computing.
+
+> You have identified one-liners and demos as productive areas of discussion but are just getting started there.
+
+> With regard to one-liners, you should of course talk more about how they circulate -- in the signature lines that people use in email, in Perl golf competitions, etc. You picked a "clear" one-liner in awk to discuss and there are utility one-liners; there is even a book of these. But there are many others, too! With regard to the demoscene, you may find that sizecoded in particular such as A Mind is Born are the ones that connect best to one-liners. But you will need to be explicit if are focusing, in both cases, on size-limited "hacks."
+
+> Of course you should cite Linus Åkesson's work fully. You certainly need to provide the context for how this demo was shown -- in the 4kb Oldskool compo at Revision 2017, in which I happen to have also had an entry, although the one I did with DIYDSP was more of a joke. The result of executing the 256-byte program is looping video output that does take longer than a minute to loop, by the way.
+
+Yes, my exploration of hacks and one-liners so far is still cursory (as is my citation of the works in that section), so any pointers and further references are appreciated! Would you say that the "hack" as a form/field/practice of programming is too broad? Or that it could be narrowed in its most significant parts by one-liners? In this case, yes, it does seem that the social component of the one-liner are important, drawing on sharing and usefulness to "increase their quality". Another question I have, is then related to their publicity—what role would you say source code has to play in the appreciation of demos? Is it in a purely functional manner, insofar as the result is the exclusive focus (no need to maintain, review, modularize, etc.), or does it play some sort of certificate in testifying of the feasibility of the demo, in a way that is complementary to the output?
+
+> Congratulations on this good work, and I hope you continue to make progress!
 
 ## reading and writing
 
