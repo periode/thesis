@@ -147,7 +147,7 @@ space = %{
 				<p>what you see here is the automatic rendering of all the notes taken during <a href="https://pierredepaz.net">my</a> thesis. since it is a thesis on source code, i thought i might as well show its own source code.</p>
 				<p>the main question i'm asking is: <i>how do aesthetics enable understanding in source code, and what kind of understanding might derive from their presence, or absence?</i> this touches upon issues of style, clarity, epistemology, psychology, programming and literature.</p>
 				<p>this doctoral work is being done at the university of sorbonne nouvelle, under the joint direction of alexandre gefen and nick montfort.</p>
-                                <p>you can start with the <a href="three.pdf" target="_blank">most recent summary</a>, or the whole <a href="https://github.com/periode/thesis">github repository</a>.</p>
+                                <p>you can start with the <a href="latest.pdf" target="_blank">most recent summary</a>, or the whole <a href="https://github.com/periode/thesis">github repository</a>.</p>
 				<hr/>
 				<% all.each_key do | year | %>
 					<% all[year].each_key do | month | %>
