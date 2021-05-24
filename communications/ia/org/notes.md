@@ -53,9 +53,19 @@
 
 ## 20.05
 
-- modération mona?
-- bouger rouillé dans empathy machines
-- bouger louvin dans IA, Fiction et Vérité
+- ~~modération mona?~~ claire larsonneur
+- ~~bouger levin dans IA, Fiction et Vérité~~
+- mina corina: déposer corpus dans l'exposition / inviter a participer à une table ronde (pas de programme)
+  - done
+- impossibilité de modérer un panel (ksenia)
+- vendredi après-midi je suis potentiellement modérateur (absence gefen)
+- email pour les modérateurs
+- publication suivra, on est encore en négociation, pas sur cnrs
+- mettre très en avant le lien zoom sur demande (mettre rep automatique avec les horariers)
+- mettre des mails individuels a partir de la deadline pour relancer pour les comms
+- publications sur le site?
+- mettre les abstracts sur le site
+- envoyer à nyu / parsons / etc. le 31
 
 ## 14.05
 

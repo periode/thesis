@@ -28,6 +28,28 @@ move away from aristotelian logic by making all subjects equal, in the sense tha
 
 it's about **LOGIK UBER ALLES**, and that has somehow moved to the background?
 
+BNR notation, in which there are things, and there are relations. opposite to BNR, which comes later
+
+--------
+
+from mccullough:
+
+but he's against freud's dismissal of logic. he seems to like logic, but another "style" of logic
+
+"In his *Expertimental Medicine*, in French **so beautifully clear it set a style of writing**, Claude Bernard described the way we push ahead with good experiments and required hypothesese" (A STYLE OF GROUNDING)
+
+p. 25 leibniz, infinitesimal steps, maybe like the process in machine learning of taking small steps in one direction?
+
+he says freud was wrong cause if we could remember everything we would have brains like an elephant—> computers do!
+
+p. 31 "psychology would be a farce unless i really figure out how brains work"
+
+wiener and cybernetics: it's a big part about statistics and probablities
+
+pitts: the means of input is already modifying it  "Instead of the brain computing information digital neuron by digital neuron using the exacting implement of mathematical logic, messy, analog processes in the eye were doing at least part of the interpretive work."
+
+"This symbolic abstraction made the world transparent but the brain opaque. Once everything had been reduced to information governed by logic, the actual mechanics ceased to matter—the tradeoff for universal computation was ontology" (from the nautilus article)
+
 --------
 
 https://search.proquest.com/openview/260e2fac83cc81510b4ec4d42f1b39bb/1?pq-origsite=gscholar&cbl=18750&diss=y thesis on the relationship between logic and parts of lit (literature of logic) (also borges... writers related to the stream/telecommunications?)
