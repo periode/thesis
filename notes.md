@@ -59,6 +59,10 @@ alexander = softdev, habitable vs. eisenman = hack, subversion
 
 design thinking book: The concept of good in architecture is one which says, among other things, that all architecture must engage its audience. It must foster understanding and be intelligible. This is clearly not the only concept necessarily at work, but it is one that would have broad adherence, across positions.
 
+beauty in math: https://en.wikipedia.org/wiki/A_Mathematician%27s_Apology
+
+simplicity: Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+
 ## email from nick
 
 Pierre,

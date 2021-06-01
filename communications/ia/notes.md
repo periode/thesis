@@ -30,6 +30,17 @@ it's about **LOGIK UBER ALLES**, and that has somehow moved to the background?
 
 BNR notation, in which there are things, and there are relations. opposite to BNR, which comes later
 
+perceptron: https://blogs.umass.edu/brain-wars/files/2016/03/rosenblatt-1957.pdf the world became data, digital matter
+
+leibniz: mind and matter division in his understanding of Li and Chi https://sci-hub.mksa.top/10.2307/1397760
+
+the proposal: http://raysolomonoff.com/dartmouth/boxa/dart564props.pdf
+
+gpt 3 is good at grammar -> fuzzy search engine
+
+EXAMPLES OF HOW LOGICAL WRITING HAS INFLUENCED
+
+*reducing* from the richness of the world, rather than *essentializing*
 --------
 
 from mccullough:
@@ -50,9 +61,13 @@ pitts: the means of input is already modifying it  "Instead of the brain computi
 
 "This symbolic abstraction made the world transparent but the brain opaque. Once everything had been reduced to information governed by logic, the actual mechanics ceased to matter—the tradeoff for universal computation was ontology" (from the nautilus article)
 
+minsky "A major problem in heuristic programming is that of managing situations in whichtwo or more goals are to be achieved at the same time. It is often a simple matter todiscover strategies or plans for the goals which will be successful separately but whichare incompatible." -> the issue of binary is solved by having continuous spatial representation [https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.734.2025&rep=rep1&type=pdf]
+
 --------
 
 https://search.proquest.com/openview/260e2fac83cc81510b4ec4d42f1b39bb/1?pq-origsite=gscholar&cbl=18750&diss=y thesis on the relationship between logic and parts of lit (literature of logic) (also borges... writers related to the stream/telecommunications?)
+
+james sagle: made heuristics and chess etc. https://www.chessprogramming.org/James_R._Slagle
 
 question: to what extent did literary theory/fiction influence ai development?
 
@@ -63,6 +78,10 @@ question: to what extent did literary theory/fiction influence ai development?
 - the question then becomes: what is the nature of current developments, and how can we speculate it will change our perception/style/approach?
 
 ---
+
+mccarthy: https://books.google.de/books?id=-0tDZX3z-8UC&pg=PA23&redir_esc=y#v=onepage&q&f=false
+
+> By 1965, Simmons and Lauren Doyle had conducted some experimentswith their Protosynthex system.   According to a report by Trudi BellardoHahn,22“A small prototype full-text database of chapters from a child’sencyclopedia (Golden Book) was loaded on the system.  Protosynthex couldrespond to simple questions in English with an ‘answer.’  . . . it was apioneering effort in the use of natural language for text retrieval.”
 
 at the time of mccarthy, they weren't often departments of CS, just departments of maths
 
@@ -77,6 +96,12 @@ Ai: The Tumultuous History Of The Search For Artificial Intelligence
 We are to thinking what the victorians were to sex
 
 stories that were looked at: children's stories [https://vivo.brown.edu/docs/e/echarnia_cv.pdf?dt=011415106] phd thesis eugene chiarnak 1972 (supervised by minsky) (+ wittgenstein and his ABC book)
+
+lisp source: http://jmc.stanford.edu/articles/lisp/lisp.pdf
+
+mccarthy: *situational calculus* is a way to figure out common sens: you do math on particular situations
+
+Lisp as a myth for today's programmers: only schools, fantasies (YCombinator), OOP and C worked better
 
 move to frame matching with minsky
 

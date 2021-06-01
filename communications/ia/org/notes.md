@@ -2,8 +2,8 @@
 
 ## todo
 
-- [ ] general
-  - [ ] remplacement Mona?
+- [x] general
+  - [x] remplacement Mona? -> claire larsonneur
   - [x] think about the games
     - [x] have an etherpad or framapad for the games
     - [x] prepare doc for works (1/day = 15 works, with themes)
@@ -23,12 +23,12 @@
     - [x] can i attend the conference if i am not registered?
     - [x] will the zoom link be made public?
     - [x] is there an upcoming publication?
-- [ ] artists
+- [x] artists
   - [x] prepare email
   - [x] prepare list of artists
   - [x] rep gefen -> send mail
   - [x] reecrire vendredi aux artistes pour verifier
-  - [ ] encore singh et chatonsky (voire mercredi)
+  - [x] encore singh et chatonsky (voire mercredi)
 - [x] email for recording contributions?
   - [x] prepare google drive link
   - [x] when mougin agrees, send him info about the video
@@ -50,6 +50,19 @@
     - [x] basé sur la contribution
 
 ## réunions
+
+## 27.05
+
+- anais guillet: on la garde dans le programme?
+  - demandé -> yes
+- nikoleta
+  - deplacement demandé -> cool
+- kevin
+  - demande si il peut toujours à 17h -> cool
+- checker avec imre et valérie
+  - contingency plan? -> no need, they are in sessions with a lot of peeps
+- checker avec gruson
+  - sa description?
 
 ## 20.05
 
