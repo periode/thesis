@@ -51,6 +51,16 @@
 
 ## réunions
 
+## 02.06
+
+- GEFEN pas là pendant la session d'aprem (vendredi 4)
+- présenter Nevena Ivanova
+- ~~annonce de gefen en anglais (gefen envoie)~~
+
+(co host + activer partage ecran + enregistrement que des keynotes)
+- lionel obadia a 17:30
+- mail aux gens qui ont écrit le programme
+
 ## 27.05
 
 - anais guillet: on la garde dans le programme?

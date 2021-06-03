@@ -41,6 +41,11 @@ gpt 3 is good at grammar -> fuzzy search engine
 EXAMPLES OF HOW LOGICAL WRITING HAS INFLUENCED
 
 *reducing* from the richness of the world, rather than *essentializing*
+
+**SECTION ON DIAGRAMS** [https://userpage.fu-berlin.de/~sybkram/media/downloads/Epistemology_of_the_line.pdf]
+
+also conclusion: since programming languages are implementing ideas, it's possible that the implementation itself pushed us in one direction and in result ends up affecting our writing
+
 --------
 
 from mccullough:
