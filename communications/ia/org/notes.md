@@ -49,6 +49,12 @@
   - [x] ivanova
     - [x] basé sur la contribution
 
+## introduction
+
+Nevena Ivanova, PhD (Tokyo University), is assistant professor in philosophy of technology at the Institute Philosophy and Sociology at the Bulgarian Academy of Sciences. She has published within the field of media philosophy in academic journals such as Social Science Information, MIRAJ, Journal of Film and Video and Technoetic Arts: A Journal for Speculative Research. Her current focus is on artistic and conceptual experimentations with AI, philosophy of computation and algorithmization of life in synthetic biology.
+
+Her keynote titled *Creativity in the era of creative machines* today will reformulate the question 'Can AI be creative?' in our contemporary era by touching upon recursivity, self-programming and indetermination.
+
 ## réunions
 
 ## 02.06

@@ -44,12 +44,16 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [programming languages as technical artefacs](https://link.springer.com/article/10.1007/s13347-012-0098-z)
 
+[insightuful code](https://www.hillelwayne.com/post/cleverness/)
+
 Implementation as: **THIS GOES WITH GOODMAN**
 
 - individuation (from homo sapiens to delia derbyshire)
 - instantiation (from turing machine to macbook)
 - exemplification (from red to a specific acrylic)
 - reduction (from complex weather model to weather forecast)
+
+https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
 
 ARCH:
 
