@@ -40,9 +40,6 @@ La problématique principale de ce projet de recherche est donc celle du \emph{r
 
 Une approache rapide de l'état de l'art sur ce sujet révèle deux tendances séparées: d'une part, la littérature en informatique et ingénierie prend en compte l'évidence de l'existence d'une esthétique du code source, du point de vue la productivité de ceux et celles qui écrivent du code, et d'un point de vue cognitif de la compréhension des bases de code\cite{oram_beautiful_2007,cox_programming_2009,gabriel_mob_2001,martin_clean_2008,detienne_software_2012,weinberg_psychology_1998}. De l'autre, les recherches en sciences humaines traitent de l'interaction entre esthétique et code, tout en restant sur une conception abstraite et désincarnée du "code", élaborant une esthétique du digital sans pour autant rentrer dans les détails des codes sources eux-mêmes (qu'ils soient écrits en Perl, Python, Ruby, etc.)\cite{cramer_executupable_2019,hayles_my_2010,mackenzie_cutting_2006,levy_programmation_1992}. Il existe cependant un certain nombres d'ouvrages de sciences humaines approchant la question matérielle du code de manière directe, que ce soit au niveau culturel\cite{montfort_10_2014}, politique\cite{cox_speaking_2013} ou sociologique\cite{paloque-berges_poetique_2009}. C'est donc au sein de cette recherche sur les manifestations du code source que cette recherche s'inscrit.
 
-\vspace*{2\baselineskip}
-\centerline{\rule{0.3334\linewidth}{.4pt}}
-
 \section{Méthodologie}
 
 L'approche principale de ce projet est donc empirique. Il s'agit avant tout d'examiner les codes sources eux-mêmes, ainsi que les discours de ceux et celles qui les écrivent et les lisent.
@@ -51,58 +48,41 @@ Cette examination se fait également par le biais d'un cadre théorique partant 
 
 C'est donc une approche analytique et cognitive du phénomène artistique que je prends, et cela pose donc la question de la compréhension. Pour celà, je m'appuie sur les travaux de Kintsch et van Dijk et leurs études des stratégies de compréhension du discours\cite{kintsch_toward_1978}, l'approche métaphorique étant considérée comme une stratégie de compréhension. Le code source étant un texte, il produit donc un discours.
 
-\begin{itemize}
-    \item définition de la compréhension (ce que le code veut faire, et ce que le code doit faire)
-\end{itemize}
+Enfin, il est nécéssaire de clarifier deux types de compréhension de l'action du code source: son aspect prescriptif (ce que le code \emph{doit} faire) et son aspect effectif (ce que le code \emph{fait}).
 
-\subsection{Sources et corpus}
+L'approche empirique de ce projet a tout d'abord fait émerger une variété d'individus écrivant et lisant du code, que j'ai regroupé en quatre catégories\cite{hayes_cultures_2017}. Les développeurs sont les individus qui écrivent du code dans un contexte économique, à but fonctionel et soutenable à long-terme; ils travaillent sur des bases de code extensives et souvent en collaboration. Les artistes sont les individus écrivants du code dans un cadre expressif et artistique, tels que des \emph{code poems}; leur code est destiné principalement à être lu par un public, et seulement de manière secondaire à être exécuté. Les hackers sont les individus qui écrivent du code en tant que solution technique unique, idiosyncratique et hautement contextuelle; leur code est destiné à être exécuté par une machine particulière, et de manière secondaire par des humains. Enfin, les académiques sont les individus qui écrivent du code afin d'illustrer des concepts de computation, représentant des abstractions plutôt que des usages concrets.
 
-\begin{itemize}
-    \item 4 groupes de pratiquants: à la base, discussion des codes sources par diverses personnes (programmeurs, artistes, académiques)
-    \item corpus en ligne
-\end{itemize}
+Ces quatres groupes ont des limites poreuses, et un code source peut, dans certains cas, appartenir à plusieurs de ces catégories en même temps (une référence artistique dans un contexte commercial, un hack présenté comme euvre d'art, ou une approche particulière au sein d'une base de code commerciale, etc.).
 
-\subsection{Méthodologie}
+La constitution du corpus de cette recherche s'est faite principalement par la consultation de ressources en ligne. En effet, la plupart des bases de code existe sur des sites d'aggrégations (GitHub, BitBucket, etc.) ou sous formes d'extraits (\emph{snippets}) présentés et commentés dans des forums, sur des sites personnels, ou des sites de question/réponse (e.g. StackOverflow, Quora). Cette constitution du corpus inclue non seulement ces sources primaires (le code en soi), mais également des sources secondaires (le commentaire par un auteur, ou par un public, justifiant de l'aspect esthétique d'un code présenté). De cette manière, je considère la valeur esthétique d'un code source comme étroitement lié au jugement de groupe émis à son encontre.
 
-avec éventuels changements initiels
-
-place de la métaphore: quelles métaphores? language, architecture, matériau
-
-\vspace*{2\baselineskip}
-\centerline{\rule{0.3334\linewidth}{.4pt}}
+Ma métholodologie consiste en une approche interprétative du corpus constitué, dans un double-mouvement. D'une part, les références et discours des individus écrivants du code sont pris en compte afin de constituter un ensemble de standards esthétiques: ces standards sont des manifestations concrètes du code permettant une facilitation de la compréhension du \emph{propos} du code (propos prescriptif, ou effectif). Il s'agit donc d'identifier les stratégies métaphoriques de compréhensions des lecteurs de code.
 
 \section{Avancement}
 
-\subsection{Corpus analysés}
+Jusqu'à présent, les corpus analysés ont été ceux des développeurs, des artistes et en partie celui des hackers. Cette dernière catégorie étant particulièrement vaste, il s'agit de la définir d'avantage, et peut-être d'identifier des sous-groupes qui pourraient d'avantage être mis en avant (e.g. les participations au IOCCC, les \emph{one-liners} et les \emph{demoscenes}). Le corpus académique, principalement tiré des manuels d'informatique n'a été qu'esquissé.
 
-typologie 
+les analyses effectuées jusqu'à présent montrent plusieurs aspects. Premièrement, il n'y a pas "un" code source, abstrait et désincarné, mais une multiplicité de codes sources, existant au sein de pratiques et de groups différents. Ces codes sources possèdent tous une possibilité de manifestation esthétique, manifestations soumise au désir de communiquer \emph{quelque chose}. Ce quelque chose, et les modalités esthétiques qui l'accompagne, varient avec les groupes.
 
-- ingénieurs
+Pour les développeurs, il s'agit de communiquer l'intention du programme à travers son implémentation à travers une métaphore non seulement linguistiques (tentant de faciliter le processus de lecture par des choix de structures, de syntaxe et de vocabulaire) mais également architecturale (notamment à travers les travaux de Chrisopher Alexander sur les \emph{patterns}, et sa récupération par la communauté de programmation orientée-objet).
 
-- artistes
+Pour les artistes, il s'agit de développer une certaine vision du et un certain commentaire sur le monde à travers divers niveaux de métaphores linguistiques (rhétorique procédurelle\cite{bogost_rhetoric_2007}, double-codage\cite{cox_speaking_2013}). Le code est donc une double sorte de langue: langue machinique et langue humaine dont les tensions syntactiques peuvent créer une richesse sémantique unique.
 
-- hackers
+Pour les hackers, il s'agit d'exprimer une certaine connaissance de la machine, du language de programmation, ou d'un algorithme—il ne s'agit pas de communiquer cette connaissance de la machine à autrui, mais de communiquer le fait que l'on a cette connaissance. La stratégie métaphorique ici est celle du matériel, avec des connections entre \emph{hackers} et \emph{tinkerers}, et une expérimentation concrète par le faire. C'est en "brisant" le code qu'il permet d'atteindre des niveaux de virtuosité inégalés, ou c'est en "rasant" un ou deux caractères d'un programme qu'on démontre cette virtuosité.
 
+L'hypothèse qui reste à explorer pour la communauté des académiques est celle du code en tant que mathématiques, et donc d'un rapprochement entre l'élégance mathématique et l'élégance d'un programme.
 
-\subsection{Analyses effectuées et résultats}
-
-dépendance sur ce qu'on veut représenter (une action immédiate, une vision du monde, une idée théorique, une capacité)
-
-différentes métaphores qui se rapprochent de l'élégance et du code comme matériau
-
-\vspace*{4\baselineskip}
-\centerline{\rule{0.3334\linewidth}{.4pt}}
+Enfin, j'ai aussi examiné la question de la beauté d'un code du point de vue de la machine: un code peut-il être beau pour un ordinateur? Au vu de la représentation de la sémantique dans les languages de programmation (esssentiellement un arbre syntaxique différé, "décorant" le premier arbre syntactique lors de l'interprétation d'un programme), on peut dire qu'un code présente des manifestations esthétiques lorsqu'il minimise la taille de l'arbre généré et optimise la localisation des données stockées en mémoire vive. Cependant, les languages de programmation peuvent eux-mêmes supporter des manifestations esthétiques sous certains contextes. Une comparaison des langaues C++, Go, Ruby et Java a été entreprise, basée sur les standards évoqués plus haut.
 
 \section{Prochaines étapes}
 
-\subsection{Restant}
+Ce projet a donc jusqu'à présent montré que les différents standards esthétiques des différentes communautés repose notamment sur des représentations métaphoriques du code, représentations du code comme language, comme architecture, et comme matériau. Le dernier groupe de notre corpus semble traiter le code comme une sorte de mathématique et il faut donc vérifier si les standards esthétiques présents en mathématique\cite{rota_phenomenology_1997} sont similaires.
 
-- académiques
+Par ailleurs, il s'agit d'approfondir les différentes manières d'écrire et de lire du code en tant que hacker, afin de vérfier si une telle catégorie fait sens, ou si sa complexité est justement l'illustration du fait que les groupes identifiés se superposent et qu'un même individu, ou un même code-source peut être examiné à travers le prisme de différentes métaphores, et en résulter des jugements et expériences esthétiques différentes.
 
-\subsection{Calendrier}
+Enfin, en guise de conclusion, je compte connecter l'esthétique de ces codes sources avec leur poétique—les structures, concepts et idées qu'ils permettent d'exprimer, notamment en termes de fiction, afin de reconnecter avec leur action (exécution) dans le monde, et l'extension de la littérature numérique.
 
-\vspace*{2\baselineskip}
-\centerline{\rule{0.3334\linewidth}{.4pt}}
+En termes de calendrier, je compte donc conclure ces recherches lors du semestre d'été et d'automne 2021, avant de finir la rédaction de la thèse durant les semestres de printemps et d'été 2022, afin de soutenir en automne 2022.
 
 \pagebreak
 
