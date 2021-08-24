@@ -46,6 +46,12 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [insightuful code](https://www.hillelwayne.com/post/cleverness/)
 
+[the programmer's brain (preview)](https://www.manning.com/books/the-programmers-brain) -> However, your brain does a lot more while you are reading the BASIC program. You are mentally trying to execute the code, to understand what is happening. That process is called **tracing**—the mental compiling and executing of code
+
+[software design decoded](https://www.amazon.com/Software-Design-Decoded-Experts-Think/dp/0262035189)
+
+Elegance: Through a single lens, it communicates the problem it solves and the machinery of its solution.
+
 Implementation as: **THIS GOES WITH GOODMAN**
 
 - individuation (from homo sapiens to delia derbyshire)
