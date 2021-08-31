@@ -6,10 +6,10 @@
 \usepackage{authblk}
 \usepackage[bottom]{footmisc}
 
-\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\defaultfontfeatures{Mapping=tex-text,Scale=0.90}
 \setmainfont{Inter Light}
 \setmonofont{Liberation Mono}
-\linespread{1.50}
+\linespread{1.25}
 \sloppy
 
 \lstset{
@@ -19,25 +19,27 @@
 }
 
 \begin{document}
-\title{Critiques de l'espace-temps d'Internet dans les réseaux Scuttlebutt et IPFS}
+\title{Critiques protocolaires de l'Internet: IPFS et Scuttlebutt}
 \author{Pierre Depaz}
 \affil{Paris 3 - Sorbonne Nouvelle - THALIM}
 \date{Août 2021}
 \maketitle
 
-Mots-clés: Infrastructure, IPFS, Scuttlebutt, Cosmotechnique, Alternative
+Mots-clés: \emph{Infrastructure, Plateforme, Cosmotechnique, IPFS, Scuttlebutt}
 
-\section{Abstract}
+\section{Résumé}
 
-La critique de l'internet a travers l'infrastructure. L'Internet est avant tout un réseau infrastructurel, en cela qu'il est le résultat de réalités technologiques particulières, composées d'objets et de normes (légales ou informatiques) permettant le développement de contenus ou de pratiques. Cette infrastructure elle-même est née de plusieurs rêves politiques. L'apparition de l'Internet, et de sa version plus accessible, le Web, dépendaient de plusieurs visions du monde (Vanevar Bush, Arpanet, Declaration of Cyberspace). Cependant, une des principales réalités du Web aujourd'hui est celle d'un espace commercialisé, basé sur la marchandisation des relations interpersonnelles (Nick Couldry, The Cost of Connection). Cet article explore les propositions d'infrastructures comme alternatives à l'état contemporain de l'Internet à travers le prisme de deux projets particuliers: IPFS (Interplanetary Files System) et Scuttlebutt.
+Le réseau Internet est avant tout un réseau infrastructurel, en cela qu'il est le résultat de réalités technologiques particulières, composées d'objets techniques et de normes légales et informatiques\cite{lessig_code_1999,galloway_protocol_2004} permettant le développement de contenus et de pratiques. Cette infrastructure est elle-même née de plusieurs visions scientifiques, éthiques et politiques, de Vannevar Bush à la déclaration de John Perry Barlow; une des principales réalités de ce réseau aujourd'hui est celle d'un espace commercialisé, basé sur la marchandisation des relations interpersonnelles\cite{couldry_costs_2019}. En réponse à cette évolution, certaines critiques contemporaines cherchent avant tout à addresser ce qu'elles considèrent comme un problème à un niveau infrastructurel. Cet article explore deux de ces propositions d'infrastructures critiques comme alternatives à l'état actuel des protocoles de l'Internet: IPFS (Interplanetary File System) et Scuttlebutt.
 
-Ces deux projets seront analaysés comparativement selon les approches à l'espace et au temps qu'ils proposent. En effet, tout média tend à agir sur notre conception de l'espace et du temps, depuis le développement de l'écriture comme ancrage du discours jusqu'aux réseaux électroniques fondant un village global. L'action que l'Internet a eu sur notre conception de l'espace (code/space) et du temps (pettman) n'est pas neutre, et ce sont ces conceptions qu'IPFS et Scuttlebutt cherchent à questionner. D'une part, IPFS\cite{benet_ipfs_2014} considère remédier à l'aspect éphémère du Web en garantissant que tout contenu posté sera conservé \emph{ad vitam aeternam}, accessible à tous à tout moment. À l'opposé Scuttlebutt propose une permanence similaire, mais limitant l'accès aux contenus à une proximité géographique des individus, pouvant échanger des suites de messages uniquement si connectés à un réseau local. L'idée est cependant la même: changer les pratiques des utilisateurs pour le meilleur en proposant de nouvelles cosmotechniques (yuk hui).
+Ces deux projets seront analaysés comparativement, et une attention particulière sera portée aux approches à l'espace et au temps qu'ils proposent. Tout média tend en effet à agir sur notre conception de l'espace et du temps, depuis le développement de l'écriture comme ancrage du discours jusqu'aux réseaux électroniques fondant un village global\cite{ong_orality_2012}. L'action que l'Internet a sur notre conception de l'espace et du temps\cite{kitchin_codespace_2011} n'est donc pas neutre, et ce sont ces médiations techniques de ces conceptions qu'IPFS et Scuttlebutt cherchent à remettre en question. D'une part, IPFS\cite{benet_ipfs_2014} considère remédier à l'aspect éphémère du Web en garantissant que tout contenu posté sera conservé \emph{ad vitam aeternam}, accessible à tous et à tout moment, supporté par un système de \emph{blockchain}. À l'opposé, Scuttlebutt\cite{tarr_secure_2019} propose également une  permanence de contenus, mais limitant l'accès à ces derniers à une proximité géographique des individus, pouvant échanger des suites de messages uniquement si connectés à un même réseau local. L'idée est cependant la même: changer les pratiques culturelles des utilisateurs en proposant de nouvelles cosmotechniques de décentralization\cite{hui_question_2016}.
 
-Ces deux alternatives à l'actuelle approche sptio-temporelle du Web comportent néanmoins des ressorts politiques implicites ou explicites. À travers cette communication, je propose d'élucider les fondations théoriques et politiques de projets techniques, afin de mettre à jour les implications socio-politiques de projets techno-utopiques. Afin d'établir cela, nous proposons d'analyser les discours des développeurs de ces deux systèmes tels qu'ils se présentent à leur communauté au travers de discussions sur forums, de \emph{white papers}, d'articles de blogs ainsi qu'issus de correspondance personelle. Ce corpus sera examiné sur le mode d'une analyse de discours critique.
+Ces deux propositions de protocoles alternatifs ont bien des implications politiques, implicites et explicites. À travers cette communication, je propose de mettre en avant les \emph{a priori} et débats politiques de ces entreprises techniques. Afin d'établir cela, je propose d'analyser les discours des développeurs et développeuses de ces deux systèmes tels qu'ils se manifestent au travers de discussions sur des forums de communauté, de débats sur les plateformes de contrôle de version (GitHub, GitLab), de \emph{white papers}, et d'articles de blogs ainsi qu'issus de correspondances personelles. Ce corpus sera examiné sur le mode d'une analyse de discours critique.
 
-Plus que des pratiques alternatives, cette communication cherche donc à mettre en avant les différentes explorations de pistes pouvant constituer des alternatives aux conditions actuelles d'existence spatio-temporelles d'internet et \emph{d'identifier les dimensions d'agencement de ces actes de détournements et de substitution} afin d'atteindre certains buts de résilience, de vie privée et de communauté.
+Cette communication cherche donc à mettre en avant une forme de critique particulière aux régimes d'Internet, la critique infrastructurelle, et d'en souligner la variété par une étude comparative. À travers deux cas d'étude, nous verrons comment différentes alternatives aux actuelles implémentations spatio-temporelles d'Internet permettent \emph{d'identifier les dimensions d'agencement de ces actes de détournements et de substitution}, caractérisant deux approches bien différentes de protocoles décentralisés.
 
 \pagebreak
+
+\section{Bibliographie Indicative}
 
 \bibliographystyle{unsrt}
 \bibliography{resistic.bib}
