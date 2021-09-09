@@ -1,5 +1,14 @@
 # writing with GPT-3: a literature of patterns
 
+## final
+
+- shorten the part about logic and LISP
+- elaborate more on mccullough and on an embodied story of AI
+- get rid of the dartmouth workshop = the origin of two schools of thought as the main narrative line
+- the main argument should be "digital materiality"
+
+## notes
+
 from a literature of logic to a litterature of patterns
 
 what is this talk about? it is about the different styles of writing between programming and fiction.. how they can mutually influence each other, and how different approaches of the problem can open up new avenues.

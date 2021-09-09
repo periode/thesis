@@ -8,7 +8,7 @@
 - mechanical intelligence, turing (ince)
 - C programming language, kernighan
 - art of computer programming, knuth - [x]
-- concepts of programming languages, sebesta
+- concepts of programming languages, sebesta [x]
 - philosophy of computer science, rapaport
 - software and mind, alexei
 - thinking in c++, eckel
@@ -29,7 +29,7 @@
 - head first java
 - the design of the unix operating system
 - algorithms + data structures = programs
-- why's poignant guide to ruby
+- why's poignant guide to ruby [x]
 - programming classics: implementing the world's best algorithms, oliver
   
 ## media studies
@@ -56,7 +56,7 @@
 - s/z, barthes [x]
 - program code poetry, cramer [x]
 - execut[up]?able statements, cramer [x]
-- language and symbolic power, bourdieu
+- language and symbolic power, bourdieu [x]
 - radiant textuality, mcgann
 - rhetorical code studies, brock
 - phantasmal media, harrell
@@ -78,7 +78,7 @@
 - poetique des codes, paloque-berges [x]
 - the role of programming in digital art, andrews
 - a poem is a machine to think with, baldwin
-
+- baldwin, The Internet Unconscious: On the Subject of Electronic Literature (International Texts in Critical Media Aesthetics)
 
 ## aesthetics
 
@@ -94,4 +94,4 @@ MIT Press, 1960
 - the craftsman, sennett [x]
 - moderne/contemporain, bouchardon [x]
 - theory after theory, birns [x]
-- de la programmation consideree comme un des beaux-arts, pierre levy
+- de la programmation consideree comme un des beaux-arts, pierre levy [x]
