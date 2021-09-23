@@ -35,9 +35,10 @@ fashion = %{
 		</head>
 		<body>
 			<style>
+				@import url('https://rsms.me/inter/inter.css');
 				body {
 					background-color: white;
-					font-family: sans-serif, serif;
+					font-family: 'Inter', sans-serif;
 				}
 
 				.holding{
@@ -129,9 +130,10 @@ space = %{
 		</head>
 		<body>
 			<style>
+				@import url('https://rsms.me/inter/inter.css');
 				body {
 					background-color: white;
-					font-family: sans-serif, serif;
+					font-family: 'Inter', sans-serif;
 				}
 
 				.holding{

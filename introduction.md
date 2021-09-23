@@ -24,7 +24,9 @@ list 5/7 authors which are influential
 - katherine hayles
 - florian cramer
 - mark marino
-- the weird consipiracy theorist dude
+- the weird consipiracy theorist dude (gelernter)
+- ricoeur, lakoff & johnson
+- alexander
 
 ### establish the niche
 
@@ -46,6 +48,9 @@ There are four things you need to remember when creating research objectives. St
 ### definitions
 
 - code
+
+I define source code as one or more text files which are written by a human in such a way that they elicit a meaningful response from a mechanical or digital compiler or interpreter, describing and implementing a software system (machine-understandable). However, source code does not have to actually produce software, since it only needs to remain human-readable (i.e. human-understandable). It is written in plain-text, alphanumeric characters (as a format constraint). For the purpose of scope in this study, the possible representations of source code as non-textual (such as graphical programming languages, or additional domains of computation, such as a bio-computation, etc.) or machine-generated will be left aside, since we are focusing mainly on human readership.
+
 - aesthetics
 - understanding(s)
 
@@ -84,7 +89,7 @@ in terms of limitations, the clear distinction between closed-source and open-so
 
 ## a word from eco
 
-*with this work we propose to demonstrate the thesis that aesthetics play a role in the understandings of code; the previous research has left many questions unanswered, and the data gathered is still insufficient.*
+*with this work we propose to demonstrate the thesis that aesthetics play a role in the understandings of code; the previous research has left many questions unanswered, such as whether or not code is in anyway (and particularly in an aesthetic way) similar to text, and the data gathered is still insufficient, because there has been so little data gathered in the form of code snippets.*
 
 ---
 

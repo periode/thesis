@@ -6,6 +6,10 @@
 
 general framework for understanding discourse
 
+another book by on the authors relating understanding, discourse and knowledge:
+
+DISCOURSE AND KNOWLEDGE. A SOCIOCOGNITIVE APPROACH. (Cambridge University Press, 2014).  This book offers a multidisciplinary study of the relations between discourse and knowledge, premised on the assumption that discourse can only be produced or understood on the basis of vast amounts of  socially shared sociocultural knowledge, and that most of that knowledge is in turn acquired through text and talk. After a theoretical chapter presenting a theory of 'natural' knowledge as a task of epstemology, the other chapters review and discuss the relations between discourse and knowledge in cognitive and social psychology, sociology, anthropology, linguistics and discourse studies. 
+
 ---
 
 ### overview of the model
@@ -45,3 +49,40 @@ strategies (things deploy to better realize the goal: understanding):
 - are there non-verbal cues in programming?
 
 *production* strategies aka undertstanding of a discourse also needs to be activated.
+
+### existing empirical research
+
+the top down approach is proven:
+
+> The most basic result that is of importance for us here is that the perception of letters is influenced by our knowledge about words; that the recognition ofwords is influenced by the sentence context in which they are presented; and that sentence processing itself is determined by the status of the sentence in a text
+
+good readers use context more efficiently than poor readers
+
+coherence is just argument repetition (the more repeated things in both propositions, meaning the overall discourse is more coherent the more things they share) (p.65)
+
+#### the notion of strategy
+
+the notion of strategy is a cognitive strucutre (like a plan) about the ideal way to reach a particular goal. (notions of (mental) action, goal, optimality)
+
+funny, they define the relationship strategy<>tactics as the exact opposite of de certeau
+
+types of strategies:
+
+- sociocultural strategies (larger context)
+- communicative strategies (specific, localized act—reading this specific piece)
+- local comprehension strategies (e.g. paragraph by paragraph), aka **propositional strategies**, building up a database of meaningful propositions from (declarative) sentences.
+- local coherence strategies (starting to extract the macro structure)
+- macrostrategies (extracting the gist)
+- schematic strategies (figuring out which format/archtype this is part of)
+- knowledge use/search strategies (recalling things from the past)
+
+
+macrostructures usually have a dependence on macrorules: the meaning of the parts influences the meaning of the whole. but that's not the case in software hacking for instance (magic numbers?)
+
+#### use of knoweldge
+
+so it's obvious that we need world-knowledge in order to understand a specific text, but how is that knowledge represented?
+
+- models
+- concept acquisition through semantic decomposition in levels of cognitive units
+- AI: frames and scripts (also goffman, no?)
