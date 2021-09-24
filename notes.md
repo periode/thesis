@@ -14,10 +14,6 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [the metaphorical process as cognition, imagination and feeling](https://aaaaarg.fail/upload/paul-ricoeur-the-metaphorical-process-as-cognition-imagination-and-feeling.pdf)
 
-[strategies of discourse comprehension](http://discourses.org/OldBooks/Teun%20A%20van%20Dijk%20&%20Walter%20Kintsch%20-%20Strategies%20of%20Discourse%20Comprehension.pdf)
-
-[mit study on cognition](https://elifesciences.org/articles/58906)
-
 [on knowldege in architecture and science](http://anzasca.net/wp-content/uploads/2014/08/ANZASCA-1998-Downton-Knowledge.pdf)
 
 [patterns, software and philosophy](http://legacy.earlham.edu/~peters/writing/software.htm)

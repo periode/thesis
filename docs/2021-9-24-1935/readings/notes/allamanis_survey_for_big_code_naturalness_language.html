@@ -1,0 +1,91 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				@import url('https://rsms.me/inter/inter.css');
+				body {
+					background-color: white;
+					font-family: 'Inter', sans-serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="a-survey-of-machine-learning-for-big-code-and-naturalness">A Survey of Machine Learning for Big Code and Naturalness</h1>
+
+<h2 id="allamanis-et-al">allamanis et. al</h2>
+
+<h3 id="httpsarxivorgpdf170906182pdf">https://arxiv.org/pdf/1709.06182.pdf</h3>
+
+<hr />
+
+<p>they make interesting assumption: using ML to generate code is starting from the hypothesis of similarity to human language</p>
+
+<hr />
+
+<p><strong>The naturalness hypothesis</strong>: Software is a form of human communication; software corpora have similar statistical properties to natural language corpora; and these properties can be exploited to build better software engineering tools</p>
+
+<blockquote>
+  <p>Programming languages narrow the gap between computers and the human mind: they construct palatable abstractions out of a multitude of minute state transitions. Source code has two audiences and is inherently <strong>bimodal</strong>: it communicates along two channels: one with humans, and one with computers. Humans must understand code to read and write it; computers must be able to execute it. The bimodality of code drives the similarities and differences between it and text</p>
+</blockquote>
+
+<blockquote>
+  <p>Code is often semantically brittle —small changes (e.g. swapping function arguments) can drastically change the meaning of code; whereas natural language is more robust in that readers can often understand text even if it contains mistakes. (p.5)</p>
+</blockquote>
+
+<blockquote>
+  <p>Programming languages, on the other hand, can be translated between each other exactly, as all mainstream programming languages are Turing-complete. (That said, porting real-world programs to new languages and platforms remains challenging in practice).</p>
+</blockquote>
+
+<p><a href="https://po-ru.com/2008/01/28/ruby-parsing-ambiguities">ruby parsing ambiguities</a></p>
+
+<blockquote>
+  <p>Finally, executability gives rise to additional modalities of code — its static and dynamic views (e.g. execution traces), which are not present in text. <strong>Learning over traces or flows are promising directions</strong></p>
+</blockquote>
+
+<p>the trace is an interesting concept: like ariadne’s thread</p>
+
+<p>CODE MUST BE SYNTACTICALLY AMBIGUOUS, but it’s conceptuall ambiguous (e.g. what does <code>counter</code> refer to?)</p>
+
+<blockquote>
+  <p>Code’s two channels, the algorithmic and the explanatory channels, interact through their semantic units, but mapping code units to textual units remains an open problem. Natural semantic units in code are identifiers, statements, blocks, and functions. None of these universally maps to textual semantic units.</p>
+</blockquote>
+
+<blockquote>
+  <p>an arbitrary statement is far more likely to use domain-specific, even project-specific, names or neologisms than an arbitrary sentence is. Blocks vary greatly in length and semantics richness and often lack clear boundaries to a human reader. Functions are clearly delimited and semantically rich, but long.</p>
+</blockquote>
+
+<blockquote>
+  <p>A function differs from a sentence or a sequence of sentences, i.e. a paragraph, in that it is named and called, while, in general settings, sentences or paragraphs rarely have names or are referred to elsewhere in a text. Further, a single function acts on the world, so it is like a single action sentence, but is usually much longer, often containing hundreds of tokens, and usually performs multiple actions, making a function closer to a sequence of sentences, or a paragraph, but paragraphs are rarely solely composed of action sentences</p>
+</blockquote>
+
+<h4 id="patterns">patterns</h4>
+
+<p>they are necessary for a statistical ingestion of code, such as Hellendoorn and Devanbu [84] noticed that code has a high degree of <em>localness</em>, where identifiers (e.g. variable names) are repeated often within close distance.</p>
+
+<p>aka patterns have a technical manifestation as well</p>
+
+			</div>
+		</body>
+	</html>

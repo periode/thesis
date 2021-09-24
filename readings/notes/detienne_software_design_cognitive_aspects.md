@@ -13,7 +13,7 @@ useful concepts:
 - program text
 - surface structure vs. deep structure
 - mental model (based on personal heuristics and goals)
-- beacons (like patterns, but with roles)
+- beacons (like patterns, but with roles) [proof in 2017](https://dl.acm.org/doi/10.1145/3106237.3106268)
 
 ---
 
