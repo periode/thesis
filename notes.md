@@ -14,6 +14,8 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [the metaphorical process as cognition, imagination and feeling](https://aaaaarg.fail/upload/paul-ricoeur-the-metaphorical-process-as-cognition-imagination-and-feeling.pdf)
 
+[MD system used in the visual search process](https://psycnet.apa.org/record/2021-28382-001)
+
 [on knowldege in architecture and science](http://anzasca.net/wp-content/uploads/2014/08/ANZASCA-1998-Downton-Knowledge.pdf)
 
 [patterns, software and philosophy](http://legacy.earlham.edu/~peters/writing/software.htm)
