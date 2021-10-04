@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<style>
+				@import url('https://rsms.me/inter/inter.css');
+				body {
+					background-color: white;
+					font-family: 'Inter', sans-serif;
+				}
+
+				.holding{
+					margin: auto;
+				}
+
+				.tight{
+					width: 70%;
+				}
+
+				.way {
+					position: absolute;
+					top: 10px;
+					left: 10px;
+				}
+			</style>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="programming-languages-as-technical-artefacts">programming languages as technical artefacts</h1>
+
+<h2 id="raymond-turner">raymond turner</h2>
+
+<h3 id="httpsdoiorg101007s13347-012-0098-z">https://doi.org/10.1007/s13347-012-0098-z</h3>
+
+<hr />
+
+<p>what is PL?</p>
+
+<ul>
+  <li>formal grammar</li>
+  <li>mathematical object</li>
+  <li>implementation</li>
+</ul>
+
+<p>a PL allows for <em>a particular relationship between what a program means and what its specification insists it should achieve</em>.</p>
+
+<p>again, we have the concrete (specification) and abstract (meaning)</p>
+
+<p><a href="../texts/computer_science/James%20Moor,%20Three%20Myths%20of%20Computer%20Science,%201978.pdf">Moor</a> has been the first to question deeply the distinction between software (ideal) and hardware (concrete)</p>
+
+<blockquote>
+  <p>Programs have their meanings given by the meanings of their contained constructs, and, generally, the semantics must preserve the meanings of the constructs across programs.</p>
+</blockquote>
+
+<p>the above is hard sapir-whorf</p>
+
+<p>what he proposes to solve is that articulation of concrete and abstract through the concept of <em>technical artefact</em> (intentionally produced things, which carry their purpose through their physical manifestation)</p>
+
+<p>technical artefacts have two components;</p>
+
+<ul>
+  <li>functional (what it does)</li>
+  <li>structural (how it does it)</li>
+</ul>
+
+<h4 id="function">function</h4>
+
+<p>happens through a specification. it is the definition of a mathematical object. this mathematical object can have two kinds of semantics:</p>
+
+<ul>
+  <li>operational semantics</li>
+  <li>
+    <ul>
+      <li>-&gt; if the components of a program change given a particular state, the whole program should change as well</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>-&gt; these semantics define what <em>actually</em> happens</li>
+    </ul>
+  </li>
+</ul>
+
+<p>given an expression <code>x := E</code>, one must always <em>physically</em> move the (computed) value of E into the physical slot of x</p>
+
+<blockquote>
+  <p>As a piece of software, it gets its functional definition from the semantic definition of the host programming language and its underlying abstract machine.</p>
+</blockquote>
+
+<p>what a program means is not just the problem domain, or the programmer intent, but also the language implementation.</p>
+
+<blockquote>
+  <p>In the case of languages, we require an account of meaning that enables us to determine correctness</p>
+</blockquote>
+
+<h4 id="intention">intention</h4>
+
+<p>two kinds of intention are relevant: engineer and user (kroes, 2010)</p>
+
+<p>from an engineer perspective, it has to receive the question <em>does it work?</em>, and it must be able to justify the reasons relative to the abstract device (that it is supposed to implement). for instance, if the state transitions of the abstract device and the functional implementation are the same. i.e. the mathematical object is reflected in the implementation such that there are no surprises.</p>
+
+<p>finally, the intention is set in stone, so to speak, by <em>use</em></p>
+
+<h4 id="conclusion">conclusion</h4>
+
+<p>so PLs are a blend of pure math and technology</p>
+
+			</div>
+		</body>
+	</html>

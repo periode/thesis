@@ -16,14 +16,6 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [MD system used in the visual search process](https://psycnet.apa.org/record/2021-28382-001)
 
-[on knowldege in architecture and science](http://anzasca.net/wp-content/uploads/2014/08/ANZASCA-1998-Downton-Knowledge.pdf)
-
-[patterns, software and philosophy](http://legacy.earlham.edu/~peters/writing/software.htm)
-
-[software abstract artifact](https://www.academia.edu/1277741/Software_is_an_abstract_artifact) and https://link.springer.com/article/10.1007/s13347-012-0098-z
-
-[elegance in programming language design](https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html)
-
 [systems elegance](https://sci-hub.mksa.top/10.1109/JSYST.2018.2875152)
 
 [ontologies of computer programs](https://web.archive.org/web/20150707093557/http://home.mis.u-picardie.fr/~site-ic/site/IMG/pdf/ICSOFT2007_final.pdf)
@@ -32,13 +24,11 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [linguistics and computational semantics - cantwell-smith](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.654.5768)
 
-[what is software? - peter suber](http://legacy.earlham.edu/~peters/writing/software.htm)
-
 [computational artefacts - peter suber](https://www.academia.edu/7875726/COMPUTATIONAL_ARTEFACTS)
 
-[programming languages as technical artefacs](https://link.springer.com/article/10.1007/s13347-012-0098-z)
-
 [insightuful code](https://www.hillelwayne.com/post/cleverness/)
+
+[heisenberg - the meaning of beauty in the exact sciences](https://inters.org/heisenberg-beauty-natural-science)
 
 [the programmer's brain (preview)](https://www.manning.com/books/the-programmers-brain) -> However, your brain does a lot more while you are reading the BASIC program. You are mentally trying to execute the code, to understand what is happening. That process is called **tracing**—the mental compiling and executing of code
 
