@@ -1,16 +1,107 @@
 \section{Introduction}
 
-This thesis stems from a desire to better understand the aesthetics specific to source code, and through this, to flesh out our understanding of what source code really is. It may look like text, but it's not text. It may look like something hidden and unnecessary, but it's not. It is something that programmers interact with daily, but remains hidden from view, with litterature often referring to code as one, general, generic concept, and do not take into account the specificities of writing and reading code. I wanted to examine the intricacies of code, something that happens through concrete manifestations, focusing on an empirical approach not just theories or abstract conceptualizations. In a nutshell, people talk about it a lot, and I want to ask: what does it \emph{actually} look like?
-What I also wanted to learn about is the relationship between beauty and function. Since code does, and since source code's purpose is to disappear, how could something which is written off as temporary, hidden, still hold meaningful aesthetic manifestations? Could it be that there is beauty just for its own sake, or beauty for the sake of something else.
-Related to this, there is the polymorphous nature of code, and of the communities around code. There isn't just one code, but there are a bunch of different ways to write code, from poems to apps to hacks to theory. So I was curious about whether or not there is something \emph{at the root of code} that is common to all these communities. It might end up being something like double-coding. Or it might be something along the lines of displaying knowledge.
-In the end, I hope that this can help reconsider the relationship between beauty and function as they arise from the friction between society and (formal) technologies, and that it can help shed light on what the realities of writing code are.
+This thesis is an inquiry into the formal manifestations of source code and how particular configurations of lines of code result in aesthetic judgments. The implications of this inquiry will lead us to consider the different ways in which people who read and write code, and through these, we will explore the different ways in which source code can be represented, depending on what it aims at communicating.
+This study on source code involves the different groups of people which read and write it, the purposes for which they write it, the languages they use to write it, and the language they use to speak about it. Most importantly, this thesis focuses on source code as a material, linguistic manifestation of a larger digital ecosystem of software and hardware. Since source code isn't code, this thesis also aims at studying the reality of written code, rather than its conceptual interpretations.
 
-So why do this work at all? There are a couple of things which we still do not know about. Since code is a new medium, it's unclear whether it has a specific aesthetic register, or if it borrows from existing registers. Indeed, we will see that it does borrow from different registers (architecture, litterature, science, craft), but it's unclear what are the aesthetic affordances that are specific to source code. An aesthetic lens, and by extension an ethnographic lens, would help in highlighting these issues.
-There are also very few \emph{examples} of aesthetic manifestations of source code, either because the authors that talk about source code don't always show excerpts of beautiful code, or because the authors that show source code do not connect it back to a broader framework. We don't know if the claims of some people (e.g. code is like language, code is like maths) actually hold up when inspecting the details of code. Another unknown is that, while we do admit that there are multiple kinds of code, it's not clear how all of the different kinds relate to one another. Whether they differ in nature, or in practice, this would contribute to the dependency of an aesthetic register upon its specific medium—to what extent does a programmer have a freedom, or is determined by their technical environment. Speaking of which, technical environments have rarely been taken into account when talking about aesthetics of source code. As such, I would like to know what roles do programming languages play in determining the aesthetic possibilities of a given source code.
+Starting from pieces of source code, henceforth called \emph{program texts}\cite{detienne_software_2012}, this thesis will aims at assessing what other programmers have to say about it, and attempt to identify a specific \emph{aesthetic register}. This aim depends on two facts: first, source code is a medium for expression, both to express the programmer's intent to the computer\cite{dijkstra_chapter_1972} and the programmer's intent to another programmer\cite{abelson_structure_1979}. Second, source code is a relatively new medium of expression, compared to either fine arts or engineering practices. As a recent medium for expression, the development and solidification of aesthetic practices—that is, of ways of doing which do not find their immediate justification in a practical accomplishment—is an ongoing research project in computer science, software development and the humanities. Formal judgments of source code are therefore existing and well-documented, and they are related to a need for expressiveness, as we will see in chapter X, but their formalization is still an ongoing process.
 
-And why is this important? For two main reasons, related to fetishism and to our conception of beauty.
-First, the fetishism of source code is something which can happen when doesn't actually understand the reality of code mught end up ascribing it too much power, or too much influence. Some argue that knowing code is the way to know all of digital media, therefore ascribing abilities to code which might or might not exist, without specific inquiry or verification of what code is, what coders do, and what are they concerned about in the process of writing code. Code might just be too complex to enable the demiurgic possibilities of single individuals through its new and procedural expressiveness.
-Second, the functional nature of the relationship between source code and software forces us to (re-)think the relationship between aesthetics and efficiency, between beauty and purpose. By looking at what might be the defining medium of the 21st century, we can re-assess our conceptions of aesthetics and beauty in terms of what they achieve, or what they allow to achieve, and therefore reinforcing the cognitive baseline in aesthetic judgments. Additionally, examining the varieties of code can contribute to the discussion on the universality of aesthetics, or its inherent social diversity; are all groups writing code bound to the same set of aesthetic values? By a subset? Or by not set at all? Code as a relatively new artifact allows us to shed new lights on existing debates in aesthetic philosophy.
+Source code thus has ways of being presented which are subject to aesthetic judgments by programmers; more specifically, code \emph{has} aesthetics, but it is unclear \emph{which} aesthetics. Indeed, these aesthetic judgments as they exist today rely on different domains to apprehend what source code is as a means to apprehend the cognitive object that is software, drawing from metaphors which range from literature, architecture, mathematics and engineering. And yet, source code, while drawing on all of these, source code isn't specifically any of these. Liked the story of the seven blind men and the elephant\cite{chun_sourcery_2008}, it is likely that each of these domains touch on some specific aspect of the nature of code, but none of them are enough to entirely provide a solid basis for the aesthetic judgments of source code. It is at the crossroads of these domains that this thesis starts its work.
 
-Finally, why now? In a strictly academic sense, there is a need to connect mutliple strands of thought that are coming to maturation: connecting software studies to programming language design and digital humanities (e.g. Warren Sack) to software ethnographies (e.g. Nick Seaver). This study is part of a more general effort at taking a closer look at code \emph{per se}. Critical code studies analyzes the intent of code, and detect second-order meaning, tying it to the world at large; this study acts as a counterblance and focuses on tying it to its writers and readers—programmers.
-In a broader sense, it's important because of the place that code is taking in the public debate, about algorithms, big data, etc. As well as professionally: people are learning to be programmers at a very fast rate. So this study could offer a different approach to programming education. That is, providing an additional frame to understand how code can be used both as the main structure of the world and a way to write poems.
+The examination of source code, and of the discourses around source code will reveal both the myriad of ways in which source code can exist, and the invariant aspects which underline all diverse approaches of source code. Particularly, we will see how each groups of practicionners tend to deploy references to one particular set of metaphorical references drawing from the domains above, but also how these references overlap across groups. The point of overlap, as we will demontrate, is that of \emph{using a formal linguistic system to communicate the understanding of complex, structured systems}. Relying heavily on Nelson Goodman's work on the languages of art\cite{goodman_languages_1976}, we end on connecting this to the broader role of aesthetics as a cognitive mechanism to deal with complexity.
+
+The rest of this introduction will consist in establishing a more complete view of the context in which this research takes place, from computer science to digital humanities and everyday life. With this context at hand, we will proceed to highlight the specific problems which will be tackled—that is, the place of aesthetics in source code. After outlining our methodology and the theoretical frameworks which will be mobilized throughout this study, we will sketch out how the different chapters of this thesis will attempt at providing some responses to our research questions.
+
+\subsection{Context - 15p}
+
+\subsubsection{The research territory: code}
+
+Most of our modern infrastructure depends, to a more or less dramatic extent, on computer systems\cite{kitchin_codespace_2011}, from commercial spaces to classrooms, transport systems to cultural institutions, scientific production and entertainment products. The number of lines of code involved in running these complex processes is hard to estimate; one can only rely on disclosures from companies, and publicly available repositories. For instance, all of Google's services amounted to over two billions source lines of code (SLOC)\cite{scale_why_2015}, while the 2005 release of the OSX operating system comprised 86 millions lines of code, and while the version 1.0 of the Linux kernel (an operating system which powers most of the internet) totalled over 175,000 SLOC, version 4.1 jumped to over 19.5 million lines of code in the span of twenty years\cite{noauthor_linux_2021}.
+
+Who reads this code? To answer this question, we must start diving a little bit deeper into what source code really is.
+
+At a high-level, source code consists in a series of instructions, composed in a particular programming language, which is then processed by a computer in order to be executed. For instance, the source code:
+
+\begin{lstlisting}
+    a = 4
+    b = 6
+
+    def compute(first, second):
+        return (first * 2) + second
+    
+    computer(a, b)
+\end{lstlisting}
+
+consists in telling the computer to store two numbers in what are called \emph{variables}, then proceeds with describing the \emph{procedure} for adding the double of the first terms to the second term, and concludes in actually executing the above procedure. Given this particular piece of source code, the computer will output the number \lstinline{14} as the result of the operation \lstinline{(4 * 2) + 6}. In this sense, then, source code is the requirement for software to exist. If computers are procedural machines, acting upon themselves and upon the world, they need a specification of what to do, and this specification exists in the form of source code.
+
+In this sense, source code is both a requirement and a by-product, since it isn't required anymore once the computer has processed and stored it into a \emph{binary} representation, a suite of 0s and 1s which represent the successive states that the computer has to go through in order to perform the action that was described in the source code. \emph{Binary code} is what most of the individuals who interact with computers deal with, and (almost) never have to bother about its source code. On one hand, then, source code only matters until it gets processed by a computer, through which it realizes its intended function.
+
+On the other hand, source code isn't just about telling computers what to do, but also about a particular economy: that of software development. Software developers are the ones who write the source code and this process is first and foremost a collaborative endeavour. First of all, software developers write code in successive steps, because add features over time, or fix errors that have shown up in their software, or decide to rewrite parts of the source code based on new ideas, skills or preferences. In this case, source code is not used to communicate to the computer what it does, but it is used to communicated to other software developers what the \emph{intent} of the software is. Source code is then the locus of human, collaborative work; it represents iterations of ideas, formalization of processes and approaches to problem-solving.
+
+Official defintions of source code straddle the line between the first role of source code (as instructions to a computer) and the second role of source code (as indications to a programmer). For instance, a definition within the context of the Institute of Electrical and Electronics Engineering is that of \emph{any fully executable description of a software system}, which therefore includes various representations of this description, from machine code to high-level languages and graphical representations using visual programming languages\cite{harman_why_2010}. This definition focuses on the ability of code to be processed by a machine, and mentions little about its readability (i.e. processability by other humans).
+
+On the other hand, the definition of source code provided by the Linux Information Project\footnote{https://linfo.org/sourcecode.html} focuses on source code as \emph{the version of software as it is originally written (i.e. typed into a computer), by a human in plain text (i.e. human-readable, alphanumeric characters).}\cite{noauthor_source_nodate}. The emphasis here is on source code as the support of human activity, as software developers need to understand the pieces of code that they are creating, or modifying.
+
+\begin{itemize}
+    \item Talk about readability more with the use of FSF's definition
+    \item Then mention Software studies' definition, which involves style and modification and intent
+    \item then conclude with my definition of source code, by highlighting the original aspect and the textual aspect
+\end{itemize}
+
+\emph{I define source code as one or more text files which are written by a human or by a machine in such a way that they elicit a meaningful response from a digital compiler or interpreter, and describe a software system. These text files are the starting point to produce an execution of the system described, whether the very first starting point, or an intermediate representation (used for subsequent compilations).}
+
+\begin{itemize}
+    \item \sout{start with a very basic description of what code/source code/software is}
+    \item then that programmers know there is beautiful code.
+    \item then about what computer science, programming, humanities, etc.
+\end{itemize}
+
+% I COULD INTERTWINE CONTEXT - DEF CODE - CONTEXT - DEF AESTHETIC - CONTEXT - DEF UNDERSTANDING
+
+\subsubsection{The definitions}
+
+\begin{itemize}
+    \item Aesthetics
+    \item Source code
+    \item Program Text
+    \item Understanding
+\end{itemize}
+
+\subsubsection{Boundaries}
+
+that which i shall not touch
+
+but once we have laid out all of this, then it becomes possible to highglight the gaps:
+\begin{itemize}
+    \item the assumption of the literarity of code
+    \item the lack of theoretical framework explaining why some code is beautiful and why other isn't
+    \item the lack of \emph{proof}, which is showing code
+    \item the apparent assumption that aesthetics have nothing to do with source code
+\end{itemize}
+
+\subsection{Problem - 10p}
+
+start by establishing, based on what was said previously, the \emph{niche} that i will occupy
+
+\begin{itemize}
+    \item the fetishization of code
+    \item the multiplicity of registers
+    \item the reason why it matters (connecting beautiful and useful)
+\end{itemize}
+
+then really establish the significance of this study: beauty and function
+
+\subsection{Methodology - 10p}
+
+reading code
+
+reading discourses
+
+reading aesthetic theory based from these discourses
+
+\subsection{Roadmap - 6p}
+
+list all chapters with a brief overview for each.
+
+\subsection{Connecting back to the wider world - 2p}
+
+and readership
