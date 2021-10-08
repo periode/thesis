@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage[hyphens]{url}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{authblk}
+\usepackage[bottom]{footmisc}
+
+\graphicspath{ {./images/} }
+
+\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\setmainfont{Inter Light}
+\setmonofont{Liberation Mono}
+\linespread{1.50}
+\sloppy
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single
+}
+
+\begin{document}
+\title{The role of Aesthetics in the Understandings of Source code}
+\author{Pierre Depaz\\under the direction of Alexandre Gefen (Paris-3)\\and Nick Montfort (MIT)}
+\affil{ED120 - THALIM}
+\date{last updated - 04.10.2021}
+\maketitle
+
+\include{introduction.tex}
+
+\pagebreak
+
+\bibliographystyle{unsrt}
+\bibliography{thesis.bib}
+
+\end{document}
