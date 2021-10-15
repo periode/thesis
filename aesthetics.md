@@ -14,7 +14,7 @@ Matthew Fuller, in Software Studies, on *Elegance*:
 
 beauty as a lack of ambiguity, as efficient achievement of an aim (aim of frustration/clarity/imagination)
 
-whether or not the computer understands is not an aesthetic problem, but an engineering problem.
+whether or not the computer understands is not an aesthetic problem, but an engineering problem. **BUT** there are beauties in engineering
 
 ## general aesthetics
 
