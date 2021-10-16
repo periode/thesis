@@ -91,13 +91,47 @@ These relations between source code and aesthetics have been addressed by academ
 
 \subsubsection{Literature review}
 
+
+A literature review on this topic must address the dualistic nature of studies on source code. Reminiscent of C.P. Snow's distinction of two cultures, research can be clearly divided between the fields of computer science and engineering on one side, and that of the humanities on the other. This overview will provide us with a better sense of which aspects of code and aesthetics have been explored until now, and will invite us to address the remaining gaps.
+
+Most technical literature, starting from \emph{The Art of Computer Programming}, acknowledges the role that aesthetics have to play in the writing and reading of program texts. Along with the positions of Knuth and Djikstra regarding the importance of paying attention to all aspects of programming practice, beyond strictly mathematical and engineering requirements, Kerninghan and Plauer publish in 1978 their \emph{Elements of Programming Style}\cite{kernighan_elements_1978}, focusing on how code snippets with a given intent could be rewritten in order to keep the same intent but gain in quality—that is, in readability and understandability. For instance, the following program:
+
+\begin{lstlisting}]
+    if(i == 0) c = '0'
+    if(i == 1) c = '1'
+    if(i == 2) c = '2'
+    if(i == 3) c = '3'
+    if(i == 4) c = '4'
+    if(i == 5) c = '5'
+    if(i == 6) c = '6'
+    if(i == 7) c = '7'
+    if(i == 8) c = '8'
+    if(i == 9) c = '9'
+\end{lstlisting}
+
+can be rewritten as:
+
+\begin{lstlisting}
+    if(i >= 0 && i < 10) c = '0' + i
+\end{lstlisting}
+
+which keeps the exact same functionality, but becomes much clearer. Why it becomes much clearer, though, is thought to be a given for the reader, and not explicited by the authors in terms ofc concepts such as cognitive surface, repleteness of a symbol system or representation of the idea at play (casting an integer to a character, rather than individually checking for each integer case). However, the authors do employ terms which will form the basic of an aesthetics of software development, such as clarity, simplicity, or expressiveness; still, there are no overarching principles deployed to systematize the approach, only examples of such principles.
+
+While Kernighan and Plauer do not directly address the relationship of source code and aesthetics, this is something that Peter Molzberger undertakes five years later through an empirical, qualitative study aimed at highlighting the place aesthetics play in an expert programmer's practice\cite{molzberger_aesthetics_1983}. Molzberger's study touches upon ideas of over-arching structure, tension between clarity and personality, and levels of expertise in aesthetic judgment. This short paper highlights multiple phenomena which will be explored further in this thesis, without providing an answer as to \emph{why} this might be the case. For instance, a conception of code as literature does not explain this switch in scales and directions of reading, or a conception of code as mathematics does not explain the need for a personal touch when writing source code\cite{molzberger_aesthetics_1983}.
+
+In the context of formal academic research, such as the IEEE or the Association for Computing Machinery (ACM), research then focuses on how to quantitatively assess a given quality of source code either through a social perspective on the process of writing\cite{norick_effects_2010}, a semantic perspective on the lexicon being used\cite{fakhoury_improving_2019,guerrouj_normalizing_2013}, an empirical study of programming style in the efficiency of software teams\cite{reed_sometimes_2010} or on the visual presentation of code in the comprehension process\cite{marcus_graphic_1982}. These focus on the connection of aesthetics with the performance of software development—beautiful code might be related to a good end-product.
+
+In parallel, the development of software engineering as a profession has led to the publication of several books of specialized literature, taking a practical approach to writing good code, rather than a scientific one. Robert C. Martin's \emph{Clean Code}'s audience belongs to the field of business and trade, drawing on references from architecture, literature and craft in order to lay out the requirements of what he considers to be clean code. These specific mechanisms are highlighted in terms of how they will support a productive increase in the quality of software developed, and was followed by a number of additional publications on the same topic and with the same approach\cite{fowler_refactoring_1999,arns_code_2005,hunt_pragmatic_1999}. Here, these provide an interesting counterpoint to academic research on quality code by relying on different traditions to explain why the way code is written is important.
+
+Technical and engineering literature, then, establish the existence of and need for aesthetics, presented as formal properties which then constitute \emph{quality code}. The methodology in these studies is either empirical, in the case of academic articles, looking at lines of code, or interviewing programmers in order to draw conclusions regarding this relationship between formal properties and quality, while earlier monographs and business literature draw on the experiences of their authors as a programmers to provide source code examples of specific principles, without extending on the rationale and coherence of these principles, let alone within a source code-specific aesthetic framework. A particularly salient example is Greg Oram's edited volume \emph{Beautiful Code}, in which high-level programmers are invited to pick a piece of code and explain why they like it, sometimes commenting it line by line\cite{oram_beautiful_2007}. This very concrete, empirical inquiry into what makes source code beautiful does no, however, include a strong enough conclusion as to what \emph{actually} makes code beautiful.
+
+Another limitation of these is that they address a large group of software practicioners, but not the only group.
+
 \begin{itemize}
-    \item on the one side, CS papers about the form, and the productivity of source code. there is focus on form, but not so much about aesthetics per se (no over-arching theory, and references to literature, craft, architecture and maths)
-    \item as a subset, include technical literature? things like clean code, code complete, etc. (these put more emphasis on how code is supposed to look like)
     \item on the other side, humanities with high level, broad level (not too technical, not too empirical)
     \item but also focus on smaller niches: obfuscation, code poetry, IOCCC (opens up different registers)
-    \item and then ammend with critical code studies and software studies ()
-    \item finish on the books that have the most details: beutiful code, aesthetics of code phd theses, expressive code
+    \item and then ammend with critical code studies and software studies (...???...)
+    \item finish on the books that have the most details: aesthetics of code phd theses, expressive code
 \end{itemize}
 
 \vspace*{1\baselineskip}
