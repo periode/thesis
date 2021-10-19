@@ -57,6 +57,10 @@ beauty in math: https://en.wikipedia.org/wiki/A_Mathematician%27s_Apology
 
 simplicity: Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
 
+los pequenos glazier, code as language: "There are other spatialities key to writerly programming. Decisions such as whether copies of objects are used in new contexts or existing objects are overwritten, recursion, the articulate realities of arrays, and the energized antics of loops within loops, are a decisive part of the logic of programs"
+
+tension between literature and architecture: **expression** statement vs. **block** statement
+
 ## email from nick
 
 Pierre,
