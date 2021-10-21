@@ -16,7 +16,7 @@ chap 1. (chomsky, functionalism) and 2. (language and computation) seem to be th
 
 > Programming languages, as Derrida knew, are codes: they have one and only one correct interpretation (or, at the absolute limit, a determinate number of discrete interpretations). Human language practice almost never has a single correct interpretation. Languages are not codes; programming “languages” like Basic and FORTRAN and scripting “languages” like HTML and JavaScript do not serve the functions that human languages do. The use of the term language to describe them is a deliberate metaphor, one that is meant to help us interact with machines, but we must not let ourselves lose sight of its metaphorical status, and yet this forgetting has been at stake from the first application of the name. p.19
 
-> it is instead because we are material beings embedded in the physical and historical contexts of our experience, and it turns out that what we refer to as “thought” and “language” and “self” emerge from those physical materialities. p.20
+> it is instead because we are material beings embedded in the physical and historical contexts of our experience, and it turns out that what we refer to as “thought” and “language” and “self” emerge from those physical materialities. (p.20)
 
 ### chomsky and computation
 
