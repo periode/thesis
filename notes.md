@@ -34,6 +34,10 @@ who is going to be impacted by this? how does it create discussion/connection?
 
 [software design decoded](https://www.amazon.com/Software-Design-Decoded-Experts-Think/dp/0262035189)
 
+[semiotics of programming](https://dl.acm.org/doi/book/10.5555/1805903)
+
+[programmers at work](https://archive.org/details/programmersatwor00lamm_0)
+
 Elegance: Through a single lens, it communicates the problem it solves and the machinery of its solution.
 
 Implementation as: **THIS GOES WITH GOODMAN**
@@ -45,6 +49,8 @@ Implementation as: **THIS GOES WITH GOODMAN**
 
 https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
 
+when i talk about materiality, i should also contextualize it with other materialities (build processes, hardware, etc)
+
 ARCH:
 
 alexander vs. eisenman
@@ -53,6 +59,8 @@ alexander = softdev, habitable vs. eisenman = hack, subversion
 
 design thinking book: The concept of good in architecture is one which says, among other things, that all architecture must engage its audience. It must foster understanding and be intelligible. This is clearly not the only concept necessarily at work, but it is one that would have broad adherence, across positions.
 
+http://emis.matem.unam.mx/journals/NNJ/conferences/N2004-Diaz.html - beauty in math and arch
+
 beauty in math: https://en.wikipedia.org/wiki/A_Mathematician%27s_Apology
 
 simplicity: Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
@@ -60,6 +68,12 @@ simplicity: Syntactic simplicity, or elegance, measures the number and concisene
 los pequenos glazier, code as language: "There are other spatialities key to writerly programming. Decisions such as whether copies of objects are used in new contexts or existing objects are overwritten, recursion, the articulate realities of arrays, and the energized antics of loops within loops, are a decisive part of the logic of programs"
 
 tension between literature and architecture: **expression** statement vs. **block** statement
+
+---
+
+`GOTO` as proof of spatialization
+
+---
 
 ## email from nick
 

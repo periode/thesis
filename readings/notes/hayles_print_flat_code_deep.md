@@ -1,9 +1,14 @@
 # print is flat, code is deep: the importance of media-specific analysis
+
 ## n. katherine hayles
+
+---
+
+Expanding textuality beyond printed page likely retains fascism of semiotics, eliding differences in media. What is speicific about code?
 
 *materiality is reconceptualized as the interplay between a text's physical characteristics and its signifying strategies, a move that entwines instantiation and signification at the outset*. material embodiments interact dynamically with linguistic, rhetorical and literary practices to create the effects we call literature.
 
-materiality = physical property + conceptual contents + interpretive activities of readers and writers
+materiality = physical property + conceptual contents + signifying strategies + interpretive activities of readers and writers. materiality should be understood as existing in complex dynamic interplay with content, coming into focus or fading into the background, depending on what performances the work enacts.
 
 can we also imagine that languages specs and documentation **are code-specific materiality**?
 

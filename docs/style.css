@@ -1,0 +1,24 @@
+@import url('https://rsms.me/inter/inter.css');
+body {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.holding{
+    margin: auto;
+}
+
+.tight{
+    width: 70%;
+}
+
+.way {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+blockquote {
+    border-left: 2px solid black;
+    padding-left: 10px;
+}

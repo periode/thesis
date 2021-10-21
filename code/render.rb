@@ -31,30 +31,9 @@ fashion = %{
 		<head>
 			<meta charset="utf-8"/>
 			<title>works in public</title>
-			<link rel="stylesheet" href="style.css"/>
+			<link rel="stylesheet" href="/style.css"/>
 		</head>
 		<body>
-			<style>
-				@import url('https://rsms.me/inter/inter.css');
-				body {
-					background-color: white;
-					font-family: 'Inter', sans-serif;
-				}
-
-				.holding{
-					margin: auto;
-				}
-
-				.tight{
-					width: 70%;
-				}
-
-				.way {
-					position: absolute;
-					top: 10px;
-					left: 10px;
-				}
-			</style>
 			<div class="way">
 				<a href="/index.html">cover</a>
 			</div>
