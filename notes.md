@@ -51,6 +51,8 @@ https://vimeo.com/47364930 -> concise code is code as litterature, because he sa
 
 when i talk about materiality, i should also contextualize it with other materialities (build processes, hardware, etc)
 
+flow state needs an immediate feedback in order to be achieved: literary writing does not have that, but computer writing, with IDEs, linters, etc. does have immediate feedback (with execution speed, so i guess it changes over the years as well)
+
 ARCH:
 
 alexander vs. eisenman

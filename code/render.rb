@@ -4,6 +4,12 @@ require 'kramdown'
 require 'erb'
 require 'fileutils'
 
+attention = `git diff --name-only --cached`
+attention = attention.split("\n")
+
+unless !attention.length
+	exit "(nevermind)"
+
 puts "time to publicize"
 the_only = Time.now # to
 
@@ -12,9 +18,6 @@ FileUtils.mkdir_p 'docs/' + remember
 
 puts "to set everything up"
 everything = []
-
-attention = `git diff --name-only --cached`
-attention = attention.split("\n")
 
 attention.each do | for_this_fragment |
 	there_is_a = /^(?!admin)(.*md)$/
