@@ -7,8 +7,10 @@ require 'fileutils'
 attention = `git diff --name-only --cached`
 attention = attention.split("\n")
 
-unless !attention.length
-	exit "(nevermind)"
+unless attention.length
+	puts "nevermind"
+	exit
+end
 
 puts "time to publicize"
 the_only = Time.now # to
