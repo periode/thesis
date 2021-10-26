@@ -53,6 +53,45 @@ elaborate on the response
 
 ### roadmap
 
-how the thesis will proceed, and intended readership
+how the thesis will proceed
+
+#### the aesthetics of source code: idealistic. what are they? what are people saying about it? going through other aesthetics (lit, arch, craft, maths).
+
+- - the practice of programmers: how they play with understanding: software developers, artists, hackers, scientists (data + academia).
+- - establish ideals. see how those ideals relate to other domains (e.g. clarity in [...ideals])
+- - establish how these ideals relate to the broader relationship to understanding and the modes of knowledge we've seen before
+- - CONCLUSION: people do a lot of different things with code. dominant aesthetic vs. dominated aesthetic, glitch etc.. can we see a relation between those ideals and what source code is made of? for that we turn to what source code is made of
+
+#### the stakes of source code as understandable text: why is it so hard? how is it affected by external factors? do aesthetics have anything to do with it (literary and tacit)?
+
+- - the issue with source code as understanding (human and machine, software domain and problem domain). surface-structure vs. deep-structure. goals of source code
+- - issues of understanding in text: sophism, rhetoric, literature and cognition (metaphor)
+- - other kinds of understanding: tacit knowledge, habitability
+- - CONCLUSION: understanding is key, and it happens through writing nice code
+
+#### the aesthetics of source code: practical. what is source code made of? structure, syntax, vocabulary. how does this relate to those ideals?
+
+- - \emph{empirical study}, review of what people say across communities. establish typology of tokens
+- - see how the tokens can relate to those ideals (structure, syntax, vocabulary)
+- - case studies
+- - CONCLUSION: aesthetic tokens exist at different levels, and under different modalities. so it's still very different, polymorphous. and yet, there is still one thing in common: programming languages.
+
+so far we've seen one context: use and intent of programmers. there is another context: tools. ("choosing the best tool for the job")
+
+#### programming languages, programming matters. why it is necessary to take languages into account.
+
+- - machine communication (ast)
+- - human communication (esolang)
+- - the hybridity of it all: spatial, kinetic instructions, thought-stuff
+- - variability and stability: what is the same across codebases, what changes. it's always a tradeoff
+- - CONCLUSION: PLs allow for a single way to hold these complexities (problem domain, software domain) together. cf. simondon
+
+#### conclusion
+
+the aesthetics of code as a dynamic, kinetic one (what are we dealing with = lit? then what do they do = arch?). craft and math as modulators. expressions and statements. code as layers, with the nature changing as we get deeper into the machine. the paradox of thought-stuff. language as formal, mechanical exploration
+
+### wrap up
+
+intended readership
 
 connect back to the wider world

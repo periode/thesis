@@ -235,67 +235,52 @@ This study therefore aims at weaving in empirical observations, discourse analys
 
 \subsection{Roadmap}
 
-This thesis will proceed in three main
+Our first step in this study is an empirical assessment of how programmers consider aesthetics with their practice or reading and writing it, first from a conceptual standpoint. After acknowledging and underlining the diversity of those practices, from software developers and scientists to artists and hackers, we will identify which concepts and references are being used the most when referring to beautiful code—concepts such as clarity, simplicity, cleanliness, and others. These concepts will then allow us to touch upon the field that are being referred to when considering the practice of programming: literature, architecture and mathematics as domains in themselves, and craft as a particular approach to these domains. Finally, we will how how the overlap of these concepts can be found in the process of \emph{understanding}—communicating abstract ideas through concrete manifestations.
+
+After establishing the role of aesthetics as a means for understanding source code, we will proceed to analyze further such a relationship between understanding, source code and aesthetics. We will see that one of the main features of source code is the elusiveness of its meaning, whether effective or intended. Beautiful code is often code that can be understood clearly, which raises the following question: how can a completely explicit and formal language allow ambiguity? The answer to this question will involve an analysis of the two audiences of source code: humans and machines.
+
+Taking a step back towards textuality, we will then assess how literature has touched upon these issues of understanding, from rhetoric to literature; thinking in terms of surface-structure and deep-structure, we will establish a first connection between program texts and literary text through their use of metaphors. Since metaphors aren't exclusively literary devices, looking at them from a cognitive perspective will also raise issues of modes of knowledge, between explicit, implicit and tacit.
+
+With a firmer grasp on the stakes of source code as an understandable text, we can now turn to its effective manifestations, by close-reading program texts. Working through \emph{structure}, \emph{syntax} and \emph{vocabulary}, we will be able to formalize a set of textual typologies involved in producing an aesthetic experience through source code. Particularly, we will highlight where those tokens differ across communities of practice, and where they overlap, keeping in mind the conditionality of those aesthetic judgments, and attempt to trace connections between specific textual configurations of source code with the ideals summoned by the programmers. After this deductive consideration, we will move on to apply these typologies to several larger program texts—ranging from the LaTeX codebase, the Carnivore software artwork to several code poems. These will highlight a last component in the concrete manifestation of source code aesthetics: the place of programming languages.
+
+At this point, we've established aesthetics in source code as a way to address the inherent tensions of a program text's dual audience. Being understandable by both humans and machines is the feat of programming languages, the symbol systems on which beautiful texts depend on. As we've elicited the intricacies of aesthetic manifestations in human to machine communication, we then investigate machine to machine communication. Deconstructing programming languages as formal grammars will show that there are very different conceptions of semantics and meanings expected from the computer than those expected from a human, even though a machine's perspective on beautiful code could still be based around concepts of effectiveness, simplicity and performance. \emph{Contra} those, human use of programming languages reaches into the extreme of \emph{esolangs}—an investigation into those will reveal that language is effectively considered as a material, which might not be sculpted into any possible shape, but rather one whose base elements can be recombined into unexpected structures.
+
+Recognizing programming languages as the bridge between the two domains of programming—the human of the machine—will allow us to clarify how the different source fields (literature, architecture, mathematics) relate to programming. We will show how programming languages provide a gradual interface between different modes of being of software: software as text, software as construct and software as theory. The need for aesthetics arises from the tradeoffs that need to be made when these different modes of being overlap\cite{simondon_du_1958}.
+
+In the end, we will turn once again to the questions we asked at the beginning of this thesis to suggest some possible answers. The reorganization of the source aesthetic fields inot a linear succession of the interpration or compilation process from high-level to low-level hints at a somewhat kinetic nature of program text. Indeed, the specific aesthetics of source code are those of a constant doubling between the specificities of the human (such as natural handling of ambiguity, and intuitive understanding of the problem domain) and of the machine (such as speed of execution, and reliance on explicit formal grammars, which can also be seen as the tension between surface structure, one that is textual and readable, and deep structure, one that is made up of dynamic processes representing complex concepts, and yet devoid of any fluidity or ambiguity. It is this dynamism, both in terms of \emph{where} and \emph{when} code could be executed, which suggest the use of aesthetics in order to grasp more intuitively the topology and chronology of a program text.
+
+On a broader note, we can point to multiple ways in which aesthetics might relate to functionality. This study seems to confirm empirically the approaches of Goodman of art as cognitively effective symbol systems, and of Simondon's consideration of aesthetic thought as a link between technical thought and religious thought. Starting from a practical perspective on aesthetics taking from the field of craft—the thing well done—, aesthetics also highlight functionality on a cognitive level—the thing well thought. Beauty in source code seems to be dominantly what is useful and thoughtful, even when they are reflected in the distorting mirrors of hacks and esoteric languages, therefore broadening our possible understandings of what aesthetics can do, and what functionality can be.
+
+\subsection{Implications and readership}
+
+On a more practical level, this thesis fits within the field of software studies, and aims at clarifying what do we mean when we refer to code \emph{code as\dots}. Code as literature, architecture or mathematics, code as philosophy or as craft, are metaphors which can be examined productively by looking at the texts themselves, an approach that has only been deployed in relatively recent work.
+
+This relationship between practice, function and beauty is the broad, underlying question of this study. In the vein of the cognitive approach to art and aesthetics, this study is an attempt to show how aestethics play a communicative role, and how concrete manifestations can, through a metaphorical process, hint at broader ideas. In this sense, this study is not just about the relation of aesthetics and function, but also about the function of aesthetics. And yet, if this idea of aesthetics as a way of communicating ideas, a way which can succeed or fail, could potentially be applied across artistic and non-artistic domains, another aim of this thesis is to highlight the relativity a aesthetic standards: using a similar medium, practices, uses and purposes determine as much, if not more, of the artistic worth of a given program text.
+
+Examining the result of the practice of programmers at such a close-level hopes to contribute to a clarification of what exactly is programming, in an in which the consequences of the embedding of software in our social, economic and political practices. In order to address the question of whether algorithms are political in themselves, or if their use is political, it is important to define clearly what it is that we are talking about when discussing algorithms. A clarification of source code on a concrete level attempts to help clarify what this essential component of algorithms, and opens up potential for further work in terms of thinking no longer of the aesthetics of source code, but of its poetics, in the way source code, as a language of art, is also a way of worldmaking.
 
 \begin{itemize}
-    \item the stakes of source code as understandable text: why is it so hard? how is it affected by external factors? do aesthetics have anything to do with it (literary and tacit)?
-    \begin{itemize}
-        \item the issue with source code as understanding (human and machine, software domain and problem domain). surface-structure vs. deep-structure. goals of source code
-        \item the practice of programmers: how they play with understanding: software developers, artists, hackers, scientists (data + academia).
-        \item issues of understanding in text: sophism, rhetoric, literature and cognition (metaphor)
-        \item other kinds of understanding: tacit knowledge, habitability
-        \item CONCLUSION: understanding is key 
-    \end{itemize}
-
-    \item the aesthetics of source code: idealistic. what are they? what are people saying about it? going through other aesthetics (lit, arch, craft, maths).
-    \begin{itemize}
-        \item establish ideals. see how those ideals relate to other domains (e.g. clarity in [...ideals])
-        \item establish how these ideals relate to the broader relationship to understanding and the modes of knowledge we've seen before
-        \item CONCLUSION: people do a lot of different things with code. dominant aesthetic vs. dominated aesthetic, glitch etc.. can we see a relation between those ideals and what source code is made of? for that we turn to what source code is made of
-    \end{itemize}
-    
-    \item the aesthetics of source code: practical. what is source code made of? structure, syntax, vocabulary. how does this relate to those ideals?
-    \begin{itemize}
-        \item \emph{empirical study}, review of what people say across communities. establish typology of tokens
-        \item see how the tokens can relate to those ideals (structure, syntax, vocabulary)
-        \item case studies
-        \item CONCLUSION: aesthetic tokens exist at different levels, and under different modalities. so it's still very different, polymorphous. and yet, there is still one thing in common: programming languages.
-    \end{itemize}
-
-    \item so far we've seen one context: use and intent of programmers. there is another context: tools. ("choosing the best tool for the job")
-    \item programming languages, programming matters. why it is necessary to take languages into account.
-    \item \begin{itemize}
-        \item machine communication (ast)
-        \item human communication (esolang)
-        \item the hybridity of it all: spatial, kinetic instructions, thought-stuff
-        \item variability and stability: what is the same across codebases, what changes. it's always a tradeoff
-        \item CONCLUSION: PLs allow for a single way to hold these complexities (problem domain, software domain) together. cf. simondon
-    \end{itemize}
-      
-    \item conclusion: the aesthetics of code as a dynamic, kinetic one (what are we dealing with = lit? then what do they do = arch?). craft and math as modulators. expressions and statements. code as layers, with the nature changing as we get deeper into the machine. the paradox of thought-stuff. language as formal, mechanical exploration.
+    \item \sout{new way to see code, and deal with fetishization}
+    \item \sout{new perspective on beauty and function: cognition}
+    \item \sout{new perspective on beauty and standards: relativity}
+    \item \sout{implications for poetics: now that we have a baseline, we can (re-)examine the worlds created by code}
 \end{itemize}
-
-\vspace*{1\baselineskip}
-
-\centerline{\rule{0.3334\linewidth}{.4pt}}
-
-\vspace*{2\baselineskip}
-
-\subsubsection{Implications}
-
-then really establish the significance of this study: beauty and function, and weave in my research questions
-
-\begin{itemize}
-    \item new way to see code, and deal with fetishization
-    \item new perspective on beauty and function: cognition
-    \item new perspective on beauty and standards: relativity
-    \item implications for poetics: now that we have a baseline, we can examine the worlds created by code
-\end{itemize}
-
-\subsection{Connecting back to the wider world - 2p}
 
 and readership
 
 \begin{itemize}
+    \item programmers (expliciting things that have been obvious for a while)
+    \item digital humanists (putting a central concept at the core of code: that by definition it's hard to understand... then what?)
+    \item craftspeople (relating what they do with more conceptual stuff)
+    \item artists and art historians (art doesn't exist just by itself, it can (and perhaps should?) do something)
+\end{itemize}
+
+\begin{itemize}
     \item todo: clarify between source code and program text
 \end{itemize}
+
+\vspace*{1\baselineskip}
+
+\centerline{\rule{0.13334\linewidth}{.4pt}}
+
+\vspace*{2\baselineskip}

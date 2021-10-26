@@ -6,7 +6,7 @@ require 'fileutils'
 
 attention = `git diff --name-only --cached`
 attention = attention.split("\n")
-
+	
 unless attention.length
 	puts "nevermind"
 	exit
