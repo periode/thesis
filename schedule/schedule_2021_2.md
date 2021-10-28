@@ -8,7 +8,7 @@
 
 - catch up on all resources
 - - from `notes.md`
-- - from `schedule_2021_1.md`
+- - from [[schedule_2021_1]]
 - mathematical beauty (e.g. data scientists/academics)
 
 ## november

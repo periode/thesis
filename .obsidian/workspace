@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "332ef6ffc4d85600",
+    "type": "split",
+    "children": [
+      {
+        "id": "7e008fa49c3ce60d",
+        "type": "split",
+        "children": [
+          {
+            "id": "ea27a484de0eb581",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readings/notes/jones_reckoning_with_matter.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "b34faf2da42380b5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "table_of_contents.md",
+                "mode": "source"
+              },
+              "pinned": true
+            }
+          }
+        ],
+        "direction": "vertical"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74ec6946d79242fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "67cd0a370bbf4356",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b66a8f0362b7e276",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5135ca443f205800",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "13b2b27ef303d414",
+    "type": "split",
+    "children": [
+      {
+        "id": "666de858f4b3e64f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8067fc7b0a6a3d85",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "table_of_contents.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b34faf2da42380b5",
+  "lastOpenFiles": [
+    "table_of_contents.md",
+    "readings/notes/jones_reckoning_with_matter.md",
+    "readings/notes/iverson_notation_as_tool_for_thought.md",
+    "readings/notes/ivanova_comprehension_computer_code.md",
+    "readings/notes/irmak_software_abstract_artifact.md",
+    "readings/notes/homem_topics_in_programming_languages.md",
+    "readings/notes/hill_what_makes_a_program_elegant.md",
+    "readings/notes/hayes_semincolon_wars.md",
+    "readings/notes/green_coding_guidelines.md",
+    "readings/notes/granger_essai_philosophie_style.md"
+  ]
+}

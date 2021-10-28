@@ -20,7 +20,11 @@ third clause: these symbols are tools, and as such they separate us from our nat
 
 fourth clause: hierrachy (or the sense of order)
 
-fifth clause: perfection. "the principle of perfection is central to the nature of language as motive. the mere desire to name something by its -proper- name, or to speak a language in its distinctive ways is intrinsically perfectionnist". indeed, programmers always try to find the correct term for something. **a given terminology contains various implications, and there is a corresponding "perfectionist" tendency for men to attempt carrying out those implications.**
+fifth clause: perfection. 
+
+> the principle of perfection is central to the nature of language as motive. the mere desire to name something by its -proper- name, or to speak a language in its distinctive ways is intrinsically perfectionnist
+
+indeed, programmers always try to find the correct term for something. **a given terminology contains various implications, and there is a corresponding "perfectionist" tendency for men to attempt carrying out those implications.**
 
 ---
 

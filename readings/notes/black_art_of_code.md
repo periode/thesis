@@ -15,4 +15,6 @@
 4. how a literary appreciation of programming informs literary theory itself (example with *finnegan's wake*)
 5. redefine "the literary" and "the aesthetic" in classical literary theory
 
-the mutual abstraction of *code* into *language* and of *language* into *code*
+the mutual abstraction of *code* into *language* and of *language* into *code*. there is indeed an assumption of the literary: beauty __is__ literary, rather than beauty is __procedural, with the involvement of words__
+
+[[table_of_contents#1 2 ideals of beauty]]

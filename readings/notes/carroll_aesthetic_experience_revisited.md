@@ -22,7 +22,7 @@ When it's not so disinterested, this is when it gets to "content-oriented" terri
 
 The axiological one is based on the kind of *value* you get from the aesthetic experience. For value in its own sake, and then she has long and relevant rebuttal of the axiologic perspective. One of the instrumental aspects she finds is *group cohesion* through shared aestethic experience. Also because it encodes knowledge through different means of perception.
 
-Aesthetic judgments in code aren't disinterested: they're vested in being able to *understand*.
+Aesthetic judgments in code aren't disinterested: they're vested in being able to *understand*. but also by virtue of coming from a pre-existing set of skills and knowledge
 
 "Art in the service of technics" -> affect doesn't work because aesthetic experience doesn't always release us from worldy concerns.
 

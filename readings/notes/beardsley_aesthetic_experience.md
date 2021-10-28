@@ -6,7 +6,7 @@
 
 ---
 
-he seems to be a big shot
+he seems to be a big shot, and most of this should be used in [[table_of_contents#1 2 ideals of beauty]]
 
 ---
 
@@ -22,7 +22,7 @@ searching aesthetic and *realizing* it
 
 what are the aesthetic "rules of relevance"? Those implicitly or explicitly followed by people.
 
-aesthetic value is the ability to provide aesthetic gratification (I would disagree, thinking that aesthetics can be combined with other fields, and it's not so isolated. aesthetics provide cognitive stimulation, is better than gratification). but the interesting question is that of the type of aesthetic gratification, as opposed to other types.
+aesthetic value is the ability to provide aesthetic gratification (I would disagree, thinking that aesthetics can be combined with other fields, and it's not so isolated. aesthetics provide cognitive stimulation, is better than, but related to gratification). but the interesting question is that of the type of aesthetic gratification, as opposed to other types (emotion, cognition, motion).
 
 > Gratification is aesthetic when it is primarily obtained primarily from attention to the formal unity and/or the intensity of regional quality.
 

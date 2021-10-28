@@ -6,5 +6,5 @@ the reason why little-endian vs. big-endian debate seems to be so fiery is that 
 
 | short-term | vs. | long-term convenience |
 |---|---|---|
-| consistency | vs. | compatibility |\
+| consistency | vs. | compatibility |
 

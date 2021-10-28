@@ -4,7 +4,7 @@
 
 ---
 
-topologie: branche des maths ou on construit des objets
+topologie: branche des maths ou on construit des objets [[table_of_contents#mathematical beauty]]
 
 on donne du sens au maths en les visualisants.
 
@@ -23,11 +23,11 @@ qu'est-ce que ca nous dit de notre rapport à:
 4. implications pour la pédagogie?
 
 
-Tversky -> psychologue qui bosse sur la "spraction" (action et abstraction). les actions créent des abstractions.
+Tversky -> psychologue qui bosse sur la "spraction" (action et abstraction). les actions créent des abstractions [[table_of_contents#mathematical beauty]]
 
 diagrammatisation réutilise des facultés qui sont déja ordinaires.
 
-cognition incarnée -> varela, 1991
+cognition incarnée -> varela, 1991 [[table_of_contents#understanding code]]
 cognition étendue -> clark chalmers, 1998
 
 plus récemment:
@@ -44,7 +44,7 @@ un diagramme mathématique est une "crystallization" d'un geste. geste est trans
 
 sybille krämer: artefacts cognitifs, 2014, also **goody** (the math table can be taught to those who cannot read or write, it's a different technology of the intellect) (MAIS dans certains cas, et dans certaines cultures uniquement)
 
-villani (2012), le role de TeX: avec l'habitude, les mathématiciens peuvent déchiffrer les formules absconses de TeX source -. **ADPATATION** le mathématicien a "dans sa tête" non seulement la formule TeX, mais aussi sa transcription en maths, et meme de *l'objet mathématique* qui lui correspond.
+villani (2012), le role de TeX: avec l'habitude, les mathématiciens peuvent déchiffrer les formules absconses de TeX source -. **ADPATATION** le mathématicien a "dans sa tête" non seulement la formule TeX, mais aussi sa transcription en maths, et meme de *l'objet mathématique* qui lui correspond. -> le problème, c'est quand on n'a pas cet _objet mathématique_, et qu'il faut le reconstruire à partir de traces
 
 Q&A:
 

@@ -24,8 +24,6 @@ a pre-requirement is for the program to work, to be *correct*
 
 the constraints are the ones that do make us appreciate the elegance of a program (and expertise is indeed necessary -- *justify why?* because beginners only see one way? is elegance always a reduction from a first step?)
 
-
-
 **elegance is work that does it all with graceful assurance and economy**
 
 elegance is "don't repeat yourself"

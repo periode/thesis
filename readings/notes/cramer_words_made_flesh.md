@@ -98,16 +98,16 @@ whose perspective remains fixated on the product and who wrongly conclude, in a 
 
 people hope that the machine transcends itself
 
-# IMPORTANT
-*formalisms, on the contrary, have a cultural semantics of their own, even on the most primitive and basic level. With a cultural semantics, there inevitably is an aesthetics, subjectivity and politics in computing.*
-# END OF IMPORTANT
+> formalisms, on the contrary, have a cultural semantics of their own, even on the most primitive and basic level. With a cultural semantics, there inevitably is an aesthetics, subjectivity and politics in computing.
+
+and yet I can also argue the contrary: the formalisms themselves come from technical/material realities which are then explained/framed/justified by framed realities. double movement
 
 oulipo - self-characterized as naive, craftsman-like and amusing
 
 is computation a means to transcend limitations (max bense) or just a constraint (oulipo) who needs humans/imagination to be transcended?
 
 **codeworks**
-*This is not simply a poetic metaphorization because the technical apparatus of writing becomes a part of the text. There is a feedback of textual input, output and processing inside the text and within the medium of code. This conflation of source code, data and processing could be called recursive, since recursion means that a process processes itself. Yet it is not a formal-mathematically “clean” recursion. The text is not a result of a pure computation, but involves human editing, rendering the recursion a simulation, rhetorical, reflexive.*
+> This is not simply a poetic metaphorization because the technical apparatus of writing becomes a part of the text. There is a feedback of textual input, output and processing inside the text and within the medium of code. This conflation of source code, data and processing could be called recursive, since recursion means that a process processes itself. Yet it is not a formal-mathematically “clean” recursion. The text is not a result of a pure computation, but involves human editing, rendering the recursion a simulation, rhetorical, reflexive.
 
 ---
 

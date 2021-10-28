@@ -6,6 +6,7 @@
 summary
 
 the book is an intertwining of indian aesthetics and musings on code. his position is that code isn't litterature, but that doesn't make it something less interesting. reading beautiful code triggers past mental models, past knowledges, and removes subjectivity. what happens then isn't objectivity, but something just a bit more selfless. code is effect, poetry is affect, but they both have their own beauty.
+
 ---
 
 much of the beginning of the books is about his personal history and encounter with software, and his explanation of what software is.

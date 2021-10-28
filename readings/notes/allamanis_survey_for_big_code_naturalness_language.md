@@ -10,7 +10,7 @@ they make interesting assumption: using ML to generate code is starting from the
 
 ---
 
-**The naturalness hypothesis**: Software is a form of human communication; software corpora have similar statistical properties to natural language corpora; and these properties can be exploited to build better software engineering tools
+**The naturalness hypothesis**: Software is a form of human communication; software corpora have similar statistical properties to natural language corpora; and these properties can be exploited to build better software engineering tools [[table_of_contents#2 1 the problem of understanding in human and machines]]
 
 > Programming languages narrow the gap between computers and the human mind: they construct palatable abstractions out of a multitude of minute state transitions. Source code has two audiences and is inherently **bimodal**: it communicates along two channels: one with humans, and one with computers. Humans must understand code to read and write it; computers must be able to execute it. The bimodality of code drives the similarities and differences between it and text
 
@@ -24,7 +24,7 @@ they make interesting assumption: using ML to generate code is starting from the
 
 the trace is an interesting concept: like ariadne's thread
 
-CODE MUST BE SYNTACTICALLY AMBIGUOUS, but it's conceptuall ambiguous (e.g. what does `counter` refer to?)
+CODE MUST BE SYNTACTICALLY UNAMBIGUOUS, but it's conceptually ambiguous (e.g. what does `counter` refer to?)
 
 > Code’s two channels, the algorithmic and the explanatory channels, interact through their semantic units, but mapping code units to textual units remains an open problem. Natural semantic units in code are identifiers, statements, blocks, and functions. None of these universally maps to textual semantic units.
 

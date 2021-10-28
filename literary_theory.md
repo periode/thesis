@@ -1,11 +1,13 @@
 # literary theory
 
-- form/structure/narrative/genre
-- ideology/philosophy/history/aesthetics
-- language/systems/texts/readers
+- **form**/structure/narrative/genre
+- ideology/philosophy/history/**aesthetics**
+- **language**/**systems**/**texts**/**readers**
 - mind/body/gender/identity
-- culture/ethnicities/nations/locations
+- **culture**/ethnicities/nations/locations
 - people/places/bodies/things
+
+[[table_of_contents#understanding in literature]]
 
 ## abrams - four coordinates
 
@@ -13,6 +15,8 @@
 2. mimetic (the text as a reflection of the world, a model of the world -metaphors/universal that can be found in concrete (back to aristotle))
 3. pragmatic (relationship between text and audience, reception theory/moral effect of art, their ideological baggage)
 4. objective (autotelic, the text for the text and nothing else, ontological approach)
+
+here, i suggest an approach between **pragmatic** (what is the purpose, but not from a moral point of view) and **objective** (close reading)
 
 1. author
 2. work
@@ -25,7 +29,7 @@
 The style of writing of Zen texts has been influenced by "a variety of east Asian literary games":[12]
 
 - The extensive use of allusions, which create a feeling of disconnection with the main theme;
-- Indirect references, such as titling a poem with one topic and composing a verse that seems on the surface to be totally unrelated;
+- Indirect references, such as titling a poem with one topic and composing a verse that seems on the surface to be totally unrelated; see: [[mateas_montfort_box_darkly]] for obfuscation.
 - Inventive wordplay based on the fact that Hanzi (Chinese characters) are homophonic and convey multiple, often complementary or contradictory meanings;
 - Linking the verses in a sustained string based on hidden points of connection or continuity, such as seasonal imagery or references to myths and legends.
 
@@ -38,13 +42,17 @@ literary theory is plagued by the idea of autonomy, the idea that it functions o
 
 literature is pleasure derived from innovation, creativity, the love of language and its exuberant use. so literature might be the form that engages with life through exciting/mind-challenging/satisfying use of language.
 
-Wolfgang Iser: literature is an anthropological investigation, complementary to science and philosophy. Interpreting that literature, then, is raising questions about it. (he's from reader-response theory)
+Wolfgang Iser: literature is an anthropological investigation, complementary to science and philosophy. Interpreting that literature, then, is raising questions about it. (he's from reader-response theory) [[simondon_mode_existence_objets_techniques]] -lien avec l'esthétique comme connexion entre tech et religion
 
 traditionally, started with *mimesis* and *poetics* (greeks)
 
 #### german idealism
 
-then with **baumgarten** and **kant** comes the dual approach to (1) senses and then (2) reason; i.e. sensation (aesthetics) allow us to apprehend something, which appears unprecedented, and reason allows us to grasp it. *the triumph of reason generates the sublime effect* (kant) -> disinterested, universal, necessary. **schiller** introduces a dialectical movement between reason and imagination (*play*). play brings form into being. **hegel** proposes that art is self-consistent, focused inwardly, and built through a dialectic of Spirit/Reason/Geist. these three where taken up by the romantics in england, who focused a lot on imagination and play, rather than reason (surprisingly heh). but then the post-romantics wanted a bit more material, a bit more social reality (that's when criticism starts to show up).
+then with **baumgarten** and **kant** comes the dual approach to (1) senses and then (2) reason; i.e. sensation ([[aesthetics]]) allow us to apprehend something, which appears unprecedented, and reason allows us to grasp it. *the triumph of reason generates the sublime effect* (kant) -> disinterested, universal, necessary.
+
+**schiller** introduces a dialectical movement between reason and imagination (*play*). play brings form into being.
+
+**hegel** proposes that art is self-consistent, focused inwardly, and built through a dialectic of Spirit/Reason/Geist. these three where taken up by the romantics in england, who focused a lot on imagination and play, rather than reason (surprisingly heh). but then the post-romantics wanted a bit more material, a bit more social reality (that's when criticism starts to show up).
 for **nietzsche**, it was about interrogating the value of value itself, and by this value-making process, being able to determine the value of truth.
 - *truth becomes a moveable host of metaphors, metonymies and anthropomorphisms, ...illusions that we have forgotten are illusions* (freddy nietzsche, "Truth")
 - the artists' lie, or "untruth", brings us closer to what is true (wilde, "Intentions")

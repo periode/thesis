@@ -7,7 +7,8 @@
 
  he mentions aesthetics in the form of "stylistic clarity" > writable text (texte scriptible), understanding for more "efficient" modification. but could it be that this efficiency involves a 'creative' outloook on the given code base? so it's not *just* about modularity, efficiency, re-usability.
 
- John Cayley defines **codeworks** as *"literature which uses, addresses, and incorporates code: as underlying language-animating or language-generating programming, as a special type of language itself, or as an intrinsic part of the new surface language or 'interface text' in networked and programmable media."*. I would define the object of my research as *"code which uses and addresses literature: which incorporates ambiguity, stylistic necessity, semantic complexity and uses of metaphors in order to convey a message that code alone, as a 'strictly' technical object, cannot convey."*
+ John Cayley defines **codeworks** as:
+ > "literature which uses, addresses, and incorporates code: as underlying language-animating or language-generating programming, as a special type of language itself, or as an intrinsic part of the new surface language or 'interface text' in networked and programmable media."*. I would define the object of my research as *"code which uses and addresses literature: which incorporates ambiguity, stylistic necessity, semantic complexity and uses of metaphors in order to convey a message that code alone, as a 'strictly' technical object, cannot convey."
 
 
 - should code always be executable, on top of being "artistic"?

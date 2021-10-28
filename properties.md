@@ -1,5 +1,7 @@
 # aesthetic properties of source code
 
+[[table_of_contents#3 1 - typology of aesthetics]]
+
 ## locii of action
 - data (input, output)
 - data (structure)

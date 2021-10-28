@@ -71,7 +71,7 @@ how the thesis will proceed
 
 #### the aesthetics of source code: practical. what is source code made of? structure, syntax, vocabulary. how does this relate to those ideals?
 
-- - \emph{empirical study}, review of what people say across communities. establish typology of tokens
+- - empirical study, review of what people say across communities. establish typology of tokens
 - - see how the tokens can relate to those ideals (structure, syntax, vocabulary)
 - - case studies
 - - CONCLUSION: aesthetic tokens exist at different levels, and under different modalities. so it's still very different, polymorphous. and yet, there is still one thing in common: programming languages.
@@ -95,3 +95,5 @@ the aesthetics of code as a dynamic, kinetic one (what are we dealing with = lit
 intended readership
 
 connect back to the wider world
+
+clarify between source code and program text

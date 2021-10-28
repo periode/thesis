@@ -7,3 +7,5 @@ in which writing/reading code happens, which therefore changes aesthetics
 - scientist -> formal beauty of computation (and how it transpires sometimes in code itself)
 - student/amateur -> beauty without extensive skill
 - artist -> beautiful as poetic reference to the problem domain
+
+[[table_of_contents#the practice of programmers]]

@@ -2,19 +2,19 @@
 
 ## meta-questions
 
-- what is the distinction between **creative** and **aesthetic** writing of source code?
+- what is the distinction between **creative** and **aesthetic** writing of source code? [[table_of_contents#creative beauty]]
 - decide between **writing** and **reading**? **usage** and **possibilities**?
-- what definition of **code** do i want to choose?
+- what definition of **code** do i want to choose? -> done [[table_of_contents#introduction]]
 
-aesthetics in software engineering is not about the program, it's about the programmer.
+aesthetics in software engineering is not about the program, it's about the programmer. [[table_of_contents#functional beauty]]
 
 the aesthetics of clarity in executable source code
 
-questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)?
+questions of clarity vs. simplicity (how often do they correspond? oppose?) - is one within time, or within space, or within [people](https://en.wikipedia.org/wiki/Peopleware)? [[table_of_contents#ideals of beauty]]
 
-semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a symbol without understanding it -> understanding the symbol vs. understanding what the symbol refers to.
+semantics? -> programming languages have semantics (either denotational or operational, stratchey) -> operational is whatever the machine says, and we can realize/describe/use a symbol without understanding it -> understanding the symbol vs. understanding what the symbol refers to. [[table_of_contents#4 1 - the programming language object]]
 
-there is always a bit of giving up the understanding (linux kernel, APIs, etc.). does it remove the essence or in contrary highlight it?
+there is always a bit of giving up the understanding (linux kernel, APIs, etc.). does it remove the essence or in contrary highlight it? [[table_of_contents#understanding code]]
 
 ---
 
@@ -28,7 +28,7 @@ aesthetics as a relationship to the human: if tactics is what makes the individu
 
 ## questions
 
-- what are the literary standards to which code can be held to? what are **OTHER** standards?
+- what are the literary standards to which code can be held to? what are **OTHER** standards? -> arch, maths, craft
 
 ### tools
 
@@ -42,7 +42,7 @@ aesthetics as a relationship to the human: if tactics is what makes the individu
 - ~~what are the useful conceptual tools that i use from the research on e-lit (e.g. combinations, potential, interactivity, ... **check the book by hannes bajohr, code und Konzept**)?~~ these tools are cayley's vocabulary, syntax, structure
 
 - are existing theories applicable? to what extent do we need to modify them? to what extent do we need new ones?
-- - theories for what? theories to explain *how* source code can be a means of creating aesthetic objects. <- **this is important**
+- - theories for what? theories to explain *how* source code can be a means of creating aesthetic objects. <- **this is important** -> this is the one i need to put together
 - ~~what are the notions of literature? text, fiction, account, figure, materiality, author, literarity, context, commitment (?), fragment (**this one works with source code modules**, in space rather than time)~~ these are too rigid to use at the onset of the research
 
 ### typology
@@ -63,7 +63,7 @@ done (separated in socio-economic categories of practicioners)
 
 ## materiality
 
-"efficient code" depends on knowing the material that you are working with: in the 1970s, it was the compiler (kernighan, *elements of programming style*). in the 2000s, it might be just the language spec.
+"efficient code" depends on knowing the material that you are working with: in the 1970s, it was the compiler (kernighan, *elements of programming style*). in the 2000s, it might be just the language spec.[[table_of_contents#4 3 3 - language as material]]
 
 code as substitute-material
 
@@ -71,7 +71,7 @@ code as substitute-material
 
 ## thoughts
 
-by understanding what it does, you understand what it is -> relationships of knowledge
+by understanding what it does, you understand what it is -> relationships of knowledge[[table_of_contents#understanding in craft]]
 
 ~~- double-meaning (paloque) is the fact that one can play between machine-language and human-language~~
 - - ~~possible triple-meaning with an interplay in conceptual structures (OOP)~~ this is more in the realm of creativity rather than aesthetics.
@@ -87,9 +87,9 @@ by understanding what it does, you understand what it is -> relationships of kno
 
 - expressing vs. explaining (Kurosawa) / hinting at (Tolstoi) **important ideas to keep**
 
-- *'There is no such thing as elegance or subtlety in the way I use software.'* Belgrade-based sound artist Svetlana Maraš > there are other aesthetics: brutality, organicness, rococo, etc. elegance and subtlelty are only subsets, but very very large ones
+- *'There is no such thing as elegance or subtlety in the way I use software.'* Belgrade-based sound artist Svetlana Maraš > there are other aesthetics: brutality, organicness, rococo, etc. elegance and subtlelty are only subsets, but very very large ones[[table_of_contents#3 1 - typology of aesthetics]]
 
-- programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation*
+- programming languages define sets of aesthetic relationships, and as such are *resources for intellectual/thoughtful work/formulation* [[table_of_contents#4 - the linguistic influence of source code]]
 - - actors in actor network theory?
 - - this is kinda what los pequenos glazier was saying when he was asking "how does materiality influence the text itself?"
 - - on a less formal level, the sociohistorical approach to literature implies that literature judges a society, and a society can explain its literature.
@@ -111,7 +111,7 @@ however, source code doesn't seem to have any depth: it is what it does > but hi
 perceivable (but still hidden) vs. shown
 looking harder vs. looking differently
 
-*Some colleagues (such as Thomas Kühne from Victoria University of Wellington) have taken this further to explicitly define the limited properties of any model. Kühne (2005) describes this in three ways:mapping–(i.e. acknowledging that models are projections of an original);reduction–(i.e. acknowledging that models only represent a selection of relevant properties of the original); and pragmatics–(i.e. acknowledging that any model isaccepted as a proxy for the original only for a specific purpose).*
+*Some colleagues (such as Thomas Kühne from Victoria University of Wellington) have taken this further to explicitly define the limited properties of any model. Kühne (2005) describes this in three ways:mapping–(i.e. acknowledging that models are projections of an original);reduction–(i.e. acknowledging that models only represent a selection of relevant properties of the original); and pragmatics–(i.e. acknowledging that any model isaccepted as a proxy for the original only for a specific purpose).*[[table_of_contents#means of understanding]]
 
 **problematiques importantes**: dispositifs et mediations
 
@@ -122,7 +122,7 @@ DRY is actually a problem: humans understand if you repeat them over and over. h
 ## concepts / frames
 
 - the dynamic (living in space/time, calculated in real-time, reacting to external input)
-- a rhetoric of structs
+- a rhetoric of structs [[table_of_contents#4 3 1 - language-dependent features]]
 - non-linearity of reading (what are the practices of reading? is it the same as reading a book? obv not. writing source code shouldn't assume a linear reading)
 
 ## structure
@@ -166,7 +166,7 @@ how is the aesthetic value of source code different from the aesthetic value of 
    - blank space to show important separate steps (like senett's decisive moment). that, at least has something in common with literatur insofar as they're **paragraphs**
    - when not enforced by the language, *stepdown rule of function declaration* (always have the more general functions at the top, the more specific at the bottom)
    - no input/output rule: everything that happens in locally coherent
-
+   - 
     - **syntax**
     - idiomatic usage and practice is a requirement.
     - some vocab in languages is haram (`unless` in perl, `*` in C, etc.) (related to vocabulary, except no because it's a `keyword`)

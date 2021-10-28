@@ -31,7 +31,7 @@ but CS cannot be one (science, conceptual, what) without the other (engineering,
 
 #### 3 - what is a program?
 
-see refs list in [schedule](../../schedule_2021_1.md)
+see refs list in [schedule](schedule_2021_1.md)
 
 a program is a *cognitive artefact*, which can be understood on three different levels, according to Moor:
 

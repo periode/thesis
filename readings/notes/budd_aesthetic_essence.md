@@ -23,4 +23,4 @@ Difference between aesthetic and art (code poetry might be art, but it might not
 
 An item's aesthetic value is the capacity to elicit "reasonable" or "apt" pleasurable admiration (pleasure not just from its perception), taken from its higher-order properties or relation between elements (aesthetic value).
 
-But we can exchange pleasure with **imaginative realization**, and as such we get closer to cognition.
+But we can exchange pleasure with **imaginative realization** (my expression), and as such we get closer to cognition.

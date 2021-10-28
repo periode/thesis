@@ -37,6 +37,6 @@ practice is *synthetic method*, a method which regroups, which puts together.
 
 software can have, amongst other attributes, *participatory*, *connectedness*.
 
-how about metaphors? is there such a thing as a computational metaphor, a sort of written, producedural rhetoric? perhaps something along the lines of snippets, message-passing, concurrency, class separation. however metaphors require a *common ground*, which there is not in software development (lack of canon, lack of reading code, etc.)
+how about metaphors? is there such a thing as a computational metaphor, a sort of written, producedural rhetoric? perhaps something along the lines of snippets, message-passing, concurrency, class separation. however metaphors require a *common ground*, which there is not in software development (lack of canon, lack of reading code, general newness, etc.)
 
 computation is something else, but it's something else that the programmers and computer scientists have *always felt*.
