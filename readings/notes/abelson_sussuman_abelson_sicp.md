@@ -9,7 +9,7 @@ first chapter, locke's concerning human understanding, exposes that all human id
 - comparison -> metaphor
 - abstraction -> maths
 
-[[table_of_contents#understanding code]]
+[[understanding_code]]
 
 of the three, **combination** could be linked to aesthetics: the way one thing flows into another, and that is __structure__, but also **comparison** as metaphor.
 
@@ -26,7 +26,7 @@ says the humans are confused but the machine isn't
 
 pretty printing: operands are aligned vertically (what kind of reading pattern is this?)
 
-displays the *clear* *structure* of the expression [[table_of_contents#3 1 - typology of aesthetics]]
+displays the *clear* *structure* of the expression [[concrete#typology of aesthetics]]
 
 footnote:
 *Lisp obeys the convention that every expression has a value. This convention, together with the old reputation of Lisp as an inefficient language, is the source of the quip by Alan Perlis (paraphrasing Oscar Wilde) that “Lisp programmers know the value of everything but the cost of nothing.”*
@@ -39,9 +39,9 @@ a function is declarative, describing the properties of things, while a procedur
 
 a procedure definition should be able to suppress details: *"One of the things we should demand from a powerful programming language is the ability to build abstractions by assigning names to common patterns and then to work in terms of the abstractions directly."*
 
-to what extent should beauty be independent of data? [[table_of_contents#4 3 2 - language-dependent features]]
+to what extent should beauty be independent of data? [[programming_languages#language-independent features]]
 
-the program can compute, but can our language express that computation? [[table_of_contents#2 1 the problem of understanding in human and machines]]
+the program can compute, but can our language express that computation? [[understanding_code#the problem of understanding in human and machines]]
 
 They have mixed feeligs about syntactic sugar: p.115, he says `let` is syntactic sugar, but seems to encourage it while at the beginning, they were firmly against it (need to find exact part again)
 

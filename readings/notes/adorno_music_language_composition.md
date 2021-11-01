@@ -7,7 +7,7 @@
 
 Music does have an intention (the most obvious thing in language), but that intention is always veiled.
 
-- *To interpret language means to understand language; to interpret music means to make music* (but it is imitated, not decoded) [[table_of_contents#2 1 the problem of understanding in human and machines]]
+- *To interpret language means to understand language; to interpret music means to make music* (but it is imitated, not decoded) [[understanding_code#the problem of understanding in human and machines]]
 
 **how does music make sense?**
 *To differentiate music from the mere succession of physical stimuli, we sometimes say that music has sense, or structure. To the extent that in music nothing is isolated, and everything only becomes what it is in its physical contact with what is closest and its spiritual contact with what is farthest away, in remembrance and expectation, that statement may be allowed to pass.*

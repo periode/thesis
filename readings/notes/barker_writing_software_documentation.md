@@ -4,7 +4,7 @@
 
 ---
 
-[[table_of_contents#2 understanding code]]
+[[understanding_code]]
 
 1. understanding task orientation
 2. writing to teach: tutorials

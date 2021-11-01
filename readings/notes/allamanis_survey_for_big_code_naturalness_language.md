@@ -10,7 +10,7 @@ they make interesting assumption: using ML to generate code is starting from the
 
 ---
 
-**The naturalness hypothesis**: Software is a form of human communication; software corpora have similar statistical properties to natural language corpora; and these properties can be exploited to build better software engineering tools [[table_of_contents#2 1 the problem of understanding in human and machines]]
+**The naturalness hypothesis**: Software is a form of human communication; software corpora have similar statistical properties to natural language corpora; and these properties can be exploited to build better software engineering tools [[understanding_code#the problem of understanding in human and machines]]
 
 > Programming languages narrow the gap between computers and the human mind: they construct palatable abstractions out of a multitude of minute state transitions. Source code has two audiences and is inherently **bimodal**: it communicates along two channels: one with humans, and one with computers. Humans must understand code to read and write it; computers must be able to execute it. The bimodality of code drives the similarities and differences between it and text
 

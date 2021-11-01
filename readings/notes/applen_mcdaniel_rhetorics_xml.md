@@ -6,7 +6,7 @@
 
 We feel that one way of describing the work of symbolic-analysis is: 1) identifying what constitutes relevant and meaningful information, 2) breaking this information down into specific elements, 3) providing names for these elements, and 4) contextualizing these elements of information to best meet the rhetorical needs of their audiences.
 
-A lot of it is about knowledge management, tacit knowledge, knowledge creation, etc.[[table_of_contents#1 4 modes of knowledge]]
+A lot of it is about knowledge management, tacit knowledge, knowledge creation, etc.[[ideals#modes of knowledge]]
 
 - Tacit Knowledge to Tacit Knowledge by Socialization
 - Tacit Knowledge to Explicit Knowledge by Externalization

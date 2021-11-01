@@ -4,32 +4,91 @@
     "type": "split",
     "children": [
       {
-        "id": "7e008fa49c3ce60d",
+        "id": "0d3fe2bbefa6d0fd",
         "type": "split",
         "children": [
           {
-            "id": "ea27a484de0eb581",
+            "id": "41fd39137deb4db8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readings/notes/jones_reckoning_with_matter.md",
+                "file": "corpus/notes.md",
                 "mode": "source"
               }
             }
           },
           {
-            "id": "b34faf2da42380b5",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "table_of_contents.md",
-                "mode": "source"
+            "id": "3d16d401a1a52b95",
+            "type": "split",
+            "children": [
+              {
+                "id": "487de7d2c2d9880f",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/ideals.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
               },
-              "pinned": true
-            }
+              {
+                "id": "c9f07dd33aeb2b4e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/understanding_beauty.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "8485e740858646f6",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/understanding_code.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "9972fbb3dd56fb36",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/concrete.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "c941400949de6bf3",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/programming_languages.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "direction": "horizontal"
           }
         ],
         "direction": "vertical"
@@ -88,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "table_of_contents.md",
+                "file": "corpus/notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,17 +165,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b34faf2da42380b5",
+  "active": "41fd39137deb4db8",
   "lastOpenFiles": [
-    "table_of_contents.md",
-    "readings/notes/jones_reckoning_with_matter.md",
-    "readings/notes/iverson_notation_as_tool_for_thought.md",
-    "readings/notes/ivanova_comprehension_computer_code.md",
-    "readings/notes/irmak_software_abstract_artifact.md",
-    "readings/notes/homem_topics_in_programming_languages.md",
-    "readings/notes/hill_what_makes_a_program_elegant.md",
-    "readings/notes/hayes_semincolon_wars.md",
-    "readings/notes/green_coding_guidelines.md",
-    "readings/notes/granger_essai_philosophie_style.md"
+    "corpus/notes.md",
+    "readings/notes/wilken_card_index.md",
+    "outline/understanding_beauty.md",
+    "readings/notes/ward_authorship_of_generative_code.md",
+    "outline/understanding_code.md",
+    "outline/ideals.md",
+    "outline/programming_languages.md",
+    "readings/notes/tomov_role_of_aesthetics_in_software.md",
+    "readings/notes/suber_what_is_software.md",
+    "outline/concrete.md"
   ]
 }

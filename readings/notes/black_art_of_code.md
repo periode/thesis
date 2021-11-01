@@ -17,4 +17,4 @@
 
 the mutual abstraction of *code* into *language* and of *language* into *code*. there is indeed an assumption of the literary: beauty __is__ literary, rather than beauty is __procedural, with the involvement of words__
 
-[[table_of_contents#1 2 ideals of beauty]]
+[[ideals]]

@@ -6,7 +6,7 @@
 
 ---
 
-he seems to be a big shot, and most of this should be used in [[table_of_contents#1 2 ideals of beauty]]
+he seems to be a big shot, and most of this should be used in [[understanding_beauty]]
 
 ---
 

@@ -8,6 +8,8 @@ from thought to practice: conceptual art aims at communicating concepts, ideas. 
 
 the distance calculation in the interpreting step of programming language compilation to resolve a variable (i.e. scoping) and the fact that one uses shorter variable names based on inner scope, is such example of a connection between literary and architecture
 
+minimalism is not the same thing as simplicity and clarity
+
 ## to read
 
 - chap 2 of sicp
