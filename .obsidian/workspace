@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "corpus/notes.md",
+                "file": "outline/outline.md",
                 "mode": "source"
               }
             }
@@ -36,19 +36,6 @@
                 }
               },
               {
-                "id": "c9f07dd33aeb2b4e",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "outline/understanding_beauty.md",
-                    "mode": "source"
-                  },
-                  "pinned": true
-                }
-              },
-              {
                 "id": "8485e740858646f6",
                 "type": "leaf",
                 "pinned": true,
@@ -56,6 +43,19 @@
                   "type": "markdown",
                   "state": {
                     "file": "outline/understanding_code.md",
+                    "mode": "source"
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "c9f07dd33aeb2b4e",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "outline/understanding_beauty.md",
                     "mode": "source"
                   },
                   "pinned": true
@@ -147,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "corpus/notes.md",
+                "file": "outline/ideals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,17 +165,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "41fd39137deb4db8",
+  "active": "487de7d2c2d9880f",
   "lastOpenFiles": [
+    "outline/ideals.md",
+    "outline/outline.md",
     "corpus/notes.md",
     "readings/notes/wilken_card_index.md",
     "outline/understanding_beauty.md",
     "readings/notes/ward_authorship_of_generative_code.md",
     "outline/understanding_code.md",
-    "outline/ideals.md",
     "outline/programming_languages.md",
     "readings/notes/tomov_role_of_aesthetics_in_software.md",
-    "readings/notes/suber_what_is_software.md",
-    "outline/concrete.md"
+    "readings/notes/suber_what_is_software.md"
   ]
 }

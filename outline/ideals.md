@@ -10,7 +10,11 @@
 
 this section focuses on the applied practice of describing things to the computer. who does it, how they do it, and how they relate to it. it would particularly focus on the historical/sociological aspect of it, to start highlighting that there might be one concept of computing, but the reality of interacting with and thinking in terms of computation is not unidimensional. it establishes different categories of people writing source code: researchers, academics (teachers+students), professionals, hackers, amateurs and artists.
 
-I argue that aesthetics can help grasp software's multitude
+I argue that aesthetics can help grasp software's multitude.
+
+There's also this blog post about all the voices in source code. All the programmers that have given insight, all the copy paste from SO, etc.
+
+see black, p. 101 for a reference to software management literature
 
 [[hayes_cultures_od_code]]
 
