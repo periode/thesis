@@ -30,6 +30,8 @@ another philosophical approach highlighting the tension in software is [[irmak_s
 
 [[detienne_software_design_cognitive_aspects]], psychology of programmers, beacons
 
+[eye-tracking study of programmers of different levels readingn source code](https://dl.acm.org/doi/10.1145/3387904.3389279)
+
 ### the metaphors of code
 
 this section focuses on the many ways people designate code and digital systems

@@ -90,3 +90,9 @@ is about *understanding* coherence, about *understanding* structure, and *unders
 "The aesthetics of architecture, by itself, spans traditional issues mooted in philosophy of art, as well as aesthetics of the everyday, and environmental aesthetics. Such traditional issues include **the nature of the work; the possibility of classes, kinds, or types in the domain; the character and roles of representation, intentionality, and expression; and the warranted foundations for criticism**."
 
 In distinct progressive and utopian traditions in architectural thought (Eaton 2002), advancement of social utility is a central motivation in architectural attempts to realize idealistic visions of modes of living and societal organization. [[table_of_contents#understanding in architecture]]
+
+### environmental aesthetics
+
+[[understanding_beauty#understanding in architecture]]
+
+> Cognitive accounts also investigate the aesthetic appreciation of human environments, arguing that, as with natural environments, appropriate appreciation depends on knowledge of what something is, what it is like, and why it is as it is. [source](https://plato.stanford.edu/entries/environmental-aesthetics/#AestHumaEnvi)

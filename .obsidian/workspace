@@ -8,15 +8,33 @@
         "type": "split",
         "children": [
           {
-            "id": "41fd39137deb4db8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "outline/outline.md",
-                "mode": "source"
+            "id": "154591fc62fb2ce7",
+            "type": "split",
+            "children": [
+              {
+                "id": "ccfc9208b9db4331",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "hillel_clever_insightful_code.md",
+                    "mode": "source"
+                  }
+                }
+              },
+              {
+                "id": "6bf07c28428be57b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "notes.md",
+                    "mode": "source"
+                  }
+                }
               }
-            }
+            ],
+            "direction": "horizontal"
           },
           {
             "id": "3d16d401a1a52b95",
@@ -25,6 +43,7 @@
               {
                 "id": "487de7d2c2d9880f",
                 "type": "leaf",
+                "dimension": 20.014662756598238,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -38,6 +57,7 @@
               {
                 "id": "8485e740858646f6",
                 "type": "leaf",
+                "dimension": 20.014662756598238,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -51,6 +71,7 @@
               {
                 "id": "c9f07dd33aeb2b4e",
                 "type": "leaf",
+                "dimension": 19.941348973607038,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -64,6 +85,7 @@
               {
                 "id": "9972fbb3dd56fb36",
                 "type": "leaf",
+                "dimension": 20.014662756598238,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -77,6 +99,7 @@
               {
                 "id": "c941400949de6bf3",
                 "type": "leaf",
+                "dimension": 20.014662756598238,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -147,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outline/ideals.md",
+                "file": "hillel_clever_insightful_code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,17 +188,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "487de7d2c2d9880f",
+  "active": "ccfc9208b9db4331",
   "lastOpenFiles": [
-    "outline/ideals.md",
-    "outline/outline.md",
-    "corpus/notes.md",
-    "readings/notes/wilken_card_index.md",
-    "outline/understanding_beauty.md",
-    "readings/notes/ward_authorship_of_generative_code.md",
-    "outline/understanding_code.md",
+    "hillel_clever_insightful_code.md",
+    "turner_computational_artifacts.md",
+    "notes.md",
+    "cantell_smith_linguistics_computational_semantics.md",
+    "lando_lapujade_ontology_of_computer_programs.md",
     "outline/programming_languages.md",
-    "readings/notes/tomov_role_of_aesthetics_in_software.md",
-    "readings/notes/suber_what_is_software.md"
+    "efatmaneshik_ryan_sufficiency_elegance_systems_design.md",
+    "outline/ideals.md",
+    "outline/understanding_beauty.md",
+    "aesthetics.md"
   ]
 }

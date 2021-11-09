@@ -10,6 +10,12 @@
 
 this section focuses on the applied practice of describing things to the computer. who does it, how they do it, and how they relate to it. it would particularly focus on the historical/sociological aspect of it, to start highlighting that there might be one concept of computing, but the reality of interacting with and thinking in terms of computation is not unidimensional. it establishes different categories of people writing source code: researchers, academics (teachers+students), professionals, hackers, amateurs and artists.
 
+Engelbart’s NLS expanded the view of programmers from business analysts and artiﬁcial intelligence researchers to any information worker. Smalltalk originally focused on children as programmers. Hypercard was developed and distributed at Bill Atkinson’s insistence that “end users” need programming capabilities. (from [this](https://dl.acm.org/doi/epdf/10.1145/2384592.2384594)). And then they mention diy hacker and maker culture, beginner friendly arduino, max for live and youtube studio (__I must define which ones I include, which ones I exclude, and why__ maybe the definition I want is one where there is a clear definition between programmer and end user?)
+
+ref: lammers, programmers at work
+
+[[petre_blackwell_programmers_mental_imagery]]
+
 I argue that aesthetics can help grasp software's multitude.
 
 There's also this blog post about all the voices in source code. All the programmers that have given insight, all the copy paste from SO, etc.
@@ -106,6 +112,8 @@ Elegance: Through a single lens, it communicates the problem it solves and the m
 
 this subsection also allow us to introduce the concept of *craftsmanship* and integrate it within a larger tradition of sennett/de certeau/rancière, and connect the practice of programmer to a longer history of craft, a history which in itself has beauty standards `TODO`
 
+https://dannorth.net/2011/01/11/programming-is-not-a-craft/
+
 [[sennett_the_craftsman]]
 
 the zen of python could tie in to that tradition
@@ -139,3 +147,5 @@ practice is *synthetic method*, a method which regroups, which puts together.
 [[freeman_science_as_a_craft]]
 
 [[mills_intellectual_craftsmanship]]
+
+craft might also start to connect to the _aesthetics of the everyday_. particularly, thomas leddy has an article called "Everyday surface aesthetic qualities: neat, messy, clean, dirty" that might be very good

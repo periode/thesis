@@ -23,7 +23,11 @@ the fact that it's abstract as hell can also be seen as a cultural influence/rel
 [[sustrik_linguistics_programming_languages]]
 [[turner_programming_languages_technical_artefacts]]
 
+> State introduces an abstract notion of time in programs. In functional programs, there is no notion of time… Functions do not change. In the real world, things are different. There are few real-world entities that have the timeless behaviour of functions. Organisms grows and learn. When the same stimulus is given to an organism at different times, the reaction will usually be different. How can we model this inside a program? We need to model an entity with a unique identity (its name) whose behaviour changes during the execution of the program. To do this, we add an abstract notion of time to the program. This abstract time is simply a _sequence of values in time_ that has a _single name_. We call this sequence a named state.
+
 ## the programming language ecosystems
+
+ref: masterminds of programming
 
 each of these sections will highlight both the *paradigms* as well as the *syntactic* features of the main categories of programming languages. the point will be to highlight what they share, and how they differ, and that what they share is a very core concept. how that concept is implemented however differs, which is inherently an aesthetic decision (as we will see with Ruby or Go for instance). this categorical approach will also necessarily include a historical dimension, as well as a discussion of which programming communities gravitate around which languages
 
@@ -33,9 +37,14 @@ each of these sections will highlight both the *paradigms* as well as the *synta
 - - which aesthetic standards are set by the machine vs. which aesthetic standards are set by human social context?
 - - place of the IDE: syntax highlighting, auto complete: material conditions to make materiality disappear
 
+[programming paradigms - van roy](http://www.cs.albany.edu/~sdc/CSI500/Downloads/ProgrammingParadigmsVanRoyChapter.pdf), along with a helpful [summary](https://blog.acolyer.org/2019/01/25/programming-paradigms-for-dummies-what-every-programmer-should-know/). most importants seem to be concepts of _named state_, _records_ (structs, arrays), _closure_, _independence (concurrency)_ (which supports shared-state or message passing).
+
+> Each paradigm has its own “soul” that can only be understood by actually using the paradigm. We recommend that you explore the paradigms by actually programming in them (van roy)
+
 - functional programming
-- declarative programming
+- declarative programming (at the beginning of it all)
 - object oriented programming
+	- paid close attention to developments in cognitive theory (piaget, papert, montessori)
  - esoteric programming
 	 - > when we talk about esolangs, we are designing a perspective for someone to think through. -daniel temkin [src](https://www.artistsandhackers.org/Critical-Code)
 
@@ -54,6 +63,8 @@ syntax vs. semantics?
 ### computer beauty
 
 whether or not the computer understands is not an aesthetic problem, but an engineering problem. **BUT** there are beauties in engineering
+
+however, one would argue that a beauty for the computer is [data locality](https://gameprogrammingpatterns.com/data-locality.html), due to the very practical issue of data access (and subsequent caching)
 
 ### a discussion of "idiomatic"
 

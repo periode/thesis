@@ -13,6 +13,7 @@ in a nutshell, this means that literature isn't the only frame through which to 
 systems tested: 
 
 - multiple demand system (math, logic, problem solving)
+	- the MD system is also associated with visual search [link](https://psycnet.apa.org/record/2021-28382-001)
 - language system (usually activated when reading stuff)
 
 > We found that the MD system exhibited strong bilateral responses to code in both experiments, whereas the language system responded strongly to sentence problems, but weakly or not at all to code problems. Thus, the MD system supports the use of novel cognitive tools even when the input is structurally similar to natural language.

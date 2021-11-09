@@ -45,3 +45,5 @@ so we conclude on language as a material to embody a theory of semantico-spatial
 ## conclusion
 
 the aesthetics of code is the symbolic progression from word to structure to idea, with each of these configurations happening at different moments and different levels of expertise in programmers, and assigning different roles to the lexical tokens visible on the screen.
+
+and then poetics

@@ -10,37 +10,35 @@ the distance calculation in the interpreting step of programming language compil
 
 minimalism is not the same thing as simplicity and clarity
 
+> There are two well-known sides to programming: (1)  mastery of the domain; and (2) mastery of the formalisms by  which intentions become executable by computers (we call  these programming languages). Crista Lopes in [this panel](https://dl.acm.org/doi/10.1145/2814189.2818719)
+
+## rewrite
+
+drawing from mckenzie, rewrite his part in the introduction to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code
+
+i should also rewrite my definition of aesthetics to focus more on the aesthetics of everyday life?
+
+~~should i also specify in the intro that i'm dealing with aesthetics and not art? isn't that obvious enough already?~~
+
 ## to read
 
+- history of software development:
+	- https://aaaaarg.fail/upload/martin-campbellkelly-from-airline-reservations-to-sonic-the-hedgehog-a-history-of-the-software-industry-1.pdf
+	- https://doc.lagout.org/science/0_Computer%20Science/0_Computer%20History/A%20History%20of%20Modern%20Computing,%202nd.pdf
 - chap 2 of sicp
+- [sketches of thought](https://mitpress.mit.edu/books/sketches-thought), for the understanding code part
 
 - rousset: forme et signification
 > L’art réside dans cette solidarité d’un univers mental et d’une construction sensible, d’une vision et d’une forme. Saisir des significations à travers des formes.
-
-[metaphors and the main problems of hermeneutics](https://aaaaarg.fail/upload/paul-ricoeur-metaphor-and-the-main-problem-of-hermeneutics.pdf)
-
-[the metaphorical process as cognition, imagination and feeling](https://aaaaarg.fail/upload/paul-ricoeur-the-metaphorical-process-as-cognition-imagination-and-feeling.pdf)
-
-[MD system used in the visual search process](https://psycnet.apa.org/record/2021-28382-001)
-
-[systems elegance](https://sci-hub.mksa.top/10.1109/JSYST.2018.2875152)
-
-[ontologies of computer programs](https://web.archive.org/web/20150707093557/http://home.mis.u-picardie.fr/~site-ic/site/IMG/pdf/ICSOFT2007_final.pdf)
-
-[programming paradigms - van roy](http://www.cs.albany.edu/~sdc/CSI500/Downloads/ProgrammingParadigmsVanRoyChapter.pdf)
-
-[linguistics and computational semantics - cantwell-smith](https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.654.5768)
-
-[computational artefacts - peter suber](https://www.academia.edu/7875726/COMPUTATIONAL_ARTEFACTS)
 
 [insightuful code](https://www.hillelwayne.com/post/cleverness/)
 
 [heisenberg - the meaning of beauty in the exact sciences](https://inters.org/heisenberg-beauty-natural-science)
 
-[the programmer's brain (preview)](https://www.manning.com/books/the-programmers-brain) -> However, your brain does a lot more while you are reading the BASIC program. You are mentally trying to execute the code, to understand what is happening. That process is called **tracing**—the mental compiling and executing of code
+[the programmer's brain (preview)](https://www.manning.com/books/the-programmers-brain) -> However, your brain does a lot more while you are reading the BASIC program. You are mentally trying to execute the code, to understand what is happening. That process is called **tracing**—the mental compiling and executing of code, and differentiates one from novice or expert
 
 [software design decoded](https://www.amazon.com/Software-Design-Decoded-Experts-Think/dp/0262035189)
 
 [semiotics of programming](https://dl.acm.org/doi/book/10.5555/1805903)
 
-[programmers at work](https://archive.org/details/programmersatwor00lamm_0)
+[scripting culture](https://ebookcentral-proquest-com.proxy.library.nyu.edu/lib/nyulibrary-ebooks/detail.action?docID=697611) architectural design and programming

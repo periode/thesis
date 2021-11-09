@@ -29,6 +29,8 @@ classical rhetoric has:
 
 [[ricoeur_metaphor]]
 [[ricoeur_metaphore_vive]]
+[this is a nice summary]](https://aaaaarg.fail/upload/paul-ricoeur-metaphor-and-the-main-problem-of-hermeneutics.pdf)
+the richest one: a connection to psychological theory and explicit connection to goodman [link](https://aaaaarg.fail/upload/paul-ricoeur-the-metaphorical-process-as-cognition-imagination-and-feeling.pdf)
 
 pierre fontanier, les figures du discours
 
@@ -68,7 +70,11 @@ rousset: forme et signification
 
 ## understanding in mathematics
 
-enlightenment
+enlightenment (i get a revelation when i understand)
+
+beauty is an attribute of truth
+
+lakoff & Nunez: embodied mathematics
 
 [[rota_phenomenology_mathematical_beauty]]
 
@@ -85,6 +91,16 @@ détour par le style de gilles gaston-granger [[granger_essai_philosophie_style]
 ## understanding in architecture
 
 habitability (building is clear to move around)
+
+landscape cognition, with kevin lynch stating that landscape legibility is "the ease with which each parts can be recognized and organized into a coherent pattern". Weisman (1981) adds to that the legibiliy of an environment "facilitates the process of wayfinding"
+
+hart and moore (1973) define spatial cognition as "the knowledge and internal or cognitive repsresentations of the structure, entitites, and relations of space (in thoughts)"
+
+this perception is a process of interpretation modulated by emotional responses to sites, perceived meanings, and physiological reactions
+
+from [Landscape Design and Cognitive Psychology](https://www.sciencedirect.com/science/article/pii/S1877042813013293)
+
+also berléant & carlsonseems to have written quite a lot on [urban aesthetics](https://philpapers.org/rec/BERTAO-15). for instance, carlson offers the method of "functional fit" as an alternative, which treats the city as a system that must be assessed on the efficiency of its different components to work together, and there the appreviation of human environments is based on "the functions they perform". All elements should grow organically (like alexander said)
 
 sullivan (building is clear function) / 
 
