@@ -12,6 +12,28 @@ this section focuses on the applied practice of describing things to the compute
 
 Engelbart’s NLS expanded the view of programmers from business analysts and artiﬁcial intelligence researchers to any information worker. Smalltalk originally focused on children as programmers. Hypercard was developed and distributed at Bill Atkinson’s insistence that “end users” need programming capabilities. (from [this](https://dl.acm.org/doi/epdf/10.1145/2384592.2384594)). And then they mention diy hacker and maker culture, beginner friendly arduino, max for live and youtube studio (__I must define which ones I include, which ones I exclude, and why__ maybe the definition I want is one where there is a clear definition between programmer and end user?)
 
+---
+
+a short history of programmers:
+
+> he legacy of an earlier tradition of celebratory accounts of “great men,” pioneering machines, and important “firsts” is still very much with us, particularly in popular and journalistic histories. (Nathan Esmenger 2007, Power to the People, Toward a Social History of Computing)
+
+also mention that there is a parallel history of soviet computing (james cortada article) but the domination of the US renders this moot (argue more specifically why)
+
+essentially there is academia/government
+
+then business (IBM, Fortran, personal calculators, visicalc, lotus 123)
+
+then hobbyists (basic)
+
+then academics (history of research, to some extent -> could it be said that universities are a bit less prone to fundamental research today now that they need to do marketable stuff? is this even relevant?)
+
+there might also be a history of artists
+
+---
+
+programming links technology and mathematics in a very specific way
+
 ref: lammers, programmers at work
 
 [[petre_blackwell_programmers_mental_imagery]]

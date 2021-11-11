@@ -2,6 +2,8 @@
 
 [[outline/outline]]
 
+> Coding is [...] the technique of providing a dynamic background to controle the automatic evolution of meaning. (von neumann and goldstine)
+
 I highlight the issue of *understanding* between humans and machines through the medium of source code, as an ambivalent notion which necessitates a symbolic interface. This concept of *understanding* is also understood in the light of the different *fields* of programming practice (professional, amateur (hobbyist+hacker), educational, scientific/academic)
 
 __define understanding__ (perspectives: reader/writer)

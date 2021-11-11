@@ -1,0 +1,61 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="/style.css"/>
+		</head>
+		<body>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="clever-vs-insightful-code">clever vs. insightful code</h1>
+
+<h2 id="hillel-wayne">hillel wayne</h2>
+
+<hr />
+
+<p><code>
+</code>c
+send(to, from, count)
+register short *to, *from;
+register count;
+{
+    register n = (count + 7) / 8;
+    switch (count % 8) {
+    case 0: do { *to = *from++;
+    case 7:      *to = *from++;
+    case 6:      *to = *from++;
+    case 5:      *to = *from++;
+    case 4:      *to = *from++;
+    case 3:      *to = *from++;
+    case 2:      *to = *from++;
+    case 1:      *to = *from++;
+            } while (–n &gt; 0);
+    }
+}
+```</p>
+
+<blockquote>
+  <p>This code is “clever” because it exploits knowledge about the language, in this case the peculiarities of fall-through. Clever code can also exploit knowledge about the operating environment or special topics like bit twiddling. Conventional wisdom says this clever code is “bad”.</p>
+</blockquote>
+
+<blockquote>
+  <p>There’s a second kind of “clever code”: code which exploits knowledge about the <em>problem</em>.</p>
+</blockquote>
+
+<p>clever is specifc, niche knowledge about the material or the problem which cannot be extended to another material or problem (respectively) -&gt; acknowledging contextual constraints</p>
+
+<p>in the case of exploiting the problem, that often means that the problem is made simpler, and so the code is made simpler -&gt; that’s <strong>insightful</strong></p>
+
+<p>but if the problem changes, that insight might disappear: such a code is <em>read-only</em> because relies on tacit knowledge and doesn’t transfer between people</p>
+
+<blockquote>
+  <p>Expert C programmers argue they don’t need memory safety, expert Clojurists argue that static types wouldn’t help them, etc.</p>
+</blockquote>
+
+			</div>
+		</body>
+	</html>
