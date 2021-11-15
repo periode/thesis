@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "outline/ideals.md",
+                "file": "leddy_nature_of_everyday_aesthetics.md",
                 "mode": "source"
               }
             }
@@ -25,7 +25,7 @@
               {
                 "id": "8485e740858646f6",
                 "type": "leaf",
-                "dimension": 25.02291475710357,
+                "dimension": 25.022914757103578,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -39,7 +39,7 @@
               {
                 "id": "c9f07dd33aeb2b4e",
                 "type": "leaf",
-                "dimension": 24.931255728689276,
+                "dimension": 24.931255728689283,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -53,7 +53,7 @@
               {
                 "id": "9972fbb3dd56fb36",
                 "type": "leaf",
-                "dimension": 25.02291475710357,
+                "dimension": 25.022914757103578,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -67,7 +67,7 @@
               {
                 "id": "c941400949de6bf3",
                 "type": "leaf",
-                "dimension": 25.02291475710357,
+                "dimension": 25.022914757103578,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -122,7 +122,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "13b2b27ef303d414",
@@ -138,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outline/ideals.md",
+                "file": "leddy_nature_of_everyday_aesthetics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -158,15 +159,15 @@
   },
   "active": "487de7d2c2d9880f",
   "lastOpenFiles": [
+    "leddy_nature_of_everyday_aesthetics.md",
+    "leddy_everyday_surface_aesthetic_qualities.md",
+    "saito_everyday_aesthetics.md",
+    "aesthetics.md",
     "outline/ideals.md",
     "readings/notes/campbell_kelly_history_software_industry.md",
     "readings/notes/ceruzzi_history_of_modern_computing.md",
     "readings/notes/wirth_history_software_engineering.md",
     "outline/understanding_code.md",
-    "notes.md",
-    "readings/notes/cantell_smith_linguistics_computational_semantics.md",
-    "readings/notes/hillel_clever_insightful_code.md",
-    "readings/notes/turner_computational_artifacts.md",
-    "readings/notes/lando_lapujade_ontology_of_computer_programs.md"
+    "notes.md"
   ]
 }

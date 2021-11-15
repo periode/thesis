@@ -52,6 +52,14 @@ aesthetics are somewhat isolating, but at the same time connecting. *it isolates
 
 poetry questions our approach to (natural/machine) language (*through what? interactivity? sound? color? typography? ...mental structures*). By proposing novel approaches, it is both obfuscating and clearing, then.[[table_of_contents#understanding code]]
 
+### dewey
+
+- doing!
+
+### berleant
+
+engagement model: the person exercises imagination, interacts with it perceptually, intellectually and emotionally.
+
 ---
 
 > literature is the aesthetic usage of written language (trésor de la langue francaise)

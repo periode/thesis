@@ -1,5 +1,13 @@
 # aesthetic ideals
 
+## intro
+
+the purpose of this specific chapter is to set the stage, and answer the following questions:
+
+- how are programmers? is it a coherent whole or are they separate in several communities/practices? how do i define a community of practice?
+- then, in a second time, what kinds of beauty do programmers aspire to? that involves a certain kind of high level lit review, of the words that come back here and again
+- finally, i show that these ideals of beauty are more intimately related to craft, and modes of knowledge
+
 [[outline/outline]]
 
 [[kintsch_von_dijk_strategies_understanding]]
