@@ -80,3 +80,4 @@
 - [exquisite code](https://web.archive.org/web/20130704202512/http://exquisite-code.com/) - doesn't seem to be so much related to source code
 - [why code is not poetry](https://blogs.crikey.com.au/game-on/2012/10/02/why-code-is-not-poetry/) - with a response [here](https://clairehosking.tumblr.com/post/33828664879/not-all-code-is-poetry-but-some-is)
 - [blog post on code and poetry](https://web.archive.org/web/20121008225830/www.samuelwbaird.com/code-and-poetry/)
+- [how to make pretty vba](https://techcommunity.microsoft.com/t5/excel/best-practice-for-vba-macros-in-excel/m-p/207409)

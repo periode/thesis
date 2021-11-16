@@ -24,7 +24,7 @@ Engelbart’s NLS expanded the view of programmers from business analysts and ar
 
 a short history of programmers:
 
-> he legacy of an earlier tradition of celebratory accounts of “great men,” pioneering machines, and important “firsts” is still very much with us, particularly in popular and journalistic histories. (Nathan Esmenger 2007, Power to the People, Toward a Social History of Computing)
+> The legacy of an earlier tradition of celebratory accounts of “great men,” pioneering machines, and important “firsts” is still very much with us, particularly in popular and journalistic histories. (Nathan Esmenger 2007, Power to the People, Toward a Social History of Computing)
 
 also mention that there is a parallel history of soviet computing (james cortada article) but the domination of the US renders this moot (argue more specifically why)
 
@@ -36,7 +36,7 @@ then hobbyists (basic)
 
 then academics (history of research, to some extent -> could it be said that universities are a bit less prone to fundamental research today now that they need to do marketable stuff? is this even relevant?)
 
-there might also be a history of artists
+there might also be a history of artists? check references from software art class
 
 ---
 
@@ -89,7 +89,7 @@ beauty as a lack of ambiguity, as efficient achievement of an aim (aim of frustr
 ### lexical field in programmer discourse
 
 - minimalism
-	- https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
+	- https://vimeo.com/47364930 -> concise code is code as literature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
 - simplicity
 	- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
 
