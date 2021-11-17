@@ -10,10 +10,23 @@
           {
             "id": "e7c95cd2d2893e5e",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "outline/ideals.md",
+                "file": "readings/notes/campbell_kelly_history_software_industry.md",
+                "mode": "source"
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "016c05fc0dbc30fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "readings/notes/wirth_history_software_engineering.md",
                 "mode": "source"
               }
             }
@@ -25,7 +38,7 @@
               {
                 "id": "c9f07dd33aeb2b4e",
                 "type": "leaf",
-                "dimension": 33.251833740831295,
+                "dimension": 33.2518337408313,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -39,7 +52,7 @@
               {
                 "id": "9972fbb3dd56fb36",
                 "type": "leaf",
-                "dimension": 33.37408312958435,
+                "dimension": 33.374083129584356,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -53,7 +66,7 @@
               {
                 "id": "c941400949de6bf3",
                 "type": "leaf",
-                "dimension": 33.37408312958435,
+                "dimension": 33.374083129584356,
                 "pinned": true,
                 "state": {
                   "type": "markdown",
@@ -125,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outline/ideals.md",
+                "file": "readings/notes/wirth_history_software_engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e7c95cd2d2893e5e",
+  "active": "016c05fc0dbc30fa",
   "lastOpenFiles": [
+    "readings/notes/wirth_history_software_engineering.md",
+    "readings/notes/ceruzzi_history_of_modern_computing.md",
+    "readings/notes/campbell_kelly_history_software_industry.md",
     "outline/ideals.md",
     "outline/understanding_code.md",
     "leddy_nature_of_everyday_aesthetics.md",
     "leddy_everyday_surface_aesthetic_qualities.md",
     "saito_everyday_aesthetics.md",
     "aesthetics.md",
-    "readings/notes/campbell_kelly_history_software_industry.md",
-    "readings/notes/ceruzzi_history_of_modern_computing.md",
-    "readings/notes/wirth_history_software_engineering.md",
     "notes.md"
   ]
 }

@@ -7,7 +7,7 @@
 3 groups in the book:
 
 - software contractors (w/ mainframes, as soon as 1950s) (FORTRAN)
-- producers of corporate software (w/ business applications, in the 1960s) (COBOL)
+- producers of corporate softw are (w/ business applications, in the 1960s) (COBOL)
 - producers of mass-market software
 
 he states a cutoff date of 1995, which is when the web arrived, and that ushered in a whole new era of computing (casual computing? amateur computing?)
