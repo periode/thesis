@@ -16,7 +16,7 @@ Even though such types of reading and writing source code often overlap with one
 
 While this overview encompasses most of the programming practices, we leave aside some approaches to code, mainly because they do not directly engage with the representation of source code as a textual matter. More and more, end-user applications provide the possibility to program in more or less rudimentary ways, something referred to as the "low-code" approach\cite{oreilly_editorial_team_low-code_2021}, and thus contributing to the blurring of boundaries between programmers and non-programmers\footnote{For instance, Microsoft's Visual Basic for Applications, Ableton's Max For Live, MIT's Scrath or McNeel's Grasshopper are all programming frameworks which are not covered within the scope of this study. In the case of VBA and similar office-based high-level programming, it is because such a practice is a highly personal and \emph{ad hoc} one, and therefore is less available for study.}.
 
-\subsection{Software developers - 6p}
+\subsection{Software developers}
 
 \subsubsection{From local hardware to distributed software}
 
@@ -65,32 +65,174 @@ Software maintenance, finally, relates not to the planning or writing of softwar
 
 Software developers are a large group of practicioners whose focus is on producing effective, reliable and sustainable software, through a varieties of techniques and processes, drawing from architecture and engineering in order to foster simplicity and understandability. Before we dive deeper into those concepts in the next section, we turn to another practice closely linked to professional development—hacking.
 
-\vspace*{2\baselineskip}
-
 \subsection{Hackers - 6p}
 
-\begin{itemize}
-    \item history and connection with engineers
-    \item range of hackers, from amateurs to experts
-    \item self-perception and lore
-\end{itemize}
+Joseph Weizenbaum's description of what seems to be computer science graduate students is  one which has had wide echoes in the public imagination: hackers are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems\footnote{\textquote[\cite{weizenbaum_computer_1976}]{    Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text.}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven by curiosity, cleverness and freedom, and which has had a significant influence in the culture of programming.
 
-add examples of code bases (turns out it's not so much about the codebase, but rather as specific examples within a codebase, or a simple, specific deployment for a specific purpose)
+To hack, in the broadest sense, is to enthusiastically inquire about the possibilities of exploitation of technical systems\footnote{\textquote[\cite{dourish_original_nodate}]{HACKER [originally, someone who makes furniture with an axe] n. 1. A person who enjoys learning the details of programming systems and how to stretch their capabilities, as opposed to most users who prefer to learn only the minimum necessary. 2. One who programs enthusiastically, or who enjoys programming rather than just theorizing about programming.}} and, as such, predates the advent of the computer\footnote{See Rosenbaum's report in the October 1971 issue of Esquire for an account of phreaking, computer hacking's immediate predecessor\cite{rosenbaum_secrets_2004}.}. Computer hacking specifically came to proeminence as early computers started to become available in north-american universities, and coalesced around the Massachussets Institute of Technology's Tech Model Railroad Club\cite{levy_hackers_2010}. Computer hackers were skilled and highly-passionate individuals, with an autotelic inclination to computer systems: these systems mattered most when they referenced themselves, instead of interfacing with a given problem domain. Early hackers were often self-taught, learning to tinker with computers while still in high-school\cite{lammers_programmers_1986}, and as such tend to exhibit a radical position towards expertise: skill and knowledge aren't derived from academic degrees or credentials, but rather from concrete ability and practical efficacy.
 
-\begin{itemize}
-    \item paul graham
-    \item unix hackers, wizards staying up late, bazaar and cathedral
-    \item montfort, box darkly
-    \item "You can create art and beauty on the computer"
-    \item tinkerers and amateurs
-\end{itemize}
+The histories of hacking and of software development are deeply intertwined: some of the early hackers worked on software engineering projects—such as the graduate students who wrote the Apollo Guidance Computer routines under Margaret Hamilton—, and then went on to profoundly shape computer infrastructure. Particularly, the development of the UNIX operating system by Dennis Ritchie and Ken Thompson is a key link in connecting hacker practices and professional ones. Developed from 1969 at Bell Labs, AT\&T's research division, UNIX was \textquote[{\cite{raymond_art_2003}}]{very close to being the first system under which a programmer could sit down directly at a machine and compose programs on the fly, exploring possibilities and testing while composing}, and was \textquote[{\cite{raymond_art_2003}}]{was brainstormed by three people and implemented by Ken Thompson in two days — on an obsolete machine that had been designed to be a graphics terminal for a 'real' computer.}.  This was a system which was supporting the free exploration of a system's boundaries central to the hacker culture, and which relied on sharing and circulating source code in order to allow anyone to improve it—in effect, AT\&T's inexpensive licensing model until the 1980s, and the use of the C programming language starting from 1977 made it widely available within university settings\footnote{\textquote[\cite{morgan_ibm_1982}]{Unix has become well entrenched in the nation's colleges and universities due to Western Electric's extensive, inexpensive licensing of the system. As a result, many of today's graduating computer scientists are familiar with it.}}. UNIX, then, was spreading its design philosophy of clear, modular, simple and transparent design across programming communities.
 
-\subsubsection{Features}
+The next step in the evolution of hacker culture was to build on this tenet to share source code, and hence to make written software understandable from its textual manifestation. The switch identified in the previous section from hardware being the most important component of a computing system to software had lead manufacturers to stop distributing source code, making proprietary software the norm. Until then, executable software was the consequence of running the source code through a compilation process; around the 1980s, executable software was distributed directly as a binary file, its exact contents an unreadable series of 0s and 1s. As a result to licensing changes of the UNIX system, the GNU project was created, and in its wake the Free Software Foundation,  which established the ethical requirement to access the source code of any software.
+
+In the meantime, personal microcomputers came to the market and opened up this ability to tinker and explore computer systems beyond the realms of academic-licensed large mainframes and operating systems. Starting with models such as the Altair 8800, the Apple II and the Commodore 64, as well as with easier, interpreted computer languages such as BASIC, whose first version for such micro-computers was written by Bill Gates, Paul Allen and Monte Davidoff\cite{montfort_10_2014}. While not considered "proper" programming by other programmers, the microcomputer revolution allowed for new groups of individuals to explore the interactivity of source code due to their small size when published as type-in listings.
+
+In the wake of the larger free software movement,  emerged its less radical counterpart, the open-source movement, as well as its more illegal counterpart, security hacking. The former are usually the types of individuals depicted in mainstream news outlets when they reference hackers: programmers indulging breaching private systems, sometimes in order to cause illegal financial, intelligence or material harm. Security hackers, sometimes called crackers, form a community of practice of their own, with ideas of superior intelligence, subversion, adventure and stealth\footnote{For a lyrical account of this perception of the hacker ethos, see \emph{The Conscience of a Hacker}, published in Phrack Magazine: \textquote[\cite{the_mentor_conscience_1986}]{ This is our world now... the world of the electron and the switch, the beauty of the baud.  We make use of a service already existing without paying for what could be dirt-cheap if it wasn't run by profiteering gluttons, and you call us criminals.  We explore... and you call us criminals.  We seek after knowledge... and you call us criminals.}}. These practices do refer to the original conception of hacking—getting something done quickly, but not well—and include such a practical, efficient appoach into its own set of values and ideals, which are in turn represented in the kinds of program texts\footnote{Those program texts include computer viruses, worms, trojan horses and injections, amongst others.}.
+
+Meanwhile, the open-source movement took the tenets of hacking culture and adapted it to make it more compatible to the requirements of businesses. Open-source can indeed be seen as a compromise between the software industry development practices and the efficacy of free software development. Indeed, beyond the broad values of intellectual curiosity and skillful exploration, free software projects such as the Linux kernel, the Apache server or the OpenSSL project are highly efficient, and used in both commercial, non-commercial, critical and non-critical environments\cite{raymond_cathedral_2001}. Such an approach sidesteps the political and ethical values held in previous iterations of the hacker ethos in order to focus exclusively on the sharing of source code and open collaboration while remaining within an inquisitive and productive mindframe. With the advent of corporate \emph{hackathons}—short instances of intense collaboration in order to create new software, or new features on a software system—are a particularly salient example of this overlap between industry practices and hacker practices\cite{nolte_you_2018}\footnote{Along with the address of the software corporate giant Meta's headquarters: 1, Hacker Way, Menlo Park, CA 94025, U.S.A.}.
+
+\vspace*{1\baselineskip}
+
+Hackers are programmers which, while overlapping with industry-embedded software developers, hold a set of values and ideals regarding the purpose and state of software. Whether academic hackers, amateurs, security hackers or open-source contributors, all are centered around the object of source code as a vehicle for communicating the knowledge held within the software, bypassing auxiliary resources such as natural-language documentation. Those political and ethical values often overlap with aesthetic values associated to how the code exists in its textual manifestation.
+
+\subsubsection{Sharp and clever}
+
+\begin{quote}
+    To hack is, according to the dictionary, "to cut irregularly, without skill or definite purpose; to mangle by or as if by repeated strokes of a cutting instrument". I have already said that the compulsive programmer, or hacker as he calls himself, is usually a superb technician. It seems therefore that he is not "without skill" as the definition will have it. But the definition fits in the deeper sense that the hacker is "without definite purpose": he cannot set before him a clearly defined long-term goal and a plan for achieving it, for he has only technique, not knowledge. He has nothing he can analyze or synthesize; in short, he has nothing to form theories about. His skill is therefore aimless, even disembodied. It is simply not connected with anything other than the instrument on which it may be exercised. His skill is that of a monastic copyist who, though illiterate, is a first rate calligrapher.\cite{weizenbaum_computer_1976}
+\end{quote}
+  
+While he looks down on hackers, perhaps unfairly, from the perspective of a computer scientist whose theoretical work can be achieved only through thought, pen and paper—an approach to programming which we will address in the next section—, the point still remains: hackers are first and foremost technical experts who can get lost into technics for their own sake. From a broad perspective, hackers therefore seem to exhibit an attitude of \emph{direct engagement}, \emph{subverted use} and \emph{technical excellence}.  Gabriella Coleman, in her anthropological study of hackers, \emph{Coding Freedom: The Ethics and Aesthetics of Hacking}, highlights that hackers value both semantic ingenuity\footnote{Hackers themselves tend to favor puns—the free software GNU project is a recursive acronym for \emph{GNU's Not UNIX}.} and technical wittiness, even though source code written by hackers can take multiple shapes, from one-liners, to whole operating systems, to deliberate decisions to subvert best practices in crucial moments
+
+The \emph{one-liner} is a piece of source code which fits on one line, and is usually intepreted immediately by the operating system. They are terse, concise, and eminently functional: they accomplish one task, and one task only. This binary requirement of functionality (in the strict sense of: "does it do what it's supposed to do, or not?") actually finds a parallel in a different kind of one-liners, the humoristic ones in jokes and stand-up comedy. In this context, the one-liner also exhibits the features of conciseness and impact, with the setup conflated with the punch line, within the same sentence. One-liners are therefore self-contained, whole semantic statements which, through this syntactic compression, appear to be clever—in a similar way that a good joke is labelled clever.
+
+In programming, one-liners have their roots in the philosophy of the UNIX operating system, as well as in the early diffusion of computer programs for personal computer hobbyists\cite{montfort_10_2014}. On the one side, the Unix philosophy is fundamentally about building simple tools, which all do one thing well, in order to manipulate text streams\cite{raymond_art_2003}. Each of these tools can then be piped (directing one output of a program-tool into the input of the next program-tool) in order to produce complex results—reminiscing of the orthogonality feature of programming languages. Sometimes openly acknowledged by language designers—such as those of AWK—the goal is to write short programs which shouldn't be longer than one line. Given that constraint, a hacker's response would then be: how short can you make it?
+
+If writing one-line programs is within the reach of any medium-skilled programmer, writing the shortest of all programs does become a matter of skill, coupled with a compulsivity to reach the most syntactically compressed version. For instance, Guy Steele\footnote{Influential langugage designer, who worked on Scheme, ECMAScript and Java, among others.} recalls:
+
+\begin{quote}
+  This may seem like a terrible waste of my effort, but one of the most satisfying moments of my career was when I realized that I had found a way to shave one word off an 11-word program that [Bill] Gosper had written. It was at the expense of a very small amount of execution time, measured in fractions of a machine cycle, but I actually found a way to shorten his code by 1 word and it had only taken me 20 years to do it\cite{seibel_coders_2009}.
+\end{quote}
+
+This sort of compulsive behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of characters—here, the equivalent of \emph{par} in golf would be Kolmogorov complexity\footnote{See: \url{https://en.wikipedia.org/wiki/Kolmogorov_complexity}}. So minimizing program length in relation to the problem complexity is a definite feature of one-liners, since choosing the right programming language for the right taks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power. Tasked with parsing a text file to find which lines had a numerical value greater than 6, Brian Kernighan writes the following code in C\footnote{From Succesful Language Design, Brian Kernighan at the University of Nottingham, \url{https://www.youtube.com/watch?v=Sg4U4r_AgJU}}:
+
+\pagebreak
+
+\begin{lstlisting}
+  #include <stdio.h>
+  #include <strings.h>
+
+  int main(void){
+    char line[1000], line2[1000];
+    char *p;
+    double mag;
+
+    while(fgets(line, sizeof(line), stdin) != NULL) {
+      strcpy(line2, line);
+      p = strtok(line, "\t");
+      p = strtok(NULL, "\t");
+      p = strtok(NULL, "\t");
+      sscanf(p, "%lf", &mag);
+      if(mag > 6) /* $3 > 6 */
+        printf("%s", line2); 
+    }
+
+    return 0
+  }
+\end{lstlisting}
+
+The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is:
+
+\begin{lstlisting}
+  awk '$3 > 6' data.txt
+\end{lstlisting}
+
+The difference is obvious, not just in terms of formal clarity and cleanliness of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because more intuitive, and therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge in the specific language in which it is written. Here is Conway's game of life implemented in one line of APL:
+
+\begin{verbatim}
+  life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +⌿ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}
+\end{verbatim}
+
+The obscurity of such a line—due to its highly-unusual character notation, and despite the pre-existing knowledge of the expected output—shows why one-liners are usually highly discouraged for any sort of code which needs to be \emph{worked on} by other programmers. Cleverness in programming indeed tends to be seen as a display of the relationship between the programmer and the machine, rather than between different programmers, and only tangentially about the machine. On the other hand, though, the nature of one-liners makes them highly portable and shareable, infusing them with what one could call \emph{social beauty}. Popular with early personal computer adopters, at a time during which the source code of programs were printed in hobbyist magazines and needed to be input by hand, and during which the potential of computation wasn't as widely distributed amongst society, being able to type just one line in, say, a BASIC interpreter, and resulting in unexpected graphical patterns created a sense of magic and wonder in first-time users—how can so little do so much?\footnote{For an example fo such one-liner, see for instance: \url{https://www.youtube.com/watch?v=0yKwJJw6Abs}}.
+
+Another example of beautiful code written by hackers is the UNIX operating system, whose inception was an informal side-project spearheaded by Ken Thompson and Dennis Ritchie in the 1970s. As the first portable operating system, UNIX's influence in modern computing was significant, e.g. in showing the viability and efficiency of text-based processing, hierarchical file-system, shell scripting and regular expressions, amongst others. UNIX is also one of the few pieces of production software which has been carefully studied and documented by other developers. One of the most famous examples is \emph{Lions' Commentary on UNIX 6th Edition, with Source Code} by John Lions, an annotated edition of the UNIX source code, which was circulated illegaly in classrooms for twenty years before its official publication was authorized by the copyright owners\cite{lions_lions_1996}. Coming back to the relationship between architecture and software development, Christopher Alexander asks, in the preface of Richard P. Gabriel's \textit{Patterns of Software}\cite{gabriel_patterns_1998},
+
+\begin{quote}
+    \textit{For a programmer, what is a comparable goal? What is the Chartres of programming? What task is at a high enough level to inspire people writing programs, to reach for the stars?}
+\end{quote}
+
+And UNIX might be one of the answers to that question, both by its functionality, and by its conciseness, if not alone by its availability. Another program which qualifies as beautiful hacker code, due both to its technical excellence, unusual solution and open-source availability is the function to compute the inverse square root of a number, a calculation that is particularly necessary in any kind of rendering application (which heavily involves vector arithmetic). It was found in the \emph{Quake} source code, listed here verbatim\footnote{The Quake developers aren't the authors of that function—the merit of which goes to Greg Walsh—but are very much the authors of the comments.}:
+
+\pagebreak
+
+\begin{lstlisting}
+  float Q_rsqrt( float number )
+  {
+      long i;
+      float x2, y;
+      const float threehalfs = 1.5F;
+
+      x2 = number * 0.5F;
+      y  = number;
+      i  = * ( long * ) &y;    // evil floating point bit level hacking
+      i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
+      y  = * ( float * ) &i;
+      y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+  //  y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration,
+                                                // this can be removed
+
+      return y;
+  }
+\end{lstlisting}
+
+What we see here is indeed a combination of the understanding of the problem domain (what's the acceptable result I need to maintain a high-framerate with complex graphics), and how the specific knowledge of computers (i.e. bit-shifting of a float cast as an integer) and the snappiness and wonder of the the comments\footnote{\emph{what the fuck?} indeed}. The use of \lstinline{0x5f3759df} is what programmers call a \emph{magic number}, a literal value whose role in the code isn't made clearer by a descriptive variable name. Usually bad practice and highly-discouraged, the magic number here is exactly that: it does makes the magic happen.
+
+Further examples of such intimate knowledge of both the language and the machine can be found in the works of the \emph{demoscene}. Starting in Europe in the 1980s, demos were first short audio-visual programs which were distributed along with \emph{crackware} (pirated software), and to which the names of the people having cracked the software were prepended, in the form of a short animation\cite{reunanen_computer_2010}. Due to this very concrete constraint—there was only so much memory left on a pirated disk to fit such a demo—programmers had to work with these limitations in order to produce the most awe-inspiring effects. Indeed, one notable feature of the demoscene is that the output should be as impressive as possible, as an immediate, phenomenological appreciation of the code which could make this happen\footnote{For an example, see \emph{Elevated}, programmed by iq, for a total program size of 4 kilobytes: \url{https://www.youtube.com/watch?v=jB0vBmiTr6o}}. Indeed, the \lstinline{comp.sys.ibm.pc.demos} news group states in their FAQ:
+
+\begin{quote}
+  A Demo is a program that displays a sound, music, and light show, usually in 3D. Demos are very fun to watch, because they seemingly do things that aren't possible on the machine they were programmed on.
+
+  Essentially, demos "show off". They do so in usually one, two, or all three of three following methods:
+
+  \begin{itemize}
+    \item They show off the computer's hardware abilities (3D objects, multi-channel sound, etc.)
+    \item They show off the creative abilities of the demo group (artists, musicians)
+    \item They show off the programmer's abilities (fast 3D shaded polygons, complex motion, etc.)\cite{noauthor_pc_nodate}
+  \end{itemize}
+\end{quote}
+
+This showing off, however, does not happen through immediate engagement with the code from the reader's part, but rather in the thorough explanation of the minute functionalities of the demo by its writer. Because of these constraints of size, the demos are usually written in C, openGL, Assembly, or the native language of the targeted hardware. Source code listings of demos also make extensive use of shortcuts and tricks, and little attention is paid to whether or not other humans would directly read the source—the only intended recipient is a very specific machine (e.g. Commodore 64, Amiga VCS, etc.). The release of demos, usually in demoparties, are sometimes accompanied by documentation, write-ups or presentations\footnote{You can find \emph{Elevated}'s technical presentation here: \url{https://www.iquilezles.org/www/material/function2009/function2009.pdf}}. However, this presentation format acknowledges a kind of individual, artistic feat, rather than the \emph{egoless programming} lauded by Brooks in professional software development\footnote{In architecture, such technical and artistic feat for its own sake, devoid of any reliable social use, is the pavillion, or the folly.}.
+
+Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{noauthor_mind_nodate} on the Commodore 64. It is firsted listed as a hexademical dump by its author:
+
+\begin{lstlisting}
+  0000000 0801 080d d3ff 329e 3232 0035 0000 4119
+  0000010 d01c dc00 0000 d011 0be0 3310 610e f590
+  0000020 0007 1fff 4114 24d5 2515 5315 6115 29d5
+  0000030 0f1b 13e6 13e6 02d0 20e6 61a9 1c85 20a7
+  0000040 3fe0 08f0 0c90 114e 6cd0 fffc 6da0 2284
+  0000050 d784 4b4a a81c 13a5 3029 02d0 1cc6 2fe0
+  0000060 11f0 02b0 02a2 10c9 09f0 298a aa03 f3b5
+  0000070 0a85 ab2d b000 b711 b622 9521 a500 4b13
+  0000080 aa0e f8cb cc86 0749 0b85 13a5 0f29 0fd0
+  0000090 b8a9 1447 0290 1485 0729 b5aa 85f7 a012
+  00000a0 b708 910d 880f f910 b7a8 9109 8803 f9d0
+  00000b0 7e4c 78ea 868e 8e02 d021 4420 a2e5 bdfd
+  00000c0 0802 0295 d0ca 8ef8 0315 cc4c a900 8d50
+  00000d0 d011 ad58 dc04 c3a0 1c0d 48d4 044b 30a0
+  00000e0 188c 71d0 e6cb 71cb 6acb 2005 58a0 d505
+  00000f0 cb91 dfd0 aa2b 6202 1800 2026 2412 1013
+\end{lstlisting}
+
+Even with knowledge of how hexadecimal instructions map to the instruction set of the specific chip of of the Commodore 64 (in this case, the SID 8580), the practical use of these instructions takes productive advantage of ambivalence and side-effects. In the words of the author, Linus Akesson (emphasis mine):
+
+\begin{quote}
+  We need to tell the VIC chip to look for the video matrix at address \$0c00 and the font at \$0000. This is done by writing \$30 into the bank register (\$d018). But this will be done from within the loop, as doing so allows us to use the value \$30 for two things. \emph{An important property of this particular bank configuration is that the system stack page becomes part of the font definition}.
+\end{quote}
+
+Demosceners therefore tend to write beautiful, deliberate code which is hardly understandable by other programmers without explanation, and yet hand-optimized for the machine. This presents a different perspective of the relationship between aesthetics and understanding, in which aesthetics do not support and enable understanding, but rather become a proof of the mastery and skill required to input such a concise input for such an overwhelming output. This shows in an extreme way that one does need a degree of expert knowledge in order to appreciate it—in this sense, aesthetics in programming are shown to be almost often dependent on pre-existing knowledge.
+
+\vspace*{1\baselineskip}
+
+The ideals at play in the writing and reading of source code is thus centered around specific means of knowledge: knowledge of the hardware, knowledge of the programming language used and knowledge of the tradeoffs acceptable all the while exhibiting an air of playfulness—how far can one go before breaking the system entirely? Still, one aspect that seems to elude hackers in their conception of code is that of conceptual soundness. If code is considered beautiful by attaining previously unthought of purposes with the least amount of resources, rationalization as to why, whether \emph{a prior} or \emph{a posteriori}, does not seem to be a central value, unlike computer scientists, to whom we turn to next.
+
+\vspace*{2\baselineskip}
 
 \begin{itemize}
     \item ad hoc, locality, implication of the hardware as a crucial, central piece of information
     \item technical knowledge
+    \item "You can create art and beauty on the computer"
     \item unlinguistic -> more material approach of "shaving off characters"
+    \item gabriella coleman: coding freedom
 \end{itemize}
 
 \subsection{Scientists - 4p}
@@ -100,6 +242,18 @@ add examples of code bases (turns out it's not so much about the codebase, but r
     \item textbooks
     \item data scientists
 \end{itemize}
+
+binary search algorithm's implementation is only accurate in  is only found in five out of twenty textbooks Pattis, Richard E. (1988). "Textbook errors in binary searching". SIGCSE Bulletin. 20: 190–194. doi:10.1145/52965.53012.
+
+examples of beautiful scientist code:
+
+\begin{itemize}
+    \item LISP (full of concepts)
+    \item some sort of quicksort -> https://stackoverflow.com/questions/26301/your-favourite-algorithm-and-the-lesson-it-taught-you
+    \item fractals?
+    \item list of implementations in julia https://github.com/mossr/BeautifulAlgorithms.jl
+\end{itemize}
+
 
 \subsection{Poets - 4p}
 

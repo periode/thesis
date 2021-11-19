@@ -54,6 +54,10 @@ abstracts stuff but not too much: it's kinda like the UNIX philosophy, where the
 
 like tobi's example of using `select{}` rather than `mtx.Lock()` in `GO`. select is slower but something like `mtx.Lock()` is actually never going to be required in a design document: it's extraneous when wanting to understand what a software *effectively doing*. another example of that is the un-necessity of `diff noise`.
 
+### materiality
+
+[CUT HERE](http://www.phrack.org/issues/50/16.html#article)
+
 ## case studies
 
 finally, this section will confront our set of aesthetic features to several case studies of existing source code. the choice of these case studies will attempt to be as broad and representative as possible (e.g. commercial, functional, hobbyist, artistic), with the aim of using diverse approaches in order to further qualify the aesthetic approaches defined heretofore.

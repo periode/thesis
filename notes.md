@@ -14,13 +14,7 @@ minimalism is not the same thing as simplicity and clarity
 
 ## rewrite
 
-drawing from mckenzie, rewrite his part in the introduction to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code
-
-i should also rewrite my definition of aesthetics to focus more on the aesthetics of everyday life?
-
 ~~should i also specify in the intro that i'm dealing with aesthetics and not art? isn't that obvious enough already?~~
-
-specify that the term _software engineering_ appeared in 1968 at a conference [[wirth_history_software_engineering]]. but actually it's fuzzy, some people say it was around 1967 [src](https://www.princeton.edu/~hos/mike/articles/hcht.pdf)
 
 ## to read
 
