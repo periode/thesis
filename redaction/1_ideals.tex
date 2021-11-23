@@ -63,13 +63,204 @@ Software maintenance, finally, relates not to the planning or writing of softwar
 
 \vspace*{1\baselineskip}
 
+What does this look like in practice, then? Ideals of clarity, reusability and reliability—and their opposites—can be found in some of the available code bases of professional software. The paradox to be noted here is that, even though software developers write the most code, it is the least accessible online and, as such, the following excerpts are covering the range of commercial software (Microsoft Windows), licensed and publicly available software (Kirby), and an open-source software (Prometheus).
+
+The first excerpts come from the source code for Microsoft Windows 2000, which was made public in 2004. The program text contains  28,655 files, the largest of our  corpus, by multiple orders of magnitude, with 13,468,327 combined lines and including more than 10 different file extensions. Taking a closer look at some of these files allow us to identify some of the specific features of code written by software developers, and how they specifically relate to architectural choices, collaborative writing and verbosity.
+
+First, the most striking visual feature of the code is its sheer size. Representing such a versatile and low-level system such as an operating system manifest themselves in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated. For instance, the initialization of strings of text for the namespaces (a technique directly related to the compartmentalization) is necessary, repetitive work which can be represented using a rhythmic visual pattern, such as in \lstinline{cmdatini.c}:
+
+\begin{lstlisting}[language=C, basicstyle=\tiny]
+  {
+    ULONG i;
+
+    RtlInitUnicodeString( &CmRegistryRootName,
+                          CmpRegistryRootString );
+
+    RtlInitUnicodeString( &CmRegistryMachineName,
+                          CmpRegistryMachineString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareName,
+                          CmpRegistryMachineHardwareString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionName,
+                          CmpRegistryMachineHardwareDescriptionString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionSystemName,
+                          CmpRegistryMachineHardwareDescriptionSystemString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareDeviceMapName,
+                          CmpRegistryMachineHardwareDeviceMapString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareResourceMapName,
+                          CmpRegistryMachineHardwareResourceMapString );
+
+    RtlInitUnicodeString( &CmRegistryMachineHardwareOwnerMapName,
+                          CmpRegistryMachineHardwareOwnerMapString );
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemName,
+                          CmpRegistryMachineSystemString );
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSet,
+                          CmpRegistryMachineSystemCurrentControlSetString);
+
+    RtlInitUnicodeString( &CmRegistryUserName,
+                          CmpRegistryUserString );
+
+    RtlInitUnicodeString( &CmRegistrySystemCloneName,
+                          CmpRegistrySystemCloneString );
+
+    RtlInitUnicodeString( &CmpSystemFileName,
+                          CmpRegistrySystemFileNameString );
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumName,
+                          CmpRegistryMachineSystemCurrentControlSetEnumString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumRootName,
+                          CmpRegistryMachineSystemCurrentControlSetEnumRootString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServices,
+                          CmpRegistryMachineSystemCurrentControlSetServicesString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetHardwareProfilesCurrent,
+                          CmpRegistryMachineSystemCurrentControlSetHardwareProfilesCurrentString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlClass,
+                          CmpRegistryMachineSystemCurrentControlSetControlClassString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSafeBoot,
+                          CmpRegistryMachineSystemCurrentControlSetControlSafeBootString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagement,
+                          CmpRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagementString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBootLog,
+                          CmpRegistryMachineSystemCurrentControlSetControlBootLogString);
+
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServicesEventLog,
+                          CmpRegistryMachineSystemCurrentControlSetServicesEventLogString);
+
+    RtlInitUnicodeString( &CmSymbolicLinkValueName,
+                          CmpSymbolicLinkValueName);
+
+#ifdef _WANT_MACHINE_IDENTIFICATION
+    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBiosInfo,
+                          CmpRegistryMachineSystemCurrentControlSetControlBiosInfoString);
+#endif
+
+    //
+    // Initialize the type names for the hardware tree.
+    //
+
+    for (i = 0; i <= MaximumType; i++) {
+
+        RtlInitUnicodeString( &(CmTypeName[i]),
+                              CmTypeString[i] );
+
+    }
+
+    //
+    // Initialize the class names for the hardware tree.
+    //
+
+    for (i = 0; i <= MaximumClass; i++) {
+
+        RtlInitUnicodeString( &(CmClassName[i]),
+                              CmClassString[i] );
+
+    }
+
+    return;
+}
+\end{lstlisting}
+
+The repetition of the \lstinline{RtlInitUnicodeString} call in the first part of this listing wouldn't stand today's industry-standard practices; these would rather point towards the second part of the code, the two \lstinline{for()} statements. While this practice would only be formalized in Andy Hunt's \emph{The Pragmatic Programmer} in 1999\cite{hunt_pragmatic_1999}, the longevity of the windows 2000 operating system and its update cycle would nonetheless have affected how this code is written. The reason why such a repetition applies is the requirement of registering each string with the kernel. Dealing with a different problem domain (kernel instructions) leads to a different kind of expected aesthetics\footnote{Effectively, references to \lstinline{RtlInitUnicodeString()} happen 1580 times across 336 files}.
+
+Verbosity, the act of explicitly writing out statements which could be functionally equivalent in a compacted form,  is a significant feature of the Windows 2000 codebase, and also relies on a particular semantic environment: that of using the C programming language. As mentioned above, the development of C and UNIX in the 1970s have led to wide adoption of the former, and to some extent of the later (even though Windows is a notable exception since it is an operation system not based on the UNIX tradition). What we see in this listing is the consequence of this development: using a verbose language inevitably leads to a verbose program text, something we will see in the following section on hacker's code and will explore much further in chapter 5.
+
+Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomaticjsreadmemd_nodate}. For instance, the following excerpt from \lstinline{jdhuff.c} is a example of such overlapping of styles:
+
+\begin{lstlisting}[language=C, basicstyle=\tiny]
+  no_more_data:
+		  // There should be enough bits still left in the data segment; 
+		  // if so, just break out of the outer while loop. 
+		  if (bits_left >= nbits)
+			  break;
+			/* Uh-oh.  Report corrupted data to user and stuff zeroes into
+			 * the data stream, so that we can produce some kind of image.
+			 * Note that this code will be repeated for each byte demanded
+			 * for the rest of the segment.  We use a nonvolatile flag to ensure
+			 * that only one warning message appears.
+			 */
+		  if (! *(state->printed_eod_ptr)) 
+		  {
+			  WARNMS(state->cinfo, JWRN_HIT_MARKER);
+			  *(state->printed_eod_ptr) = TRUE;
+		  }
+		  c = 0;			// insert a zero byte into bit buffer 
+      }
+    }
+
+    /* OK, load c into get_buffer */
+    get_buffer = (get_buffer << 8) | c;
+    bits_left += 8;
+  }
+
+  /* Unload the local registers */
+  state->next_input_byte = next_input_byte;
+  state->bytes_in_buffer = bytes_in_buffer;
+  state->get_buffer = get_buffer;
+  state->bits_left = bits_left;
+
+  return TRUE;
+}
+\end{lstlisting}
+
+Here, we see three different writings of comments \lstinline{//}, \lstinline{/* */} as well as capitalizations. Those comments are ignored at compile time: that is, they are not meaningful to the machine, and are only expected to be read by other programmers, primarily programmers belonging to one's organization. This hints at the various origins of the authors, or at the very least at the different moments, and possible mental states of the potential single-author: irregularity in comment writing can connect to irregularities in semantic content of the comments. This irregularity becomes suspicious, and leads to those comments being discarded, relying on the fact that \textquote[\cite{goodliffe_code_2007}]{The only document that describes your code completely and correctly is the code itself}. This excerpt highlights the constant tension between source code as the canonical origin of knowledge of what the program does and how it does it, while comments allow for the idiosyncratic expressions of human programmers.
+
+And yet, this chronological and interpersornal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text. For instance,  in \lstinline{pnpenum.c}:
+
+\begin{lstlisting}[language=C, basicstyle=\small]
+  /*++
+
+Copyright (c) 1996 Microsoft Corporation
+
+Module Name:
+
+    enum.c
+
+Abstract:
+
+    This module contains routines to perform device enumeration
+
+Author:
+
+    Shie-Lin Tzong (shielint) Sept. 5, 1996.
+
+Revision History:
+
+    James Cavalaris (t-jcaval) July 29, 1997.
+    Added IopProcessCriticalDeviceRoutine.
+
+--*/
+\end{lstlisting}
+
+This highlights both the multiple authorship (here, we have one original author and one revisor) as well as the evolution in time of the file: comments are the only manifestation of this layering of revisions which ultimately results in the "final" software\footnote{The term "final" is in quotes, since the Windows 2000 source contains the mention \lstinline{BUGBUG} 7436 times across 2263 files, a testatment to the constant state of unfinishedness that some software might remain in.}.
+
+\begin{itemize}
+  \item Kirby: modular, reusable, clean, minimal
+  \item Prometheus: efficient
+\end{itemize}
+
+
+\vspace*{1\baselineskip}
+
 Software developers are a large group of practicioners whose focus is on producing effective, reliable and sustainable software, through a varieties of techniques and processes, drawing from architecture and engineering in order to foster simplicity and understandability. Before we dive deeper into those concepts in the next section, we turn to another practice closely linked to professional development—hacking.
 
 \subsection{Hackers - 6p}
 
 Joseph Weizenbaum's description of what seems to be computer science graduate students is  one which has had wide echoes in the public imagination: hackers are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems\footnote{\textquote[\cite{weizenbaum_computer_1976}]{    Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text.}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven by curiosity, cleverness and freedom, and which has had a significant influence in the culture of programming.
 
-To hack, in the broadest sense, is to enthusiastically inquire about the possibilities of exploitation of technical systems\footnote{\textquote[\cite{dourish_original_nodate}]{HACKER [originally, someone who makes furniture with an axe] n. 1. A person who enjoys learning the details of programming systems and how to stretch their capabilities, as opposed to most users who prefer to learn only the minimum necessary. 2. One who programs enthusiastically, or who enjoys programming rather than just theorizing about programming.}} and, as such, predates the advent of the computer\footnote{See Rosenbaum's report in the October 1971 issue of Esquire for an account of phreaking, computer hacking's immediate predecessor\cite{rosenbaum_secrets_2004}.}. Computer hacking specifically came to proeminence as early computers started to become available in north-american universities, and coalesced around the Massachussets Institute of Technology's Tech Model Railroad Club\cite{levy_hackers_2010}. Computer hackers were skilled and highly-passionate individuals, with an autotelic inclination to computer systems: these systems mattered most when they referenced themselves, instead of interfacing with a given problem domain. Early hackers were often self-taught, learning to tinker with computers while still in high-school\cite{lammers_programmers_1986}, and as such tend to exhibit a radical position towards expertise: skill and knowledge aren't derived from academic degrees or credentials, but rather from concrete ability and practical efficacy.
+To hack, in the broadest sense, is to enthusiastically inquire about the possibilities of exploitation of technical systems\footnote{\textquote[\cite{dourish_original_nodate}]{HACKER [originally, someone who makes furniture with an axe] n. 1. A person who enjoys learning the details of programming systems and how to stretch their capabilities, as opposed to most users who prefer to learn only the minimum necessary. 2. One who programs enthusiastically, or who enjoys programming rather than just theorizing about programming.}} and, as such, predates the advent of the computer\footnote{See Rosenbaum's report in the October 1971 issue of Esquire for an account of phreaking, computer hacking's immediate predecessor\cite{rosenbaum_secrets_2004}.}. Computer hacking specifically came to proeminence as early computers started to become available in north-american universities, and coalesced around the Massachussets Institute of Technology's Tech Model Railroad Club\cite{levy_hackers_2010}. Computer hackers were skilled and highly-passionate individuals, with an autotelic inclination to computer systems: these systems mattered most when they referenced themselves, instead of interfacing with a given problem domain. Early hackers were often self-taught, learning to tinker with computers while still in high-school\cite{lammers_programmers_1986}, and as such tend to exhibit a radical position towards expertise: skill and knowledge aren't derived from academic degrees or credentials, but rather from concrete ability and practical efficacy\footnote{A meritocratic stance which has been analyzed in further in \cite{coleman_aesthetics_2018}}.
 
 The histories of hacking and of software development are deeply intertwined: some of the early hackers worked on software engineering projects—such as the graduate students who wrote the Apollo Guidance Computer routines under Margaret Hamilton—, and then went on to profoundly shape computer infrastructure. Particularly, the development of the UNIX operating system by Dennis Ritchie and Ken Thompson is a key link in connecting hacker practices and professional ones. Developed from 1969 at Bell Labs, AT\&T's research division, UNIX was \textquote[{\cite{raymond_art_2003}}]{very close to being the first system under which a programmer could sit down directly at a machine and compose programs on the fly, exploring possibilities and testing while composing}, and was \textquote[{\cite{raymond_art_2003}}]{was brainstormed by three people and implemented by Ken Thompson in two days — on an obsolete machine that had been designed to be a graphics terminal for a 'real' computer.}.  This was a system which was supporting the free exploration of a system's boundaries central to the hacker culture, and which relied on sharing and circulating source code in order to allow anyone to improve it—in effect, AT\&T's inexpensive licensing model until the 1980s, and the use of the C programming language starting from 1977 made it widely available within university settings\footnote{\textquote[\cite{morgan_ibm_1982}]{Unix has become well entrenched in the nation's colleges and universities due to Western Electric's extensive, inexpensive licensing of the system. As a result, many of today's graduating computer scientists are familiar with it.}}. UNIX, then, was spreading its design philosophy of clear, modular, simple and transparent design across programming communities.
 
@@ -186,13 +377,13 @@ Further examples of such intimate knowledge of both the language and the machine
   \begin{itemize}
     \item They show off the computer's hardware abilities (3D objects, multi-channel sound, etc.)
     \item They show off the creative abilities of the demo group (artists, musicians)
-    \item They show off the programmer's abilities (fast 3D shaded polygons, complex motion, etc.)\cite{noauthor_pc_nodate}
+    \item They show off the programmer's abilities (fast 3D shaded polygons, complex motion, etc.)\cite{melik_pc_2012}
   \end{itemize}
 \end{quote}
 
 This showing off, however, does not happen through immediate engagement with the code from the reader's part, but rather in the thorough explanation of the minute functionalities of the demo by its writer. Because of these constraints of size, the demos are usually written in C, openGL, Assembly, or the native language of the targeted hardware. Source code listings of demos also make extensive use of shortcuts and tricks, and little attention is paid to whether or not other humans would directly read the source—the only intended recipient is a very specific machine (e.g. Commodore 64, Amiga VCS, etc.). The release of demos, usually in demoparties, are sometimes accompanied by documentation, write-ups or presentations\footnote{You can find \emph{Elevated}'s technical presentation here: \url{https://www.iquilezles.org/www/material/function2009/function2009.pdf}}. However, this presentation format acknowledges a kind of individual, artistic feat, rather than the \emph{egoless programming} lauded by Brooks in professional software development\footnote{In architecture, such technical and artistic feat for its own sake, devoid of any reliable social use, is the pavillion, or the folly.}.
 
-Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{noauthor_mind_nodate} on the Commodore 64. It is firsted listed as a hexademical dump by its author:
+Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{akesson_mind_2017} on the Commodore 64. It is firsted listed as a hexademical dump by its author:
 
 \begin{lstlisting}
   0000000 0801 080d d3ff 329e 3232 0035 0000 4119
@@ -240,7 +431,7 @@ The ideals at play in the writing and reading of source code is thus centered ar
 \begin{itemize}
     \item PL \& algo implementers
     \item textbooks
-    \item data scientists
+    \item data scientists \url{https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745}
 \end{itemize}
 
 binary search algorithm's implementation is only accurate in  is only found in five out of twenty textbooks Pattis, Richard E. (1988). "Textbook errors in binary searching". SIGCSE Bulletin. 20: 190–194. doi:10.1145/52965.53012.

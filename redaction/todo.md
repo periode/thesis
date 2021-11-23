@@ -6,4 +6,6 @@
   - [ ] specify that the term _software engineering_ appeared in 1968 at a conference [[wirth_history_software_engineering]]. but actually it's fuzzy, some people say it was around 1967 [src](https://www.princeton.edu/~hos/mike/articles/hcht.pdf)
 - [ ] ideals
   - [ ] re read hacker examples part to check for spoilers
-  - [ ] add code examples for software industry (linux, kirby, parts of firefox)
+  - [ ] add code examples for software industry (linux, kirby, parts of firefox, prometheus)
+
+look into the pdf "program text, style, laber" by brian lennon to address comments in microsoft windows source code

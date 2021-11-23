@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readings/notes/campbell_kelly_history_software_industry.md",
+                "file": "outline/outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e7c95cd2d2893e5e",
+  "active": "016c05fc0dbc30fa",
   "lastOpenFiles": [
-    "readings/notes/campbell_kelly_history_software_industry.md",
     "outline/outline.md",
+    "redaction/todo.md",
+    "readings/notes/campbell_kelly_history_software_industry.md",
     "readings/notes/wirth_history_software_engineering.md",
     "outline/concrete.md",
     "readings/notes/ceruzzi_history_of_modern_computing.md",
     "outline/ideals.md",
     "outline/understanding_code.md",
     "leddy_nature_of_everyday_aesthetics.md",
-    "leddy_everyday_surface_aesthetic_qualities.md",
-    "saito_everyday_aesthetics.md"
+    "leddy_everyday_surface_aesthetic_qualities.md"
   ]
 }
