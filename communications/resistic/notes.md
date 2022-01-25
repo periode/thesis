@@ -4,6 +4,22 @@
 
 ## [appel à contributions](https://www.resistic.fr/index.php/2021/06/02/appel-a-communications-colloque-international-critiques-et-contournements-des-controles-et-de-la-surveillance-sur-internet/)
 
+---
+
+## questions to ask
+
+- how do you define scuttlebutt?
+- what technologies is scuttlebutt based on?
+- what values is scuttlebutt based on?
+- how does scuttlebutt differentiate itself from different social networking projects?
+- which future do you imagine for scuttlebutt?
+- which aspects of the web/internet do you find lacking?
+- which other projects addressing some limitations of the web/internet do you find interesting?
+- which ones do you find suspicious?
+- which future do you imagine for the web/internet?
+
+---
+
 
 ## idées
 
