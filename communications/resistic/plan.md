@@ -27,7 +27,7 @@ HTTP:
 
 - client/server
 - messages rather than streams of data
-- distributed but not decentralized
+- distributed but not decentralized -> the issue is DNS
 
 ## 1 - analyse de ipfs - 3 pages
 
@@ -51,7 +51,7 @@ HTTP:
   
 section sur applications
 - web UI has a map of the world -> global
-- also what it is associated with -> [filecoin](https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/), blockchain ([brave](https://brave.com/brave-integrates-ipfs/)), [multiformats](https://multiformats.io/), IPLD __lookup__, libp2p
+- also what it is associated with -> [filecoin](https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/), blockchain ([brave](https://brave.com/brave-integrates-ipfs/)), [multiformats](https://multiformats.io/), IPLD (fancy name for merkle dag), libp2p
 
 check the [community](https://github.com/ipfs/community)?
 
@@ -64,10 +64,36 @@ check the [community](https://github.com/ipfs/community)?
 - > While there's lots of complex technology in IPFS, the fundamental ideas are about changing how networks of people and computers communicate [src](https://docs.ipfs.io/concepts/what-is-ipfs/#content-addressing)
 
 - discours des programmeurs et utilisateurs
+- - tedx talk
+- - - revolution
+- - - the internet falling apart (resilience)
+- - - crisis of the archived history (src: tedx)
 - - web3
+- - - even though they are not _directly_ related to the protocol itself, there are a lot of applications built on top of IPFS which 
 - - they added a section in the docs on NFTs
 - - look at the [notes discussion](https://github.com/ipfs/notes/issues?page=1&q=is%3Aissue+is%3Aopen)
+  
 - limites
+- - "Every single file that could exist on IPFS has the potential to offend someone." [src](https://github.com/ipfs-inactive/faq/issues/36)
+- - The issue is that the routing protocol is nominative: the identities are tied!
+- - This whole discussion ends up as a political philosophy discussion: [src](https://github.com/ipfs-inactive/faq/issues/156#issuecomment-243339628)
+- - [this website](https://ipfs.io/ipns/QmZxWEBJBVkGDGaKdYPQUXX4KC5TCWbvuR4iYZrTML8XCR/en/where-to-vote/index.html) for catalan independence is now down
+- - having a private network is opposite to having the benefits of the scale of a public IPFS network [src docs](https://docs.ipfs.io/concepts/privacy-and-encryption/#enhancing-your-privacy)
+
+"If you don't pin your content to IPFS, it goes bye-bye. And if the server pinning your resources ever goes offline and no one else has it pinned, it's gone forever. That's why a market has opened up for services like Pinata, which aim to be permanent pinning services. So you still end up with a centralized business framework even if the technology itself is decentralized, in that, if you don't have the means to provide your own distributed infrastructure, you're going to have to pay someone who does." [src](https://www.reddit.com/r/ipfs/comments/ruxlej/ipfs_is_an_alternative_for/)
+
+__[discussion board](https://discuss.ipfs.io/)__
+
+- filecoin is an incentive to host someone's files (another protocol to act as an incentive to share more content)
+- copyrighted content can't be prevented through _just_ ipfs [src](https://discuss.ipfs.io/t/blocking-copyrighted-material-adult-content-on-an-http-gateway/11961/3)
+- it is not possible to update content, so yet another protocol on top of a protocol [src](https://discuss.ipfs.io/t/what-is-ipfs-actually-good-for/12958/7) (gossipsub)
+- and then the issue of [performance](https://discuss.ipfs.io/t/ipfs-cant-realize-its-promise/5607) (i guess the requirement for any protocol critique)
+- [CID concept is broken](https://discuss.ipfs.io/t/cid-concept-is-broken/9733/21) - disconnect between what the CID prentends it is (file hash) and what it really is (a mish mash), which has implications. -> protocol is different from speech -> something no protocol has solved yet (technical issue of having to trust a peer)
+- [deleting content](https://discuss.ipfs.io/t/can-i-delete-my-content-from-the-network/301/15) - there is a counter argument by using another protocol: [diaspora](https://diasporafoundation.org/) and then the conversation ends abruptly
+- > Law is not cut and dry. It is all arguable. [src](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/5) - the difference and similarities between law and protocol
+- big difference between ipfs and ssb: default trust levels. in ipfs, [you trust everyone by default](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/15). in ssb, you trust no one by default
+- similarly, [this comment](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/19) highlights the conflict between technical and political
+
 
 ## 2 - analyse de ssb - 3 pages
 
