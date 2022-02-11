@@ -1,5 +1,7 @@
 # critiques protocolaires d'internet: scuttlebutt et ipfs
 
+5000 - 8000 mots à envoyer pour le 25/02
+
 ## introduction - 2 pages
 
 établir le concept de critique protocolaire
@@ -27,9 +29,12 @@ HTTP:
 
 - client/server
 - messages rather than streams of data
+- every http request can exist on its own, independent of which client or server is involved
 - distributed but not decentralized -> the issue is DNS
 
 ## 1 - analyse de ipfs - 3 pages
+
+### 1.1 description
 
 > _The IPFS is not just a theoretical or academic experiment. It is a working software system (although still in alpha) that can be downloaded and switched on right now_ [src](https://medium.com/@tonywillenberg/web-3-0-a-truly-democratised-internet-f4b06cb4077b) this is the point of protocol critique
 
@@ -54,6 +59,8 @@ section sur applications
 - also what it is associated with -> [filecoin](https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/), blockchain ([brave](https://brave.com/brave-integrates-ipfs/)), [multiformats](https://multiformats.io/), IPLD (fancy name for merkle dag), libp2p
 
 check the [community](https://github.com/ipfs/community)?
+
+### 1.2 discours
 
 - mythe fondateur
 - - also their biggest issue with HTTP is the 404 error, and the centralization of servers
@@ -94,19 +101,58 @@ __[discussion board](https://discuss.ipfs.io/)__
 - big difference between ipfs and ssb: default trust levels. in ipfs, [you trust everyone by default](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/15). in ssb, you trust no one by default
 - similarly, [this comment](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/19) highlights the conflict between technical and political
 
+### 1.3 limites et nature de la critique
+
+surtout sur la disparition des données!
+
+---
+
+on a vu une tentative d'universel. maintenant, on va voir comment on peut réutiliser des protocoles pour arriver à une vision du monde différente?
+
+---
 
 ## 2 - analyse de ssb - 3 pages
 
+### 2.1 description
+
 - description du protocole
+- - t'as une identité (rsa key pair)
+- - tu donnes constamment ta présence sur le LAN (broadcasting over UDP)
+- - et puis il y a des __pub__ (public web interface)
+- - once they're connected, they can exchange keys and messages
+
+### 2.2 discours
+
 - mythe fondateur
+- > "Scuttlebutt can be transformative for society, decentralizing and enabling local community development free of big corp. It is a fast growing decentralized social network. As an alternative to the large corporate social networks it enables autonomy for the users and a free zone from big data harvesting..."
+- - first application is as a social network.
+- > "Scuttlebutt aims to harmonize four perspectives of life: __Environment__ reflecting __Technology__ reflecting __Community__ reflecting __Society__." [src](https://scuttlebutt.nz/docs/principles/)
+
+- based on the very scientific [gossip protocol](https://en.wikipedia.org/wiki/Gossip_protocol) which deals with multiplicity rather than universality: _There are probably hundreds of variants of specific gossip-like protocols because each use-scenario is likely to be customized to the organization's specific needs.
+- ecosysteme:
+  - [amazon ssb](https://opencollective.com/secure-scuttlebutt-consortium/updates/p2p-access-point-1-intro-and-proof-of-concept)
+  - opencollective
 - discours des programmeurs et utilisateurs
 - limites
 
+### 2.3 conclusions et direction de la critique
+
 ## 3 - rapport protocolaires à l'espace et au temps - 2 pages
+
+### 3.1 le temps
 
 - différentes positions
 - rôle de la technologie au niveau plus "méta", rapport à l'espace et au temps
 - et au mouvement! les individus bougent, ou bien c'est la technologie qui bouge
+
+### 3.2 l'espace
+
+univers parallèle avec le web portal
+universalisme et localisme
+
+### 3.3 les questions de déterminismes techniques
+
+sha-512 vs. human positions
 
 ## conclusion
 

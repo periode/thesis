@@ -1,0 +1,77 @@
+\documentclass{article}
+
+\usepackage[hyphens]{url}
+\usepackage{csquotes}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{authblk}
+\usepackage[normalem]{ulem}
+\usepackage[bottom]{footmisc}
+\usepackage{hyperref}
+
+\graphicspath{ {./images/} }
+
+\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\setmainfont{Inter Light}
+\setmonofont{Liberation Mono}
+\linespread{1.50}
+\sloppy
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single
+}
+
+\begin{document}
+\title{Critiques protocolaires d'Internet: Comparaison des projets IPFS et SecureScuttleButt}
+\author{Pierre Depaz}
+\affil{Paris-3 Sorbonne-Nouvelle - THALIM}
+\maketitle
+
+\section{Introduction}
+
+Avec toutes ses implications économiques, sociales et politiques, l'Internet et le Web\cite{fielding_hypertext_2014} sont avant tout des protocoles de communication, c'est-à-dire un ensemble de règles permettant à deux parties ou plus de requérir et fournir des données dans un même réseau. La suite des protocoles qui constituent l'Internet voit le jour à la fin des années 1960 sous l'égide de la recherche militaire étasunienne, tandis que les deux protocoles HTTP et HTTPS qui constituent l'infrastructure du Web sont développés et distribués par le Centre Européen de la Recherche Nucléaire, a public research institutions. Ces deux documents sont mis-à-jour, avec la version 6 de l'Internet Protocol et la version 2 de l'HyperText protocol étant actuellement (2022) en cours d'adoption.
+
+Pourtant, l'utilisation de ces protocoles ont découlé sur des utilisations bien différentes de leurs usages intialement envisagés—la sûreté des données en cas d'attaque militaire soviétique et l'accès à des articles et de la documentation de recherche en physique. Cette évolution est notamment documentée par Lawrence Lessig, dans son ouvrage \emph{Code and Other Laws of Cyberspace}\cite{lessig_code_1999}, en ce qu'il identifie différentes forces capables de faconner l'évolution de l'Internet et du Web: des forces légales, marchandes, sociales et technologiques. Des forces qui, selon Cory Doctorow, sont parfois antagonistes, lorsqu'il argumente que la tendance de la propriété intellectuelle, qui est de limiter la circulation d'un contenu donné, est aux antipodes du concept de computation, qui repose de manière fondamentale sur la capacité à \emph{copier}.
+
+Bien qu'il y ait eu des solutions légales avancées à ces critiques des usages (possiblement détournement) des technologies d'Internet, tels que l'ensemble des licenses Creative Commons, dans la lignée de GPL et licenses copyleft, il n'en reste pas moins que les forces technologiques peuvent influencer fortement les possibilités d'agir des utilisateurs de ces dernières. Dernier example, Harsh Gupta s'interroge sur le manque de représentation des contients africains, sud-américains et asiatiques (respectivement 0\%, 0\% et 0\%) lors des délibération ayant pour objet l'implémentation de l'Encrypted Media Extensions. L'EME est un standard de communication pour contenus protégés par une propriété intellectuelle, une propriété intellectuelle de tradition exclusivement occidentale désormais établie en tant que vérité technique plutôt que réglementation économico-politique.
+
+Les dérives de surveillance, de limitation de partage et de monopole des applications issues des protocoles Internet et Web sont donc bien documentées. Face à celles-ci s'élèvent alors plusieurs types de critiques: critiques sémantiques, sous la forme de blogs, de livres, d'articles et de conférences; critiques légales, telles que les licences GPL ou CC ou les législations de la RGPD ou du DGA; ou encore critiques programmatiques, telles que les bloqueurs de publicités.
+
+Ces différentes critiques sont donc toutes des manières d'exposer limitations et alternatives à un objet donné à un moment donné, se focalisant souvent sur un ou plusieurs points majoritaires. La critique sémantique est argumentative, et offre des stratégies discursives, la critique légale déploie un appareil d'arguments valides en termes législatifs, et la critique programmatique promeut l'utilisation de de dispositifs d'actions (dont les logiciels font partie) pour remédier aux limitations identifiées de manière pratique. Le type de critique sur lequel je vais me pencher ici est celui de la critique protocolaire.
+
+Partant du principe, selon Galloway, qu'un protocole encode des manières de faires qui contraignent ses utilisateurs à la suivre sous peine d'être exclus de la communication se déroulant à travers ce protocole\cite{galloway_protocol_2004}, je concois la critique protocolaire comme la conception et le déploiement d'infrastructures (et pas juste d'applications) communicationelles qui addressent les limitations identifiées d'une infrastructure existante.
+
+Pourqui la critique protocolaire?
+
+\begin{itemize}
+    \item pour toucher a la question du déterminisme technique
+    \item pour toucher à la technologie comme moyen d'expression (lié à la rhétorique procédurelle)
+    \item pour explorer un autre type d'imaginaire, ici connecté à la conception de l'espace et du temps dans les communications digitales.
+\end{itemize}
+
+Quelles sont les questions quxquelles je cherche à répondre?
+
+\begin{itemize}
+    \item comment se constitue une critique protocolaire? quels sont les environnements, documents et actions socio-économico-techniques qui doivent être déployés?
+    \item comment un même algorithme peut-il être utilisé par deux projets différents?
+    \item comment un protocole porte-t-il des visions du monde, au dela des péri-textes?
+\end{itemize}
+
+Présenter la méthodologie
+
+\begin{itemize}
+    \item analyse comparative des protocoles de deux cas d'étude
+    \item analyse des discours et des écosystèmes de chaque projet
+\end{itemize}
+
+yallah
+
+\pagebreak
+
+\bibliographystyle{unsrt}
+\bibliography{resistic.bib}
+
+\end{document}
