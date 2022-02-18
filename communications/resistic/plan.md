@@ -2,7 +2,7 @@
 
 5000 - 8000 mots à envoyer pour le 25/02
 
-## introduction - 2 pages
+## introduction - 1000 mots
 
 établir le concept de critique protocolaire
 
@@ -32,7 +32,7 @@ HTTP:
 - every http request can exist on its own, independent of which client or server is involved
 - distributed but not decentralized -> the issue is DNS
 
-## 1 - analyse de ipfs - 3 pages
+## 1 - analyse de ipfs - 1500 mots
 
 ### 1.1 description
 
@@ -111,7 +111,7 @@ on a vu une tentative d'universel. maintenant, on va voir comment on peut réuti
 
 ---
 
-## 2 - analyse de ssb - 3 pages
+## 2 - analyse de ssb - 1500 mots
 
 ### 2.1 description
 
@@ -137,7 +137,7 @@ on a vu une tentative d'universel. maintenant, on va voir comment on peut réuti
 
 ### 2.3 conclusions et direction de la critique
 
-## 3 - rapport protocolaires à l'espace et au temps - 2 pages
+## 3 - rapport protocolaires à l'espace et au temps - 1000 mots
 
 ### 3.1 le temps
 
