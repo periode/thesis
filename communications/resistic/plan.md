@@ -34,7 +34,7 @@ HTTP:
 
 ## 1 - analyse de ipfs - 1500 mots
 
-### 1.1 description
+### 1.1 description (500 mots)
 
 > _The IPFS is not just a theoretical or academic experiment. It is a working software system (although still in alpha) that can be downloaded and switched on right now_ [src](https://medium.com/@tonywillenberg/web-3-0-a-truly-democratised-internet-f4b06cb4077b) this is the point of protocol critique
 
@@ -60,8 +60,9 @@ section sur applications
 
 check the [community](https://github.com/ipfs/community)?
 
-### 1.2 discours
+### 1.2 discours (500 mots)
 
+- inscription dans la lignée de l'histoire humaine - [src](https://www.youtube.com/watch?v=zE_WSLbqqvo)
 - mythe fondateur
 - - also their biggest issue with HTTP is the 404 error, and the centralization of servers
 - - efficiency, permanence, decentralization, harder to censor content, standardization and interoperability
@@ -101,7 +102,7 @@ __[discussion board](https://discuss.ipfs.io/)__
 - big difference between ipfs and ssb: default trust levels. in ipfs, [you trust everyone by default](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/15). in ssb, you trust no one by default
 - similarly, [this comment](https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/19) highlights the conflict between technical and political
 
-### 1.3 limites et nature de la critique
+### 1.3 limites et nature de la critique (500 mots)
 
 surtout sur la disparition des données!
 

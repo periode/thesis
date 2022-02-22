@@ -1,0 +1,410 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="/style.css"/>
+		</head>
+		<body>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="critiques-protocolaires-dinternet-scuttlebutt-et-ipfs">critiques protocolaires d’internet: scuttlebutt et ipfs</h1>
+
+<p>5000 - 8000 mots à envoyer pour le 25/02</p>
+
+<h2 id="introduction---1000-mots">introduction - 1000 mots</h2>
+
+<p>établir le concept de critique protocolaire</p>
+
+<ul>
+  <li>il ne s’agit pas de critiquer une implémentation technique, mais plutôt un <em>a priori</em> de la vision du monde que cette implémentation suggère</li>
+</ul>
+
+<p>établir les précédentes critiques d’internet:</p>
+
+<ul>
+  <li>critique open-source/free software</li>
+  <li>critique commerciale / économique / plateformistique</li>
+</ul>
+
+<p>établir la question principale: <strong>comment se constitue une critique protocolaire d’internet?</strong></p>
+
+<p>quels sont les points communs de la forme, et les divergences de contenus?</p>
+
+<p>méthodologie</p>
+
+<p>justifier le choix de ces deux projets (points communs et différences)</p>
+
+<blockquote>
+  <p><em>A protocol is a set of procedural rules, information formats, and other conventions which, if followed by the communicating entities, enable their conversation to proceed smoothly and without confusion or error. Communication protocols naturally fall into a hierarchy of levels.</em><a href="https://sci-hub.yncjkj.com/10.1145/639624.802056">src</a></p>
+</blockquote>
+
+<p><strong>in this paper wer’re at the application layer: influential to the user, but also generalistic</strong></p>
+
+<p>HTTP:</p>
+
+<ul>
+  <li>client/server</li>
+  <li>messages rather than streams of data</li>
+  <li>every http request can exist on its own, independent of which client or server is involved</li>
+  <li>distributed but not decentralized -&gt; the issue is DNS</li>
+</ul>
+
+<h2 id="analyse-de-ipfs---1500-mots">1 - analyse de ipfs - 1500 mots</h2>
+
+<h3 id="description-500-mots">1.1 description (500 mots)</h3>
+
+<blockquote>
+  <p><em>The IPFS is not just a theoretical or academic experiment. It is a working software system (although still in alpha) that can be downloaded and switched on right now</em> <a href="https://medium.com/@tonywillenberg/web-3-0-a-truly-democratised-internet-f4b06cb4077b">src</a> this is the point of protocol critique</p>
+</blockquote>
+
+<ul>
+  <li>description du protocole</li>
+  <li>
+    <ul>
+      <li><code>Permanent Web</code> -&gt; distibuted hashtable / incentivized blockchain / self-certifying namespace</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>desire for petabyte datasets and on-demand/real-time media streams, and preventing accidental disparition of files</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>merkle directed acyclic graph</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>best suited for webrtc (implication of realtime)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>bitswap credit (incentivize to share blocks: nudge? free-market? literally debt)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>there is also the part where the <code>want_blocks</code> also include the ones wanted by the peers of the peer (network effect)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>the Object Merkle DAG is the Git implementation, and similar to what Scuttlebutt wants to achieve. <strong>but!</strong> by walking the DAG, one of the features/virtues is that one can access anything</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><strong>usecases</strong>:</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>mounted global filesystem</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>versioned package manager for <em>all</em> (sic) software</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>as a CDN (synonymous with “always-on, always available”)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>the permanent web</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>it also has a <em>specific</em> understanding of the word “decentralized”</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>since most applications are about filesystems, one can argue that it is meant/supposed/hoped to get IPFS to be seamlessly integrated</li>
+    </ul>
+  </li>
+</ul>
+
+<p>section sur applications
+- web UI has a map of the world -&gt; global
+- also what it is associated with -&gt; <a href="https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/">filecoin</a>, blockchain (<a href="https://brave.com/brave-integrates-ipfs/">brave</a>), <a href="https://multiformats.io/">multiformats</a>, IPLD (fancy name for merkle dag), libp2p</p>
+
+<p>check the <a href="https://github.com/ipfs/community">community</a>?</p>
+
+<h3 id="discours-500-mots">1.2 discours (500 mots)</h3>
+
+<ul>
+  <li>inscription dans la lignée de l’histoire humaine - <a href="https://www.youtube.com/watch?v=zE_WSLbqqvo">src</a></li>
+  <li>mythe fondateur</li>
+  <li>
+    <ul>
+      <li>also their biggest issue with HTTP is the 404 error, and the centralization of servers</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>efficiency, permanence, decentralization, harder to censor content, standardization and interoperability</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://docs.ipfs.io/project/history/">history of IPFS</a> - they mention that tim berners-lee’s vision was about peer2peer, but if you look at RFC 2616 for HTTP, the word peer is mentioned nowhere, only clients and servers <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec1.html#sec1.1">src</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <blockquote>
+          <p>a distributed, uncensorable, and permissionless file system</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <blockquote>
+          <p>Jakub Sztandera, an IPFS software engineer, took it upon himself to download the Turkish version of Wikipedia and put the snapshot onto IPFS <a href="https://blog.ipfs.io/24-uncensorable-wikipedia/">src</a> in response to state censorship -&gt; “one of the goals of IPFS is improving humanity’s access to information”</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <blockquote>
+      <p>While there’s lots of complex technology in IPFS, the fundamental ideas are about changing how networks of people and computers communicate <a href="https://docs.ipfs.io/concepts/what-is-ipfs/#content-addressing">src</a></p>
+    </blockquote>
+  </li>
+  <li>discours des programmeurs et utilisateurs</li>
+  <li>
+    <ul>
+      <li>tedx talk</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>revolution</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>the internet falling apart (resilience)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>crisis of the archived history (src: tedx)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>web3</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <ul>
+          <li>even though they are not <em>directly</em> related to the protocol itself, there are a lot of applications built on top of IPFS which</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>they added a section in the docs on NFTs</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>look at the <a href="https://github.com/ipfs/notes/issues?page=1&amp;q=is%3Aissue+is%3Aopen">notes discussion</a></li>
+    </ul>
+  </li>
+  <li>limites</li>
+  <li>
+    <ul>
+      <li>“Every single file that could exist on IPFS has the potential to offend someone.” <a href="https://github.com/ipfs-inactive/faq/issues/36">src</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>The issue is that the routing protocol is nominative: the identities are tied!</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>This whole discussion ends up as a political philosophy discussion: <a href="https://github.com/ipfs-inactive/faq/issues/156#issuecomment-243339628">src</a></li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li><a href="https://ipfs.io/ipns/QmZxWEBJBVkGDGaKdYPQUXX4KC5TCWbvuR4iYZrTML8XCR/en/where-to-vote/index.html">this website</a> for catalan independence is now down</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>having a private network is opposite to having the benefits of the scale of a public IPFS network <a href="https://docs.ipfs.io/concepts/privacy-and-encryption/#enhancing-your-privacy">src docs</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>“If you don’t pin your content to IPFS, it goes bye-bye. And if the server pinning your resources ever goes offline and no one else has it pinned, it’s gone forever. That’s why a market has opened up for services like Pinata, which aim to be permanent pinning services. So you still end up with a centralized business framework even if the technology itself is decentralized, in that, if you don’t have the means to provide your own distributed infrastructure, you’re going to have to pay someone who does.” <a href="https://www.reddit.com/r/ipfs/comments/ruxlej/ipfs_is_an_alternative_for/">src</a></p>
+
+<p><strong><a href="https://discuss.ipfs.io/">discussion board</a></strong></p>
+
+<ul>
+  <li>filecoin is an incentive to host someone’s files (another protocol to act as an incentive to share more content)</li>
+  <li>copyrighted content can’t be prevented through <em>just</em> ipfs <a href="https://discuss.ipfs.io/t/blocking-copyrighted-material-adult-content-on-an-http-gateway/11961/3">src</a></li>
+  <li>it is not possible to update content, so yet another protocol on top of a protocol <a href="https://discuss.ipfs.io/t/what-is-ipfs-actually-good-for/12958/7">src</a> (gossipsub)</li>
+  <li>and then the issue of <a href="https://discuss.ipfs.io/t/ipfs-cant-realize-its-promise/5607">performance</a> (i guess the requirement for any protocol critique)</li>
+  <li><a href="https://discuss.ipfs.io/t/cid-concept-is-broken/9733/21">CID concept is broken</a> - disconnect between what the CID prentends it is (file hash) and what it really is (a mish mash), which has implications. -&gt; protocol is different from speech -&gt; something no protocol has solved yet (technical issue of having to trust a peer)</li>
+  <li><a href="https://discuss.ipfs.io/t/can-i-delete-my-content-from-the-network/301/15">deleting content</a> - there is a counter argument by using another protocol: <a href="https://diasporafoundation.org/">diaspora</a> and then the conversation ends abruptly</li>
+  <li>
+    <blockquote>
+      <p>Law is not cut and dry. It is all arguable. <a href="https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/5">src</a> - the difference and similarities between law and protocol</p>
+    </blockquote>
+  </li>
+  <li>big difference between ipfs and ssb: default trust levels. in ipfs, <a href="https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/15">you trust everyone by default</a>. in ssb, you trust no one by default</li>
+  <li>similarly, <a href="https://discuss.ipfs.io/t/avoid-hosting-of-illegal-material/48/19">this comment</a> highlights the conflict between technical and political</li>
+</ul>
+
+<h3 id="limites-et-nature-de-la-critique-500-mots">1.3 limites et nature de la critique (500 mots)</h3>
+
+<p>surtout sur la disparition des données!</p>
+
+<hr />
+
+<p>on a vu une tentative d’universel. maintenant, on va voir comment on peut réutiliser des protocoles pour arriver à une vision du monde différente?</p>
+
+<hr />
+
+<h2 id="analyse-de-ssb---1500-mots">2 - analyse de ssb - 1500 mots</h2>
+
+<h3 id="description">2.1 description</h3>
+
+<ul>
+  <li>description du protocole</li>
+  <li>
+    <ul>
+      <li>t’as une identité (rsa key pair)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>tu donnes constamment ta présence sur le LAN (broadcasting over UDP)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>et puis il y a des <strong>pub</strong> (public web interface)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>once they’re connected, they can exchange keys and messages</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="discours">2.2 discours</h3>
+
+<ul>
+  <li>mythe fondateur</li>
+  <li>
+    <blockquote>
+      <p>“Scuttlebutt can be transformative for society, decentralizing and enabling local community development free of big corp. It is a fast growing decentralized social network. As an alternative to the large corporate social networks it enables autonomy for the users and a free zone from big data harvesting…”</p>
+    </blockquote>
+  </li>
+  <li>
+    <ul>
+      <li>first application is as a social network.</li>
+    </ul>
+  </li>
+  <li>
+    <blockquote>
+      <p>“Scuttlebutt aims to harmonize four perspectives of life: <strong>Environment</strong> reflecting <strong>Technology</strong> reflecting <strong>Community</strong> reflecting <strong>Society</strong>.” <a href="https://scuttlebutt.nz/docs/principles/">src</a></p>
+    </blockquote>
+  </li>
+  <li>based on the very scientific <a href="https://en.wikipedia.org/wiki/Gossip_protocol">gossip protocol</a> which deals with multiplicity rather than universality: _There are probably hundreds of variants of specific gossip-like protocols because each use-scenario is likely to be customized to the organization’s specific needs.</li>
+  <li>ecosysteme:
+    <ul>
+      <li><a href="https://opencollective.com/secure-scuttlebutt-consortium/updates/p2p-access-point-1-intro-and-proof-of-concept">amazon ssb</a></li>
+      <li>opencollective</li>
+    </ul>
+  </li>
+  <li>discours des programmeurs et utilisateurs</li>
+  <li>limites</li>
+</ul>
+
+<h3 id="conclusions-et-direction-de-la-critique">2.3 conclusions et direction de la critique</h3>
+
+<h2 id="rapport-protocolaires--lespace-et-au-temps---1000-mots">3 - rapport protocolaires à l’espace et au temps - 1000 mots</h2>
+
+<h3 id="le-temps">3.1 le temps</h3>
+
+<ul>
+  <li>différentes positions</li>
+  <li>rôle de la technologie au niveau plus “méta”, rapport à l’espace et au temps</li>
+  <li>et au mouvement! les individus bougent, ou bien c’est la technologie qui bouge</li>
+</ul>
+
+<h3 id="lespace">3.2 l’espace</h3>
+
+<p>univers parallèle avec le web portal
+universalisme et localisme</p>
+
+<h3 id="les-questions-de-dterminismes-techniques">3.3 les questions de déterminismes techniques</h3>
+
+<p>sha-512 vs. human positions</p>
+
+<h2 id="conclusion">conclusion</h2>
+
+<ul>
+  <li>différences de la critique protocolaire par rapport aux critiques linguistiques</li>
+  <li>autre point: comment développer ca de manière productive? (pros and cons of protocol critique? that it is actually implementable?)</li>
+</ul>
+
+			</div>
+		</body>
+	</html>
