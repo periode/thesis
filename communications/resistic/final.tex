@@ -108,6 +108,52 @@ Enfin, la question de l'applicabilité du protocole BitSwap se retrouve dans le 
 
 En fin de compte, ce que nous voyons dans ce développement, c'est que la réalité technique d'IPFS est soit non-avenante (cf. archive internet), soit centralisée au niveau économique plus qu'au niveau technique, allant jusqu'à ressembler aux protocoles de libre-échange BitSwap. Ayant observé l'insertion sociale d'un protocole technique, nous nous tournons désormais vers la description technique d'un protocole social, SSB.
 
+\section{SSB: implémentation technologique d'un protocole social}
+
+\subsection{Description}
+
+SSB (ou Secure Scuttlebutt) est un protocole de communication créé par Dominic Tarr en 2014, la même année qu'IPFS. Alors que Juan Benet est un développeur issu de la Silicon Valley, Tarr est un navigateur néo-zélandais qui pose la disponibilité hors-ligne, ainsi que la nature sémantique des objets comme messsages, en tant que fondation du protocole, sous le terme de (\emph{local first}).
+
+SSB, tout en étant un protocole de communication et de distributions de fichiers, tout comme IPFS, se démarque alors tout d'abord par son positionnement dans la famille des \emph{gossip protocols}, des protocoles de ragots. Ceux-ci sont basés sur la distribution des rumeurs, ou des épidémies, essentiellement une sélection au hasard des pairs à qui l'information va se propager. Le ton est donc posé: il s'agit de poser un protocole technique comme simulation de phénomènes naturels.
+
+SSB pose donc comme axiome de départ la disponibilité hors-ligne: le protocole et ses applications doivent être utilisables lorsque l'on n'est pas connecté à l'Internet, du fait que les personnes sortant en mer n'ont plus accès à ce réseau. Ainsi, tout stockage et accès de données se fait uniquement de manière locale, et la mise à jour, ou synchronization de ces données vont être effectués quand, et si, il y a une connexion effectué au reste du réseau. SSB réplique, de manière protocolaire, l'expérience d'une vie en mer en ne permettant la synchronisation entre deux pairs que si ceux-ci sont connectés au même réseau LAN.
+
+Similairement à IPFS, SSB est bien un protocole décentralisé de partage de données. Il fonctionne par pairs qui s'assignent une signature cryptée, afin de constituer leur identité. La manière dont les pairs se découvrent, en revanche, ne se situe qu'au niveau local, c'est à dire qu'ils émettent des paquets UDP jusqu'à ce qu'ils soient reçus par un autre pair. Une fois que la connexion est établie entre deux paris, un échange de messages ou de blobs (\emph{binary large objects}). Il est également possible de se connecter à un pair à travers un portail Internet, il ne s'agit donc pas directement d'une critique protocolaire qui cherche à remplacer HTTP, mais plutôt à le complémenter.
+
+Enfin, les messages eux-mêmes sont basés sur une conception similaire à la blockchain, et à une utilisation semblable du versionnage des fichiers d'IPFS. Chaque message est relié cryptographiquement au message précédent et au message suivant, formant donc un \emph{feed} (flux). De cette manière, les objets ne sont plus uniquement considérés comme étant des entités flottantes, uniques, mais bien des entités relationelles qui tirent leur nature sémantique de leur contexte.
+
+SSB est donc un protocole qui se base sur des phénomènes naturels, et qui conditionne avant tout la décentralisation non pas à l'universel, mais bien au \emph{local}, ce qui est manifesté dans le protocole même par une préférence pour UDP comme signalétique, par une relation cryptographique, et par un stockage local de toutes données. Les discours autour de SSB renforcent cette approche, comme nous allons le voir dans la section suivante.
+
+\subsection{Communication}
+
+La page de documentation du site de SSB, au lieu de se présenter sous la forme d'un article académique publié de manière autonome sur un site de recherche scientifique, accueille la visiteur avec le message suivant:
+
+\begin{quote}
+    Scuttlebutt aims to harmonize four perspectives of life: Environment reflecting Technology reflecting Community reflecting Society.
+
+    We acknowledge the natural, the virtual, and the social environments. Our responsibility is to recognize which resources are abundant, which are sufficient, and adapt accordingly through efficiency.
+\end{quote}
+
+Alors, en effet, il y a aussi une possibilité de consulter une documentation plus poussée et plus rigoureusement (et sèchement?) technique, ainsi que l'article présentant le protocole SSB, publié dans les annales de la conférence Information-Centric Networking de l'ACM en 2019. Cependant, il est intéressant de s'arrêter sur ce premier message d'accueil. Au vu de la place attribuée au terme \emph{technologie}, coincé entre \emph{environnement} et \emph{communauté}, la position est bien plus relationelle que le \emph{protocole hypermedia concu pour préserver et développer le savoir de l'humanité}.
+
+Nous pouvons identifier cette prise de parole par une emphase sur la relation entre deux agents. La premìère version du protocole SSB se base sur un papier de Tarr considérant le problème d'authentication et d'échange d'informations entre deux pairs\footnote{https://dominictarr.github.io/secret-handshake-paper/shs.pdf} plutôt que sur la représentation d'une information. De cette manière, si ces deux protocoles, IPFS et SSB considèrent tous deux la mise en place d'un système de communications, IPFS se focalise sur ce qui est communiqué (messages/objets comme membres d'un graphe acyclique dirigé), tandis que SSB se focalise sur les individus voulant échanger un message.
+
+Section sur la critique d'internet: pourquoi est-ce que ca doit etre global? et disponible?
+
+\begin{quote}
+    But Tarr and others building SSB applications think it might solve many of the problems of today’s internet, giving people better and more granular control of their lives online and off. \footnote{https://www.theatlantic.com/technology/archive/2017/05/meet-the-counterantidisintermediationists/527553/}
+\end{quote}
+
+Section sur l'évangélie
+
+\subsection{Applications}
+
+Definitely the amazon
+
+then the implementation on clients
+
+then growing the protocol?
+
 \pagebreak
 
 \bibliographystyle{unsrt}
