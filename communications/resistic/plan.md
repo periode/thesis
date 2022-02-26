@@ -136,6 +136,12 @@ on a vu une tentative d'universel. maintenant, on va voir comment on peut réuti
 - discours des programmeurs et utilisateurs
 - limites
 
+An overview of scuttlebutt's solution to some know problems with distribution systems:
+
+- [x] All open uncapturable system: the protocol is open and the database is open and distributed. People can only edit their own data and reference others.
+- [x] Has an uncapturable solution to noise: distribution only flows along trust lines in the network.
+- [x] Searchable: relevance is similarly determined by trust relationships in the network.
+
 ### 2.3 conclusions et direction de la critique
 
 ## 3 - rapport protocolaires à l'espace et au temps - 1000 mots

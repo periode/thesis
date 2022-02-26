@@ -6,6 +6,18 @@
 
 ---
 
+## relecture
+
+focus SSB sur l'anti-monopole et l'anti-capitalisme
+
+also SSB says it's for "interstellar travel"
+
+essayer d'avoir des chiffres!
+
+La question de la vie privée, de l'intanglement entre contenu et individu
+
+---
+
 ## questions to ask
 
 - how do you define scuttlebutt?

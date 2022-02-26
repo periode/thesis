@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage[hyphens]{url}
+\usepackage{xurl}
 \usepackage{csquotes}
 \usepackage{fontspec}
 \usepackage{graphicx}
@@ -100,15 +100,17 @@ La question de la censure se pose à l'inverse pour le reste du contenu héberg�
 
 En effet, la conception d'un protocole sur la permanence d'une information se heurte alors de manière frontale à la question de la censure et de la propriéte intellectuelle. Mis face à l'existence de législation regardant la propriété intellectuelle, la réponse d'IPFS est donc de développer un protocole additionnel pour déterminer l'utilisation des fichiers, revenant donc sur sa promesse d'universalité.
 
-Enfin, la question de l'applicabilité du protocole BitSwap se retrouve dans le développement de services d'entreprise centralisés:
+Enfin, la question de l'applicabilité du protocole BitSwap se retrouve dans le développement de services d'entreprise centralisés\footnote{\url{https://www.reddit.com/r/ipfs/comments/ruxlej/ipfs_is_an_alternative_for/}}:
 
 \begin{quote}
-    "If you don't pin your content to IPFS, it goes bye-bye. And if the server pinning your resources ever goes offline and no one else has it pinned, it's gone forever. That's why a market has opened up for services like Pinata, which aim to be permanent pinning services. So you still end up with a centralized business framework even if the technology itself is decentralized, in that, if you don't have the means to provide your own distributed infrastructure, you're going to have to pay someone who does." \footnote{https://www.reddit.com/r/ipfs/comments/ruxlej/ipfs_is_an_alternative_for/}
+    "If you don't pin your content to IPFS, it goes bye-bye. And if the server pinning your resources ever goes offline and no one else has it pinned, it's gone forever. That's why a market has opened up for services like Pinata, which aim to be permanent pinning services. So you still end up with a centralized business framework even if the technology itself is decentralized, in that, if you don't have the means to provide your own distributed infrastructure, you're going to have to pay someone who does." 
 \end{quote}
 
 En fin de compte, ce que nous voyons dans ce développement, c'est que la réalité technique d'IPFS est soit non-avenante (cf. archive internet), soit centralisée au niveau économique plus qu'au niveau technique, allant jusqu'à ressembler aux protocoles de libre-échange BitSwap. Ayant observé l'insertion sociale d'un protocole technique, nous nous tournons désormais vers la description technique d'un protocole social, SSB.
 
 \section{SSB: implémentation technologique d'un protocole social}
+
+transition: aussi le nom de domaine: io vs. nz
 
 \subsection{Description}
 
@@ -118,15 +120,15 @@ SSB, tout en étant un protocole de communication et de distributions de fichier
 
 SSB pose donc comme axiome de départ la disponibilité hors-ligne: le protocole et ses applications doivent être utilisables lorsque l'on n'est pas connecté à l'Internet, du fait que les personnes sortant en mer n'ont plus accès à ce réseau. Ainsi, tout stockage et accès de données se fait uniquement de manière locale, et la mise à jour, ou synchronization de ces données vont être effectués quand, et si, il y a une connexion effectué au reste du réseau. SSB réplique, de manière protocolaire, l'expérience d'une vie en mer en ne permettant la synchronisation entre deux pairs que si ceux-ci sont connectés au même réseau LAN.
 
-Similairement à IPFS, SSB est bien un protocole décentralisé de partage de données. Il fonctionne par pairs qui s'assignent une signature cryptée, afin de constituer leur identité. La manière dont les pairs se découvrent, en revanche, ne se situe qu'au niveau local, c'est à dire qu'ils émettent des paquets UDP jusqu'à ce qu'ils soient reçus par un autre pair. Une fois que la connexion est établie entre deux paris, un échange de messages ou de blobs (\emph{binary large objects}). Il est également possible de se connecter à un pair à travers un portail Internet, il ne s'agit donc pas directement d'une critique protocolaire qui cherche à remplacer HTTP, mais plutôt à le complémenter.
+Similairement à IPFS, SSB est un protocole décentralisé de partage de données. Il fonctionne par pairs qui s'assignent une signature cryptée, afin de constituer leur identité—si on perd sa clé, on perd tout accès à son compte, corrélat de la responsabilité de l'utilisateur de ses propres données. La manière dont les pairs se découvrent, en revanche, ne se situe qu'au niveau local, c'est à dire qu'ils émettent des paquets UDP (une alternative au paquest TCP de l'Internet) jusqu'à ce qu'ils soient reçus par un autre pair. Une fois que la connexion est établie entre deux pairs, un échange de messages ou de blobs (\emph{binary large objects}). Il est également possible de se connecter à un pair à travers un portail Internet, il ne s'agit donc pas directement d'une critique protocolaire qui cherche à remplacer HTTP, mais plutôt à le complémenter\footnote{Ceux-ci existent sous forme de \emph{pub}, jeu de mot entre "bar" et "publiciste"}.
 
-Enfin, les messages eux-mêmes sont basés sur une conception similaire à la blockchain, et à une utilisation semblable du versionnage des fichiers d'IPFS. Chaque message est relié cryptographiquement au message précédent et au message suivant, formant donc un \emph{feed} (flux). De cette manière, les objets ne sont plus uniquement considérés comme étant des entités flottantes, uniques, mais bien des entités relationelles qui tirent leur nature sémantique de leur contexte.
+Enfin, les messages eux-mêmes sont basés sur une conception similaire à la blockchain, et à une utilisation semblable du versionnage des fichiers d'IPFS. Chaque message est relié cryptographiquement au message précédent et au message suivant, formant donc non pas une \emph{chain}, mais un \emph{feed} (flux). De cette manière, les objets ne sont plus uniquement considérés comme étant des entités flottantes, uniques, mais bien des entités relationelles qui tirent leur nature sémantique de leur contexte.
 
-SSB est donc un protocole qui se base sur des phénomènes naturels, et qui conditionne avant tout la décentralisation non pas à l'universel, mais bien au \emph{local}, ce qui est manifesté dans le protocole même par une préférence pour UDP comme signalétique, par une relation cryptographique, et par un stockage local de toutes données. Les discours autour de SSB renforcent cette approche, comme nous allons le voir dans la section suivante.
+SSB est donc un protocole qui se base sur des phénomènes naturels, et qui conditionne avant tout la décentralisation non pas à l'étendue universelle, mais bien à la responsabilité \emph{locale}, manifesté dans le protocole même par une préférence pour UDP comme signalétique, par une relation cryptographique, et par un stockage local de toutes données. Les discours autour de SSB renforcent cette approche, comme nous allons le voir dans la section suivante.
 
 \subsection{Communication}
 
-La page de documentation du site de SSB, au lieu de se présenter sous la forme d'un article académique publié de manière autonome sur un site de recherche scientifique, accueille la visiteur avec le message suivant:
+Le discours de SSB et la manière dont est présenté le protocole est un miroir intéressant d'IPFS: plutôt qu'une démonstration technique, il s'agit plutôt de prendre un cas d'étude, une relation amoureuse, pour montrer comment SSB supporte une conception intime de la communication, plutôt qu'une conception technique. La page de documentation du site de SSB, au lieu de se présenter sous la forme d'un article académique publié de manière autonome sur un site de recherche scientifique, accueille la visiteur avec le message suivant:
 
 \begin{quote}
     Scuttlebutt aims to harmonize four perspectives of life: Environment reflecting Technology reflecting Community reflecting Society.
@@ -134,25 +136,79 @@ La page de documentation du site de SSB, au lieu de se présenter sous la forme 
     We acknowledge the natural, the virtual, and the social environments. Our responsibility is to recognize which resources are abundant, which are sufficient, and adapt accordingly through efficiency.
 \end{quote}
 
-Alors, en effet, il y a aussi une possibilité de consulter une documentation plus poussée et plus rigoureusement (et sèchement?) technique, ainsi que l'article présentant le protocole SSB, publié dans les annales de la conférence Information-Centric Networking de l'ACM en 2019. Cependant, il est intéressant de s'arrêter sur ce premier message d'accueil. Au vu de la place attribuée au terme \emph{technologie}, coincé entre \emph{environnement} et \emph{communauté}, la position est bien plus relationelle que le \emph{protocole hypermedia concu pour préserver et développer le savoir de l'humanité}.
+Alors, en effet, il y a également une possibilité de consulter une documentation plus poussée et plus rigoureusement technique, ainsi que l'article présentant le protocole SSB, publié dans les annales de la conférence Information-Centric Networking de l'ACM en 2019. Cependant, il est intéressant de s'arrêter sur ce premier message d'accueil. Au vu de la place attribuée au terme \emph{technologie}, coincé entre \emph{environnement} et \emph{communauté}, la position est bien plus relationelle que le \emph{protocole hypermedia concu pour préserver et développer le savoir de l'humanité} d'IPFS, holistique et donc auto-suffisant.
 
-Nous pouvons identifier cette prise de parole par une emphase sur la relation entre deux agents. La premìère version du protocole SSB se base sur un papier de Tarr considérant le problème d'authentication et d'échange d'informations entre deux pairs\footnote{https://dominictarr.github.io/secret-handshake-paper/shs.pdf} plutôt que sur la représentation d'une information. De cette manière, si ces deux protocoles, IPFS et SSB considèrent tous deux la mise en place d'un système de communications, IPFS se focalise sur ce qui est communiqué (messages/objets comme membres d'un graphe acyclique dirigé), tandis que SSB se focalise sur les individus voulant échanger un message.
+Nous pouvons identifier cette prise de parole par une emphase sur la relation entre deux agents. Déjàm la premìère version du protocole SSB se base sur un article de Tarr considérant le problème d'authentification et d'échange d'informations entre deux pairs\footnote{https://dominictarr.github.io/secret-handshake-paper/shs.pdf} plutôt que sur la représentation d'une information. De cette manière, si ces deux protocoles, IPFS et SSB considèrent tous deux la mise en place d'un système de communications, IPFS se focalise sur ce qui est communiqué (messages/objets comme membres d'un graphe acyclique dirigé), tandis que SSB se focalise sur les individus voulant échanger un message.
 
-Section sur la critique d'internet: pourquoi est-ce que ca doit etre global? et disponible?
+En tant que critique, c'est un double présupposé fondamental d'un internet \emph{contemporain} que SSB critique: l'idée que toute information, et donc tout membre du réseau qui héberge ou demande une information, doit être disponible en permanence et à l'échelle globale. Ce présupposé, considèrent Tarr et ses collaborateurs, a notamment des répercussions sur l'autonomie des membres du réseau, et à laquelle ils veulent redonner une prépondérance (ce \emph{local first} mentionné plus haut) par le biais d'une propagation par défaut sur un réseau local que par réseau global.
 
 \begin{quote}
-    But Tarr and others building SSB applications think it might solve many of the problems of today’s internet, giving people better and more granular control of their lives online and off. \footnote{https://www.theatlantic.com/technology/archive/2017/05/meet-the-counterantidisintermediationists/527553/}
+    Tarr and others building SSB applications think it might solve many of the problems of today’s internet, giving people better and more granular control of their lives online and off\footnote{\url{https://www.theatlantic.com/technology/archive/2017/05/meet-the-counterantidisintermediationists/527553/}}.
 \end{quote}
 
-Section sur l'évangélie
+Comme le développe Zach Mandeville dans son essai financé par SSB \emph{The Future Will be Technical}\footnote{https://coolguy.website/the-future-will-be-technical/background().html}, on note également dans l'écosystème SSB une croyance non seulement en le développement des technologies pour améliorer le future, mais également une prise en compte de la technique en tant qu'élément de la culture:
+
+\begin{quote}
+    Dev discussions and tutorials are an essential part of our community, and should not be obscured or downplayed.
+\end{quote}
+
+La technique est ici un élément fortement culturel et l'adhésion à un protocole est aussi une adhésion à une vision partagée du monde, élément de base de la culture considérée comme imaginaire culturel\footnote{Stuart Hall, Cultural Representations and Signifying Practices, Sage Publications, 1997}. En conséquence, le champ d'application évolue aussi. De manière symmétrique à la perception d'IPFS, qui veut un protocole qui concerne l'univers entier, SSB s'addresse au \emph{Scuttleverse}. Ce \emph{Scuttleverse} est donc une cosmos qui est mis au monde par le biais d'un lien technique basé sur un lien social—où, par exemple, les \emph{groupes d'utilisateurs} s'appellent des \emph{tribus}, rappelant les travaux de Yuk Hui sur la cosmotechnique, quant à cette capacité des systèmes techniques de supporter des manières d'être, de faire et de penser des utilisateurs de cette technologie.
+
+Cette étroite connexion entre technologie et culture, cette considération du protocole comme artefact relationnel, se manifeste également dans la documentation du protocole. Celle-ci oscille entre rigueur technique et clins d'oeil charmants: présentation de la documentation comme une \emph{carte au trésor}, ou encore la représentation de l'échange de clés cryptographiées comme relation romantique.
+
+Enfin, un dernier example comparatif se trouve dans la manière dont ces protocoles font vivre leur communauté, notamment en termes d'évenements organisés pour du \emph{community-building}. Pour les deux protocoles, cela se manifeste sous formes de camps. Le \emph{IPFS Camp} consiste à rencontrer des \emph{pionniers}, prêts à \emph{hacker} pendant cinq jours, le tout sponsorisé par des entrerprises dont IPFS est le fond de commerce\footnote{Voir aussi https://camp.ipfs.io/}; tandis que, de sont côté, le \emph{Scuttlebutt Camp} est un rassemblement sans véritable fin déterminée, ni agenda particulier\footnote{La version SSB se trouve là https://two.camp.scuttlebutt.nz}. Même si la pandémie de la Covid-19 a été responsable de la non-tenue de ces évènements, nous voyons toujours la différence entre IPFS et SSB en termes de différences entre contenu et individus, but et procédé.
 
 \subsection{Applications}
 
-Definitely the amazon
+Autant SSB et IPFS proposent directement une implémentation des clients (c'est-à-dire de logiciels manifestant les protocoles sous leur forme concrète et active), autant les domaines d'application de SSB sont beaucoup plus concentrés que ceux d'IPFS. Tandis qu'IPFS, fidèle à sa mission, privilégie la quantité d'applications possibles (plus de 55 listées sur le site d'IPFS\footnote{https://docs.ipfs.io/concepts/usage-ideas-examples/}), SSB se concentre sur la qualité, en ne listant qu'une application principale suggérée: un réseau social—c'est à dire un échange de messages entre personnes individuelles.
 
-then the implementation on clients
+Cette visée de l'application est clairement établie dès les premières pages de "comment rejoindre SSB". Sans rentrer dans les détails du protocole, sont proposées les différentes applications pour rejoindre le \emph{Scuttleverse}, avec en second plan le genre d'applications qui découlent de l'implémentation d'un protocole techniquement plus large que ses visées sociales (e.g. contrôle de version de code, maintenance et distribution de bibliothèques de code, allant même jusqu'à rejoindre le rôle d'IPFS par le biais de \emph{ssbdrv}\footnote{https://github.com/cn-uofbasel/ssbdrv/}, un système de fichiers basé sur SSB.\footnote{https://handbook.scuttlebutt.nz/applications}).
 
-then growing the protocol?
+Particulièrement, la fin de l'introduction à SSB consiste autant en un type différent de protocole: une fois que l'installation et l'inscription sont finies, le discours de SSB mentionne non pas le protocole technique, mais un protocole social, mentionné par le terme \emph{tradition}, celle de se présenter sur le canal \emph{\#new-people}, mettant une fois de plus en avant l'aspect social rendu possible par un protocole, plutôt qu'existant dans une stricte isolation technique.
+
+\section{Final}
+
+Bien que les deux protocoles étudiés ici, IPFS et SSB, soient similaires dans leur intention pratique de développer un protocole permettant la distribtion décentralizée et cryptographièe d'information entre pairs d'un réseau, la posture théorique des projets se tient néanmoins en porte-à-faux. Nous concluons donc sur cette tension entre similarité technologique et différences culturelles, entre déterminisme et imagination.
+
+\subsection{Time-space and the internet}
+
+Manuell Castells estimait, dès la fin des années 1990, que la société connectée, spciété dont les conditions matérielles de réalisation sont TCP/IP et HTTP, a fait entrer une grande partie du monde, dans une ère d'espaces de flux et de temps atemporel (\emph{space of flows and timeless time})\footnote{Castells, M. (2009). Communication power (pp. 33-36). Oxford: Oxford University Press.}. L'espace de ces sociétés est un espace qui permet, par des moyens technologiques, de réaliser une simultanéité sans pour autant demander une contiguité, accompagné d'une temporalité qui, tendant à l'immédiateté, tend à s'effacer\footnote{Paulo Virillio}.
+
+D'après Castells, même si l'espace se transforme, au début des années 1990, du matériel au dématérialisé, l'inter-opérabilité des lieux de décisions d'élites invisible ces centres d'opérations ne change pour autant pas leur statut de \emph{centres}, de noeuds principaux par lesquels doivent transiter les noeuds secondaires afin de communiquer. Cette situation de réseau centralisé étant elle-même une conséquence tant de dynamiques économiques et de services marchands, que d'un protocole (HTTP) impliquant la limitation de la duplication de l'information hébergée\footnote{Excepté pour ce qui est des téléchargements et des caches}.
+
+C'est cette centralization qui est le premier objet des critiques des deux protocoles étudiés ici. Ceux-ci nous montrent cependant qu'une telle situation de simultanéité peut, par ces mêmes moyens techniques, être repensée de diverses manières, et notamment en prenant en compte les communautés imaginées en tant qu'utilisatrices de ces protocoles, considérant donc la conception d'un protocole, son implémentation et ses applications comme éléments indissociables d'un même discours.
+
+D'une part, IPFS suggère que le réseau peut pousser encore plus loin cette dynamique, se basant sur une interprétation particulière de la vision originelle de Tim Berners-Lee, pour aboutir à un dispositif où le réseau est intégré directement dans chaque poste via un système de fichier, et les côtés négatifs de la centralization, notamment la disparition de contenus, et la lenteur de de téléchargement des données va être résolue par un système d'identification et d'accès aux contenus.
+
+D'autre part, SSB approche le problème sous l'angle inverse: pour à l'impératif d'être connecté en permanence, une nécessité qui obfusque la réalité que la synchronisation entre individus est toujours repoussée un peu plus, créant un désir d'immédiateté accru, un phénomène théorisé notamment par Dominic Pettman\footnote{Infinite Distractions, Dominic Pettman, Verso}. SSB propose une vision du monde où l'espace et le temps de chacun des membres du réseau n'est pas identique, et où la proximité physique est une condition suffisante à l'échange d'information.
+
+Des positions similaires sur la centralisation, mais opposées sur la mise-à-disposition, donc. IPFS recherche une quasi-universalité (ou, selon leur dires, une inter-planétarité), alors que SSB recherche l'implémentation technique et culturelle d'une priorité au local. Et pourtant, ces deux protocoles, ces deux visions divergentes se basent sur des algorithmes extrêmement similaires, nous permettant alors de nous poser la question du déterminisme technologique en jeu ici.
+
+\subsection{Tech determinism and social determinism}
+
+Dans les deux cas, nous avons donc à faire à des protocoles basés sur le principe de l'\emph{append-only log}, c'est à dire une suite d'entités qui ne peut que s'accroître, et dont les entités précédentes dans la liste sont immuables. Ces listes immuables le sont rendues par l'utilisation de techniques cryptographique non dissimilaires à celles utilisés par les technologies dérivées de la blockchain. Il s'agit là de l'aspect technique. Et pourtant, un protocole est un objet socio-technique qui s'applique également à un \emph{problem domain}, le domaine d'application de l'algorithme au-delà de son aspect strictement technologique et computationnel. La principale différence n'est donc pas la technologie mais le domaine d'application: IPFS applique son protocole au contenu, possédant une relation à d'autres contenus (fichiers ou dossiers), et une relation à soi-même (établissant par la-même l'immutabilité, et la pérennité du contenu en question). À l'opposé, SSB utilise ces outils techniques pour définir l'individu, chaque noeud du réseau, comme propriétaire des l'information—socialisée, c'est-à-dire une chaine d'informations basées sur un graphe social, sur un graphe d'individus.
+
+Il y a deux aspects en particulier sur lesquels je voudrais m'arrêter. Premièrement, il s'agit de mettre en exergue les incohérences entre le protocole IPFS et ses applications, applications qui déterminent l'intégration d'une technique au sein de la société. Deuxièmement, il s'agit de considérer l'approche de SSB face à ce déterminisme technologique.
+
+La communauté d'IPFS, lorsqu'il s'agit de développer des applications pour le protocole, se retrouve toujours à considérer une approche globale, centralisée, pour un moteur de recherche\footnote{https://discuss.ipfs.io/t/would-there-be-an-interest-in-an-ipfs-search-engine/8058/32}, ou encore à s'enquérir d'une architecture de réseau social qui semble être trop compliqué pour être véritablement centralisé\footnote{https://discuss.ipfs.io/t/social-media-architecture-with-ipfs/4625/84 une discussion qui dégénère en un service d'hébergement de fichiers, mais avec la mention de SSB et leur appréciation!}. Particulièrement révélateur est un des deux exemples donnés par les membres d'IPFS comme exemple de la résilience du protocole face à la censure: lors du référendum catalan de 2017, le site pour s'enregistrer en tant que que votant ou votante avait été censuré par les autorités de Madrid, et le site avait été mis en ligne sur IPFS en tant qu'alternative permanente d'un contenu victime de censure; pourtant, comme le note l'utilisateur Akira:
+
+\begin{quote}
+    Unfortunately, most users back then used the HTTP gateway gateway.ipfs.io 6, which was also censored, but tech-savvier users avoided censorship using a regular IPFS daemon and installing the simple IPFS Companion browser extension. IPFS is now way easier to use.\footnote{https://discuss.ipfs.io/t/how-censorship-resistant-is-ipfs-intended-to-be/7892/5}
+\end{quote}
+
+La technologie était donc là, mais l'usage ne semble pas avoir suivi. De manière plus générale, l'écosystème d'IPFS semble se focaliser plus sur l'existence d'applications, que sur leur usage, tel que le montre également la page \emph{Awesome IPFS}, dont environ la moitié des applications sont désormais désuettes ou non-maintenues\footnote{https://awesome.ipfs.io/apps/} sur la centaine de disponible.
+
+Comme on l'a déjà évoqué, l'approche de SSB envers son usage est tout d'abord qualitative plutôt que quantitative. Plus qu'un déterminisme technologique, c'est une approche mutuellement informative entre technique et culture qui est réminiscente de la théorie de l'acteur-réseau, à travers laquelle protocoles et humains co-existent et co-agissent dans un seul et même système\footnote{Latour}. Tel que le présente la documentation du protocole, ce dernier est efficace non pas strictement par ses vertus techniques mais:
+
+\begin{quote}
+    One of its first applications was as a social network, and it has also become one of the most compelling because the people who hang out there are not jerks.\footnote{https://scuttlebutt.nz/docs/protocol/}
+\end{quote}
+
+Cet enchevêtrement entre développements technologiques et interactions sociales est présente dès la genèse de SSB, racontée par Dominic Tarr\footnote{https://handbook.scuttlebutt.nz/stories/scuttlebutt-genesis}: il développe des concepts technologiques, les présente et intègre des contributions d'autres individus et collaborateurs, puis développe le protocole d'avantage, dans un mouvement de balance qui contraste avec l'aspect plus téléologique d'IPFS.
+
+\section{Conclusion}
+
+Cette étude comparative de deux protocoles nous a, en fin de compte, permis de révéler la manière dont un dispositif technique présente des présupposés profonds quant à la manière dont la communication d'une information doit se dérouler, que ce soit en se focalisant sur le message (IPFS) ou sur les interlocuteurs ou interlocutrices (SSB). D'autre part, nous avons pu élucider comment cette rhétorique du protocole plus ou moins s'aligner à la rhétorique des utilisateurs (notamment en ce qui concerne la censure sur IPFS, ou en ce qui concerne la centralization des données, ou l'application à des domaines plus spécifiques). Finalement, nous avons vu comment ces protocoles entrent en dialogue avec la question du déterminisme technologique, que ce soit sur une trajectoire téléologique (IPFS), ou sur une trajectoire plus écologique (SSB). Une technologie de communication est donc plus qu'une technologie, c'est aussi une culture.
 
 \pagebreak
 
