@@ -13,8 +13,14 @@ focus SSB sur l'anti-monopole et l'anti-capitalisme
 also SSB says it's for "interstellar travel"
 
 essayer d'avoir des chiffres!
+- 10,000 users on ssb in early 2019 [src](https://www.youtube.com/watch?v=JSWWkzsHhjk)
+- 40,000 users in 2020 (zotero - mapping the ipfs paper)
+
+transition: aussi le nom de domaine: io vs. nz
 
 La question de la vie privée, de l'intanglement entre contenu et individu
+
+rajouter que SSB n'a pas tant d'applications que ca par rapport à ipfs? moins extensible?
 
 ---
 
