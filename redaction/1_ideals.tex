@@ -6,7 +6,7 @@ We then turn to the kinds of beauty that these programmers aspire to. After expl
 
 From these, we can then move to a description of which aesthetic fields are being referenced by programmers on a broader level, and consider how multiple kinds of beauties, from literary, to architectural and mathematical conceptions of beauty can overlap and be referred to by the same concrete medium.
 
-Finally, we focus our attention on one of the points of overlap in these different references: the importance of function, craft and knowledge in the disposition and representation of code. We will show how this particular way of working  plays a central role in an aesthetic approach to sourec code and results from the specificity of code as a cognitive material, a specificity we will inquire further in the next chapter.
+Finally, we focus our attention on one of the points of overlap in these different references: the importance of function, craft and knowledge in the disposition and representation of code. We will show how this particular way of working  plays a central role in an aesthetic approach to source code and results from the specificity of code as a cognitive material, a specificity we will inquire further in the next chapter.
 
 \section{The practice of programmers - 20p}
 
@@ -20,15 +20,15 @@ While this overview encompasses most of the programming practices, we leave asid
 
 \subsubsection{From local hardware to distributed software}
 
-As Niklaus Wirth puts it, \emph{the history of software is the history of growth in complexity}\cite{wirth_brief_2008}. As computers' technical abilities in memory managment and processing power increased year on year since the 1950s, the nature of writing instructions shifted accordingly.
+As Niklaus Wirth puts it, \emph{the history of software is the history of growth in complexity}\cite{wirth_brief_2008}, while paradoxically, lowering the barrier to entry. As computers' technical abilities in memory managment and processing power increased year on year since the 1950s, the nature of writing instructions shifted accordingly.
 
 In his history of the software industry, Martin Campbell-Kelly traces the development of a discipline through both an economic and a technological lens, and he identifies three consecutive waves in the production of software\cite{campbell-kelly_airline_2003}. During the first period, as soon as the 1950s, and continuing throughout the 1960s, software developers were contractors hired to engage directly with a specific computing machine. These computing, mainframes, were large, expensive, and rigid machines, requiring hardware-specific knowledge of the Assembler instruction set specific to each one, since they didn't feature an operating system which could facilitate some of the more basic memory allocation and input/output functions, and thus interoperable program-writing\footnote{One of the first operating systems, MIT's Tape Director, would be only developped in 1956\cite{ross_personal_1986}}. Two distinct groups of people were involved in the operationalization of such machine: electrical engineers, tasked with designing hardware, and programmers, tasked with implementing the software. While the former historically received the most attention\cite{ross_personal_1986}, the latter was mostly composed of women and, as such, not considered essential in the process\cite{light_when_1999}. At this point, then, programming is closely tied to hardware.
 
-The second period in software development starts in the 1960s, as hardware started to switch from vacuum tubes to transistors and from magnetic core memory to semiconductor memory, making them faster and more capable to handle complex operations.  On the software side, the development of several programming languages, such as FORTRAN, LISP and COBOL, started to address the double issue of portability—having a program run unmodified on different machines with different instruction sets—and expressivity—allowing programmers to use high-level, English-like syntax, rather than assembler instruction codes. By then, programmers are no longer theoretically tied to a specific machine, and therefore acquire a certain autonomy, a recognition which culminates in the naming of the field of \emph{software engineering} in 1968 at a NATO conference.
+The second period in software development starts in the 1960s, as hardware started to switch from vacuum tubes to transistors and from magnetic core memory to semiconductor memory, making them faster and more capable to handle complex operations.  On the software side, the development of several programming languages, such as FORTRAN, LISP and COBOL, started to address the double issue of portability—having a program run unmodified on different machines with different instruction sets—and expressivity—allowing programmers to use high-level, English-like syntax, rather than assembler instruction codes. By then, programmers are no longer theoretically tied to a specific machine, and therefore acquire a certain autonomy, a recognition which culminates in the naming of the field of \emph{software engineering} in 1968 at a NATO conference\footnote{source?}.
 
 The third and final phase that Campbell-Kelly identifies is that of mass-market production: following the advent of the UNIX family of operating systems, the distribution of the C programming language, the wide availability of C compilers, and the appearance of personal computers such as the Commodore 64, Altair and Apple II, software could be effectively entirely decoupled from hardware\footnote{For a more detailed account of the personal computer revolution, see: Cerruzzi, P., A History of Modern Computing\cite{ceruzzi_history_2003}}. And yet, software immediately enters a crisis, due to software development projects running over time and budget, being unreliable in production and unmaintainable in the long-run. What this highlighted is that the creation of software was no longer a corollary to the design of hardware, and that it would become the main focus of computing as a whole\cite{ceruzzi_history_2003}, and that it should therefore be addressed as such. It is at this time that discussions around best practices in writing source code started to emerge, once the activity of the programmer was no longer restricted to \emph{tricks by means of which he contrived to squeeze the impossible into the constraints of his equipment}\cite{dijkstra_humble_2007}.
 
-This need for a more formal approach to the actual process of programming found one of its most important manifestations in Edsger Djikstra's \emph{Notes on Structured Programming}\cite{dijkstra_chapter_1972}. In it, he argues for moving away from programming as a craft, and towards programming as an organized discipline, with its methodologies and systematization of program construction. Despite its laconic section titles\footnote{See, for instance, Chapter 1: "\emph{On our inability to do much}"}, Djikstra nonetheless contributed to establish a more rigorous typology of the constructs required for reliable, provable programs—based on fundamentals such as sequence, selection, iteration and recursion—, and aimed at the formalization of the practice. Along with other developments (such as Hoare's contribution on proper data structuring\cite{hoare_chapter_1972}, or the rise of object-oriented programming) programming would solidfy its foundations as a profession:
+This need for a more formal approach to the actual process of programming found one of its most important manifestations in Edsger Djikstra's \emph{Notes on Structured Programming}\cite{dijkstra_chapter_1972}. In it, he argues for moving away from programming as a craft, and towards programming as an organized discipline, with its methodologies and systematization of program construction. Despite its laconic section titles\footnote{See, for instance, Chapter 1: "\emph{On our inability to do much}"}, Djikstra nonetheless contributed to establish a more rigorous typology of the constructs required for reliable, provable programs—based on fundamentals such as sequence, selection, iteration and recursion—, and aimed at the formalization of the practice. Along with other developments (such as Hoare's contribution on proper data structuring\cite{hoare_chapter_1972}, or the rise of object-oriented programming) programming would solidify its foundations as a profession:
 
 \begin{quote}
     We knew how the nonprofessional programmer could write in an afternoon a three-page program that was supposed to satisfy his needs, but how would the professional programmer design a thirty-page program in such a way that he could really justify his design? What intellectual discipline would be needed? What properties could such a professional programmer demand with justification from his programming language, from the formal tool he had to work with? \cite{dijkstra_ew_programming_1977}
@@ -44,7 +44,7 @@ These software developers have written some of the largest codebases to this dat
 
 \subsubsection{Features of the field}
 
-The features of these codebases provide us with a segway into the qualities that software developers have come to ascribe to their object of practice. First, the program texts they write are large, much larger than any other codebase included in this study, they often feature multiple programming languages and are highly structured and standardized: each file follows a pre-established convention in programming style, which favors an authoring by multiple programmers without any obvious trace to a single individual authorship. These program texts stand the closest to a programming equivalent of engineering, with its formalisms, standards and usability. From this perspective, the IEEE's Software Engineering Body of Knoweldge (SWEBOK) provides a good starting point to survey the specificities of software developers as source code writers and readers\cite{bourque_swebok_2014}; the main features of which include the definition of requirements, design, construction testing and maintenance.
+The features of these codebases provide the backdrop to, and start to hint at, the qualities that software developers have come to ascribe to their object of practice. First, the program texts they write are large, much larger than any other codebase included in this study, they often feature multiple programming languages and are highly structured and standardized: each file follows a pre-established convention in programming style, which favors an authoring by multiple programmers without any obvious trace to a single individual authorship. These program texts stand the closest to a programming equivalent of engineering, with its formalisms, standards and usability. From this perspective, the IEEE's Software Engineering Body of Knoweldge (SWEBOK) provides a good starting point to survey the specificities of software developers as source code writers and readers\cite{bourque_swebok_2014}; the main features of which include the definition of requirements, design, construction testing and maintenance.
 
 Software requirements are the acknowledgement of the importance of the \emph{problem domain}, the domain to which the software takes its inputs from, and to which it applies its outputs. For instance, software written for a calculator has arithmetic as its problem domain; software written for a learning management system has students, faculty, education and courses as its problem domain; software written a banking institution has financial transactions, savings accounts, fraud prevention and credit lines as its problem domain. Requirements in software development aim at formalizing as best as possible the elements that must be used by the software in order to perform a successful computation, and an adequate formalization is a fundamental requirement for a successful software application.
 
@@ -173,7 +173,7 @@ First, the most striking visual feature of the code is its sheer size. Represent
 }
 \end{lstlisting}
 
-The repetition of the \lstinline{RtlInitUnicodeString} call in the first part of this listing wouldn't stand today's industry-standard practices; these would rather point towards the second part of the code, the two \lstinline{for()} statements. While this practice would only be formalized in Andy Hunt's \emph{The Pragmatic Programmer} in 1999\cite{hunt_pragmatic_1999}, the longevity of the windows 2000 operating system and its update cycle would nonetheless have affected how this code is written. The reason why such a repetition applies is the requirement of registering each string with the kernel. Dealing with a different problem domain (kernel instructions) leads to a different kind of expected aesthetics\footnote{Effectively, references to \lstinline{RtlInitUnicodeString()} happen 1580 times across 336 files}.
+The repetition of the \lstinline{RtlInitUnicodeString} call in the first part of this listing stands at odds with today's industry-standard practices of not repeating oneself; these would rather point towards the second part of the code, the two \lstinline{for()} statements. While this practice would only be formalized in Andy Hunt's \emph{The Pragmatic Programmer} in 1999\cite{hunt_pragmatic_1999}, the longevity of the windows 2000 operating system and its update cycle would nonetheless have affected how this code is written. The reason why such a repetition applies is the requirement of registering each string with the kernel. Dealing with a different problem domain (kernel instructions) leads to a different kind of expected aesthetics\footnote{Effectively, references to \lstinline{RtlInitUnicodeString()} happen 1580 times across 336 files}.
 
 Verbosity, the act of explicitly writing out statements which could be functionally equivalent in a compacted form,  is a significant feature of the Windows 2000 codebase, and also relies on a particular semantic environment: that of using the C programming language. As mentioned above, the development of C and UNIX in the 1970s have led to wide adoption of the former, and to some extent of the later (even though Windows is a notable exception since it is an operation system not based on the UNIX tradition). What we see in this listing is the consequence of this development: using a verbose language inevitably leads to a verbose program text, something we will see in the following section on hacker's code and will explore much further in chapter 5.
 
@@ -215,9 +215,9 @@ Another significant aesthetic feature of the Windows 2000 program text is its us
 }
 \end{lstlisting}
 
-Here, we see three different writings of comments \lstinline{//}, \lstinline{/* */} as well as capitalizations. Those comments are ignored at compile time: that is, they are not meaningful to the machine, and are only expected to be read by other programmers, primarily programmers belonging to one's organization. This hints at the various origins of the authors, or at the very least at the different moments, and possible mental states of the potential single-author: irregularity in comment writing can connect to irregularities in semantic content of the comments. This irregularity becomes suspicious, and leads to those comments being discarded, relying on the fact that \textquote[\cite{goodliffe_code_2007}]{The only document that describes your code completely and correctly is the code itself}. This excerpt highlights the constant tension between source code as the canonical origin of knowledge of what the program does and how it does it, while comments allow for the idiosyncratic expressions of human programmers.
+Here, we see three different writings of comments \lstinline{//}, \lstinline{/* */} as well as  different kinds of capitalizations. Those comments are ignored at compile time: that is, they are not meaningful to the machine, and are only expected to be read by other programmers, primarily programmers belonging to one's organization. This hints at the various origins of the authors, or at the very least at the different moments, and possible mental states of the potential single-author: irregularity in comment writing can connect to irregularities in semantic content of the comments. This irregularity becomes suspicious, and leads to ascribing a different epistemological value to them. If comments aren't procedurally guaranteed to be reflected in the execution, and outcome, of the program, then one tend to rely on the fact that \textquote[\cite{goodliffe_code_2007}]{The only document that describes your code completely and correctly is the code itself}. This excerpt highlights the constant tension between source code as the canonical origin of knowledge of what the program does and how it does it, while comments refelect the idiosyncratic dimension of all natural-language expressions of human programmers.
 
-And yet, this chronological and interpersornal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text. For instance,  in \lstinline{pnpenum.c}:
+And yet, this chronological and interpersonal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text. For instance,  in \lstinline{pnpenum.c}:
 
 \begin{lstlisting}[language=C, basicstyle=\small]
   /*++
@@ -246,15 +246,76 @@ Revision History:
 
 This highlights both the multiple authorship (here, we have one original author and one revisor) as well as the evolution in time of the file: comments are the only manifestation of this layering of revisions which ultimately results in the "final" software\footnote{The term "final" is in quotes, since the Windows 2000 source contains the mention \lstinline{BUGBUG} 7436 times across 2263 files, a testatment to the constant state of unfinishedness that some software might remain in.}.
 
-\begin{itemize}
-  \item Kirby: modular, reusable, clean, minimal
-  \item Prometheus: efficient
-\end{itemize}
+A complementary example is the Kirby CMS\footnote{Allgeier, Bastian et. al., https://github.com/getkirby/kirby, 2011, consulted in 2022}. With development starting in 2011, a first release in 2012 and having developed a steady userbase, correlated in Google Trends analytics\footnote{https://trends.google.com/trends/explore?date=all\&q=kirby\%20cms}, consistent forum posts\footnote{https://forum.getkirby.com} and commit history\footnote{https://github.com/getkirby/kirby}, it exhibits a particular set of features, in both its purpose and its source code alike. Kirby is an open-source, developer-first (meaning that it affords direct engagement of other developers with its architecture through modification, extension or partial replacement), single-purpose project. As such, it stands at the other end of the commercial, efficient software spectrum than Microsoft Windows 2000.
 
+The Kirby source code is entirely available online, and the following snippets hint at another set of formal values—conciseness, expliciteness and delimitation. Conciseness can be seen in the lengths of the various components of the code base. For instance, the core of Kirby consists in 248 files, with the longest being \lstinline{src/Database/Query.php} at 1065 lines, and the shortest being \lstinline{src/Http/Exceptions/NextRouteException.php}, for an average of 250 lines per file. At the third level, the length of the function bodies is also minimal, ranging from XXXX to XXXX\emph{calculate}. Compared to the leading project in the field, Wordpress.org, which has respectively XXXX \emph{insert analysis here}.
+
+If we look at a typical function declaration within Kirby, we found one such as the distinct setter for Kirby's database:
+
+\begin{lstlisting}
+  /**
+  * Enables distinct select clauses.
+  *
+  * @param bool $distinct
+  * @return \Kirby\Database\Query
+  */
+ public function distinct(bool $distinct = true)
+ {
+     $this->distinct = $distinct;
+     return $this;
+ }
+\end{lstlisting}
+
+Out of these 11 lines, the actual functionality of the function is focused on one line, \lstinline{$this->distinct = $distinct;}. Around it are machine-readable comment snippets, and a function wrapper around the simple variable setting. The textual overhead then comes from the wrapping itself: the actual semantic task of deciding whether a query should be able to include distinct select clauses (as opposed to only allowing join clauses), is now decoupled from its actual implementation (one could describe to the computer such an ability to generate distinct clauses by assigning it a boolean value, or an integer value, or passing it as an argument for each query, etc.). The quality of this writing, at first verbose, actually lies in its conciseness in relation to the possibilities for extension that such a form of writing allows: the \lstinline{distinct()} function could, under other circumstances, be implemented differently, and still behave similarly from the perspective of the rest of the program. Additionally, this wrapping enables the setting of default values (here, \lstinline{true}), a minimal way to catch bugs by always providing a fallback case.
+
+Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, the following function, from the \lstinline{Http\\Route} class.
+
+\begin{lstlisting}
+  /**
+  * Tries to match the path with the regular expression and
+  * extracts all arguments for the Route action
+  *
+  * @param string $pattern
+  * @param string $path
+  * @return array|false
+  */
+ public function parse(string $pattern, string $path)
+ {
+     // check for direct matches
+     if ($pattern === $path) {
+         return $this->arguments = [];
+     }
+
+     // We only need to check routes with regular expression since all others
+     // would have been able to be matched by the search for literal matches
+     // we just did before we started searching.
+     if (strpos($pattern, '(') === false) {
+         return false;
+     }
+
+     // If we have a match we'll return all results
+     // from the preg without the full first match.
+     if (preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters)) {
+         return $this->arguments = array_slice($parameters, 1);
+     }
+
+     return false;
+ }
+\end{lstlisting}
+
+The 9 lines above the function declaration are machine-readable documentation. It can be parsed by a programmatic system and used as input to generate more classical, human-readable documentation\footnote{See, for instance, JavaDocs, or ReadTheDocs}. This is noticeable due to the highly formalized syntax \lstinline{param string name_of_var}, rather than writing out "this function takes a parameter of type string named \lstinline{name_of_var}". This does compensate for the tendency of comments to drift out of synchronicity with the code that they are supposed to comment, by tying them back to some computational system to verify its semantic contents, while providing information about the inputs and outputs of the function.
+
+Beyond expliciting inputs and outputs, the second aspect of these comments is targeted at the \emph{how} of the function, helping the reader understand the rationale behind the programmatic process. Comments here aren't cautionary notes on specific edge-cases, as seen in fig. XX above, but rather natural language renderings of the overall rationale of the process. The implication here is to provide a broader, and more explicit understanding of the process of the function, in order to allow for further maintenance, extension or modification.
+
+Finally, let us look at a subset of the function, the clause of the third \lstinline{if statement}: \lstinline{(preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters))}. Without comments, one must realize on cognitive gymnastics and knowledge of the PHP syntax in order to render this as an extraction of all route parameters, implying the removal of the first element of the array. In this sense, then, Kirby's code for parsing an HTTP route is both verbose—in comments—and parsimonious—in code.
+
+What these aesthetic features (small number of files, short file length, short function length) imply is an immediate feeling of \emph{building blocks}. Short, graspable, (re-)usable (conceptual) blocks are made available to the developer directly, as the Kirby ecosystem, like many other open-source projects, relies on contributions from individuals who are not expected to have any other encounter with the project other than, at the bare minimum, the source code itself.
 
 \vspace*{1\baselineskip}
 
-Software developers are a large group of practicioners whose focus is on producing effective, reliable and sustainable software, through a varieties of techniques and processes, drawing from architecture and engineering in order to foster simplicity and understandability. Before we dive deeper into those concepts in the next section, we turn to another practice closely linked to professional development—hacking.
+These two examples, Microsoft Windows 2000 and Kirby CMS, highlight some of the presentations of source code—repetition, verbosity, commenting and conciseness—within socio-technical ecosystems made up of hardware, institutional practices from corporation to open-source, efficiency and usability, both at the result level (the software) and at the process level (the code).
+
+Software developers are a large group of practitioners whose focus  on producing effective, reliable and sustainable software, leads them to writing in more-or-less codified manner. Before diving into how such a manner of writing relates to references from architecture and engineering in order to foster simplicity and understandability, in section 2.2, we acknowledge that the bondary between groups of practicioners isn't a clear-cut one, and so we turn to another practice closely linked to professional development—hacking.
 
 \subsection{Hackers - 6p}
 
@@ -485,12 +546,6 @@ Now that we've done some empirical work, we can try to abstract away a bit and t
 
 Now that \emph{we look at proofs, through discourse}, what kind of beauty can we be dealing with?
 
-\subsection{Functional beauty}
-
-This first approach, by comparing both source and comment at the same time (taking texts which are explicitly described as being beautiful), explicitly highlights the requirements for source code to be beautiful. 
-
-There is also an emerging development in aesthetics of integrating function as a criteria for an aesthetic experience.
-
 \subsection{Literary Beauty}
 
 This second approach contrasts with the functional component of the first one, but nonetheless stands in relationship with it. the creative beauty, by defying traditional beauty standards, does help us highlight, through deviance, what the norm is. These texts on "creative beauty" include the classical perl poetry, code poems, IOCC, code poetry contest, etc.
@@ -501,11 +556,17 @@ Mostly elegance, could be a good place to work on the distinction between proof 
 
 \subsection{Architectural beauty}
 
-This allows a segway into everyday aesthetics and environmental aesthetics
+This allows a segue into everyday aesthetics and environmental aesthetics
 
 \section{Craft and beauty - 10p}
 
 Now that we've seen how the aesthetic ideals of code borrow from different registers, we need to think about practice, or ways. all of the above can be seen through the prism of craft
+
+\subsection{Functional beauty}
+
+This first approach, by comparing both source and comment at the same time (taking texts which are explicitly described as being beautiful), explicitly highlights the requirements for source code to be beautiful. 
+
+There is also an emerging development in aesthetics of integrating function as a criteria for an aesthetic experience.
 
 \subsection{Embodiment}
 

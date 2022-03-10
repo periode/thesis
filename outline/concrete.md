@@ -73,3 +73,5 @@ the reason why react is chosen is because it has aspects of modern development p
 ### case study 3 (CODE POEMS)
 
 this is taking it in a completely different literary terrain
+
+[biennale.py](https://0100101110101101.org/biennale-py/)

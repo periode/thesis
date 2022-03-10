@@ -1,0 +1,96 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="/style.css"/>
+		</head>
+		<body>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="concrete-aesthetics">concrete aesthetics</h1>
+
+<p>[[outline/outline]]</p>
+
+<p>ultimately, we highlight a certain number of properties which would be indicative of source code being considered beautiful. these include:  naming, data structures, double-coding, layout, spatial structuring, reader flow, etc.</p>
+
+<p>finally, this section concludes as a recapitulation of how attributes contribute to clarity, by providing a different heuristic than in [2.1]. instead of starting from separate texts and extracting different parts and grouping these parts with others, extracted from other texts, we group our practical and theoretical findings under the umbrellas of several aesthetic features we’ve identified, and described on which levels they operate.</p>
+
+<h2 id="typology-of-aesthetics">typology of aesthetics</h2>
+
+<p>a class within a class <a href="https://blog.royalsloth.eu/posts/the-complexity-that-lives-in-the-gui/">link</a> is a visual/spatio-mental pattern which means “complexity”, “unmaintainability”, “unsustainability”</p>
+
+<blockquote>
+  <p>My personal style guide is to copy Erlang: double quotes for text, single quotes for programmatic strings (atoms/symbols). The single quote is slightly more convenient to type on a qwerty keyboard, but text regularly contains single quotes (apostrophes). It also provides a semantic visual shortcut.</p>
+</blockquote>
+
+<p>I like the concept of <strong>semantic visual shortcut</strong>, also <strong>semantic compression</strong> (developed <a href="https://caseymuratori.com/blog_0015">here</a>)</p>
+
+<p>[[cohen_on_holy_wars_and_peace]]
+[[pugh_beauty_simplicity]]
+[[green_coding_guidelines]]
+[[spinellis_reading_writing_code]]
+[[perrin_program_elegance]]
+[[hayes_semincolon_wars]]
+[[raymond_wesley_metric_for_code_readability]]</p>
+
+<p>[[hill_what_makes_a_program_elegant]]</p>
+
+<p>[[hunt_pragmatic_programmer]]</p>
+
+<p>[[kernighan_elements_programming_style]]</p>
+
+<p>[[kernighan_why_pascal_is_not_my_favorite_programming_language]]</p>
+
+<h3 id="double-coding--metaphor">double-coding / metaphor</h3>
+
+<p>use nouns for variables, verbs for functions, try to mimick an abstracted version of the human language (question: what is the limit of that mimicking the human language -cf. <code>code/render.rb</code>? what integrity does it have to keep? a possible answer is the <strong>input data</strong> or the <strong>problem-domain</strong>)</p>
+
+<h3 id="metonymy">metonymy</h3>
+
+<p>as a corollary to metaphor, it’s just about implying something with a minimal sign (the <em>density</em>, as goodman would say, becomes very high)</p>
+
+<h3 id="functional-distance">functional distance</h3>
+
+<p>basically put your variables where you use them, avoid gotos</p>
+
+<h3 id="layout">layout</h3>
+
+<p>a word on (automated) consistency</p>
+
+<h3 id="relational-independence">relational independence</h3>
+
+<p>abstracts stuff but not too much: it’s kinda like the UNIX philosophy, where the goal is to do one thing, but do it well</p>
+
+<h3 id="lack-of-cognitive-noiseminimalism">lack of cognitive noise/minimalism</h3>
+
+<p>like tobi’s example of using <code>select{}</code> rather than <code>mtx.Lock()</code> in <code>GO</code>. select is slower but something like <code>mtx.Lock()</code> is actually never going to be required in a design document: it’s extraneous when wanting to understand what a software <em>effectively doing</em>. another example of that is the un-necessity of <code>diff noise</code>.</p>
+
+<h3 id="materiality">materiality</h3>
+
+<p><a href="http://www.phrack.org/issues/50/16.html#article">CUT HERE</a></p>
+
+<h2 id="case-studies">case studies</h2>
+
+<p>finally, this section will confront our set of aesthetic features to several case studies of existing source code. the choice of these case studies will attempt to be as broad and representative as possible (e.g. commercial, functional, hobbyist, artistic), with the aim of using diverse approaches in order to further qualify the aesthetic approaches defined heretofore.</p>
+
+<h3 id="case-study-1-latex">case study 1 (Latex)</h3>
+
+<p>the reason why UNIX is chosen is as a canonical example of low-level, functional programming with a rich social history</p>
+
+<h3 id="case-study-2-carnivore">case study 2 (Carnivore)</h3>
+
+<p>the reason why react is chosen is because it has aspects of modern development practices (big corp + open source), and that prod vs. dev is an interesting example to build on</p>
+
+<h3 id="case-study-3-code-poems">case study 3 (CODE POEMS)</h3>
+
+<p>this is taking it in a completely different literary terrain</p>
+
+<p><a href="https://0100101110101101.org/biennale-py/">biennale.py</a></p>
+
+			</div>
+		</body>
+	</html>
