@@ -179,7 +179,7 @@ Verbosity, the act of explicitly writing out statements which could be functiona
 
 Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomaticjsreadmemd_nodate}. For instance, the following excerpt from \lstinline{jdhuff.c} is a example of such overlapping of styles:
 
-\begin{lstlisting}[language=C, basicstyle=\tiny]
+\begin{lstlisting}[caption={buffer.c}, label={buffer.c}, float, floatplacement=H]
   no_more_data:
 		  // There should be enough bits still left in the data segment; 
 		  // if so, just break out of the outer while loop. 
@@ -219,7 +219,7 @@ Here, we see three different writings of comments \lstinline{//}, \lstinline{/* 
 
 And yet, this chronological and interpersonal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text. For instance,  in \lstinline{pnpenum.c}:
 
-\begin{lstlisting}[language=C, basicstyle=\small]
+\begin{lstlisting}[caption={enum.c}, label={enum.c}, float, floatplacement=H]
   /*++
 
 Copyright (c) 1996 Microsoft Corporation
@@ -252,7 +252,7 @@ The Kirby source code is entirely available online, and the following snippets h
 
 If we look at a typical function declaration within Kirby, we found one such as the distinct setter for Kirby's database:
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Query.php}, label={query.php}, float, floatplacement=H]
   /**
   * Enables distinct select clauses.
   *
@@ -268,9 +268,9 @@ If we look at a typical function declaration within Kirby, we found one such as 
 
 Out of these 11 lines, the actual functionality of the function is focused on one line, \lstinline{$this->distinct = $distinct;}. Around it are machine-readable comment snippets, and a function wrapper around the simple variable setting. The textual overhead then comes from the wrapping itself: the actual semantic task of deciding whether a query should be able to include distinct select clauses (as opposed to only allowing join clauses), is now decoupled from its actual implementation (one could describe to the computer such an ability to generate distinct clauses by assigning it a boolean value, or an integer value, or passing it as an argument for each query, etc.). The quality of this writing, at first verbose, actually lies in its conciseness in relation to the possibilities for extension that such a form of writing allows: the \lstinline{distinct()} function could, under other circumstances, be implemented differently, and still behave similarly from the perspective of the rest of the program. Additionally, this wrapping enables the setting of default values (here, \lstinline{true}), a minimal way to catch bugs by always providing a fallback case.
 
-Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, the following function, from the \lstinline{Http\\Route} class.
+Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance,, from the \lstinline{Http\\Route} class (\ref{route.php}).
 
-\begin{lstlisting}
+  \begin{lstlisting}[caption={Route.php}, label={route.php}, float, floatplacement=H]
   /**
   * Tries to match the path with the regular expression and
   * extracts all arguments for the Route action
