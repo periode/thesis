@@ -4,5 +4,8 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.fontFamily": "'Noto Sans', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+		"editor.wordWrap": "on"
+	}
 }

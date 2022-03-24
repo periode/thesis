@@ -5,6 +5,7 @@ summary.docx
 export.docx
 
 *.aux
+*.out
 *.log
 *.synctex.*
 *.bbl
