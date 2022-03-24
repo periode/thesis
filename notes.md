@@ -1,5 +1,10 @@
 # notes
 
+## tex
+
+`make4ht -x thesis.tex  "fn-in"` for html export (one should be able to add bibliography with [this](https://tex.stackexchange.com/questions/358565/can-htlatex-be-used-with-biblatex-these-days))
+
+
 ## dump
 
 > flow state needs an immediate feedback in order to be achieved: literary writing does not have that, but computer writing, with IDEs, linters, etc. does have immediate feedback (with execution speed, so i guess it changes over the years as well) (clemens)

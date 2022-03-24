@@ -1,0 +1,36 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{Introduction}}{5}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-20001.1}{QQ2-1-2}{Context}}{7}\relax 
+\doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{1}{x1-30001.1.1}{QQ2-1-3}{The research territory: code}}{7}\relax 
+\doTocEntry\tocsubsection{1.1.2}{\csname a:TocLink\endcsname{1}{x1-40001.1.2}{QQ2-1-4}{Beautiful code}}{11}\relax 
+\doTocEntry\tocsubsection{1.1.3}{\csname a:TocLink\endcsname{1}{x1-50001.1.3}{QQ2-1-5}{Literature review}}{17}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-5001}{}{]}}{18}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-60001.2}{QQ2-1-7}{The aesthetic specificities of source code}}{30}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-70001.3}{QQ2-1-8}{Methodology}}{34}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-80001.4}{QQ2-1-9}{Roadmap}}{38}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{1}{x1-90001.5}{QQ2-1-10}{Implications and readership}}{41}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-100002}{QQ2-1-11}{Aesthetic ideals in programming practices}}{47}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-110002.1}{QQ2-1-12}{The practice of programmers - 20p}}{47}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{1}{x1-120002.1.1}{QQ2-1-13}{Software developers}}{49}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-130002.1.1}{QQ2-1-14}{From local hardware to distributed software}}{49}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-140002.1.1}{QQ2-1-15}{Features of the field}}{53}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-14107}{}{\numberline {2.1}buffer.c}}{59}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-14142}{}{\numberline {2.2}enum.c}}{62}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-14171}{}{\numberline {2.3}Query.php}}{66}\relax 
+\doTocEntry\toclol{}{\csname a:TocLink\endcsname{1}{x1-14184}{}{\numberline {2.4}Route.php}}{69}\relax 
+\doTocEntry\tocsubsection{2.1.2}{\csname a:TocLink\endcsname{1}{x1-150002.1.2}{QQ2-1-20}{Hackers - 6p}}{71}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002.1.2}{QQ2-1-21}{Sharp and clever}}{75}\relax 
+\doTocEntry\tocsubsection{2.1.3}{\csname a:TocLink\endcsname{1}{x1-170002.1.3}{QQ2-1-22}{Scientists - 4p}}{85}\relax 
+\doTocEntry\tocsubsection{2.1.4}{\csname a:TocLink\endcsname{1}{x1-180002.1.4}{QQ2-1-23}{Poets - 4p}}{86}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-190002.2}{QQ2-1-24}{Ideals of beauty - 15p}}{87}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{1}{x1-200002.2.1}{QQ2-1-25}{Introduction to the Methodology - 3p}}{87}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{1}{x1-210002.2.2}{QQ2-1-26}{Lexical Field in Programmer Discourse -12p}}{87}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-220002.3}{QQ2-1-27}{Types of beauty - 20p}}{88}\relax 
+\doTocEntry\tocsubsection{2.3.1}{\csname a:TocLink\endcsname{1}{x1-230002.3.1}{QQ2-1-28}{Literary Beauty}}{89}\relax 
+\doTocEntry\tocsubsection{2.3.2}{\csname a:TocLink\endcsname{1}{x1-240002.3.2}{QQ2-1-29}{Mathematical beauty}}{89}\relax 
+\doTocEntry\tocsubsection{2.3.3}{\csname a:TocLink\endcsname{1}{x1-250002.3.3}{QQ2-1-30}{Architectural beauty}}{89}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-260002.4}{QQ2-1-31}{Craft and beauty - 10p}}{89}\relax 
+\doTocEntry\tocsubsection{2.4.1}{\csname a:TocLink\endcsname{1}{x1-270002.4.1}{QQ2-1-32}{Functional beauty}}{90}\relax 
+\doTocEntry\tocsubsection{2.4.2}{\csname a:TocLink\endcsname{1}{x1-280002.4.2}{QQ2-1-33}{Embodiment}}{90}\relax 
+\doTocEntry\tocsubsection{2.4.3}{\csname a:TocLink\endcsname{1}{x1-290002.4.3}{QQ2-1-34}{Tacit knowledge}}{90}\relax 
+\par 
