@@ -313,13 +313,13 @@ What these aesthetic features (small number of files, short file length, short f
 
 \vspace*{1\baselineskip}
 
-These two examples, Microsoft Windows 2000 and Kirby CMS, highlight some of the presentations of source code—repetition, verbosity, commenting and conciseness—within socio-technical ecosystems made up of hardware, institutional practices from corporation to open-source, efficiency and usability, both at the result level (the software) and at the process level (the code).
+These two examples, Microsoft Windows 2000 and Kirby CMS, highlight some of the presentations of source code—repetition, verbosity, commenting and conciseness—within socio-technical ecosystems made up of hardware, institutional practices ranging from corporate guidelines to open-source contribution, with efficiency and usability remaining at the forefront, both at the result level (the software) and at the process level (the code).
 
 Software developers are a large group of practitioners whose focus  on producing effective, reliable and sustainable software, leads them to writing in more-or-less codified manner. Before diving into how such a manner of writing relates to references from architecture and engineering in order to foster simplicity and understandability, in section 2.2, we acknowledge that the bondary between groups of practicioners isn't a clear-cut one, and so we turn to another practice closely linked to professional development—hacking.
 
 \subsection{Hackers - 6p}
 
-Joseph Weizenbaum's description of what seems to be computer science graduate students is  one which has had wide echoes in the public imagination: hackers are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems\footnote{\textquote[\cite{weizenbaum_computer_1976}]{    Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text.}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven by curiosity, cleverness and freedom, and which has had a significant influence in the culture of programming.
+Popular description of hackers tend to veer towards dishelvement, obsession and esoteric involvement with the machine, accompanied by seemingly-radical value systems and political beliefs. They are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems, as described by Joseph Weizenbaum in 1976\footnote{\textquote[\cite{weizenbaum_computer_1976}]{    Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text.}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven by curiosity, cleverness and freedom. Such a group has had a significant influence in the culture of programming, with which it overlaps with the aforementionned values of intellectual challenges.
 
 To hack, in the broadest sense, is to enthusiastically inquire about the possibilities of exploitation of technical systems\footnote{\textquote[\cite{dourish_original_nodate}]{HACKER [originally, someone who makes furniture with an axe] n. 1. A person who enjoys learning the details of programming systems and how to stretch their capabilities, as opposed to most users who prefer to learn only the minimum necessary. 2. One who programs enthusiastically, or who enjoys programming rather than just theorizing about programming.}} and, as such, predates the advent of the computer\footnote{See Rosenbaum's report in the October 1971 issue of Esquire for an account of phreaking, computer hacking's immediate predecessor\cite{rosenbaum_secrets_2004}.}. Computer hacking specifically came to proeminence as early computers started to become available in north-american universities, and coalesced around the Massachussets Institute of Technology's Tech Model Railroad Club\cite{levy_hackers_2010}. Computer hackers were skilled and highly-passionate individuals, with an autotelic inclination to computer systems: these systems mattered most when they referenced themselves, instead of interfacing with a given problem domain. Early hackers were often self-taught, learning to tinker with computers while still in high-school\cite{lammers_programmers_1986}, and as such tend to exhibit a radical position towards expertise: skill and knowledge aren't derived from academic degrees or credentials, but rather from concrete ability and practical efficacy\footnote{A meritocratic stance which has been analyzed in further in \cite{coleman_aesthetics_2018}}.
 
@@ -471,23 +471,19 @@ Even with knowledge of how hexadecimal instructions map to the instruction set o
   We need to tell the VIC chip to look for the video matrix at address \$0c00 and the font at \$0000. This is done by writing \$30 into the bank register (\$d018). But this will be done from within the loop, as doing so allows us to use the value \$30 for two things. \emph{An important property of this particular bank configuration is that the system stack page becomes part of the font definition}.
 \end{quote}
 
-Demosceners therefore tend to write beautiful, deliberate code which is hardly understandable by other programmers without explanation, and yet hand-optimized for the machine. This presents a different perspective of the relationship between aesthetics and understanding, in which aesthetics do not support and enable understanding, but rather become a proof of the mastery and skill required to input such a concise input for such an overwhelming output. This shows in an extreme way that one does need a degree of expert knowledge in order to appreciate it—in this sense, aesthetics in programming are shown to be almost often dependent on pre-existing knowledge.
+Demosceners therefore tend to write beautiful, deliberate code which is hardly understandable by other programmers without explanation, and yet hand-optimized for the machine. This presents a different perspective of the relationship between aesthetics and understanding, in which aesthetics do not support and enable understanding, but rather become a proof of the mastery and skill required to input such a concise input for such an overwhelming output. This shows in an extreme way that one does need a degree of expert knowledge in order to appreciate it—in this sense, aesthetics in programming are shown to be almost often dependent on pre-existing knowledge. 
 
 \vspace*{1\baselineskip}
 
-The ideals at play in the writing and reading of source code is thus centered around specific means of knowledge: knowledge of the hardware, knowledge of the programming language used and knowledge of the tradeoffs acceptable all the while exhibiting an air of playfulness—how far can one go before breaking the system entirely? Still, one aspect that seems to elude hackers in their conception of code is that of conceptual soundness. If code is considered beautiful by attaining previously unthought of purposes with the least amount of resources, rationalization as to why, whether \emph{a prior} or \emph{a posteriori}, does not seem to be a central value, unlike computer scientists, to whom we turn to next.
+Hackers are then programmers who write code within a variety of settings, from academia to hobbyists through professional software development. Yet, some patterns emerge. First, one can see the emphasis on the \emph{ad hoc}, insofar as choosing "the right tool for the right job"\footnote{find citation} is a requirement for hacker code to be valued positively. This requirement thus involves an awareness of which tool will be the most efficient at getting the task at hand done, with a minimum of effort and minimum of overhead, usually at the expense of sustaining or maintaining the software beyond any immediate needs, making it available or comprehensible neither across time nor across individuals, a flavour of \emph{locality}. Second, this need for knowing and understanding one's tools hints at a sort of "materiality" of code, whether instructions land in actual physical memory registers, staying away from abstraction and remaining in "concrete reality" by using magic numbers, or sacrificing semantic clarity in order to \emph{"shave off"} a character or two.
+
+The ideals at play in the writing and reading of source code for hackers is thus centered around specific means of knowledge: knowledge of the hardware, knowledge of the programming language used and knowledge of the tradeoffs acceptable all the while exhibiting an air of playfulness—how far can one go pushing a system's boundaries before it breaks down entirely? How little effort can one put in order to get a maximum outcome? Yet, one aspect that seems to elude hackers in their conception of code is that of conceptual soundness. If code is considered beautiful by attaining previously unthought achievements of purposes with the least amount of resources, rationalization as to why, whether \emph{a prior} or \emph{a posteriori}, does not seem to be a central value. Hackers exhibit tendencies to both \emph{get the job done} and \emph{do it for the sake of doing it}. This behaviour is unlike that of computer and data scientists, and towards whom we turn to next.
 
 \vspace*{2\baselineskip}
 
-\begin{itemize}
-    \item ad hoc, locality, implication of the hardware as a crucial, central piece of information
-    \item technical knowledge
-    \item "You can create art and beauty on the computer"
-    \item unlinguistic -> more material approach of "shaving off characters"
-    \item gabriella coleman: coding freedom
-\end{itemize}
+If hacking can be considered a practice which deals with the practical intricacies of programming, involving concrete knowledge of the hardware and the language, our third group tends towards the opposite. Programming scientists (of which computer scientists are a subset) engage with progamming first and foremost at the conceptual level, with different locii of implementation: either as a \emph{theory}, or as a \emph{model}.
 
-\subsection{Scientists - 4p}
+\subsection{Scientists - 2000}
 
 \begin{itemize}
     \item PL \& algo implementers
@@ -506,8 +502,10 @@ examples of beautiful scientist code:
     \item list of implementations in julia https://github.com/mossr/BeautifulAlgorithms.jl
 \end{itemize}
 
+Values: abstraction, but also testing, and also data (need to find refs for this -> wirth again?)
 
-\subsection{Poets - 4p}
+
+\subsection{Poets - 2000}
 
 \begin{itemize}
     \item history of creative coding
@@ -516,13 +514,13 @@ examples of beautiful scientist code:
 \end{itemize}
 
 
-\section{Ideals of beauty - 15p}
+\section{Ideals of beauty - 5000}
 
-\subsection{Introduction to the Methodology - 3p}
+\subsection{Introduction to the Methodology - 1000}
 
 Kintsch and Van Dijk
 
-\subsection{Lexical Field in Programmer Discourse -12p}
+\subsection{Lexical Field in Programmer Discourse -4000}
 
 Positive words (13p)
 
