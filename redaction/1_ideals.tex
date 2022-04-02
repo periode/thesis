@@ -317,7 +317,7 @@ These two examples, Microsoft Windows 2000 and Kirby CMS, highlight some of the 
 
 Software developers are a large group of practitioners whose focus  on producing effective, reliable and sustainable software, leads them to writing in more-or-less codified manner. Before diving into how such a manner of writing relates to references from architecture and engineering in order to foster simplicity and understandability, in section 2.2, we acknowledge that the bondary between groups of practicioners isn't a clear-cut one, and so we turn to another practice closely linked to professional development—hacking.
 
-\subsection{Hackers - 6p}
+\subsection{Hackers}
 
 Popular description of hackers tend to veer towards dishelvement, obsession and esoteric involvement with the machine, accompanied by seemingly-radical value systems and political beliefs. They are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems, as described by Joseph Weizenbaum in 1976\footnote{\textquote[\cite{weizenbaum_computer_1976}]{    Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text.}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven by curiosity, cleverness and freedom. Such a group has had a significant influence in the culture of programming, with which it overlaps with the aforementionned values of intellectual challenges.
 
@@ -483,15 +483,59 @@ The ideals at play in the writing and reading of source code for hackers is thus
 
 If hacking can be considered a practice which deals with the practical intricacies of programming, involving concrete knowledge of the hardware and the language, our third group tends towards the opposite. Programming scientists (of which computer scientists are a subset) engage with progamming first and foremost at the conceptual level, with different locii of implementation: either as a \emph{theory}, or as a \emph{model}.
 
-\subsection{Scientists - 2000}
+\subsection{Scientists}
+
+As we've seen above, programming emerged as a distinct practice from computing sciences: not all programmers are computer scientists, and not all computer scientists are programmers. Nonetheless, scientists engage with programming and source code in two distinct ways, and open up the landscape of the type of code which can be written, and of the standards which support the evaluation of good code. First, we will look at code being written in support of non-specifically computer science research activities and, through it, examine the different needs of usability and replicability and data structuring. Second, we will inquire specifically into code written by computer scientists, such as programming language designers, and develop how computer implementation exists between theorization and experimentation\cite{vardi_science_2010}.
+
+Scientific computing, defined as the use of computation in order to solve non-computer science tasks, started as early as the 1940s and 1950s in the United States, aiding in the design of the first nuclear weapons\cite{oberkampf_verification_2010}. Beyond the military applications of early computer technology, one can point to Harlow and Fromm's paper \emph{Computer Experiments in Fluid Dynamics}, published in 1965, which explictly stated the advent of computing technology would prove to be of great assistance in physics and engineering:
+
+\begin{quote}
+  The fundamental behavior of fluids has traditionally been studied in tanks and wind tunnels. The capacities of the modern computer make it possible to do subtler experiments on the computer alone.\cite{harlow_computer_1965}
+\end{quote}
+
+In general, then, computation and computers are perceived as promising automated aids in processing data at a much faster rates than human scientists\cite{licklider_man-computer_1960}. The remaining issue, then, is to make computers more accessible to scientists which did not have direct exposure to computers. Developed in 1964 at Dartmouth College, \lstinline{BASIC} (Beginners' All-purpose Symbolic Instruction Code) aims at addressing this hurdle by designing "\emph{the world's first user-friendly programming language}"\footnote{\url{https://web.archive.org/web/20190611180750/https://granitegeek.concordmonitor.com/2019/06/11/finally-a-historical-marker-that-talks-about-something-important/}}.
+
+By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending to social sciences and the humanities, beyond engineering disciplines) as well as in the time spent developing and using software\cite{prabhu_survey_2011}\cite{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing a graphical user interface (GUI)\cite{moler_history_2020}; along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display contributed to MATLAB's popularity\cite{moler_history_2020}. Similarly, one could look at the rise of RStudio, a GUI to the R programming language. Below, one can see how concise the plotting of a three-dimensional plane is in MATLAB.
+
+\begin{lstlisting} %TODO add the legend that links to the image below
+  X = (-3:1/8:3)*ones(49,1);
+  Y = X';
+  Z = 3*(1-X).^2.*exp(-(X.^2) - (Y+1).^2) ...
+  - 10*(X/5 - X.^3 - Y.^5).*exp(-X.^2-Y.^2) ...
+  - 1/3*exp(-(X+1).^2 - Y.^2);
+  mesh(X,Y,Z)
+\end{lstlisting}
+
+\includegraphics{matlab}
+
+In parallel, Python represents the advent of the so-called scripting languages, programming  languges which offer readability and versatility, along with decoupling from the actual operating system that it is being executed on. System languages, such as C, are designed and used in order to interact directly with the computer hardware, and to constitute data structures from the ground up\cite{ousterhout_scripting_1998}. On the other hand, scripting languages were designed and used in order to connect existing software systems or data sources, most notably in the early days of shell scripting (such as \lstinline{Bash}, \lstinline{sed} or \lstinline{awk}). Starting with the late 1990s, and the appearance of languages such as Perl\footnote{First version developed in 1987 by Larry Wall} and Python\footnote{First official release in 1991 by Guido Van Rossum}, scripting languages became more widely used by non-programmers. In the following decades, the development of additional scientific libraries such as \emph{SciKit}, \emph{NumPy} for mathematics and numerical work or \emph{NLTK} for language processing and social sciences in Python complemented the language's ease of use by providing manipulation of complex scientifc concepts\cite{millman_python_2011}, a phenomenon of user-extension which has also been observed in the R and MATLAB's ecosystems\cite{moler_history_2020}.
+
+This steady rise of scientific computing has nonetheless highlighted the apparent lack of quality standards in academic software. Perhaps the most well-known example of such a lack is the one revealed by the leak of the source code of the Climate Research Unit from the University of East Anglia in 2009\cite{merali_computational_2010}. In the leak, inline comments of the authors, as well as code reviews of external software developers point out to the CRU leak as being a symptom of the state of academic software. As Professor Darrel Ince stated to the UK Parliamentary Committee in February 2010:
+
+\begin{quote}
+There is enough evidence for us to regard a lot of scientific software with worry. For example Professor
+Les Hatton, an international expert in software testing resident in the Universities of Kent and Kingston,
+carried out an extensive analysis of several million lines of scientific code. He showed that the software had
+an unacceptably high level of detectable inconsistencies.\cite{committee_disclosure_2010}
+\end{quote}
+
+As a response to this realization, the past decade has seen the desire to re-integrate the best practices of software engineering in order to correct scientific software's lack of accuracy\cite{hatton_how_1994}. Indeed, software engineering, as we've seen above, had developed on their own since its establishment as an independent academic discipline and professional field; this split, described by Diane Kelly as a "\emph{chasm}"\cite{kelly_software_2007} was then faced by the different standards to which commercial software and scientific software are subject to \footnote{See }. Within Landau et. al's conception of the scientific process as the progression from problem to theory, to model, to method, to implemementation and then finally to assessment\cite{landau_survey_2011}, code written as academic software is now involved in the method and implementation stages. Reproducibility is a core requirement of scientific research in general\footnote{This requirement dates back the 1600s with Robert Boyle and the Invisible College in England\cite{leveque_reproducible_2012}} and bugs in a scientific software system can lead to radically different ouptuts given slightly different input data. This can be addressed by reliable error-handling, regular assertions of the state of the processed data and extensive unit testing\cite{wilson_best_2014}.
+
+However, a unique aspect of scientific software seems to come from the lack of clear upfront requirements. As the activity of scientists is defined by an incomplete understanding of the application domain, requirements tend to emerge as further knowledge is developed and acquired\cite{segal_when_2005}. As a result, efforts have been made to familiarize scientists with software development best practices, so that they can implement quality software by themselves. Along with field-specific textbook\footnote{See \emph{Effective Computation in Physics}\cite{scopatz_effective_2015} or \emph{A Primer for Computational Biology}\cite{oneil_primer_2019} as textbooks covering similar software-oriented material from different academic perspectives.}he most prominent initiative in the field is \emph{Software Carpentry}, which aims at implementing software best practices across academia, for scientists and by scientists.
+
+This allows us to conclude on a convergence of quality standards of broad academic software towards the quality standards of commercial software development\footnote{See Graphbrain at \url{https://github.com/graphbrain/graphbrain} for such an example}.  And yet, this convergence is due to, as we've seen, a past divergence between computation and science, as computer science worked towards asserting and pursuing its own field of research. As a subset of science, computer science nonetheless holds specific standards, taking software not as a means to an end, but as the end itself.
 
 \begin{itemize}
-    \item PL \& algo implementers
+    \item PL \& algo implementers (Hoare, data structuring)
     \item textbooks
     \item data scientists \url{https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745}
 \end{itemize}
 
 binary search algorithm's implementation is only accurate in  is only found in five out of twenty textbooks Pattis, Richard E. (1988). "Textbook errors in binary searching". SIGCSE Bulletin. 20: 190–194. doi:10.1145/52965.53012.
+
+Problem ↔ theory ↔ model ↔ method ↔ implementation ↔ assessment. ( from https://www.degruyter.com/document/doi/10.1515/9781400841189/html)
+
+Naur, P., 1985, “Programming as theory building”, Microprocessing and microprogramming, 15(5): 253–261.
 
 examples of beautiful scientist code:
 
@@ -503,7 +547,6 @@ examples of beautiful scientist code:
 \end{itemize}
 
 Values: abstraction, but also testing, and also data (need to find refs for this -> wirth again?)
-
 
 \subsection{Poets - 2000}
 
