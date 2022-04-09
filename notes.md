@@ -7,6 +7,8 @@
 
 ## dump
 
+three theories for computer science: [acm](https://dl.acm.org/doi/10.1007/s11023-007-9060-8), the conceptual object one could be interesting/promising
+
 > flow state needs an immediate feedback in order to be achieved: literary writing does not have that, but computer writing, with IDEs, linters, etc. does have immediate feedback (with execution speed, so i guess it changes over the years as well) (clemens)
 
 from thought to practice: conceptual art aims at communicating concepts, ideas. experimental art don't know what they aim at but are motivated by an aesthetic criteria. (richard gabriel, keynote science is not enough) maybe this connects to the tension between having to be understood by humans and understood by computers? [[table_of_contents#understanding code]]
@@ -20,6 +22,8 @@ minimalism is not the same thing as simplicity and clarity
 ## rewrite
 
 ~~should i also specify in the intro that i'm dealing with aesthetics and not art? isn't that obvious enough already?~~
+
+- include a fuller discussion of both rhetorical code studies (brock) and critical code studies (marino)
 
 ## to read
 
