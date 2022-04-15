@@ -12,3 +12,5 @@ export.docx
 *.bcf
 *.blg
 *.run.xml
+*.fls
+*fdb_latexmk
