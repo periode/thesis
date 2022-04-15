@@ -523,7 +523,7 @@ As a response to this realization, the beginning of the 2000s has seen the desir
 
 Within Landau et. al's conception of the scientific process as the progression from problem to theory, followed by the establishment of a model, the devising of a method, and then on to implemementation and finally to assessment\cite{landau_survey_2011}, code written as academic software is now involved in the latter two stages of  method and implementation. Within those two stages, software has to abide by the processes and requirements of scientific research. First and foremost, reproducibility is a core requirement of scientific research in general\footnote{This requirement dates back the 1600s with Robert Boyle and the Invisible College in England\cite{leveque_reproducible_2012}} and bugs in a scientific software system can lead to radically different ouptuts given slightly different input data, while concealing the origin of this radical difference. Good academic code, then, is one which defends actively against these, perhaps to the expense of performance and maintainability. This can be addressed by reliable error-handling, regular assertions of the state of the processed data and extensive unit testing\cite{wilson_best_2014}.
 
-Furthermore, a unique aspect of scientific software comes from the lack of clear upfront requirements. Such requirements, in software development, are usually provided ahead of the programming process, and should be as complete as possible. As the activity of scientists is defined by an incomplete understanding of the application domain, requirements tend to emerge as further knowledge is developed and acquired\cite{segal_when_2005}. As a result, efforts have been made to familiarize scientists with software development best practices, so that they can implement quality software by themselves. Along with field-specific textbook\footnote{See \emph{Effective Computation in Physics}\cite{scopatz_effective_2015} or \emph{A Primer for Computational Biology}\cite{oneil_primer_2019} as textbooks covering similar software-oriented material from different academic perspectives.} the most prominent initiative in the field is \emph{Software Carpentry}, a collection of self-learning and teaching resources which aims at implementing software best practices across academia, for scientists and by scientists. Founded by Greg Wilson, the co-editor of \emph{Beautiful Code}, the organization's title refers directly to equivalents in the field of software development\footnote{See 1.1.2 \emph{Features of the field} above fo a discussion of the literature on writing good code for software developers).
+Furthermore, a unique aspect of scientific software comes from the lack of clear upfront requirements. Such requirements, in software development, are usually provided ahead of the programming process, and should be as complete as possible. As the activity of scientists is defined by an incomplete understanding of the application domain, requirements tend to emerge as further knowledge is developed and acquired\cite{segal_when_2005}. As a result, efforts have been made to familiarize scientists with software development best practices, so that they can implement quality software by themselves. Along with field-specific textbook\footnote{See \emph{Effective Computation in Physics}\cite{scopatz_effective_2015} or \emph{A Primer for Computational Biology}\cite{oneil_primer_2019} as textbooks covering similar software-oriented material from different academic perspectives.} the most prominent initiative in the field is \emph{Software Carpentry}, a collection of self-learning and teaching resources which aims at implementing software best practices across academia, for scientists and by scientists. Founded by Greg Wilson, the co-editor of \emph{Beautiful Code}, the organization's title refers directly to equivalents in the field of software development\footnote{See 1.1.2 \emph{Features of the field} above fo a discussion of the literature on writing good code for software developers)}.
 
 We conclude here on a convergence of quality standards of broad academic software towards the quality standards of commercial software development\footnote{See Graphbrain at \url{https://github.com/graphbrain/graphbrain} for such an example. The code's organization and formal features are congruent and on par with commercial software.}.  And yet, this convergence is due to, as we've seen, a past divergence between computation and science, as computer science worked towards asserting and pursuing its own field of research. As a subset of science, computer science nonetheless holds specific standards, taking software not as a means to an end, but as the end itself.
 
@@ -531,53 +531,109 @@ We conclude here on a convergence of quality standards of broad academic softwar
 
 \subsubsection{Computation as an end}
 
-% history
-Computer scientists, while scientists as well, are nonetheless focused on computation as a means, rather than as a tool. Computation is the phenomenon which has led to the development of the theoretical framework around it. Originally derived from computability theory, as a branch of formal mathematical logic, computation emerged as an autonomous field from work in mechanical design and configuration (Ada Lovelace and Charles Babbage),  work on circuit and language design (C. S. Pierce, Konrad Zuse and John Von Neumann), work on mathematical foundations (Alan Turing and Alonzo Church), information theory (Claude Shannon), systems theory (Norbert Wiener) and expert systems (John McCarthy and Marvin Minsky)\cite{ifrah_universal_2001}. In the middle of such a constellation ranging from mathematical theory to practical electronics, the first computer science deparment is inaugurated at Purdue University in 1962.
+
+Computer scientists are scientists whose work focuses on computation as a means, rather than as a tool. As such, they study the phenomenon of computation, investigating its nature and effects through th development of a theoretical frameworks around it. Originally derived from computability theory, as a branch of formal mathematical logic, computation emerged as an autonomous field from work in mechanical design and configuration (Ada Lovelace and Charles Babbage),  work on circuit and language design (C. S. Pierce, Konrad Zuse and John Von Neumann), work on mathematical foundations (Alan Turing and Alonzo Church), information theory (Claude Shannon), systems theory (Norbert Wiener) and expert systems (John McCarthy and Marvin Minsky)\cite{ifrah_universal_2001}. In the middle of such a constellation ranging from mathematical theory to practical electronics, computer science establishes institutional grounding with the inauguration of the first dedicated academic deparment at Purdue University in 1962.
 
 From this multifaceted heritage and academic interdisciplinarity, computer scientists have established the some of the foundations of the field, identifying key areas such as data structures, algorithms and language design as the foundations of the discipline\cite{wirth_algorithms_1976}. Through the process, the tracing of the "roots" of computation remained a constant debate as to whether computer science exists within the realm of mathematics, of engineering or as a part of the natural sciences. The logico-mathematical model of computer science contends that one can do computer science without a computer, solely armed of a pen and a paper, while the engineering approach of computer science tends to put more practical matters, such as architecture, language design and systems programming at the core of the discipline; both being a way to generate and process information as natural phenomenon\cite{tedre_development_2006}.
 
-% a section on how the three (science, eng, maths) separate from one another?
-know-of vs. know-how / episteme vs. techne
+The broad difference we can see between these different conceptions of computer science is that of \emph{episteme} and \emph{techne}. On the theoretical and scientific side, computer science is concerned with the primacy of ideas, rather than of implementation. The quality of a given program is thus deduced from its formal (in the mathematical sense) properties, rather than its formal (in the aesthetic sense) properties. The first manifestations of such a theoretical focus can be found in the Information Processing Language (1956), which was designed and developed originally to prove Bertrand Russell's \emph{Principia Mathematica}. While the IPL, as one of the very first programming languages, influenced the development of multiple subsequent languages, not least of all being LISP, some later languages came to be known as logic programming languages, based on a formal logic syntax of facts, rules and clauses about a given domain and whose correctness can be easily proven (see \ref{prolog} below for an example of the \emph{Prolog} logic programming language).
 
-%re: engineering
-In the software engineering debates, the theory and practice vocabulary
-had slightly different tones, with terms like “art” and “science” labeling two
-different mindsets concerning programming. At the beginning, software engi-
-neering suffered from an earlier image of programming as an inherently un-
-manageable, unsystematic, and artistic activity. There again, many saw pro-
-gramming essentially as an art or craft. Software production itself was torn
-from inside in a struggle between elegance and efficiency, between correct-
-ness and productivity, between form and function, and between rule-bound
-science and intuitive art. In the beginning, when machine time was expen-
-sive and every instruction cycle counted, efficiency ruled over elegance, but in
-the end elegance prevailed: Among other things, it facilitated good program-
-ming habits, improved programmer productivity, worked well with rigorous
-processes, made program maintenance less painful, and eased management of
-increasingly large programs.
+\begin{lstlisting}[caption={Prolog sample source}, label={prolog}, float, floatplacement=H]
+  % induce(E,H) <- H is inductive explanation of E
+induce(E,H):-induce(E,[],H).
 
-% art of computer programming -> between theory and practice
+induce(true,H,H):-!.
+induce((A,B),H0,H):-!,
+	induce(A,H0,H1),
+	induce(B,H1,H).
+induce(A,H0,H):-
+	/* not A=true, not A=(_,_) */
+	clause(A,B),
+	induce(B,H0,H).
+induce(A,H0,H):-
+	element((A:-B),H0),     % already assumed
+	induce(B,H0,H).         % proceed with body of rule
+induce(A,H0,[(A:-B)|H]):-       % A:-B can be added to H
+	inducible((A:-B)),      % if it's inducible, and
+	not element((A:-B),H0), % if it's not already there
+	induce(B,H0,H).         % proceed with body of rule
+\end{lstlisting}
 
-% art of algorithms and their implementation -> textbook beauty
+Due to its Turing-completeness, one can write programs such as language processing, web applications, cryptography or database programming (using the \emph{Datalog} variant of \emph{Prolog}), but its use remains limited outside of theoretical circles in 2021\footnote{See the Stackoverflow Developer survey \url{https://insights.stackoverflow.com/survey/2021}}. Another programming language shares this feature of theoretical soundness faced with a limited range of actual use in production environments, Lisp—\emph{LISt Processor}—designed to process lists. It was developed in 1958, the year of the Dartmouth workshop, on Artificial Intelligence by its organizator, John McCarthy. Inheriting from IPL, it retained the core idea that programs should separate the knowledge of the problem (input data) and ways to solve it (internal rules), assuming  the rules are independent to a specific problem.
 
-% an autotelic aesthetic? lisp vs. bad implementations of binary search
+The base structural elements of LISP are not symbols, but lists (of symbols, of lists, of nothing), and they themselves act as symbols (e.g. the empty list). By manipulating those lists recursively—that it, processing something in terms of itself—Lisp highlights  even further this tendency to separate itself from the problem domain, and to exhibit autotelic tendencies. This is facilitated by its atomistic and relational structure: in order to solve what it has do, it evaluates each symbol and traverses a tree-structure in order to find a terminal symbol. Building on these features, Willam Byrd, computer scientst at the University of Utah, describes the following lines of Scheme (a LISP dialect) as "the most beautiful program ever written"\cite{byrd_william_2017}, a Scheme interpreter written in Scheme (\ref{scheme}):
 
-\begin{itemize}
-    \item PL \& algo implementers (Hoare, data structuring)
-    \item textbooks
-\end{itemize}
+\begin{lstlisting}[caption={Scheme interpreter written in Scheme}, label={scheme}, float, floatplacement=H]
+  (define (eval-expr env)
+  (lambda (expr env)
+    pmatch expr
+      [,x (guard (symbol? x))
+        (env x)]
+      [(lambda (,x) ,body)
+        (lambda (arg)
+          (eval-expr body (lambda (y)
+                                          (if (eq? x y)
+                                                arg
+                                                (env y)))))]
+        [(,rator ,rand)
+          ((eval-expr rator env)
+            (eval-expr rand env))]))
+\end{lstlisting}
 
-binary search algorithm's implementation is only accurate in  is only found in five out of twenty textbooks Pattis, Richard E. (1988). "Textbook errors in binary searching". SIGCSE Bulletin. 20: 190–194. doi:10.1145/52965.53012.
+%include quote of nielsen: By making concrete what was formerly abstract, the code for our Lisp interpreter gives us a new way of understanding how Lisp works. https://michaelnielsen.org/ddi/lisp-as-the-maxwells-equations-of-software/
 
-Naur, P., 1985, “Programming as theory building”, Microprocessing and microprogramming, 15(5): 253–261.
+The beauty of such a program, for Byrd, is the abilty of these fourteen lines to reveal powerful and complex ideas about the nature and process of computation. As an interpreter, this program can take any valid Scheme input and evaluate it correctly. It does so by showing and using ideas of recursion (with calls to \lstinline{eval-expr}), environment (with the evaluation of the \lstinline{body}) and lambda functions, as used throughout the program. Following Alan Kay, creator of the Smalltalk programming language, Byrd equates the feelings he experiences in witnessing and pondering the program above to those suggested by Maxwell's equations, which constitute the foundation of classical electromagnetism (\ref{maxwell})\cite{kay_conversation_2004}. In both cases, then, the quality ascribed to those inscriptions come from the simplicity and conciseness of their base elements—making it easy to understand what the symbols mean and how we can compute relevant outputs—all the while implying complex consequences for both, respectively, computer science and electromagnetism.
 
-examples of beautiful scientist code:
+\begin{equation}
+  \begin{aligned}
+  \frac{\partial\mathcal{D}}{\partial t} \quad & = \quad \nabla\times\mathcal{H}
+  \frac{\partial\mathcal{B}}{\partial t} \quad & = \quad -\nabla\times\mathcal{E}
+  \nabla\cdot\mathcal{B}                 \quad & = \quad 0 
+  \nabla\cdot\mathcal{D}                 \quad & = \quad 0                       
+  \end{aligned}
+  \end{equation}
 
-\begin{itemize}
-    \item LISP (full of concepts)
-    \item some sort of quicksort -> https://stackoverflow.com/questions/26301/your-favourite-algorithm-and-the-lesson-it-taught-you
-    \item fractals?
-    \item list of implementations in julia https://github.com/mossr/BeautifulAlgorithms.jl
-\end{itemize}
+With this direct manipulation of symbolic units upon which logic operations can be executed, Lisp became the language of AI, an intelligence conceived first and foremost as abstractly logical, if not outright algebraic. Lisp-based AI was thus working on what Seymour Papert has called "toy problems"—self-referential theorems, children's stories, or simple puzzles or games. In these, the problem and the hardware are reduced from their complexity and multi-consequential relationships to a finite, discreete set of concepts and situations. Confronted to the real world—that is, to commercial exploitation—Lisp's model of symbol manipulation, which proved somewhat successful in those early academic scenarios, started to be applied to issues of natural language understanding and generation in broader applications. Despite disappointing reviews from government reports regarding the effectiveness of these AI techniques, commercial applications flourished, with companies such as Lisp Machines, Inc. and Symbolics offering Lisp-based development and support. Yet, in the 1980s, over-promising and under-delivering of Lisp-based AI applications, which often came from the combinatorial explosion deriving from the list- and tree-based representations, met a dead-end.
+
+\vspace*{1\baselineskip}
+
+"\emph{By making concrete what was formerly abstract, the code for our Lisp interpreter gives us a new way of understanding how Lisp works}", notes Michael Nielsen in his analysis of Lisp, pointing at how, across from the \emph{episteme} of computational truths stands the \emph{techne} of implementation\cite{nielsen_lisp_2012}. The alternative to such abstract, high-level language, is to consider computer science as an engineering discipline, a shift between theoretical programming and practical programming is Edsger Dijkstra's \emph{Notes on Structured Programming}. In it, he points out the limitation of considering programming only as a concrete, bottom-up activity, and the need to formalize it in order to conform to the standards of mathematical logical soundness. Djikstra argues for the superiority of formal methods through the need for a sound theoretical basis when writing software, at a time when the software industry is confronted with its first crisis\footnote{See section above.}.
+
+Within the software engineering debates, the theory and practice vocabulary had slightly different tones, with terms like “art” and “science” labeling two different mindsets concerning programming\cite{knuth_art_1997}. As mentioned by Djikstra's example, software engineering suffered from an earlier image of programming as an inherently unmanageable, unsystematic, and artistic activity. There again, many saw programming essentially as an art or craft\cite{tedre_development_2006}, rather than an exact science. Beyond theoretical soundness, computer science engineering concerns itself with efficiency and sustainability, with measurements such as the \emph{O()} notation for program execution complexity. It's not so much about whether it is possible to express an algorithm in a programming language, but whether it is possible to run it effectively, in the contingent environments of hardware, humans and problem domains\footnote{Notably, algorithms in textbooks tend to be erroneous when used in production; only in five out of twenty are they correct\cite{pattis_textbook_1988}.}.
+
+This approach, halfway between science and art, is perhaps best seen in Donald Knuth's magnum opus, \emph{The Art of Computer Programming}. In it, Knuth summarizes the findings and achievements of the field of computer science in terms of algorithm design and implementation, in order to "\emph{to organize and summarize what is known about the fast subject of computer methods and to give it firm mathematical and historical foundations.}"\cite{knuth_art_1997}. The art of computer programming, according to Knuth, is therefore based on mathematics, but nonetheless different from it insofar as it has to deal with effectiveness, implementation and contingency\footnote{\emph{The Art of Computer Programming} involves a hypothetical computer, called MIX, to implement the algorithms discussed.}. In so doing, Knuth takes on an empirical approach to programming, inspecting source code and running software to assess their performance, an approach he first inaugurated for FORTRAN programs when reporting on their concrete effectiveness for the United States Department of Defense\cite{defense_technical_information_center_dtic_1970}.
+
+Another influential academic textbook dealing not just with computation as a an autotelic phenomenon is \emph{Structure and Interpretation of Computer Programs}, in which the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}"\cite{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompany it, the aesthetic standard in this engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms}\cite{moss_beautifulalgorithmsjl_2022}. For instance, \ref{bubble_sort} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, but the simplicity of scientific algorithms is expressed even further in \ref{nearest_neighbor} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
+
+\begin{lstlisting}[caption={Bubble Sort implementation in Julia}, label={bubble_sort}, float, floatplacement=H]
+function bubble_sort!(X)
+for i in 1:length(X), j in 1:length(X)-i
+    if X[j] > X[j+1]
+        (X[j+1], X[j]) = (X[j], X[j+1])
+    end
+end
+end
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Nearest neighbor implementation in Julia}, label={nearest_neighbor}, float, floatplacement=H]
+function nearest_neighbor(x', phi, D, dist)
+  D[argmin([dist(phi(x), phi(x')) for (x,y) in D])][end]
+end
+\end{lstlisting}
+
+According to Tedre, computer science itself was split in a struggle between correctness and productivity, between theory and implementation, and between formal provability and intuitive art. In the early developments of the field, when machine time was expensive and every instruction cycle counted, efficiency ruled over elegance, but in the end he assesses elegance prevailed, as we will see with the evolution of craft within programming in \hyperref[sec:craft]{section 1.4.1} below.
+
+In closing, one should note that the \emph{Art} in the title of the book does not, however, refer to art as a fine art, or a purely aesthetic object. In a 1974 talk at the ACM, Knuth goes back to its Latin roots, where we find \emph{ars}, \emph{artis} meaning "skill.", noting that the equivalent in Greek being τεχνη, the root of both "technology" and "technique.". This semantic proximity helps him reconcile computation as both a science and an art, the first due to its roots in mathematics and logic, and the second
+
+\begin{quote}
+  because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. A programmer who subconsciously views himself as an artist will enjoy what he does and will do it better. Therefore we can be glad that people who lecture at computer conferences speak about the state of the Art.\cite{knuth_computer_1974}
+\end{quote}
+
+\vspace*{1\baselineskip}
+
+When written within an academic and scientific context, we can see how source code tends to align with the aesthetic standards of software development, valuing clarity, reabability, sustainability, in particular through Greg Wilson's work on the development of software development principles through the Software Carpentry and Data Carpentry initiatives. This alignment can also be seen in a conception of computer science as a kind of engineering, as an empirical practice which can and should be formalized in order to become more efficient. There, one can turn to Donald Knuth's \emph{Art of Computer Programming} to see the connections between the academia's best practices and the industry's best practices. And yet, a practical conception of computation as engineering isn't the only conception of computer science. Within a consideration of computer science as a  theoretical and abstract object of study, source code becomes a means of providing insights into more complex abstract concepts, such as the Lisp interpreter, or one-line algorithms implementing foundational algorithms in computer science. It is this relation to a conception of beauty traditionally associated with mathematics and physics which we will investigate below. But first, we complete our overview of code practicionners by turning to the software artists. 
+
+\pagebreak
 
 \subsection{Poets - 2000}
 
@@ -586,7 +642,6 @@ examples of beautiful scientist code:
     \item digital art vs. software art
     \item code poets
 \end{itemize}
-
 
 \section{Ideals of beauty - 5000}
 
@@ -597,6 +652,8 @@ Kintsch and Van Dijk
 \subsection{Lexical Field in Programmer Discourse -4000}
 
 Positive words (13p)
+
+% dope case study https://queue.acm.org/detail.cfm?id=1039535 also this http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
 
 \begin{itemize}
     \item clean
@@ -631,6 +688,7 @@ Mostly elegance, could be a good place to work on the distinction between proof 
 This allows a segue into everyday aesthetics and environmental aesthetics
 
 \section{Craft and beauty - 10p}
+\label{sec:craft}
 
 Now that we've seen how the aesthetic ideals of code borrow from different registers, we need to think about practice, or ways. all of the above can be seen through the prism of craft
 
@@ -646,3 +704,4 @@ also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
 
 \subsection{Tacit knowledge}
 
+%or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8

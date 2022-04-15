@@ -3,7 +3,7 @@
 ## tex
 
 `make4ht -x thesis.tex  "fn-in"` for html export (one should be able to add bibliography with [this](https://tex.stackexchange.com/questions/358565/can-htlatex-be-used-with-biblatex-these-days))
-
+http://www.softpanorama.org/People/Knuth/taocp.shtml
 
 ## dump
 
