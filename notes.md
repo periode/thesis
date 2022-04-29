@@ -7,6 +7,8 @@ http://www.softpanorama.org/People/Knuth/taocp.shtml
 
 ## dump
 
+[computer architecture as a mix between text, building, and math](https://www.youtube.com/watch?v=kFT54hO1X8M)
+
 three theories for computer science: [acm](https://dl.acm.org/doi/10.1007/s11023-007-9060-8), the conceptual object one could be interesting/promising
 
 > flow state needs an immediate feedback in order to be achieved: literary writing does not have that, but computer writing, with IDEs, linters, etc. does have immediate feedback (with execution speed, so i guess it changes over the years as well) (clemens)
