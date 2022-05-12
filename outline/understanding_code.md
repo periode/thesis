@@ -46,6 +46,8 @@ berry, code as:
 
 limits to a literary approach: [[hayles_print_flat_code_deep]], and confirmation via a psychological study [[ivanova_comprehension_computer_code]]
 
+[Critical code studies](../readings/notes/critical_code_studies.md), and rhetorical code studies
+
 ### the computer as a technical apparatus
 
 this section talks about computation, symbolic logic, math and turing and lambda functions and all that beautiful stuff.

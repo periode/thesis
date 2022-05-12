@@ -8,6 +8,8 @@ From these, we can then move to a description of which aesthetic fields are bein
 
 Finally, we focus our attention on one of the points of overlap in these different references: the importance of function, craft and knowledge in the disposition and representation of code. We will show how this particular way of working  plays a central role in an aesthetic approach to source code and results from the specificity of code as a cognitive material, a specificity we will inquire further in the next chapter.
 
+\pagebreak
+
 \section{The practice of programmers}
 
 The history of software development is that of a specific, reserved practice which was born in the aftermath of the second world war, which trickled down to broader and broader audiences at the eve of the twenty-first century. Through this development, multiple ways of doing, approaches and applications have been involved in producing software, resulting in different communities and types of programming. Each of these focus on the description of specific instructions to the computer, but do so with specific characteristics. To this end, we take a socio-historical stance on the field of programming, highlighting how diverse practices emerge at different moments in time, and how they are connected to contemporary technical and economic organizations.
@@ -703,41 +705,84 @@ In this section, we've seen how the set of individuals who write and read code i
 
 What we see here are strands of similarity within apparent diversity. The code snippets in this section show that there is a tendency to prefer readability, conciseness, clarity, expressivity and functionality, even though different types of the aforementionned practices would put a different emphasis on each of those aspects. The question we turn to next, then, is to what extent do these different practices of code writing and reading share common judgments regarding their formal properties? Do hackers and poets agree on some value judgment, and how? To start this investigation, we first analyze programmers' discourses in the following section in order to identify concrete categories of formal properties which might enable a source code to be positively valued for its appearance, before we turn to the aesthetic registers code practicionners refer to when discussing beautiful code.
 
+\pagebreak
+
 \section{Ideals of beauty - 5000}
+
+With this overview of the varieties of practices at play amongst those who read and write source code, we will analyze more thoroughly what are the aesthetic standards most value by those different groups. The aim here is to formalize our understanding of which source code is considered beautiful, and to do so at multiple levels. The goal here is to capture both the specific manifestations of beautiful code as specified and enunciated by programmers, as well as the semantic contexts from which these enunciations originate. What we will see is that, while a set of aesthetic values and a set of aesthetic manifestations can be pinpointed precisely, the domains that are mobilized to justify these values are clearly distinct. To do so, we will introduce the framework of discourse analysis, complemented by a a medium-specific reading through critical code studies and rhetorical code studies on one hand, and the work done by conceptual metaphors on the other.
 
 \subsection{Introduction to the Methodology - 1000}
 
-Kintsch and Van Dijk, and Diana Mullet
+Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This work builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, centered around what constitutes good source code. While discourse analysis is also used critically by unearthing which value judgments occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis\cite{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of the \emph{pragmatics}. This approach, based on H.P. Grice's conception of utterances being ultimately related to one another through communicative cooperation to ultimately reveal the intent of the speaker\cite{schiffrin_approaches_1994}. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader context—will ultimately lead us to examine the influence of  the production media (blog post, forums, conferences, text books), of the cultural background (software practices as outlined above as well as additional factors such as skill levels. Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of coreference\cite{kintsch_model_1978}.
 
-\subsection{Lexical Field in Programmer Discourse -4000}
+Particular attention will be paid to the difference between intentional and extensional meaning\cite{dijk_strategies_1983}. As we will see, some of the texts in our corpus tend to address a particular problem (e.g. on forums, social media or question \& answer platforms), or to discuss broader concepts around well-written code. Particularly, 
 
-Positive words (3000 )
+\begin{quote}
+  Figures of speech may attract attention to important concepts, provide more cues for local and global coherence, suggest plausible pragmatic interpretations (e.g., a promise versus a threat), and will in general assign more structure to elements of the semantic representation, so that [meaning] retrieval is easier.\cite{dijk_strategies_1983}
+\end{quote}
+
+Following this idea, we will proceed by examining syntactic markers to deduce  overarching concepts at the semantic level. Among those syntactic markers, we include single propositions as explicit predicates regarding source code, lexical fields used in those predicates in order to identify their connotations and denotations, as well as for the tone of the enunciations to identify value judgments. At the semantic level, we will examine the socio-cultural references, the \emph{a priori} knowledge assumed from the audience, as well as the cognitive units which compose the theme of the discourse at hand.
+
+And yet, the discourses we will examine aren't exclusively composed of natural language, but also of source code extracts, resulting in a hybrid between natural and machine syntax within the same discursive artifact.
+
+Following John Cayley's analytic framework of structure, syntax and vocabulary\cite{cayley_code_2012}, we can nonetheless echo discourse analysis as applied to natural languages. Cayley's framework highlights essential aspect of analysis which applies both to natural languages and source code: that of scales at which aesthetic judgment operates. It also provides a bridge with literature and literary studies without imposing too rigid of a grid. While it does not immediately acknowledge more traditional literary concepts such as fiction, authorship, literarity, etc., it does leave room for these concepts to be taken into account.  Particularly, we will see that the concept of authorship—who writes to whom—will be useful in the future.
+
+Finally, our intepretation of the macrostructures described by Kintsch and Van Dijk will rely extensively on the work done by metaphors as the conceputal level, rather than at the strictly linguistic one. Lakoff and Johsnon's seminal work develops a theory of conceptual metaphors by highlighting their essential dependence on pre-existing cognitive structures, which we associate with already-understood concepts. The metaphor maps a source domain (made up of cognitive structure(s)) to a target domain. In the process, they extend the field of applicability of metaphors from the strictly literary to the broadly cultural: metaphors work because each of us has some conception of those domains involved in the metaphorical process. Metaphors rely in part on a static understanding, resulting in a fixed meaning from the application of a given source to a given target. Some of these sources are called \emph{schemas}, and are defined enough to not be mistaken for something else, but broad enough to allow for multiple variants of itself to be applied to various targets\cite{lakoff_metaphors_1980}, providing both diversity and reliability. As we will see below, their approach allows us to focus not just on textual objects, but on the vast range of metaphors used specifically in computing-related environments. Given that the source of the metaphor should be grounded, with as little invariablity as possible, in order to qualify a potentially ill-defined target domain, this provides us with a first foray into the inherent elusiveness and instability of computing when presented to a broader audience.
+
+Going beyond the role of metaphors manifested in expressions such as \emph{the desktop}, \emph{the mouse}, or \emph{the cloud}, we will explore Lakoff's understanding of the specifically poetic metaphor further below as preliminary work to assess the linguistic component of computing—source code. For now, we will pay close attention to what programmers are saying about (beautiful) source code, which metaphors they employ to support these value judgments, and why—focusing first on the metaphors \emph{of} source code, before moving, in the section, to the metaphors \emph{in} source code.
+
+% then do the stats (how many texts, from when to when, selection standards, where to find, etc.)
+
+\subsection{Lexical Field in Programmer Discourse -3000}
 
 % dope case study https://queue.acm.org/detail.cfm?id=1039535 also this http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
 
+just talk about qualifiers, without putting too much emphasis on the positive/negative duality
+
+say that a lot of this work has been done by pineiro, and we add just the parts we are missing. namely. he only focuses on software engineering
+
+add a section from the RESET journal on style, simmel etc, touching on the tension between personal and collective styles
+
 \begin{itemize}
-    \item clean
-    \item simple
-    \item elegant
-    \item transparent/self-explanatory
+    \item clean (martin, paul graham: short, hayes "uniform", hunt calls it "soft, accomodating changes")
+    \item simple (minimalism) (relates to compression, and richard p. gabriel can come in here, also emerson cited by pugh, each module should do one thing well)
+    \item elegant (mclennan "correctness required, elegance desired", perrin "concise, brief" -> difference between pretty and elegant)
+    \item transparent/clear (such as PL, ref. Sethi of 'clarity' for PL, and also take this as an opportunity to investigate the difference between clean and clear, kernighan, graham self-explanatory, mitchell art of programming "be self-explanatory, familiar "complex statements have a zen-like reverence for perfect simplicity of expression", hunt calls it "hard" (does only one defined thing), green, sicp)
 \end{itemize}
 
-but also everyday aesthetics
+quid modular? (sicp)
+
+add qualifiers from artists, hackers: e.g. mind-bending, clever (hillel), etc.
 
 Negative words (1000)
 
 \begin{itemize}
     \item smelly
     \item entangled
+    \item spaghetti
+    \item bug
+    \item verbose
+    \item interdependency (chandra)
 \end{itemize}
 
-\section{Types of beauty  - 20p}
+these are interesting because they evoke matter, rather than concept/ideal/platonic
+
+- minimalism
+	- https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
+- simplicity
+	- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+
+\pagebreak
+
+\section{Aesthetic domains  - 6000}
 
 Now that we've done some empirical work, we can try to abstract away a bit and then look into how this relates to existing frameworks of aesthetics. 
 
 Now that \emph{we look at proofs, through discourse}, what kind of beauty can we be dealing with?
 
 \subsection{Literary Beauty}
+
+matz, code as an essay
 
 This second approach contrasts with the functional component of the first one, but nonetheless stands in relationship with it. the creative beauty, by defying traditional beauty standards, does help us highlight, through deviance, what the norm is. These texts on "creative beauty" include the classical perl poetry, code poems, IOCC, code poetry contest, etc.
 
@@ -787,12 +832,20 @@ Mostly elegance, could be a good place to work on the distinction between proof 
 
 This allows a segue into everyday aesthetics and environmental aesthetics
 
+\pagebreak
+
 \section{Craft and beauty - 10p}
 \label{sec:craft}
+
+the ethical aspect of writing beautiful code: well-written, good code is value aesthetically and morally
+
+also combination of hard and soft (cf. green coding guidelines, hun pragmatic programmer)
 
 Now that we've seen how the aesthetic ideals of code borrow from different registers, we need to think about practice, or ways. all of the above can be seen through the prism of craft
 
 \subsection{Functional beauty}
+
+again, pineiro as instrumental goodness
 
 This first approach, by comparing both source and comment at the same time (taking texts which are explicitly described as being beautiful), explicitly highlights the requirements for source code to be beautiful. 
 
@@ -803,5 +856,7 @@ There is also an emerging development in aesthetics of integrating function as a
 also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
 
 \subsection{Tacit knowledge}
+
+-> this one actually goes to the next chapter
 
 %or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8

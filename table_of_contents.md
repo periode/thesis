@@ -47,9 +47,9 @@ beauty as a lack of ambiguity, as efficient achievement of an aim (aim of frustr
 - simplicity
 	- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
 
-chandra_geek_sublime
+[geek sublime](./readings/notes/chandra_geek_sublime.md)
 
-cramer_words_made_flesh
+[cramer_words_made_flesh](./readings/notes/cramer_words_made_flesh.md)
 
 #### 1.2.2 functional beauty
 
@@ -89,6 +89,12 @@ the zen of python could tie in to that tradition
 
 jones_reckoning_with_matter
 
+## 2 understanding code
+
+> The art of programming is the art of organizing complexity (Djikstra)
+
+I highlight the issue of *understanding* between humans and machines through the medium of source code, as an ambivalent notion which necessitates a symbolic interface. This concept of *understanding* is also understood in the light of the different *fields* of programming practice (professional, amateur (hobbyist+hacker), educational, scientific/academic)
+
 ### 1.4 modes of knowledge
 
 this section focuses on "you will know when you see it"
@@ -110,10 +116,6 @@ __tacit__
 practice is *synthetic method*, a method which regroups, which puts together.
 
 freeman_science_as_a_craft
-
-## 2 understanding code
-
-I highlight the issue of *understanding* between humans and machines through the medium of source code, as an ambivalent notion which necessitates a symbolic interface. This concept of *understanding* is also understood in the light of the different *fields* of programming practice (professional, amateur (hobbyist+hacker), educational, scientific/academic)
 
 __define understanding__ (perspectives: reader/writer)
 
@@ -314,6 +316,8 @@ finally, this section will confront our set of aesthetic features to several cas
 #### 3.3.1 - case study 1 (Latex)
 
 the reason why UNIX is chosen is as a canonical example of low-level, functional programming with a rich social history
+
+do a comparison with UNIX (latex is literate, vs. Unix as minimalist)
 
 #### 3.3.2 - case study 2 (Carnivore)
 
