@@ -7,6 +7,12 @@ http://www.softpanorama.org/People/Knuth/taocp.shtml
 
 ## dump
 
+france culture cours du collège de france  de francois chatelet: la condition necessaire du savoir c'est la sensibilité (tout se donne dans la spatio-temporalité)
+
+1. passivité informatrice
+2. entendement actif
+3. raison, qui remonte jusqu'a la cause originelle, le principe
+
 [computer architecture as a mix between text, building, and math](https://www.youtube.com/watch?v=kFT54hO1X8M)
 
 three theories for computer science: [acm](https://dl.acm.org/doi/10.1007/s11023-007-9060-8), the conceptual object one could be interesting/promising

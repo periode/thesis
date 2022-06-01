@@ -9,3 +9,9 @@
   - [ ] add code examples for software industry (linux, kirby, parts of firefox, prometheus)
 
 look into the pdf "program text, style, laber" by brian lennon to address comments in microsoft windows source code
+
+yullil - code art brutalism refers the _HACKMEM_ document from 1972 MIT, related to architecture: 
+
+> Rather than designing one-off buildings, many Brutalist architects were interested in creating habitats, adaptable social complexes that were capable of supporting small communities. Examples include the Ivor Smith and Jack Lynn's Park Hill estate in Sheffield, Kunio Mayekawa's Harumi apartment block, Tokyo, and Moshe Safdie's Habitat, Toronto.
+
+communautés épistémiques et communautés de pratique (Cohendet et al., 2001) -> Cohendet, Patrick, Creplet, Frederic & Dupouet, Olivier. « Organisational innovation, communities of practice and epistemic communities : the case of Linux ». In Economics with heterogeneous interacting agents
