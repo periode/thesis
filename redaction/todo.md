@@ -7,6 +7,7 @@
 - [ ] ideals
   - [ ] re read hacker examples part to check for spoilers
   - [ ] add code examples for software industry (linux, kirby, parts of firefox, prometheus)
+  - [ ] add research software engineers to data scientists https://www.nature.com/articles/d41586-022-01516-2
 
 look into the pdf "program text, style, laber" by brian lennon to address comments in microsoft windows source code
 

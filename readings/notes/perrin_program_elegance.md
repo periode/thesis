@@ -10,7 +10,7 @@ OOP: encapsulation and modularity are good things, but not axioms of goodness
 
 > acknowledges the influence of programming languages on elegance
 
-*"in pursuing elegance, it is more important to be **concise** than to be **brief**!"* -> highlight the difference between these two terms
+*"in pursuing elegance, it is more important to be **concise** than to be **brief**!"* -> highlight the difference between these two terms, (in terms of compression?)
 
 lambda takes to make for simpler programs.
 

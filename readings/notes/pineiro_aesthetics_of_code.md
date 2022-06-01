@@ -33,7 +33,7 @@ the inherent properties of software:
 
 Paul W. Oman’s and Curtis R. Cook’s paper Typographic Style is More than Cosmetic (Oman and Cook 1990) argue for typographic importance in source code.
 
-> In programming, as in the majority of disciplines of human activity, there are different, sometimes opposed, notions of what it is that makes something beautiful. A complete classification of all these ideals for the case of programming coding styles would be a nice thing to present, but I cannot do that. The main problem is not that there are so many programmers scattered all over the world, not even that they lack a formal organising body; the real problem is that beauty, in programming, is a private affair, something kept among pro- grammers and absent from the official discourse: pro- grammers are not supposed to spend their time creating beauty, they are supposed to create programs that work. p.117
+> In programming, as in the majority of disciplines of human activity, there are different, sometimes opposed, notions of what it is that makes something beautiful. A complete classification of all these ideals for the case of programming coding styles would be a nice thing to present, but I cannot do that. The main problem is not that there are so many programmers scattered all over the world, not even that they lack a formal organising body; the real problem is that beauty, in programming, is a private affair, something kept among programmers and absent from the official discourse: programmers are not supposed to spend their time creating beauty, they are supposed to create programs that work. p.117
 
 section on readability as choice, and highlights:
 
