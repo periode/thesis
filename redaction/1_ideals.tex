@@ -179,9 +179,9 @@ The repetition of the \lstinline{RtlInitUnicodeString} call in the first part of
 
 Verbosity, the act of explicitly writing out statements which could be functionally equivalent in a compacted form,  is a significant feature of the Windows 2000 codebase, and also relies on a particular semantic environment: that of using the C programming language. As mentioned above, the development of C and UNIX in the 1970s have led to wide adoption of the former, and to some extent of the later (even though Windows is a notable exception since it is an operation system not based on the UNIX tradition). What we see in this listing is the consequence of this development: using a verbose language inevitably leads to a verbose program text, something we will see in the following section on hacker's code and will explore much further in chapter 5.
 
-Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomatic_2020}. For instance, the following excerpt from \lstinline{jdhuff.c} is a example of such overlapping of styles:
+Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomatic_2020}. For instance, the excerpt in \ref{buffer.c} from \lstinline{jdhuff.c} is a example of such overlapping of styles:
 
-\begin{lstlisting}[caption={buffer.c}, label={buffer.c}, float, floatplacement=H]
+\begin{lstlisting}[caption={buffer.c}, label=buffer.c, float, floatplacement=H]
   no_more_data:
 		  // There should be enough bits still left in the data segment; 
 		  // if so, just break out of the outer while loop. 
@@ -251,6 +251,7 @@ This highlights both the multiple authorship (here, we have one original author 
 A complementary example is the Kirby CMS\footnote{Allgeier, Bastian et. al., https://github.com/getkirby/kirby, 2011, consulted in 2022}. With development starting in 2011, a first release in 2012 and having developed a steady userbase, correlated in Google Trends analytics\footnote{https://trends.google.com/trends/explore?date=all\&q=kirby\%20cms}, consistent forum posts\footnote{https://forum.getkirby.com} and commit history\footnote{https://github.com/getkirby/kirby}, it exhibits a particular set of features, in both its purpose and its source code alike. Kirby is an open-source, developer-first (meaning that it affords direct engagement of other developers with its architecture through modification, extension or partial replacement), single-purpose project. As such, it stands at the other end of the commercial, efficient software spectrum than Microsoft Windows 2000.
 
 The Kirby source code is entirely available online, and the following snippets hint at another set of formal values—conciseness, expliciteness and delimitation. Conciseness can be seen in the lengths of the various components of the code base. For instance, the core of Kirby consists in 248 files, with the longest being \lstinline{src/Database/Query.php} at 1065 lines, and the shortest being \lstinline{src/Http/Exceptions/NextRouteException.php}, for an average of 250 lines per file. At the third level, the length of the function bodies is also minimal, ranging from XXXX to XXXX\emph{calculate}. Compared to the leading project in the field, Wordpress.org, which has respectively XXXX \emph{insert analysis here}.
+%todo
 
 If we look at a typical function declaration within Kirby, we found one such as the distinct setter for Kirby's database:
 
@@ -270,7 +271,7 @@ If we look at a typical function declaration within Kirby, we found one such as 
 
 Out of these 11 lines, the actual functionality of the function is focused on one line, \lstinline{$this->distinct = $distinct;}. Around it are machine-readable comment snippets, and a function wrapper around the simple variable setting. The textual overhead then comes from the wrapping itself: the actual semantic task of deciding whether a query should be able to include distinct select clauses (as opposed to only allowing join clauses), is now decoupled from its actual implementation (one could describe to the computer such an ability to generate distinct clauses by assigning it a boolean value, or an integer value, or passing it as an argument for each query, etc.). The quality of this writing, at first verbose, actually lies in its conciseness in relation to the possibilities for extension that such a form of writing allows: the \lstinline{distinct()} function could, under other circumstances, be implemented differently, and still behave similarly from the perspective of the rest of the program. Additionally, this wrapping enables the setting of default values (here, \lstinline{true}), a minimal way to catch bugs by always providing a fallback case.
 
-Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance,, from the \lstinline{Http\\Route} class (\ref{route.php}).
+Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, from the \lstinline{Http\\Route} class (\ref{route.php}).
 
   \begin{lstlisting}[caption={Route.php}, label={route.php}, float, floatplacement=H]
   /**
@@ -357,11 +358,11 @@ If writing one-line programs is within the reach of any medium-skilled programme
   This may seem like a terrible waste of my effort, but one of the most satisfying moments of my career was when I realized that I had found a way to shave one word off an 11-word program that [Bill] Gosper had written. It was at the expense of a very small amount of execution time, measured in fractions of a machine cycle, but I actually found a way to shorten his code by 1 word and it had only taken me 20 years to do it\cite{seibel_coders_2009}.
 \end{quote}
 
-This sort of compulsive behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of characters—here, the equivalent of \emph{par} in golf would be Kolmogorov complexity\footnote{See: \url{https://en.wikipedia.org/wiki/Kolmogorov_complexity}}. So minimizing program length in relation to the problem complexity is a definite feature of one-liners, since choosing the right programming language for the right taks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power. Tasked with parsing a text file to find which lines had a numerical value greater than 6, Brian Kernighan writes the following code in C\footnote{From Succesful Language Design, Brian Kernighan at the University of Nottingham, \url{https://www.youtube.com/watch?v=Sg4U4r_AgJU}}:
+This sort of compulsive behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of characters—here, the equivalent of \emph{par} in golf would be Kolmogorov complexity\footnote{See: \url{https://en.wikipedia.org/wiki/Kolmogorov_complexity}}. So minimizing program length in relation to the problem complexity is a definite feature of one-liners, since choosing the right programming language for the right taks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power. Tasked with parsing a text file to find which lines had a numerical value greater than 6, Brian Kernighan writes the code in C\ref{select_lines}\footnote{From Succesful Language Design, Brian Kernighan at the University of Nottingham, \url{https://www.youtube.com/watch?v=Sg4U4r_AgJU}}:
 
 \pagebreak
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={select_lines.c}, label=select_lines, float, floatplacement=H]
   #include <stdio.h>
   #include <strings.h>
 
@@ -372,27 +373,27 @@ This sort of compulsive behaviour is also manifested in the practice of \emph{co
 
     while(fgets(line, sizeof(line), stdin) != NULL) {
       strcpy(line2, line);
-      p = strtok(line, "\t");
-      p = strtok(NULL, "\t");
-      p = strtok(NULL, "\t");
-      sscanf(p, "%lf", &mag);
+      p = strtok(line, "\\t");
+      p = strtok(NULL, "\\t");
+      p = strtok(NULL, "\\t");
+      sscanf(p, "\%lf", &mag);
       if(mag > 6) /* $3 > 6 */
-        printf("%s", line2); 
+        printf("\%s", line2); 
     }
 
     return 0
   }
 \end{lstlisting}
 
-The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is:
+The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is see in \ref{select_lines.sh}
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={select_lines.sh}, label={select_lines.sh}, float, floatplacement=H]
   awk '$3 > 6' data.txt
 \end{lstlisting}
 
-The difference is obvious, not just in terms of formal clarity and cleanliness of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because more intuitive, and therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge in the specific language in which it is written. Here is Conway's game of life implemented in one line of APL:
+The difference is obvious, not just in terms of formal clarity and cleanliness of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because more intuitive, and therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge in the specific language in which it is written. Here is Conway's game of life implemented in one line of APL\ref{gol.apl}.
 
-\begin{verbatim}
+\begin{verbatim}[caption={gol.apl}, label={gol.apl}, float, floatplacement=H]
   life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +⌿ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}
 \end{verbatim}
 
@@ -404,11 +405,11 @@ Another example of beautiful code written by hackers is the UNIX operating syste
     \textit{For a programmer, what is a comparable goal? What is the Chartres of programming? What task is at a high enough level to inspire people writing programs, to reach for the stars?}
 \end{quote}
 
-And UNIX might be one of the answers to that question, both by its functionality, and by its conciseness, if not alone by its availability. Another program which qualifies as beautiful hacker code, due both to its technical excellence, unusual solution and open-source availability is the function to compute the inverse square root of a number, a calculation that is particularly necessary in any kind of rendering application (which heavily involves vector arithmetic). It was found in the \emph{Quake} source code, listed here verbatim\footnote{The Quake developers aren't the authors of that function—the merit of which goes to Greg Walsh—but are very much the authors of the comments.}:
+And UNIX might be one of the answers to that question, both by its functionality, and by its conciseness, if not alone by its availability. Another program which qualifies as beautiful hacker code, due both to its technical excellence, unusual solution and open-source availability is the function to compute the inverse square root of a number, a calculation that is particularly necessary in any kind of rendering application (which heavily involves vector arithmetic). It was found in the \emph{Quake} source code, listed in \ref{fast_sqrt.c} verbatim\footnote{The Quake developers aren't the authors of that function—the merit of which goes to Greg Walsh—but are very much the authors of the comments.}.
 
 \pagebreak
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={fast_sqrt.c}, label={fast_sqrt.c}, float, floatplacement=H]
   float Q_rsqrt( float number )
   {
       long i;
@@ -446,9 +447,9 @@ Further examples of such intimate knowledge of both the language and the machine
 
 This showing off, however, does not happen through immediate engagement with the code from the reader's part, but rather in the thorough explanation of the minute functionalities of the demo by its writer. Because of these constraints of size, the demos are usually written in C, openGL, Assembly, or the native language of the targeted hardware. Source code listings of demos also make extensive use of shortcuts and tricks, and little attention is paid to whether or not other humans would directly read the source—the only intended recipient is a very specific machine (e.g. Commodore 64, Amiga VCS, etc.). The release of demos, usually in demoparties, are sometimes accompanied by documentation, write-ups or presentations\footnote{You can find \emph{Elevated}'s technical presentation here: \url{https://www.iquilezles.org/www/material/function2009/function2009.pdf}}. However, this presentation format acknowledges a kind of individual, artistic feat, rather than the \emph{egoless programming} lauded by Brooks in professional software development\footnote{In architecture, such technical and artistic feat for its own sake, devoid of any reliable social use, is the pavillion, or the folly.}.
 
-Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{akesson_mind_2017} on the Commodore 64. It is firsted listed as a hexademical dump by its author:
+Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{akesson_mind_2017} on the Commodore 64. It is firsted listed as a hexademical dump by its author (see \ref{a_mind_is_born.hex})
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={A Mind is Born}, label={a_mind_is_born.hex}, float, floatplacement=H]
   0000000 0801 080d d3ff 329e 3232 0035 0000 4119
   0000010 d01c dc00 0000 d011 0be0 3310 610e f590
   0000020 0007 1fff 4114 24d5 2515 5315 6115 29d5
@@ -499,10 +500,9 @@ Scientific computing, defined as the use of computation in order to solve non-co
 
 In general, then, computation and computers are perceived as promising automated aids in processing data at a much faster rates than human scientists\cite{licklider_mancomputer_1960}. The remaining issue, then, is to make computers more accessible to scientists which did not have direct exposure to computers. Beyond the unaffordable price point of university mainframes before the personal computer revolution, another vector for simplification and accessibility is the development of adequate programming languages\footnote{See Chapter 4 for a more complete discussion on programming languages.}. Developed in 1964 at Dartmouth College, \lstinline{BASIC} (Beginners' All-purpose Symbolic Instruction Code) aims at addressing this hurdle by designing "\emph{the world's first user-friendly programming language}"\footnote{\url{https://web.archive.org/web/20190611180750/https://granitegeek.concordmonitor.com/2019/06/11/finally-a-historical-marker-that-talks-about-something-important/}}. The intent is to provide non-computer scientists with easy means to instruct the computer on how to instruct the computer to perform computations relevant to their work. Still, computing in the academia will only pick up with the distribution of the multiple versions of the UNIX timesharing system, which allowed multiple users to use a given machine at the same time, and the performance boost provided by the C programming language in the late 1970s.
 
-By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending beyond engineering and experimental, so-called "hard" sciences, to social sciences and the humanities) as well as in the time spent developing and using software\cite{prabhu_survey_2011}\cite{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists, efficiency for systems programming and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing features such as a reliable way to do floating-point arithmetic and a graphical user interface (GUI). Along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display contributed to MATLAB's popularity\cite{moler_history_2020}, features shared with RStudio, a GUI to the R programming language. Below, one can see how concise the plotting of a three-dimensional plane is in MATLAB, requiring only one call to \lstinline{mesh}:
+By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending beyond engineering and experimental, so-called "hard" sciences, to social sciences and the humanities) as well as in the time spent developing and using software\cite{prabhu_survey_2011}\cite{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists, efficiency for systems programming and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing features such as a reliable way to do floating-point arithmetic and a graphical user interface (GUI). Along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display contributed to MATLAB's popularity\cite{moler_history_2020}, features shared with RStudio, a GUI to the R programming language. In \ref{mesh.m}, one can see how concise the plotting of a three-dimensional plane is in MATLAB, requiring only one call to \lstinline{mesh}.
 
-%TODO add the legend that links to the image below
-\begin{lstlisting}
+\begin{lstlisting}[caption={mesh.m}, label={mesh.m}, float, floatplacement=H]
   X = (-3:1/8:3)*ones(49,1);
   Y = X';
   Z = 3*(1-X).^2.*exp(-(X.^2) - (Y+1).^2) \
@@ -637,7 +637,7 @@ When written within an academic and scientific context, we can see how source co
 
 \pagebreak
 
-\subsection{Poets - 2000}
+\subsection{Poets}
 
 Source code poetry is a distinct subset of both electronic literature, and software art.  One the one hand, electronic literature is a broad field encompassing natural language texts taking full advantage of the dynamic feature of computing to redefine the concept of text, authorship and readership. It encompasses a variety of approaches, including generative literature, interactive fiction, visual poetry, source code poetry and esoteric programming languages, as well as certain aspects of software art. However, we focus here only on the elements of electronic literature which shift their focus from output to input, from executable binary with transformed natural language as a result, to static, latent source.
 
@@ -653,9 +653,9 @@ Within this reliance on creative constraints provided by a computing environment
 
 In their different manifestations, code poems make the boundary between computer meaning and human meaning thinner and thinner, a feature often afforded by the existence and use of higher-level programming languages. Starting with the development of FLOWMATIC in 1955 by Grace Hopper, it was shown that an English-like syntactical system could be used to communicate concepts for the computer to process. From there, programming languages could be described along a gradient, with binary at the lowest end, and natural language (in an overwheling majority, English) at the highest end. This implies that they could be written and read similarly to English, including word order, pronouncation and interpretation, similar to the error-tolerance of human laguages, which doesn't cause the whole communication process to fail whenever a specific word, or a word order isn't understood.
 
-The community of programmers writing in Perl\footnote{See: \emph{perlmonks}, \url{https://perlmonks.org/}, with the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive communities when it comes to code poetry. this use of Perl started in 1990, when the language creator Larry Wall shared some of the poems written in the language, and it gained further exposition through the work of Shannon Hopkins\cite{hopkins_camels_1992}. The first Perl poem is considered to have been written by Larry Wall, the creator of the language, in 1990:
+The community of programmers writing in Perl\footnote{See: \emph{perlmonks}, \url{https://perlmonks.org/}, with the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive communities when it comes to code poetry. this use of Perl started in 1990, when the language creator Larry Wall shared some of the poems written in the language, and it gained further exposition through the work of Shannon Hopkins\cite{hopkins_camels_1992}. The first Perl poem is considered to have been written by Larry Wall, the creator of the language, in 1990, reproduced in \ref{japh.pl}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={japh.pl}, label={japh.pl}, float, floatplacement=H]
   print STDOUT q
   Just another Perl hacker,
   unless $spring
@@ -707,13 +707,13 @@ What we see here are strands of similarity within apparent diversity. The code s
 
 \pagebreak
 
-\section{Ideals of beauty - 5000}
+\section{Ideals of beauty} %5000
 
 With this overview of the varieties of practices at play amongst those who read and write source code, we will analyze more thoroughly what are the aesthetic standards most value by those different groups. The aim here is to formalize our understanding of which source code is considered beautiful, and to do so at multiple levels. The goal here is to capture both the specific manifestations of beautiful code as specified and enunciated by programmers, as well as the semantic contexts from which these enunciations originate. What we will see is that, while a set of aesthetic values and a set of aesthetic manifestations can be pinpointed precisely, the domains that are mobilized to justify these values are clearly distinct. To do so, we will introduce the framework of discourse analysis, complemented by a a medium-specific reading through critical code studies and rhetorical code studies on one hand, and the work done by conceptual metaphors on the other.
 
-\subsection{Introduction to the Methodology - 1000}
+\subsection{Introduction to the Methodology} %1000
 
-Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This work builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, centered around what constitutes good source code. While discourse analysis is also used critically by unearthing which value judgments occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis\cite{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of the \emph{pragmatics}. This approach, based on H.P. Grice's conception of utterances being ultimately related to one another through communicative cooperation to ultimately reveal the intent of the speaker\cite{schiffrin_approaches_1994}. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader context—will ultimately lead us to examine the influence of  the production media (blog post, forums, conferences, text books), of the cultural background (software practices as outlined above as well as additional factors such as skill levels. Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of coreference\cite{kintsch_model_1978}.
+Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This work builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, centered around what constitutes good source code. While discourse analysis is also used critically by unearthing which value judgments occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis\cite{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of the \emph{pragmatics}. We find this approach particularly fitting through its implication of the \emph{cooperative principle}, in which utterances are ultimately related to one another through communicative cooperation to reveal the intent of the speaker\cite{schiffrin_approaches_1994}. Practically, this means that we assume the position of programmers talking to programmers is cooperative insofar as both speaker and listener want to achieve a similar goal: writing good code. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader context—will ultimately lead us to examine the influence of  the production media (blog post, forums, conferences, text books), of the cultural background (software practices as outlined above as well as additional factors such as skill levels. Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of co-reference\cite{kintsch_model_1978}.
 
 Particular attention will be paid to the difference between intentional and extensional meaning\cite{dijk_strategies_1983}. As we will see, some of the texts in our corpus tend to address a particular problem (e.g. on forums, social media or question \& answer platforms), or to discuss broader concepts around well-written code. Particularly, 
 
@@ -731,15 +731,13 @@ Finally, our intepretation of the macrostructures described by Kintsch and Van D
 
 Going beyond the role of metaphors manifested in expressions such as \emph{the desktop}, \emph{the mouse}, or \emph{the cloud}, we will explore Lakoff's understanding of the specifically poetic metaphor further below as preliminary work to assess the linguistic component of computing—source code. For now, we will pay close attention to what programmers are saying about (beautiful) source code, which metaphors they employ to support these value judgments, and why—focusing first on the metaphors \emph{of} source code, before moving, in the section, to the metaphors \emph{in} source code.
 
-% then do the stats (how many texts, from when to when, selection standards, where to find, etc.)
+% to do the stats (how many texts, from when to when, selection standards, where to find, etc.)
 
 The corpus studied here consists of texts ranging from textbooks and trade manuals to blog posts and online forum discussions. The rationale behind such a broad approach is to constitute a lexical basis that is not just empirical (i.e. taking into account what practicing programmers consider when assessing good code, expressed in the everyday interactions of online forums and blog posts), but also prescriptive. The inclusion of more authoritative sources, such as canonical textbooks or widely-read blog posts from technology investors will allow us to introduce a normative dimension to our research. As this section highlights, there are \emph{specific} ways to write good code, which are echoed both from bottom-up and from top-down perspectives.
 
 \subsection{Lexical Field in Programmer Discourse} % 3000
 
 % dope case study https://queue.acm.org/detail.cfm?id=1039535 also this http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
-
-% just talk about qualifiers, without putting too much emphasis on the positive/negative duality
 
 In terms of existing studies of the lexical field programmers use, Erik Pineiro has done significant work in his doctoral thesis. In it, he argues that aesthetics exist from a programmers perspective, decoupled from the final, executable form of the software. While this current study draws on his work, and confirms his findings, it also departs from it in several aspects. First, Pineiro focuses on a narrower corpus, that of the Slashdot.org\footnote{\url{https://slashdot.org}} forums\cite{pineiro_aesthetics_2003} (p. 51). Second, he examines aesthetic judgment from a private perspective of software engineers, separate from other possible aesthetic fields which might enter in dialogue with beautiful code\cite{pineiro_aesthetics_2003} (p.52). Finally, his discussion of aesthetics takes place in a broader context of business management and productivity,, while this current study situates itself within aesthetic philosphy, and its implications within how things are considered beautiful.
 
@@ -777,9 +775,78 @@ This balance between too much and too little is found in another dichotomy state
   We ascribe beauty to that which is simple; which has no superfluous parts; which exactly answers its end; which stands related to all things; which is the mean of many extremes.\cite{gibbons_beauty_2012}
 \end{quote}
 
-In another paper published by the ACM, programming's leading academic publisher, Kristiina Karvonen argues for simplicity not just as a design goal, as leveraged by human-computer interface designers, but as a term with a longer history within the tradition of aesthetic philosophy, especially the work of Johann Joachim Winckelmann\cite{karvonen_beauty_2000}. In particular, she stresses the difficulty "to create significant, that is beautiful works of art with simple means"\cite{karvonen_beauty_2000}. Here, her correlation between significance and beauty hints at the semantic role of simplicity, as a means to communicate ideas (i.e. \emph{signify}) to an audience.
+In another paper published by the ACM, Kristiina Karvonen argues for simplicity not just as a design goal, as leveraged by human-computer interface designers, but as a term with a longer history within the tradition of aesthetic philosophy, especially the work of Johann Joachim Winckelmann\cite{karvonen_beauty_2000}. In particular, she stresses the difficulty "to create significant, that is beautiful works of art with simple means"\cite{karvonen_beauty_2000}. Here, her correlation between significance and beauty hints at the semantic role of simplicity, as a means to communicate ideas (i.e. \emph{signify}) to an audience.
 
-A final remark on simplicity and programming regarding the communication of ideas is hinted at by Richard P. Gabriel in his use of the concept of \emph{compression} in both poetry and programming. In an interview with Janice J. Jeiss, he states:
+Precisely, simplicity is correlated with clarity (of meaning); if the former refers mainly to the syntactic component (fewer tokens), it enables the non-obfuscated framing of the ideas at play. One example is given by Dave Bush in a post titled  \emph{15 Ways to Write Beautiful Code}:
+
+\begin{lstlisting}
+  void SomeMethod(){
+    if(x != y){
+        //-- stuff
+    }
+}
+
+void SomeClearerMethod(){
+    if(x == y) return;
+    //-- do stuff
+}
+\end{lstlisting}
+
+Here, the strive for simplicity leads to removing the brackets, and flipping the boolean check in the if-statement to add a \lstinline{return}. Even though it is, strictly speaking, more chararcters than the brackets and newline (six characters compared to four), the program becomes clearer by separating the two branching cases inherent to the use of conditional logic, under the form of an if-statement. In the second version, it is made clear that, if a condition \emph{is}, the execution should stop, and any subsequent statement can entirely disregard the existence of the if-statement; in the first version, the condition that \emph{is not} is entangled with code that should be executed, since the existence of the if-statement has to be kept in mind until the closing bracket\cite{bush_15_2015}.
+
+As a corollary to clarity stands obfuscation. It is the act, either intentional or un-intentional, to complicate the understanding of what a program does by leading the reader astray through a combination of syntactic techniques. In its most widely applied sense, obfuscation is used for practical production purposes: reducing the size of code, and preventing the leak of proprietary information regarding how a system behaves. For instance, the JavaScript source code in \ref{before_minify} is obfuscated through a process called \emph{minification} into the source code in \ref{after_minify}
+
+\begin{lstlisting}[caption={home.js (before minification)}, label={before_minify}, float, floatplacement=H]
+ import { ref, onMounted, reactive } from 'vue';
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
+import { SyllabusType } from './js/types';
+
+const msg = ref("")
+const HOST = import.meta.env.DEV ? "http://localhost:3046" : ""
+const syllabi = new Array<SyllabusType>()
+
+let start = () => {
+    window.location.href = '/cartridge.html'
+}
+
+onMounted(() => {
+    fetch(`${HOST}/syllabi/`,
+        {
+            method: 'GET'
+        })
+        .then(res => {
+            return res.json()
+        })
+        .then(data => {
+            Object.assign(syllabi, JSON.parse(data))
+            console.log(syllabi);
+            if (syllabi.length == 0)
+                msg.value = "No syllabi :("
+            else
+                msg.value = `There are ${syllabi.length} syllabi.`
+
+        })
+        .catch(err => {
+            console.error(err)
+            msg.value = "Network error :|"
+        })
+})
+\end{lstlisting}
+
+\begin{lstlisting}[caption={home.js (after minification)}, label={after_minify}, float, floatplacement=H]
+  import{_ as p,f as m,r as v,g as f,o as l,c as n,a as c,h as e,t as r,b as u,i as b,u as _,F as y,H as g,e as w}from"./Header.js";const H={class:"container p-3"},N=e("h1",null,"Home",-1),k={class:"syllabi"},x=["href"],B={class:"cta"},F=m({setup(S){const s=v(""),d="http://localhost:3046",o=new Array;let h=()=>{window.location.href="/cartridge.html"};return f(()=>{fetch(`${d}/syllabi/`,{method:"GET"}).then(t=>t.json()).then(t=>{Object.assign(o,JSON.parse(t)),console.log(o),o.length==0?s.value="No syllabi :(":s.value=`There are ${o.length} syllabi.`}).catch(t=>{console.error(t),s.value="Network error :|"})}),(t,i)=>(l(),n(u,null,[c(g),e("main",H,[N,e("div",k,[e("div",null,r(s.value),1),e("ul",null,[(l(!0),n(u,null,b(_(o),a=>(l(),n("li",null,[e("div",null,[e("a",{href:"/syllabi/"+a.ID},r(a.title),9,x)]),e("div",null,r(a.description),1)]))),256))])]),e("div",B,[e("button",{id:"cta-upload",class:"btn btn-primary mb-4 cc-btn",onClick:i[0]||(i[0]=a=>_(h)())},"Upload yours!")])]),c(y)],64))}});var O=p(F,[["__file","/home/pierre/code/commonsyllabi/viewer/www/src/Home.vue"]]);w(O).mount("#app");
+\end{lstlisting}
+
+This process of obfuscation has very clear, quantitative assessment criterias, such as the size of the source code file and cryptographic complexity\cite{pellet-mary_co6gc_2020}. Nonetheless. obfuscation can also be valued as a positive aesthetic standard, of which the IOCCC is the most institutionalized guarantor, since 1984. These kinds of bofuscations, as Mateas and Montfort analyze, involve the playful exploration of the intertwinings of syntax and semantics, seeing how much one can bend the former without affecting the latter. These textual manipulations, they argue, possess an inherently literary quality:
+
+\begin{quote}
+  Obfuscation and weird languages invite us to join programming contexts to the literary contexts that must obviously be considered when evaluating literary code. They also suggest that coding can resist clarity and elegance to strive instead for complexity, can make the familiar unfamiliar, and can wrestle with the language in which it is written, just as much contemporary literature does.\cite{mateas_box_2005}
+\end{quote}
+
+An example of such literary connection is given by Noël Arnaud's work \emph{Poèmes Algol}\cite{arnaud_poemes_1968}, in which he uses the constructs of the language Algol 68 in order to evoke in the reader something different than what the program actually does (i.e. fail to execute anything meaningful). As such, obfuscation seems to be a literary value, as opposed to other domains, such as the mathematical or the architectural, where it is both considered exclusively negatively.
+
+Another insight on simplicity and programming regarding the communication of ideas is hinted at by Richard P. Gabriel in his use of the concept of \emph{compression} in both poetry and programming. In an interview with Janice J. Jeiss, he states:
 
 \begin{quote}
   I'm thinking about things like simplicity -- how easy is it going to be for someone to look at it later? How well is it fulfilling the overall design that I have in mind? How well does it fit into the architecture? If I were writing a very long poem with many parts, I would be thinking, "Okay, how does this piece fit in with the other pieces? How is it part of the bigger picture?". When coding, I'm doing similar things, and if you look at the source code of extremely talented programmers, there's beauty in it. There's a lot of attention to compression, using the underlying programming language in a way that's easy to penetrate. Yes, writing code and writing poetry are similar. \cite{jeiss_poetry_2002}
@@ -791,7 +858,7 @@ Simplicity in programming is presented here as akin to compression in poetry: in
   When it requires a lot of explanation like that, it's not "beautiful code," but "a clever hack."\cite{how_2013a}
 \end{quote}
 
-This answer by Mason Wheeler, posted on the software engineering \emph{Stack Exchange} forum, in response to the question "How can you explain "beautiful code" to a non-programmer?"\footnote{\url{https://softwareengineering.stackexchange.com/questions/65216/how-can-you-explain-beautiful-code-to-a-non-programmer}}, highlights simplicity's opposite, cleverness.
+This answer by Mason Wheeler, posted on the software engineering \emph{Stack Exchange} forum, in response to the question "How can you explain "beautiful code" to a non-programmer?"\cite{how_2013a}, highlights simplicity's opposite, cleverness.
 
 Cleverness is often found, and sometimes derided, in examples of  code written by hackers, since it unsettles the balance between precision and generality. Clever code would tend towards exploiting particularities of knowledge of the medium (the code) rather than the goal (the problem). Hillel Wayne presents this snippet of C code as an example of bad clever code:
 
@@ -818,63 +885,124 @@ Simplicity, then is the ability to provide code that fits the problem exactly: w
   Complex statements have a zen-like reverence for perfect simplicity of expression.\cite{mitchell_art_1987}
 \end{quote}
 
-This strive towards attaining an inverse relationship between the complexity of an idea and the means to express it evokes another related criteria for beautiful source code: elegance.
+We see here the idea of reaching a conceptual revelation through the reduction of complex styntactical assemblages. This strive towards attaining an inverse relationship between the complexity of an idea and the means to express it is contiguous to another related criteria for beautiful source code present in programmers' discourse: elegance.
 
-% perrin -> definitions by negations, brief, concise, etc.
+Chad Perrin, in his article \emph{ITLOG Import: Elegance}, approaches the concept as a negation of the gratuitous, a means to reduce as much as possible the syntactic footprint while keeping the conceptual footprint intact:
 
-% Macneil: "coding problems are about conceptualization, so beautiful code represents a remarkable conceptualization of the problem", and a beautiful execution. (programming really is just the craft of ideas). "for instance, when a problem can be reduced to an existing problem, it gives us an insight into the nature of the problem itself." (and elegance uses simple trucks to achieve difficult tasks). he concludes with `quicksort`. -> another concrete example of quicksort, with a hint at the craft of ideas
+\begin{quote}
+  In pursuing elegance, it is more important to be concise than merely brief. In a general sense, however, brevity of code does account for a decent quick and dirty measure of the potential elegance that can be eked out of a programming language, with length measured in number of distinct syntactic elements rather than the number of bytes of code: don't confuse the number of keystrokes in a variable assignment with the syntactic elements required to accomplish a variable assignment.\cite{perrin_itlog_2006}
+\end{quote}
 
-% "Elegance combines simplicity, efficiency, and brilliance, and produces a feeling of pride. Elegance is when you replace a procedure with a table, or realize that you can use recursion—which is almost always elegant" -> focus on a specific device in progrmaming for elegance
+He also hints at the additional meaningufness of elegance, as he compares it to other aesthetic properties, such as simplciity, complexity or symmetry. If simplicity inhabits a range between too specific and too general, he describes an elegant system as exactly appropriate for the task at hand. While he touches at length on the influence of progamming languages in the possibility to write elegant source code—a question to which we will come back in Chapter 4. Elegance, he says, relies on underlying principles, but is nonetheless subject to its manifestation through a particular, linguistic interface.
 
-% *'There is no such thing as elegance or subtlety in the way I use software.'* Belgrade-based sound artist Svetlana Maraš
+This underlying aspect is also present in Bruce McLennan's discussion of the concept. As he approaches it through the dual lens of structural engineering, this indicates that he also considers elegance as a more profound concept which can manifest itself across disciplines, both as a way of making, and as a way of thinking\cite{mclennan_who_1997}. He defines his \emph{Elegance Principle} as:
 
-% efatmaneshik, ryan - __elegance has both quantitative/practical and qualitative/abstract/romantic aspects__
+\begin{quote}
+  Confine your attention to designs that \emph{look} good because they \emph{are} good.\cite{mclennan_who_1997}
+\end{quote}
 
-% fuller -> as a summary
+Such a definition relies heavily on the sensual component of elegance: while an underlying property of, at least, human activities, it must nonetheless be manifested in some perceptible way. On \emph{Stackexchange}, user \emph{asoundmove} corroborates this conception of achieving a simple and clean system where any subsequent modification would lead to a decrease in quality:
 
-%  clear (such as PL, ref. Sethi of 'clarity' for PL, and also take this as an opportunity to investigate the difference between clean and clear, kernighan, graham self-explanatory, mitchell art of programming "be self-explanatory, familiar "complex statements have a zen-like reverence for perfect simplicity of expression", hunt calls it "hard" (does only one defined thing), green, sicp)
+\begin{quote}
+  However to me beautiful code must not only be necessary, sufficient and self-explanatory, but it must also subjectively feel perfect \& light.\cite{stack_}
+\end{quote}
 
-% clear
-\begin{lstlisting} from https://dzone.com/articles/15-ways-to-write-beautiful-code
-  void SomeMethod(){
-    if(x != y){
-        //-- stuff
-    }
-}
+Once again connecting simplicity (under the guise of necessity and sufficiency), the perception of elegance is also related to a subjective feeling of adequacy. Paul DiLascia, writing of the Microsoft Developer Network Magazine, illustrates his conception of elegance—as a combination of simplicity, efficiency and brilliance—with recursion\cite{dilascia_end_2019}:
 
-void SomeClearerMethod(){
-    if(x == y) return;
-
-    //-- do stuff
+\begin{lstlisting}
+int factorial(int n)
+{
+  return n==0 ? 1 : n * factorial(n-1);
 }
 \end{lstlisting}
 
-% add qualifiers from artists, hackers: e.g. mind-bending, etc.
+Recursion, or the technique of defining something in terms of itself, is a positively valued feature of programming\cite{abelson_structure_1979}. In so doing, it minimizes the number of elements at play and constrains the problem domain into a smaller set of moveable pieces. Another example, provided in the same \emph{Stackexchange} discussion is the \lstinline{quicksort} algorithm, which can be implemented recursively or iteratively, with the former being significanly shorter:
 
-Negative words (1000)
+\begin{lstlisting}
+  // https://stackoverflow.com/a/12553314/4665412
+  public static void recursiveQsort(int[] arr,Integer start, Integer end) { 
+    if (end - start < 2) return; //stop clause
+    int p = start + ((end-start)/2);
+    p = partition(arr,p,start,end);
+    recursiveQsort(arr, start, p);
+    recursiveQsort(arr, p+1, end);
+}
 
-\begin{itemize}
-    \item smelly
-    \item entangled, spaghetti, interdependency (chandra)
-    \item spaghetti
-    \item bug
-    \item verbose
-\end{itemize}
+public static void iterativeQsort(int[] arr) { 
+    Stack<Integer> stack = new Stack<Integer>();
+    stack.push(0);
+    stack.push(arr.length);
+    while (!stack.isEmpty()) {
+        int end = stack.pop();
+        int start = stack.pop();
+        if (end - start < 2) continue;
+        int p = start + ((end-start)/2);
+        p = partition(arr,p,start,end);
 
-these are interesting because they evoke matter, rather than concept/ideal/platonic
+        stack.push(p+1);
+        stack.push(end);
 
-- minimalism
-	- https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
-- simplicity
-	- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+        stack.push(start);
+        stack.push(p);
+    }
+}
+\end{lstlisting}
 
-  % and then we can look at specifically this one to highlight all the different analogies: https://softwareengineering.stackexchange.com/questions/65216/how-can-you-explain-beautiful-code-to-a-non-programmer
-
+To conclude this brief survey on how programmers perceive elegance in source code, we can follow Mahmoud Efatmaneshik and Michael J. Ryan who, in the IEEE Systems journal, offer a defintion of elegance which relies both on a romantic perception—including subjective perception, "gracefulness", "appropriateness" and "usability"—and practical assessment with terms such as "simple", "neat", "parsimonious" or "efficient"\cite{efatmaneshnik_definitions_2019}. In doing so, they ground source code aesthetics as a resolutely dualistic norm, between subjectivity and objectivity, qualitative and quantitative\footnote{A duality we will investigate further through the prism of human and machine understanding in section XXX}.
 
   % add a section from the RESET journal on style, simmel etc, touching on the tension between personal and collective styles, and that ties back to the development
 
-  % conclusion: it is very coherent, people know what they're talking about, it's a thing. what kind of thing it is, then, depends on what kind of register we're mobilizing.
+And yet, rather than subjectivity and objectivity being opposites, one could also consider them as contingent. Due to the interchangeability in the use of the some of the terms we've seen by programmers, both qualitative—in terms of the language used—and quantitative—in terms of the syntax/semantics ration—assessments of source seem to be complementary in considering it elegant.
 
+\vspace*{1\baselineskip}
+
+Another way to understand what programmers mean when they talk about beautiful code is to look beyond the positive terms used to qualify it (clarity, simplicity, elegance, etc.), and shift our attention to how other terms are used negatively. We have already touched up qualifiers such as clever, or obfuscated, which have ambiguous statuses depending on the community that they're being used in—specifically hackers and literary artists.
+
+One of those hints comes from satirical accounts of how to write bad code. For instance, Green's post on \emph{ How To Write Unmaintainable Code} suggests new kinds of obfuscation, such as double-naming in \ref*{green_unmaintainable} or semantic interactions in \ref*{green_unmaintainable_2}. The core ideas there is to create as much friction to understanding as possible, by making it "as hard as possible for [the reader] to find the code he is looking for" and "as awkward as possible for [the reader] to safely ignore anything."\cite{green_how_2006}.
+
+\begin{lstlisting}[caption="Choose variable names that masquerade as mathematical operators", label=green_unmaintainable]
+  openParen = (slash + asterix) / equals; 
+\end{lstlisting}
+
+\begin{lstlisting}[caption="Code That Masquerades As Comments and Vice Versa", label=green_unmaintainable_2]
+for(j=0; j<array_len; j+ =8)
+{
+  total += array[j+0 ];
+  total += array[j+1 ];
+  total += array[j+2 ]; /* Main body of
+  total += array[j+3]; * loop is unrolled
+  total += array[j+4]; * for greater speed.
+  total += array[j+5]; */
+  total += array[j+6 ];
+  total += array[j+7 ];
+} 
+\end{lstlisting}
+
+Here, we see best how carefully chosen aesthetics, under the values of simplicity, clarity, cleanliness and elegance help first and foremost to alleviate human cognitive friction and facilitate understanding of what the program is doing. The opposite amounts to playing misleading tricks.
+
+Finally, programmers have another way to refer to code that does not meet aesthetic criteria, which is also relates primarily to a non-cognitive aspect of source code, by refferring to material properties.
+
+\emph{Spaghetti code} refers to a proerpty of source code where the syntax is written in such a way that the order of reading and understanding is akin to disentangling a plate of spaghetti pasta. While still linear in execution, this linearity loses its cognitive benefits due to its extreme convolution. Rather than using a synonym such as \emph{convoluted}, the image evoked by spaghetti is particularly vivid on a sensual level, as a slimy, vaguely structured mass, even if the actual processes at play remain eminently formal\cite{steele_macaroni_1977}. Such a material metaphor can also be in Foote and Yoder's description of code as a "big ball of mud":
+
+\begin{quote}
+  A Big Ball of Mud is a haphazardly structured, sprawling, sloppy, duct-tape-and-baling-wire, spaghetti-code jungle. These systems show unmistakable signs of unregulated growth, and repeated, expedient repair. Information is shared promiscuously among distant elements of the system, often to the point where nearly all the important information becomes global or duplicated.\cite{foote_big_1997}
+\end{quote}
+
+  A broader approach to these sensual perceptions of code involve the reference to \emph{code smells}. These smells are described by Martin Fowler as "surface indications that usually corresponds to a deeper problem in the system"\cite{fowler_refactoring_1999}. They are aspects of source code which, by their syntax, might indicate deeper semantic problems, without being actual bugs. The name code smell evokes the fact that their recognition happens through intuition and experience of the programmer reading the code, rather than through careful empirical analysis, even though more recent computer science research has also focused on developing such techniques\cite{rasool_review_2015}, even though their practical usefulness is still debated\cite{santos_systematic_2018}. This rather points to a practice-based value system to evaluate the quality of source code, rather than to an evidence-based system, itself circling back to the qualificiations of elegance discussed above, which can be evaluated both as quantitative metric and as qualitative one.
+
+  \vspace*{1\baselineskip}
+
+  % conclusion
+
+  % the analysis of both textbooks and blog posts have updated pineiro. t is very coherent, people know what they're talking about, it's a thing. 
+
+  % the ideals are pairs: clean, simple, elegant, with sometimes ambiguous feelings towards the opposites (obfuscation, cleverness)
+
+  % there is a clear (no pun intended) aim for conceptual and cognitive help
+
+  % but looking at the opposite terms also point at a more material approach: is it just from a metaphorical point of view the opposite of cognitive goodness, or is it something more?
+
+  % to elucidate that, we can look at specifically this one to highlight all the different analogies: https://softwareengineering.stackexchange.com/questions/65216/how-can-you-explain-beautiful-code-to-a-non-programmer
 
 \pagebreak
 
@@ -930,17 +1058,30 @@ The poem \emph{Black Perl}, submitted anonymously, is a representative example o
 
 The most obvious feature of this code poem is that it can be read by anyone, including by readers with no previous programming experience: each word is valid both as English and as Perl. A second feature is the abundant use of verbs. Perl belongs to a family of programming languages grouped under the \emph{imperative} paradigm, which matches a grammatical mood of natural languages, the \emph{imperative mood}. Such mood emphasizes actions to be take rather than, for instance, descriptions of situations, and thus sets a clear tone for the poem. The fact that Perl is based on stating procedures to be executed and states to be changed creates this feeling of relentless urgency when reading through the poem, a constant need to be taking actions, for things to be changed. Here, the native constraints of the programming language interacts directly with the poetic suggestion of the work in a first way: the nature of Perl is that of giving orders, resulting in a poem which addresses \emph{someone} to execute \emph{something}. Still, Perl's flexibility leaves us wondering as to who and what are concerned by these orders. Is the poem directing its words to itself? To the reader? Is Perl just ever talking exclusively to the computer? This ambiguity of the adressee adds to the ominousness of each verse.
 
+- minimalism
+	- https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
+
 \subsection{Mathematical beauty}
 
 Mostly elegance, could be a good place to work on the distinction between proof and theorem, concept and appearance.
 
 the program is perfect in the mind, and mistakes come when translation occurs into chunks/statements (kinda like a mathematical work: the theorem is there first, and the proof comes laboriously second cf. **"Mathematical Invention", Poincaré, 1914"** --> **"The Art of Creation", Arthur Koesler, 1960**)
 
-% mclennan talking about elegance has a nice transition as it allows for the development of two parallels: elegance in engineering and elegance in mathematics.
+% fuller on elegance
+
+- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+
+% mclennan talking about elegance has a nice transition as it allows for the development of two parallels: elegance in engineering and elegance in mathematics, and also craft: https://www.sciencedirect.com/science/article/pii/B9780444516671500422
 
 \subsection{Architectural beauty}
 
 This allows a segue into everyday aesthetics and environmental aesthetics
+
+% habitability: " It should feel comfortable and safe, like a well-designed home or office; in this way it can contribute to the quality of the activities that take place within it. Would you work better in an oriental garden or a sweatshop? " https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html
+
+Completing his definition of elegance, McLennan touches upon the way to assess elegance through visual means in another publication on the more general need for aesthetics\footnote{Along with elegance, he includes efficiency and economy as the core aesthetic values of technological activities.}. The ability to distinguish an elegant system from an ugly one, then, comes through \emph{practice}, the implications of which we will examine in the last section of this chapter\cite{schummer_aesthetic_2009}.
+
+%continue with the big ball of mud architectural metaphors https://en.wikipedia.org/wiki/Big_ball_of_mud
 
 \pagebreak
 
@@ -954,6 +1095,8 @@ Paul Graham, LISP programmer, co-founder of the Y Combinator startup accelerator
 \end{quote}
 
 % Hunt, hard and soft
+
+% craft also brings in an ethical dimension to beauty, which i think is a point that might have been overlooked in other disciplines (lit, media, etc.)
 
 the ethical aspect of writing beautiful code: well-written, good code is value aesthetically and morally
 
