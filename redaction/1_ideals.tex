@@ -69,9 +69,10 @@ What does this look like in practice, then? Ideals of clarity, reusability and r
 
 The first excerpts come from the source code for Microsoft Windows 2000, which was made public in 2004. The program text contains  28,655 files, the largest of our  corpus, by multiple orders of magnitude, with 13,468,327 combined lines and including more than 10 different file extensions. Taking a closer look at some of these files allow us to identify some of the specific features of code written by software developers, and how they specifically relate to architectural choices, collaborative writing and verbosity.
 
-First, the most striking visual feature of the code is its sheer size. Representing such a versatile and low-level system such as an operating system manifest themselves in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated. For instance, the initialization of strings of text for the namespaces (a technique directly related to the compartmentalization) is necessary, repetitive work which can be represented using a rhythmic visual pattern, such as in \lstinline{cmdatini.c}:
+First, the most striking visual feature of the code is its sheer size. Representing such a versatile and low-level system such as an operating system manifest themselves in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated. For instance, the initialization of strings of text for the namespaces (a technique directly related to the compartmentalization) is necessary, repetitive work which can be represented using a rhythmic visual pattern, such as in the \lstinline{cmdatini.c} source file, reproduced partially in \ref{code:ms2000}.
 
-\begin{lstlisting}[language=C, basicstyle=\tiny]
+\begin{listing}
+\begin{minted}[fontsize=\footnotesize, breaklines, breakanywhere]{c}
   {
     ULONG i;
 
@@ -173,32 +174,36 @@ First, the most striking visual feature of the code is its sheer size. Represent
 
     return;
 }
-\end{lstlisting}
+\end{minted}
+\caption{Unicode string initialization in Microsoft 2000 operating system}
+\label{code:ms2000}
+\end{listing}
 
 The repetition of the \lstinline{RtlInitUnicodeString} call in the first part of this listing stands at odds with today's industry-standard practices of not repeating oneself; these would rather point towards the second part of the code, the two \lstinline{for()} statements. While this practice would only be formalized in Andy Hunt's \emph{The Pragmatic Programmer} in 1999\cite{hunt_pragmatic_1999}, the longevity of the windows 2000 operating system and its update cycle would nonetheless have affected how this code is written. The reason why such a repetition applies is the requirement of registering each string with the kernel. Dealing with a different problem domain (kernel instructions) leads to a different kind of expected aesthetics\footnote{Effectively, references to \lstinline{RtlInitUnicodeString()} happen 1580 times across 336 files}.
 
 Verbosity, the act of explicitly writing out statements which could be functionally equivalent in a compacted form,  is a significant feature of the Windows 2000 codebase, and also relies on a particular semantic environment: that of using the C programming language. As mentioned above, the development of C and UNIX in the 1970s have led to wide adoption of the former, and to some extent of the later (even though Windows is a notable exception since it is an operation system not based on the UNIX tradition). What we see in this listing is the consequence of this development: using a verbose language inevitably leads to a verbose program text, something we will see in the following section on hacker's code and will explore much further in chapter 5.
 
-Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomatic_2020}. For instance, the excerpt in \ref{buffer.c} from \lstinline{jdhuff.c} is a example of such overlapping of styles:
+Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization leads to the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed}\cite{waldron_idiomatic_2020}. For instance, the excerpt in \ref{code:buffer_c} from \lstinline{jdhuff.c} is a example of such overlapping of styles:
 
-\begin{lstlisting}[caption={buffer.c}, label=buffer.c, float, floatplacement=H]
+\begin{listing}
+\begin{minted}[fontsize=\footnotesize]{c}
   no_more_data:
-		  // There should be enough bits still left in the data segment; 
-		  // if so, just break out of the outer while loop. 
-		  if (bits_left >= nbits)
-			  break;
-			/* Uh-oh.  Report corrupted data to user and stuff zeroes into
-			 * the data stream, so that we can produce some kind of image.
-			 * Note that this code will be repeated for each byte demanded
-			 * for the rest of the segment.  We use a nonvolatile flag to ensure
-			 * that only one warning message appears.
-			 */
-		  if (! *(state->printed_eod_ptr)) 
-		  {
-			  WARNMS(state->cinfo, JWRN_HIT_MARKER);
-			  *(state->printed_eod_ptr) = TRUE;
-		  }
-		  c = 0;			// insert a zero byte into bit buffer 
+    // There should be enough bits still left in the data segment; 
+    // if so, just break out of the outer while loop. 
+    if (bits_left >= nbits)
+      break;
+      /* Uh-oh.  Report corrupted data to user and stuff zeroes into
+      * the data stream, so that we can produce some kind of image.
+      * Note that this code will be repeated for each byte demanded
+      * for the rest of the segment.  We use a nonvolatile flag to ensure
+      * that only one warning message appears.
+      */
+      if (! *(state->printed_eod_ptr)) 
+      {
+        WARNMS(state->cinfo, JWRN_HIT_MARKER);
+        *(state->printed_eod_ptr) = TRUE;
+      }
+      c = 0;			// insert a zero byte into bit buffer 
       }
     }
 
@@ -215,13 +220,17 @@ Another significant aesthetic feature of the Windows 2000 program text is its us
 
   return TRUE;
 }
-\end{lstlisting}
+\end{minted}
+\caption{Programming styles overlapping in the source code of Microsoft 2000.}
+\label{code:buffer_c}
+\end{listing}
 
 Here, we see three different writings of comments \lstinline{//}, \lstinline{/* */} as well as  different kinds of capitalizations. Those comments are ignored at compile time: that is, they are not meaningful to the machine, and are only expected to be read by other programmers, primarily programmers belonging to one's organization. This hints at the various origins of the authors, or at the very least at the different moments, and possible mental states of the potential single-author: irregularity in comment writing can connect to irregularities in semantic content of the comments. This irregularity becomes suspicious, and leads to ascribing a different epistemological value to them. If comments aren't procedurally guaranteed to be reflected in the execution, and outcome, of the program, then one tend to rely on the fact that \textquote[\cite{goodliffe_code_2007}]{The only document that describes your code completely and correctly is the code itself}. This excerpt highlights the constant tension between source code as the canonical origin of knowledge of what the program does and how it does it, while comments refelect the idiosyncratic dimension of all natural-language expressions of human programmers.
 
-And yet, this chronological and interpersonal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text. For instance,  in \lstinline{pnpenum.c}:
+And yet, this chronological and interpersonal spread of the program text, as well as organizational practices require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text (see \ref{code:enum_c}).
 
-\begin{lstlisting}[caption={enum.c}, label={enum.c}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{c}
   /*++
 
 Copyright (c) 1996 Microsoft Corporation
@@ -244,7 +253,11 @@ Revision History:
     Added IopProcessCriticalDeviceRoutine.
 
 --*/
-\end{lstlisting}
+\end{minted} 
+\caption{pnpenum.c}
+\label{code:enum_c}
+\end{listing}
+
 
 This highlights both the multiple authorship (here, we have one original author and one revisor) as well as the evolution in time of the file: comments are the only manifestation of this layering of revisions which ultimately results in the "final" software\footnote{The term "final" is in quotes, since the Windows 2000 source contains the mention \lstinline{BUGBUG} 7436 times across 2263 files, a testatment to the constant state of unfinishedness that some software might remain in.}.
 
@@ -253,9 +266,10 @@ A complementary example is the Kirby CMS\footnote{Allgeier, Bastian et. al., htt
 The Kirby source code is entirely available online, and the following snippets hint at another set of formal values—conciseness, expliciteness and delimitation. Conciseness can be seen in the lengths of the various components of the code base. For instance, the core of Kirby consists in 248 files, with the longest being \lstinline{src/Database/Query.php} at 1065 lines, and the shortest being \lstinline{src/Http/Exceptions/NextRouteException.php}, for an average of 250 lines per file. At the third level, the length of the function bodies is also minimal, ranging from XXXX to XXXX\emph{calculate}. Compared to the leading project in the field, Wordpress.org, which has respectively XXXX \emph{insert analysis here}.
 %todo
 
-If we look at a typical function declaration within Kirby, we found one such as the distinct setter for Kirby's database:
+If we look at a typical function declaration within Kirby, we found one such as the \mint{php}{distinct} setter for Kirby's database, reproduced in \ref{code:query_php}.
 
-\begin{lstlisting}[caption={Query.php}, label={query.php}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{php}
   /**
   * Enables distinct select clauses.
   *
@@ -267,50 +281,57 @@ If we look at a typical function declaration within Kirby, we found one such as 
      $this->distinct = $distinct;
      return $this;
  }
-\end{lstlisting}
+\end{minted}
+\caption{Query.php}
+\label{code:query_php}
+\end{listing}
 
 Out of these 11 lines, the actual functionality of the function is focused on one line, \lstinline{$this->distinct = $distinct;}. Around it are machine-readable comment snippets, and a function wrapper around the simple variable setting. The textual overhead then comes from the wrapping itself: the actual semantic task of deciding whether a query should be able to include distinct select clauses (as opposed to only allowing join clauses), is now decoupled from its actual implementation (one could describe to the computer such an ability to generate distinct clauses by assigning it a boolean value, or an integer value, or passing it as an argument for each query, etc.). The quality of this writing, at first verbose, actually lies in its conciseness in relation to the possibilities for extension that such a form of writing allows: the \lstinline{distinct()} function could, under other circumstances, be implemented differently, and still behave similarly from the perspective of the rest of the program. Additionally, this wrapping enables the setting of default values (here, \lstinline{true}), a minimal way to catch bugs by always providing a fallback case.
 
-Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, from the \lstinline{Http\\Route} class (\ref{route.php}).
+Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, from the \lstinline{Http\\Route} class (see \ref{code:route_php}).
 
-  \begin{lstlisting}[caption={Route.php}, label={route.php}, float, floatplacement=H]
-  /**
-  * Tries to match the path with the regular expression and
-  * extracts all arguments for the Route action
-  *
-  * @param string $pattern
-  * @param string $path
-  * @return array|false
-  */
- public function parse(string $pattern, string $path)
- {
-     // check for direct matches
-     if ($pattern === $path) {
-         return $this->arguments = [];
-     }
+\begin{listing}
+\begin{minted}{php}
+/**
+* Tries to match the path with the regular expression and
+* extracts all arguments for the Route action
+*
+* @param string $pattern
+* @param string $path
+* @return array|false
+*/
+public function parse(string $pattern, string $path)
+{
+    // check for direct matches
+    if ($pattern === $path) {
+        return $this->arguments = [];
+    }
 
-     // We only need to check routes with regular expression since all others
-     // would have been able to be matched by the search for literal matches
-     // we just did before we started searching.
-     if (strpos($pattern, '(') === false) {
-         return false;
-     }
+    // We only need to check routes with regular expression since all others
+    // would have been able to be matched by the search for literal matches
+    // we just did before we started searching.
+    if (strpos($pattern, '(') === false) {
+        return false;
+    }
 
-     // If we have a match we'll return all results
-     // from the preg without the full first match.
-     if (preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters)) {
-         return $this->arguments = array_slice($parameters, 1);
-     }
+    // If we have a match we'll return all results
+    // from the preg without the full first match.
+    if (preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters)) {
+        return $this->arguments = array_slice($parameters, 1);
+    }
 
-     return false;
- }
-\end{lstlisting}
+    return false;
+}
+\end{minted}
+\caption{Route.php}
+\label{code:route_php}
+\end{listing}
 
 The 9 lines above the function declaration are machine-readable documentation. It can be parsed by a programmatic system and used as input to generate more classical, human-readable documentation\footnote{See, for instance, JavaDocs, or ReadTheDocs}. This is noticeable due to the highly formalized syntax \lstinline{param string name_of_var}, rather than writing out "this function takes a parameter of type string named \lstinline{name_of_var}". This does compensate for the tendency of comments to drift out of synchronicity with the code that they are supposed to comment, by tying them back to some computational system to verify its semantic contents, while providing information about the inputs and outputs of the function.
 
 Beyond expliciting inputs and outputs, the second aspect of these comments is targeted at the \emph{how} of the function, helping the reader understand the rationale behind the programmatic process. Comments here aren't cautionary notes on specific edge-cases, as seen in fig. XX above, but rather natural language renderings of the overall rationale of the process. The implication here is to provide a broader, and more explicit understanding of the process of the function, in order to allow for further maintenance, extension or modification.
 
-Finally, let us look at a subset of the function, the clause of the third \lstinline{if statement}: \lstinline{(preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters))}. Without comments, one must realize on cognitive gymnastics and knowledge of the PHP syntax in order to render this as an extraction of all route parameters, implying the removal of the first element of the array. In this sense, then, Kirby's code for parsing an HTTP route is both verbose—in comments—and parsimonious—in code.
+Finally, let us look at a subset of the function, the clause of the third if-statement: \mint{php}{(preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters))}. Without comments, one must realize on cognitive gymnastics and knowledge of the PHP syntax in order to render this as an extraction of all route parameters, implying the removal of the first element of the array. In this sense, then, Kirby's code for parsing an HTTP route is both verbose—in comments—and parsimonious—in code.
 
 What these aesthetic features (small number of files, short file length, short function length) imply is an immediate feeling of \emph{building blocks}. Short, graspable, (re-)usable (conceptual) blocks are made available to the developer directly, as the Kirby ecosystem, like many other open-source projects, relies on contributions from individuals who are not expected to have any other encounter with the project other than, at the bare minimum, the source code itself.
 
@@ -358,11 +379,11 @@ If writing one-line programs is within the reach of any medium-skilled programme
   This may seem like a terrible waste of my effort, but one of the most satisfying moments of my career was when I realized that I had found a way to shave one word off an 11-word program that [Bill] Gosper had written. It was at the expense of a very small amount of execution time, measured in fractions of a machine cycle, but I actually found a way to shorten his code by 1 word and it had only taken me 20 years to do it\cite{seibel_coders_2009}.
 \end{quote}
 
-This sort of compulsive behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of characters—here, the equivalent of \emph{par} in golf would be Kolmogorov complexity\footnote{See: \url{https://en.wikipedia.org/wiki/Kolmogorov_complexity}}. So minimizing program length in relation to the problem complexity is a definite feature of one-liners, since choosing the right programming language for the right taks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power. Tasked with parsing a text file to find which lines had a numerical value greater than 6, Brian Kernighan writes the code in C\ref{select_lines}\footnote{From Succesful Language Design, Brian Kernighan at the University of Nottingham, \url{https://www.youtube.com/watch?v=Sg4U4r_AgJU}}:
+This sort of compulsive behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of characters—here, the equivalent of \emph{par} in golf would be Kolmogorov complexity\footnote{See: \url{https://en.wikipedia.org/wiki/Kolmogorov_complexity}}. So minimizing program length in relation to the problem complexity is a definite feature of one-liners, since choosing the right programming language for the right taks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power. Tasked with parsing a text file to find which lines had a numerical value greater than 6, Brian Kernighan writes the code in \ref{code:select_lines_c}\footnote{From Succesful Language Design, Brian Kernighan at the University of Nottingham, \url{https://www.youtube.com/watch?v=Sg4U4r_AgJU}}:
 
 \pagebreak
-
-\begin{lstlisting}[caption={select_lines.c}, label=select_lines, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{cpp} 
   #include <stdio.h>
   #include <strings.h>
 
@@ -383,19 +404,30 @@ This sort of compulsive behaviour is also manifested in the practice of \emph{co
 
     return 0
   }
-\end{lstlisting}
+\end{minted}
+\caption{Selecting lines from an input file in C}
+\label{code:select_lines_c}
+\end{listing}
 
-The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is see in \ref{select_lines.sh}
+The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is seen in \ref{code:select_lines_awk}
 
-\begin{lstlisting}[caption={select_lines.sh}, label={select_lines.sh}, float, floatplacement=H]
-  awk '$3 > 6' data.txt
-\end{lstlisting}
+\begin{listing}
+  \begin{minted}{bash}
+    awk '$3 > 6' data.txt
+  \end{minted}
+\caption{Selecting lines from an input file in AWK}    
+\label{code:select_lines_awk}
+\end{listing}
 
-The difference is obvious, not just in terms of formal clarity and cleanliness of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because more intuitive, and therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge in the specific language in which it is written. Here is Conway's game of life implemented in one line of APL\ref{gol.apl}.
+The difference is obvious, not just in terms of formal clarity and reduction of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because more intuitive, and therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge in the specific language in which it is written. Here is Conway's game of life implemented in one line of APL\ref{code:game_of_life}.
 
-\begin{verbatim}[caption={gol.apl}, label={gol.apl}, float, floatplacement=H]
-  life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +⌿ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}
-\end{verbatim}
+\begin{listing}
+\begin{minted}{apl}
+life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +⌿ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}
+\end{minted}
+\caption{Conway's Game of Life implemented in APL}
+\label{code:game_of_life}
+\end{listing}
 
 The obscurity of such a line—due to its highly-unusual character notation, and despite the pre-existing knowledge of the expected output—shows why one-liners are usually highly discouraged for any sort of code which needs to be \emph{worked on} by other programmers. Cleverness in programming indeed tends to be seen as a display of the relationship between the programmer and the machine, rather than between different programmers, and only tangentially about the machine. On the other hand, though, the nature of one-liners makes them highly portable and shareable, infusing them with what one could call \emph{social beauty}. Popular with early personal computer adopters, at a time during which the source code of programs were printed in hobbyist magazines and needed to be input by hand, and during which the potential of computation wasn't as widely distributed amongst society, being able to type just one line in, say, a BASIC interpreter, and resulting in unexpected graphical patterns created a sense of magic and wonder in first-time users—how can so little do so much?\footnote{For an example fo such one-liner, see for instance: \url{https://www.youtube.com/watch?v=0yKwJJw6Abs}}.
 
@@ -405,11 +437,12 @@ Another example of beautiful code written by hackers is the UNIX operating syste
     \textit{For a programmer, what is a comparable goal? What is the Chartres of programming? What task is at a high enough level to inspire people writing programs, to reach for the stars?}
 \end{quote}
 
-And UNIX might be one of the answers to that question, both by its functionality, and by its conciseness, if not alone by its availability. Another program which qualifies as beautiful hacker code, due both to its technical excellence, unusual solution and open-source availability is the function to compute the inverse square root of a number, a calculation that is particularly necessary in any kind of rendering application (which heavily involves vector arithmetic). It was found in the \emph{Quake} source code, listed in \ref{fast_sqrt.c} verbatim\footnote{The Quake developers aren't the authors of that function—the merit of which goes to Greg Walsh—but are very much the authors of the comments.}.
+And UNIX might be one of the answers to that question, both by its functionality, and by its conciseness, if not alone by its availability. Another program which qualifies as beautiful hacker code, due both to its technical excellence, unusual solution and open-source availability is the function to compute the inverse square root of a number, a calculation that is particularly necessary in any kind of rendering application (which heavily involves vector arithmetic). It was found in the \emph{Quake} source code, listed in \ref{code:fast_sqrt_c} verbatim\footnote{The Quake developers aren't the authors of that function—the merit of which goes to Greg Walsh—but are very much the authors of the comments.}.
 
 \pagebreak
 
-\begin{lstlisting}[caption={fast_sqrt.c}, label={fast_sqrt.c}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{c}
   float Q_rsqrt( float number )
   {
       long i;
@@ -427,7 +460,10 @@ And UNIX might be one of the answers to that question, both by its functionality
 
       return y;
   }
-\end{lstlisting}
+\end{minted}
+\caption{Inverse fast square root}
+\label{code:fast_sqrt_c}
+\end{listing}
 
 What we see here is indeed a combination of the understanding of the problem domain (what's the acceptable result I need to maintain a high-framerate with complex graphics), and how the specific knowledge of computers (i.e. bit-shifting of a float cast as an integer) and the snappiness and wonder of the the comments\footnote{\emph{what the fuck?} indeed}. The use of \lstinline{0x5f3759df} is what programmers call a \emph{magic number}, a literal value whose role in the code isn't made clearer by a descriptive variable name. Usually bad practice and highly-discouraged, the magic number here is exactly that: it does makes the magic happen.
 
@@ -449,24 +485,28 @@ This showing off, however, does not happen through immediate engagement with the
 
 Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video\cite{akesson_mind_2017} on the Commodore 64. It is firsted listed as a hexademical dump by its author (see \ref{a_mind_is_born.hex})
 
-\begin{lstlisting}[caption={A Mind is Born}, label={a_mind_is_born.hex}, float, floatplacement=H]
-  0000000 0801 080d d3ff 329e 3232 0035 0000 4119
-  0000010 d01c dc00 0000 d011 0be0 3310 610e f590
-  0000020 0007 1fff 4114 24d5 2515 5315 6115 29d5
-  0000030 0f1b 13e6 13e6 02d0 20e6 61a9 1c85 20a7
-  0000040 3fe0 08f0 0c90 114e 6cd0 fffc 6da0 2284
-  0000050 d784 4b4a a81c 13a5 3029 02d0 1cc6 2fe0
-  0000060 11f0 02b0 02a2 10c9 09f0 298a aa03 f3b5
-  0000070 0a85 ab2d b000 b711 b622 9521 a500 4b13
-  0000080 aa0e f8cb cc86 0749 0b85 13a5 0f29 0fd0
-  0000090 b8a9 1447 0290 1485 0729 b5aa 85f7 a012
-  00000a0 b708 910d 880f f910 b7a8 9109 8803 f9d0
-  00000b0 7e4c 78ea 868e 8e02 d021 4420 a2e5 bdfd
-  00000c0 0802 0295 d0ca 8ef8 0315 cc4c a900 8d50
-  00000d0 d011 ad58 dc04 c3a0 1c0d 48d4 044b 30a0
-  00000e0 188c 71d0 e6cb 71cb 6acb 2005 58a0 d505
-  00000f0 cb91 dfd0 aa2b 6202 1800 2026 2412 1013
-\end{lstlisting}
+\begin{listing}
+\begin{minted}{hexdump}
+0000000 0801 080d d3ff 329e 3232 0035 0000 4119
+0000010 d01c dc00 0000 d011 0be0 3310 610e f590
+0000020 0007 1fff 4114 24d5 2515 5315 6115 29d5
+0000030 0f1b 13e6 13e6 02d0 20e6 61a9 1c85 20a7
+0000040 3fe0 08f0 0c90 114e 6cd0 fffc 6da0 2284
+0000050 d784 4b4a a81c 13a5 3029 02d0 1cc6 2fe0
+0000060 11f0 02b0 02a2 10c9 09f0 298a aa03 f3b5
+0000070 0a85 ab2d b000 b711 b622 9521 a500 4b13
+0000080 aa0e f8cb cc86 0749 0b85 13a5 0f29 0fd0
+0000090 b8a9 1447 0290 1485 0729 b5aa 85f7 a012
+00000a0 b708 910d 880f f910 b7a8 9109 8803 f9d0
+00000b0 7e4c 78ea 868e 8e02 d021 4420 a2e5 bdfd
+00000c0 0802 0295 d0ca 8ef8 0315 cc4c a900 8d50
+00000d0 d011 ad58 dc04 c3a0 1c0d 48d4 044b 30a0
+00000e0 188c 71d0 e6cb 71cb 6acb 2005 58a0 d505
+00000f0 cb91 dfd0 aa2b 6202 1800 2026 2412 1013
+\end{minted}
+\caption{A Mind is born}
+\label{code:a_mind_is_born.hex}
+\end{listing}
 
 Even with knowledge of how hexadecimal instructions map to the instruction set of the specific chip of of the Commodore 64 (in this case, the SID 8580), the practical use of these instructions takes productive advantage of ambivalence and side-effects. In the words of the author, Linus Akesson (emphasis mine):
 
@@ -498,20 +538,25 @@ Scientific computing, defined as the use of computation in order to solve non-co
   The fundamental behavior of fluids has traditionally been studied in tanks and wind tunnels. The capacities of the modern computer make it possible to do subtler experiments on the computer alone.\cite{harlow_computer_1965}
 \end{quote}
 
-In general, then, computation and computers are perceived as promising automated aids in processing data at a much faster rates than human scientists\cite{licklider_mancomputer_1960}. The remaining issue, then, is to make computers more accessible to scientists which did not have direct exposure to computers. Beyond the unaffordable price point of university mainframes before the personal computer revolution, another vector for simplification and accessibility is the development of adequate programming languages\footnote{See Chapter 4 for a more complete discussion on programming languages.}. Developed in 1964 at Dartmouth College, \lstinline{BASIC} (Beginners' All-purpose Symbolic Instruction Code) aims at addressing this hurdle by designing "\emph{the world's first user-friendly programming language}"\footnote{\url{https://web.archive.org/web/20190611180750/https://granitegeek.concordmonitor.com/2019/06/11/finally-a-historical-marker-that-talks-about-something-important/}}. The intent is to provide non-computer scientists with easy means to instruct the computer on how to instruct the computer to perform computations relevant to their work. Still, computing in the academia will only pick up with the distribution of the multiple versions of the UNIX timesharing system, which allowed multiple users to use a given machine at the same time, and the performance boost provided by the C programming language in the late 1970s.
+In general, then, computation and computers are perceived as promising automated aids in processing data at a much faster rates than human scientists\cite{licklider_mancomputer_1960}. The remaining issue, then, is to make computers more accessible to scientists which did not have direct exposure to computers. Beyond the unaffordable price point of university mainframes before the personal computer revolution, another vector for simplification and accessibility is the development of adequate programming languages\footnote{See Chapter 4 for a more complete discussion on programming languages.}. Developed in 1964 at Dartmouth College, \lstinline{BASIC} (Beginners' All-purpose Symbolic Instruction Code) aims at addressing this hurdle by designing "\emph{the world's first user-friendly programming language}"\cite{brooks_finally_2019}. The intent is to provide non-computer scientists with easy means to instruct the computer on how to instruct the computer to perform computations relevant to their work. Still, computing in the academia will only pick up with the distribution of the multiple versions of the UNIX timesharing system, which allowed multiple users to use a given machine at the same time, and the performance boost provided by the C programming language in the late 1970s.
 
-By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending beyond engineering and experimental, so-called "hard" sciences, to social sciences and the humanities) as well as in the time spent developing and using software\cite{prabhu_survey_2011}\cite{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists, efficiency for systems programming and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing features such as a reliable way to do floating-point arithmetic and a graphical user interface (GUI). Along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display contributed to MATLAB's popularity\cite{moler_history_2020}, features shared with RStudio, a GUI to the R programming language. In \ref{mesh.m}, one can see how concise the plotting of a three-dimensional plane is in MATLAB, requiring only one call to \lstinline{mesh}.
+By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending beyond engineering and experimental, so-called "hard" sciences, to social sciences and the humanities) as well as in the time spent developing and using software\cite{prabhu_survey_2011}\cite{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists, efficiency for systems programming and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing features such as a reliable way to do floating-point arithmetic and a graphical user interface (GUI). Along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display contributed to MATLAB's popularity\cite{moler_history_2020}, features shared with RStudio, a GUI to the R programming language. In \ref{code:mesh_m}, one can see how concise the plotting of a three-dimensional plane is in MATLAB, requiring only one call to \lstinline{mesh}.
 
-\begin{lstlisting}[caption={mesh.m}, label={mesh.m}, float, floatplacement=H]
+\begin{listing}
+  
+\begin{minted}{matlab}
   X = (-3:1/8:3)*ones(49,1);
   Y = X';
   Z = 3*(1-X).^2.*exp(-(X.^2) - (Y+1).^2) \
   - 10*(X/5 - X.^3 - Y.^5).*exp(-X.^2-Y.^2) \
   - 1/3*exp(-(X+1).^2 - Y.^2);
   mesh(X,Y,Z)
-\end{lstlisting}
+\end{minted}
+\caption{Mesh.m}
+\label{code:mesh_m}
+\end{listing}
 
-\includegraphics{matlab}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{matlab}
 
 In parallel to MATLAB and R, Python represents the advent of the so-called scripting languages. Scripting languages are programming  languages which offer readability and versatility, along with decoupling from the actual operating system that it is being executed on. System languages, such as C, are designed and used in order to interact directly with the computer hardware, and to constitute data structures from the ground up\cite{ousterhout_scripting_1998}. On the other hand, scripting languages were designed and used in order to connect existing software systems or data sources together, most notably in the early days of shell scripting (such as \lstinline{Bash}, \lstinline{sed} or \lstinline{awk}). Starting with the late 1990s, and the appearance of languages such as Perl\footnote{First version developed in 1987 by Larry Wall} and Python\footnote{First official release in 1991 by Guido Van Rossum}, scripting languages became more widely used by non-programmers who already had data to work with and needed tools to exploit it. In the following decades, the development of additional scientific libraries such as \emph{SciKit}, \emph{NumPy} for mathematics and numerical work or \emph{NLTK} for language processing and social sciences in Python complemented the language's ease of use by providing manipulation of complex scientifc concepts\cite{millman_python_2011}, a phenomenon of user-extension which has also been observed in R and MATLAB's ecosystems\cite{moler_history_2020}.
 
@@ -533,39 +578,43 @@ We conclude here on a convergence of quality standards of broad academic softwar
 
 \subsubsection{Computation as an end}
 
-
 Computer scientists are scientists whose work focuses on computation as a means, rather than as a tool. As such, they study the phenomenon of computation, investigating its nature and effects through th development of a theoretical frameworks around it. Originally derived from computability theory, as a branch of formal mathematical logic, computation emerged as an autonomous field from work in mechanical design and configuration (Ada Lovelace and Charles Babbage),  work on circuit and language design (C. S. Pierce, Konrad Zuse and John Von Neumann), work on mathematical foundations (Alan Turing and Alonzo Church), information theory (Claude Shannon), systems theory (Norbert Wiener) and expert systems (John McCarthy and Marvin Minsky)\cite{ifrah_universal_2001}. In the middle of such a constellation ranging from mathematical theory to practical electronics, computer science establishes institutional grounding with the inauguration of the first dedicated academic deparment at Purdue University in 1962.
 
 From this multifaceted heritage and academic interdisciplinarity, computer scientists have established the some of the foundations of the field, identifying key areas such as data structures, algorithms and language design as the foundations of the discipline\cite{wirth_algorithms_1976}. Through the process, the tracing of the "roots" of computation remained a constant debate as to whether computer science exists within the realm of mathematics, of engineering or as a part of the natural sciences. The logico-mathematical model of computer science contends that one can do computer science without a computer, solely armed of a pen and a paper, while the engineering approach of computer science tends to put more practical matters, such as architecture, language design and systems programming at the core of the discipline; both being a way to generate and process information as natural phenomenon\cite{tedre_development_2006}.
 
-The broad difference we can see between these different conceptions of computer science is that of \emph{episteme} and \emph{techne}. On the theoretical and scientific side, computer science is concerned with the primacy of ideas, rather than of implementation. The quality of a given program is thus deduced from its formal (in the mathematical sense) properties, rather than its formal (in the aesthetic sense) properties. The first manifestations of such a theoretical focus can be found in the Information Processing Language (1956), which was designed and developed originally to prove Bertrand Russell's \emph{Principia Mathematica}. While the IPL, as one of the very first programming languages, influenced the development of multiple subsequent languages, not least of all being LISP, some later languages came to be known as logic programming languages, based on a formal logic syntax of facts, rules and clauses about a given domain and whose correctness can be easily proven (see \ref{prolog} below for an example of the \emph{Prolog} logic programming language).
+The broad difference we can see between these different conceptions of computer science is that of \emph{episteme} and \emph{techne}. On the theoretical and scientific side, computer science is concerned with the primacy of ideas, rather than of implementation. The quality of a given program is thus deduced from its formal (in the mathematical sense) properties, rather than its formal (in the aesthetic sense) properties. The first manifestations of such a theoretical focus can be found in the Information Processing Language (1956), which was designed and developed originally to prove Bertrand Russell's \emph{Principia Mathematica}. While the IPL, as one of the very first programming languages, influenced the development of multiple subsequent languages, not least of all being LISP, some later languages came to be known as logic programming languages, based on a formal logic syntax of facts, rules and clauses about a given domain and whose correctness can be easily proven (see \ref{code:prolog_sample} below for an example of the \emph{Prolog} logic programming language).
 
-\begin{lstlisting}[caption={Prolog sample source}, label={prolog}, float, floatplacement=H]
-  % induce(E,H) <- H is inductive explanation of E
+\begin{listing}
+\begin{minted}{prolog}
+% induce(E,H) <- H is inductive explanation of E
 induce(E,H):-induce(E,[],H).
 
 induce(true,H,H):-!.
 induce((A,B),H0,H):-!,
-	induce(A,H0,H1),
-	induce(B,H1,H).
+  induce(A,H0,H1),
+  induce(B,H1,H).
 induce(A,H0,H):-
-	/* not A=true, not A=(_,_) */
-	clause(A,B),
-	induce(B,H0,H).
+  /* not A=true, not A=(_,_) */
+  clause(A,B),
+  induce(B,H0,H).
 induce(A,H0,H):-
-	element((A:-B),H0),     % already assumed
-	induce(B,H0,H).         % proceed with body of rule
+  element((A:-B),H0),     % already assumed
+  induce(B,H0,H).         % proceed with body of rule
 induce(A,H0,[(A:-B)|H]):-       % A:-B can be added to H
-	inducible((A:-B)),      % if it's inducible, and
-	not element((A:-B),H0), % if it's not already there
-	induce(B,H0,H).         % proceed with body of rule
-\end{lstlisting}
+  inducible((A:-B)),      % if it's inducible, and
+  not element((A:-B),H0), % if it's not already there
+  induce(B,H0,H).         % proceed with body of rule
+\end{minted}
+\caption{Prolog sample source}
+\label{code:prolog_sample}
+\end{listing}
 
 Due to its Turing-completeness, one can write programs such as language processing, web applications, cryptography or database programming (using the \emph{Datalog} variant of \emph{Prolog}), but its use remains limited outside of theoretical circles in 2021\footnote{See the Stackoverflow Developer survey \url{https://insights.stackoverflow.com/survey/2021}}. Another programming language shares this feature of theoretical soundness faced with a limited range of actual use in production environments, Lisp—\emph{LISt Processor}—designed to process lists. It was developed in 1958, the year of the Dartmouth workshop, on Artificial Intelligence by its organizator, John McCarthy. Inheriting from IPL, it retained the core idea that programs should separate the knowledge of the problem (input data) and ways to solve it (internal rules), assuming  the rules are independent to a specific problem.
 
-The base structural elements of LISP are not symbols, but lists (of symbols, of lists, of nothing), and they themselves act as symbols (e.g. the empty list). By manipulating those lists recursively—that it, processing something in terms of itself—Lisp highlights  even further this tendency to separate itself from the problem domain, and to exhibit autotelic tendencies. This is facilitated by its atomistic and relational structure: in order to solve what it has do, it evaluates each symbol and traverses a tree-structure in order to find a terminal symbol. Building on these features, Willam Byrd, computer scientst at the University of Utah, describes the following lines of Scheme (a LISP dialect) as "the most beautiful program ever written"\cite{byrd_william_2017}, a Scheme interpreter written in Scheme (\ref{scheme}):
+The base structural elements of LISP are not symbols, but lists (of symbols, of lists, of nothing), and they themselves act as symbols (e.g. the empty list). By manipulating those lists recursively—that it, processing something in terms of itself—Lisp highlights  even further this tendency to separate itself from the problem domain, and to exhibit autotelic tendencies. This is facilitated by its atomistic and relational structure: in order to solve what it has do, it evaluates each symbol and traverses a tree-structure in order to find a terminal symbol. Building on these features, Willam Byrd, computer scientst at the University of Utah, describes the following lines of Scheme (a LISP dialect) as "the most beautiful program ever written"\cite{byrd_william_2017}, a Scheme interpreter written in Scheme (\ref{code:scheme_interpreter}):
 
-\begin{lstlisting}[caption={Scheme interpreter written in Scheme}, label={scheme}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{scheme}
   (define (eval-expr env)
   (lambda (expr env)
     pmatch expr
@@ -580,13 +629,17 @@ The base structural elements of LISP are not symbols, but lists (of symbols, of 
         [(,rator ,rand)
           ((eval-expr rator env)
             (eval-expr rand env))]))
-\end{lstlisting}
+\end{minted}
+\caption{Scheme interpreter written in Scheme}
+\label{code:scheme_interpreter}
+\end{listing}
 
 %include quote of nielsen: By making concrete what was formerly abstract, the code for our Lisp interpreter gives us a new way of understanding how Lisp works. https://michaelnielsen.org/ddi/lisp-as-the-maxwells-equations-of-software/
 
-The beauty of such a program, for Byrd, is the abilty of these fourteen lines to reveal powerful and complex ideas about the nature and process of computation. As an interpreter, this program can take any valid Scheme input and evaluate it correctly. It does so by showing and using ideas of recursion (with calls to \lstinline{eval-expr}), environment (with the evaluation of the \lstinline{body}) and lambda functions, as used throughout the program. Following Alan Kay, creator of the Smalltalk programming language, Byrd equates the feelings he experiences in witnessing and pondering the program above to those suggested by Maxwell's equations, which constitute the foundation of classical electromagnetism (\eqref{maxwell})\cite{kay_conversation_2004}. In both cases, then, the quality ascribed to those inscriptions come from the simplicity and conciseness of their base elements—making it easy to understand what the symbols mean and how we can compute relevant outputs—all the while implying complex consequences for both, respectively, computer science and electromagnetism.
+The beauty of such a program, for Byrd, is the abilty of these fourteen lines to reveal powerful and complex ideas about the nature and process of computation. As an interpreter, this program can take any valid Scheme input and evaluate it correctly. It does so by showing and using ideas of recursion (with calls to \lstinline{eval-expr}), environment (with the evaluation of the \lstinline{body}) and lambda functions, as used throughout the program. Following Alan Kay, creator of the Smalltalk programming language, Byrd equates the feelings he experiences in witnessing and pondering the program above to those suggested by Maxwell's equations, which constitute the foundation of classical electromagnetism (\eqref{eq:maxwell})\cite{kay_conversation_2004}. In both cases, then, the quality ascribed to those inscriptions come from the simplicity and conciseness of their base elements—making it easy to understand what the symbols mean and how we can compute relevant outputs—all the while implying complex consequences for both, respectively, computer science and electromagnetism.
 
-\begin{equation}\label{maxwell}
+\begin{equation}
+  \label{eq:maxwell}
   \begin{aligned}
   \frac{\partial\mathcal{D}}{\partial t} \quad & = \quad \nabla\times\mathcal{H}
   \frac{\partial\mathcal{B}}{\partial t} \quad & = \quad -\nabla\times\mathcal{E}
@@ -605,9 +658,10 @@ Within the software engineering debates, the theory and practice vocabulary had 
 
 This approach, halfway between science and art, is perhaps best seen in Donald Knuth's magnum opus, \emph{The Art of Computer Programming}. In it, Knuth summarizes the findings and achievements of the field of computer science in terms of algorithm design and implementation, in order to "\emph{to organize and summarize what is known about the fast subject of computer methods and to give it firm mathematical and historical foundations.}"\cite{knuth_art_1997}. The art of computer programming, according to Knuth, is therefore based on mathematics, but nonetheless different from it insofar as it has to deal with effectiveness, implementation and contingency\footnote{\emph{The Art of Computer Programming} involves a hypothetical computer, called MIX, to implement the algorithms discussed.}. In so doing, Knuth takes on an empirical approach to programming, inspecting source code and running software to assess their performance, an approach he first inaugurated for FORTRAN programs when reporting on their concrete effectiveness for the United States Department of Defense\cite{defensetechnicalinformationcenter_dtic_1970}.
 
-Another influential academic textbook dealing not just with computation as a an autotelic phenomenon is \emph{Structure and Interpretation of Computer Programs}, in which the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}"\cite{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompany it, the aesthetic standard in this engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms}\cite{moss_beautifulalgorithms_2022}. For instance, \ref{bubble_sort} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, but the simplicity of scientific algorithms is expressed even further in \ref{nearest_neighbor} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
+Another influential academic textbook dealing not just with computation as a an autotelic phenomenon is \emph{Structure and Interpretation of Computer Programs}, in which the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}"\cite{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompany it, the aesthetic standard in this engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms}\cite{moss_beautifulalgorithms_2022}. For instance, \ref{code:bubble_sort_julia} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, but the simplicity of scientific algorithms is expressed even further in \ref{code:nearest_neighbor_julia} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
 
-\begin{lstlisting}[caption={Bubble Sort implementation in Julia}, label={bubble_sort}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{julia}
 function bubble_sort!(X)
 for i in 1:length(X), j in 1:length(X)-i
     if X[j] > X[j+1]
@@ -615,13 +669,20 @@ for i in 1:length(X), j in 1:length(X)-i
     end
 end
 end
-\end{lstlisting}
+\end{minted}
+\caption{Bubble Sort implementation in Julia}
+\label{code:bubble_sort_julia}
+\end{listing}
 
-\begin{lstlisting}[caption={Nearest neighbor implementation in Julia}, label={nearest_neighbor}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{julia}
 function nearest_neighbor(x', phi, D, dist)
   D[argmin([dist(phi(x), phi(x')) for (x,y) in D])][end]
 end
-\end{lstlisting}
+\end{minted}
+\caption{Nearest neighbor implementation in Julia}
+\label{code:nearest_neighbor_julia}
+\end{listing}
 
 According to Tedre, computer science itself was split in a struggle between correctness and productivity, between theory and implementation, and between formal provability and intuitive art. In the early developments of the field, when machine time was expensive and every instruction cycle counted, efficiency ruled over elegance, but in the end he assesses elegance prevailed, as we will see with the evolution of craft within programming in \hyperref[sec:craft]{section 1.4.1} below.
 
@@ -653,13 +714,17 @@ Within this reliance on creative constraints provided by a computing environment
 
 In their different manifestations, code poems make the boundary between computer meaning and human meaning thinner and thinner, a feature often afforded by the existence and use of higher-level programming languages. Starting with the development of FLOWMATIC in 1955 by Grace Hopper, it was shown that an English-like syntactical system could be used to communicate concepts for the computer to process. From there, programming languages could be described along a gradient, with binary at the lowest end, and natural language (in an overwheling majority, English) at the highest end. This implies that they could be written and read similarly to English, including word order, pronouncation and interpretation, similar to the error-tolerance of human laguages, which doesn't cause the whole communication process to fail whenever a specific word, or a word order isn't understood.
 
-The community of programmers writing in Perl\footnote{See: \emph{perlmonks}, \url{https://perlmonks.org/}, with the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive communities when it comes to code poetry. this use of Perl started in 1990, when the language creator Larry Wall shared some of the poems written in the language, and it gained further exposition through the work of Shannon Hopkins\cite{hopkins_camels_1992}. The first Perl poem is considered to have been written by Larry Wall, the creator of the language, in 1990, reproduced in \ref{japh.pl}.
+The community of programmers writing in Perl\footnote{See: \emph{perlmonks}, \url{https://perlmonks.org/}, with the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive communities when it comes to code poetry. this use of Perl started in 1990, when the language creator Larry Wall shared some of the poems written in the language, and it gained further exposition through the work of Shannon Hopkins\cite{hopkins_camels_1992}. The first Perl poem is considered to have been written by Larry Wall, the creator of the language, in 1990, reproduced in \ref{code:japh_perl}.
 
-\begin{lstlisting}[caption={japh.pl}, label={japh.pl}, float, floatplacement=H]
+\begin{listing}
+\begin{minted}{perl}
   print STDOUT q
   Just another Perl hacker,
   unless $spring
-\end{lstlisting}
+\end{minted}
+\caption{Just Another Perl Hacker, japh.pl}
+\label{code:japh_perl}
+\end{listing}
 
 Hopkins analyzes the ability of the poem to enable dual understandings of the source: human and machine. Yet, departing from the previous conceptions of source that we've looked at, code poetry does not aim at expressing the same thing to the machine and to the human. The value of a good poem comes from its ability to evoke different concepts for both readers of the source code. As Hopkins puts it:
 
@@ -674,18 +739,22 @@ Hopkins analyzes the ability of the poem to enable dual understandings of the so
 
 In this spirit, additional communities around code poetry have formed, whether in university settings\footnote{Such as Stanford's Code Poetry Slam, which ran between 2014 and 2016, \url{https://web.archive.org/web/20161024152353/http://stanford.edu/\%7Emkagen/codepoetryslam/} }, or as independent intiatives\footnote{See the Source Code Poetry event, \url{https://www.sourcecodepoetry.com/}}. Beyond collections such as threads and hashtags on Twitter\footnote{See \lstinline{#SongsInCode} at \url{https://twitter.com/search?q=\%2523SongsInCode}}, code poetry also features artistic publications, such as printed anthologies of code poetry in book form\cite{bertram_code_2012}\cite{holden_code_2016}
 
-Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document.
+Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \ref{code:numero_mysterioso_asm}.
 
-\begin{lstlisting}{caption="AGC source code, LUNAR_LANDING_GUIDANCE_EQUATIONS, 1969"}
-663  STODL  CG
-664	 TTF/8
-665  DMP*  VXSC
-666	       GAINBRAK,1  # NUMERO MYSTERIOSO
-667        ANGTERM
-668	 VAD
-669		    LAND
-670     VSU	RTB
-\end{lstlisting}
+\begin{listing}
+\begin{minted}[linenos, firstnumber=663]{ca65}
+ STODL  CG
+ TTF/8
+ DMP*  VXSC
+       GAINBRAK,1  # NUMERO MYSTERIOSO
+       ANGTERM
+ VAD
+	    LAND
+    VSU	RTB
+\end{minted}
+\caption{lunar landing} %AGC source code\, LUNAR_LANDING_GUIDANCE_EQUATION, 1969
+\label{code:numero_mysterioso_asm}
+\end{listing}
 
 Code comments allow a programmer to write in their mother tongue, rather than in the computer's, enabling more syntactic and semantic flexibility, and thus reveal a burgeoning desire for programmers to express themselves within their medium of choice.
 
@@ -693,11 +762,38 @@ At the turn of the 1980s, following the transition to programming from an annex 
 
 The Obfuscated C Code Contest\footnote{\url{https://www.ioccc.org}}, starting in 1984, is the most popular and oldest organized production of such code, in which programmers submit code that is functional and visually meaningful beyond the exclusive standards of well-formatted code. If the source code's meaning was previously entirely subsumed into the output in computer poetry, and if such a meaning existed in parallel in the comments of the AGC routines, pointing at the overlay of computer-related semantics (e.g. line numbers) and human-related semantics (e.g. number of the beast), obfuscated code is a first foray into closely intertwining these separate meanings in the source code itself, making completely transparent, or completely opaque what the code does just by glancing at it.
 
-The above submission to the 1988 IOCCC\footnote{Source: \url{https://web.archive.org/web/20131022114748/http://www0.us.ioccc.org/1988/westley.c}} is a procedure which does exactly what it shows: it deals with a circle. More precisely, it estimates the value of PI by computing its own circumference. While the process is far from being straightforward, relying mainly on bitwise arithmetic operations and a convoluted preprocessor definition, the result is nonetheless very intuitive—the same way that PI is intuitively related to PI. The layout of the code, carefully crafted by introducing whitespace at the necessary locations, doesn't follow any programming practice of indentation, and would probably be useless in any other context, but nonetheless represents another aspect of the \emph{concept} behind the procedure described, not relying on traditional programming syntax\footnote{For such a program, see for instance: \url{https://crypto.stanford.edu/pbc/notes/pi/code.html}}, but rather on an intuitive, human-specific understanding\footnote{Concrete poetry also makes such a use of visual cues in traditional literary works.}.
+\begin{listing}
+  \begin{minted}{c}
+    #define _ -F<00||--F-OO--;
+int F=00,OO=00;main(){F_OO();printf("%1.3f\n",4.*-F/OO/OO);}F_OO()
+{
+            _-_-_-_
+       _-_-_-_-_-_-_-_-_
+    _-_-_-_-_-_-_-_-_-_-_-_
+  _-_-_-_-_-_-_-_-_-_-_-_-_-_
+ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+  _-_-_-_-_-_-_-_-_-_-_-_-_-_
+    _-_-_-_-_-_-_-_-_-_-_-_
+        _-_-_-_-_-_-_-_
+            _-_-_-_
+}
+  \end{minted}
+  \caption{westley.c, entry to the 1988 IOCCC}
+  \label{code:circle_c}
+\end{listing}
+
+The source code in \ref*{code:circle_c}, submitted to the 1988 IOCCC\footnote{Source: \url{https://web.archive.org/web/20131022114748/http://www0.us.ioccc.org/1988/westley.c}} is a procedure which does exactly what it shows: it deals with a circle. More precisely, it estimates the value of PI by computing its own circumference. While the process is far from being straightforward, relying mainly on bitwise arithmetic operations and a convoluted preprocessor definition, the result is nonetheless very intuitive—the same way that PI is intuitively related to PI. The layout of the code, carefully crafted by introducing whitespace at the necessary locations, doesn't follow any programming practice of indentation, and would probably be useless in any other context, but nonetheless represents another aspect of the \emph{concept} behind the procedure described, not relying on traditional programming syntax\footnote{For such a program, see for instance: \url{https://crypto.stanford.edu/pbc/notes/pi/code.html}}, but rather on an intuitive, human-specific understanding\footnote{Concrete poetry also makes such a use of visual cues in traditional literary works.}.
 
 Obfuscating practices, beyond their technical necessities (for security and efficiency), are traditionally tied to hacking practices, prominently with one-liners. As such, they rely on the brain-teasing process of deciphering, and on the pleasurable, aesthetic experience of resolving and uniting two parallel meanings: what we see in the code, and what it does\footnote{Also known informally as the "Aha!" moment, crucial in puzzle design.}. What we focus on here is the aspect of obfuscation which plays with the different layers of meaning: meaning to the computer, meaning to the human, and different ways of representing and communicating this meaning (from uglifying, to consistent formatting, to depicting a circle with dashes and underscores). While the aesthetics at play in hacking will be further explored below, we focus on the fact that obfuscating code practices, beyond hiding the meaning and the intent of the program, also manifest an attempt to represent such a meaning in different ways, leaving aside traditional code-writing practices and suggesting the meaning of the program by challenging the abilities of human interpretation at play in the process of deciphering programs.
 
-Code poetry values code which, while being functional, expresses more than what it does, by entering into \emph{Sprachspiele}, where pronounciation, syntax and semantics are playfully composed in order to match a human poetic form, such as the haiku, or to constitute a linguistic puzzle. Relying on the inherent tendency of source code to remain opaque, obfuscated code contests go a step further by seeing how far can such an opacity be sustained, often involving creative ways.
+Code poetry values code which, while being functional, expresses more than what it does, by allowing for \emph{Sprachspiele}, where pronounciation, syntax and semantics are playfully composed in order to match a human poetic form, such as the haiku, or to constitute a linguistic puzzle. Relying on the inherent tendency of source code to remain opaque, obfuscated code contests go a step further by seeing how far can such an opacity be sustained, often involving creative ways.
 
 \vspace*{1\baselineskip}
 
@@ -713,7 +809,7 @@ With this overview of the varieties of practices at play amongst those who read 
 
 \subsection{Introduction to the Methodology} %1000
 
-Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This work builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, centered around what constitutes good source code. While discourse analysis is also used critically by unearthing which value judgments occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis\cite{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of the \emph{pragmatics}. We find this approach particularly fitting through its implication of the \emph{cooperative principle}, in which utterances are ultimately related to one another through communicative cooperation to reveal the intent of the speaker\cite{schiffrin_approaches_1994}. Practically, this means that we assume the position of programmers talking to programmers is cooperative insofar as both speaker and listener want to achieve a similar goal: writing good code. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader context—will ultimately lead us to examine the influence of  the production media (blog post, forums, conferences, text books), of the cultural background (software practices as outlined above as well as additional factors such as skill levels. Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of co-reference\cite{kintsch_model_1978}.
+Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This work builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, centered around what constitutes good source code. While discourse analysis is also used critically by unearthing which value judgments occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis\cite{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of the \emph{pragmatics}. We find this approach particularly fitting through its implication of the \emph{cooperative principle}, in which utterances are ultimately related to one another through communicative cooperation to reveal the intent of the speaker\cite{schiffrin_approaches_1994}. Practically, this means that we assume the position of programmers talking to programmers is cooperative insofar as both speaker and listener want to achieve a similar goal: writing good code. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader context—will ultimately lead us to examine the influence of  the production media (blog post, forums, conferences, text books), of the cultural background (software practices as outlined above as well as additional factors such as skill levels). Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of co-reference\cite{kintsch_model_1978}.
 
 Particular attention will be paid to the difference between intentional and extensional meaning\cite{dijk_strategies_1983}. As we will see, some of the texts in our corpus tend to address a particular problem (e.g. on forums, social media or question \& answer platforms), or to discuss broader concepts around well-written code. Particularly, 
 
@@ -777,9 +873,10 @@ This balance between too much and too little is found in another dichotomy state
 
 In another paper published by the ACM, Kristiina Karvonen argues for simplicity not just as a design goal, as leveraged by human-computer interface designers, but as a term with a longer history within the tradition of aesthetic philosophy, especially the work of Johann Joachim Winckelmann\cite{karvonen_beauty_2000}. In particular, she stresses the difficulty "to create significant, that is beautiful works of art with simple means"\cite{karvonen_beauty_2000}. Here, her correlation between significance and beauty hints at the semantic role of simplicity, as a means to communicate ideas (i.e. \emph{signify}) to an audience.
 
-Precisely, simplicity is correlated with clarity (of meaning); if the former refers mainly to the syntactic component (fewer tokens), it enables the non-obfuscated framing of the ideas at play. One example is given by Dave Bush in a post titled  \emph{15 Ways to Write Beautiful Code}:
+Precisely, simplicity is correlated with clarity (of meaning); if the former refers mainly to the syntactic component (fewer tokens), it enables the non-obfuscated framing of the ideas at play. One example is given in \ref{code:clearer_method_c} by Dave Bush in a post titled  \emph{15 Ways to Write Beautiful Code}.
 
-\begin{lstlisting}
+\begin{listing}
+\begin{minted}{c}
   void SomeMethod(){
     if(x != y){
         //-- stuff
@@ -790,17 +887,18 @@ void SomeClearerMethod(){
     if(x == y) return;
     //-- do stuff
 }
-\end{lstlisting}
+\end{minted}
+\caption{Example of clarity differences between two methods.}
+\label{code:clearer_method_c}
+\end{listing}
 
 Here, the strive for simplicity leads to removing the brackets, and flipping the boolean check in the if-statement to add a \lstinline{return}. Even though it is, strictly speaking, more chararcters than the brackets and newline (six characters compared to four), the program becomes clearer by separating the two branching cases inherent to the use of conditional logic, under the form of an if-statement. In the second version, it is made clear that, if a condition \emph{is}, the execution should stop, and any subsequent statement can entirely disregard the existence of the if-statement; in the first version, the condition that \emph{is not} is entangled with code that should be executed, since the existence of the if-statement has to be kept in mind until the closing bracket\cite{bush_15_2015}.
 
-As a corollary to clarity stands obfuscation. It is the act, either intentional or un-intentional, to complicate the understanding of what a program does by leading the reader astray through a combination of syntactic techniques. In its most widely applied sense, obfuscation is used for practical production purposes: reducing the size of code, and preventing the leak of proprietary information regarding how a system behaves. For instance, the JavaScript source code in \ref{before_minify} is obfuscated through a process called \emph{minification} into the source code in \ref{after_minify}
+As a corollary to clarity stands obfuscation. It is the act, either intentional or un-intentional, to complicate the understanding of what a program does by leading the reader astray through a combination of syntactic techniques. In its most widely applied sense, obfuscation is used for practical production purposes: reducing the size of code, and preventing the leak of proprietary information regarding how a system behaves. For instance, the JavaScript source code in \ref{code:home_js} is obfuscated through a process called \emph{minification} into the source code in \ref{code:home_minified_js}
 
-\begin{lstlisting}[caption={home.js (before minification)}, label={before_minify}, float, floatplacement=H]
- import { ref, onMounted, reactive } from 'vue';
-import Footer from './components/Footer.vue';
-import Header from './components/Header.vue';
-import { SyllabusType } from './js/types';
+\begin{listing}
+\begin{minted}{js}
+import { ref, onMounted, reactive } from 'vue';
 
 const msg = ref("")
 const HOST = import.meta.env.DEV ? "http://localhost:3046" : ""
@@ -832,11 +930,18 @@ onMounted(() => {
             msg.value = "Network error :|"
         })
 })
-\end{lstlisting}
+\end{minted}
+\caption{home.js (before minification)}
+\label{code:home_js}
+\end{listing}
 
-\begin{lstlisting}[caption={home.js (after minification)}, label={after_minify}, float, floatplacement=H]
-  import{_ as p,f as m,r as v,g as f,o as l,c as n,a as c,h as e,t as r,b as u,i as b,u as _,F as y,H as g,e as w}from"./Header.js";const H={class:"container p-3"},N=e("h1",null,"Home",-1),k={class:"syllabi"},x=["href"],B={class:"cta"},F=m({setup(S){const s=v(""),d="http://localhost:3046",o=new Array;let h=()=>{window.location.href="/cartridge.html"};return f(()=>{fetch(`${d}/syllabi/`,{method:"GET"}).then(t=>t.json()).then(t=>{Object.assign(o,JSON.parse(t)),console.log(o),o.length==0?s.value="No syllabi :(":s.value=`There are ${o.length} syllabi.`}).catch(t=>{console.error(t),s.value="Network error :|"})}),(t,i)=>(l(),n(u,null,[c(g),e("main",H,[N,e("div",k,[e("div",null,r(s.value),1),e("ul",null,[(l(!0),n(u,null,b(_(o),a=>(l(),n("li",null,[e("div",null,[e("a",{href:"/syllabi/"+a.ID},r(a.title),9,x)]),e("div",null,r(a.description),1)]))),256))])]),e("div",B,[e("button",{id:"cta-upload",class:"btn btn-primary mb-4 cc-btn",onClick:i[0]||(i[0]=a=>_(h)())},"Upload yours!")])]),c(y)],64))}});var O=p(F,[["__file","/home/pierre/code/commonsyllabi/viewer/www/src/Home.vue"]]);w(O).mount("#app");
-\end{lstlisting}
+\begin{listing}
+\begin{minted}{js}
+  import{_ as p,g as f,o as l,c as n,a as c,h as e,t as r,b as u,i as b,u as _,F as y,H as g,e as w}from"./Header.js";const H={class:"container p-3"},N=e("h1",null,"Home",-1),k={class:"syllabi"},x=["href"],B={class:"cta"},F=m({setup(S){const s=v(""),d="http://localhost:3046",o=new Array;let h=()=>{window.location.href="/cartridge.html"};return f(()=>{fetch(`${d}/syllabi/`,{method:"GET"}).then(t=>t.json()).then(t=>{Object.assign(o,JSON.parse(t)),console.log(o),o.length==0?s.value="No syllabi :(":s.value=`There are ${o.length} syllabi.`}).catch(t=>{console.error(t),s.value="Network error :|"})}),(t,i)=>(l(),n(u,null,[c(g),e("main",H,[N,e("div",k,[e("div",null,r(s.value),1),e("ul",null,[(l(!0),n(u,null,b(_(o),a=>(l(),n("li",null,[e("div",null,[e("a",{href:"/syllabi/"+a.ID},r(a.title),9,x)]),e("div",null,r(a.description),1)]))),256))])]),e("div",B,[e("button",{id:"cta-upload",class:"btn btn-primary mb-4 cc-btn",onClick:i[0]||(i[0]=a=>_(h)())},"Upload yours!")])]),c(y)],64))}});var O=p(F,[["__file","/home/pierre/code/commonsyllabi/viewer/www/src/Home.vue"]]);w(O).mount("#app");
+\end{minted}
+\caption{home.js (after minification)}
+\label{code:home_minified_js}
+\end{listing}
 
 This process of obfuscation has very clear, quantitative assessment criterias, such as the size of the source code file and cryptographic complexity\cite{pellet-mary_co6gc_2020}. Nonetheless. obfuscation can also be valued as a positive aesthetic standard, of which the IOCCC is the most institutionalized guarantor, since 1984. These kinds of bofuscations, as Mateas and Montfort analyze, involve the playful exploration of the intertwinings of syntax and semantics, seeing how much one can bend the former without affecting the latter. These textual manipulations, they argue, possess an inherently literary quality:
 
@@ -860,12 +965,16 @@ Simplicity in programming is presented here as akin to compression in poetry: in
 
 This answer by Mason Wheeler, posted on the software engineering \emph{Stack Exchange} forum, in response to the question "How can you explain "beautiful code" to a non-programmer?"\cite{how_2013a}, highlights simplicity's opposite, cleverness.
 
-Cleverness is often found, and sometimes derided, in examples of  code written by hackers, since it unsettles the balance between precision and generality. Clever code would tend towards exploiting particularities of knowledge of the medium (the code) rather than the goal (the problem). Hillel Wayne presents this snippet of C code as an example of bad clever code:
+Cleverness is often found, and sometimes derided, in examples of  code written by hackers, since it unsettles the balance between precision and generality. Clever code would tend towards exploiting particularities of knowledge of the medium (the code) rather than the goal (the problem). Hillel Wayne presents the snippet of Python code in \ref{code:is_unique_python} as an example of bad clever code:
 
-\begin{lstlisting}
+\begin{listing}
+\begin{minted}{python}
 def is_unique(_list):
   return len(set(_list)) == len(_list)
-\end{lstlisting}
+\end{minted}
+\caption{Method to check for the uniqueness of array elements}
+\label{code:is_unique_python}
+\end{listing}
 
 Here, the knowledge of how the \lstinline{set()} function in Python behaves, is required in order to understand that the \lstinline{is_unique()} function returns whether all the elements of the given list are unique. A programmer without familiarity with Python would be unable to do so without consulting the Python documentation (i.e. requiring extraneous explanation).
 
@@ -907,18 +1016,23 @@ Such a definition relies heavily on the sensual component of elegance: while an 
   However to me beautiful code must not only be necessary, sufficient and self-explanatory, but it must also subjectively feel perfect \& light.\cite{stack_}
 \end{quote}
 
-Once again connecting simplicity (under the guise of necessity and sufficiency), the perception of elegance is also related to a subjective feeling of adequacy. Paul DiLascia, writing of the Microsoft Developer Network Magazine, illustrates his conception of elegance—as a combination of simplicity, efficiency and brilliance—with recursion\cite{dilascia_end_2019}:
+Once again connecting simplicity (under the guise of necessity and sufficiency), the perception of elegance is also related to a subjective feeling of adequacy. Paul DiLascia, writing of the Microsoft Developer Network Magazine, illustrates his conception of elegance—as a combination of simplicity, efficiency and brilliance—with recursion\cite{dilascia_end_2019}, as seen in \ref{code:factorial_c}.
 
-\begin{lstlisting}
+\begin{listing}
+\begin{minted}{c}
 int factorial(int n)
 {
   return n==0 ? 1 : n * factorial(n-1);
 }
-\end{lstlisting}
+\end{minted}
+\caption{Use of recursivity in the computation of a factorial}
+\label{code:factorial_c}
+\end{listing}
 
-Recursion, or the technique of defining something in terms of itself, is a positively valued feature of programming\cite{abelson_structure_1979}. In so doing, it minimizes the number of elements at play and constrains the problem domain into a smaller set of moveable pieces. Another example, provided in the same \emph{Stackexchange} discussion is the \lstinline{quicksort} algorithm, which can be implemented recursively or iteratively, with the former being significanly shorter:
+Recursion, or the technique of defining something in terms of itself, is a positively valued feature of programming\cite{abelson_structure_1979}. In so doing, it minimizes the number of elements at play and constrains the problem domain into a smaller set of moveable pieces. Another example, provided in the same \emph{Stackexchange} discussion is the \lstinline{quicksort} algorithm, which can be implemented recursively or iteratively, with the former being significanly shorter (see \ref{code:recursion_iteration_csharp})
 
-\begin{lstlisting}
+\begin{listing}
+\begin{minted}{csharp}
   // https://stackoverflow.com/a/12553314/4665412
   public static void recursiveQsort(int[] arr,Integer start, Integer end) { 
     if (end - start < 2) return; //stop clause
@@ -946,7 +1060,10 @@ public static void iterativeQsort(int[] arr) {
         stack.push(p);
     }
 }
-\end{lstlisting}
+\end{minted}
+\caption{Comparison two functions, one using recursion, the other one using iteration}
+\label{code:recursion_iteration_csharp}
+\end{listing}
 
 To conclude this brief survey on how programmers perceive elegance in source code, we can follow Mahmoud Efatmaneshik and Michael J. Ryan who, in the IEEE Systems journal, offer a defintion of elegance which relies both on a romantic perception—including subjective perception, "gracefulness", "appropriateness" and "usability"—and practical assessment with terms such as "simple", "neat", "parsimonious" or "efficient"\cite{efatmaneshnik_definitions_2019}. In doing so, they ground source code aesthetics as a resolutely dualistic norm, between subjectivity and objectivity, qualitative and quantitative\footnote{A duality we will investigate further through the prism of human and machine understanding in section XXX}.
 
@@ -958,13 +1075,18 @@ And yet, rather than subjectivity and objectivity being opposites, one could als
 
 Another way to understand what programmers mean when they talk about beautiful code is to look beyond the positive terms used to qualify it (clarity, simplicity, elegance, etc.), and shift our attention to how other terms are used negatively. We have already touched up qualifiers such as clever, or obfuscated, which have ambiguous statuses depending on the community that they're being used in—specifically hackers and literary artists.
 
-One of those hints comes from satirical accounts of how to write bad code. For instance, Green's post on \emph{ How To Write Unmaintainable Code} suggests new kinds of obfuscation, such as double-naming in \ref*{green_unmaintainable} or semantic interactions in \ref*{green_unmaintainable_2}. The core ideas there is to create as much friction to understanding as possible, by making it "as hard as possible for [the reader] to find the code he is looking for" and "as awkward as possible for [the reader] to safely ignore anything."\cite{green_how_2006}.
+One of those hints comes from satirical accounts of how to write bad code. For instance, Green's post on \emph{ How To Write Unmaintainable Code} suggests new kinds of obfuscation, such as double-naming in \ref{code:green_unmaintainable} or semantic interactions in \ref{code:green_unmaintainable_2}. The core ideas there is to create as much friction to understanding as possible, by making it "as hard as possible for [the reader] to find the code he is looking for" and "as awkward as possible for [the reader] to safely ignore anything."\cite{green_how_2006}.
 
-\begin{lstlisting}[caption="Choose variable names that masquerade as mathematical operators", label=green_unmaintainable]
-  openParen = (slash + asterix) / equals; 
-\end{lstlisting}
+\begin{listing}
+  \begin{minted}{python}
+    openParen = (slash + asterix) / equals; 
+  \end{minted}  
+  \caption{Choose variable names that masquerade as mathematical operators}
+  \label{code:green_unmaintainable}
+\end{listing}
 
-\begin{lstlisting}[caption="Code That Masquerades As Comments and Vice Versa", label=green_unmaintainable_2]
+\begin{listing}
+\begin{minted}{c}
 for(j=0; j<array_len; j+ =8)
 {
   total += array[j+0 ];
@@ -976,7 +1098,10 @@ for(j=0; j<array_len; j+ =8)
   total += array[j+6 ];
   total += array[j+7 ];
 } 
-\end{lstlisting}
+\end{minted}
+\caption{Code That Masquerades As Comments and Vice Versa}
+\label{code:green_unmaintainable_2}
+\end{listing}
 
 Here, we see best how carefully chosen aesthetics, under the values of simplicity, clarity, cleanliness and elegance help first and foremost to alleviate human cognitive friction and facilitate understanding of what the program is doing. The opposite amounts to playing misleading tricks.
 

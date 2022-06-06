@@ -4,6 +4,7 @@ corpus/sources/gecko
 summary.docx
 export.docx
 
+# tex files
 *.aux
 *.out
 *.log
@@ -14,3 +15,6 @@ export.docx
 *.run.xml
 *.fls
 *fdb_latexmk
+*.pyg
+*.xdv
+_minted-*/

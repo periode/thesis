@@ -14,6 +14,12 @@
 \usepackage[leqno]{amsmath}
 \usepackage[utf8]{inputenc}
 
+
+\usepackage[]{minted}
+\usemintedstyle{trac}
+\usepackage{caption}
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
 \graphicspath{ {./images/} }
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.00}
