@@ -133,7 +133,7 @@ this section investigates the main challenge that source code tends to address a
 
 temporality (fast) and spatiality (jumps)
 
-cantell_smith_introduction - computing as _meaning mechanically realized_ <- this whole introduction is a good reference on the tension between the linguistic and the mechanical
+cantell_smith_introduction - computing as _meaning mechanically realized_  (this whole introduction is a good reference on the tension between the linguistic and the mechanical)
 
 another philosophical approach highlighting the tension in software is irmak_software_abstract_artifact
 
@@ -244,7 +244,8 @@ alexander = softdev, habitable vs. eisenman = hack, subversion
 
 design thinking book: The concept of good in architecture is one which says, among other things, that all architecture must engage its audience. It must foster understanding and be intelligible. This is clearly not the only concept necessarily at work, but it is one that would have broad adherence, across positions.
 
-**Compression** is the characteristic of a piece of text that the meaning of any part of it is “larger” than that particular piece has by itself. This characteristic is created by a rich context, with each part of the text drawing on that context—each word draws part of its meaning from its surroundings.
+**Compression** is the characteristic of a piece of text that the meaning of any part of it is “larger” than that particular piece has by itself. This characteristic is created by a rich context, with each part of the text drawing on that context—each word draws part of its meaning from its surroundings. -> [turner on compression](https://journals.sagepub.com/doi/abs/10.1177/0963947006060550?casa_token=HPn7CfCjb3YAAAAA:FhpCdUw1hIDXjsYK9AXOCTk62161RkxMXjoqwSQn0i7-vgsfH0ZYVSiQUl49dkN9amMtPwGdXz0)
+
 **Piecemeal growth** is the process of design and implementation in which software is embellished, modified, reduced, enlarged, and improved through a process of repair rather than of replacement
 
 coburn_vartanian_neuroscience_of_architectural_experience cognition-wise there's not a lot of research yet
@@ -363,7 +364,7 @@ vee_coding_literacy, coding_literacies_annette_vee
 
 this section looks at how language-dependent the previously exhibited features of aesthetics might be affected by it. however, we'll see that this isn't so much a clear distinction as it is a gradient between fully language dependent (and the extreme: hardware dependent—hallo kittler).
 
-procedural rhetoric is just a very high level of programming semantics. processes with meaning assigned to it. <- this further extends the gradient.
+procedural rhetoric is just a very high level of programming semantics. processes with meaning assigned to it.  this further extends the gradient.
 
 winograd_language_as_cognitive_process, winograd_flores_understanding_computers_and_cognition, eijick_computational_semantics_functional_programming
 

@@ -20,7 +20,13 @@ it has to talk to machines
 
 and to humans
 
+slide 25 shows the relation between quantity and quality and code and speech in computer systems [link](https://hapoc2021.sciencesconf.org/data/pages/_Hildebrandt_written_and_coded_speech_acts.pdf)
+
+https://www.amazon.com/What-Robots-Studies-Cognitive-Systems/dp/9401050872
+
 but maybe we can get more by relating it to other fields of aesthetics and see what they have to offer
+
+complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
 
 ## [beauty and understandings](./understanding_beauty.md)
 
