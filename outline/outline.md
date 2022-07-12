@@ -4,7 +4,7 @@
 
 see [tex file](../redaction/introduction.tex)
 
-## [aesthetic ideals](./ideals.md)
+## 1. [aesthetic ideals](./ideals.md)
 
 we start our journey here. basically, we look at what programmers say when they talk about beautiful code.
 
@@ -12,7 +12,7 @@ we see there are different kinds of lexical fields of beauty, also by including 
 
 but we also see that all these kinds might relate to understanding. so we turn to this next
 
-## [understanding code](./understanding_code.md)
+## 2. [understanding code](./understanding_code.md)
 
 so what's up with understanding? turns out code is tricky to understand because
 
@@ -28,19 +28,19 @@ but maybe we can get more by relating it to other fields of aesthetics and see w
 
 complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
 
-## [beauty and understandings](./understanding_beauty.md)
+## 3. [beauty and understandings](./understanding_beauty.md)
 
 here, we look at how literature, architecture and maths deal with beauty and understanding
 
 now that we have stronger concepts, let's dive back into code
 
-## [aesthetic manifestations](./concrete.md)
+## 4. [aesthetic manifestations](./concrete.md)
 
 here is where we develop more our theory.
 
 as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
 
-## [programming languages](./programming_languages.md)
+## 5. [programming languages](./programming_languages.md)
 
 we see how programming languages deal with understanding between computers and humans, and how they have to provide an interface to deal with _meaning_.
 

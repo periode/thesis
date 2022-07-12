@@ -835,12 +835,12 @@ The corpus studied here consists of texts ranging from textbooks and trade manua
 
 % dope case study https://queue.acm.org/detail.cfm?id=1039535 also this http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
 
-In terms of existing studies of the lexical field programmers use, Erik Pineiro has done significant work in his doctoral thesis. In it, he argues that aesthetics exist from a programmers perspective, decoupled from the final, executable form of the software. While this current study draws on his work, and confirms his findings, it also departs from it in several aspects. First, Pineiro focuses on a narrower corpus, that of the Slashdot.org\footnote{\url{https://slashdot.org}} forums\cite{pineiro_aesthetics_2003} (p. 51). Second, he examines aesthetic judgment from a private perspective of software engineers, separate from other possible aesthetic fields which might enter in dialogue with beautiful code\cite{pineiro_aesthetics_2003} (p.52). Finally, his discussion of aesthetics takes place in a broader context of business management and productivity,, while this current study situates itself within aesthetic philosphy, and its implications within how things are considered beautiful.
+In terms of existing studies of the lexical field programmers use, Erik Pineiro has done significant work in his doctoral thesis. In it, he argues that aesthetics exist from a programmers perspective, decoupled from the final, executable form of the software. While this current study draws on his work, and confirms his findings, it also builds upon it in several ways. First, Pineiro focuses on a narrower corpus, that of the Slashdot.org\footnote{\url{https://slashdot.org}} forums\cite{pineiro_aesthetics_2003} (p. 51). Second, he examines aesthetic judgment from a private perspective of software engineers, separate from other possible aesthetic fields which might enter in dialogue with beautiful code\cite{pineiro_aesthetics_2003} (p.52), while we've seen above that code can be written by a mulitplicity of audiences. Finally, his discussion of aesthetics takes place in a broader context of business management and productivity, while this current study situates itself within aesthetic philosphy, and its implications within how a certain class of artefacts are considered beautiful; to start with, we highlight the main adjectives in the lexical field of programmers' discourse.
 
 \vspace*{1\baselineskip}
 
 % todo add mention of clean code mentionned in naur1985programming.pdf p. 8
-Clean is the first adjective which stands out as a requirement when assessing beauty in code. It is featured in the title of a series of best-selling trade manuals written by Robert C. Martin and published by Prentice Hall from 2009 to 2021, the full titles of which clearly enunciate their normative aim\footnote{\emph{Clean Code: A Handbook of Agile Software Craftsmanship}, \emph{The Clean Coder: A Code Of Conduct For Professional Programmers}, \emph{Clean Architecture: A Craftsman's Guide to Software Structure and Design}, \emph{Clean Agile: Back to Basics}, \emph{Clean Craftsmanship: Disciplines, Standards, and Ethics}.}. Cleanliness, in Martin's terms, is defined by circumlocutions. After asking leading programmers what clean code means to them, he carries on in the volume by providing examples of \emph{how} to achieve clean code, rather that by defining what it is. Nonetheless, some hints can be glimpsed from Ward Cunningham's answer:
+Already mentioned in Peter Naur's analysis of the practice of programming, \emph{clean} is the first adjective which stands out as a requirement when assessing the ideas dormant in the source code. Clean code, he says, is a reference to how easy it is for readers of code to build a coherent theory of the system both described and prescribed by this source code\cite{naur_programming_1985}. Echoing a similar position, an analysis of clean code appears again in the title of a series of best-selling trade manuals written by Robert C. Martin and published by Prentice Hall from 2009 to 2021, the full titles of which clearly enunciate their normative aim\footnote{\emph{Clean Code: A Handbook of Agile Software Craftsmanship}, \emph{The Clean Coder: A Code Of Conduct For Professional Programmers}, \emph{Clean Architecture: A Craftsman's Guide to Software Structure and Design}, \emph{Clean Agile: Back to Basics}, \emph{Clean Craftsmanship: Disciplines, Standards, and Ethics}.}. What exactly is cleanliness, in Martin's terms, is nonetheless defined by circumlocutions, relying on contributions from experts. After asking leading programmers what clean code means to them, he carries on in the volume by providing examples of \emph{how} to achieve clean code, rather that by defining what it is. In general, cleanliness is mostly a definition by negation: it states that something is clean if it is free from impurities, blemish, error, etc. An alternative to this definition by negation which trade manuals such as \emph{Clean Code} consists in providing examples on how to move from bad code, to clean code through specific, practical guidelines regarding naming, spacing, class delimitation, etc.. Starting at a high-level, some hints can be glimpsed from Ward Cunningham's answer:
 
 \begin{quote}
   You know you are working on clean code when each routine you read turns out to be pretty much what you expected. You can call it beautiful code when the code also makes it look like the language was made for the problem.\cite{martin_clean_2008} p.10
@@ -852,7 +852,7 @@ along with Grady Brooch's:
   Clean code is simple and direct. Clean code reads like well-written prose. Clean code never obscures the designer’s intent but rather is full of crisp abstractions and straightforward lines of control.\cite{martin_clean_2008}p.11
 \end{quote}
 
-Cleanliness is thus tied to expressiveness: clean code is devoid of any extraneous syntactic and semantic symbols (e.g. it does one thing, and one thing well), in order to let the problem at hand appear, with all its implications. Instead, the tool (code, and programming languages) disappear at the syntactic level, to gain expressiveness at the semantic level. Cleanliness is mostly a definition by negation: it states that something is clean if it is free from impurities, blemish, error, etc. As an alternative to this definition by negation, In the spirit of defining by example, trade manuals such as \emph{Clean Code} provide examples on how to move from bad code, to clean code through specific, practical guidelines regarding naming, spacing, class delimitation, etc..
+Cleanliness is thus tied to expressiveness: clean code is devoid of any extraneous syntactic and semantic symbols (e.g. it does one thing, and one thing well), in order to let the problem at hand appear, with all its implications. Instead, the tool (i.e. code and programming languages) disappear at the syntactic level, to enable expressiveness at the semantic level.
 
 Martin echoes Hunt when he advocates for such a definition of clean as lack of additional information:
 
@@ -860,19 +860,19 @@ Martin echoes Hunt when he advocates for such a definition of clean as lack of a
   Don't spoil a perfectly good program by overembellishment and over-refinement.\cite{hunt_pragmatic_1999}
 \end{quote}
 
-This advice to programmers denotes a conception of clean that is not just about removing as much syntactic form as possible, but which also implies a balance. \emph{Overembellishment} implies excess addition, while \emph{over-refinement} implies, on the contrary, excess removal. This normative approach finds its echo in the numerous quotations of Antoine de Saint-Exupéry's comment on aircraft design:
+This advice to programmers denotes a conception of clean that is not just about removing as much syntactic form as possible, but which also implies a balance. \emph{Overembellishment} implies excess addition, while \emph{over-refinement} implies, on the contrary, excess removal. This normative approach finds its echo in the numerous quotations of Antoine de Saint-Exupéry's comment on aircraft design\footnote{For instance, see \url{https://news.ycombinator.com/item?id=1640594} and \url{https://twitter.com/codewisdom/status/1353651398337044481}}:
 
 \begin{quote}
   Il semble que la perfection soit atteinte non quand il n'y a plus rien à ajouter, mais quand il n'y a plus rien à retrancher. \cite{desaint-exupery_terre_1972}\footnote{\emph{ In anything at all, perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away, when a body has been stripped down to its nakedness.}, translated by Lewis Galantière in the 1939 edition of \emph{Wind, Sand and Stars}}
 \end{quote}
 
-This balance between too much and too little is found in another dichotomy stated by programmers: between simple and clever. Simplicity, argues Jeremy Gibbons, is not only a restraint on the quantity of syntactic tokens (as one could achieve by keeping names short, or aligning indentations), but also a semantic equilibrium at the level of abstracted ideas\cite{gibbons_beauty_2012}. The balance between breadth and depth of the task of the code, between the precision of a use-case and its generalization, and its leveraging of existing library—i.e. supposedly reliable—code is summed up in a quote by Ralph Waldo Emerson concluding his column:
+This balance between too much and too little is found in another dichotomy stated by programmers: between simple and clever. Simplicity, argues Jeremy Gibbons, is not only a restraint on the quantity of syntactic tokens (as one could achieve by keeping names short, or aligning indentations), but also a semantic equilibrium at the level of abstracted ideas\cite{gibbons_beauty_2012}. The balance between breadth and depth of the task of the code, between the precision of a use-case and its generalization, and its leveraging of existing library—i.e. supposedly reliable—code is summed up his quoting of Ralph Waldo Emerson at the conclusion of his column:
 
 \begin{quote}
   We ascribe beauty to that which is simple; which has no superfluous parts; which exactly answers its end; which stands related to all things; which is the mean of many extremes.\cite{gibbons_beauty_2012}
 \end{quote}
 
-In another paper published by the ACM, Kristiina Karvonen argues for simplicity not just as a design goal, as leveraged by human-computer interface designers, but as a term with a longer history within the tradition of aesthetic philosophy, especially the work of Johann Joachim Winckelmann\cite{karvonen_beauty_2000}. In particular, she stresses the difficulty "to create significant, that is beautiful works of art with simple means"\cite{karvonen_beauty_2000}. Here, her correlation between significance and beauty hints at the semantic role of simplicity, as a means to communicate ideas (i.e. \emph{signify}) to an audience.
+In another paper published by the ACM, Kristiina Karvonen argues for simplicity not just as a design goal, as leveraged by human-computer interface designers, but as a term with a longer history within the tradition of aesthetic philosophy, especially the work of Johann Joachim Winckelmann\cite{karvonen_beauty_2000}. In particular, she stresses the difficulty "to create significant, that is beautiful works of art with simple means"\cite{karvonen_beauty_2000}. Here, her correlation between \emph{significance} and \emph{pleasant appearance} hints at the semantic role of simplicity, as a means to communicate ideas (i.e. \emph{signify}) to an audience.
 
 Precisely, simplicity is correlated with clarity (of meaning); if the former refers mainly to the syntactic component (fewer tokens), it enables the non-obfuscated framing of the ideas at play. One example is given in \ref{code:clearer_method_c} by Dave Bush in a post titled  \emph{15 Ways to Write Beautiful Code}.
 
@@ -893,7 +893,7 @@ void SomeClearerMethod(){
   \label{code:clearer_method_c}
 \end{listing}
 
-Here, the strive for simplicity leads to removing the brackets, and flipping the boolean check in the if-statement to add a \lstinline{return}. Even though it is, strictly speaking, more chararcters than the brackets and newline (six characters compared to four), the program becomes clearer by separating the two branching cases inherent to the use of conditional logic, under the form of an if-statement. In the second version, it is made clear that, if a condition \emph{is}, the execution should stop, and any subsequent statement can entirely disregard the existence of the if-statement; in the first version, the condition that \emph{is not} is entangled with code that should be executed, since the existence of the if-statement has to be kept in mind until the closing bracket\cite{bush_15_2015}.
+Here, the strive for simplicity leads to removing the brackets, and flipping the boolean check in the if-statement to add a \lstinline{return}. Even though it is, strictly speaking, more characters than the brackets and newline (six characters compared to four), the program becomes clearer by separating the two branching cases inherent to the use of conditional logic, under the form of an if-statement. In the second version, it is made clear that, if a condition \emph{is}, the execution should stop, and any subsequent statement can entirely disregard the existence of the if-statement; in the first version, the condition that \emph{is not} is entangled with code that should be executed, since the existence of the if-statement has to be kept in mind until the closing bracket\cite{bush_15_2015}.
 
 As a corollary to clarity stands obfuscation. It is the act, either intentional or un-intentional, to complicate the understanding of what a program does by leading the reader astray through a combination of syntactic techniques. In its most widely applied sense, obfuscation is used for practical production purposes: reducing the size of code, and preventing the leak of proprietary information regarding how a system behaves. For instance, the JavaScript source code in \ref{code:home_js} is obfuscated through a process called \emph{minification} into the source code in \ref{code:home_minified_js}
 
@@ -979,9 +979,9 @@ def is_unique(_list):
 
 Here, the knowledge of how the \lstinline{set()} function in Python behaves, is required in order to understand that the \lstinline{is_unique()} function returns whether all the elements of the given list are unique. A programmer without familiarity with Python would be unable to do so without consulting the Python documentation (i.e. requiring extraneous explanation).
 
-Hillel elaborates on the difference between "bad" clever code\footnote{See, for instance, Duff's device, an idiosyncratic and language-specific way to speed up loop unrolling in C. The author himself feels "a combination of pride and revulsion at this discovery"\cite{duff_tom_1983}}, which is essentiall read-only due to its idiosyncracy and reliance on tacit knowledge, and "good" clever code, and such distinction corroborates our previous observations regarding beautiful code as a means for expression of the problem domain. His example is that the problem of sorting the roughly 300 million U.S. american citizens by birthdate can be made considerably more efficient by cleverly considering that no U.S. american citizen is older than 120 years.
+Hillel elaborates on the difference between "bad" clever code\footnote{See, for instance, Duff's device, an idiosyncratic and language-specific way to speed up loop unrolling in C. The author himself feels "a combination of pride and revulsion at this discovery"\cite{duff_tom_1983}}, which is essentiall read-only due to its idiosyncracy and reliance on tacit knowledge, and "good" clever code, and such distinction corroborates our previous observations regarding beautiful code as a means for expression of the problem domain. His example is that the problem of sorting the roughly 300 million U.S. american citizens by birthdate can be made considerably more efficient by cleverly considering that no U.S. american citizen is older than 120 years, whereby radically reducing the computation space.
 
-Meanwhile, cleverness is a valued attribute in the context of hacker code, putting more emphasis on the technical solution than on the problem domain. A salient is example was the 1994 \lstinline{smr.c} entry to the IOCCC, which aimed at being the smallest self-reproducing program\cite{kanakarakis_international_2022}. Here is an exact reproduction of the source code:
+Meanwhile, cleverness is a valued attribute in the context of hacker code, putting more emphasis on the technical solution than on the problem domain, as we've seen above. A salient is example was the 1994 \lstinline{smr.c} entry to the IOCCC, which aimed at being the smallest self-reproducing program\cite{kanakarakis_international_2022}. Here is an exact reproduction of the source code:
 
 \begin{lstlisting}
   
@@ -989,7 +989,7 @@ Meanwhile, cleverness is a valued attribute in the context of hacker code, putti
 
 Consisting of a zero bytes file, \lstinline{smr.c} provides both a clever understanding and reduction of the problem domain, and a clever understanding of what C compilers would effectively accept or not as a valid program-text\cite{kanakarakis_international_2022a}. Because it has since been banned under the rules of the IOCCC, this clever source code entirely renounces any claim to a more general application, and finds its aesthetic value only within a specific community.
 
-Simplicity, then is the ability to provide code that fits the problem exactly: without being too precise, or too generic, displaying an understanding of and a focus on the application domain, rather than the applied tools, as William J. Mitchell sums it up in his introductory textbook for graphics programming:
+Coming back to simplicity, we return to the ability to write code which fits the problem exactly: without being too precise, or too generic, displaying an understanding of and a focus on the application domain, rather than the applied tools, as William J. Mitchell sums it up in his introductory textbook for graphics programming:
 
 \begin{quote}
   Complex statements have a zen-like reverence for perfect simplicity of expression.\cite{mitchell_art_1987}
@@ -1003,7 +1003,7 @@ Chad Perrin, in his article \emph{ITLOG Import: Elegance}, approaches the concep
   In pursuing elegance, it is more important to be concise than merely brief. In a general sense, however, brevity of code does account for a decent quick and dirty measure of the potential elegance that can be eked out of a programming language, with length measured in number of distinct syntactic elements rather than the number of bytes of code: don't confuse the number of keystrokes in a variable assignment with the syntactic elements required to accomplish a variable assignment.\cite{perrin_itlog_2006}
 \end{quote}
 
-He also hints at the additional meaningufness of elegance, as he compares it to other aesthetic properties, such as simplciity, complexity or symmetry. If simplicity inhabits a range between too specific and too general, he describes an elegant system as exactly appropriate for the task at hand. While he touches at length on the influence of progamming languages in the possibility to write elegant source code—a question to which we will come back in Chapter 4. Elegance, he says, relies on underlying principles, but is nonetheless subject to its manifestation through a particular, linguistic interface.
+He also hints at the additional meaningufness of elegance, as he compares it to other aesthetic properties, such as simplciity, complexity or symmetry. If simplicity inhabits a range between too specific and too general, he describes an elegant system as exactly appropriate for the task at hand. While he touches at length on the influence of progamming languages in the possibility to write elegant source code—a question to which we will come back to in Chapter 4. Elegance, he says, relies on underlying principles, but is nonetheless subject to its manifestation through a particular, linguistic interface.
 
 This underlying aspect is also present in Bruce McLennan's discussion of the concept. As he approaches it through the dual lens of structural engineering, this indicates that he also considers elegance as a more profound concept which can manifest itself across disciplines, both as a way of making, and as a way of thinking\cite{mclennan_who_1997}. He defines his \emph{Elegance Principle} as:
 
@@ -1104,7 +1104,7 @@ for(j=0; j<array_len; j+ =8)
   \label{code:green_unmaintainable_2}
 \end{listing}
 
-Here, we see best how carefully chosen aesthetics, under the values of simplicity, clarity, cleanliness and elegance help first and foremost to alleviate human cognitive friction and facilitate understanding of what the program is doing. The opposite amounts to playing misleading tricks.
+By looking at it from the opposite perspective of highly-confusing code, we see best how carefully chosen aesthetics, under the values of simplicity, clarity, cleanliness and elegance intend first and foremost to help alleviate human cognitive friction and facilitate understanding of what the program is doing. The opposite amounts to playing misleading tricks.
 
 Finally, programmers have another way to refer to code that does not meet aesthetic criteria, which is also relates primarily to a non-cognitive aspect of source code, by refferring to material properties.
 
@@ -1120,7 +1120,7 @@ A broader approach to these sensual perceptions of code involve the reference to
 
 In this section, we've started clarified the main terms used in programmers' discourse when discussing good and beautiful code. Basing our interpretation of the gathered sources on discourse analysis, we specifically assumed a cooperative principle, in which all participants in the discourse assume cooperation in order to achieve writing the best source code possible. This analysis has confirmed and updated the findings of Piñeiro's earlier study. Across textbooks, blog posts, forums posts and trade books, the aesthetic properties of code are widely acknowledged and, to a certain extent, consistent in the adjectives used to qualify it (clean, elegant, simple, clear, but also clever, obscure, or dirty).
 
-While there is a consistency in describing the means of beautiful code, by establishing a lexical field with clear identifiers, this analysis also opens up additional pathways for inquiry. First, we see that there is a clear relationship between formal manifestations and cognitive burden, insofar as aesthetics help alleviate such a burden. Beautiful code makes the ideas on which the code relies, and the world which the code aims to translate and operate on, more accessible to the reader. Second, the negative adjectives mentioned when referring to the formal aspects of code (smelly, muddy, entangled) are eminently \emph{materialistic}, indicating some interesting tension between the ideas of code, and the materials of its manifestation.
+While there is a consistency in describing the means of beautiful code, by examining a lexical field with clear identifiers, this analysis also opens up additional pathways for inquiry. First, we see that there is a relationship between formal manifestations and cognitive burden, insofar as aesthetics help alleviate such a burden. Beautiful code makes the ideas on which the code relies, and the world which the code aims to translate and operate on, more accessible to the reader. Second, the negative adjectives mentioned when referring to the formal aspects of code (smelly, muddy, entangled) are eminently \emph{materialistic}, indicating some interesting tension between the ideas of code, and the sensuality of its manifestation.
 
 Finally, as we've seen in the breadth of responses in a programmer's question of "How can you explain "beautiful code" to a non-programmer?"\cite{how_2013a}, programmers provide multiple aesthetic domains to refer to: whether engineering, literature, architecture or mathematics. We now turn to an investigation of each of these domains, and of how they can be related to code.
 
@@ -1128,15 +1128,49 @@ Finally, as we've seen in the breadth of responses in a programmer's question of
 
 \section{Aesthetic domains  - 6000}
 
-Now that we've done some empirical work, we can try to abstract away a bit and then look into how this relates to existing frameworks of aesthetics.
+This examination of what words programmers use when they relate to the aesthetic qualities  of source code (the way it looks) or the aesthetic experience that it elicits (the way they feel) has shown a certain degree of elusiveness. Subjectively, then, programmers can associate their experience of encountering well-written code as an aesthetic one. However, on a normative level, things become a little more complicated to define: as we've seen in the previous section's discussion of forum exchanges, beauty in source code is best illustrated by referring to to other domains.
 
-Now that \emph{we look at proofs, through discourse}, what kind of beauty can we be dealing with?
+The next step that we propose now is to inquire into these specific domains, to examine in which capacity they are being summoned in relation to code, and how they help us further delineate the aesthetic qualities which belong to source code. The assumption here is that, following Neil Postman, a medium is a means of expression, and different mediums can support different qualities of expression\cite{postman_amusing_1985}. Since there seems to be some specific ways in which code can be considered beautiful, starting from the contingent domains, and from the specific parts of these domains which create this contingency, will prepare our work ahead.
+
+To do so, then, we will look at the three domains most often conjured by programmers when they mention the sensual qualities of, or the aesthetic experiences elicited by, source code: literature, mathematics and architecture. While there are accounts of parallels between programming and painting\cite{graham_hackers_2003}, these refer rather to the painter as an individual, rather than painting as a medium, and there are, to the best of our knowledge, no account of code being like sculpture or film, for instance.
 
 \subsection{Literary Beauty}
 
-chandra, geek sublime
+The most striking, and obvious similarity between code and another medium of expression is that of literature: perhaps because they both require, fundamentally, the use of alphanumeric characters laid out on a two-dimensional plane. Similarly, syntax and semantics interplay in order to convey meaning to a reader. \emph{Code as literature}, then, focuses on this intertwining of natural language and computer language, on its narrative, rhetorical and informative properties, and on its ability to mimick the traditional forms of poetry.
 
-matz, code as an essay
+\subsubsection{Code as a linguistic practice} % 350 + 350
+
+In \emph{Geek Sublime}, Vikram Chandra, novelist and programmer, lays out the deep parallels he sees between code and human language, specifically sanskrit. While stopping short of claiming that code is literature, he nonetheless makes the claim that sanskrit is, as a set of generative linguistic rules to compose meaning, a distant ancestor to computer code\cite{chandra_geek_2014}, a fact corroborated by Agathe Keller in her studies of the Āryabhaṭa\cite{keller_textes_2021}. Sanskrit, like computer code, relies on context-free rules and exhibits similar properties as in code, such as recursion and inheritance.
+
+With a similar syntactic structure between sanskrit and code, the former also exhibits a "\emph{search for clear, unambiguous understanding}" through careful study, a goal shared by the writers of source code, as we've seen above. Specifically, the complexity of the linguistic system presented both in sanskrit and in machine language implies that enjoyment of works in either medium happens not thourgh egotistical, subjective appreciation, but through "conoisseurship", resulting from education, experience and temperament\cite{chandra_geek_2014}.
+
+Similarly, in \emph{Words Made Flesh: Code and Cultural Imagination}, Florian Cramer touches upon code's ability to \emph{do} things to inscribe it differently in a historical development of linguistics, connecting it to the symbolical works of the kabbalah and Lebniz's \emph{Ars Combinatoria}. Code, according to Cramer, is linguistic, not just because it is made up of words, but because it \emph{acts upon} words, influencing what we consider literature.
+
+\begin{quote}
+  The step from writing to action is no longer metaphorical, as it would be with a semantic text such as a political speech or a manifesto. It is concrete and physical because the very code is thought to materially contain its own activation; as permutations, recursions or viral infections.\cite{cramer_words_2003}
+\end{quote}
+
+Those permutations and recursions are used in the different ways natural language writers have attempted to apply formulas, or algorithms, to their works, from the Oulipo's \emph{Poèmes Algol} to Cornelia Sollfrank's \emph{Net.Art Generator}. The properties that Cramer identifies in machine languages, tensions between totality and fragmentation, rationalization and occultism, hardware and software, syntax and semantics, artificial and natural, are ascribed to the newest development of the interplay between program and expression, such as through the shape of combinatorial poetics\cite{cramer_words_2003}. This resemblance, or \emph{Familienähnlichkeit}, to other forms of linguistic expression, is explored by Katherine Hayles' work on speech, writing and code. Specifically, she sees the linguistic practices of humans and intelligence machines as influencing and interpenetrating each other, considering code as language's partner\footnote{Hayles's work on posthumanism should be acknowledged here, as she envisions the human brain as a platform on which code runs, both natural codes such as sanskrit, or more computational forms of codes.}.
+
+Specifically, Hayles looks at how both literature and code can be expressive in a syntagmaticmanner and in a paradigmatic manner. In the former, the meaning spread across the words of a sentence is considered fixed in literature, while it is dynamically generated in source code. In the latter, the meaning across potential synonyms in a (program) text, is always potential in literature, and always present in code\cite{hayles_print_2004}. If code is a form of linguistic system, then it is a dynamic one in which the semantic charge is at least as volatile as in literature, but which possesses an additional \emph{dimension}, as orality, literacy and digitality succeed each other by bringing the specificity of their media.
+
+If code is a linguistic system in the technical sense, having a syntactic ruleset operating on words, it seems to also be a linguistic system in the cultural sense. As such, it deals with the occult, the magical and the obscure, but also exhibits a desire to communicate and execute unambiguous meaning.
+
+This desire for explicit communication led literacy scholars to investigate source code's relationship to rhetoric. While digital systems seem to exhibit persuasive means of their own\cite{bogost_rhetoric_2007}\cite{frasca_simulation_2013}, the code that underpins them also presents rhetorical affordances. The work of Kevin Brock and Annette Vee in this domain has shown that source code isn't just a normative discourse to the machine, but also an argumentative one with respect to the audience to the audience. From points being made in large-scale software such as Mozilla's Firefox web browser, to more specific styles in job interviews, source code presents worldviews in its own specific syntax\cite{brock_rhetorical_2019}.
+
+The connections of code to linguistics has therefore been examined at the technical, media, and cultural levels, showing that it can allow for the expression of ideas and arguments, straddling the line between the rational and the evocative. We now turn more specifically to two instances of program code being considered a literary text, by leading programmers in the field: Yukihiro 'Matz' Matsumoto and Donald Knuth.
+
+\subsubsection{Code as a narrative unfolding}
+
+matz, code as an essay - 700
+
+knuth, literate programming
+
+\subsubsection{Code poetry}
+
+700
+
+montfort and sublime
 
 This second approach contrasts with the functional component of the first one, but nonetheless stands in relationship with it. the creative beauty, by defying traditional beauty standards, does help us highlight, through deviance, what the norm is. These texts on "creative beauty" include the classical perl poetry, code poems, IOCC, code poetry contest, etc.
 
@@ -1201,7 +1235,13 @@ the program is perfect in the mind, and mistakes come when translation occurs in
 
 This allows a segue into everyday aesthetics and environmental aesthetics
 
+louis sullivan, modernism -> architecture must be 'sincere', 'honest', 'authentic' (in functional beauty) in architecture, functionalism is inherently good, valuable
+
+roger scruton, the aesthetics of architecture. he has two approaches to beauty: the psychological (subjective, aesthetic response) and normative (objective, correctness of response)
+
 % habitability: " It should feel comfortable and safe, like a well-designed home or office; in this way it can contribute to the quality of the activities that take place within it. Would you work better in an oriental garden or a sweatshop? " https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html
+
+louis sullivan
 
 Completing his definition of elegance, McLennan touches upon the way to assess elegance through visual means in another publication on the more general need for aesthetics\footnote{Along with elegance, he includes efficiency and economy as the core aesthetic values of technological activities.}. The ability to distinguish an elegant system from an ugly one, then, comes through \emph{practice}, the implications of which we will examine in the last section of this chapter\cite{schummer_aesthetic_2009}.
 
