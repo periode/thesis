@@ -737,6 +737,44 @@ Hopkins analyzes the ability of the poem to enable dual understandings of the so
   the context of the poem.  \cite{hopkins_camels_1992}
 \end{quote}
 
+The poem \emph{Black Perl}, submitted anonymously, is another example of the richness of the productions of this community:
+
+\linespread{1.00}\selectfont
+\begin{lstlisting}{language=Perl, Caption="Black Perl, Anonymous, 1990, updated by kck, 2017"}
+    #!/usr/bin perl
+    no warnings;
+    
+    BEFOREHAND: close door, each window & exit; wait until time.
+      open spellbook, study, read (scan, $elect, tell us);
+    write it, print the hex while each watches,
+      reverse its, length, write, again;
+    kill spiders, pop them, chop, split, kill them.
+      unlink arms, shift, wait & listen (listening, wait),
+      sort the flock (then, warn "the goats" & kill "the sheep");
+    kill them, dump qualms, shift moralities,
+      values aside, each one;
+    die sheep? die to : reverse { the => system
+      ( you accept (reject, respect) ) };
+    next step,
+      kill `the next sacrifice`, each sacrifice,
+      wait, redo ritual until "all the spirits are pleased";
+    do { it => "as they say" }.
+      do { it => (*everyone***must***participate***in***forbidden**s*e*x*)
+    + }.
+      return last victim; package body;
+    exit crypt (time, times & "half a time") & close it,
+      select (quickly) & warn your (next victim);
+    AFTERWARDS: tell nobody.
+      wait, wait until time;
+    wait until next year, next decade;
+    sleep, sleep, die yourself,
+      die @last 
+\end{lstlisting}
+\linespread{1.50}\selectfont
+\normalfont
+
+The most obvious feature of this code poem is that it can be read by anyone, including by readers with no previous programming experience: each word is valid both as English and as Perl. A second feature is the abundant use of verbs. Perl belongs to a family of programming languages grouped under the \emph{imperative} paradigm, which matches a grammatical mood of natural languages, the \emph{imperative mood}. Such mood emphasizes actions to be take rather than, for instance, descriptions of situations, and thus sets a clear tone for the poem. The fact that Perl is based on stating procedures to be executed and states to be changed creates this feeling of relentless urgency when reading through the poem, a constant need to be taking actions, for things to be changed. Here, the native constraints of the programming language interacts directly with the poetic suggestion of the work in a first way: the nature of Perl is that of giving orders, resulting in a poem which addresses \emph{someone} to execute \emph{something}. Still, Perl's flexibility leaves us wondering as to who and what are concerned by these orders. Is the poem directing its words to itself? To the reader? Is Perl just ever talking exclusively to the computer? This ambiguity of the adressee adds to the ominousness of each verse.
+
 In this spirit, additional communities around code poetry have formed, whether in university settings\footnote{Such as Stanford's Code Poetry Slam, which ran between 2014 and 2016, \url{https://web.archive.org/web/20161024152353/http://stanford.edu/\%7Emkagen/codepoetryslam/} }, or as independent intiatives\footnote{See the Source Code Poetry event, \url{https://www.sourcecodepoetry.com/}}. Beyond collections such as threads and hashtags on Twitter\footnote{See \lstinline{#SongsInCode} at \url{https://twitter.com/search?q=\%2523SongsInCode}}, code poetry also features artistic publications, such as printed anthologies of code poetry in book form\cite{bertram_code_2012}\cite{holden_code_2016}
 
 Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \ref{code:numero_mysterioso_asm}.
@@ -952,13 +990,7 @@ This process of obfuscation has very clear, quantitative assessment criterias, s
 
 An example of such literary connection is given by Noël Arnaud's work \emph{Poèmes Algol}\cite{arnaud_poemes_1968}, in which he uses the constructs of the language Algol 68 in order to evoke in the reader something different than what the program actually does (i.e. fail to execute anything meaningful). As such, obfuscation seems to be a literary value, as opposed to other domains, such as the mathematical or the architectural, where it is both considered exclusively negatively.
 
-Another insight on simplicity and programming regarding the communication of ideas is hinted at by Richard P. Gabriel in his use of the concept of \emph{compression} in both poetry and programming. In an interview with Janice J. Jeiss, he states:
-
-\begin{quote}
-  I'm thinking about things like simplicity -- how easy is it going to be for someone to look at it later? How well is it fulfilling the overall design that I have in mind? How well does it fit into the architecture? If I were writing a very long poem with many parts, I would be thinking, "Okay, how does this piece fit in with the other pieces? How is it part of the bigger picture?". When coding, I'm doing similar things, and if you look at the source code of extremely talented programmers, there's beauty in it. There's a lot of attention to compression, using the underlying programming language in a way that's easy to penetrate. Yes, writing code and writing poetry are similar. \cite{jeiss_poetry_2002}
-\end{quote}
-
-Simplicity in programming is presented here as akin to compression in poetry: in the increasing of semantic charge (or significance, in Karvonen's terms) all the while reducing the syntactic load (or the quantitity of formal tokens in the source code). One of those extraneous loads is explanation:
+Another insight on simplicity and programming regarding the communication of ideas is hinted at by Richard P. Gabriel in his use of the concept of \emph{compression} in both poetry and programming: simplicity in programming is presented as being akin to compression in poetry: in the increasing of semantic charge (or significance, in Karvonen's terms) all the while reducing the syntactic load (or the quantitity of formal tokens in the source code). One of those extraneous loads is explanation:
 
 \begin{quote}
   When it requires a lot of explanation like that, it's not "beautiful code," but "a clever hack."\cite{how_2013a}
@@ -1126,7 +1158,7 @@ Finally, as we've seen in the breadth of responses in a programmer's question of
 
 \pagebreak
 
-\section{Aesthetic domains  - 6000}
+\section{Aesthetic domains}
 
 This examination of what words programmers use when they relate to the aesthetic qualities  of source code (the way it looks) or the aesthetic experience that it elicits (the way they feel) has shown a certain degree of elusiveness. Subjectively, then, programmers can associate their experience of encountering well-written code as an aesthetic one. However, on a normative level, things become a little more complicated to define: as we've seen in the previous section's discussion of forum exchanges, beauty in source code is best illustrated by referring to to other domains.
 
@@ -1138,7 +1170,7 @@ To do so, then, we will look at the three domains most often conjured by program
 
 The most striking, and obvious similarity between code and another medium of expression is that of literature: perhaps because they both require, fundamentally, the use of alphanumeric characters laid out on a two-dimensional plane. Similarly, syntax and semantics interplay in order to convey meaning to a reader. \emph{Code as literature}, then, focuses on this intertwining of natural language and computer language, on its narrative, rhetorical and informative properties, and on its ability to mimick the traditional forms of poetry.
 
-\subsubsection{Code as a linguistic practice} % 350 + 350
+\subsubsection{Code as a linguistic practice}
 
 In \emph{Geek Sublime}, Vikram Chandra, novelist and programmer, lays out the deep parallels he sees between code and human language, specifically sanskrit. While stopping short of claiming that code is literature, he nonetheless makes the claim that sanskrit is, as a set of generative linguistic rules to compose meaning, a distant ancestor to computer code\cite{chandra_geek_2014}, a fact corroborated by Agathe Keller in her studies of the Āryabhaṭa\cite{keller_textes_2021}. Sanskrit, like computer code, relies on context-free rules and exhibits similar properties as in code, such as recursion and inheritance.
 
@@ -1160,62 +1192,86 @@ This desire for explicit communication led literacy scholars to investigate sour
 
 The connections of code to linguistics has therefore been examined at the technical, media, and cultural levels, showing that it can allow for the expression of ideas and arguments, straddling the line between the rational and the evocative. We now turn more specifically to two instances of program code being considered a literary text, by leading programmers in the field: Yukihiro 'Matz' Matsumoto and Donald Knuth.
 
-\subsubsection{Code as a narrative unfolding}
+\subsubsection{Code as text}
 
-matz, code as an essay - 700
+Perhaps the most famous reference to code as a literary object is to be found in Donald Knuth's \emph{literary programming}. In his eponymous 1984 article in \emph{The Computer Journal}, Knuth advocates for a practice of programming in which a tight coupling of documentation with source code can allow one to consider programs as "works of literature"\cite{knuth_literate_1984}. It is unclear, however, what Knuth entails when he refers to a work of literature\footnote{For instance, he refers in the rest of the article as "constructing" programs, rather than "writing" them.}.
 
-knuth, literate programming
+Literate programming, a direct response to another programming paradigm called structured programming, enables the weaving of natural language blocks with machine language blocks, in order to be able to comile a single source into either a typeset documentation of the program, using the TeX engine\footnote{In which this current thesis is written}, or into a source file for a Pascal compiler. The literary, here, is only a new set of tools and practices of writing which result in a \emph{publishable work}, rather than a \emph{literary work}, in which the program is described in natural language, with source code being interspersed as snippets throughout. While this approach makes sense within Knuth's interest in typesetting and workflows of scientific publications, it does not explicitly address the relationship between literature and programming beyond this.
+
+Still, his aim remains to support a clear understanding of a program by its reader, particularly emphasizing the complexity of such tasks. If he proposes something with regards to literature, it is in the process of meaning-making through reading, and its cognitive implications:
+
+\begin{quote}
+  This feature of WEB is perhaps its greatest asset; it makes a WEB-written program much more readable than the same program written purely in PASCAL, even if the latter program is well commented.  [...] a programmer can now view a large program as a web, to be explored in a psychologically correct order is perhaps the greatest lesson I have learned from my recent experiences.\cite{knuth_literate_1984}
+\end{quote}
+
+For Knuth, then, code is a text: both in the traditional, publisher-friendly way, but also in a new, non-linear way. This attention to the materiality of the program—layout, typesetting—foresees subsequent technological solutions to allow natural language and machine language to co-exist\footnote{See JavaDocs, Go docs, Jupyter Notebooks}.
+
+This new way to approach (digital, hybrid) texts is expressed by Yukihiro Matsumoto, the creator of the Ruby programming language, in his notion of \emph{Code as an Essay}\cite{oram_beautiful_2007}. While he doesn't deal directly with questions of eloquence and rhetoric, as opposed to Brock and Vee, it does however start from the premise that code is a kind of text, insofar as it has an a massage being conveyed in a written form to an audience. However, it is not a kind of text which has a specific author, or a specific finite state:
+
+\begin{quote}
+  Most programs are not write-once. They are reworked and rewritten again and again in their lived. Bugs must be debugged. Changing requirements and the need for increased functionality mean the program itself may be modified on an ongoing basis. During this process, human beings must be able to read and understand the original code.
+\end{quote}
+
+This conception, in which a text remains open to be further modified by subsequent voices, thus minimizing the aura, and possibly diluting the intent of the original author, echoes the distinction made by Roland Barthes between a \emph{text lisible} (readerly texte) and \emph{texte scriptible} (writerly text). While the former aligns with classical conceptions of literature, with a clear author and life span for the literary work, the latter remains open to subsequent, subjective appropriations.
+
+This appropriation is such that a modified program text does not result in a finite program text either; due to its very low barrier to modification and diffusion, program texts can act almost as a dialogue between two programmers. As Jesse Li puts it, building the linguistic theory of Volonishov and Bakhtin:
+
+\begin{quote}
+  The malware author is in dialogue with the malware analyst. The software engineer is in dialogue with their teammates. The user of a piece of software is in dialogue with its creator. A web application is in dialogue with the language and framework it is written in, and its structure is mediated by the characteristics of TCP/IP and HTTP. And in the physical act of writing code, we are in dialogue with our computer and development environment.\cite{li_where_2020}
+\end{quote}
+
+It is to support this act of dialogue, supported by code's affordance of rapid modification and redistribution, that Matusmoto highlights simplicity, brevity—his term for elegance— and balance—insofar as no one dimension alone is enough—as means to achieve writing beautiful code. His last criteria, lightness, applies not to the code being written, but to the language being used to write such code, adding one more dimension to the dialogue: between the writer(s), the reader(s) and the language designer(s), an additional dimension we will return to in chapter XXX.
+
+These two examples show us that source code can be considered a text, if not a literary work which needs to accomodate a hybrid of natural and machine languages, new modes of diffusion, and countless possibilities for being rewritten. In this technological environment of programming languages (from WEB to Ruby), the aim is to facilitate the understanding of what the program does, and of what it should do.
+
+Yet, a last approach to the literariness of source code can be found in the works of code poetry, in which this ambiguity is embraced.
 
 \subsubsection{Code poetry}
 
-700
+Daniel Temkin, in his \emph{Sentences of Code Art}\footnote{A direct reference to Sol Lewitt's \emph{Sentences on Conceptual Art}.}, suggests the ways in which code art (encompassing code poetry, esoteric languages and obfuscated code, among others) touches on code's linguistic features mentioned by Chandra and Cramer, while coming at it from a non-functional perspective, radically opposed to Knuth and Matsumoto.
 
-montfort and sublime
+\begin{quote}
+  The ambiguity of human language is present in code, which never fully escapes its status as human writing, even when machine-generated. We bring to code our excesses of language, and an ambiguity of semantics, as discerned by the human reader.\cite{temkin_sentences_2017}
+\end{quote}
 
-This second approach contrasts with the functional component of the first one, but nonetheless stands in relationship with it. the creative beauty, by defying traditional beauty standards, does help us highlight, through deviance, what the norm is. These texts on "creative beauty" include the classical perl poetry, code poems, IOCC, code poetry contest, etc.
+The artists whose main medium is writing source code explore the possibilities of meaning-making through mechanisms usually associated with poetry. For instance, code art is focused on the evokative possibilities of machine languages, and away from its exactness. This is a step further in a direction of semantic possibilities hinted at by Richard P. Gabriel when he mentions the parallels between writing code and writing poetry. In an interview with Janice J. Jeiss, he states:
 
-The poem \emph{Black Perl}, submitted anonymously, is a representative example of the richness of the productions of this community:
+\begin{quote}
+  I'm thinking about things like simplicity -- how easy is it going to be for someone to look at it later? How well is it fulfilling the overall design that I have in mind? How well does it fit into the architecture? If I were writing a very long poem with many parts, I would be thinking, "Okay, how does this piece fit in with the other pieces? How is it part of the bigger picture?". When coding, I'm doing similar things, and if you look at the source code of extremely talented programmers, there's beauty in it. There's a lot of attention to compression, using the underlying programming language in a way that's easy to penetrate. Yes, writing code and writing poetry are similar. \cite{jeiss_poetry_2002}
+\end{quote}
 
-\linespread{1.00}\selectfont
-\begin{lstlisting}{language=Perl, Caption="Black Perl, Anonymous, 1990, updated by kck, 2017"}
-    #!/usr/bin perl
-    no warnings;
-    
-    BEFOREHAND: close door, each window & exit; wait until time.
-      open spellbook, study, read (scan, $elect, tell us);
-    write it, print the hex while each watches,
-      reverse its, length, write, again;
-    kill spiders, pop them, chop, split, kill them.
-      unlink arms, shift, wait & listen (listening, wait),
-      sort the flock (then, warn "the goats" & kill "the sheep");
-    kill them, dump qualms, shift moralities,
-      values aside, each one;
-    die sheep? die to : reverse { the => system
-      ( you accept (reject, respect) ) };
-    next step,
-      kill `the next sacrifice`, each sacrifice,
-      wait, redo ritual until "all the spirits are pleased";
-    do { it => "as they say" }.
-      do { it => (*everyone***must***participate***in***forbidden**s*e*x*)
-    + }.
-      return last victim; package body;
-    exit crypt (time, times & "half a time") & close it,
-      select (quickly) & warn your (next victim);
-    AFTERWARDS: tell nobody.
-      wait, wait until time;
-    wait until next year, next decade;
-    sleep, sleep, die yourself,
-      die @last 
-\end{lstlisting}
-\linespread{1.50}\selectfont
-\normalfont
+Further exploring the semantic possibilities of considering source code as a possible medium for poetic expression, one can turn to the analyses of code poems in publications such as Ishaac Bertram's edited volume, \emph{code \{poems\}} and Nick Montfort's collected poems in \emph{\#!}.
 
-The most obvious feature of this code poem is that it can be read by anyone, including by readers with no previous programming experience: each word is valid both as English and as Perl. A second feature is the abundant use of verbs. Perl belongs to a family of programming languages grouped under the \emph{imperative} paradigm, which matches a grammatical mood of natural languages, the \emph{imperative mood}. Such mood emphasizes actions to be take rather than, for instance, descriptions of situations, and thus sets a clear tone for the poem. The fact that Perl is based on stating procedures to be executed and states to be changed creates this feeling of relentless urgency when reading through the poem, a constant need to be taking actions, for things to be changed. Here, the native constraints of the programming language interacts directly with the poetic suggestion of the work in a first way: the nature of Perl is that of giving orders, resulting in a poem which addresses \emph{someone} to execute \emph{something}. Still, Perl's flexibility leaves us wondering as to who and what are concerned by these orders. Is the poem directing its words to itself? To the reader? Is Perl just ever talking exclusively to the computer? This ambiguity of the adressee adds to the ominousness of each verse.
+In the former's foreword, Jamie Allen develops further this ability to express oneself via machine languages, considering that programmers can have "\emph{passionate conversations in Python}" or "\emph{with a line in a text file [...] speak directly to function, material action, and agency}"\cite{bertram_code_2012}. This is done, not by relying on the computer as a generative device, by harnessing from the form and subject matter of those very machine languages which subsequently can exhibit those generative properties. Focusing on the language part of the machine allows for an interplay between human and machine meanings.
 
-- minimalism
-- https://vimeo.com/47364930 -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
+Still, machine semantics are nonetheless considered as an essential device in writing code poetry, and exploring concepts that are not easily grasped in natural languages—e.g. loop and destructuring assignment. Additionally, the contrast between the source representation of the poem and the execution of the poem can add to the poetic tension, as we see in Nick Montfort's \emph{All The Names of God} (2010) (source in \ref{code:all_the_names_of_god}, and output in \ref{output:all_the_names_of_god}).
 
-\subsection{Mathematical beauty}
+\begin{listing}
+  \begin{minted}{perl}
+print"a"x++$...$"x$.,$,=_;redo
+\end{minted}
+  \caption{All The Names of God, Nick Montfort, 2010, source}
+  \label{code:all_the_names_of_god}
+\end{listing}
+
+\begin{listing}
+  \begin{minted}[breaklines=true,breakanywhere,breakafter=_]{text}
+_atk_atl_atm_atn_ato_atp_atq_atr_ats_att_atu_atv_atw_atx_aty_atz_aua_aub_auc_aud_aue_auf_aug_auh_aui_auj_auk_aul_aum_aun_auo_aup_auq_aur_aus_aut_auu_auv_auw_aux_auy_auz_ava_avb_avc_avd_ave_avf_avg_avh_avi_avj_avk_avl_avm_avn_avo_avp_avq_avr_avs_avt_avu_avv_avw_avx_avy_avz_awa_awb_awc_awd_awe_awf_awg_awh_awi_awj_awk_awl_awm_awn_awo_awp_awq_awr_aws_awt_awu_awv_aww_awx_awy_awz_axa_axb_axc_axd_axe_axf_axg_axh_axi_axj_axk_axl_axm_axn_axo_axp_axq_axr_axs_axt_axu_axv_axw_axx_axy_axz_aya_ayb_ayc_ayd_aye_ayf_ayg_ayh_ayi_ayj_ayk_ayl_aym_ayn_ayo_ayp_ayq_ayr_ays_ayt_ayu_ayv_ayw_ayx_ayy_ayz_aza_azb_azc_azd_aze_azf_azg_azh_azi_azj_azk_azl_azm_azn_azo_azp_azq_azr_azs_azt_azu_azv_azw_azx_azy_azz_baa_bab_bac_bad_bae_baf_bag_bah_bai_baj_bak_bal_bam_ban_bao_bap_baq_bar_bas_bat_bau_bav_baw_bax_bay_baz_bba_bbb_bbc_bbd_bbe_bbf_bbg_bbh_bbi_bbj_bbk_bbl_bbm_bbn_bbo_bbp_bbq_bbr_bbs_bbt_bbu_bbv_bbw_bbx_bby_bbz_bca_bcb_bcc_bcd_bce_bcf_bcg_bch_bci_bcj_bck_bcl_bcm_bcn_bco_bcp_bcq_bcr_bcs_bct_bcu_bcv_bcw_bcx_bcy_bcz_bda_bdb_bdc_bdd_bde_bdf_bdg_bdh_bdi_bdj_bdk_bdl_bdm_bdn_bdo_bdp_bdq_bdr_bds_bdt_bdu_bdv_bdw_bdx_bdy_bdz_bea_beb_bec_bed_bee_bef_beg_beh_bei_bej_bek_bel_bem_ben_beo_bep_beq_ber_bes_bet_beu_bev_bew_bex_bey_bez_bfa_bfb_bfc_bfd_bfe_bff_bfg_bfh_bfi_bfj_bfk_bfl_bfm_bfn_bfo_bfp_bfq_bfr_bfs_bft_bfu_bfv_bfw_bfx_bfy_bfz_bga_bgb_bgc_bgd_bge_bgf_bgg_bgh_bgi_bgj_bgk_bgl_bgm_bgn_bgo_bgp_bgq_bgr_bgs_bgt_bgu_bgv_bgw_bgx_bgy_bgz_bha_bhb_bhc_bhd_bhe_bhf_bhg_bhh_bhi_bhj_bhk_bhl_bhm_bhn_bho_bhp_bhq_bhr_bhs_bht_bhu_bhv_bhw_bhx_bhy_bhz_bia_bib_bic_bid_bie_bif_big_bih_bii_bij_bik_bil_bim_bin_bio_bip_biq_bir_bis_bit_biu_biv_biw_bix_biy_biz_bja_bjb_bjc_bjd_bje_bjf_bjg_bjh_bji_bjj_bjk_bjl_bjm_bjn_bjo_bjp_
+\end{minted}
+  \caption{All The Names of God, Nick Montfort, 2010, Selected output}
+  \label{output:all_the_names_of_god}
+\end{listing}
+
+This poem is the object of close literary critical examination by Maria Aquilina, who notes that \emph{[t]he contrast between the economical minimalism of the program and the ordered but infinite series of letter combinations it produces is one of the aspects that make the poem striking}\cite{aquilina_computational_2015}. Building on philosopersy and literary theorists, Aquilina situates the expressive power of the poem in its engagement with the concept of \emph{eventualization}, locating the semantic load of the poem in its existence both in a human-perception of non-human (i.e. computer time) and the dialogue between source, output and title\cite{aquilina_computational_2015}.
+
+Not only is there an aesthetic of minimalism present in the source (to which Perl lends itself perfectly), the output also represents the \emph{depth} (in Hayles's sense) of the medium of writing. As we've seen above, a literary conception of source code aesthetic can, under certain circumstances, find its quality not just the limit in characters, but in the relationship between such a limit and the expansiveness of the ideas expressed.
+
+\vspace*{1\baselineskip}
+
+From software developers to artists, different kinds of writers seem to equate code as a text, bringing forth multiple reasons to justify such a connection. Beyond the fact that source code is made up of textual characters, we see that these conceptions of code as literature are dual. On the one side, it is focused on its need to communicate explicit concepts related to its function (Knuth, Matsumoto, Brock), all the while embracing the semantic ambiguity which exists in the use of natural language tokens, backed-up by the potential executable semantics enabled by its machine nature (Cramer, Hayles, Montfort, Temkin).
+The last example, the tension between \emph{All The Names of God}'s source and output, suggests us to look at this kind of elegance not through a literary lens, but through a scientific one—another domain conjured by code writers and readers.
+
+\subsection{Scientific beauty}
 
 Mostly elegance, could be a good place to work on the distinction between proof and theorem, concept and appearance.
 
@@ -1240,8 +1296,6 @@ louis sullivan, modernism -> architecture must be 'sincere', 'honest', 'authenti
 roger scruton, the aesthetics of architecture. he has two approaches to beauty: the psychological (subjective, aesthetic response) and normative (objective, correctness of response)
 
 % habitability: " It should feel comfortable and safe, like a well-designed home or office; in this way it can contribute to the quality of the activities that take place within it. Would you work better in an oriental garden or a sweatshop? " https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html
-
-louis sullivan
 
 Completing his definition of elegance, McLennan touches upon the way to assess elegance through visual means in another publication on the more general need for aesthetics\footnote{Along with elegance, he includes efficiency and economy as the core aesthetic values of technological activities.}. The ability to distinguish an elegant system from an ugly one, then, comes through \emph{practice}, the implications of which we will examine in the last section of this chapter\cite{schummer_aesthetic_2009}.
 
