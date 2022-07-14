@@ -44,6 +44,8 @@ as we have our typology, we realize that they are all a bit all over the place. 
 
 we see how programming languages deal with understanding between computers and humans, and how they have to provide an interface to deal with _meaning_.
 
+> A theorem, however, is (see above) only useful if we can apply it under a minimum number of clear conditions. In the same way the usefulness of a subroutine (or, in a language, a grammatical instruction) increases as the chance decreases, that it will be used incorrectly. From this point of view we should aim at a programming language consisting of a small number of concepts, the more general the better, the more systematic the better, in short: the more elegant the better [src](https://www.cs.utexas.edu/users/EWD/transcriptions/MCreps/MR34.html)
+
 we also look into language-dependent features, and language-independent features.
 
 so we conclude on language as a material to embody a theory of semantico-spatial cognition

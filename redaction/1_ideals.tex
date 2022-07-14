@@ -1255,7 +1255,7 @@ print"a"x++$...$"x$.,$,=_;redo
 \end{listing}
 
 \begin{listing}
-  \begin{minted}[breaklines=true,breakanywhere,breakafter=_]{text}
+  \begin{minted}[breaklines=true,breakanywhere]{text}
 _atk_atl_atm_atn_ato_atp_atq_atr_ats_att_atu_atv_atw_atx_aty_atz_aua_aub_auc_aud_aue_auf_aug_auh_aui_auj_auk_aul_aum_aun_auo_aup_auq_aur_aus_aut_auu_auv_auw_aux_auy_auz_ava_avb_avc_avd_ave_avf_avg_avh_avi_avj_avk_avl_avm_avn_avo_avp_avq_avr_avs_avt_avu_avv_avw_avx_avy_avz_awa_awb_awc_awd_awe_awf_awg_awh_awi_awj_awk_awl_awm_awn_awo_awp_awq_awr_aws_awt_awu_awv_aww_awx_awy_awz_axa_axb_axc_axd_axe_axf_axg_axh_axi_axj_axk_axl_axm_axn_axo_axp_axq_axr_axs_axt_axu_axv_axw_axx_axy_axz_aya_ayb_ayc_ayd_aye_ayf_ayg_ayh_ayi_ayj_ayk_ayl_aym_ayn_ayo_ayp_ayq_ayr_ays_ayt_ayu_ayv_ayw_ayx_ayy_ayz_aza_azb_azc_azd_aze_azf_azg_azh_azi_azj_azk_azl_azm_azn_azo_azp_azq_azr_azs_azt_azu_azv_azw_azx_azy_azz_baa_bab_bac_bad_bae_baf_bag_bah_bai_baj_bak_bal_bam_ban_bao_bap_baq_bar_bas_bat_bau_bav_baw_bax_bay_baz_bba_bbb_bbc_bbd_bbe_bbf_bbg_bbh_bbi_bbj_bbk_bbl_bbm_bbn_bbo_bbp_bbq_bbr_bbs_bbt_bbu_bbv_bbw_bbx_bby_bbz_bca_bcb_bcc_bcd_bce_bcf_bcg_bch_bci_bcj_bck_bcl_bcm_bcn_bco_bcp_bcq_bcr_bcs_bct_bcu_bcv_bcw_bcx_bcy_bcz_bda_bdb_bdc_bdd_bde_bdf_bdg_bdh_bdi_bdj_bdk_bdl_bdm_bdn_bdo_bdp_bdq_bdr_bds_bdt_bdu_bdv_bdw_bdx_bdy_bdz_bea_beb_bec_bed_bee_bef_beg_beh_bei_bej_bek_bel_bem_ben_beo_bep_beq_ber_bes_bet_beu_bev_bew_bex_bey_bez_bfa_bfb_bfc_bfd_bfe_bff_bfg_bfh_bfi_bfj_bfk_bfl_bfm_bfn_bfo_bfp_bfq_bfr_bfs_bft_bfu_bfv_bfw_bfx_bfy_bfz_bga_bgb_bgc_bgd_bge_bgf_bgg_bgh_bgi_bgj_bgk_bgl_bgm_bgn_bgo_bgp_bgq_bgr_bgs_bgt_bgu_bgv_bgw_bgx_bgy_bgz_bha_bhb_bhc_bhd_bhe_bhf_bhg_bhh_bhi_bhj_bhk_bhl_bhm_bhn_bho_bhp_bhq_bhr_bhs_bht_bhu_bhv_bhw_bhx_bhy_bhz_bia_bib_bic_bid_bie_bif_big_bih_bii_bij_bik_bil_bim_bin_bio_bip_biq_bir_bis_bit_biu_biv_biw_bix_biy_biz_bja_bjb_bjc_bjd_bje_bjf_bjg_bjh_bji_bjj_bjk_bjl_bjm_bjn_bjo_bjp_
 \end{minted}
   \caption{All The Names of God, Nick Montfort, 2010, Selected output}
@@ -1271,21 +1271,54 @@ Not only is there an aesthetic of minimalism present in the source (to which Per
 From software developers to artists, different kinds of writers seem to equate code as a text, bringing forth multiple reasons to justify such a connection. Beyond the fact that source code is made up of textual characters, we see that these conceptions of code as literature are dual. On the one side, it is focused on its need to communicate explicit concepts related to its function (Knuth, Matsumoto, Brock), all the while embracing the semantic ambiguity which exists in the use of natural language tokens, backed-up by the potential executable semantics enabled by its machine nature (Cramer, Hayles, Montfort, Temkin).
 The last example, the tension between \emph{All The Names of God}'s source and output, suggests us to look at this kind of elegance not through a literary lens, but through a scientific one—another domain conjured by code writers and readers.
 
-\subsection{Scientific beauty}
+\subsection{Scientific beauty} % 1000
 
-Mostly elegance, could be a good place to work on the distinction between proof and theorem, concept and appearance.
+Having strong roots in scientific thought and practice, via the connection of computer science, the aesthetic experiences of source code are also related to the scientific domain. Nonetheless, it seems to exist in two distinct ways: whether code is beautiful in a similar way that mathematics is, or wether code is beautiful according to equivalent principles at play in engineering.
 
-the program is perfect in the mind, and mistakes come when translation occurs into chunks/statements (kinda like a mathematical work: the theorem is there first, and the proof comes laboriously second cf. **"Mathematical Invention", Poincaré, 1914"** --> **"The Art of Creation", Arthur Koesler, 1960**)
+\subsubsection{Mathematics} % 500
 
-% fuller on elegance
+A recurring point in programmers' discussions of beauty in programming is the oftentimes the duality of the object of discussion: is one talking about an algorithm, or about a particular implementation of an algorithm? While this thesis is concerned with the latter, we now turn to how this relationship between algorithm and implementation presents a similar tension as the relationship between theorem and proof in mathematics.
 
-% david waszek https://www.normalesup.org/~waszek/en/
+On the one side, there exists few discussions of a direct relation between code and beauty from a mathematical perspective beyond Edsger Dijkstra's discussion of the implementation of programming languages. In it, he starts from computer science's strong origin in mathematics (e.g. lambda calculus), to show that this relation exists in part through the concept of \emph{elegance}. Theorems and subroutines are compared as being similar essential building blocks in the construction of a correct system. Correctness as the ultimate aim of both mathematics and programming takes place, he writes, by the use of a limited, efficient amount of those building blocks, resulting in a set of small, general and systemic concepts, in an elegant structure\cite{dijkstra_design_1963}.
 
-- Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+Gian-Carlo Rota, in his investigation into mathematical beauty, distinguishes between mathematical beauty, a property which in turn triggers an aesthetic experience, and mathematical elegance, the concrete implementation thereof.
 
-% mclennan talking about elegance has a nice transition as it allows for the development of two parallels: elegance in engineering and elegance in mathematics, and also craft: https://www.sciencedirect.com/science/article/pii/B9780444516671500422
+\begin{quote}
+  Although one cannot strive for mathematical beauty, one can achieve elegance in the presentation of mathematics. In preparing to delivera mathematics lecture, mathematicians often choose to stress elegance and succeed in recasting the material in a fashion that everyone will agree is elegant. Mathematical elegance has to do with the presentation of mathematics, and only tangentially does it relate to its content.\cite{rota_phenomenology_1997}
+\end{quote}
 
-% https://en.wikipedia.org/wiki/Karine_Chemla she worked on chinese mathematics,  https://en.wikipedia.org/wiki/The_Nine_Chapters_on_the_Mathematical_Art
+This separation between the beauty of a mathematical concept (theorem) and its presentation (proof) is reflected in the separation between algorithm and computer program, as McAllister notes. According to him, the beauty of source code is considered closer to the beauty in mathematical proofs, and as such abides by norms of exactness (over approximation) and transparency (over cumbersoneness)\cite{mcallister_mathematical_2005}.
+
+Specifically, mathematical proofs are supposed to fulfill the requirement of what McAllister calls \emph{graspability}, that is, the tendency for a proof to have the theorem it depends on grasped in a single act of mental apprehension, which, in turn, provides genuine understanding of the reasons for the truths of the theorem. When seen as a form a mathematical beauty, code is therefore praised in being to convey its function through concrete syntax; and linking aesthetic satisfaction with an \emph{economy of thought}.
+
+The first to employ such an expression, the mathematician Henri Poincaré describes the rigor of a mathematical process as subsequently obtained by combining this economy of thought, a form of cognitive elegance, with the concept of \emph{harmony}\cite{poincare_science_1908}. By virtue of mathematics being based on formal languages, this linguistic component introduces a certain kind of structure, and the complexity of the problem domain is made more harmonious by the reliance on such an invariant structure (i.e. the syntax of the formal language used). Source code as mathematics can thus be seen as a cognitive structure, which the elements, based on formal linguistics, can exhibit elegant aspects in their communication of a broader concept.
+
+\subsubsection{Engineering} % 500
+
+As we've seen in our discussion of the relationship between computer science and programming, one can see in these two activities a parallel in mathematics and engineering. Engineering is, like programming, the concrete implementation backed by deliberate and careful planning, often with the help of formal notations, of a solution to a given problem. Mathematics, from this perspective, can be considered as one of the languages of engineering, among sketches, diagrams, techniques, tools, etc.
+
+One of the central concepts in mathematics, elegance, can also be found, along with its connection to source code, in engineering. Bruce McLennan examines such a connection from a more holistic angle than that of a single act of mental apprehension, when looking at a proof. He suggests that,
+
+\begin{quote}
+  Since aesthetic judgment is a highly integrative cognitive process, combining perception of subtle relationships with conscious and unconscious intellectual and emotional interpretation, it can be used to guide the design process by forming an overall assessment of the myriad interactions in a complex software system.\cite{schummer_aesthetic_2009}
+\end{quote}
+
+His point is that software is too complex to be easily verified, and that tools to help us do so are still limited. This complexity sets our intuition adrift and analytical resources do not help. In order to handle this, he proposes to shift the attention from an analytical to phenomenological one, from the details to the general impression.
+
+Engineering, like mathematics, ultimately aim at being correct. While the latter can rely on succint formal propositions and representations to achieve this purpose, engineering composes too many moving parts of different nature. The specificity lies in the nature of software engineering's materials:
+
+\begin{quote}
+  All arts have their formal and material characteristics, but software engineering is exceptional in the degree to which formal considerations dominate material ones.\cite{schummer_aesthetic_2009}
+\end{quote}
+
+And yet, the development of his arguments remains on the phenomenological side, distant from the standards of mathematic abstraction. In engineering, he argues, the design looks unbalanced if the forces are unbalanced, and the design looks stable if it is stable.  By restricting our attention to designs in which the interaction of features is manifest—in which good interactions look good, and bad interactions look bad—we can let our aesthetic sense guide our design, relying on concepts of efficiency, economy and elegance\cite{mclennan_who_1997}.
+
+\vspace*{1\baselineskip}
+
+The sciences, and specifically mathematics and engineering, have their own set of aesthetics standards, to which source code seems to be connected to, even though they might not always align. Still, the idea of elegance remains central to both mathematical and engineering approaches, as it measures the number and conciseness of the theory's basic principles, or of the structure's basic components, while keeping the need for an overall effect, whether as enlightenment (Rota) for mathematics, in which larger implications are gained from a particular way a proof of a theorem is presented, or as an ecompassing \emph{gestalt} impression in engineering, in which a program that looks correct, would most likely be correct.
+
+Another concept touched upon by both approaches is that of structure: mathematics deal with formal structures to elicit the complexity of the world, while engineering deal with concrete structures offered as solutions to a specific problem. The last of the main domains to which source code is referred to is at the intersection of concrete and abstract structures, of function and form—architecture.
+
 
 \subsection{Architectural beauty}
 
@@ -1311,7 +1344,7 @@ Completing his definition of elegance, McLennan touches upon the way to assess e
 Paul Graham, LISP programmer, co-founder of the Y Combinator startup accelerator and widely-read blogger\footnote{And even achieving god-like status among certain circles\cite{eadicicco_startup_2014}}, highlights the status of programming languages as a medium, in its essay \emph{Hackers and Painters}\cite{graham_hackers_2003}. Particularly, he stresses the materiality of code, depicting hackers as people who:
 
 \begin{quote}
-  are trying to write interesting software, and for whom computers are just a medium of expression, as concrete is for architects or paint for painters.
+ are trying to write interesting software, and for whom computers are just a medium of expression, as concrete is for architects or paint for painters.
 \end{quote}
 
 % Hunt, hard and soft
