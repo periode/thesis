@@ -1319,25 +1319,101 @@ The sciences, and specifically mathematics and engineering, have their own set o
 
 Another concept touched upon by both approaches is that of structure: mathematics deal with formal structures to elicit the complexity of the world, while engineering deal with concrete structures offered as solutions to a specific problem. The last of the main domains to which source code is referred to is at the intersection of concrete and abstract structures, of function and form—architecture.
 
-
 \subsection{Architectural beauty}
 
-This allows a segue into everyday aesthetics and environmental aesthetics
+\subsubsection{Formal organization}
 
-louis sullivan, modernism -> architecture must be 'sincere', 'honest', 'authentic' (in functional beauty) in architecture, functionalism is inherently good, valuable
+Software architecture emerged as a consequence of the structured revolution\cite{dijkstra_chapter_1972}, which was concerned more with the higher-level organization of code in order to ensure the quality of the software produced. Such an assurance was suggested by Djikstra in two ways: by ensuring the provability of programs in a rigorously mathematic approach, and by ensuring that programs remained as readable as possible for the programmers. Structure has therefore been an essential component of the intelligibility of the software since the 1970s. It's only in the late 1990s that software architecture as a discipline has been recognized as such, stemming form a bottom-up approach of recognizing that some ways in which code is organized is better than others.
 
-roger scruton, the aesthetics of architecture. he has two approaches to beauty: the psychological (subjective, aesthetic response) and normative (objective, correctness of response)
+\subsubsection{Top-down software architecture}
 
-% habitability: " It should feel comfortable and safe, like a well-designed home or office; in this way it can contribute to the quality of the activities that take place within it. Would you work better in an oriental garden or a sweatshop? " https://web.eecs.utk.edu/~bmaclenn/papers/Elegance.html
+Today, 
+\begin{quote}
+  software architectural models are intended to describe the structure and behavior of a system in terms of computational entities, their interactions and its composition patterns, so to reason about systems at more abstract  level, disregarding implementation details.\cite{garland_software_2000}
+\end{quote}
 
-Completing his definition of elegance, McLennan touches upon the way to assess elegance through visual means in another publication on the more general need for aesthetics\footnote{Along with elegance, he includes efficiency and economy as the core aesthetic values of technological activities.}. The ability to distinguish an elegant system from an ugly one, then, comes through \emph{practice}, the implications of which we will examine in the last section of this chapter\cite{schummer_aesthetic_2009}.
+When Mary Shaw and David Garland publish their 1996 book \emph{Software architecture : perspectives on an emerging discipline}, they represent the beginning of a trend of adoption of so-called architectural practices within the field of software development. The specific field of software architecture within the profession of software development has its origin in the structured programming shit in the late 1960s, led by Edsger Dijkstra: the idea was to bring in a more normative approach to writing code, in the hope that this structure would support correctness and efficiency. Software architecture has thus developed into an approach to software patterns, modelling and documentation, through the overall processes, communications, inputs and outputs of a system can be formally described and verified.
 
-%continue with the big ball of mud architectural metaphors https://en.wikipedia.org/wiki/Big_ball_of_mud
+This connection between the two fields is therefore established through the need for reliability in the structures being built, once programmers realized that the artefacts resulting from their work—software, in the form of source code—can exhibit certain structural properties, in a similar way that a surface of a particular material exhibits particular structural properties.
+
+Good source code, from a software architecture perspective, is code which is clearly-organized, respecting a blueprint which, not being specifically source code as written in machine language, is nonetheless formalized (see, for instance the Universal Modelling Language). These domain-specific architectures related to a given problem-domain (a university, a hospital, many-to-many secure communications, etc.). As Robin K. Hill mentions in her essay on software elegance:
+
+\begin{quotation}
+  Brevity by itself can't be enough; the C loop control \lstinline{while(i++ < 10)} may be terse, excelling in brevity, but its elegance is debatable. I would call it, in the architectural sense, brutalism. Architecture provides nice analogues because it also strives to construct artifacts that meet specifications under material constraints, prizing especially those artifacts that manifest beauty as well.\cite{hill_what_}
+\end{quotation}
+
+Another parallel between the two fields can be found in Eric Raymond's \emph{The Cathedral and the Bazaar}. This essay describes the Linux project, the open-source philosophy it propelled into the limelight, and how the quantity of self-motivated workers without rigid working structures (which is not to say without clear designs) can result in better work than if made by a few, select, highly-skilled individuals\cite{raymond_cathedral_200}. While the cathedral is traditionally considered more aesthetically pleasing than the bazaar, in terms of architecture, Raymond sides with a bazaar-like model of organization, in which all development is done in public, with a very loose, horizontal contribution structure at any stage of the software lifecycle—as opposed to a tightly guided software project whose development is done by a restricted number of developers. While he doesn't mention specific aesthetic standards in his essay, he does highlight parallels in practices and processes, laying foundations on which to build such standards.
+
+Finally, the trade litterature has also been contributing to this overlap between between architecture and software as formal, high-level organization of inter-connected components. For instance, Robert Martin, in the influential \emph{Clean Code} mentions that the standards of software architecture are based on the \emph{5S} japanese workplace organization method, namely:
+
+\begin{itemize}
+  \item seiri (整理) - naming and sorting all components used
+  \item seiton (整頓) - placing things where they belong
+  \item seisō (清掃) - cleanliness
+  \item seiketsu (清潔) - standardization and consistency in use
+  \item shitsuke (躾) - self-discipline
+\end{itemize}
+
+We recognize here a focus on efficiency, organization and \emph{proper} use, along with the requirement of cleanliness of the tools, workbench and workplace, as a virtue of a good organization. While originally applied to manufacture, Martin makes the case that this can also apply to the knowledge economy—as in our case, with correct naming, correct placement, correct appearance and correct use.
+
+\subsubsection{Vernacular constructions}
+
+However, considering architecture as a strictly organizational practice does not show the whole picture. As Hill's quote above hints at, there is another side to architecture, concerned with details rather than with plans, feeling rather than rationalizing.
+
+This is particularly salient in the development of software patterns, and their reference to a particular branch of architectural theory: Christopher Alexander's \emph{A Pattern Language}.
+
+\emph{A Pattern Language} kickstarted a whole field of research based around this idea of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, \emph{which expresses a relation between a certain context, a problem, and a solution.}. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
+
+Besides the theoretical similarities between software and architecture mentioned above, it is the lack of learning from practical successes and failures in the field which prompted interest in Alexander's work, along with the development of Object-Oriented Programming, first through the Smalltalk language, then with C++, \footnote{today most of the programming languages allow for some object-oriented paradigm}. The similarity between a pattern and an object, and their promise of using them which would lead to better results on multiple dimensions, made it very attractive to software developers. Writing in \emph{Patterns of Software} (with a foreword by Alexander), Richard P. Gabriel illustrates that point:
+
+\begin{quote}
+  The promise of object-oriented programming—and of programming languages themselves—has yet to be fulfilled. That promise is to make plain to computers and to other programmers the communication of the computational intentions of a programmer or a team of programmers, throughout the long and change-plagued life of the program. The failure of programming languages to do this is the result of a variety of failures of some of us as researchers and the rest of us as practitioners to take seriously the needs of people in programming rather than the needs of the computer and the compiler writer.\cite{gabriel_patterns_1998}
+\end{quote}
+
+Throughout his work, Gabriel weaves parallels between his experience as a software developer and as a poetry writer, drawing concepts from the latter field into the former, and inspecting it through the lens of pattern languages. Two concepts in particular are worth examining a bit further: \emph{compression} and \emph{habitability}.
+
+Compression, in narrative and poetic text, is the process through which a word is given additional meaning through the rest of the sentence. In a sentence such as "\emph{Last night I dreamt I went to Manderley again.}"\footnote{From Daphne DuMaurier, \emph{Rebecca}.}, the reader is unlikely to be familiar with the exact meaning of \emph{Manderley}, since this is the first sentence of the novel. However, we can infer some of the properties of Manderley from the rest of the sentence: it is most likely a place, and it most likely had something to do with the narrator's past, since it is being returned to. A similar phenomenon happens in source code, in which the meaning of a particular expression or statement can be derived from itself, or from a larger context. In object-oriented programming, the process of inheritance across classes allows for the meaning of a particular subclass to be mostly defined in terms of the fields and methods if its subclasses—its meaning is compressed by relying on a semantic environment, which might or not be immediately visible. This, Gabriel says, induces a tension between extendability (to create a new subclass, one must only extend the parent, and only add the differentiating aspects) and context-awareness (one has to keep in mind the whole chain of properties in order to know exactly what the definition of an interface that is being extended really is). Resolving such a tension, by including enough information to hint at the context, while not over-reaching into verbosity, is a thin line of being self-explanatory without being verbose.
+
+This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is 
+
+\begin{quote}
+  that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it.\cite{gabriel_patterns_1998}\footnote{He adds that this isn't so much an issue if one is using a powerful and efficient IDE—a remark which opens up the question of the role of tools and technical mediators in the reading and writing process...}
+\end{quote}
+
+Finally, Gabriel, writing in 1998, mentions that compression isn't so much a problem in poetry since, ultimately, the definitions of each words aren't quite limited to the poet's own mind but, as we've seen, also existing in the broad conceptual structures which readers hold. However, since all aspects of a program is always by definition explicitly defined, programmers thus have the ultimate say on the definition of most of the data and functions described in code. Compression doesn't work as well because the reader cannot assume anything that is being mentioned in the code (and defined elsewhere), without risking the (error-raising) consequence of being wrong.
+
+His particular assumption that others will want to modify and extend source code is one that is influenced by his background as a commercial developer. Other pieces of code might just be satisfying in being read or deciphered (as we've seen in source code poetry) but this assumption of interaction with the code brings in another concept, that of \emph{habitability}. In his terms, it is
+
+\begin{quote}
+  the characteristic of source code that enables programmers, coders, bug-fixers, and people coming to the code later in its life to understand its construction and intentions and to change it comfortably and confidently.\cite{gabriel_patterns_1998}
+\end{quote}
+
+\subsubsection{Dual aesthetics}
+
+Architecture, when referenced by software, includes at least two distinct approaches: one tending to the objective, and one tending to the subjective. This distinction, operated by Roger Scruton, equates these to a tendency to, respectively, emotionality or rationality\cite{scruton_aesthetics_2013}. This pair is reflected in how software also refers to architecture: as top-down planning or as bottom-up construction, both holding different, but overlapping aesthetic standards. One the one side, we have cleanliness, orderliness and appropriateness, following interpersonal conventions and style; on the other side, we have familiarity, compression and appropriateness of community patterns.
+
+At its most common denominator, architecture is then concerned with the gross structure of a system. At its best, architecture can support the understanding of a system by addressing the same problem as cognitive mapping does: simplifying our ability to grasp large system.This phrase appears in Kevin Lynch's work on \emph{The Image of the City}, in which he highlighted that our understanding of an urban environment relies on combinations of patterns (node, edge, area, limit, landmark) to which personal, imagined identities are ascribed. The process is once again that of abstraction, but goes beyond that. In parallel, Garland notes that, in its most effective cases, software architecture can expose the high-level constraints on the design of a system, as well as \emph{the rationale for making specific architectural choices}. The rationale, the deeper meaning of a program, seems to matter at least as much as the formal description of its system.
+
+Architecture is indeed a field that exists at the intersection of multiple other fields: engineering, art, design, physics and politics. As the organization of space, one can project it onto non-physical spaces, such as software, and the way that it takes shape within the medium of source code will be more thoroughly explored in Chapter XXX. As such, it provides another peek into the relationship between function and form, and how it is mediated by the materials in which a certain structure is built, whether it is a physical structure, or a mental structure which only exists in a written form.
+
+Buildings, like most things, are more than their surface, consisting of much that is not revealed. Particularly, their sensuous surfaces sometimes tend to obscure their main function\footnote{Think of a building housing a stock-exchange disguided as a Greek temple.}. Carlson and Parsons, in their discussion of Functional Beauty, arguee that there is an ethical problem in this mystification; while art mystifies, assuming us to suspend our disbelief to enter into an artwork's appreciation, the things that are functional can have a much bigger and much worse consequence when they mystify, potentially rendering the whole construction useless, and its value null.
+
+\vspace*{1\baselineskip}
+
+In summary, we've seen that the specific topic of the aesthetics of the aesthetics of software refers to three main, different domains. By referring to code as text, its linguistic nature is highlighted, along with its problematic relationship to natural languages—problematic insofar as its ambiguity can play against its desire to be clear and understood, or can play in favor of poetic evokation. The standards expressed here touch upon the specific tokens used to write programming, and thus involve the programming languages in the process of aesthetic judgement.
+
+Also considering the formal nature of source code, scientific references equate source code as having the potential to exhibit similar properties as mathematical proofs and theorems, in which the elegance of the proof isn't a tight coupling with the theorem to be proved, but in which an elegant proof can (and, according to some, should) enlighten the reader to deeper truths. Conversely, these scientific references also include engineering, in which the applicability, its correctness and efficiency are of prime importance: the conception of elegance, accompanied by economy and efficiency, becomes a more holistic one, tending to the general feeling of the structure at hand, rather than to its specific formalisms.
+
+These references to engineering then lead us to the last reference: architecture. Presented as both relevant from a top-down perspective (with formal modelling languages and descriptions, among others) or from a bottom-up (including software patterns and familiarity and appropriateness within a given context). These similarities between software in architecture, both in process and in outlook, touch upon another subject: the place of formal and informal knowledges in the construction, maintenance and transmission of those (software) structures.
+
+All of these three domains of references have in common the concept of elegance, and the concept of understanding, we will turn to the relationship between code and understanding next. However, we conclude this chapter by a last reference domain which, while not tied to a particular field, is a way of doing with which programmers have long associated themselves with. The next section thus examines the relationship between craftsmanship and knowledge in writing and reading source code.
 
 \pagebreak
 
-\section{Craft and beauty - 10p}
+\section{Craft and beauty} % 100
 \label{sec:craft}
+
+% shaw and garland say that software architecture is because the field wants to go from craft to engineering
 
 % https://www.zainrizvi.io/blog/why-software-engineers-like-woodworking/
 
@@ -1365,12 +1441,3 @@ This first approach, by comparing both source and comment at the same time (taki
 
 There is also an emerging development in aesthetics of integrating function as a criteria for an aesthetic experience.
 
-\subsection{Embodiment}
-
-also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
-
-\subsection{Tacit knowledge}
-
--> this one actually goes to the next chapter
-
-%or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8

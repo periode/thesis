@@ -28,6 +28,18 @@ but maybe we can get more by relating it to other fields of aesthetics and see w
 
 complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
 
+moved from craft:
+
+\subsection{Embodiment}
+
+also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
+
+\subsection{Tacit knowledge}
+
+-> this one actually goes to the next chapter
+
+%or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8
+
 ## 3. [beauty and understandings](./understanding_beauty.md)
 
 here, we look at how literature, architecture and maths deal with beauty and understanding

@@ -13,6 +13,7 @@
   - [ ] add knuth details on elegance (see [notes](../readings/notes/fuller_software_elegance.md))
   - [ ] add section on robin hill on elegance https://cacm.acm.org/blogs/blog-cacm/208547-what-makes-a-program-elegant/fulltext
   - [ ] include some further discussion of programming based on [hapoc 21 presentation](https://hapoc2021.sciencesconf.org/data/pages/_Toscano_Intentionalities_of_code_presentation.pdf)
+  - [ ] add a bit more meat to the section on scientific beauty
 
 look into the pdf "program text, style, laber" by brian lennon to address comments in microsoft windows source code
 
