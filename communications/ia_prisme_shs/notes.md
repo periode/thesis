@@ -45,3 +45,10 @@ https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=gis+artificial+intellige
 https://www.sciencedirect.com/science/article/abs/pii/0004370273900088
 
 https://link.springer.com/article/10.1007/BF01581479
+
+
+---
+
+the perceptron is originally about continuous but the ultimate output to discretize
+
+TSNI creates a continuous map of non-continuous clusters

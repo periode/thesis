@@ -30,13 +30,11 @@ complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/
 
 moved from craft:
 
-\subsection{Embodiment}
+### Embodiment and tacit knowledge
 
 also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
 
 \subsection{Tacit knowledge}
-
--> this one actually goes to the next chapter
 
 %or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8
 
