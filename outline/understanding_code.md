@@ -1,6 +1,6 @@
 # understanding code
 
-[[outline/outline]]
+[outline](./outline.md)
 
 > Coding is [...] the technique of providing a dynamic background to controle the automatic evolution of meaning. (von neumann and goldstine)
 
@@ -9,6 +9,16 @@ I highlight the issue of *understanding* between humans and machines through the
 __define understanding__ (perspectives: reader/writer)
 
 ## general overview of understanding theory
+
+- also philip agre (his book is more about AI and mental models, but he makes a point about having a different definition of understanding: that is, situated understanding). meaning that there is at least one theory of the mind that matches a theory/model of computation
+
+> The narrow understanding of "working" as "conforms to spec".
+
+> Since everything is defined mathematically, it does not matter what words we use to describe the system; we could use words like "plan", "learn", and "understand"; or we could use words like "foo", "bar", and "baz". In fact, programmers frequently employ nonsense terms like these when testing or demonstrating the logical behavior of a procedure. 
+
+- simondon with his definition of technology as being a connection between magic and rational?
+
+- feigenbaum and thought (historical, this seems to be the first anthology published on the topic)
 
 **UNDERSTANDING AS MENTAL MODEL AFFECTED BY LANGUAGE** [[abelson_sussuman_abelson_sicp]] 
 
@@ -19,6 +29,23 @@ dual-positioning of source code text
 [[fedorenko_language_of_programming_cognitive_perspective]], about the cognitive implications of programming languages: does it change something in our brain if we learn more PLs?
 
 [[fishwick_aesthetic_programming]] an answer to this question of the cognitive impacts of PLs, by using aesthetic as a link (_un liant_)
+
+## the problem of understanding in humans and humans
+
+this section redefines the concept of understanding, not as human to human, and not as human to machine, but as human to machine to human, and highlights some of the hurdles that appear in terms of collectivity vs. subjectivity. it makes the claim that contrary to writing literature, in which writing is potentially public and reading private, writing source code is a private act (as illustrated by passages like weizenbaum, computer boys) and reading it is highly public. because of a change in concept, i would argue that the change in *manifestation* of concept is also necessary.
+
+[[mckenzie_cutting_code]]
+[[tomov_role_of_aesthetics_in_software]]
+[[vee_coding_literacy]]
+[[vee_procedural_literacy]]
+
+### Embodiment and tacit knowledge
+
+also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
+
+\subsection{Tacit knowledge}
+
+%or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8
 
 ## the problem of understanding in human and machines
 
@@ -33,6 +60,10 @@ another philosophical approach highlighting the tension in software is [[irmak_s
 [[detienne_software_design_cognitive_aspects]], psychology of programmers, beacons
 
 [eye-tracking study of programmers of different levels readingn source code](https://dl.acm.org/doi/10.1145/3387904.3389279)
+
+### the problem of implementation
+
+> The most influential conception of computational principles comes from David Marr (1982), who prescribed a definite format for computational theories. For Marr, each theory had three tiers: a computational theory of some problem, a specification of the algorithm by means of which the brain solves this problem, and the implementation of this algorithm in neural machinery. (agre)
 
 ### the metaphors of code
 
@@ -61,12 +92,3 @@ this section talks about computation, symbolic logic, math and turing and lambda
 this section talks about the computer as a cognitive tool, as a way to think (rokeby, wolfram), along the lines of algorithmic thinking, coding literacy. this will highlight the necessity of translating concepts from one frame of mind to another (formal vs. informal)
 
 "expert programmers know how to choose the level of abstraction appropriate to the task" (sicp)
-
-## the problem of understanding in humans and humans
-
-this section redefines the concept of understanding, not as human to human, and not as human to machine, but as human to machine to human, and highlights some of the hurdles that appear in terms of collectivity vs. subjectivity. it makes the claim that contrary to writing literature, in which writing is potentially public and reading private, writing source code is a private act (as illustrated by passages like weizenbaum, computer boys) and reading it is highly public. because of a change in concept, i would argue that the change in *manifestation* of concept is also necessary.
-
-[[mckenzie_cutting_code]]
-[[tomov_role_of_aesthetics_in_software]]
-[[vee_coding_literacy]]
-[[vee_procedural_literacy]]

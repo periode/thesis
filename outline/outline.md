@@ -28,29 +28,7 @@ but maybe we can get more by relating it to other fields of aesthetics and see w
 
 complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
 
-moved from craft:
-
-### Embodiment and tacit knowledge
-
-also note the place and role of tools (IDEs, teletypes, fast compiling, etc.)
-
-\subsection{Tacit knowledge}
-
-%or at least the role of knowledge, mind as matter:https://dl.acm.org/doi/10.1007/s11023-007-9060-8
-
-## 3. [beauty and understandings](./understanding_beauty.md)
-
-here, we look at how literature, architecture and maths deal with beauty and understanding
-
-now that we have stronger concepts, let's dive back into code
-
-## 4. [aesthetic manifestations](./concrete.md)
-
-here is where we develop more our theory.
-
-as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
-
-## 5. [programming languages](./programming_languages.md)
+## 3. [programming languages](./programming_languages.md)
 
 we see how programming languages deal with understanding between computers and humans, and how they have to provide an interface to deal with _meaning_.
 
@@ -60,8 +38,22 @@ we also look into language-dependent features, and language-independent features
 
 so we conclude on language as a material to embody a theory of semantico-spatial cognition
 
+## 4. beauty and understandings
+
+### 4.1 [the role of beauty in understanding](./understanding_beauty.md)
+
+here, we look at how literature, architecture and maths deal with beauty and understanding
+
+now that we have stronger concepts, let's dive back into code
+
+## 4.2 [aesthetic manifestations in source code](./concrete.md)
+
+here is where we deploy our theory.
+
+as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
+
 ## conclusion
 
 the aesthetics of code is the symbolic progression from word to structure to idea, with each of these configurations happening at different moments and different levels of expertise in programmers, and assigning different roles to the lexical tokens visible on the screen.
 
-and then poetics
+and then poetics as an opening
