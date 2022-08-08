@@ -7,6 +7,8 @@ http://www.softpanorama.org/People/Knuth/taocp.shtml
 
 ## dump
 
+dont forget to do architecture and pavillions: \footnote{In architecture, such technical and artistic feat for its own sake, devoid of any reliable social use, is manifested as pavillions.}
+
 france culture cours du collège de france  de francois chatelet: la condition necessaire du savoir c'est la sensibilité (tout se donne dans la spatio-temporalité)
 
 1. passivité informatrice

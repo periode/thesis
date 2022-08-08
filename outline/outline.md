@@ -50,6 +50,13 @@ now that we have stronger concepts, let's dive back into code
 
 here is where we deploy our theory.
 
+### semantic proximity
+This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is
+
+\begin{quote}
+  that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it. \citep{gabriel_patterns_1998}\footnote{He adds that this isn't so much an issue if one is using a powerful and efficient IDE—a remark which opens up the question of the role of tools and technical mediators in the reading and writing process...}
+\end{quote}
+
 as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
 
 ## conclusion

@@ -1,0 +1,1 @@
+find . -name '*.*' | xargs wc -l | sort -nr | head
