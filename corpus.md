@@ -74,9 +74,7 @@
 - [first screening: computer poems](http://www.vispo.com/bp/javascriptversion.htm) - kinetic poems from 1984, with the source code of the JS reimplementation
 - [generations](http://luckysoap.com/generations/) - short stories generated with python code and distributed as book/pdf with source code
 - [what to do after you hit return](https://archive.org/details/Whattodoafteryouhitreturn/page/n15) - decorated source code from old times published by the people's computer company
-- [google groups discussions about perl poems](https://groups.google.com/forum/?hl=en#!msg/comp.lang.perl/jVu7Zjn9JcY/yPMby6sCyyEJ)
-- [hastac code critique forums](http://www.hastac.org/forums/hastac-scholars-discussions/code-critiques)
-- [writeup on code poetry slam](https://www.i-programmer.info/news/200-art/6808-writing-code-as-poetry-poetry-as-code.html)
+
 - [exquisite code](https://web.archive.org/web/20130704202512/http://exquisite-code.com/) - doesn't seem to be so much related to source code
 - [why code is not poetry](https://blogs.crikey.com.au/game-on/2012/10/02/why-code-is-not-poetry/) - with a response [here](https://clairehosking.tumblr.com/post/33828664879/not-all-code-is-poetry-but-some-is)
 - [blog post on code and poetry](https://web.archive.org/web/20121008225830/www.samuelwbaird.com/code-and-poetry/)

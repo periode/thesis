@@ -644,3 +644,9 @@ Now I am a programming master, and I try to minize the comments in my programs. 
 [link](http://hennessy.iat.sfu.ca/wp/stc2018/2018/03/22/programming-esthetics/)
 
 "why is it hard to write clean code?"
+
+## [google groups discussions about perl poems](https://groups.google.com/forum/?hl=en#!msg/comp.lang.perl/jVu7Zjn9JcY/yPMby6sCyyEJ)
+
+## [hastac code critique forums](http://www.hastac.org/forums/hastac-scholars-discussions/code-critiques)
+
+## [writeup on code poetry slam](https://www.i-programmer.info/news/200-art/6808-writing-code-as-poetry-poetry-as-code.html)

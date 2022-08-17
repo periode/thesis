@@ -18,7 +18,11 @@ so what's up with understanding? turns out code is tricky to understand because
 
 it has to talk to machines
 
+[hapoc 21 presentation](https://hapoc2021.sciencesconf.org/data/pages/_Toscano_Intentionalities_of_code_presentation.pdf)
+
 and to humans
+
+overall principles: http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
 
 slide 25 shows the relation between quantity and quality and code and speech in computer systems [link](https://hapoc2021.sciencesconf.org/data/pages/_Hildebrandt_written_and_coded_speech_acts.pdf)
 
@@ -49,6 +53,8 @@ now that we have stronger concepts, let's dive back into code
 ## 4.2 [aesthetic manifestations in source code](./concrete.md)
 
 here is where we deploy our theory.
+
+https://queue.acm.org/detail.cfm?id=1039535
 
 ### semantic proximity
 This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is
