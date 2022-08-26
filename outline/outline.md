@@ -38,6 +38,12 @@ we see how programming languages deal with understanding between computers and h
 
 > A theorem, however, is (see above) only useful if we can apply it under a minimum number of clear conditions. In the same way the usefulness of a subroutine (or, in a language, a grammatical instruction) increases as the chance decreases, that it will be used incorrectly. From this point of view we should aim at a programming language consisting of a small number of concepts, the more general the better, the more systematic the better, in short: the more elegant the better [src](https://www.cs.utexas.edu/users/EWD/transcriptions/MCreps/MR34.html)
 
+### 3.1 what are programming languages?
+
+### 3.2 how is meaning expressed through programming languages?
+
+### 3.3 the interface between abstract and concrete, ideal and material
+
 we also look into language-dependent features, and language-independent features.
 
 so we conclude on language as a material to embody a theory of semantico-spatial cognition
@@ -50,13 +56,19 @@ here, we look at how literature, architecture and maths deal with beauty and und
 
 now that we have stronger concepts, let's dive back into code
 
-## 4.2 [aesthetic manifestations in source code](./concrete.md)
+#### 4.1.1 in literature
+
+#### 4.1.2 in architecture
+
+#### 4.1.3 in sciences
+
+### 4.2 [aesthetic manifestations in source code](./concrete.md)
 
 here is where we deploy our theory.
 
 https://queue.acm.org/detail.cfm?id=1039535
 
-### semantic proximity
+#### semantic proximity
 This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is
 
 \begin{quote}
@@ -64,6 +76,14 @@ This recalls the idea of \emph{semantic proximity}, extracted from our analysis 
 \end{quote}
 
 as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
+
+### 4.3 case studies
+
+#### 4.3.1 UNIX v7
+
+#### 4.3.2 TeX
+
+#### 4.3.3 Code Poems
 
 ## conclusion
 

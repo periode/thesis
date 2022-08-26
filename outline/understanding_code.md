@@ -1,4 +1,4 @@
-# understanding code
+# understanding code - 80,000
 
 [outline](./outline.md)
 
@@ -8,7 +8,13 @@ I highlight the issue of *understanding* between humans and machines through the
 
 __define understanding__ (perspectives: reader/writer)
 
-## general overview of understanding theory
+## general overview of understanding theory - 
+
+references, between objective and subjective:
+- simon penny and representation -> mind-body duality
+- lakoff & turner -> mental models
+- gregory chaitin -> data compression and simplicity of rules
+- wittgenstein (formal, absolute understanding vs. felt, contextual understanding)
 
 - also philip agre (his book is more about AI and mental models, but he makes a point about having a different definition of understanding: that is, situated understanding). meaning that there is at least one theory of the mind that matches a theory/model of computation
 
