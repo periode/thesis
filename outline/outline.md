@@ -10,27 +10,56 @@ we start our journey here. basically, we look at what programmers say when they 
 
 we see there are different kinds of lexical fields of beauty, also by including examples, which might be devoid of context for now
 
+still, we see that there are specific domains that are being referred to: science, architecture, literature
+
 but we also see that all these kinds might relate to understanding. so we turn to this next
 
 ## 2. [understanding code](./understanding_code.md)
 
-so what's up with understanding? turns out code is tricky to understand because
+this section is focused on the specificities of underdstanding code
 
-it has to talk to machines
+### 2.1 understanding
 
-[hapoc 21 presentation](https://hapoc2021.sciencesconf.org/data/pages/_Toscano_Intentionalities_of_code_presentation.pdf)
+first we define understanding as trhe construction of mental models in a multidimensional conception of cognition
 
-and to humans
+references, between objective and subjective:
+- simon penny and representation -> mind-body duality
+- lakoff & turner -> mental models
+- gregory chaitin -> data compression and simplicity of rules
+- wittgenstein (formal, absolute understanding vs. felt, contextual understanding)
 
-overall principles: http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
+### 2.2 understanding computers
 
-slide 25 shows the relation between quantity and quality and code and speech in computer systems [link](https://hapoc2021.sciencesconf.org/data/pages/_Hildebrandt_written_and_coded_speech_acts.pdf)
+so what's up with understanding? turns out code is tricky to understand because it has to talk to machines
 
-https://www.amazon.com/What-Robots-Studies-Cognitive-Systems/dp/9401050872
+#### 2.2.1 the symbol machine
 
-but maybe we can get more by relating it to other fields of aesthetics and see what they have to offer
+computers are mechanical devices dealing with meaning
 
-complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
+#### 2.2.2 the psychology of programming
+
+how it can be an intimate affair between human and machine
+
+### 2.3 understanding humans through computers
+
+#### 2.3.1 the metaphors of code
+
+how metaphors help us to deal with the idiosyncracies of computation
+
+### 2.3.2 implementation and communication
+
+the different stages in developing algorithm and actually writing it
+
+the issue that the reader needs to understand both abstraction and implementation (ideally)
+
+the different means to ease cognitive friction:
+
+- documentation
+- comments
+- literate programming
+- programming
+
+and so we conclude that the essential interface to understanding humans and machines within a context of computation are programming languages.
 
 ## 3. [programming languages](./programming_languages.md)
 
@@ -66,16 +95,7 @@ now that we have stronger concepts, let's dive back into code
 
 here is where we deploy our theory.
 
-https://queue.acm.org/detail.cfm?id=1039535
-
-#### semantic proximity
-This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is
-
-\begin{quote}
-  that characteristic of source code that enables a programmer to understand that source by looking at only a small portion of it. \citep{gabriel_patterns_1998}\footnote{He adds that this isn't so much an issue if one is using a powerful and efficient IDE—a remark which opens up the question of the role of tools and technical mediators in the reading and writing process...}
-\end{quote}
-
-as we have our typology, we realize that they are all a bit all over the place. is there something that binds them all? yes, programming languages, so we turn to that next to see how a medium/object/material can meet all those at once
+(see checkin #2/3)
 
 ### 4.3 case studies
 

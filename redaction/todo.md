@@ -1,5 +1,23 @@
 # todo
 
+## meeting with nick
+
+- [ ] pare down!
+- - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
+- - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
+- - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
+- - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+- - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
+- - [ ] move listing 10 to understanding computers
+- - [ ] one liner: monostiche
+- - [ ] since this is too long, paraphrase code, rather than quote it
+- - [ ] linsting 2, not style but voices
+- - [ ] black perl is still in old mode
+- - [ ] explain listing 13
+- [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
+
+## general
+
 - [ ] add all the refernces in the intro footnotes
 - [x] rewrite my definition of aesthetics to include more the aesthetics of everyday life?
   - [x] drawing from mckenzie, rewrite his part to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code

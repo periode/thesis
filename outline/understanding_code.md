@@ -89,6 +89,20 @@ limits to a literary approach: [[hayles_print_flat_code_deep]], and confirmation
 
 this section talks about computation, symbolic logic, math and turing and lambda functions and all that beautiful stuff.
 
+[hapoc 21 presentation](https://hapoc2021.sciencesconf.org/data/pages/_Toscano_Intentionalities_of_code_presentation.pdf)
+
+and to humans
+
+overall principles: http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html
+
+slide 25 shows the relation between quantity and quality and code and speech in computer systems [link](https://hapoc2021.sciencesconf.org/data/pages/_Hildebrandt_written_and_coded_speech_acts.pdf)
+
+https://www.amazon.com/What-Robots-Studies-Cognitive-Systems/dp/9401050872
+
+but maybe we can get more by relating it to other fields of aesthetics and see what they have to offer
+
+complexity to understand streams: https://hapoc2021.sciencesconf.org/data/pages/_Biboudis_streams_hapoc2021_slides.pdf
+
 ### the computer as cognitive apparatus
 
 [[rapaport_philosophy_of_computer_science]]
