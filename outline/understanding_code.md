@@ -8,7 +8,7 @@ I highlight the issue of *understanding* between humans and machines through the
 
 __define understanding__ (perspectives: reader/writer)
 
-## general overview of understanding theory - 
+## 1. general overview of understanding theory - 
 
 references, between objective and subjective:
 - simon penny and representation -> mind-body duality
