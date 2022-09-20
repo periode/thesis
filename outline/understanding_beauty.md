@@ -18,6 +18,8 @@
 
 [[ong_orality_literacy]]
 
+davis how to make analogies in a digital age
+
 ## understanding in literature
 
 classical rhetoric has:
@@ -27,6 +29,11 @@ classical rhetoric has:
 4. elocution
 5. action
 
+[reading machines](https://www.unl.edu/english/books/reading-machines)
+[scripting reading motion](../readings/notes/portela_scripting_reading_motions.md)
+[reading machines]
+
+[bouchardon valeur heuristique de la littérature](../readings/notes/bouchardon_valeur_heuristique_de_la_litterature_numerique.md)
 [[ricoeur_metaphor]]
 [[ricoeur_metaphore_vive]]
 [this is a nice summary]](https://aaaaarg.fail/upload/paul-ricoeur-metaphor-and-the-main-problem-of-hermeneutics.pdf)

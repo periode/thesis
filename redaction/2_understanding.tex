@@ -1,32 +1,54 @@
 \chapter{Understanding source code}
 
-In the previous chapter, we've seen that there is a focus on understanding when it comes to aesthetic standards: whether obfuscating or illuminating, understanding is a key determinant in the value judgment.
+Aesthetics in source code are thus primarily used to alleviate cognitive load. In the previous chapter, we've seen that there is a focus on understanding when it comes to aesthetic standards: whether obfuscating or illuminating, understanding is a key determinant in the value judgment. In this chapter, we focus on the reason for such a cognitive load in the first place, before surveying the means—both mechanistic and linguistic—that programmers deploy in order to relieve such a load.
 
-The point of this chapter is then to investigate what is it that makes code complicated to understand. This will have us deal with the nature of computation (what do computers and source code do?), with the nature of the world (how does one translate a problem domain into a software domain, through process of modelling and abstraction) and with the nature of the human mind (through the requirement to communicate with other humans.)
+This is related to one of the essential features of software: it must be \emph{functional}. As mentioned in our discussion of the differences between source code and software in the introduction, source code is the latent description of what the software will ultimately \emph{do}. Similarly to sheet music, or to cooking recipes\footnote{Recipes are a recurring example taken to communicate the concept of an algorithm to non-experts \citep{zeller_algorithms_2020}}, they require to be put into action in order for their users (musicians and cooks, respectively) to assess their value. Buggy, or dysfunctional software, are going to be of less value than correct software \citep{hill_what_2016}, regardless of how aesthetically pleasing the source is.
 
-We will see what roles metaphors play; and, if linguistics is a key component in the writing of clear source code, we should also look at programming languages.
+The assessment of whether a software functions correctly is essentially an assessment of whether what the software does is what the software is supposed to do, which in turn entails knowing what it does, what it is supposed to do, and being able to tell whether these two things are aligned. Any value judgment regarding the aesthetics of the source code at hand would be subject to whether or not the software functions correctly, and such judgment can be rendered moot if that is not the case.
 
-% develop more on why we even talk about understanding (that there is function in computation, and that most aesthetic and beauty appraisals are subject to this ability to function, because understanding enables/affords action)
+Once one has decided on a benchmark to assess the functionality of the code against, which itself exists as an abstract behavior, one must then determine the actual behavior of the source code at hand once it is executed. This chapter thus examines what goes into understanding source code. The first part will lay out our definition of understanding, presneting it as a dual phenomenon, between formalism and contextualism. Starting with 20\^{th} century epistemology, we will see that an exclusively rational, cognitivist perspective on the nature of understanding, as it has been hailed by theoretical computer science research, shows its limitation when confronted with practice. Having highlighted this tension, we then turn to how a single individual might understand the phenomenon of computation, both on an ontological level, and on a psychological level. The ontological approach will show some of the features of software which make it inherently hard to comprehend, while the psychological approach will show how such a comprehension takes place in a varity of programmers. Finally, we will conclude with the means that programmers deploy to grasp the concepts at play with software: starting from metaphors used by the general public, we will go down this ladder of abstraction in order to reach the technical apparatuses used in the development and inspection of source code.
 
-The question is now: how does one organise all this?
+The main questions that this chapter addresses are thus as follows: given a certain nature of knowledge acquisition, what are some of the features of computers that make them hard to graps, and what kind of techniques are deployed in order to address these hurdles and in order to understand what the code is actually doing. This will have us investigate the relationship of knowing and doing, the nature of computation (what do computers and source code do?) and its relationship to the world as it appears to us (how does modelling and abstraction translate a problem domain into software?).
 
 % first the definition of understanding
-\section{Understanding as embodied action}
+\section{Understanding as embodied action} %22k char
 
 This section focuses on our definition of understanding, which relies on two main aspects: a formal, abstract understanding, and a more subjective tacit one. We will see how the former had some traction in computer sciences circles, while the second gained traction in programming circles.
 
-\subsection{Between formal and informal}
+\subsection{Between formal and informal} %10k
 
 % wittgenstein (5000)
 
 % then a transition to AI and abstract theories of mind and cognitivism (5000)
 
-% gregory chaitin -> compression, implicit and efficiency
+% gregory chaitin -> compression, implicit and efficiency, mental models
 
-\subsection{Knowing-what and knowing-how}
+sicp,  p. 88, "Understanding internal definitions well enough to be sure a program means what we intend it to mean requires a more elaborate model of the evalution process than we have presented in this chapter".
+
+\begin{itemize}
+    \item flores and winograd
+    \item winograd, language as cognitive process
+\end{itemize}
+
+
+
+\subsection{Knowing-what and knowing-how} %10k
 % then simon penny and tacit knowledge
 
 % and lakoff
+
+\begin{quote}
+    Thinking is a continuous struggle between conceptual order and empirical comprehensiveness - wright mills, intellectual craftsmanship is an example of the process of understanding a topic in the context of reserch. it's not just purely formal, and is aided by technical appendixes
+\end{quote}
+
+\begin{itemize}
+    \item jones and reckoning with matter would be a nice transition?
+    \item cecil wright
+    \item simon penny
+    \item polanyi
+    \item EXAMPLE: XML (applen, mcdaniel, rhetorics of xml)
+\end{itemize}
+
 
 % first the computer
 \section{Understanding computation}
@@ -37,10 +59,30 @@ We will also look at the practical investigations of how people understand softw
 
 % the software effect (combination of knowing what (it does) and how (it does it))
 % the philosophical enquiries
+
 \subsection{Software ontology}
+
+\begin{itemize}
+    \item lando, lapujade, towards a general ontology of computer programs
+    \item irmak, software is an abstract artifact
+    \item suber, what is software
+    \item cantell smith age of significance introduction
+    \item berry philosophy of software
+    \item turner, computational artifacts
+    \item rapaport
+    \item simondon yallah
+\end{itemize}
 
 \subsection{The psychology of programming}
 % the studies
+
+\begin{itemize}
+    \item dexter, dolese, seidel, kozbelt
+    \item ivanova, comprehension of computer code
+    \item detienne: software design, cognitive aspects
+    \item weinberg
+    \item petre
+\end{itemize}
 
 % then the human mind
 \section{Means of understanding}
@@ -52,11 +94,26 @@ We'll look a bit deeper at some of those techniques, specifically metaphors and 
 % then the communcation between both
 \subsection{Metaphors of computation}
 
+\begin{itemize}
+    \item sally wyatt
+    \item also some shit about interfaces (nielsen)
+\end{itemize}
+
 \subsection{Tools as an extension}
 % IDEs
+
+\begin{itemize}
+    \item fishwick aesthetic progamming
+    \item starting with the basics: goody, logic of writing
+    \item allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
+    \item barker writing software documentation
+    \item wilken card index
+\end{itemize}
+
+
 
 % The computer as prosthetic organ, distributed cognition
 
 \pagebreak
 
-Conclusion: we circle back to aesthetics, and we look at the things that are both tools and metaphors: programming languages.
+Conclusion: we circle back to aesthetics, and we look at the things that are both tools and metaphors: programming languages. We will see what roles metaphors play; and, if linguistics is a key component in the writing of clear source code, we should also look at programming languages.
