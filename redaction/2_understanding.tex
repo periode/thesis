@@ -13,23 +13,79 @@ The main questions that this chapter addresses are thus as follows: given a cert
 % first the definition of understanding
 \section{Understanding as embodied action} %22k char
 
-This section focuses on our definition of understanding, which relies on two main aspects: a formal, abstract understanding, and a more subjective tacit one. We will see how the former had some traction in computer sciences circles, while the second gained traction in programming circles.
+This section focuses on our definition of understanding, which relies on two main aspects: a formal, abstract understanding, and a more subjective tacit one. We will see how the former had some traction in computer sciences circles, while the second gained traction in programming circles. To support those two approaches, we first trace back the genealogy of understanding in theoretical computer science, before outlining how concrete, situatedness hints at an alternative tradition.
 
 \subsection{Between formal and informal} %10k
 
-% wittgenstein (5000)
+\subsubsection{Theoretical foundations of formal understanding}
+
+To start this inquiry, we go back to the early 20\^{th} century in Cambridge, when the theoretical roots of modern computation were being laid by philosophers of logic and mathematicians, such as Bertand Russell, Ludwig Wittgenstein, and Alan Turing.
+
+Wittgenstein, in particular, bases his argumentation in his \emph{Tractatus Logico-philosophicus} on the fact that much of the problems in philosophy are rather problems of understanding between philosophers—if one were to express oneself clearly, and to articulate one's through logically, a common conclusion could be reached without much effort:
+
+\begin{quote}
+    Most questions and propositions of the philosophers result from the fact that we do not understand the logic of our language. \cite{wittgenstein_tractatus_2010}
+\end{quote}
+
+Language and logic, as exposed here, are closely connected, Articulated in separate points and sub-points, his work conjugates aphorisms with logical propositions depending on one another, developing from broader statements into more specific precisions, Wittgenstein hints at the intertwining of language as a form of logic, and as logic as a form of language. In this, he follows in the footsteps of Gottfried Leibniz's \emph{Ars Combinatoria}, in which he views reasoning and inter-subjective understanding as a formal problem. Quoted by Russell, Leibniz notes that:
+
+\begin{quote}
+    If we had it [a characteristica universalis], we should be able to reason in metaphysics and morals in much the same way as in geometry and analysis... If controversies were to arise, there would be no more need of disputation between two philosophers than between two accountants [...] Let us calculate.\cite{russell_logical_1950}
+\end{quote}
+
+Wittgenstein presents a coherent, articulated theory of meaning through the use of mathematical philosophy, and logic, and his work fits with that of Russell\footnote{In his \emph{Principia Mathematica}, he lays out a theory of logical expression} and Frege\footnote{The \emph{Begriffschrift} similarly attempts to constitute a language in which all scientific statements could be evaluated \cite{korte_frege_2010}, while \emph{Über Sinn und Bedeutung} clarifies the semantic uncertainties between a specific sentence and how it means, or refers to a concept}; even though these are different theories, they articulate as an endeavour based on formal propositions in order to establish truth-values. Such articulation were a direct influence in the work on mathematician Alan Turing—who studied at Cambridge and followed some of Wittgenstein's lectures—, as he developed his own formal system for solving complex, abstract problems, manifested as a symbolic machine\cite{turing_computable_1936}.
+
+Even though the design of the Turing machine is a subsequent step engagement with the question of understanding in the philosophical sense, but rather in the practical sense. Indeed, it is a response to the questions of translation (of a problem) and of implementation (of a solution). This formal approach to instructing machines to operate on logic then prompted Turing to investigate the question of intelligence and comprehension in \emph{Computing Machinery and Intelligence}\cite{turing_computing_2009}. In it, he translates the hazy term of "thinking" machines into that of "conversing" machines, conversation being a practical human activity which involves listening, understanding and answering (i.e. input, process and output). This conversational test, a benchmark for machine intelligence in the years to come, does rely on the need for a machine to \emph{understand} what is being said. Throughout the article, however, Turing does not address the need for a purely formal approach of whether or not a problem can be translated, as Leibniz would have it, into atomistic symbols which would be provided as an input to a digital computer. Such a process of translation would rely on a formal approach, similar to that laid out in the \emph{Tractatus Logico-philosophicus}, or on Frege's formal language described in the \emph{Begriffschrift}. Following a cartesian approach, the idea in both authors is to break down a concept, or a proposition, into sub-propositions, in order to recursively\footnote{although it was not called as such at the time} establish the truth of each of these sub-propositions, and then re-assembled to deduce the truth-value of the original proposition.
+
+With these sophisticated syntactic systems developed a certain approach to cognition—Turing clearly establishing parallels between the digital computer and the human brain—, and they were used in order to clearly understand and operate on mathematical and logical statements. Beyond their conceptual unity, one should also note their stylistic unity.
+
+% To understand a proposition means to know what is the case, if it is true. (One can therefore understand it without knowing whether it is true or not.) One understands it if one understands its constituent parts. p.41#4.024
+Logical calculus, as the integration of the symbol into relationships of many symbols formally takes place through a stylistic mechanism, the \emph{list}. Each of the works quoted above are structured in terms of lists and sub-lists, representing the stylistic pendant to the epistemological approach of related, atomistic sub-propositions. A list, far from being an innate way of organizing information in humans, is a particular approach to language: extracting elements from their original, situated existence, and reconnecting ways in very rigorous, strictly-defined ways. As Jack Goody writes in \emph{The Domestication of the Savage Mind},
+
+\begin{quote}
+    [List-making] [...] is an example of the kind of decontextualization that writing promotes, and one that gives the mind a special kind of lever on 'reality'.\cite{goody_domestication_1977}
+\end{quote}
+
+As inventories, early textbooks, administrative documents as public mnemotechnique, the list is a way of taking symbols, pictorial language elements in order to re-assemble them to reconstitute the world, then re-assemble it from blocks, following an assumption that the world can always be decomposed into smaller, discreete and \emph{conceptually coherent} units. The list, Goody continues, establish clear-cut boundaries, they are simple, they are abstract and discontinuous. Being based on some singular, symbolical entity, applying logical calculus to lists and their symbols, and doing so in a computing environment, becomes the next step. Indeed, the engineering development of digital computers in post-war United States as described in \ref{subsec:software-developers}, allowed for the putting into practice of these languages, in the budding field of artificial intelligence (AI).
 
 % then a transition to AI and abstract theories of mind and cognitivism (5000)
+\subsubsection{Practical attempts at implementing formal understanding}
 
-% gregory chaitin -> compression, implicit and efficiency, mental models
+This putting into practice took the form of subsequent programming languages, relying on a certain conception of human cognition—abstract, logical, as shown above.
 
-sicp,  p. 88, "Understanding internal definitions well enough to be sure a program means what we intend it to mean requires a more elaborate model of the evalution process than we have presented in this chapter".
+IPL, the Information Processing Language, was created by Allen Newell, Cliff Shaw and Herbert A. Simon. IPL's fundamental construct is also the symbol, which at the time were more or less mapped to physical addresses and cells in the computer's memory, and not yet decoupled from hardware.
+
+% add example of IPL
+A link between the ideas exposed in the writing of the mathematical logicians and the actual design and construction of electrical machines activating these ideas, IPL was originally designed to demonstrate the theorems of Russell's \emph{Principia Mathematica}, along with a couple of early AI programs, such as the \emph{Logic Theorist}, the \emph{General Problem Solver}. More a proof of concept than a versatile language, IPL was then quickly replaced by LISP as the linguistic means to express intelligence in digital computers.
+
+% add figure on what lisp looks like
+LISP (\emph{LIst Processor}) was developed in 1956 was Joseph McCarthy\footnote{McCarthy coined the phrase \emph{Artificial Intelligence} during the 1956 Dartmouth workshop}. The base structural elements of LISP are not symbols, but lists (of symbols, of lists, of nothing), and they themselves act as symbols (e.g. the empty list). [http://jmc.stanford.edu/articles/lisp/lisp.pdf] and [http://web.cse.ohio-state.edu/~rountev.1/6341/pdf/Manual.pdf] By manipulating those lists recursively—that it, processing something in terms of itself—Lisp highlights even further this tendency to separate itself from the problem domain. This is facilitated by its atomistic and relational structure: in order to solve what it has do, it evaluates each symbol and traverses a tree-structure in order to find a terminal symbol.
+
+% add figure on tree structure of language
+This sort of heuristic is quite similar to the approach suggested by Noam Chomsky in his \emph{Syntactic Structures}, where he posits the tree structure of language, as a decomposition of sentences until the smallest conceptually coherent parts (e.g. Phrase -> Noun-Phrase + Verb-Phrase -> Article + Substantive + Verb-Phrase). The style is similar, insofar as it proposes a general ruleset (or the at least the existence of one) in order to construct complex structures through simple parts.
+
+Through its direct manipulation of conceptual units upon which logic operations can be executed, LISP became the language of AI, an intelligence conceived first and foremost as logical understanding. The use of LISP as a research tool culminated in the \emph{SHRDLU} program, a natural language understanding program built in 1968-1970 by Terry Winograd which aimed at tackling the issue of situatedness—AI can understand things abtractly through logical mathematics, but can it apply these rules within a given context? The program had the particularity of functioning with a "blocks world" a highly simplified version of a physical environment, nonetheless made physical. The computer system was expected to take into account the rest of the world and interact in natural language with a human, about this world (\emph{Where is the red cube?} \emph{Pick up the blue ball}, etc.). While incredibly impressive at the time, \emph{SHDRLU}'s success was nonetheless relative. It could only succeed at giving barely acceptable results within highly symbolic environments, devoid of any noise. In 2004, Terry Winograd writes:
+
+\begin{quote}
+    There are fundamental gulfs between the way that SHRDLU and its kin operate, and whatever it is that goes on in our brains. I don’t think that current research has made much progress in crossing that gulf, and the relevant science may take decades or more to get to the point where the initial ambitions become realistic. http://hci.stanford.edu/winograd/shrdlu/
+\end{quote}
+
+%(find ref of that summer grad project where minsky wanted to assistants to solve language)
+
+% add conclusion, quoting subsequent work of winogrand and language touch on flores and winograd
 
 \begin{itemize}
     \item flores and winograd
     \item winograd, language as cognitive process
 \end{itemize}
 
+
+% then touch upon alternative conceptions of understanding with mccullough
+
+% then wrap back up to wittgenstein with his philosophical investigations
+
+% and then the conclusion of sicp, about understanding a program: turns out just formal notation is not sufficient to understand things beyond the realm of logic and arithmetic, and it is precisely in this beyond realm that computers now operate
+sicp,  p. 88, "Understanding internal definitions well enough to be sure a program means what we intend it to mean requires a more elaborate model of the evaluation process than we have presented in this chapter".
 
 
 \subsection{Knowing-what and knowing-how} %10k
@@ -48,7 +104,6 @@ sicp,  p. 88, "Understanding internal definitions well enough to be sure a progr
     \item polanyi
     \item EXAMPLE: XML (applen, mcdaniel, rhetorics of xml)
 \end{itemize}
-
 
 % first the computer
 \section{Understanding computation}
@@ -109,8 +164,6 @@ We'll look a bit deeper at some of those techniques, specifically metaphors and 
     \item barker writing software documentation
     \item wilken card index
 \end{itemize}
-
-
 
 % The computer as prosthetic organ, distributed cognition
 
