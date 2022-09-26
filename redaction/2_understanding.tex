@@ -64,29 +64,29 @@ LISP (\emph{LIst Processor}) was developed in 1956 was Joseph McCarthy\footnote{
 % add figure on tree structure of language
 This sort of heuristic is quite similar to the approach suggested by Noam Chomsky in his \emph{Syntactic Structures}, where he posits the tree structure of language, as a decomposition of sentences until the smallest conceptually coherent parts (e.g. Phrase -> Noun-Phrase + Verb-Phrase -> Article + Substantive + Verb-Phrase). The style is similar, insofar as it proposes a general ruleset (or the at least the existence of one) in order to construct complex structures through simple parts.
 
-Through its direct manipulation of conceptual units upon which logic operations can be executed, LISP became the language of AI, an intelligence conceived first and foremost as logical understanding. The use of LISP as a research tool culminated in the \emph{SHRDLU} program, a natural language understanding program built in 1968-1970 by Terry Winograd which aimed at tackling the issue of situatedness—AI can understand things abtractly through logical mathematics, but can it apply these rules within a given context? The program had the particularity of functioning with a "blocks world" a highly simplified version of a physical environment, nonetheless made physical. The computer system was expected to take into account the rest of the world and interact in natural language with a human, about this world (\emph{Where is the red cube?} \emph{Pick up the blue ball}, etc.). While incredibly impressive at the time, \emph{SHDRLU}'s success was nonetheless relative. It could only succeed at giving barely acceptable results within highly symbolic environments, devoid of any noise. In 2004, Terry Winograd writes:
+Through its direct manipulation of conceptual units upon which logic operations can be executed, LISP became the language of AI, an intelligence conceived first and foremost as logical understanding. The use of LISP as a research tool culminated in the \emph{SHRDLU} program, a natural language understanding program built in 1968-1970 by Terry Winograd which aimed at tackling the issue of situatedness—AI can understand things abtractly through logical mathematics, but can it apply these rules within a given context? The program had the particularity of functioning with a "blocks world" a highly simplified version of a physical environment—bringing the primary qualities of abstraction into solid grasp. The computer system was expected to take into account the rest of the world and interact in natural language with a human, about this world (\emph{Where is the red cube?} \emph{Pick up the blue ball}, etc.). While incredibly impressive at the time, \emph{SHDRLU}'s success was nonetheless relative. It could only succeed at giving barely acceptable results within highly symbolic environments, devoid of any noise. In 2004, Terry Winograd writes:
 
 \begin{quote}
-    There are fundamental gulfs between the way that SHRDLU and its kin operate, and whatever it is that goes on in our brains. I don’t think that current research has made much progress in crossing that gulf, and the relevant science may take decades or more to get to the point where the initial ambitions become realistic. http://hci.stanford.edu/winograd/shrdlu/
+    There are fundamental gulfs between the way that SHRDLU and its kin operate, and whatever it is that goes on in our brains. I don’t think that current research has made much progress in crossing that gulf, and the relevant science may take decades or more to get to the point where the initial ambitions become realistic. \cite{nilsson_quest_2009}
 \end{quote}
 
-%(find ref of that summer grad project where minsky wanted to assistants to solve language)
+This attempt, since the beginning of the century, to enable thinking, clarify understanding and implement it in machines, had first hit an obstacle. The world—the problem domain—exhibits a certain complexity which did not seem to be easily translated into singular, atomistic symbols. Around the same time, however, was developed another approach to the intricacies of cognition.
 
-% add conclusion, quoting subsequent work of winogrand and language touch on flores and winograd
+Warren McCullough's seminal paper, \emph{A logical calculus of the ideas immanent in nervous activity}, co-written with Walter Pitts, is such an example. He presents a connection with the systematic, input-output procedures dear to cybernetics with the predicate logic writing style of Russell and others\citep{mcculloch_logical_1990}. This attachment to input and output, to their existence in complex, inter-related ways, rather than self-contained propositions is, interestingly, rooted in his activy as a literary critic\footnote{Even at the Chicago Literary book club, he argues for a more sensuous approach to cognition: \emph{"In the world of physics, if we are to have any knowledge of that world, there must be nervous impulses in our heads which happen only if the worlds excites our eyes, ears, nose or skin."} \citep{mcculloch_delusion_1953}}.
 
-\begin{itemize}
-    \item flores and winograd
-    \item winograd, language as cognitive process
-\end{itemize}
+Going further in the processes of the brain, he indeed finds out, in another paper with Letvinn and Pitts \citep{lettvin_what_1959}, that the organs through which the world excites the brain \emph{are themselves} agents of process, activating a series of probabilistic techniques, such as noise reduction and softmax, to provide a signal to the brain which isn't the untouched, unary, \emph{symbolical} version of the signal input by the external stimuli, and nor does it seem to turn it into such.
 
+We see here the development of a theory for a situated, embodied stance towards cognition. In it, the senses are as essential as the brain for an understanding—that is, for the acquisition, through translation which then enable deliberate and successful action\footnote{A reversal one could observe around the same time at the moment of the publication of Wittgenstein's \emph{Philosophical Investigations}, where he disown his previous approach to language, and favors a more contextual, use-centered approach \citep{wittgenstein_recherches_2004}}.
 
-% then touch upon alternative conceptions of understanding with mccullough
+\vspace*{1\baselineskip}
 
-% then wrap back up to wittgenstein with his philosophical investigations
+\begin{quote}
+    Understanding internal definitions well enough to be sure a program means what we intend it to mean requires a more elaborate model of the evaluation process than we have presented in this chapter. \citep{abelson_structure_1979}
+\end{quote}
 
-% and then the conclusion of sicp, about understanding a program: turns out just formal notation is not sufficient to understand things beyond the realm of logic and arithmetic, and it is precisely in this beyond realm that computers now operate
-sicp,  p. 88, "Understanding internal definitions well enough to be sure a program means what we intend it to mean requires a more elaborate model of the evaluation process than we have presented in this chapter".
+A couple of decades later, Abelson and Sussman still note, in their introductory textbook to computer science, the difficulty to convey meaning mechanically. While formal notation is able to enable digital computation, it nonetheless proved to be limited when it came to accurately and expressively  conveying meaning. This limitation, of being able to express formally what we understand intuitively (e.g. \emph{what is a chair?}\footnote{A question addressed by Joseph Kosuth in his artwork \emph{One and Three Chairs}, 1965}) appeared as computers applications left the domain of logic and arithmetic.
 
+After having seen the possibilities and limtations of making machines understand through the use of formal languages, and the shift towards sensory perception as a possible locus of cognitive processes, we now turn to these ways of knowing that exist in humans beyond language.
 
 \subsection{Knowing-what and knowing-how} %10k
 % then simon penny and tacit knowledge
