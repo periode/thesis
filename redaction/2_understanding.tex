@@ -76,7 +76,7 @@ Warren McCullough's seminal paper, \emph{A logical calculus of the ideas immanen
 
 Going further in the processes of the brain, he indeed finds out, in another paper with Letvinn and Pitts \citep{lettvin_what_1959}, that the organs through which the world excites the brain \emph{are themselves} agents of process, activating a series of probabilistic techniques, such as noise reduction and softmax, to provide a signal to the brain which isn't the untouched, unary, \emph{symbolical} version of the signal input by the external stimuli, and nor does it seem to turn it into such.
 
-We see here the development of a theory for a situated, embodied stance towards cognition. In it, the senses are as essential as the brain for an understanding—that is, for the acquisition, through translation which then enable deliberate and successful action\footnote{A reversal one could observe around the same time at the moment of the publication of Wittgenstein's \emph{Philosophical Investigations}, where he disown his previous approach to language, and favors a more contextual, use-centered approach \citep{wittgenstein_recherches_2004}}.
+We see here the development of a theory for a situated, embodied stance towards cognition. In it, the senses are as essential as the brain for an understanding—that is, for the acquisition, through translation, of a conceptual model which then enable deliberate and successful action.
 
 \vspace*{1\baselineskip}
 
@@ -88,22 +88,89 @@ A couple of decades later, Abelson and Sussman still note, in their introductory
 
 After having seen the possibilities and limtations of making machines understand through the use of formal languages, and the shift towards sensory perception as a possible locus of cognitive processes, we now turn to these ways of knowing that exist in humans beyond language.
 
-\subsection{Knowing-what and knowing-how} %10k
-% then simon penny and tacit knowledge
-
-% and lakoff
-
-\begin{quote}
-    Thinking is a continuous struggle between conceptual order and empirical comprehensiveness - wright mills, intellectual craftsmanship is an example of the process of understanding a topic in the context of reserch. it's not just purely formal, and is aided by technical appendixes
-\end{quote}
-
+% todo
 \begin{itemize}
-    \item jones and reckoning with matter would be a nice transition?
-    \item cecil wright
-    \item simon penny
-    \item polanyi
     \item EXAMPLE: XML (applen, mcdaniel, rhetorics of xml)
 \end{itemize}
+
+\subsection{Knowing-what and knowing-how} %10k
+
+Briefly before the start of these attempts to implement artificial intelligence in digital computers, a similar reversal could be observed at the moment of the publication of Wittgenstein's \emph{Philosophical Investigations}. In his second work, he disown his previous approach to language as seen in the \emph{Tractatus Logico-philosophicus}, and favors a more contextual, use-centered approach. Rather than what is knowledge, he looks at how is knowledge acquired and used; while (formal) lanuage was previously defined as the exclusive means to translation concepts in clearly understandable terms, he broadens his perspective in the \emph{Inquiries} by stating that language is \emph{"the totality of language and the activities with which it is intertwined"} and that \emph{"the meaning of a word is its use within language"} \citep{wittgenstein_recherches_2004}.
+
+It seemed possible to make machines understand through the use of formal languages; the end of the first wave of AI development, as a branch of computation specifically focused on cognition, have shown some limits to this approach.  We now turn to theories which support this approach of an embodied and contextualized knowing, complemented by a constructivist approach to building an understanding.
+
+% 4000
+\subsubsection{Knoweldge and embodiment}
+
+As hinted at by the studies of McCullough and Levitt, understanding a situation doesn't rely exclusively on abstract logical processes, but also on peripheral processing. It is not just what things are, but how they are, and how they are \emph{perceived}, which matters. Different means of inscription and description do tend to have an impact on the ideas communicated and understood.
+
+In his book \emph{Making Sense: Cognition, Computing, Art and Embodiment}, Simon Penny refutes the so-called unversality of formulating cognition as a formal problem, and develops an alternative history of cognition, akin to Michel Foucault's archeology of knowledge. Drawing on the works of authors such as William James, Jakob von Uexküll and Gilbert Ryle, he refutes the Cartesian dualism thesis, according to which the mind and the boby are clearly distinct from one another and do not influence each other \citep{penny_making_2019}. A particular example of the fallacy of cartesian dualism, is the use of the phrase \emph{implementation details}, which he recurringly finds in the artificial intelligence literature, such as Herbert Simon's \emph{The Sciences of the Artificial} \citep{simon_sciences_1996}. The phrase refers to the gap existing between the statement of an idea, of an algorithm, and a procedure, and its concrete, effective and functional manifestation.
+
+For instance, pseudo-code might be considered agnostic when it comes to implementation details. One might consider the pseudo-code in \ref{code:nielsen_chalktalk}, which describes a procedure to transform a free-hand drawing into a known, formalized glyph. Disregarding the implementation details means disregarding any reality of an actual system: the operating system (e.g. UNIX or MSDOS), the input mechanism (e.g. mouse, joystick, touch or stylus), the rendering procedure (e.g. raster or vector), or the programming language (e.g. JavaScript or Python).
+
+\begin{listing}
+    \begin{minted}{python}
+        recognition = false
+        do until recognition
+        wait until mousedown
+            if no bounding box, initialize bounding box
+            do until mouseup
+            update image
+            update bounding box
+            rescale the material that's been added inside
+            if we recognize the material:
+                delete image from canvas
+                add the appropriate iconic representation
+                recognition = true
+    \end{minted}
+    \caption[]{Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep{nielsen_working_2017}}
+    \label{code:nielsen_chalktalk}
+\end{listing}
+
+Refuting the idea that pseudo-code is all that is necessary to communicate and act upon a concept, Penny  argues on the contrary that information is relativistic and relational; relative to other pieces of information (intra-relation) and related to contents and forms of presenting this relation (extra-relation).
+
+He then follows Philip Agre's statement that a theory of cognition based on formal reason works only with objects of cognition whose attributes and relationships can be completely characterized in formal terms; and yet a formalist approach to cognition does not prove that such objects exist or, if they exist, that they can be useful. Uses of formal systems in artificial intelligence in specific, and in cognitive matters in general, is yet another instance of the map and the territory problem—it only goes so far.
+
+There are therefore different ways to transmit cognition in actionable form, depending on the form, the audience and the purpose. In terms of form, a symbol system of formal logic is only one of many. In his \emph{Languages of Art}, Nelson Goodman elaborates a theory of symbol systems, which he defines as formal languages composed of syntactic and semantic rules \citep{goodman_languages_1976}.Logical notation, as elaborated by Frege, is only one possible formal language, with music, painting and writing being others. What follows, argues Goodman, is that all these formal languages involve an act of \emph{reference}. Through different means (exemplification, denotation, resemblance, representation), formal systems act as sets of symbols which can denote or exemplify or refer in more complex and indirect ways, yet always between a sender and a receiver\footnote{Understood as the eponymous entities  in Jakobsen's model of communication functions.}.
+
+Communication, as the transfer of cognitive units from one individual to one or more other individuals, seems not to exclusively rely on the use of mathematical based use of formal languages. From Goodman to Goody, the format of representation also affords differences in what can be thought and imagined. Something that was always implicit in the arts—that representation is a complex is ever-fleeting topic—is shown more recently in Marchand-Zañartu and Lauxerois's work on pictural representations made by philosophers, visual artists and novelists (such as Claude Simon's sketches for the structure of his novel \emph{La Route des Flanders}, shown in \ref{image:la_route_des_flandres})\citep{marchand-zanartu_32_2022}. How specific domains, from mathematics to visual arts and construction, engage in the relation between form and cognition is further adressed in CHAPTER_4.
+
+% TODO INSERT Tentative d’organisation visuelle pour le roman La Route des Flandres, années 1960 - Claude Simon, écrivain
+
+% 4000
+\subsubsection{Constructing knowledge}
+
+% first on the limitations of knowledge, on the existence of tacit knowledge, and direct engagement as a means of knowing.
+
+Since there are multiple ways to express an idea, one must also examine another paradox raised towards formal languages—that all that can be known can ultimately be expressed in unambiguous terms. This section focuses on the ways of knowing which cannot be explicited.
+
+Perhaps one of the most obvious example is in the failure of Leibniz to construct a calculating machine, as told by Matthew L. Jones in his book \emph{Reckoning with Matter}. In it, he traces the history of philosophers to solve the problem of constructing a calculating machine, a problem which would ultimately be solved by Charles Babbage, with the consequences that we know \citep{jones_reckoning_2016}. Still, he depicts Leibniz in his written correspondence with watchmaker Ollivier, in their fruitless attempt to construct Leibniz's design; the implementations details seem to elude the German philosopher as he refers to the "confused" knowledge of the nonetheless highly-skilled Parisian watchmaker.
+
+These are two complementary approaches to the knoweldge of something: to know \emph{what} constructing calculating machine entails and knowing \emph{how} to construct such a machne. In the fact that Ollivier could not communicate clearly to Leibniz what his technical difficulties, we can see an instance of something which would be theorized centuries later by Michael Polanyi as \emph{tacit knowledge}.
+
+Polanyi, as a scientist himself, starts from the opposite assumption: we know more than we can tell. In his eponymous work, he works against a positivist approach to knowledge, in which empirical and factual deductions are sufficient to epistemological work. What he proposes, derived from gestalt psychology, is to consider some knowledge of an object as the knowledge of an integrated set of particulars, of which we already know some features, by virtue of the object existing in an external approach. In the words of Cecil Wright Mills, writing in his appendix to his \emph{Sociological Imagination},
+
+\begin{quote}
+    Thinking is a continuous struggle between conceptual order and empirical comprehensiveness. \citep{MillsC.WrightCharlesWright2000Tsi}
+\end{quote}
+
+Polanyi's presentation of a form of knowledge pendulum movement, between dismemberment and integration of concepts finds an echo in the sociological work for Mills: a knowledge of some objects in the world happens not exclusively through formal descriptions in logical symbol systems, but in implicating imagination and phenomenology. Furthermore, Mills's quote above hints at another aspect of Polanyi's investigation of knowedge, and already present in Ollivier's relation with Leibniz: learning through doing.
+
+% then develop on craft and skill again, on the development of psychology of education, the object that impresses the mind re: dewey
+
+% also where do we put the diff between knowing what and knowing how.
+
+% -----
+
+% polanyi seems to be originating postcritique, which is a turn in literary critique in which one moves away from hermeneutics/interpretation (vs. implication), to prefer affect, aesthetic, phenomenological, and yet some sort of distance. the connection to ricoeur, as the hermeneutics of suspicion (i.e. don't take it as face value, displyaing of smug knowingness) -> Rita Felski  "we should all heed Ricœur’s advice to combine a willingness to suspect with an eagerness to listen; there is no reason why our readings cannot blend analysis and attachment, criticism and love."
+
+% polanyi does deal a lot with gestalt vs. particularls. formalism, monadism is about dealing with particulars, when rather we get a holistic approach. he also says that a _elucidation of a comprehensive object_ and the mastering of a skill are both in this pendulum movement of dismemberment (lol what a phrase) and integration. a connection that polanyi offers is that of _visual perception_, circling back to mccullough and levitt.
+
+% quote from knowing and being essay (https://archive.org/details/knowingbeingessa00pola/page/130/mode/2up): The knowledge of a problem is, therefore, like the knowing of unspecifiables, a knowing of more than you can tell.
+
+\vspace*{1\baselineskip}
+\centerline{\rule{0.13334\linewidth}{.4pt}}
+\vspace*{1\baselineskip}
 
 % first the computer
 \section{Understanding computation}
@@ -126,6 +193,7 @@ We will also look at the practical investigations of how people understand softw
     \item turner, computational artifacts
     \item rapaport
     \item simondon yallah
+    \item kirsch, maglio, distinguish epistemic from pragmatic action
 \end{itemize}
 
 \subsection{The psychology of programming}
@@ -158,8 +226,8 @@ We'll look a bit deeper at some of those techniques, specifically metaphors and 
 % IDEs
 
 \begin{itemize}
+    \item extended mind hypothesis of clark and chalmers (1998)
     \item fishwick aesthetic progamming
-    \item starting with the basics: goody, logic of writing
     \item allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
     \item barker writing software documentation
     \item wilken card index
