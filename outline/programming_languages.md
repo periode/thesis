@@ -5,6 +5,17 @@ in this part, the set of aesthetic features, composed from both empirical observ
 [iverson notation tool for thought](../readings/notes/iverson_notation_as_tool_for_thought.md)
 [cantwell smith computational linguistics](../readings/notes/cantell_smith_linguistics_computational_semantics.md)
 
+
+[turner, computational artifacts](../readings/notes/turner_computational_artifacts.md) so in order to use those languages, we need some account of their _intended meaning_, which some argue must be mathematical in nature because:
+- it's not ambiguous
+- they facilitate formal exploration without the cost of implementation
+- is a resort when the computational artefact (program, architecture) must be reasoned about on an abstract level (which it some point always ends up being a necessity)
+- allows for proof of _correctness_
+
+Notions such as _threading_ and _synchronization_ are ambiguous! We need better conceptual understanding for a more exact formulation
+
+basically programming languages are the child of concrete one one side (hardware can do anything) and abstract on the other (mathematics are highly specific)
+
 ## the (programming) language object
 
 [scott_programming_language_pragmatics](../readings/notes/scott_programming_language_pragmatics.md)

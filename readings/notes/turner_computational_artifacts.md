@@ -28,7 +28,7 @@ at the other hand are hardware description languages (e.g. VHDL)
 
 ### semantics
 
-> Any discussion on the foundations of computing runs into severe problems right at the start. The difficulty is that although we all use words such as name!, value!, program!, expression! or command! which we thin" we understand, it often turns out on closer investigation that in point of fact we all mean different things by these words, so that communication is at best precarious. (stratchey, 2000)
+> Any discussion on the foundations of computing runs into severe problems right at the start. The difficulty is that although we all use words such as name!, value!, program!, expression! or command! which we think we understand, it often turns out on closer investigation that in point of fact we all mean different things by these words, so that communication is at best precarious. (stratchey, 2000)
 
 so in order to use those languages, we need some account of their _intended meaning_, which some argue must be mathematical in nature because:
 - it's not ambiguous
@@ -42,7 +42,7 @@ basically programming languages are the child of concrete one one side (hardware
 
 ### implementation
 
-> A paradigm computational example is furnished by a compiler for a programming language, where the compi&er is the artefact and together the syntactic and semantic definitions of the language constitute the functiona& specification.The medium of implementation will include the programming language in which the compiler is written
+> A paradigm computational example is furnished by a compiler for a programming language, where the compiler is the artefact and together the syntactic and semantic definitions of the language constitute the functional specification.The medium of implementation will include the programming language in which the compiler is written
 
 a relation between three things: a definition, a medium of implementation and the artefact (Artefact A is an implemtation in medium M of the definition F)
 
