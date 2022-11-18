@@ -1,5 +1,19 @@
 # todo
 
+## chap 4
+
+- should it be about programming languages? or about programming semantics? or wait until i know really what it is about, and why it;s needed?
+
+## chap 3
+
+- [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
+
+## meeting with nick 4.11.2022
+
+- is it clear why i'm addressing definitions of understanding first, and then the actual object of understanding?
+- is it more about understanding, or knowledge communication/knowledge reception?
+- in general, i'm a bit unsure about how clear my approach to understanding is. i know it's necessary to clarify what i mean, and the intent is to provide background for this "dual nature" of software.
+
 ## meeting with nick
 
 - [ ] pare down!
@@ -10,11 +24,17 @@
 - - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
 - - [ ] move listing 10 to understanding computers
 - - [ ] one liner: monostiche
-- - [ ] since this is too long, paraphrase code, rather than quote it
-- - [ ] linsting 2, not style but voices
+- - [ ] since the chapter is too long, paraphrase code, rather than quote it
+- - [ ] listing #2, not style but voices
 - - [ ] black perl is still in old mode
 - - [ ] explain listing 13
 - [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
+
+## chap 1
+
+- [ ] make the connection between abstract code beauty (the doxa) and the mathematical sublime of Kant
+- [ ] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
+- [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 
 ## general
 

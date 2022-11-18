@@ -195,24 +195,56 @@ Source code, as a formal system with a high dependence of context, intent and im
 % first the computer
 \section{Understanding computation}
 
-\centerline{\rule{1\linewidth}{.4pt}}
+In the previous chapter, we've laid out the groundwork by showing that there are multiple ways to understand something. We now turn to the thing we want to understand. What makes it challenging to understand computation?
 
-the sections below are still in the state of rough notes
+First, we will inquire into some distinguishing features of software, by looking at some of its particularities, in terms of levels of abstractions, and in terms of types of complexity. This will highlight some of the theoretical properties that make it hard to understand, such as its relation to hardware, its relation to a specification, and its relation to time and space.
 
-\centerline{\rule{1\linewidth}{.4pt}}
+Then, we will shift our perspective to a more abstract point of view, investigating the ontological status of software. This will highlight how software exists as an \emph{abstract artifact}, a term which encapsulates software's intrinsic and extrinsic tensions.
 
-We've laid out the groundwork by showing that there are multiple ways to understand something. We now turn to the thing we want to understand. What makes it challenging to understand computation?
-
-First, we will look at it from a more abstract point of view, investigating the ontological status of software. This will highlight some of the theoretical properties that make it hard to understand, such as its relation to hardware, its relation to a specification, and its relation to time and space.
-
-Second, we will look at the practical investigations of how people understand software by looking into the psychology and cognition of programmers, with various studies and books on the subject. This will give us a better picture of the process which aesthetics in source code are supposed to influence.
+Finally, we will conclude this section by looking specifically at the source code component of software, and how programmers deploy strategies to understand it. Approaching it from a cognitive and psychological perspective, this will give us a better picture of the concrete process of understanding source code—a process which aesthetics are primarily intended to affect.
 
 % the software effect (combination of knowing what (it does) and how (it does it))
+\subsection{Software complexity} %7k
+
+Software exhibits several particularities, lead to a compex whole—meaning that software possesses several independent components which interact with each other in non-trivial, and non-obvious ways.
+
+This subsection is on the \emph{properties} of software, and hence how these properties manifest themselves concretely, leading to those complex interactions. The multiple planes of existence\footnote{lol}, and the varieties of complexities which ensues from these different planes make it a complex, non-straightforward object to grasp.
+
+\subsubsection{Levels of software} % 3k
+
+a program is a \emph{cognitive artefact}, which can be understood on three different levels, according to Moor \citep{moor_three_1978}:
+
+\begin{itemize}
+    \item the intent level (the goal and desire)
+    \item the design level (specifications, effective)
+    \item the physical level (transistors)
+\end{itemize} 
+
+\subsubsection{Types of complexity} % 4k
+
+Warren Weaver defines problems of organized complexity as those which involve dealing simultaneously with a sizable number of factors which are interrelated into an organic whole \citep{weaver_science_1948}\footnote{As opposed to disorganized complexity, which are dealt with statistical tools.}.
+
+There are different types of complexity that we can develop further.
+
+\begin{itemize}
+    \item conceptual complexity \citep{lando_general_2007} (i.e. data models + algorithms combined)
+    \item modeling complexity \citep{lando_general_2007} (i.e. relating to the problem domain)
+    \item temporal complexity (issues of speed, sequentiality and parallelism, there is a qualitative change when operations are executed millions of times per second)
+    \item spatial complexity (the network, the spread of documents and non-linear execution)
+\end{itemize}
+
+\begin{quote}
+    Code is therefore technical and social, and material and symbolic simultaneously. Rather, code needs to be approached in its multiplicity, that is, as a literature, a mechanism, a spatial form (organization), and as a repository of social norms, values, patterns and processes. \citep{berry_philosophy_2011} (pp 36-37)
+\end{quote}
+
+The problem, again, is that programming is an information management technique which, in turn, produces information.
+
+In order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97). Such that the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations) \citep{rapaport_philosophy_2005}.
+
 % the philosophical enquiries
+\subsection{Software ontology} %7k
 
-\subsection{Software ontology} %11k
-
-The first section focuses on technology, with simondon expliciting an ambiguous status. This ambiguous status is then further looked at through the concept of the "abstract artifact". That is, they are syntactic entities which exhbit artefactual properties (that is, it has spatio-temporal properties). Artefact A is an implementation in medium M of the definition F.
+The first section focuses on technology in general, with Simondon expliciting an ambiguous status, between magic and philosophy. This ambiguous status is then further looked at through the concept of the "abstract artifact". That is, they are syntactic entities which exhbit artefactual properties (that is, it has spatio-temporal properties). Artefact A is an implementation in medium M of the definition F.
 
 It's always conceptually designed and materially implemented. To use Cantell-Smith's phrase, it's \emph{meaning mechanically realized}, at the interaction of two traditions: logical and mechanical.
 
@@ -232,36 +264,11 @@ Technical artefacts have \emph{functional} properties (purpose) and \emph{struct
     \item kirsch, maglio, distinguish epistemic from pragmatic action
 \end{itemize}
 
-\subsubsection{Software complexity}
-
 The dynamic notion of a state of a process \citep{rapaport_philosophy_2005}. It is an epistemic action.
 
-a program is a \emph{cognitive artefact}, which can be understood on three different levels, according to Moor \citep{moor_three_1978}:
+In conclusion of this subsection, we've seen that software is an \emph{abstract artifact}, and this tension/paradox is at the root of the cognitive hurdles when understanding software. Yet, programmers, have been understanding software (some of them quite well, so called \emph{rockstar} programmers, or virtuosos).
 
-\begin{itemize}
-    \item the physical level (transistors)
-    \item the design level (specifications, effective)
-    \item the intent level (the goal and desire)
-\end{itemize} 
-
-There are different types of complexity that we can develop further
-
-\begin{itemize}
-    \item conceptual complexity \citep{lando_general_2007}
-    \item modeling complexity \citep{lando_general_2007}
-    \item temporal complexity (issues of speed, sequentiality and parallelism, there is a qualitative change when operations are executed millions of times per second)
-    \item spatial complexity (the network)
-\end{itemize}
-
-\begin{quote}
-    Code is therefore technical and social, and material and symbolic simultaneously. Rather, code needs to be approached in its multiplicity, that is, as a literature, a mechanism, a spatial form (organization), and as a repository of social norms, values, patterns and processes. \citep{berry_philosophy_2011} (pp 36-37)
-\end{quote}
-
-The problem, again, is that programming is an information management technique which, in turn, produces information.
-
-In order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97). Such that the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations) \citep{rapaport_philosophy_2005}.
-
-\subsection{The psychology of programming} %11k
+\subsection{The psychology of programming} %7k
 % the studies
 
 So software is complicated. How do individuals deal with it? Constructing, and understanding it? The idea is to start how this happens empirically, i.e. looking at programmers' cognitive activities.
@@ -300,6 +307,8 @@ But we will also need more practical examples.
 
 \subsection{Tools as an extension}
 % IDEs
+
+Essentially talking about HCI
 
 \begin{itemize}
     \item extended mind hypothesis of clark and chalmers (1998)
