@@ -92,7 +92,7 @@ After having seen the possibilities and limitations of making machines understan
 
 % todo
 % \begin{itemize}
-    % \item EXAMPLE: XML (applen, mcdaniel, rhetorics of xml)
+% \item EXAMPLE: XML (applen, mcdaniel, rhetorics of xml)
 % \end{itemize}
 
 \subsection{Knowing-what and knowing-how} %10k
@@ -141,8 +141,8 @@ Communication, as the transfer of meaning from one individual to one or more oth
     \begin{center}
         \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{routedesflandres.png}
         \caption{Tentative d'organisation visuelle pour le roman La Route des Flandres, années 1960 - Claude Simon, écrivain}
-        \label{image:routedesflandres}    
-    \end{center}    
+        \label{image:routedesflandres}
+    \end{center}
 \end{figure}
 
 Going beyond logical notation, we have seen that there are other conceptions of knowledge which take into account the physical, social and linguistic context of an action. Nonetheless, these can still be systematized, as Goodman highlights in his investagation of referential systems, with a focus on reference of the ideas at hand.
@@ -158,7 +158,7 @@ Jones depicts Leibniz in his written correspondence with watchmaker Ollivier, in
 
 These are two complementary approaches to the knoweldge of something: to know \emph{what} constructing calculating machine entails and knowing \emph{how} to construct such a machne. In the fact that Ollivier could not communicate clearly to Leibniz what his technical difficulties, we can see an instance of something which would be theorized centuries later by Michael Polanyi as \emph{tacit knowledge}, knowledge which cannot be entirely made explicit.
 
-Polanyi, as a scientist himself, starts from another assumption: we know more than we can tell. In his eponymous work, he argues against a positivist approach to knowledge, in which empirical and factual deductions are sufficient to achieve satisfying epistemological work. What he proposes, derived from \emph{gestalt} psychology, is to consider some knowledge of an object as the knowledge of an integrated set of particulars, of which we already know some features, by virtue of the object existing in an external approach. This integrated set, in turn, displays more properties than the sum of its parts. While formal notation suggests that the combination of formal symbols does not result in additional knowledge, Polanyi rather argues, against Descartes, that relations and perceptions do result in additional knowledge. 
+Polanyi, as a scientist himself, starts from another assumption: we know more than we can tell. In his eponymous work, he argues against a positivist approach to knowledge, in which empirical and factual deductions are sufficient to achieve satisfying epistemological work. What he proposes, derived from \emph{gestalt} psychology, is to consider some knowledge of an object as the knowledge of an integrated set of particulars, of which we already know some features, by virtue of the object existing in an external approach. This integrated set, in turn, displays more properties than the sum of its parts. While formal notation suggests that the combination of formal symbols does not result in additional knowledge, Polanyi rather argues, against Descartes, that relations and perceptions do result in additional knowledge.
 
 \begin{quote}
     The knowledge of a problem is, therefore, like the knowing of unspecifiables, a knowing of more than you can tell. \citep{polanyi_knowing_1969}
@@ -206,56 +206,102 @@ Finally, we will conclude this section by looking specifically at the source cod
 % the software effect (combination of knowing what (it does) and how (it does it))
 \subsection{Software complexity} %7k
 
-Software exhibits several particularities, lead to a compex whole—meaning that software possesses several independent components which interact with each other in non-trivial, and non-obvious ways.
-
-This subsection is on the \emph{properties} of software, and hence how these properties manifest themselves concretely, leading to those complex interactions. The multiple planes of existence\footnote{lol}, and the varieties of complexities which ensues from these different planes make it a complex, non-straightforward object to grasp.
+Software exhibits several particularities, which result in a compex whole—meaning that software possesses several independent components which interact with each other in non-trivial, and non-obvious ways. This subsection focuses on these particularies; that is, on the \emph{properties} of software, and hence how these properties manifest themselves concretely, leading to those complex interactions. We will start by looking at the different levels at which software exists, before turning to the different kinds of complexity which make software hard to grasp.
 
 \subsubsection{Levels of software} % 3k
 
-a program is a \emph{cognitive artefact}, which can be understood on three different levels, according to Moor \citep{moor_three_1978}:
+One of the essential aspects of software is that of \emph{implementation}. Implementation is the realization of a plan, the concrete manifestation of an idea, and therefore hints at a first tension in software's multiple facets. On the one side, there is what we will call here \emph{ideal} software, often existing only as a shared mental representation by humans (not limited to programmers), or as printed documentation, as a series of specifications, etc. On the other side, we have \emph{actual} software, which is manifested into lines of code, written in one or more particular languages, and running with more or less bugs.
 
-\begin{itemize}
-    \item the intent level (the goal and desire)
-    \item the design level (specifications, effective)
-    \item the physical level (transistors)
-\end{itemize} 
+The relationship between the \emph{ideal} and the \emph{actual} versions of the same software is not straightforward. Ideal software only provides an intent, a guidance towards a goal, assuming, but not guaranteeing, that this goal will be reached. A popular engineering saying is that complements this approach by stating that:
+
+\begin{quote}
+    In theory, there is no difference between theory and practice. In practice, there is.\footnote{Sometimes mis-attributed to Richard P. Feynman or Albert Einstein, but traced to Benjamin Brewster, writing in the Yale Literary Magazine of 1882.}
+\end{quote}
+
+Actual software, as most programmers know, differs greatly from its ideal version, largely due to the process of implementation, translating the purpose of the software from natural and diagrammatic languages, into programming languages, from what it should do, into what it actually does.
+
+Writing on the myths of computer science, James Moor \citep{moor_three_1978} allows us to think through this distinction between ideal and practical along the lines of the separation between a theory and a model. The difference between a model and a theory is that both can exist independently of one another—one can have a theory for a system without being able to model it, while one can also model a system using \emph{ad hoc} programming techniques, instead of a coherent theory.
+
+Most of the practice of programmers (writing and reading code for the purposes of creating, maintaining and learning software) depends on closing this gap between the ideal and the practical existences of software.
+
+The third level at which software exists is that of hardware. While the ideal version of software is presented in natural language, diagrams or pseudo-code, and while the practical version of software exists as executable source code, software also exists at a very physical level—that of transistors and integrated circuits.
+
+The distinction between software and hardware has been examined thoroughly \citep{kittler_there_1997,chun_sourcery_2008,rapaport_philosophy_2005}, but never strictly defined. Rather, the distinction between what is hardware and what is software is relative to where one draws the line: to a front-end web developer writing JavaScript, the browser, operating system and motherboard might all be considered hardware. For a RISC-V assembly programmer, only the specific CPU chip might be considered hardware, while the operating system being implemented in C, itself compiled through Assembly, would be considered software. A common definition of hardware, as the physical elements making up the computer system, overlooks the fact that software itself is, ultimately, physical changes in the electrical charge of the components of the computer.
+
+Software can be characterized the dynamic evolution of logical processes, described as an ideal specification in natural languages, as a practical realization in programming languages, and in specific states of hardware components. Furthermore, the relations between each of these levels is not straightforward: the ideal and the practical can exist independently of each other, while the practical cannot exist independently of a machine\footnote{Even if that machine is a \emph{virtual machine}, further complicating the boundary between hardware and software}.
 
 \subsubsection{Types of complexity} % 4k
 
-Warren Weaver defines problems of organized complexity as those which involve dealing simultaneously with a sizable number of factors which are interrelated into an organic whole \citep{weaver_science_1948}\footnote{As opposed to disorganized complexity, which are dealt with statistical tools.}.
+Along with different levels of existence needed to be taken into account by the programmer, software also exhibits specific kinds of complexity. Our definition of complexity will be the one proposed by Warren Weaver. He defines problems of (organized) complexity as those which involve dealing simultaneously with a sizable number of factors which are interrelated into an organic whole \citep{weaver_science_1948}\footnote{As opposed to disorganized complexity, which are dealt with statistical tools.}. Specifically, there are four different types of software complexity that we look at: conceptual complexity, modeling complexity, temporal complexity and spatial complexity.
 
-There are different types of complexity that we can develop further.
+Conceptual complexity, as refered to by Lando et. al. in their ontology of computer programs, addresses the necessity to model complex objects at different abstraction levels \citep{lando_general_2007}. As mentioned above, software exists at least on three somewhat distinct levels: the ideal, the practical, and the physical. This means that software, in its source code representation, should be able to provide the programmer with tools to engage with its intended function and its actual function at each of these levels. For instance, comments might relate to the ideal behaviour of the software, function declarations to its practical behaviour, while macro definitions can point to the specific hardware on which the code is run.
 
-\begin{itemize}
-    \item conceptual complexity \citep{lando_general_2007} (i.e. data models + algorithms combined)
-    \item modeling complexity \citep{lando_general_2007} (i.e. relating to the problem domain)
-    \item temporal complexity (issues of speed, sequentiality and parallelism, there is a qualitative change when operations are executed millions of times per second)
-    \item spatial complexity (the network, the spread of documents and non-linear execution)
-\end{itemize}
+% insert a table of C code where you see some comment, some function, and some macro
 
-\begin{quote}
-    Code is therefore technical and social, and material and symbolic simultaneously. Rather, code needs to be approached in its multiplicity, that is, as a literature, a mechanism, a spatial form (organization), and as a repository of social norms, values, patterns and processes. \citep{berry_philosophy_2011} (pp 36-37)
-\end{quote}
+Additionally, conceptual complexity involves the distinction of the different elements of a computer program at the source code level, and keep track of their ontological status, sometimes independently from its level of existence. This distinction should be made notwithstanding the naming conventions assigned by different platforms, vendors, or programming languages, and rather based on ontological properties of the elements at hand. For instance, the distinction between \emph{endurants} and \emph{perdurants} by Lando et. al. focuses on the temporal dimension of software components (i.e. a data structure declaration has a different temporal property than a function call). Here we have a second, complementary frame to that of the levels of existence, through which we can analyze source code; being somewhat related but an exact mapping of one another.
 
-The problem, again, is that programming is an information management technique which, in turn, produces information.
+Modeling complexity addresses the hurdles in translating a non-discrete, non-logical object, event, or action, into a discreete, logical software description through source code. Indeed, the history of software development is also the history of the extension of the application of software, and the hurdles to be overcome in the process. From translation of natural languages \citep{poibeau_machine_2017}, to education \citep{watters_teaching_2021} or psychological treatment \citep{weizenbaum_computer_1976}, it seems that problems that seem somehat straightforward from a human perspective become more intricate once the time for implementation has come.
 
-In order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97). Such that the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations) \citep{rapaport_philosophy_2005}.
+We've seen so far the complexities tied to the conceptualization and modelization of the components of software. Two other significant contributions to the cognitive load of understanding software happen are more closely related to the concrete execution of the software—temporal and spatial complexity.
+
+Temporal complexity relates to the discrepancy between the original conceptualization of the computer as a Turing machine—i.e. a machine which operates linearly, on a one-dimensional tape—and further technological developments. Originally, the Turing machine would involve the ability for the head of the machine to jump at different locations. This meant that the execution and reading of a program would be non-linear, jumping from one routine to another across the source code. Such an entanglement is particulary obvious in Ben Fry's Distellamap series of visualizations of source code (\ref{graphic:pacman-visualization} represents the execution of the source code for the arcade game Pac-Man), and led to Edsger W. Dijkstra's statement on the harmfulness of such jumps on the cognitive abilities of programmers.
+
+
+\begin{listing}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{distellamap_pacman.png}
+    \caption{Visualization of the execution of Pac-Man's source code}
+    \label{graphic:pacman-visualization}
+\end{listing}
+
+Later on, the introduction of multi-core architecture for central processing units in the late 2000s has enabled the broad adoption of multithreading and threaded programming. As a result, source code has transformed from a single non-linear execution to a multiple non-linear process, in which several of these non-linear executions are happening in parallel. Keep tracking of what is executing when on which resource is involved in problems such as \emph{race conditions}, when understanding the scheduling of events (each event every e.g. 1/18000000th of a second on a 3.0 Ghz CPU machine) becomes crucial to ensuring the correct behaviour of the software.
+
+Conversely, the locus of the execution of software creates contributes to those issues. Software can be (dis-)located across multiple files on a single machine, on multiple processes on a single machine, or on multiple processes on multiple machines (on a local-area or wide-area network). This further fragments the interface to the object of understanding. For instance, the asynchronicity of requesting and processing information from distinct processes is a spatial separation of code which has temporal implications (e.g. due to network latency).
+
+\vspace*{1\baselineskip}
+\centerline{\rule{0.13334\linewidth}{.4pt}}
+\vspace*{1\baselineskip}
+
+Software, then, exhibits certain properties which make it difficult to understand, from conception to application: software in the real-world involves implementing concepts that lose in translation, interfacing the world through discreete representations, and following the execution of these representations through space and time, as software executes more and more in a distributed and parallel fashion.
 
 % the philosophical enquiries
 \subsection{Software ontology} %7k
 
-The first section focuses on technology in general, with Simondon expliciting an ambiguous status, between magic and philosophy. This ambiguous status is then further looked at through the concept of the "abstract artifact". That is, they are syntactic entities which exhbit artefactual properties (that is, it has spatio-temporal properties). Artefact A is an implementation in medium M of the definition F.
+Now that we've clarified some difficulties in the understanding of software, we can frame these difficulties in a philosophical context. It turns out that not only is the nature of software a complex philosophical object, but so is that of computer science. Computer science itself inherits this complexity from the nature of technology itself. Before moving back to practical inquiries into how specific individuals engage with this nature, this section will help provide a theoretical backdrop for further empirical inquiries. This conceptual framework will first by an investigation into the denomination of software as an \emph{abstract artifact}, followed by an analysis of the ambiguous status of computer science between a science and a technology.
+
+% first on the abstract artifact - 3.5k
+\subsubsection{Software as abstract artifact}
+
+When he coins the phrase \emph{abstract artifact}, Nurbay Irmak addresses software as an abstract object, similar to Platonic entities, but have nonetheless have spatio-temporal properties \citep{irmak_software_2012}. As mentioned previous, software does need to exist as an implementation, in the form of source code \citep{suber_what_1988}; this implies that software has a begin and an end, all the while representing ideas of structure and procedure which go beyond this beginning and end. Typically, the physical aspects of software (its manifestation as source code) can be changed\footnote{A process called \emph{refactoring}.} without changing any of the ideas expressed by the software—a phenomenon one can also observe in natural languages, in which one can radically change a syntax without drastically changing the semantics of a sentence.
+
+Colburn's phrasing is that of a \emph{concrete abstraction}. He does not explicit this dichotomy further, but we can see how its oxymoronic nature resonates with the concept of an abstract artifact.
+
+He grounds this tension in the distinction between a medium of execution (a—potentially virtual—machine) and a medium of description (source code). He considers that while, ultimately, any high-level language in which the programmer writes is already the result of layers of abstraction, such high-level language gets reduced to the zeroes and ones input into the central processing unit \citep{colburn_philosophy_2000}. And yet, if we carry on this reasoning further, these representation of voltage changes into zeroes and ones are themselves abstractions over a concrete, physical event.
+
+Writing on computational artefacts, of which software is a subset, Raymond Turner formalizes this apparent contradiction in a three-way relationship. Namely, artefact A is an implementation in medium M of the definition F. For instance, concerning the medium:
+
+\begin{quote}
+    Instead of properties such as \emph{made from carbon fiber}, we have properties such as \emph{constructed from arrays in the Pascal programming language, implemented in Java}. \citep{turner_computational_2018}
+\end{quote}
+
+This metaphor provides an accurate account of the place of source code within the definition of software: source code is that which gives the ideas in software shape—through a process of concretization—and which hides away the details of the hardware—through abstraction.
+
+The concept of \emph{abstract artifact} therefore helps to clarify the tensions within software, and to locate the specific role of source code within the different moving parts of definition, medium and model. Nonetheless, this same concept points at a larger philosophical entanglement, that of computer science as a discipline and of technology as a concept.
+
+\subsubsection{Philosophical investigations into software}
+
+% conclusion of abstract artifact, moving to philosophy
+
+As a result, software, as a part of the family of technical artefacts have \emph{functional} properties (purpose) and \emph{structural} ones (physical makeup which allow for the completion of the functional purpose) \citep{turner_computational_2018}
 
 It's always conceptually designed and materially implemented. To use Cantell-Smith's phrase, it's \emph{meaning mechanically realized}, at the interaction of two traditions: logical and mechanical.
 
-this 'dynamic of organized inorganic matter' (Stiegler 1998: 84). \url{http://tapoc.sourceforge.net/progress/2012/06/notes_for_berry-philosophy_of_software.html} p.4
+Now we shif the focus on technology in general, with Simondon expliciting an ambiguous status, between magic and philosophy.
 
-Technical artefacts have \emph{functional} properties (purpose) and \emph{structural} ones (physical makeup which allow for the completion of the functional purpose) \citep{turner_computational_2018}
+software can be referred to as a the "dynamic of organized inorganic matter" (Stiegler 1998: 84).
+
+In order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97). Such that the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations) \citep{rapaport_philosophy_2005}.
 
 \begin{itemize}
-    \item lando, lapujade, towards a general ontology of computer programs
-    \item irmak, software is an abstract artifact
-    \item suber, what is software
     \item cantell smith age of significance introduction
     \item berry philosophy of software
     \item turner, computational artifacts
@@ -265,6 +311,13 @@ Technical artefacts have \emph{functional} properties (purpose) and \emph{struct
 \end{itemize}
 
 The dynamic notion of a state of a process \citep{rapaport_philosophy_2005}. It is an epistemic action.
+
+% wrap up with 1k about the INTENT
+Turner states that agency determines what the function is (i can use the computer as a doorstop): it is the difference between specification (intent-free) and semantic interpretation (intent-rich); one can dictate the other (and vice versa!). \citep{turner_computational_2018} This intentional model is an extension of the mental-model approach (aka programmers don't care about theory, they just do and tinker). there are no norms and this is hell for a logician.
+
+\begin{quote}
+    This suggests that, to understand software, we must understand intentions, purposes, goals, or will, which enlarges the problem far more than we originally anticipated. [...] We should not be surprised if human compositions that are meant to make machines do useful work should require us to posit and understand human purposiveness. After all, to distinguish *literature* from noise requires a similar undertaking. \citep{suber_what_1988}
+\end{quote}
 
 In conclusion of this subsection, we've seen that software is an \emph{abstract artifact}, and this tension/paradox is at the root of the cognitive hurdles when understanding software. Yet, programmers, have been understanding software (some of them quite well, so called \emph{rockstar} programmers, or virtuosos).
 
@@ -279,8 +332,6 @@ So software is complicated. How do individuals deal with it? Constructing, and u
     \item \citep{ivanova_comprehension_2020}, comprehension of computer code, is the most recent, and further complicates the narrative (no pun intended) by showing no clear association with the text-processing part of the brain and the code-processing part of the brain
     \item \citep{weinberg_psychology_1998} is more of a business literature perspective, but is included for good measure, specifically to highlight that a lot of these studies were based on a software developer perspective.
 \end{itemize}
-
-Turner states that agency determines what the function is (i can use the computer as a doorstop): it is the difference between specification (intent-free) and semantic interpretation (intent-rich); one can dictate the other (and vice versa!). \citep{turner_computational_2018} This intentional model is an extension of the mental-model approach (aka programmers don't care about theory, they just do and tinker). there are no norms and this is hell for a logician.
 
 % then the human mind
 \section{Means of understanding}
@@ -310,6 +361,14 @@ But we will also need more practical examples.
 
 Essentially talking about HCI
 
+%% TODO include a parallel between tacit knowledge and fluency
+% The first is fluency, which in part is the process of building mental structures that disappear the interpretation of the representations. The letters and words of a sentence are experienced as meaning rather than markings, the tennis racquet or keyboard becomes an extension of one's body, and so forth. If carried further one eventually becomes a kind of expert—but without deep knowledge in other areas, attempts to generalize are usually too crisp and ill formed. 
+% maybe in the IDE section
+
+% The second path is towards taking the knowledge as a metaphor than can illuminate other areas. But without fluency it is more likely that prior knowledge will hold sway and the metaphors from this side will be fuzzy and misleading. 
+
+tracing and chunking: https://www.sciencedirect.com/science/article/abs/pii/095058499591491H
+
 \begin{itemize}
     \item extended mind hypothesis of clark and chalmers (1998)
     \item fishwick aesthetic progamming
@@ -321,5 +380,9 @@ Essentially talking about HCI
 % The computer as prosthetic organ, distributed cognition
 
 \pagebreak
+
+\begin{quote}
+    Code is therefore technical and social, and material and symbolic simultaneously. Rather, code needs to be approached in its multiplicity, that is, as a literature, a mechanism, a spatial form (organization), and as a repository of social norms, values, patterns and processes. \citep{berry_philosophy_2011}
+\end{quote}
 
 Conclusion: we circle back to aesthetics, particularly relying on \citep{dexter_embodied_2011} and we look at the things that are both tools and metaphors: programming languages. We will see what roles metaphors play; and, if linguistics is a key component in the writing of clear source code, we should also look at programming languages.

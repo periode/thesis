@@ -12,7 +12,7 @@ Moor (1978): [[James Moor, Three Myths of Computer Science, 1978.pdf]]
 
 > Computer programs can be understood on the synmbolic level, as well as on the physical level.
 
-add the above to [[outline/outline#introduction]]
+add the above to [introduction](../../outline/outline.md#introduction)
 
 __both the symbolic and the physical are programmable in their own right__
 

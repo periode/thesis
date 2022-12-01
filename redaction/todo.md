@@ -7,6 +7,7 @@
 ## chap 3
 
 - [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
+- [ ] in the hardware existence of software, talk about memory management
 
 ## meeting with nick 4.11.2022
 
