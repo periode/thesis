@@ -210,7 +210,7 @@ Software exhibits several particularities, which result in a compex whole—mean
 
 \subsubsection{Levels of software} % 3k
 
-One of the essential aspects of software is that of \emph{implementation}. Implementation is the realization of a plan, the concrete manifestation of an idea, and therefore hints at a first tension in software's multiple facets. On the one side, there is what we will call here \emph{ideal} software, often existing only as a shared mental representation by humans (not limited to programmers), or as printed documentation, as a series of specifications, etc. On the other side, we have \emph{actual} software, which is manifested into lines of code, written in one or more particular languages, and running with more or less bugs.
+One of the essential aspects of software is that of \emph{implementation}. Implementation is the realization of a plan, the concrete manifestation of an idea, and therefore hints at a first tension in software's multiple facets. It can happen through individuation, instantation, exemplification and reduction \citep{rapaport_philosophy_2005}. On the one side, there is what we will call here \emph{ideal} software, often existing only as a shared mental representation by humans (not limited to programmers), or as printed documentation, as a series of specifications, etc. On the other side, we have \emph{actual} software, which is manifested into lines of code, written in one or more particular languages, and running with more or less bugs.
 
 The relationship between the \emph{ideal} and the \emph{actual} versions of the same software is not straightforward. Ideal software only provides an intent, a guidance towards a goal, assuming, but not guaranteeing, that this goal will be reached. A popular engineering saying is that complements this approach by stating that:
 
@@ -255,7 +255,7 @@ Temporal complexity relates to the discrepancy between the original conceptualiz
 
 Later on, the introduction of multi-core architecture for central processing units in the late 2000s has enabled the broad adoption of multithreading and threaded programming. As a result, source code has transformed from a single non-linear execution to a multiple non-linear process, in which several of these non-linear executions are happening in parallel. Keep tracking of what is executing when on which resource is involved in problems such as \emph{race conditions}, when understanding the scheduling of events (each event every e.g. 1/18000000th of a second on a 3.0 Ghz CPU machine) becomes crucial to ensuring the correct behaviour of the software.
 
-Conversely, the locus of the execution of software creates contributes to those issues. Software can be (dis-)located across multiple files on a single machine, on multiple processes on a single machine, or on multiple processes on multiple machines (on a local-area or wide-area network). This further fragments the interface to the object of understanding. For instance, the asynchronicity of requesting and processing information from distinct processes is a spatial separation of code which has temporal implications (e.g. due to network latency).
+Conversely, the locus of the execution of software creates contributes to those issues. Software can be (dis-)located across multiple files on a single machine, on multiple processes on a single machine, or on multiple processes on multiple machines (on a local-area or wide-area network) \citep{berry_philosophy_2011}. This further fragments the interface to the object of understanding. For instance, the asynchronicity of requesting and processing information from distinct processes is a spatial separation of code which has temporal implications (e.g. due to network latency).
 
 \vspace*{1\baselineskip}
 \centerline{\rule{0.13334\linewidth}{.4pt}}
@@ -285,41 +285,47 @@ Writing on computational artefacts, of which software is a subset, Raymond Turne
 
 This metaphor provides an accurate account of the place of source code within the definition of software: source code is that which gives the ideas in software shape—through a process of concretization—and which hides away the details of the hardware—through abstraction.
 
-The concept of \emph{abstract artifact} therefore helps to clarify the tensions within software, and to locate the specific role of source code within the different moving parts of definition, medium and model. Nonetheless, this same concept points at a larger philosophical entanglement, that of computer science as a discipline and of technology as a concept.
+The concept of \emph{abstract artifact} therefore helps to clarify the tensions within software, and to locate the specific role of source code within the different moving parts of definition, medium and model.
 
-\subsubsection{Philosophical investigations into software}
+Software, as a part of the family of technical artefacts, has \emph{functional} properties (i.e. purpose that are intended to be achieved through their use) and \emph{structural} ones (physical configuration which are involved in the fullfilment of the functional purpose) \citep{turner_computational_2018}. As it turns out, these tensions exist throughout computer science and technology as a whole.
 
-% conclusion of abstract artifact, moving to philosophy
+\subsubsection{Philosophical investigations into software} %3.5k
 
-As a result, software, as a part of the family of technical artefacts have \emph{functional} properties (purpose) and \emph{structural} ones (physical makeup which allow for the completion of the functional purpose) \citep{turner_computational_2018}
+The fact that software exists between the state of being conceptually designed and materially implemented predates software itself, and can be observed in modern technological developments at large.
 
-It's always conceptually designed and materially implemented. To use Cantell-Smith's phrase, it's \emph{meaning mechanically realized}, at the interaction of two traditions: logical and mechanical.
+As we've seen, software exists at the intersection of various tensions, domains and perspectives. According to Gilbert Simondon, the technical object is a relation between multiple structures and a complex operation of various knowledges \citep{simondon_mode_1958}. The technical object is indeed a scientific object, but also a social object and an artistic object at the same time.
 
-Now we shif the focus on technology in general, with Simondon expliciting an ambiguous status, between magic and philosophy.
+From there, one could complement Bernard Stiegler's statement that technology is a dynamic of organized, but inorganic matter \citep{stiegler_technics_1998}, if we are to consider inorganized matter to include social influences, personal practices, and forms of tacit knowledge. That is, the ambiguity of the technical object is that it extends beyond itself as an object, entering into a relation with its surrounding environment, including the human individual which makes use of it.
 
-software can be referred to as a the "dynamic of organized inorganic matter" (Stiegler 1998: 84).
+A particularly interesting status is that which it holds between magic, religion and philosophy. Tracing back the genesis of the technological object, Simondon writes that the technical mode of existence is another mode through which the human can relate to the world, similar to the aesthetic mode, or the religious mode. Technology, along with religion, is thus one of the two primary ways humans established a relationship to the world s\citep{simondon_mode_1958}. While both are based on theoretical knowledge, technology is manifested in a practice, and in an ethics in religion. Technology results in a theory of knowledge and action, echoing Brian Cantell-Smith qualification of computers as \emph{meaning mechanically realized}, as opposed to a theory of being, without being autonomous from one another.
 
-In order to understand a computer program, we need to give it meaning, that's what always happens: "distinguishing from noise is something that literature does" (Suber, 1988, p.97). Such that the question "what does a Turing machine do?" has `n+1` answers. 1 syntactic, and n semantic (however many interpretations) \citep{rapaport_philosophy_2005}.
+Another stance, beyond the technical and the religious, is the aesthetic stance. It counter-balances the apparent split between technics and religion by striving for unity and totality, for the balance between the objective and the subjective. Yet, rather than being a monadic unity of a single principle, Simondon considers as unifying a network of relationships, a form of organizing Stiegler's inorganized matter. An aesthetic object therefore acquires the property of being beautiful by virtue of its relationships, of its connections between the subject and the obective, one's history and one's perceptions, between the various elements of the world, and the actions of the individual. Finally, the aesthetic thought when related to the technical object consists in preparing the communication between different communities of users, between different perspectives on the world, and different modes of action upon this world.
 
-\begin{itemize}
-    \item cantell smith age of significance introduction
-    \item berry philosophy of software
-    \item turner, computational artifacts
-    \item rapaport
-    \item simondon
-    \item kirsch, maglio, distinguish epistemic from pragmatic action
-\end{itemize}
-
-The dynamic notion of a state of a process \citep{rapaport_philosophy_2005}. It is an epistemic action.
-
-% wrap up with 1k about the INTENT
-Turner states that agency determines what the function is (i can use the computer as a doorstop): it is the difference between specification (intent-free) and semantic interpretation (intent-rich); one can dictate the other (and vice versa!). \citep{turner_computational_2018} This intentional model is an extension of the mental-model approach (aka programmers don't care about theory, they just do and tinker). there are no norms and this is hell for a logician.
+Specifically regarding our object of study, David M. Berry manifests this intersection of relations as such:
 
 \begin{quote}
-    This suggests that, to understand software, we must understand intentions, purposes, goals, or will, which enlarges the problem far more than we originally anticipated. [...] We should not be surprised if human compositions that are meant to make machines do useful work should require us to posit and understand human purposiveness. After all, to distinguish *literature* from noise requires a similar undertaking. \citep{suber_what_1988}
+    The computational device is, in some senses, a container of a universe (as a digital space) which is itself a container for the basic primordial structures which allow further complexification and abstraction towards a notion of world presented to the user. \citep{berry_philosophy_2011}
 \end{quote}
 
-In conclusion of this subsection, we've seen that software is an \emph{abstract artifact}, and this tension/paradox is at the root of the cognitive hurdles when understanding software. Yet, programmers, have been understanding software (some of them quite well, so called \emph{rockstar} programmers, or virtuosos).
+Software is therefore a manifestation of technology as both knowledge and action. Furthermore, it also enables ways to act mechanically on knowledge and ideas, an affordance named \emph{epistemic action} by David Kirsh and Paul Maglio \citep{kirsh_distinguishing_1994}. They define epistemic actions as actions which facilitate thinking through a particular situation or environment, rather than having an immediate functional effect on the state of the world. As technology changes the individual's relationship to the world, software does so by being the dynamic notion of a state of a process \citep{rapaport_philosophy_2005}, and by changing the conceptual understanding of said world—e.g. the social environment in which the software exists, or the environment which has been recreated within software.
+
+Because software is the material implementation of a proposed model, itself derived from a theory, it primarily acts at the level of \emph{episteme}, sometimes even limiting itself to it\footnote{Functional programming languages take pride in the fact that they have no effect on the world around them, being composed exclusively of so-called \emph{pure functions}, and no external side-effects, or input/output considerations}. It is only through peripherals that software can act as a mechanical technology in the industrial sense of the word.
+
+Due to software's ambiguous material nature (i.e. in contemporary digital computers, it consists of electrons, copper and silicium), one variable remains—that of the intent of the humans programming such software. Since software can be so many things, it might not be exactly clear what a specific piece of software, manifested in source code, is exactly about.
+
+Thinking through the function of computational artefacts, Turner states that it is agency which determines what the function is: agency resolves the difference between the specification (intent-free, external to the program) and semantic interpretation (intent-rich, internal to the programmer) \citep{turner_computational_2018}. In order to understand a computer program, we need to give it meaning and make sense of it, such that the question "what does a Turing machine do?" has \lstinline{n+1} answers. 1 syntactic, and n semantic (e.g. however many interpretations as there can be interpreters) \citep{rapaport_philosophy_2005}. In his investigation into what software is, Suber provides a hint in stating that:
+
+\begin{quote}
+    This suggests that, to understand software, we must understand intentions, purposes, goals, or will, which enlarges the problem far more than we originally anticipated. [...] We should not be surprised if human compositions that are meant to make machines do useful work should require us to posit and understand human purposiveness. After all, to distinguish \emph{literature} from noise requires a similar undertaking. \citep{suber_what_1988}
+\end{quote}
+
+\vspace*{1\baselineskip}
+\centerline{\rule{0.13334\linewidth}{.4pt}}
+\vspace*{1\baselineskip}
+
+In conclusion, we've seen that while software can be given the unique status of an \emph{abstract artifact}, these tensions are shared across technological objects. Technology, as a combination of a theory of knowledge and a theory of action, as an interface to the world and a recreation of the world, is related to other modes of existence—and in particular the aesthetic mode. All of these tensions and paradoxes, from the various levels of existence, the various types of complexities, the different kinds of actions and interpretations that it allows, contribute to the cognitive hurdles encountered when attemption understanding software.
+
+And yet, programmers, have been understanding software (some of them quite well, so called \emph{rockstar} programmers, or virtuosos). We now turn to understanding how programmers understand software, through a psychological perspective.
 
 \subsection{The psychology of programming} %7k
 % the studies
@@ -346,6 +352,8 @@ We'll spend most of this section looking at the ubiquity of metaphors in computi
 Here we include the section in the 4th report about metaphors in computation.
 
 But we will also need more practical examples.
+
+computers can't be proved/assumed to be machines, because their terminology comes from logic/textual/discursive traditions (e.g. reference, statement, names, recursion, etc.) *yet they are still built*. (cantell smith)
 
 \begin{itemize}
     \item sally wyatt
