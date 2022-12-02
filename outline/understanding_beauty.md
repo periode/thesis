@@ -75,6 +75,11 @@ rousset: forme et signification
 
 [[portela_scripting_reading_motions]]
 
+
+Going back to research in contemporary literary studies can start laying out threads of an answer. Jérôme Pelletier uses Carl Plantinga to define emotional responses in the face of aesthetic objects as dual: either one has an emotional response to the artefact itself (surface), of an emotional response to what it represents (deep). In the context of reading fiction, the reader is helped in their understanding by looking out for \emph{guides} or \emph{props}\footnote{Currie, 1990 and the role of imagination}, which are similar to the \emph{beacons} emphasized by Détienne. A notable difference is that the guides are suggested, implied, left as traces for the reader to subtly construct (as in the case of the cap metaphor in \emph{Madame Bovary}), rather than explicitly stated throughout the program text (usually most obviously in the form of comments). However, we've seen previously that the use of comments is, by most programmers, not considered to be an aesthetic feature of an inspected source code, hinting at the fact that (useful) subtlety, might be a desired attribute of beautiful code.
+
+To conclude this section, then, we turn to Jerome Bruner, who considers that art allows us to \emph{"reading in others' minds"}, to anticipate what a writer has been intending for us to understand through their text, eithe program or narrative. 
+
 ## understanding in mathematics
 
 enlightenment (i get a revelation when i understand)

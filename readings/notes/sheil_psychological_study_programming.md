@@ -37,6 +37,6 @@ programming, in which case her code will reflect it {whether or not structured c
 
 1. it's hard to find correlation between constructs and languages
 2. the errors go away with practice
-3. pogrammers have organized knowledge bases
+3. programmers have organized knowledge bases
 
 https://dl.acm.org/doi/abs/10.1145/359763.359800 -> statically typed languages are marginally less error-prone (makes sense)
