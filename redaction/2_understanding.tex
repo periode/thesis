@@ -197,9 +197,9 @@ Source code, as a formal system with a high dependence of context, intent and im
 
 In the previous chapter, we've laid out the groundwork by showing that there are multiple ways to understand something. We now turn to the thing we want to understand. What makes it challenging to understand computation?
 
-First, we will inquire into some distinguishing features of software, by looking at some of its particularities, in terms of levels of abstractions, and in terms of types of complexity. This will highlight some of the theoretical properties that make it hard to understand, such as its relation to hardware, its relation to a specification, and its relation to time and space.
+First, we will inquire into some distinguishing features of software in terms of levels of abstractions, and in terms of types of complexity. This will highlight some of the theoretical properties that make it hard to understand, such as its relation to hardware, its relation to a specification, and its relation to time and space.
 
-Then, we will shift our perspective to a more abstract point of view, investigating the ontological status of software. This will highlight how software exists as an \emph{abstract artifact}, a term which encapsulates software's intrinsic and extrinsic tensions.
+Then, we will shift our perspective to a more abstract point of view, investigating the ontological status of software. This will highlight how software exists as an \emph{abstract artifact}, simultaneously on the ideal, practical and physical plane.
 
 Finally, we will conclude this section by looking specifically at the source code component of software, and how programmers deploy strategies to understand it. Approaching it from a cognitive and psychological perspective, this will give us a better picture of the concrete process of understanding source code—a process which aesthetics are primarily intended to affect.
 
@@ -244,7 +244,7 @@ Modeling complexity addresses the hurdles in translating a non-discrete, non-log
 
 We've seen so far the complexities tied to the conceptualization and modelization of the components of software. Two other significant contributions to the cognitive load of understanding software happen are more closely related to the concrete execution of the software—temporal and spatial complexity.
 
-Temporal complexity relates to the discrepancy between the original conceptualization of the computer as a Turing machine—i.e. a machine which operates linearly, on a one-dimensional tape—and further technological developments. Originally, the Turing machine would involve the ability for the head of the machine to jump at different locations. This meant that the execution and reading of a program would be non-linear, jumping from one routine to another across the source code. Such an entanglement is particulary obvious in Ben Fry's Distellamap series of visualizations of source code (\ref{graphic:pacman-visualization} represents the execution of the source code for the arcade game Pac-Man), and led to Edsger W. Dijkstra's statement on the harmfulness of such jumps on the cognitive abilities of programmers.
+Temporal complexity relates to the discrepancy between the way the computer was first thought of —i.e. as a Turing machine which operates linearly, on a one-dimensional tape—and further technological developments. Originally, the Turing machine would involve the ability for the head of the machine to jump at different locations. This meant that the execution and reading of a program would be non-linear, jumping from one routine to another across the source code. Such an entanglement is particulary obvious in Ben Fry's Distellamap series of visualizations of source code (\ref{graphic:pacman-visualization} represents the execution of the source code for the arcade game Pac-Man), and led to Edsger W. Dijkstra's statement on the harmfulness of such jumps on the cognitive abilities of programmers.
 
 
 \begin{listing}
@@ -255,7 +255,7 @@ Temporal complexity relates to the discrepancy between the original conceptualiz
 
 Later on, the introduction of multi-core architecture for central processing units in the late 2000s has enabled the broad adoption of multithreading and threaded programming. As a result, source code has transformed from a single non-linear execution to a multiple non-linear process, in which several of these non-linear executions are happening in parallel. Keep tracking of what is executing when on which resource is involved in problems such as \emph{race conditions}, when understanding the scheduling of events (each event every e.g. 1/18000000th of a second on a 3.0 Ghz CPU machine) becomes crucial to ensuring the correct behaviour of the software.
 
-Conversely, the locus of the execution of software creates contributes to those issues. Software can be (dis-)located across multiple files on a single machine, on multiple processes on a single machine, or on multiple processes on multiple machines (on a local-area or wide-area network) \citep{berry_philosophy_2011}. This further fragments the interface to the object of understanding. For instance, the asynchronicity of requesting and processing information from distinct processes is a spatial separation of code which has temporal implications (e.g. due to network latency).
+Conversely, the locii of the execution of software creates contributes to those issues. Software can be (dis-)located across multiple files on a single machine, on multiple processes on a single machine, or on multiple processes on multiple machines (on a local-area or wide-area network) \citep{berry_philosophy_2011}. This further fragments the interface to the object of understanding. For instance, the asynchronicity of requesting and processing information from distinct processes is a spatial separation of code which has temporal implications (e.g. due to network latency).
 
 \vspace*{1\baselineskip}
 \centerline{\rule{0.13334\linewidth}{.4pt}}
@@ -301,7 +301,7 @@ While both technology, religion and philosophy are based on theoretical knowledg
 
 %TODO add a section on yuk hui here, for the digital objects.
 
-Simondon complements the technical and the religious modes with the aesthetic mode, and as such counter-balances the apparent split between technics and religion by striving for unity and totality, for the balance between the objective and the subjective. Yet, rather than being a monadic unity of a single principle, Simondon considers the aesthetic mode as a unifying a network of relationships, a form of organizing Stiegler's inorganized matter. An aesthetic object therefore acquires the property of being beautiful by virtue of its relationships, of its connections between the subject and the objective, one's history and one's perceptions, between the various elements of the world, and the actions of the individual. Finally, the aesthetic thought when related to the technical object consists in preparing the communication between different communities of users, between different perspectives on the world, and different modes of action upon this world. An aesthetic object can therefore be seen as a nexus of relationships found in its environment, echoing how Goodman considers an aesthetic language as way for worldmaking.
+Simondon complements the technical and the religious modes with the aesthetic mode, and as such counter-balances the apparent split between technics and religion by striving for unity and totality, for the balance between the objective and the subjective. Yet, rather than being a monadic unity of a single principle, Simondon considers the aesthetic mode as a unifying a network of relationships, a form of organizing Stiegler's inorganized matter. He further argues that the aesthetic mode goes beyond taste and subjective preference, into a fundamental aspect of the way in which human beings relate to the world around them. An aesthetic object therefore acquires the property of being beautiful by virtue of its relationships, of its connections between the subject and the objective, between one's history and one's perceptions, and the various elements of the world, and the actions of the individual. Finally, the aesthetic thought when related to the technical object consists in preparing the communication between different communities of users, between different perspectives on the world, and different modes of action upon this world. An aesthetic object can therefore be seen as a nexus of relationships found in its environment, echoing how Goodman considers an aesthetic language as way for worldmaking.
 
 Software is therefore a manifestation of technology as both knowledge and action. Furthermore, it also enables ways to act mechanically on knowledge and ideas, an affordance named \emph{epistemic action} by David Kirsh and Paul Maglio \citep{kirsh_distinguishing_1994}. They define epistemic actions as actions which facilitate thinking through a particular situation or environment, rather than having an immediate functional effect on the state of the world. As technology changes the individual's relationship to the world, software does so by being the dynamic notion of a state of a process \citep{rapaport_philosophy_2005}, ever evolving around a fixed structure, and by changing the conceptual understanding of said world. Such examples of world related to the environment in which software exists, e.g. the social environment, or hardware environment, or the environment which has been recreated within software. David M. Berry investigates this encapsulation of world in his \emph{Philosophy of Software}:
 
@@ -362,19 +362,15 @@ Due to its relation to text, syntax and semantics, it has often been assumed by 
 
 In a way, then, programming is a sort of fiction, in that the pinpointing of its source of existence is difficult, and in that it affords the experience of imagining contents of which one is not the source, and of which the certainty of isn't defined. Both programming and fiction suggest surface-level guiding points helping the process of constructing mental models as a sort of conceptual representation. It is also something else than fiction, in that it deals with concrete issues and rational problems \footnote{more often than not, a pestering bug}, and that it provides a pragmatic frame for processing representations, in which assumptions stemming from burgeoning mental models can be easily verified or falsified, through the taking of epistemic actions. It might then be appropriate to treat it as such, simultaneously fiction and non-fiction, as knowledge and action, mathetmatic and artistic. Indeed, it is also an artistic activity which, in Goodman's terms, might be seen as \emph{an analysis of [artistic] behavior as a sequence of problem-solving and planning activities."} \citep{goodman_basic_1972}.
 
-Remains the interpretation issue mentioned above: the interpretation of the machine is different from the interpretation of the human, of which there are many, and therefore what also needs to be intepreted is the intent of the author(s). Reading is then akin to constructing a \emph{cognitive cartography}, allowing for an experience to be made intelligible, sensible, and verifiable, and when an experience is made sensible is when it enters the realm of the aesthetic. In a very immediate understanding of aesthetics, we conclude on the role of form in cognition in those psychological studies. One of the focus was on demonstrating the impact that formal arrangement has on program comprehension\citep{oman_typographic_1990,oliveira_systematic_2022}. Spacing, alignment, color-coding and casing are all parameters which have an impact on the readability, and therefore understandability of code. The next section therefore looks at two ways in which meaning can be extracted from intention and source code; this means how individuals use metaphors to communicate complex ideas, and how they use computational tools in order to navigate program texts.
+Remains the interpretation issue mentioned above: the interpretation of the machine is different from the interpretation of the human, of which there are many, and therefore what also needs to be intepreted is the intent of the author(s). Reading is then akin to constructing a \emph{cognitive cartography}, allowing for an experience to be made intelligible, sensible, and verifiable, and when an experience is made sensible is when it enters the realm of the aesthetic. In a very immediate understanding of aesthetics, we conclude on the role of form in cognition in those psychological studies. One of the focus was on demonstrating the impact that formal arrangement has on program comprehension\citep{oman_typographic_1990,oliveira_systematic_2022}. Spacing, alignment, syntax highlighting and casing are all parameters which have an impact on the readability, and therefore understandability of code. The next section therefore looks at two ways in which meaning can be extracted from intention and source code; this means how individuals use metaphors to communicate complex ideas, and how they use computational tools in order to navigate program texts.
+
+%todo include comparison of color vs. not color coded (or maybe in the IDE section below?)
 
 The fact that software exists between the state of being conceptually designed and materially implemented predates software itself, and can be observed in modern technological developments at large. Furthermore, these complexities are echoed in how programmers evoke their experience of either designing or, comprehending code. They have shown to use multiple cognitive abilities, without being strictly limited to narrative, or mathematic frames of understanding, and making use of notions of scale and focus to disentangle complexity. For the remaining section of this chapter, we will focus on two specific means that contribute to this process of building a mental model of software-as-source code. Based on the reports that programmers use mental images and play with dynamic mental structures to comprehend the functional and structural properties of software; we thus inquire into the role that metaphors play in translating computational concepts into ones which can be grasped by an individual. Conversely, in response to the role of indentation, typography and navigation, we will see how cognition is also distributed in a programmers' tools.
 
-% then the human mind
 \section{Means of understanding}
 
-
-We'll spend most of this section looking at the ubiquity of metaphors in computing, as a cognitive mechanism, relying on the work of Lakoff and Johnson, both from users and programmers. We will also investigate the concrete use of extensions of mind through software tools, particularly on the role of \emph{Integrated Development Environments} (IDEs).
-
-The implication of spatial and visual components in mental models allows us to turn to metaphors as an architecture of thought \citep{forsythe_cathedrals_1986}.
-
-This switch relates to the most commonly used definition of metaphor: that of labeling one thing in terms of another, thereby granting additional meaning to the subject at hand. Our approach  here will bypass some of the more minute distinctions made between metonymy (in which the two things mentioned are already conceptually closely related), comparison (explicitly assessing differences and similarities between two things, often from a value-based perspective) and synechdoche (representing a whole by a subset), as they all relate to a larger, more contemporary definition of the concept.
+Drawing on the ambivalence of software's existence—both concrete and abstract—we now investigate the means deployed to graps software on both of these levels. As we've seen in empirical studies, programmers resort to both conceptual techniques to visualize and grasp a piece of software, along with more practical and technical tools. In this spirit, we will look at the ubiquity of metaphors in computing,  both from users and programmers, and how they act as a cognitive mechanism. We will also look at how cognitive tools can be manifested concretely though the extension of mind through software tools, and particularly on the role of \emph{Integrated Development Environments} (IDEs).
 
 \vspace*{1\baselineskip}
 
@@ -382,7 +378,9 @@ This switch relates to the most commonly used definition of metaphor: that of la
 
 \subsubsection{Theoretical background}
 
-This part of the thesis relies especially on the works of George Lakoff and Mark Johnson, and of Paul Ricoeur, due to their requalification of the nature and role of metaphor in the 20th century. While Lakoff and Johnson's approach to the conceptual metaphor will serve a basis to explore metaphors in the broad sense across software and narrative, I also argue that Ricoeur's focus on the tension of the \emph{statement} rather than primarily on the \emph{word} will help us better understand some of the aesthetic manifestations of software metaphors, without being limited to tokens. Following a brief overview of their contributions, I examine the various uses of metaphor in software and in literature, touch upon the cognitive turn in literary studies, and conclude the section by the ambiguity of a cognitive account of programming.
+This part of the thesis relies first on the work of George Lakoff and Mark Johnson, and second on that of Paul Ricoeur, due to their requalification of the nature and role of metaphor in the 20th century. While Lakoff and Johnson's approach to the conceptual metaphor will serve a basis to explore metaphors in the broad sense across software and narrative, I also argue that Ricoeur's focus on the tension of the \emph{statement} rather than primarily on the \emph{word} will help us better understand some of the aesthetic manifestations of software metaphors, without being limited to tokens. Following a brief overview of their contributions, I examine the various uses of metaphor in software and in literature, touch upon the cognitive turn in literary studies, and conclude the section by the ambiguity of a cognitive account of programming.
+
+This switch relates to the most commonly used definition of metaphor: that of labeling one thing in terms of another, thereby granting additional meaning to the subject at hand. Our approach  here will bypass some of the more minute distinctions made between metonymy (in which the two things mentioned are already conceptually closely related), comparison (explicitly assessing differences and similarities between two things, often from a value-based perspective) and synechdoche (representing a whole by a subset), as they all relate to a larger, more contemporary definition of the concept.
 
 Lakoff and Johsnon's seminal work develops a theory of conceptual metaphors by highlighting their essential dependence on pre-existing cognitive structures, which we associate with already-understood concepts. The metaphor maps a source domain (made up of cognitive structure(s)) to a target domain. In the process, they extend the field of applicability of metaphors from the strictly literary to the broadly cultural: metaphors work because each of us has some conception of those domains involved in the metaphorical process. Metaphors rely in part on a static understanding, resulting in a fixed meaning from the application of a given source to a given target. Some of these sources are called \emph{schemas}, and are defined enough to not be mistaken for something else, but broad enough to allow for multiple variants of itself to be applied to various targets\cite{lakoff_metaphors_1980}, providing both diversity and reliability. As we will see below, their approach allows us to focus not just on textual objects, but on the vast range of metaphors used specifically in computing-related environments. Given that the source of the metaphor should be grounded, with as little invariablity as possible, in order to qualify a potentially ill-defined target domain, this provides us with a first foray into the inherent elusiveness and instability of computing when presented to a broader audience.
 
@@ -425,6 +423,8 @@ As we've seen, metaphors are implicitly known not to be true in their most liter
 
 Abstraction, metaphors and synmbolic representations are thus useful tools when it comes to computing, in terms of trying to represent to ourselves what it is that a computer can and effectively does, and in terms of explaining to the computer what it is we're trying to operate on (from an integer, to a non-ASCII word, to a renewable phone subscription or to human language).
 
+The implication of spatial and visual components in mental models allows us to turn to metaphors as an architecture of thought \citep{forsythe_cathedrals_1986}.
+
 % TODO -> give the example of the clipboard
 But we will also need more practical examples.
 
@@ -458,6 +458,8 @@ computers can't be proved/assumed to be machines, because their terminology come
 \subsection{Tools as an extension}
 % IDEs
 
+% starts with emacs?
+
 Essentially talking about HCI
 
 %% TODO include a parallel between tacit knowledge and fluency
@@ -476,7 +478,27 @@ tracing and chunking: https://www.sciencedirect.com/science/article/abs/pii/0950
     \item wilken card index
 \end{itemize}
 
+color coding and IDEs: \citep{jacques_understanding_2015}
+
+\emph{Understandability} is impacted by \emph{legibility} (syntax, whether you can separate the letter) and \emp{readability} (semantics, whether you know the meaning of the words).
+
+This is also the section where I can plug in my article for RESET (style guides, mechanically enforced styles).
+
+Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}
+
+intrinsic characteristics of cs:
+- problem solving
+- domain modelling
+- knowledge representation
+- efficiency in problem solving
+- abstraction/modularity
+- novelty/creativity
+
+To have an understanding of non-trivial software systems, a programmer must know where significant parts of the program lie and how they relate to other parts. \citep{douce_spatial_1999} state that program 'space' is the source file. (kinda the distance between function definition and function call). The complexity rating is also weighted by the previous knowledge of the programmer.
+
 % The computer as prosthetic organ, distributed cognition
+
+% also include literate programming, tex and web
 
 \pagebreak
 
