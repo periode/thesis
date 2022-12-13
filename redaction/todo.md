@@ -11,7 +11,19 @@
 - [ ] in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
 - [ ] [this](https://www.sciencedirect.com/science/article/abs/pii/0010028581900128) is actually showing that, the more expert a programmer becomes, the less they resort to metaphors, and rather shift to the programming-specific concepts.
 - [ ] add [the initial stages of program comprehension](https://sci-hub.mksa.top/10.1016/s0020-7373(05)80090-2) on __beacons__ (detienne).
+- [ ] add [a conceptual model of cognitive complexity](https://www.sciencedirect.com/science/article/pii/095058499591491H) (chunking, tracing)
 - [ ] add to the programmer expertise https://books.google.de/books?hl=en&lr=&id=rMmxq8q0CGYC&oi=fnd&pg=PA8-IA6&dq=L.M.+Berlin,+%E2%80%9CBeyond+Program+Understanding,%E2%80%9D+A+Look+at+Programming+Expertise+in+Industry,+Empirical+Studies+of+Programmers,+Fifth+Workshop,+pp.+6-25,+1993.&ots=gO-IgzpVOE&sig=ozpfd-DluQ3k4IE7TBnCix0TT7I&redir_esc=y#v=onepage&q&f=false __also__ http://scholar.google.com/scholar?hl=en&q=J.+Koenemann+and+S.P.+Robertson%2C+%E2%80%9CExpert+Problem+Solving+Strategies+for+Program+Comprehension%2C%E2%80%9D+Proc.+Conf.+Human+Factors+and+Computing+Systems%2C+pp.+125-130%2C+1991.
+- [ ] at the end of the psychology section, mention the skills needed by a programmer (see below) and this will help us in the followig cognitive tools section to prove that tools indeed help with some of these.
+
+Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}
+
+intrinsic characteristics of cs:
+- problem solving
+- domain modelling
+- knowledge representation
+- efficiency in problem solving
+- abstraction/modularity
+- novelty/creativity
 
 ### ide notes
 
