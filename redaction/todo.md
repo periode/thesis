@@ -3,6 +3,8 @@
 ## chap 4
 
 - should it be about programming languages? or about programming semantics? or wait until i know really what it is about, and why it;s needed?
+- allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
+- include \citep{dexter_embodied_2011}
 
 ## chap 3
 
@@ -28,7 +30,7 @@ intrinsic characteristics of cs:
 ### ide notes
 
 - __overall__ computer-aided software engineering https://en.wikipedia.org/wiki/Computer-aided_software_engineering (history is interesting, started with [Lisa Workshop](https://www.applefritter.com/content/lisa-workshop-info) for Apple, IBM was also important, and in the 90s there was a peak of software, [Programmer's Workshop](https://archive.org/details/Macintosh_Programmers_Workshop_missing_735736/mode/2up))
-- __god social typology__ https://academiccommons.columbia.edu/doi/10.7916/D81261G0
+- __good social typology__ https://academiccommons.columbia.edu/doi/10.7916/D81261G0
 - ___IDE work framed with activity theory__ https://link.springer.com/article/10.1023/A:1015299228170
 - __important__: [meta study of IDEs](https://www.sciencedirect.com/science/article/pii/S1071581905001102), and [typology](https://dl.acm.org/doi/abs/10.1145/358506.358512)
 - __study of tool usage__ https://ieeexplore.ieee.org/abstract/document/4222616
@@ -41,7 +43,6 @@ intrinsic characteristics of cs:
 - - non-linear editing
 - - dependency analysis and caching
 - https://dl.acm.org/doi/abs/10.1145/1806799.1806866 concept of __code bubbles__
-- there is also the whole part about Smalltalk, interfaces, etc.
 - "These observations suggest a new model of program understanding grounded in theories of _information foraging_" https://dl.acm.org/doi/10.1109/TSE.2006.116
 - designing an IDE specifically with OOP in mind, or with [signal processing](https://ieeexplore.ieee.org/abstract/document/287018)
 - demo of how this IDEs can help from the 90s https://dl.acm.org/doi/abs/10.1145/64140.65020
