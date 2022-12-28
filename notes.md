@@ -1,5 +1,40 @@
 # notes
 
+## admin
+
+rendre la thèse à la sorbonne tout début septembre (checker avec secrétariat)
+
+potentiels membres du jury:
+
+1. antono somaini
+2. alexandra saemmer
+3. baptiste mélès
+4. dominique cardon
+5. yves citton
+7. nick montfort
+8. alexandre gefen
+
+
+- camille paloque- bergès (n'a pas de HDR)
+
+- pascal mougin
+- nick montfort
+- alexandre gefen
+
+
+demander au secrétariat des thèses:
+- règles de composition du jury (au vu de la codirection)
+- combien de personnes? paris-3 ou ed120?
+- calendrier pour soumettre
+
+checker les membres de la 71e section Infocom
+
+possible dates:
+- semaine du 6 novembre
+- semaine du 27 novembre
+- semaine du 11 décembre (possibly for nick on december 15th or ideally )
+
+
 ## tex
 
 `make4ht -x thesis.tex  "fn-in"` for html export (one should be able to add bibliography with [this](https://tex.stackexchange.com/questions/358565/can-htlatex-be-used-with-biblatex-these-days))

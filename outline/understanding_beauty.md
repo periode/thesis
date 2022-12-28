@@ -33,7 +33,6 @@ classical rhetoric has:
 [scripting reading motion](../readings/notes/portela_scripting_reading_motions.md)
 [reading machines]
 
-[bouchardon valeur heuristique de la littérature](../readings/notes/bouchardon_valeur_heuristique_de_la_litterature_numerique.md)
 [[ricoeur_metaphor]]
 [[ricoeur_metaphore_vive]]
 [this is a nice summary]](https://aaaaarg.fail/upload/paul-ricoeur-metaphor-and-the-main-problem-of-hermeneutics.pdf)
@@ -59,15 +58,13 @@ this section concludes our framework construction by enriching it with a relatio
 
 this could also be related: **communities of practice**, by Jean Lave and Etienne Wenger [link](https://www.learning-theories.com/communities-of-practice-lave-and-wenger.html), which imples an **ethos**. this is taken from [this post](https://queue.acm.org/detail.cfm?id=3380777)
 
-transition avec l'architecture: conception de l'_architectural literature_ [[bouchardon_valeur_heuristique_de_la_litterature_numerique]]
+transition avec l'architecture: conception de l'_architectural literature_ [bouchardon valeur heuristique de la littérature](../readings/notes/bouchardon_valeur_heuristique_de_la_litterature_numerique.md)
 
 [[genette_fiction_diction]]
 
 [[gefen_extension_du_domaine_de_la_litterature]], broader level (see also his contribution in [[lavocat_interpretation_litteraire_sciences_cognitives]])
 
 [[lakoff_turner_more_than_cool_reason]]
-
-[[lavocat_interpretation_litteraire_sciences_cognitives]]
 
 [[mace_styles_critiques_de_nos_formes_de_vie]]
 
@@ -112,7 +109,7 @@ this perception is a process of interpretation modulated by emotional responses 
 
 from [Landscape Design and Cognitive Psychology](https://www.sciencedirect.com/science/article/pii/S1877042813013293)
 
-also berléant & carlsonseems to have written quite a lot on [urban aesthetics](https://philpapers.org/rec/BERTAO-15). for instance, carlson offers the method of "functional fit" as an alternative, which treats the city as a system that must be assessed on the efficiency of its different components to work together, and there the appreviation of human environments is based on "the functions they perform". All elements should grow organically (like alexander said)
+also berléant & carlson seem to have written quite a lot on [urban aesthetics](https://philpapers.org/rec/BERTAO-15). for instance, carlson offers the method of "functional fit" as an alternative, which treats the city as a system that must be assessed on the efficiency of its different components to work together, and there the appreviation of human environments is based on "the functions they perform". All elements should grow organically (like alexander said)
 
 sullivan (building is clear function) / 
 
