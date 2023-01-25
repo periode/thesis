@@ -1,5 +1,16 @@
 # todo
 
+- - add this to examples, from the rust parser example i forked
+
+```
+// Level-change Operator (what a stupid name)
+operator_level = { operator_exp | operator_subscript |
+                   operator_exp ~ operator_subscript |
+                   operator_subscript ~ operator_exp
+}
+```
+as an example of how people assign quality to proper scale naming
+
 ## meeting with nick - 28.12.2022
 
 - for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -> __INTERTWINE!__

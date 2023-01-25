@@ -17,41 +17,60 @@ The rest of this conclusion will address each of our initial research questions'
 
 \subsubsection{What does source code have to say about itself?} %5k
 
-Starting from trade literature on the topic, and complementing it by cases of close-reading, we've highlighted both structural and contextual specificities to source code.
+One of the gaps we identified in source code-related literature is that there was a missing overlap between a broad empirical approach and a robust conceptual framework, expliciting the nature of source's code properties. for instance the works of \citep{paloque-berges_poetique_2009,cox_speaking_2013} establish an overview of source code with explicit aesthetic properties, but rely on a remediating approach to assess source code as a literary-semantic tool, or as a discursive-political object, respectively. We intended to complement this initial work to highlight source-code-specific aesthetics—that is, formal manifestations with a communicative purpose.
+
+Starting from trade literature on the topic, and complementing it by cases of close-reading, we've highlighted both structural and contextual specificities to source code. Building on existing work, we've found several properties which seem to be unique to source code. Altogether, these properties support our theory of source code as a material used to construct dynamic semantic spaces.
 
 % 2k section on the structural properties (conceptual distance, conceptual symmetry, double-meaning (and that this is almost a __TRIPLE-MEANING__ since there is linguistic, mechanic and problem domain))
+\emph{Conceptual distance} is key at a structural level: correlated expressions, statements or variables that affect or depend on the same concept (e.g. a file operation or a user account), should be located close to one another in the source code. This counterbalances the entropic tendency of source code to tangle itself, such that the reader has to follow the convoluted machine path of execution, rather than the human conceptual grouping of executable statements.
 
-The key finding is that code is a matter with which we build/represent spaces
+\begin{listing}
+    insert example / comparison here
+\end{listing}
 
-% 1k section on idiomaticity, communities of language meeting as communities of practices, also style and tools
-Code also supports multiple practices (tools, idiomaticity, craft, style)
+The conceptual coherence, and thus its ease of understandability, is also manifested in \emph{conceptual atomicity} and \emph{conceptual symmetry}, respectively meaning that a given explicit fragment of source code should do only one thing and do it well, and that fragments of source code that do similar things should look similar as well. Also previously identified as \emph{separation of concerns}, these two principles allow for the abstraction of a given syntactic unit by grouping all the statements into a single action or declaration.
 
-% 2k section on how the code is also contextual
-And those multiple practices are themselves reflective on varied social contexts.
+At the lexical level, source code operates on a multi-dimensional level. On the one hand, it operates on an axis that goes from \emph{global} to \emph{local}, whereby global tokens that are used, and are visible, across the whole application code are very explicitly named, sometimes in all uppercase, while local tokens, whose lifetime does not exceed a few lines, tend to be composed of just a few letters. Here, variable length and cap size is closely related to the concept of \emph{scope}, yet in a slightly looser way than from a strict programming language perspective. On the other hand, lexical tokens can belong to three different lexical fields. These lexical fields are whether a given token refers to (1) an individual meaning, (2) a machine meaning, or (3) a domain meaning. For instance, the names \lstinline{start_time}, \lstinline{UTC_UNIX_STRING_NOW} and \lstinline{meeting_time} might all refer to the same moment in time, yet from different perspectives. The first naming, as an individual meaning, is significant in a narrow context, for a narrow set of individuals at the moment of writing or reading. The second naming is a machine meaning, which refers to how that moment is perceived by the computer. The third is the domain meaning, which is how users (and not writers or readers of source code) will refer to that particular moment.
 
-That it's not single-faceted. We've identified that there isn't one abstract programmer, nor one abstract source code. Code is written in various contexts, for various purposes, and therefore takes various forms.
+For some, a piece of source code which can choose a token that will balance these three meanings in order to convey these three senses of the value at hand will be considered aesthetically pleasing. For others, writing tokens at the extreme of either of these three poles can be considered as a marker of aesthetic success and expertise. For instance, code poets would tend to focus on the domain meaning, in which tokens are only referring to non-computing terms, evoke poetic concepts insted. Conversely, hackers share a standard for brevity and directness—by making their tokens as short as possible, e.g. reducing them to bytecode, they strive towards existing as close as the hardware the code will run on, and therefore display unsual feats of performance.
+
+This context-sensitiveness brings us to another aspect of source code—that it is eminently dependent on communities of practice to establish what is beautiful code. With a strong ethos of craft running as a thread throughout each of these identified communities\footnote{Software engineers, scientists, hackers and poets}, well-written code is \emph{idiomatic code}. This implies that the reader and the writer both possess some knowledge of the specificities of the language or hardware that the code is being written with and executed with. This approach to craft thus resonates with a concept of mastery and technical excellence, but also with that of \emph{style}. Style, in this case, highlights the acknowledgment of the social existence of code: by choosing style as a group marker rather than as an individual marker, a source code is judge positively based on its altruistic ethical nature—even if that style is enforced by software itself.
+
+In this research, we have shown that code exhibits specific aesthetic properties, whether they are judged as being positive or negative. We have also shown that these positive or negative judgments are themselves the results of specific communities of practices—argumenting for a social conception of an aesthetic value judgment.
 
 \subsubsection{How does source code relate to other aesthetic fields?} % 5k
 
-As varieties of spaces. Rather than being opposites of one another, each reference contributes to the purpose of source code aesthetics by clarifying the structure of the code at multiple levels and dimensions.
+These aesthetic properties were formalized through an empirical approach, whose first stage included the identification of the different lexical fields that programmers referred to in order to justify their aesthetic judgments of source code. Specifically, we've identified references to literature, architecture, mathematics and engineering. Each of these were used as a metaphorical device in order to better qualify source code (e.g. "source code is \emph{like} literature\dots").
 
-Literary aesthetics facilitate the comprehension of the scope of variables and of the intent of the programmer in relation with the problem domain.
+To which aspect of source code did these references map to? Overall, we've identified two main aspects: semantic compression and spatial expression. Semantic expression concerns the ability of a notation to express complex concepts through quantitatively and qualitatively simple combination, while spatial expression concerns the ability of source code to be structured in such a way that is both evocative (the broad shape of things have a relative connotation to what things do) and sustainable (the structuring of a function ensures that a given action will not have unexpected side-effects).
 
-Architectural aesthetics establish patterns of familiarity and expectations for better navigation of the source code space.
+All of these references point to the fact that structure and expressivity are closely tied when it comes to source code. Furthermore, rather than being opposites of one another, each reference contributes to the purpose of source code aesthetics by clarifying the structure of the code at multiple levels and dimensions.
 
-Mathematical aesthetics enable the condensation of knowledge and insight in the least amount of tokens, minimizing noise, and related to poetic condensation.
+Literary aesthetics facilitate the comprehension of the scope of variables and of the intent of the programmer in relation with the problem domain. They denote the purpose and intent of specific values, expressions, declarations and statements in a natural language, with a potential both for poetic evokation, cryptic obfuscation, or plain misinterpretation. Despite Yukihiro Matsumoto and Donald Knuth's statements that writing source code is a literary art, this turns out to only be partially true: the most literary parts of source code—comments—are also the parts that are the most decoupled from the actual source code, and are entirely invisible to the machine.
 
-All in all, those domains are metaphors in the vivid sense of the term, following Ricoeur: they are actively used, not in a punctual fashion, but in a more generic, sustained manner.
+A strictly literary understanding of source sets aside the particularities of the reading process of source code and the temporal control of the writer. A traditional, natural language literary work will assume a linear, front-to-back readership, while source code is defined by its potential ability to jump from any part of the text to any other part of the text. Given this radical difference, references to architectural aesthetics help to establish structural patterns of familiarity and spatiality. Even though it does not operate on concrete, "natural" space, the quality of the disposition and combination of the application components on the source code page enable a better navigation of the source code's conceptual space.
 
-It's also interesting to flip it over, and think of how these external aesthetics have in relation to code: structure, consistency, but mostly cognition! There is a need for communicating invisible concepts/aspects which is present in all of those fields.
+This reduction of a vast conceptual space to natural language representations, and presented as clear, delimited set of interrelated components  reveals the tension in source code between form, function, and the fundamental concepts of the function. In this respect, mathematical aesthetics enable the condensation of knowledge and insight in the least amount of tokens, minimizing noise, and related to poetic condensation. Particularly, this ability of representing complex ideas into simple terms is a process of \emph{compression} shared across poetry and mathematics, and resulting in an elegant structure.
+
+This concept of elegance is also found at an overlap of mathematics and architecture, in the form of engineering. Robust, sparse and straightforward engineering is considered a beautiful achievement, one in which function, structure and skill are intertwined to produce the most with the least. Here, this definition of "the most" is not one based on performance or CPU cycles\footnote{As mentioned previously, the most efficient code is machine generated and human-unreadable.}, but rather on its easing of the human's cognitive burden in understanding and engaging with the technical object that is source code.
+
+Ultimately, all of these elements relate to communication and cognition, and to how the (invisible) purpose and intent of the code can be communicated in (visible) lines of machine language. Literature, architecture, mathematics and engineering all rely on formal tokens to refer to \emph{something else}, and their efficiency at doing so can be assessed by the reader's correct or erroneous estimation of what are the fundamental concepts of what is being communicated to them. Keywords, tokens and beacons are all elements which have been found to structure the writing and reading of source code, allow the programmer to establish a cognitive map of the abstract structure of the program text.
 
 \subsubsection{How do the aesthetics of source code relate to its functionality?} %5k
 
-We've shown that aesthetics can be used to facilitate understanding in a functional context. More specifically, the aesthetic properties of code are derived from a conception of code as a semantic material which in terms is assembled, and apprehended, as a spatial construct, rather than a strictly literary, mathematical, or architectural one.
+This final correlation of aesthetics the communication of intent and purpose now leads us to address our third research question, and the connections between form and function in source code. We've shown that aesthetics can be used to facilitate understanding in a functional context. More specifically, the aesthetic properties of code are derived from a conception of code as a semantic material which in terms is assembled, and apprehended, as a spatial construct, rather than a strictly literary, mathematical, or architectural one. However, the most crucial aspect of the aesthetics of source code is that they are rendered moot if the executed code does not perform as intended.
 
-This connects back to the approaches of Goodman on the expressive power of symbol systems.
+Have a word on what "the intent" of the program means, and have a parallel between implementation of a program and implementation of a work of art.
+
+Then go on more fully on Goodman: this connects back to the approaches of Goodman on the expressive power of symbol systems.
+
+Also add a note on the technology of enchantment, and simondon's relationship between technology and magic: the aesthetic in binding both.
+
+Creativity can also be considered as a new, more efficient way of doing something.
 
 We could also introduce the concept of effective aesthetics, according to which an aesthetic property can be judged as to whether it adequately represents a given concept, behaviour or intent\footnote{These are indeed three different things, but they all involve some sort of invisibility.}. But it also proposes that there is a certain level of expertise needed to appreciate a work of art, and that the novice cannot be expected to provide an informed aesthetic value judgment.
+
+Also as a way to \emph{navigate conceptual spaces}.
 
 % bigger picture
 bigger picture: we've shown that the formal properties of a specific medium have a relationship to episteme.
