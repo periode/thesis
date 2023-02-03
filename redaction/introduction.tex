@@ -19,9 +19,10 @@ Most of our modern infrastructure depends, to a more or less dramatic extent, on
 
 Given such a large quantity of textual mass, one might wonder: who reads this code? To answer this question, we must start diving a bit deeper into what source code really is.
 
-Source code consists in a series of instructions, composed in a particular programming language, which is then processed by a computer in order to be executed. For instance, using the language called Python, the source code:
+Source code consists in a series of instructions, composed in a particular programming language, which is then processed by a computer in order to be executed. For instance, using the language called Python, the source code in \ref{code:simple_example} consists in telling the computer to store two numbers in what are called \emph{variables}, then proceeds with describing the \emph{procedure} for adding the double of the first terms to the second term, and concludes in actually executing the above procedure.
 
-\begin{lstlisting}
+\begin{listing}
+    \begin{minted}{python}
     a = 4
     b = 6
 
@@ -29,17 +30,20 @@ Source code consists in a series of instructions, composed in a particular progr
         return (first * 2) + second
     
     compute(a, b)
-\end{lstlisting}
+    \end{minted}
+    \caption{Example of the basic elements of a computer program, written in Python}
+    \label{code:simple_example}
+\end{listing}
 
-consists in telling the computer to store two numbers in what are called \emph{variables}, then proceeds with describing the \emph{procedure} for adding the double of the first terms to the second term, and concludes in actually executing the above procedure. Given this particular piece of source code, the computer will output the number \lstinline{14} as the result of the operation \lstinline{(4 * 2) + 6}. In this sense, then, source code is the requirement for software to exist: since computers are procedural machines, acting upon themselves and upon the world, they need a specification of what to do, and source code provides such a specification. In this sense, computers are the main "readership" of source code.
+Given this particular piece of source code, the computer will output the number \lstinline{14} as the result of the operation \lstinline{(4 * 2) + 6}. In this sense, then, source code is the requirement for software to exist: since computers are procedural machines, acting upon themselves and upon the world, they need a specification of what to do, and source code provides such a specification. In this sense, computers are the main "readership" of source code.
 
 However, it is  also a by-product of software, since it is no longer required once the computer has processed and stored it into a \emph{binary} representation, a series of 0s and 1s which represent the successive states that the computer has to go through in order to perform the action that was described in the source code. \emph{Binary code} is what most of the individuals who interact with computers deal with, in the form of packaged applications, such as a media player or a web browser. They (almost) never have to inquire about, or read, such source code. In this sense, then, source code only matters until it gets processed by a computer, through which it realizes its intended function.
 
-From another perspective, source code isn't just about telling computers what to do, but also a key component of a particular economy: that of software development. Software developers are the ones who write the source code and this process is first and foremost a collaborative endeavour. Software developers write code in successive steps, because they add features over time, or they fix errors that have shown up in their software, or they decide to rewrite parts of the source code based on new ideas, skills or preferences. In this case, source code is not used to communicate to the computer what it does, but to other software developers what the \emph{intent} of the software is. Source code is then the locus of human, collaborative work; it represents iterations of ideas, formalization of processes and approaches to problem-solving. As Harold Abelson puts it, 
+From another perspective, source code isn't just about telling computers what to do, but also a key component of a particular economy: that of software development. Software developers are the ones who write the source code and this process is first and foremost a collaborative endeavour. Software developers write code in successive steps, because they add features over time, or they fix errors that have shown up in their software, or they decide to rewrite parts of the source code based on new ideas, skills or preferences. In this case, source code is not used to communicate to the computer what it does, but to other software developers what the \emph{intent} of the software is. Source code is then the locus of human, collaborative work; it represents iterations of ideas, formalization of processes and approaches to problem-solving. As Harold Abelson puts it,
 
-\begin{quotation}
-    "Programs must be written for people to read, and only incidentally for machines to execute." \citep{abelson_structure_1979}.    
-\end{quotation}
+\begin{quote}
+    "Programs must be written for people to read, and only incidentally for machines to execute." \citep{abelson_structure_1979}.
+\end{quote}
 
 
 Official definitions of source code straddle this line between the first role of source code (as instructions to a computer) and the second role of source code (as indications to a programmer). For instance, a definition within the context of the Institute of Electrical and Electronics Engineering (IEEE) considers source code \emph{any fully executable description of a software system, which therefore includes various representations of this description, from machine code to high-level languages and graphical representations using visual programming languages} \citep{harman_why_2010}. This definition focuses on the ability of code to be processed by a machine, and mentions little about its readability (i.e. processability by other humans).
@@ -103,7 +107,8 @@ A literature review on this topic must address the dualistic nature of studies o
 
 We have seen that most technical literature, starting from \emph{The Art of Computer Programming}, acknowledges the role that aesthetics have to play in the writing and reading of program texts. Along with the positions of Knuth and Djikstra regarding the importance of paying attention to the aspects of programming practice \citep{dijkstra_chapter_1972} which go beyond strictly mathematical and engineering requirements, Kerninghan and Plauer publish in 1978 their \emph{Elements of Programming Style} \citep{kernighan_elements_1978}. In it, they focus on how code snippets with a given intent could be rewritten in order to keep the same intent but gain in quality—that is, in readability and understandability. For instance, the following program:
 
-\begin{lstlisting}]
+\begin{listing}
+    \begin{minted}{c}
     if(i == 0) c = '0'
     if(i == 1) c = '1'
     if(i == 2) c = '2'
@@ -114,13 +119,16 @@ We have seen that most technical literature, starting from \emph{The Art of Comp
     if(i == 7) c = '7'
     if(i == 8) c = '8'
     if(i == 9) c = '9'
-\end{lstlisting}
+    \end{minted}
+\end{listing}
 
 can be rewritten as:
 
-\begin{lstlisting}
+\begin{listing}
+    \begin{minted}{c}
     if(i >= 0 && i < 10) c = '0' + i
-\end{lstlisting}
+    \end{minted}
+\end{listing}
 
 which keeps the exact same functionality, but becomes much clearer. Why it becomes much clearer, though, is thought to be a given for the reader, and not explicited by the authors in terms of concepts such as cognitive surface, repleteness of a symbol system or representation of the main idea(s) at play (promoting an integer to a character, rather than individually checking for each integer case). As the authors do employ terms which will form the basis of an aesthetics of software development, such as clarity, simplicity, or expressiveness, there are nonetheless no overarching principles deployed to systematize the manifestation of such principles, only examples are given.
 
@@ -134,7 +142,7 @@ Technical and engineering literature, then, establish the existence of and need 
 
 Before we move on to the perspective of the humanities, one should also note the specific field of philosophy of computer science, which inquires into the nature of computation, from ontological, epistemological and ethical points of view. These are useful both in the meta positioning they take regarding computer science as they well as how they show that issues of representation, interpretation and implementation are still unresolved in the field. Particularly, Rapaport's \emph{Philosophy of Computer Science} provides an exhaustive literature review of the different fields which computer science is being compared to, from mathematics, engineering and art but—interestingly—few references to computer science as having any kind of relation with literature \citep{rapaport_philosophy_2005}. Another, more specific perspective is given by Richard P. Gabriel in his \emph{Patterns of Software}, in which he looks at software as a similar endeavour as architecture, drawing on the works of Christopher Alexander. The focus is on its creative and relationship to patters, a subject we will investigate more in chapter 3. Finally, Brian Cantwell-Smith's introduction to his upcoming \emph{The Age of Significance: An Essay on the Origins of Computation and Intentionality} touches upon these similar ideas of intentionality by suggesting both that computation might be more productively studied from a humanities or artistic point of view than form a strictly scientifc point of view \citep{smith_origin_1998}. These philosophical inquiries into computation mention aesthetics mostly on the periphery, but nonetheless challenge the notion of computation as strictly functional, and suggest additional that perspectives on the topic are needed, including that of the arts.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 From a humanities perspective, recent literature taking source code as the central object of their study covers fields as diverse as literature, science and technology studies, humanities and media studies and philosophy. Each of these monographs, edited volumes, catalog articles, book chapters or PhD theses, engage with code in its multiple intricacies. Software applications, source code excerpts, programming environments and languages are included in each of these works as primary sources, are considered as text to be read, examined and interpreted.
 
@@ -159,7 +167,7 @@ Away from the cultural relevance of code as developed by Cox and McLean, Florian
 Cramer extracts five axes along which to apprehend code-based works: totality/fragmentation, rationalization/occultation, hardware/software, syntax/semantics, artificial/natural language. While all these axes overlap each other, it is the \emph{syntax/semantics} axis which aligns most with this research, givent that these thematical axes are all variations of one another. Towards the end of the book, his development of the concept of speculative programming is also particularly fruitful as the attempt to become a figure of thought and reflection in theory and artistic practice. Cramer states:
 
 \begin{quote}
-    \emph{formalisms [...] have a cultural semantics of their own, even on the most primitive and basic level. With a cultural semantics, there inevitably is an aesthetics, subjectivity and politics in computing.} \citep{cramer_words_2003}
+    \emph{formalisms [\dots] have a cultural semantics of their own, even on the most primitive and basic level. With a cultural semantics, there inevitably is an aesthetics, subjectivity and politics in computing.} \citep{cramer_words_2003}
 \end{quote}
 
 This points to the relationship between the formal disposition of source code within program texts and the cultural communities composed of the writers and readers of these program texts. As we've seen, code does have social components of varying natures, insofar as it operates as an expressive medium between varying subjects.
@@ -176,7 +184,7 @@ Taking a step back, Warren Sack's \emph{The Software Arts} \citep{sack_software_
 
 This activity of programming as craft, already acknowledged by programmers themselves, is further explored in Erik Pineiro's doctoral thesis \citep{pineiro_aesthetics_2003}. In it, he examines the concrete, social and practical justifications for the existence of aesthetics within the software development community. Departing from specific, hand-picked examples such as those featured in Marino's study, his is more of an anthropological approach, revealing what role aesthetics play in a specific community of practicioners. Outlining references to ideas such as \emph{cleanliness}, \emph{simplicity}, \emph{tightness}, \emph{robustness}, amongst others, as aesthetic ideals that programmers aspire to, he does not however summon any specific aesthetic field (whether from literature, mathematics, craft or engineering), but rather frames it in terms of \emph{intrsumental goodness}, with the aesthetics of code being an attempt to reach excellence in instrumental action. While he carefully lays out his argument by focusing on what (a certain group of) programmers actually say, instead of what they might be saying, there remains two limitations: it is not clear how source code as textual material can afford to reach such aesthetic ideals, and whether or not these aesthetic ideals apply to other groups of writers of code, such as the code poets mentioned in some of the works above.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 This literature review allows us to have a better grasp of how the relationship between source code and aesthetics has been studied, both from a scientific and engineering perspective, as well as from a humanities perspective.
 
@@ -200,19 +208,19 @@ Finally, and related to the point above, we can identify a methodological gap. D
 
 Having established an overview of the state of the research on this topic, and having identified some gaps remaining in this scholarship, we can now clarify some of the problems resulting from those gaps with the following questions.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 \emph{What does source code have to say about itself?}
 
 The relative absence of empirical examination of its source component when discussing code does not seem to be consistent with a conception of source code as a literary object. As methodologies for examining the meanings of source code have recently flourished, the techniques of \emph{close-reading}, as focusing first and foremost on "the words on the page" \citep{richards_practical_1930} have been applied for extrinsic means: extract what the lines of code have to say about the world, rather than what they have to say about themselves, about their particular organization as source files, as typographic objects or as symbol systems expressing concepts about the computational entities they describe. In this sense, it is still unclear how the possible combinations of control flow statements, function calls, function definitions, datatypes, variable declaration and variable naming, among other syntactic devices, enable program texts to be expressive. While close-reading will be a useful heuristic for investigating these problems, it will also be necessary to question the unicity of source code, and take into account how it varies across writers and readers and the social groups they constitute. This problem therefore has to be modulated with respect to the social environment in which it exists—it will then be possible to highlight to what extent the aesthetics of source code vary across these groups, and to what extent they don't.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 \emph{How does source code relate to other aesthetic fields?}
 
 Multiple aesthetic fields are being mapped onto source code, allowing us to grasp such a novel object through more familiar lenses. However, the question remains of what it is about the nature of source code which can act as common ground for approaches as diverse as literature, mathematics and architecture, or whether these references only touch on distinct aspects of source code. When one talks about structure in source code, do they refer to structure in an architectural sense, or in a literary sense? When one refers to \emph{syntactic sugar} in a programming language, does this have implications in a mathematical sense? This question will involve inquiries into the relationship of syntax and structure, of formality and tacitness,  of metaphor and conceptual mapping, and in understanding of how adjectives such as \emph{clean}, \emph{clear} and \emph{simple} might have similar meanings across those different fields. Offering answers to these questions might allow us to move from a multi-faceted understanding of source towards a more specific one, as the meeting point for all these fields, source code might reveal deeper connections between each of those.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 \emph{How do the aesthetics of source code relate to its functionality?}
 
@@ -270,8 +278,8 @@ Programmers and computer scientists will find an attempt at formalizing somethin
 
 Finally, such a specific conception of beauty, then, will also be of interest to artists and art theorists. By investing aesthetics without a direct relation to the artwork, but rather within a functional purpose, this study suggests that one can think through beauty and artworks not as ends, but as ways to accomplish things that formal systems of explanation might not be able to achieve. An aesthetics of source code would therefore aim at highlighting the purpose of instrumental beauty within a textual environment.
 
-\vspace*{1\baselineskip}
+\vspace{1\baselineskip}
 
 \centerline{\rule{0.13334\linewidth}{.4pt}}
 
-\vspace*{2\baselineskip}
+\vspace{2\baselineskip}
