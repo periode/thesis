@@ -73,109 +73,109 @@ The first excerpts come from the source code for Microsoft Windows 2000, which w
 First, the most striking visual feature of the code is its sheer size. Representing such a versatile and low-level system such as an operating system manifest themselves in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated. For instance, the initialization of strings of text for the namespaces (a technique directly related to the compartmentalization) is necessary, repetitive work which can be represented using a rhythmic visual pattern, such as in the \lstinline{cmdatini.c} source file, reproduced partially in \ref{code:ms2000}.
 
 \begin{listing}
-  \begin{minted}[fontsize=\footnotesize, breaklines, breakanywhere]{c}
-  {
-    ULONG i;
+  \begin[fontsize=\footnotesize, breaklines, breakanywhere]{minted}{c}
 
-    RtlInitUnicodeString( &CmRegistryRootName,
-                          CmpRegistryRootString );
+  ULONG i;
 
-    RtlInitUnicodeString( &CmRegistryMachineName,
-                          CmpRegistryMachineString );
+  RtlInitUnicodeString( &CmRegistryRootName,
+  CmpRegistryRootString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareName,
-                          CmpRegistryMachineHardwareString );
+  RtlInitUnicodeString( &CmRegistryMachineName,
+  CmpRegistryMachineString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionName,
-                          CmpRegistryMachineHardwareDescriptionString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareName,
+  CmpRegistryMachineHardwareString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionSystemName,
-                          CmpRegistryMachineHardwareDescriptionSystemString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionName,
+  CmpRegistryMachineHardwareDescriptionString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDeviceMapName,
-                          CmpRegistryMachineHardwareDeviceMapString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionSystemName,
+  CmpRegistryMachineHardwareDescriptionSystemString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareResourceMapName,
-                          CmpRegistryMachineHardwareResourceMapString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareDeviceMapName,
+  CmpRegistryMachineHardwareDeviceMapString );
 
-    RtlInitUnicodeString( &CmRegistryMachineHardwareOwnerMapName,
-                          CmpRegistryMachineHardwareOwnerMapString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareResourceMapName,
+  CmpRegistryMachineHardwareResourceMapString );
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemName,
-                          CmpRegistryMachineSystemString );
+  RtlInitUnicodeString( &CmRegistryMachineHardwareOwnerMapName,
+  CmpRegistryMachineHardwareOwnerMapString );
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSet,
-                          CmpRegistryMachineSystemCurrentControlSetString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemName,
+  CmpRegistryMachineSystemString );
 
-    RtlInitUnicodeString( &CmRegistryUserName,
-                          CmpRegistryUserString );
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSet,
+  CmpRegistryMachineSystemCurrentControlSetString);
 
-    RtlInitUnicodeString( &CmRegistrySystemCloneName,
-                          CmpRegistrySystemCloneString );
+  RtlInitUnicodeString( &CmRegistryUserName,
+  CmpRegistryUserString );
 
-    RtlInitUnicodeString( &CmpSystemFileName,
-                          CmpRegistrySystemFileNameString );
+  RtlInitUnicodeString( &CmRegistrySystemCloneName,
+  CmpRegistrySystemCloneString );
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumName,
-                          CmpRegistryMachineSystemCurrentControlSetEnumString);
+  RtlInitUnicodeString( &CmpSystemFileName,
+  CmpRegistrySystemFileNameString );
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumRootName,
-                          CmpRegistryMachineSystemCurrentControlSetEnumRootString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumName,
+  CmpRegistryMachineSystemCurrentControlSetEnumString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServices,
-                          CmpRegistryMachineSystemCurrentControlSetServicesString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumRootName,
+  CmpRegistryMachineSystemCurrentControlSetEnumRootString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetHardwareProfilesCurrent,
-                          CmpRegistryMachineSystemCurrentControlSetHardwareProfilesCurrentString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServices,
+  CmpRegistryMachineSystemCurrentControlSetServicesString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlClass,
-                          CmpRegistryMachineSystemCurrentControlSetControlClassString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetHardwareProfilesCurrent,
+  CmpRegistryMachineSystemCurrentControlSetHardwareProfilesCurrentString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSafeBoot,
-                          CmpRegistryMachineSystemCurrentControlSetControlSafeBootString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlClass,
+  CmpRegistryMachineSystemCurrentControlSetControlClassString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagement,
-                          CmpRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagementString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSafeBoot,
+  CmpRegistryMachineSystemCurrentControlSetControlSafeBootString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBootLog,
-                          CmpRegistryMachineSystemCurrentControlSetControlBootLogString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagement,
+  CmpRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagementString);
 
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServicesEventLog,
-                          CmpRegistryMachineSystemCurrentControlSetServicesEventLogString);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBootLog,
+  CmpRegistryMachineSystemCurrentControlSetControlBootLogString);
 
-    RtlInitUnicodeString( &CmSymbolicLinkValueName,
-                          CmpSymbolicLinkValueName);
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServicesEventLog,
+  CmpRegistryMachineSystemCurrentControlSetServicesEventLogString);
 
-#ifdef _WANT_MACHINE_IDENTIFICATION
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBiosInfo,
-                          CmpRegistryMachineSystemCurrentControlSetControlBiosInfoString);
-#endif
+  RtlInitUnicodeString( &CmSymbolicLinkValueName,
+  CmpSymbolicLinkValueName);
 
-    //
-    // Initialize the type names for the hardware tree.
-    //
+  #ifdef _WANT_MACHINE_IDENTIFICATION
+  RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBiosInfo,
+  CmpRegistryMachineSystemCurrentControlSetControlBiosInfoString);
+  #endif
 
-    for (i = 0; i <= MaximumType; i++) {
+  //
+  // Initialize the type names for the hardware tree.
+  //
 
-        RtlInitUnicodeString( &(CmTypeName[i]),
-                              CmTypeString[i] );
+  for (i = 0; i <= MaximumType; i++) {
 
-    }
-
-    //
-    // Initialize the class names for the hardware tree.
-    //
-
-    for (i = 0; i <= MaximumClass; i++) {
-
-        RtlInitUnicodeString( &(CmClassName[i]),
-                              CmClassString[i] );
+      RtlInitUnicodeString( &(CmTypeName[i]),
+      CmTypeString[i] );
 
     }
 
-    return;
-}
-\end{minted}
+  //
+  // Initialize the class names for the hardware tree.
+  //
+
+  for (i = 0; i <= MaximumClass; i++) {
+
+      RtlInitUnicodeString( &(CmClassName[i]),
+      CmClassString[i] );
+
+    }
+
+  return;
+
+  \end{minted}
   \caption{Unicode string initialization in Microsoft 2000 operating system}
   \label{code:ms2000}
 \end{listing}
@@ -187,30 +187,30 @@ Verbosity, the act of explicitly writing out statements which could be functiona
 Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization often implies the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed} \citep{waldron_idiomatic_2020}. For instance, the excerpt in \ref{code:buffer_c} from \lstinline{jdhuff.c} is a example of such overlapping of styles:
 
 \begin{listing}
-  \begin{minted}[fontsize=\footnotesize]{c}
+  \begin[fontsize=\footnotesize]{minted}{c}
   no_more_data:
-    // There should be enough bits still left in the data segment; 
-    // if so, just break out of the outer while loop. 
-    if (bits_left >= nbits)
-      break;
-      /* Uh-oh.  Report corrupted data to user and stuff zeroes into
-      * the data stream, so that we can produce some kind of image.
-      * Note that this code will be repeated for each byte demanded
-      * for the rest of the segment.  We use a nonvolatile flag to ensure
-      * that only one warning message appears.
-      */
-      if (! *(state->printed_eod_ptr)) 
-      {
-        WARNMS(state->cinfo, JWRN_HIT_MARKER);
-        *(state->printed_eod_ptr) = TRUE;
-      }
-      c = 0;			// insert a zero byte into bit buffer 
-      }
+  // There should be enough bits still left in the data segment;
+  // if so, just break out of the outer while loop.
+  if (bits_left >= nbits)
+  break;
+  /* Uh-oh.  Report corrupted data to user and stuff zeroes into
+  * the data stream, so that we can produce some kind of image.
+  * Note that this code will be repeated for each byte demanded
+  * for the rest of the segment.  We use a nonvolatile flag to ensure
+  * that only one warning message appears.
+  */
+  if (! *(state->printed_eod_ptr))
+  {
+      WARNMS(state->cinfo, JWRN_HIT_MARKER);
+      *(state->printed_eod_ptr) = TRUE;
     }
+  c = 0;			// insert a zero byte into bit buffer
+  }
+  }
 
-    /* OK, load c into get_buffer */
-    get_buffer = (get_buffer << 8) | c;
-    bits_left += 8;
+  /* OK, load c into get_buffer */
+  get_buffer = (get_buffer << 8) | c;
+  bits_left += 8;
   }
 
   /* Unload the local registers */
@@ -220,8 +220,8 @@ Another significant aesthetic feature of the Windows 2000 program text is its us
   state->bits_left = bits_left;
 
   return TRUE;
-}
-\end{minted}
+  }
+  \end{minted}
   \caption{Programming styles overlapping in the source code of Microsoft 2000.}
   \label{code:buffer_c}
 \end{listing}
@@ -343,7 +343,7 @@ Software developers are a large group of practitioners whose focus on producing 
 
 \subsection{Hackers}
 
-Hackers have been present in popular cultural mostly as young, computer experts, working on the edge of legality. These popular description of hackers tend to veer towards technical excellence, obsession and esoteric involvement with the machine, accompanied by seemingly-radical value systems and political beliefs. They are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems, as described by Joseph Weizenbaum in 1976\footnote{"Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed stu­dents of a cabalistic text." \citep{weizenbaum_computer_1976}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven mostly by curiosity, cleverness and freedom. Such a group has had a significant influence in the culture of programming, with which it overlaps with the aforementionned values of intellectual challenges.
+Hackers have been present in popular cultural mostly as young, computer experts, working on the edge of legality. These popular description of hackers tend to veer towards technical excellence, obsession and esoteric involvement with the machine, accompanied by seemingly-radical value systems and political beliefs. They are often depicted as lonely, obsessed programmers, hyperfocused on the task at hand and able to switch altered mental states as they dive into computational problems, as described by Joseph Weizenbaum in 1976\footnote{"Wherever computer centers have become established, that is to say, in countless places in the United States, as well as in virtually all other industrial regions of the world, bright young men of disheveled appearance, often with sunken glowing eyes, can be seen sitting at computer consoles, their arms tensed and waiting to fire their fingers, already poised to strike, at the buttons and keys on which their attention seems to be as riveted as a gambler's on the rolling dice. When not so transfixed, they often sit at tables strewn with computer printouts over which they pore like possessed students of a cabalistic text." \citep{weizenbaum_computer_1976}}. While some of it is true—for instance, the gender, the compulsive behaviour and the embodied connection to the machine—, hackers nonetheless designate a wider group of people, one which writes code driven mostly by curiosity, cleverness and freedom. Such a group has had a significant influence in the culture of programming, with which it overlaps with the aforementionned values of intellectual challenges.
 
 To hack, in the broadest sense, is to enthusiastically inquire about the possibilities of exploitation of technical systems\footnote{"HACKER [originally, someone who makes furniture with an axe] n. 1. A person who enjoys learning the details of programming systems and how to stretch their capabilities, as opposed to most users who prefer to learn only the minimum necessary. 2. One who programs enthusiastically, or who enjoys programming rather than just theorizing about programming. \citep{dourish_original_1988}} and, as such, isnt' strictly bound to the advent of the computer\footnote{See Rosenbaum's report in the October 1971 issue of Esquire for an account of phreaking, computer hacking's immediate predecessor \citep{rosenbaum_secrets_2004}.}. Computer hacking specifically came to proeminence as early computers started to become available in north-american universities, and coalesced around the Massachussets Institute of Technology's Tech Model Railroad Club \citep{levy_hackers_2010}. Computer hackers were at the time skilled and highly-passionate individuals, with an autotelic inclination to computer systems: these systems mattered most when they referenced themselves, instead of interfacing with a given problem domain. Early hackers were often self-taught, learning to tinker with computers while still in high-school \citep{lammers_programmers_1986}, and as such tend to exhibit a radical position towards expertise: skill and knowledge aren't derived from academic degrees or credentials, but rather from concrete ability and practical efficacy\footnote{A meritocratic stance which has been analyzed in further in  \citep{coleman_aesthetics_2018}}.
 
@@ -558,11 +558,11 @@ By the dawn of the 21st century, scientific computing had increased in the scope
   \label{code:mesh_m}
 \end{listing}
 
-\begin{listing}
+\begin{figure}
   \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{matlab}
   \caption{Visualization of a 3D-mesh in Matlab}
   \label{graphic:mesh-visualization}
-\end{listing}
+\end{figure}
 
 In parallel to MATLAB and R, Python represents the advent of the so-called scripting languages. Scripting languages are programming  languages which offer readability and versatility, along with decoupling from the actual operating system that it is being executed on. System languages, such as C, are designed and used in order to interact directly with the computer hardware, and to constitute data structures from the ground up \citep{ousterhout_scripting_1998}. On the other hand, scripting languages were designed and used in order to connect existing software systems or data sources together, most notably in the early days of shell scripting (such as \lstinline{Bash}, \lstinline{sed} or \lstinline{awk}). Starting with the late 1990s, and the appearance of languages such as Perl\footnote{First version developed in 1987 by Larry Wall} and Python\footnote{First official release in 1991 by Guido Van Rossum}, scripting languages became more widely used by non-programmers who already had data to work with and needed tools to exploit it. In the following decades, the development of additional scientific libraries such as \emph{SciKit}, \emph{NumPy} for mathematics and numerical work or \emph{NLTK} for language processing and social sciences in Python complemented the language's ease of use by providing manipulation of complex scientific concepts \citep{millman_python_2011}, a phenomenon of user-extension which has also been observed in R and MATLAB's ecosystems \citep{moler_history_2020}.
 
@@ -610,6 +610,7 @@ induce(A,H0,[(A:-B)|H]):-       % A:-B can be added to H
   inducible((A:-B)),      % if it's inducible, and
   not element((A:-B),H0), % if it's not already there
   induce(B,H0,H).         % proceed with body of rule
+
 \end{minted}
   \caption{Prolog sample source}
   \label{code:prolog_sample}
@@ -642,17 +643,19 @@ The base structural elements of LISP are not symbols, but lists (of symbols, of 
   \label{code:scheme_interpreter}
 \end{listing}
 
-The beauty of such a program, for Byrd, is the abilty of these fourteen lines to reveal powerful and complex ideas about the nature and process of computation. As an interpreter, this program can take any valid Scheme input and evaluate it correctly, recreating computation in terms of itself. It does so by showing and using ideas of recursion (with calls to \lstinline{eval-expr}), environment (with the evaluation of the \lstinline{body}) and lambda functions, as used throughout the program. Following Alan Kay, creator of the Smalltalk programming language, Byrd equates the feelings he experiences in witnessing and pondering the program above to those suggested by Maxwell's equations, which constitute the foundation of classical electromagnetism (\eqref{eq:maxwell}) \citep{kay_conversation_2004}. In both cases, the quality ascribed to those inscriptions come from the simplicity and conciseness of their base elements—making it easy to understand what the symbols mean and how we can compute relevant outputs—all the while allowing for complex consequences for both, respectively, computer science and electromagnetism.
+The beauty of such a program, for Byrd, is the abilty of these fourteen lines to reveal powerful and complex ideas about the nature and process of computation. As an interpreter, this program can take any valid Scheme input and evaluate it correctly, recreating computation in terms of itself. It does so by showing and using ideas of recursion (with calls to \lstinline{eval-expr}), environment (with the evaluation of the \lstinline{body}) and lambda functions, as used throughout the program. Following Alan Kay, creator of the Smalltalk programming language, Byrd equates the feelings he experiences in witnessing and pondering the program above to those suggested by Maxwell's equations, which constitute the foundation of classical electromagnetism (see \ref{eq:maxwell}) \citep{kay_conversation_2004}. In both cases, the quality ascribed to those inscriptions come from the simplicity and conciseness of their base elements—making it easy to understand what the symbols mean and how we can compute relevant outputs—all the while allowing for complex consequences for both, respectively, computer science and electromagnetism.
 
-\begin{equation}
-  \label{eq:maxwell}
-  \begin{aligned}
-    \frac{\partial\mathcal{D}}{\partial t} \quad & = \quad \nabla\times\mathcal{H}
-    \frac{\partial\mathcal{B}}{\partial t} \quad & = \quad -\nabla\times\mathcal{E}
-    \nabla\cdot\mathcal{B}                 \quad & = \quad 0
-    \nabla\cdot\mathcal{D}                 \quad & = \quad 0
-  \end{aligned}
-\end{equation}
+\begin{listing}
+  \begin{equation}
+    \label{eq:maxwell}
+    \begin{aligned}
+      \frac{\partial\mathcal{D}}{\partial t} \quad & = \quad \nabla\times\mathcal{H}
+      \frac{\partial\mathcal{B}}{\partial t} \quad & = \quad -\nabla\times\mathcal{E}
+      \nabla\cdot\mathcal{B}                 \quad & = \quad 0
+      \nabla\cdot\mathcal{D}                 \quad & = \quad 0
+    \end{aligned}
+  \end{equation}
+\end{listing}
 
 With this direct manipulation of symbolic units upon which logic operations can be performed, Lisp became the language of AI, an intelligence conceived first and foremost as abstractly logical, if not outright algebraic. Lisp-based AI was thus working on what Seymour Papert has called "toy problems"—self-referential theorems, children's stories, or simple puzzles or games \citep{nilsson_early_2009}. In these, the problem and the hardware are reduced from their complexity and multi-consequential relationships to a finite, discreete set of concepts and situations. Confronted to the real world—that is, to commercial exploitation—Lisp's model of symbol manipulation, which proved somewhat successful in those early academic scenarios, started to be applied to issues of natural language understanding and generation in broader applications. Despite disappointing reviews from government reports regarding the effectiveness of these AI techniques, commercial applications flourished, with companies such as Lisp Machines, Inc. and Symbolics offering Lisp-based development and support. Yet, in the 1980s, over-promising and under-delivering of Lisp-based AI applications, which often came from the combinatorial explosion deriving from the list- and tree-based representations, met a dead-end.
 
@@ -790,16 +793,16 @@ Following in the footsteps of the \emph{perlmonks}, additional communities aroun
 Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \ref{code:numero_mysterioso_asm}.
 
 \begin{listing}
-  \begin{minted}[linenos, firstnumber=663]{ca65}
- STODL  CG
- TTF/8
- DMP*  VXSC
-       GAINBRAK,1  # NUMERO MYSTERIOSO
-       ANGTERM
- VAD
-	    LAND
-    VSU	RTB
-\end{minted}
+  \begin[linenos,firstnumber=663]{minted}{ca65}
+  STODL  CG
+  TTF/8
+  DMP*  VXSC
+  GAINBRAK,1  # NUMERO MYSTERIOSO
+  ANGTERM
+  VAD
+  LAND
+  VSU	RTB
+  \end{minted}
   \caption{AGC source code for the Lunar Landing Guidance Equation, 1969}
   \label{code:numero_mysterioso_asm}
 \end{listing}
@@ -1169,7 +1172,7 @@ This examination of which qualifiers programmers use when they relate to the aes
 
 The next step that we propose is to inquire into these specific domains, to examine in which capacity they are being summoned in relation to code, and how they help us further delineate the aesthetic qualities which belong to source code. The assumption here is that, following Neil Postman, a medium is a means of expression, and different mediums can support different qualities of expression \citep{postman_amusing_1985}. Since there seems to be some specific ways in which code can be considered beautiful, these contingent domains, and the specific parts of these domains which create this contingency, will prepare our work of defining source code-specific aesthetic standards.
 
-To do so, then, we will look at the three domains most often conjured by programmers when they mention the sensual qualities of, or the aesthetic experiences elicited by, source code: literature, mathematics and architecture. While there are accounts of parallels between programming and painting \citep{graham_hackers_2003} or programming and music\cite{mclean_hacking_2004}, these refer rather to the painter or musician as an individual, rather to the specific medium, and there are, to the best of our knowledge, no account of code being like sculpture or film, for instance.
+To do so, then, we will look at the three domains most often conjured by programmers when they mention the sensual qualities of, or the aesthetic experiences elicited by, source code: literature, mathematics and architecture. While there are accounts of parallels between programming and painting \citep{graham_hackers_2003} or programming and music\citep{mclean_hacking_2004}, these refer rather to the painter or musician as an individual, rather to the specific medium, and there are, to the best of our knowledge, no account of code being like sculpture or film, for instance.
 
 \subsection{Literary Beauty}
 
@@ -1260,9 +1263,9 @@ print"a"x++$...$"x$.,$,=_;redo
 \end{listing}
 
 \begin{listing}
-  \begin{minted}[breaklines=true,breakanywhere]{text}
-_atk_atl_atm_atn_ato_atp_atq_atr_ats_att_atu_atv_atw_atx_aty_atz_aua_aub_auc_aud_aue_auf_aug_auh_aui_auj_auk_aul_aum_aun_auo_aup_auq_aur_aus_aut_auu_auv_auw_aux_auy_auz_ava_avb_avc_avd_ave_avf_avg_avh_avi_avj_avk_avl_avm_avn_avo_avp_avq_avr_avs_avt_avu_avv_avw_avx_avy_avz_awa_awb_awc_awd_awe_awf_awg_awh_awi_awj_awk_awl_awm_awn_awo_awp_awq_awr_aws_awt_awu_awv_aww_awx_awy_awz_axa_axb_axc_axd_axe_axf_axg_axh_axi_axj_axk_axl_axm_axn_axo_axp_axq_axr_axs_axt_axu_axv_axw_axx_axy_axz_aya_ayb_ayc_ayd_aye_ayf_ayg_ayh_ayi_ayj_ayk_ayl_aym_ayn_ayo_ayp_ayq_ayr_ays_ayt_ayu_ayv_ayw_ayx_ayy_ayz_aza_azb_azc_azd_aze_azf_azg_azh_azi_azj_azk_azl_azm_azn_azo_azp_azq_azr_azs_azt_azu_azv_azw_azx_azy_azz_baa_bab_bac_bad_bae_baf_bag_bah_bai_baj_bak_bal_bam_ban_bao_bap_baq_bar_bas_bat_bau_bav_baw_bax_bay_baz_bba_bbb_bbc_bbd_bbe_bbf_bbg_bbh_bbi_bbj_bbk_bbl_bbm_bbn_bbo_bbp_bbq_bbr_bbs_bbt_bbu_bbv_bbw_bbx_bby_bbz_bca_bcb_bcc_bcd_bce_bcf_bcg_bch_bci_bcj_bck_bcl_bcm_bcn_bco_bcp_bcq_bcr_bcs_bct_bcu_bcv_bcw_bcx_bcy_bcz_bda_bdb_bdc_bdd_bde_bdf_bdg_bdh_bdi_bdj_bdk_bdl_bdm_bdn_bdo_bdp_bdq_bdr_bds_bdt_bdu_bdv_bdw_bdx_bdy_bdz_bea_beb_bec_bed_bee_bef_beg_beh_bei_bej_bek_bel_bem_ben_beo_bep_beq_ber_bes_bet_beu_bev_bew_bex_bey_bez_bfa_bfb_bfc_bfd_bfe_bff_bfg_bfh_bfi_bfj_bfk_bfl_bfm_bfn_bfo_bfp_bfq_bfr_bfs_bft_bfu_bfv_bfw_bfx_bfy_bfz_bga_bgb_bgc_bgd_bge_bgf_bgg_bgh_bgi_bgj_bgk_bgl_bgm_bgn_bgo_bgp_bgq_bgr_bgs_bgt_bgu_bgv_bgw_bgx_bgy_bgz_bha_bhb_bhc_bhd_bhe_bhf_bhg_bhh_bhi_bhj_bhk_bhl_bhm_bhn_bho_bhp_bhq_bhr_bhs_bht_bhu_bhv_bhw_bhx_bhy_bhz_bia_bib_bic_bid_bie_bif_big_bih_bii_bij_bik_bil_bim_bin_bio_bip_biq_bir_bis_bit_biu_biv_biw_bix_biy_biz_bja_bjb_bjc_bjd_bje_bjf_bjg_bjh_bji_bjj_bjk_bjl_bjm_bjn_bjo_bjp_
-\end{minted}
+  \begin[breaklines=true,breakanywhere]{minted}{text}
+  _atk_atl_atm_atn_ato_atp_atq_atr_ats_att_atu_atv_atw_atx_aty_atz_aua_aub_auc_aud_aue_auf_aug_auh_aui_auj_auk_aul_aum_aun_auo_aup_auq_aur_aus_aut_auu_auv_auw_aux_auy_auz_ava_avb_avc_avd_ave_avf_avg_avh_avi_avj_avk_avl_avm_avn_avo_avp_avq_avr_avs_avt_avu_avv_avw_avx_avy_avz_awa_awb_awc_awd_awe_awf_awg_awh_awi_awj_awk_awl_awm_awn_awo_awp_awq_awr_aws_awt_awu_awv_aww_awx_awy_awz_axa_axb_axc_axd_axe_axf_axg_axh_axi_axj_axk_axl_axm_axn_axo_axp_axq_axr_axs_axt_axu_axv_axw_axx_axy_axz_aya_ayb_ayc_ayd_aye_ayf_ayg_ayh_ayi_ayj_ayk_ayl_aym_ayn_ayo_ayp_ayq_ayr_ays_ayt_ayu_ayv_ayw_ayx_ayy_ayz_aza_azb_azc_azd_aze_azf_azg_azh_azi_azj_azk_azl_azm_azn_azo_azp_azq_azr_azs_azt_azu_azv_azw_azx_azy_azz_baa_bab_bac_bad_bae_baf_bag_bah_bai_baj_bak_bal_bam_ban_bao_bap_baq_bar_bas_bat_bau_bav_baw_bax_bay_baz_bba_bbb_bbc_bbd_bbe_bbf_bbg_bbh_bbi_bbj_bbk_bbl_bbm_bbn_bbo_bbp_bbq_bbr_bbs_bbt_bbu_bbv_bbw_bbx_bby_bbz_bca_bcb_bcc_bcd_bce_bcf_bcg_bch_bci_bcj_bck_bcl_bcm_bcn_bco_bcp_bcq_bcr_bcs_bct_bcu_bcv_bcw_bcx_bcy_bcz_bda_bdb_bdc_bdd_bde_bdf_bdg_bdh_bdi_bdj_bdk_bdl_bdm_bdn_bdo_bdp_bdq_bdr_bds_bdt_bdu_bdv_bdw_bdx_bdy_bdz_bea_beb_bec_bed_bee_bef_beg_beh_bei_bej_bek_bel_bem_ben_beo_bep_beq_ber_bes_bet_beu_bev_bew_bex_bey_bez_bfa_bfb_bfc_bfd_bfe_bff_bfg_bfh_bfi_bfj_bfk_bfl_bfm_bfn_bfo_bfp_bfq_bfr_bfs_bft_bfu_bfv_bfw_bfx_bfy_bfz_bga_bgb_bgc_bgd_bge_bgf_bgg_bgh_bgi_bgj_bgk_bgl_bgm_bgn_bgo_bgp_bgq_bgr_bgs_bgt_bgu_bgv_bgw_bgx_bgy_bgz_bha_bhb_bhc_bhd_bhe_bhf_bhg_bhh_bhi_bhj_bhk_bhl_bhm_bhn_bho_bhp_bhq_bhr_bhs_bht_bhu_bhv_bhw_bhx_bhy_bhz_bia_bib_bic_bid_bie_bif_big_bih_bii_bij_bik_bil_bim_bin_bio_bip_biq_bir_bis_bit_biu_biv_biw_bix_biy_biz_bja_bjb_bjc_bjd_bje_bjf_bjg_bjh_bji_bjj_bjk_bjl_bjm_bjn_bjo_bjp_
+  \end{minted}
   \caption{All The Names of God, Nick Montfort, 2010, Selected output}
   \label{output:all_the_names_of_god}
 \end{listing}
