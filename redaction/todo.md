@@ -14,6 +14,8 @@ as an example of how people assign quality to proper scale naming
 
 faire une connexion entre cognition et constructivisme! Seymour Papert, Scratch, education
 
+add something about language communities (pythonistas, gophers, rustlings, etc.)
+
 ## meeting with nick - 28.12.2022
 
 - for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -> __INTERTWINE!__
