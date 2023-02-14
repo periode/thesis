@@ -91,19 +91,7 @@ I offered a typology of how to exert aesthetic properties in code, based on the 
 Through an empirical take, we have also qualified how Florian Cramer and his approach to source code as a form of magic relies on very concrete technical processes and habits across practices of source code writing. Building on the conception of Alfred Gell of art as the enchantment of technology, we have explicited what exactly are the complex technical hurdles and associated skills required to understand software (section \ref{subsec:software-complexity}). If there is magic in software, it is also manifested through the aesthetic appreciation of source code, particularly through hacking (section \ref{subsec:hackers}) and code poetry (section \ref{subsec:poets}), and examplified in works like \lstinline{forkbomb.pl} (see listing \ref{code:forkbomb}).
 
 \begin{listing}
-    \begin{minted}{perl}
-        my $strength = $ARGV[0] + 1;
-
-        while(not fork){
-            exit unless -$strength;
-            print 0;
-            twist: while(fork) {
-                exit unless -$strength;
-                print 1;
-            }
-        }
-        goto 'twist' if -$strength;
-    \end{minted}
+    \inputminted{perl}{./forkbomb.pl}
     \caption[]{forkbomb.pl is an artwork in the exhibited sense of the term, displaying conciseness along with expressive power through its technical expansion}
     \label{code:forkbomb}
 \end{listing}

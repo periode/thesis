@@ -1,0 +1,12 @@
+        recognition = false
+        do until recognition
+        wait until mousedown
+            if no bounding box, initialize bounding box
+            do until mouseup
+            update image
+            update bounding box
+            rescale the material that's been added inside
+            if we recognize the material:
+                delete image from canvas
+                add the appropriate iconic representation
+                recognition = true

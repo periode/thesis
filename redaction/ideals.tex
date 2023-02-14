@@ -41,8 +41,6 @@ As a result of such interrogations comes an industry-wide search for solutions t
 
 The most recent step in the history of software developers is the popularization of the Internet and of the World Wide Web. Even though the former had existed under as ArpaNet since 1969, the network was only standardized in 1982 and access to it was provided commercially in 1989. Built on top of the Internet, the latter popularized global information exchange, including technical resources to read and write code. Software could now be written by remote individual written on \emph{cloud computing} platforms, shared through public repositories and deployed via containers with a lower barrier to entry than at the time of source code printed in magazines, of overnight batch processing and of non-time-sharing systems.
 
-\vspace{1\baselineskip}
-
 Software developers have written some of the largest codebases to this date, since this type of activity represents the most significant fraction of programmers. Due to its close ties to commercial distributors, however, source code written in this context often falls under the umbrella of proprietary software, thus made unvailable to the public. Some examples that we include in our corpus are either professional codebases that have been leaked\footnote{Such as the Microsoft Windows XP source code \citep{warren_windows_2020}.}, open-source projects that have come out of business environments, such as Soundcloud's Prometheus, Kirby's CMS System, Facebook's React, or large-scale open-source projects which nonetheless adhere to structured programming guidelines, such as Donald Knuth's TeX typesetting system or the Linux Foundation's Linux kernel.
 
 \subsubsection{Features of the field}
@@ -74,109 +72,7 @@ The first excerpts come from the source code for Microsoft Windows 2000, which w
 First, the most striking visual feature of the code is its sheer size. Representing such a versatile and low-level system such as an operating system manifest themselves in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated. For instance, the initialization of strings of text for the namespaces (a technique directly related to the compartmentalization) is necessary, repetitive work which can be represented using a rhythmic visual pattern, such as in the \lstinline{cmdatini.c} source file, reproduced partially in \ref{code:ms2000}.
 
 \begin{listing}
-  \begin{minted}[fontsize=\footnotesize, breaklines, breakanywhere]{c}
-  {
-    ULONG i;
-
-    RtlInitUnicodeString( &CmRegistryRootName,
-    CmpRegistryRootString );
-
-    RtlInitUnicodeString( &CmRegistryMachineName,
-    CmpRegistryMachineString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareName,
-    CmpRegistryMachineHardwareString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionName,
-    CmpRegistryMachineHardwareDescriptionString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDescriptionSystemName,
-    CmpRegistryMachineHardwareDescriptionSystemString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareDeviceMapName,
-    CmpRegistryMachineHardwareDeviceMapString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareResourceMapName,
-    CmpRegistryMachineHardwareResourceMapString );
-
-    RtlInitUnicodeString( &CmRegistryMachineHardwareOwnerMapName,
-    CmpRegistryMachineHardwareOwnerMapString );
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemName,
-    CmpRegistryMachineSystemString );
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSet,
-    CmpRegistryMachineSystemCurrentControlSetString);
-
-    RtlInitUnicodeString( &CmRegistryUserName,
-    CmpRegistryUserString );
-
-    RtlInitUnicodeString( &CmRegistrySystemCloneName,
-    CmpRegistrySystemCloneString );
-
-    RtlInitUnicodeString( &CmpSystemFileName,
-    CmpRegistrySystemFileNameString );
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumName,
-    CmpRegistryMachineSystemCurrentControlSetEnumString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetEnumRootName,
-    CmpRegistryMachineSystemCurrentControlSetEnumRootString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServices,
-    CmpRegistryMachineSystemCurrentControlSetServicesString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetHardwareProfilesCurrent,
-    CmpRegistryMachineSystemCurrentControlSetHardwareProfilesCurrentString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlClass,
-    CmpRegistryMachineSystemCurrentControlSetControlClassString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSafeBoot,
-    CmpRegistryMachineSystemCurrentControlSetControlSafeBootString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagement,
-    CmpRegistryMachineSystemCurrentControlSetControlSessionManagerMemoryManagementString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBootLog,
-    CmpRegistryMachineSystemCurrentControlSetControlBootLogString);
-
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetServicesEventLog,
-    CmpRegistryMachineSystemCurrentControlSetServicesEventLogString);
-
-    RtlInitUnicodeString( &CmSymbolicLinkValueName,
-    CmpSymbolicLinkValueName);
-
-    #ifdef _WANT_MACHINE_IDENTIFICATION
-    RtlInitUnicodeString( &CmRegistryMachineSystemCurrentControlSetControlBiosInfo,
-    CmpRegistryMachineSystemCurrentControlSetControlBiosInfoString);
-    #endif
-
-    //
-    // Initialize the type names for the hardware tree.
-    //
-
-    for (i = 0; i <= MaximumType; i++) {
-
-        RtlInitUnicodeString( &(CmTypeName[i]),
-        CmTypeString[i] );
-
-      }
-
-    //
-    // Initialize the class names for the hardware tree.
-    //
-
-    for (i = 0; i <= MaximumClass; i++) {
-
-        RtlInitUnicodeString( &(CmClassName[i]),
-        CmClassString[i] );
-
-      }
-
-    return;
-  }
-  \end{minted}
+  \inputminted[fontsize=\footnotesize, breaklines, breakanywhere]{c}{./corpus/ms2000.c}
   \caption{Unicode string initialization in Microsoft 2000 operating system}
   \label{code:ms2000}
 \end{listing}
@@ -188,41 +84,7 @@ Verbosity, the act of explicitly writing out statements which could be functiona
 Another significant aesthetic feature of the Windows 2000 program text is its use of comments, and specifically how those comments representing the multiple, layered authorship. This particular source code is one that is written across individuals and across time, each with presumably its own writing style. Yet, writing source code within a formal organization often implies the adoption of coding styles, with the intent that \emph{all code in any code-base should look like a single person typed it, no matter how many people contributed} \citep{waldron_idiomatic_2020}. For instance, the excerpt in \ref{code:buffer_c} from \lstinline{jdhuff.c} is a example of such overlapping of styles:
 
 \begin{listing}
-  \begin{minted}[fontsize=\footnotesize]{c}
-  no_more_data:
-  // There should be enough bits still left in the data segment;
-  // if so, just break out of the outer while loop.
-  if (bits_left >= nbits)
-  break;
-  /* Uh-oh.  Report corrupted data to user and stuff zeroes into
-  * the data stream, so that we can produce some kind of image.
-  * Note that this code will be repeated for each byte demanded
-  * for the rest of the segment.  We use a nonvolatile flag to ensure
-  * that only one warning message appears.
-  */
-  if (! *(state->printed_eod_ptr))
-  {
-      WARNMS(state->cinfo, JWRN_HIT_MARKER);
-      *(state->printed_eod_ptr) = TRUE;
-    }
-  c = 0;			// insert a zero byte into bit buffer
-  }
-  }
-
-  /* OK, load c into get_buffer */
-  get_buffer = (get_buffer << 8) | c;
-  bits_left += 8;
-  }
-
-  /* Unload the local registers */
-  state->next_input_byte = next_input_byte;
-  state->bytes_in_buffer = bytes_in_buffer;
-  state->get_buffer = get_buffer;
-  state->bits_left = bits_left;
-
-  return TRUE;
-  }
-  \end{minted}
+  \inputminted[fontsize=\footnotesize]{c}{./corpus/buffer.c}
   \caption{Programming styles overlapping in the source code of Microsoft 2000.}
   \label{code:buffer_c}
 \end{listing}
@@ -232,31 +94,8 @@ Here, we see different writings of comments(using \lstinline{//} and \lstinline{
 And yet, this chronological and interpersonal spread of the program text, combined with organizational practices, require the use of comments in order to maintain aesthetic and cognitive coherence in the program, if only by the use of comment headers, which locate a specific file within the greater architectural organization of the program text (see \ref{code:enum_c}).
 
 \begin{listing}
-  \begin{minted}{c}
-  /*++
-
-Copyright (c) 1996 Microsoft Corporation
-
-Module Name:
-
-    enum.c
-
-Abstract:
-
-    This module contains routines to perform device enumeration
-
-Author:
-
-    Shie-Lin Tzong (shielint) Sept. 5, 1996.
-
-Revision History:
-
-    James Cavalaris (t-jcaval) July 29, 1997.
-    Added IopProcessCriticalDeviceRoutine.
-
---*/
-\end{minted}
-  \caption{pnpenum.c}
+  \inputminted{c}{./corpus/enum.c}
+  \caption{pnpenum.c shows the traces of multiple authors collaborating on a single file over time.}
   \label{code:enum_c}
 \end{listing}
 
@@ -270,19 +109,7 @@ The Kirby source code is entirely available online, and the following snippets h
 If we look at a typical function declaration within Kirby, we found one such as the \lstinline{distinct()} setter for Kirby's database, reproduced in \ref{code:query_php}.
 
 \begin{listing}
-  \begin{minted}{php}
-  /**
-  * Enables distinct select clauses.
-  *
-  * @param bool $distinct
-  * @return \Kirby\Database\Query
-  */
- public function distinct(bool $distinct = true)
- {
-     $this->distinct = $distinct;
-     return $this;
- }
-\end{minted}
+  \inputminted{php}{./corpus/query.php}
   \caption{Query.php}
   \label{code:query_php}
 \end{listing}
@@ -292,38 +119,7 @@ Out of these 11 lines, the actual functionality of the function is focused on on
 Kirby's source code is also interestingly explicit in comments, and succint in code. Let us take, for instance, from the \lstinline{Http\\Route} class (see \ref{code:route_php}).
 
 \begin{listing}
-  \begin{minted}{php}
-/**
-* Tries to match the path with the regular expression and
-* extracts all arguments for the Route action
-*
-* @param string $pattern
-* @param string $path
-* @return array|false
-*/
-public function parse(string $pattern, string $path)
-{
-    // check for direct matches
-    if ($pattern === $path) {
-        return $this->arguments = [];
-    }
-
-    // We only need to check routes with regular expression since all others
-    // would have been able to be matched by the search for literal matches
-    // we just did before we started searching.
-    if (strpos($pattern, '(') === false) {
-        return false;
-    }
-
-    // If we have a match we'll return all results
-    // from the preg without the full first match.
-    if (preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters)) {
-        return $this->arguments = array_slice($parameters, 1);
-    }
-
-    return false;
-}
-\end{minted}
+  \inputminted{php}{./corpus/route.php}
   \caption{Route.php}
   \label{code:route_php}
 \end{listing}
@@ -335,8 +131,6 @@ Beyond expliciting inputs and outputs, the second aspect of these comments is ta
 Finally, we look at a subset of the function, the clause of the third if-statement: \lstinline{(preg_match('#^' . $this->regex($pattern) . '$#u', $path, $parameters))}. Without comments, one must realize on cognitive gymnastics and knowledge of the PHP syntax in order to render this as an extraction of all route parameters, implying the removal of the first element of the array. In this sense, then, Kirby's code for parsing an HTTP route is both verbose—in comments—and parsimonious—in code.
 
 What these aesthetic features (small number of files, short file length, short function length) imply is an immediate feeling of \emph{building blocks}. Short, graspable, (re-)usable (conceptual) blocks are made available to the developer directly, as the Kirby ecosystem, like many other open-source projects, relies on contributions from individuals who are not expected to have any other encounter with the project other than, at the bare minimum, the source code itself.
-
-\vspace{1\baselineskip}
 
 These two examples, Microsoft Windows 2000 and Kirby CMS, show particular presentations of source code—through repetition, verbosity, commenting and conciseness. These are in part tied to their socio-technical ecosystems made up of hardware, institutional practices ranging from corporate guidelines to open-source contribution, with efficiency and usability remaining at the forefront, both at the result level (the software) and at the process level (the code).
 
@@ -358,8 +152,6 @@ In the meantime, personal microcomputers came to the market and opened up this a
 In the wake of the larger free software movement, emerged its less radical counterpart, the open-source movement, as well as its more illegal counterpart, security hacking. The former is usually represented by the types of individuals depicted in mainstream news outlets when they reference hackers: programmers breaching private systems, sometimes in order to cause financial, intelligence or material harm. Security hackers, sometimes called crackers, form a community of practice of their own, with ideas of superior intelligence, subversion, adventure and stealth\footnote{For a lyrical account of this perception of the hacker ethos, see \emph{The Conscience of a Hacker}, published in Phrack Magazine: "This is our world now\dots{} the world of the electron and the switch, the beauty of the baud.  We make use of a service already existing without paying for what could be dirt-cheap if it wasn't run by profiteering gluttons, and you call us criminals.  We explore\dots{} and you call us criminals.  We seek after knowledge\dots{} and you call us criminals." \citep{mentor+++_textbackslash_1986}}. These practices nonetheless refer to the original conception of hacking—getting something done quickly, but not well—and include such a practical, efficient appoach into its own set of values and ideals, which are in turn represented in the kinds of program texts being written by members of this community of practice\footnote{Those program texts include computer viruses, worms, trojan horses and injections, amongst others.}.
 
 Meanwhile, the open-source movement took the tenets of hacking culture and adapted it to make it more compatible to the requirements of businesses. Open-source can indeed be seen as a compromise between the software industry development practices and the efficacy of free software development. Indeed, beyond the broad values of intellectual curiosity and skillful exploration, free software projects such as the Linux kernel, the Apache server or the OpenSSL project have proven to be highly efficient, and used in both commercial, non-commercial, critical and non-critical environments \citep{raymond_cathedral_2001}. Such an approach sidesteps the political and ethical values held in previous iterations of the hacker ethos in order to focus exclusively on the sharing of source code and open collaboration while remaining within an inquisitive and productive mindframe. With the advent of corporate \emph{hackathons}—short instances of intense collaboration in order to create new software, or new features on a software system—are a particularly salient example of this overlap between industry practices and hacker practices \citep{nolte_you_2018}\footnote{Along with the address of the software corporate giant Meta's headquarters: 1, Hacker Way, Menlo Park, CA 94025, U.S.A.}.
-
-\vspace{1\baselineskip}
 
 As a community of practice, hackers are programmers which, while overlapping with industry-embedded software developers, hold a set of values and ideals regarding the purpose and state of software. Whether academic hackers, amateurs, security hackers or open-source contributors, all are centered around the object of source code as a vehicle for communicating the knowledge held within the software, and the expertise necessary for writing such software, bypassing auxiliary resources like natural-language documentation. Incidentally, those political and ethical values of expertise and openness often overlap with aesthetic values informing how their code exists in its textual manifestation.
 
@@ -385,28 +177,7 @@ This sort of compulsive behaviour is also manifested in the practice of \emph{co
 
 \pagebreak
 \begin{listing}
-  \begin{minted}{cpp} 
-  #include <stdio.h>
-  #include <strings.h>
-
-  int main(void){
-    char line[1000], line2[1000];
-    char *p;
-    double mag;
-
-    while(fgets(line, sizeof(line), stdin) != NULL) {
-      strcpy(line2, line);
-      p = strtok(line, "\\t");
-      p = strtok(NULL, "\\t");
-      p = strtok(NULL, "\\t");
-      sscanf(p, "\%lf", &mag);
-      if(mag > 6) /* $3 > 6 */
-        printf("\%s", line2); 
-    }
-
-    return 0
-  }
-\end{minted}
+  \inputminted{cpp}{./corpus/select_lines.c}
   \caption{Selecting lines from an input file in C}
   \label{code:select_lines_c}
 \end{listing}
@@ -414,9 +185,7 @@ This sort of compulsive behaviour is also manifested in the practice of \emph{co
 The equivalent in AWK, a language he designed, and which he actually refers to in the comment on line 15, presumably as a heuristic as he is writing the function, is seen in \ref{code:select_lines_awk}
 
 \begin{listing}
-  \begin{minted}{bash}
-    awk '$3 > 6' data.txt
-  \end{minted}
+  \inputminted{bash}{./corpus/select_lines.sh}
   \caption{Selecting lines from an input file in AWK}
   \label{code:select_lines_awk}
 \end{listing}
@@ -424,9 +193,7 @@ The equivalent in AWK, a language he designed, and which he actually refers to i
 The difference is obvious, not just in terms of formal clarity and reduction of the surface structure, but also in terms of matching the problem domain: this obviously prints every line in which the third field is greater than 6. The AWK one-liner is more efficient, more understandable because it allows for less confusion, and is therefore more beautiful. On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for someone who doesn't have a deep knowledge of the specific language in which it is written. For instance, here is Conway's game of life implemented in one line of APL\ref{code:game_of_life}.
 
 \begin{listing}
-  \begin{minted}{apl}
-life ← {⊃1 ⍵ ∨.∧ 3 4 = +/ +⌿ ¯1 0 1 ∘.⊖ ¯1 0 1 ⌽¨ ⊂⍵}
-\end{minted}
+  \inputminted{text}{./corpus/game_of_life.apl}
   \caption{Conway's Game of Life implemented in APL}
   \label{code:game_of_life}
 \end{listing}
@@ -446,25 +213,7 @@ Another program which qualifies as beautiful hacker code, due both to its techni
 \pagebreak
 
 \begin{listing}
-  \begin{minted}{c}
-  float Q_rsqrt( float number )
-  {
-      long i;
-      float x2, y;
-      const float threehalfs = 1.5F;
-
-      x2 = number * 0.5F;
-      y  = number;
-      i  = * ( long * ) &y;    // evil floating point bit level hacking
-      i  = 0x5f3759df - ( i >> 1 );               // what the fuck? 
-      y  = * ( float * ) &i;
-      y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
-  //  y  = y * ( threehalfs - ( x2 * y * y ) );   // 2nd iteration,
-                                                // this can be removed
-
-      return y;
-  }
-\end{minted}
+  \inputminted{c}{./corpus/fast_inverse_sqrt.c}
   \caption{Inverse fast square root}
   \label{code:fast_sqrt_c}
 \end{listing}
@@ -490,25 +239,8 @@ This showing off, however, does not happen through immediate engagement with the
 Pushing the boundaries of how much can be done in how little code, here is a 256-bytes demo resulting in a minute-long music video \citep{akesson_mind_2017} on the Commodore 64. It is firsted listed as a hexademical dump by its author (see \ref{code:a_mind_is_born.hex})
 
 \begin{listing}
-  \begin{minted}{hexdump}
-0000000 0801 080d d3ff 329e 3232 0035 0000 4119
-0000010 d01c dc00 0000 d011 0be0 3310 610e f590
-0000020 0007 1fff 4114 24d5 2515 5315 6115 29d5
-0000030 0f1b 13e6 13e6 02d0 20e6 61a9 1c85 20a7
-0000040 3fe0 08f0 0c90 114e 6cd0 fffc 6da0 2284
-0000050 d784 4b4a a81c 13a5 3029 02d0 1cc6 2fe0
-0000060 11f0 02b0 02a2 10c9 09f0 298a aa03 f3b5
-0000070 0a85 ab2d b000 b711 b622 9521 a500 4b13
-0000080 aa0e f8cb cc86 0749 0b85 13a5 0f29 0fd0
-0000090 b8a9 1447 0290 1485 0729 b5aa 85f7 a012
-00000a0 b708 910d 880f f910 b7a8 9109 8803 f9d0
-00000b0 7e4c 78ea 868e 8e02 d021 4420 a2e5 bdfd
-00000c0 0802 0295 d0ca 8ef8 0315 cc4c a900 8d50
-00000d0 d011 ad58 dc04 c3a0 1c0d 48d4 044b 30a0
-00000e0 188c 71d0 e6cb 71cb 6acb 2005 58a0 d505
-00000f0 cb91 dfd0 aa2b 6202 1800 2026 2412 1013
-\end{minted}
-  \caption{A Mind is Born}
+  \inputminted{hexdump}{./corpus/a_mind_is_born.hex}
+  \caption{Actual source code of the demo A Mind is Born. Instructions are given to the computer as hexadecimal chunks.}
   \label{code:a_mind_is_born.hex}
 \end{listing}
 
@@ -547,15 +279,7 @@ At this time,Computation and computers are perceived as promising automated aids
 By the dawn of the 21st century, scientific computing had increased in the scope of its applications (extending beyond engineering and experimental, so-called "hard" sciences, to social sciences and the humanities) as well as in the time spent developing and using software \citep{prabhu_survey_2011} \citep{hannay_how_2009}, with the main programming languages used being MATLAB, C/C++ and Python. While C and C++'s use can be attributed to their historical standing, popularity amongst computer scientists, efficiency for systems programming and speed of execution, MATLAB and Python offer different perspectives. MATLAB, originally a matrix calculator from the 1970s, became popular with the academic community by providing features such as a reliable way to do floating-point arithmetic and a graphical user interface (GUI). Along with its powerful array-manipulation features, the ability to visualize large series of data and plot it on a display largely contributed to MATLAB's popularity \citep{moler_history_2020}, features shared with RStudio, a GUI to the R programming language. In \ref{code:mesh_m}, one can see in \ref{graphic:mesh-visualization} how concise the plotting of a three-dimensional plane is in MATLAB, requiring only one call to \lstinline{mesh}.
 
 \begin{listing}
-
-  \begin{minted}{matlab}
-  X = (-3:1/8:3)*ones(49,1);
-  Y = X';
-  Z = 3*(1-X).^2.*exp(-(X.^2) - (Y+1).^2) \
-  - 10*(X/5 - X.^3 - Y.^5).*exp(-X.^2-Y.^2) \
-  - 1/3*exp(-(X+1).^2 - Y.^2);
-  mesh(X,Y,Z)
-\end{minted}
+  \inputminted{matlab}{./corpus/mesh.matlab}
   \caption{Mesh.m}
   \label{code:mesh_m}
 \end{listing}
@@ -593,27 +317,7 @@ From this multifaceted heritage and academic interdisciplinarity, computer scien
 The broad difference we can see between these two conceptions of computer science is that of \emph{episteme} and \emph{techne}. On the theoretical and scientific side, computer science is concerned with the primacy of ideas, rather than of implementation. The quality of a given program is thus deduced from its formal (in the mathematical sense) properties, rather than its formal (in the aesthetic sense) properties. The first manifestations of such a theoretical focus can be found in the Information Processing Language (1956 by Allen Newell, Cliff Shaw and Herbert Simon), which was originally designed and developed to prove Bertrand Russell's \emph{Principia Mathematica}. While the IPL, as one of the very first programming languages, influenced the development of multiple subsequent languages, some later languages came to be known as logic programming languages, based on a formal logic syntax of facts, rules and clauses about a given domain and whose correctness can be easily proven (see \ref{code:prolog_sample} below for an example of the \emph{Prolog} logic programming language).
 
 \begin{listing}
-  \begin{minted}{prolog}
-% induce(E,H) <- H is inductive explanation of E
-induce(E,H):-induce(E,[],H).
-
-induce(true,H,H):-!.
-induce((A,B),H0,H):-!,
-  induce(A,H0,H1),
-  induce(B,H1,H).
-induce(A,H0,H):-
-  /* not A=true, not A=(_,_) */
-  clause(A,B),
-  induce(B,H0,H).
-induce(A,H0,H):-
-  element((A:-B),H0),     % already assumed
-  induce(B,H0,H).         % proceed with body of rule
-induce(A,H0,[(A:-B)|H]):-       % A:-B can be added to H
-  inducible((A:-B)),      % if it's inducible, and
-  not element((A:-B),H0), % if it's not already there
-  induce(B,H0,H).         % proceed with body of rule
-
-\end{minted}
+  \inputminted{prolog}{./corpus/inductive.pl}
   \caption{Prolog sample source}
   \label{code:prolog_sample}
 \end{listing}
@@ -625,22 +329,7 @@ Another programming language shares this feature of theoretical soundness faced 
 The base structural elements of LISP are not symbols, but lists (of symbols, of lists, of nothing), and they themselves act as symbols (e.g. the empty list). By manipulating those lists recursively—that it, processing something in terms of itself—Lisp highlights even further this tendency to separate computation from the problem domain, and to exhibit autotelic tendencies. This is facilitated by its atomistic and relational structure: in order to solve what it has do, it evaluates each symbol and traverses a tree-structure in order to find a terminal symbol. Building on these features of complex structures with simple elements, Willam Byrd, computer scientst at the University of Utah, describes the following lines of Scheme (a LISP dialect) as "the most beautiful program ever written" \citep{byrd_william_2017}, a Scheme interpreter written in Scheme (\ref{code:scheme_interpreter}):
 
 \begin{listing}
-  \begin{minted}{scheme}
-  (define (eval-expr env)
-  (lambda (expr env)
-    pmatch expr
-      [,x (guard (symbol? x))
-        (env x)]
-      [(lambda (,x) ,body)
-        (lambda (arg)
-          (eval-expr body (lambda (y)
-                                          (if (eq? x y)
-                                                arg
-                                                (env y)))))]
-        [(,rator ,rand)
-          ((eval-expr rator env)
-            (eval-expr rand env))]))
-\end{minted}
+  \inputminted{scheme}{./corpus/interpreter.scheme}
   \caption{Scheme interpreter written in Scheme}
   \label{code:scheme_interpreter}
 \end{listing}
@@ -672,25 +361,13 @@ This approach, halfway between science and art, is perhaps best seen in Donald K
 \emph{Structure and Interpretation of Computer Programs} is another influential academic textbook dealing not just with computation as a an autotelic phenomenon, in which the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}" \citep{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompanies it, the aesthetic standard in this more engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms} \citep{moss_beautifulalgorithms_2022}. For instance, \ref{code:bubble_sort_julia} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, resulting in an easier grasping of the concept at hand, rather than being distracted by the idiosyncracy of the implementation. The simplicity of scientific algorithms is expressed even further in \ref{code:nearest_neighbor_julia} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
 
 \begin{listing}
-  \begin{minted}{julia}
-function bubble_sort!(X)
-for i in 1:length(X), j in 1:length(X)-i
-    if X[j] > X[j+1]
-        (X[j+1], X[j]) = (X[j], X[j+1])
-    end
-end
-end
-\end{minted}
+  \inputminted{julia}{./corpus/bubblesort.jl}
   \caption{Bubble Sort implementation in Julia}
   \label{code:bubble_sort_julia}
 \end{listing}
 
 \begin{listing}
-  \begin{minted}{julia}
-function nearest_neighbor(x', phi, D, dist)
-  D[argmin([dist(phi(x), phi(x')) for (x,y) in D])][end]
-end
-\end{minted}
+  \inputminted{julia}{./corpus/nearest_neighbor.jl}
   \caption{Nearest neighbor implementation in Julia}
   \label{code:nearest_neighbor_julia}
 \end{listing}
@@ -731,11 +408,7 @@ In their different manifestations, code poems make the boundary between computer
 The community of programmers writing in Perl, \emph{perlmonks}\footnote{See their website: \url{https://perlmonks.org/}, with the spiritual, devoted and communal undertones that such a name implies.} has been one of the most vibrant and productive communities when it comes to code poetry. This particular use of Perl started in 1990, when the language creator Larry Wall shared some of the poems written in the language, and it gained further exposition through the work of Shannon Hopkins \citep{hopkins_camels_1992}. The first Perl poem is considered to have been written by Wall in 1990, reproduced in \ref{code:japh_perl}.
 
 \begin{listing}
-  \begin{minted}{perl}
-  print STDOUT q
-  Just another Perl hacker,
-  unless $spring
-\end{minted}
+  \inputminted{perl}{./corpus/japh.pl}
   \caption{Just Another Perl Hacker, japh.pl}
   \label{code:japh_perl}
 \end{listing}
@@ -755,36 +428,7 @@ The poem \emph{Black Perl} in \ref{code:black_perl}, submitted anonymously, is a
 
 
 \begin{listing}
-  \begin{minted}{perl}
-    #!/usr/bin perl
-    no warnings;
-    
-    BEFOREHAND: close door, each window & exit; wait until time.
-      open spellbook, study, read (scan, $elect, tell us);
-    write it, print the hex while each watches,
-      reverse its, length, write, again;
-    kill spiders, pop them, chop, split, kill them.
-      unlink arms, shift, wait & listen (listening, wait),
-      sort the flock (then, warn "the goats" & kill "the sheep");
-    kill them, dump qualms, shift moralities,
-      values aside, each one;
-    die sheep? die to : reverse { the => system
-      ( you accept (reject, respect) ) };
-    next step,
-      kill `the next sacrifice`, each sacrifice,
-      wait, redo ritual until "all the spirits are pleased";
-    do { it => "as they say" }.
-      do { it => (*everyone***must***participate***in***forbidden**s*e*x*)
-    + }.
-      return last victim; package body;
-    exit crypt (time, times & "half a time") & close it,
-      select (quickly) & warn your (next victim);
-    AFTERWARDS: tell nobody.
-      wait, wait until time;
-    wait until next year, next decade;
-    sleep, sleep, die yourself,
-      die @last 
-  \end{minted}
+  \inputminted{perl}{./corpus/black_perl.pl}
   \caption{lBlack Perl, Anonymous, 1990, updated by kck, 2017}
   \label{code:black_perl}
 \end{listing}
@@ -796,16 +440,7 @@ Following in the footsteps of the \emph{perlmonks}, additional communities aroun
 Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969\footnote{Hamilton et. al., 1969, retrieved from https://github.com/chrislgarry/Apollo-11} in Assembly. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{See also: "Crank that wheel", "Burn Baby Burn"}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \ref{code:numero_mysterioso_asm}.
 
 \begin{listing}
-  \begin{minted}{ca65}
-  STODL  CG
-  TTF/8
-  DMP*  VXSC
-  GAINBRAK,1  # NUMERO MYSTERIOSO
-  ANGTERM
-  VAD
-  LAND
-  VSU	RTB
-  \end{minted}
+  \inputminted{ca65}{./corpus/numero_mysterioso.asm}
   \caption{AGC source code for the Lunar Landing Guidance Equation, 1969}
   \label{code:numero_mysterioso_asm}
 \end{listing}
@@ -817,28 +452,7 @@ At the turn of the 1980s, following the transition to programming from an annex 
 The Obfuscated C Code Contest\footnote{\url{https://www.ioccc.org}}, starting in 1984, is the most popular and oldest organized production of such code, in which programmers submit code that is functional and visually meaningful beyond the exclusive standards of well-formatted code. If the source code's two meanings of a computer poem was made readily available to interpretation, and if such meanings existed in parallel in the comments of the AGC routines, pointing at the overlay of computer-related semantics (e.g. line numbers) and human-related semantics (e.g. a reference to the biblical number of the beast, 666), obfuscated code is a first foray into closely intertwining these separate meanings in the source code itself, making completely transparent, or completely opaque what the code does just by glancing at it.
 
 \begin{listing}
-  \begin{minted}{c}
-    #define _ -F<00||--F-OO--;
-int F=00,OO=00;main(){F_OO();printf("%1.3f\n",4.*-F/OO/OO);}F_OO()
-{
-            _-_-_-_
-       _-_-_-_-_-_-_-_-_
-    _-_-_-_-_-_-_-_-_-_-_-_
-  _-_-_-_-_-_-_-_-_-_-_-_-_-_
- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
- _-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-  _-_-_-_-_-_-_-_-_-_-_-_-_-_
-    _-_-_-_-_-_-_-_-_-_-_-_
-        _-_-_-_-_-_-_-_
-            _-_-_-_
-}
-  \end{minted}
+  \inputminted{c}{./corpus/circle.c}
   \caption{westley.c, entry to the 1988 IOCCC}
   \label{code:circle_c}
 \end{listing}
@@ -924,18 +538,7 @@ In another ACM publication, Kristiina Karvonen argues for simplicity not just as
 Precisely, simplicity is correlated with clarity (of meaning); if the former refers mainly to the syntactic component (fewer tokens), it enables the non-obfuscated framing of the ideas at play. One example is given in \ref{code:clearer_method_c} by Dave Bush in a post titled  \emph{15 Ways to Write Beautiful Code}.
 
 \begin{listing}
-  \begin{minted}{c}
-  void SomeMethod(){
-    if(x != y){
-        //-- stuff
-    }
-}
-
-void SomeClearerMethod(){
-    if(x == y) return;
-    //-- do stuff
-}
-\end{minted}
+  \inputminted{c}{./corpus/clearer_method.c}
   \caption{Example of clarity differences between two methods.}
   \label{code:clearer_method_c}
 \end{listing}
@@ -945,48 +548,13 @@ Here, the strive for simplicity leads to removing the brackets, and flipping the
 As a corollary to clarity stands obfuscation. It is the act, either intentional or un-intentional, to complicate the understanding of what a program does by leading the reader astray through a combination of syntactic techniques, a process we have already seen in the works of the IOCCC above. In its most widely applied sense, obfuscation is used for practical production purposes: reducing the size of code, and preventing the leak of proprietary information regarding how a system behaves. For instance, the JavaScript source code in \ref{code:home_js} is obfuscated through a process called \emph{minification} into the source code in \ref{code:home_minified_js}
 
 \begin{listing}
-  \begin{minted}{js}
-import { ref, onMounted, reactive } from 'vue';
-
-const msg = ref("")
-const HOST = import.meta.env.DEV ? "http://localhost:3046" : ""
-const syllabi = new Array<SyllabusType>()
-
-let start = () => {
-    window.location.href = '/cartridge.html'
-}
-
-onMounted(() => {
-    fetch(`${HOST}/syllabi/`,
-        {
-            method: 'GET'
-        })
-        .then(res => {
-            return res.json()
-        })
-        .then(data => {
-            Object.assign(syllabi, JSON.parse(data))
-            console.log(syllabi);
-            if (syllabi.length == 0)
-                msg.value = "No syllabi :("
-            else
-                msg.value = `There are ${syllabi.length} syllabi.`
-
-        })
-        .catch(err => {
-            console.error(err)
-            msg.value = "Network error :|"
-        })
-})
-\end{minted}
+  \inputminted{js}{./corpus/home.js}
   \caption{home.js (before minification)}
   \label{code:home_js}
 \end{listing}
 
 \begin{listing}
-  \begin{minted}{js}
-  import{_ as p,g as f,o as l,c as n,a as c,h as e,t as r,b as u,i as b,u as _,F as y,H as g,e as w}from"./Header.js";const H={class:"container p-3"},N=e("h1",null,"Home",-1),k={class:"syllabi"},x=["href"],B={class:"cta"},F=m({setup(S){const s=v(""),d="http://localhost:3046",o=new Array;let h=()=>{window.location.href="/cartridge.html"};return f(()=>{fetch(`${d}/syllabi/`,{method:"GET"}).then(t=>t.json()).then(t=>{Object.assign(o,JSON.parse(t)),console.log(o),o.length==0?s.value="No syllabi :(":s.value=`There are ${o.length} syllabi.`}).catch(t=>{console.error(t),s.value="Network error :|"})}),(t,i)=>(l(),n(u,null,[c(g),e("main",H,[N,e("div",k,[e("div",null,r(s.value),1),e("ul",null,[(l(!0),n(u,null,b(_(o),a=>(l(),n("li",null,[e("div",null,[e("a",{href:"/syllabi/"+a.ID},r(a.title),9,x)]),e("div",null,r(a.description),1)]))),256))])]),e("div",B,[e("button",{id:"cta-upload",class:"btn btn-primary mb-4 cc-btn",onClick:i[0]||(i[0]=a=>_(h)())},"Upload yours!")])]),c(y)],64))}});var O=p(F,[["__file","/home/pierre/code/commonsyllabi/viewer/www/src/Home.vue"]]);w(O).mount("#app");
-\end{minted}
+  \inputminted{js}{./corpus/home_minified.js}
   \caption{home.js (after minification)}
   \label{code:home_minified_js}
 \end{listing}
@@ -1010,10 +578,7 @@ This answer, posted on the software engineering \emph{Stack Exchange} forum, in 
 Cleverness is often found, and sometimes derided, in examples of code written by hackers, since it unsettles this balance between precision and generality. Clever code would tend towards exploiting particularities of knowledge of the medium (the code) rather than the goal (the problem). Hillel Wayne presents the snippet of Python code in \ref{code:is_unique_python} as an example of bad clever code:
 
 \begin{listing}
-  \begin{minted}{python}
-def is_unique(_list):
-  return len(set(_list)) == len(_list)
-\end{minted}
+  \inputminted{python}{./corpus/unique.py}
   \caption{Method to check for the uniqueness of array elements}
   \label{code:is_unique_python}
 \end{listing}
@@ -1025,9 +590,7 @@ Hillel elaborates on the difference between "bad" clever code\footnote{See, for 
 Meanwhile, cleverness is a valued attribute in the context of hacker code, putting more emphasis on the technical solution than on the problem domain, as we have seen above. A salient is example was the 1994 \lstinline{smr.c} entry to the IOCCC, which aimed at being the smallest self-reproducing program \citep{kanakarakis_international_2022}. An exact reproduction of the source code can be found in \ref{code:smr_c}
 
 \begin{listing}
-  \begin{minted}{c}
-
-\end{minted}
+\inputminted{c}{./corpus/smr.c}
   \caption{smr.c}
   \label{code:smr_c}
 \end{listing}
@@ -1065,12 +628,7 @@ Such a definition relies heavily on the sensual component of elegance: while an 
 Once again connecting simplicity (under the guise of necessity and sufficiency), the perception of elegance is also related to a subjective feeling of adequacy, of fitting. Including some of the definitions of simplicity we have seen so far, Paul DiLascia, writing in the Microsoft Developer Network Magazine, illustrates his conception of elegance—as a combination of simplicity, efficiency and brilliance—with recursion \citep{dilascia_end_2019}, as seen in \ref{code:factorial_c}.
 
 \begin{listing}
-  \begin{minted}{c}
-int factorial(int n)
-{
-  return n==0 ? 1 : n * factorial(n-1);
-}
-\end{minted}
+  \inputminted{c}{./corpus/factorial.c}
   \caption{Use of recursivity in the computation of a factorial}
   \label{code:factorial_c}
 \end{listing}
@@ -1078,34 +636,8 @@ int factorial(int n)
 Recursion, or the technique of defining something in terms of itself, is a positively valued feature of programming \citep{abelson_structure_1979}, which we have seen an example of in \ref{code:scheme_interpreter}. In so doing, it minimizes the number of elements at play and constrains the problem domain into a smaller set of moveable pieces. Another example, provided in the same \emph{Stackexchange} discussion is the \lstinline{quicksort} algorithm, which can be implemented recursively or iteratively, with the former being significantly shorter (see \ref{code:recursion_iteration_csharp})
 
 \begin{listing}
-  \begin{minted}{csharp}
-  public static void recursiveQsort(int[] arr,Integer start, Integer end) { 
-    if (end - start < 2) return; //stop clause
-    int p = start + ((end-start)/2);
-    p = partition(arr,p,start,end);
-    recursiveQsort(arr, start, p);
-    recursiveQsort(arr, p+1, end);
-}
+  \inputminted{csharp}{./corpus/recursive_iteration.cs}
 
-public static void iterativeQsort(int[] arr) { 
-    Stack<Integer> stack = new Stack<Integer>();
-    stack.push(0);
-    stack.push(arr.length);
-    while (!stack.isEmpty()) {
-        int end = stack.pop();
-        int start = stack.pop();
-        if (end - start < 2) continue;
-        int p = start + ((end-start)/2);
-        p = partition(arr,p,start,end);
-
-        stack.push(p+1);
-        stack.push(end);
-
-        stack.push(start);
-        stack.push(p);
-    }
-}
-\end{minted}
   \caption{Comparison two functions, one using recursion, the other one using iteration, https://stackoverflow.com/a/12553314/4665412}
   \label{code:recursion_iteration_csharp}
 \end{listing}
@@ -1121,27 +653,13 @@ A complementary approach to understand what programmers mean when they talk abou
 One of those hints comes from satirical accounts of how to write bad code. For instance, Green's post on \emph{ How To Write Unmaintainable Code} suggests new kinds of obfuscation, such as double-naming in \ref{code:green_unmaintainable} or semantic interactions in \ref{code:green_unmaintainable_2}. The core ideas presented here revolve around creating as much friction to understanding as possible, by making it "as hard as possible for [the reader] to find the code he is looking for" and "as awkward as possible for [the reader] to safely ignore anything." \citep{green_how_2006}.
 
 \begin{listing}
-  \begin{minted}{python}
-    openParen = (slash + asterix) / equals; 
-  \end{minted}
+  \inputminted{python}{./corpus/unmaintainable.py}
   \caption{Choose variable names that masquerade as mathematical operators}
   \label{code:green_unmaintainable}
 \end{listing}
 
 \begin{listing}
-  \begin{minted}{c}
-for(j=0; j<array_len; j+ =8)
-{
-  total += array[j+0 ];
-  total += array[j+1 ];
-  total += array[j+2 ]; /* Main body of
-  total += array[j+3]; * loop is unrolled
-  total += array[j+4]; * for greater speed.
-  total += array[j+5]; */
-  total += array[j+6 ];
-  total += array[j+7 ];
-} 
-\end{minted}
+\inputminted{c}{./corpus/unmaintainable_2.c}
   \caption{Code That Masquerades As Comments and Vice Versa}
   \label{code:green_unmaintainable_2}
 \end{listing}
@@ -1258,17 +776,13 @@ In the former's foreword, Jamie Allen develops further this ability to express o
 Still, machine semantics are nonetheless considered as an essential device in writing code poetry, and exploring concepts that are not easily grasped in natural languages—e.g. hoisting or destructuring assignment. Additionally, the contrast between the source representation of the poem and its execution can add to the poetic tension, as we see in Nick Montfort's \emph{All The Names of God} (2010) (source in \ref{code:all_the_names_of_god}, and output in \ref{output:all_the_names_of_god}).
 
 \begin{listing}
-  \begin{minted}{perl}
-print"a"x++$...$"x$.,$,=_;redo
-\end{minted}
+\inputminted{perl}{./corpus/all_the_names_of_god.pl}
   \caption{All The Names of God, Nick Montfort, 2010, source}
   \label{code:all_the_names_of_god}
 \end{listing}
 
 \begin{listing}
-  \begin{minted}[breaklines=true,breakanywhere]{text}
-  _atk_atl_atm_atn_ato_atp_atq_atr_ats_att_atu_atv_atw_atx_aty_atz_aua_aub_auc_aud_aue_auf_aug_auh_aui_auj_auk_aul_aum_aun_auo_aup_auq_aur_aus_aut_auu_auv_auw_aux_auy_auz_ava_avb_avc_avd_ave_avf_avg_avh_avi_avj_avk_avl_avm_avn_avo_avp_avq_avr_avs_avt_avu_avv_avw_avx_avy_avz_awa_awb_awc_awd_awe_awf_awg_awh_awi_awj_awk_awl_awm_awn_awo_awp_awq_awr_aws_awt_awu_awv_aww_awx_awy_awz_axa_axb_axc_axd_axe_axf_axg_axh_axi_axj_axk_axl_axm_axn_axo_axp_axq_axr_axs_axt_axu_axv_axw_axx_axy_axz_aya_ayb_ayc_ayd_aye_ayf_ayg_ayh_ayi_ayj_ayk_ayl_aym_ayn_ayo_ayp_ayq_ayr_ays_ayt_ayu_ayv_ayw_ayx_ayy_ayz_aza_azb_azc_azd_aze_azf_azg_azh_azi_azj_azk_azl_azm_azn_azo_azp_azq_azr_azs_azt_azu_azv_azw_azx_azy_azz_baa_bab_bac_bad_bae_baf_bag_bah_bai_baj_bak_bal_bam_ban_bao_bap_baq_bar_bas_bat_bau_bav_baw_bax_bay_baz_bba_bbb_bbc_bbd_bbe_bbf_bbg_bbh_bbi_bbj_bbk_bbl_bbm_bbn_bbo_bbp_bbq_bbr_bbs_bbt_bbu_bbv_bbw_bbx_bby_bbz_bca_bcb_bcc_bcd_bce_bcf_bcg_bch_bci_bcj_bck_bcl_bcm_bcn_bco_bcp_bcq_bcr_bcs_bct_bcu_bcv_bcw_bcx_bcy_bcz_bda_bdb_bdc_bdd_bde_bdf_bdg_bdh_bdi_bdj_bdk_bdl_bdm_bdn_bdo_bdp_bdq_bdr_bds_bdt_bdu_bdv_bdw_bdx_bdy_bdz_bea_beb_bec_bed_bee_bef_beg_beh_bei_bej_bek_bel_bem_ben_beo_bep_beq_ber_bes_bet_beu_bev_bew_bex_bey_bez_bfa_bfb_bfc_bfd_bfe_bff_bfg_bfh_bfi_bfj_bfk_bfl_bfm_bfn_bfo_bfp_bfq_bfr_bfs_bft_bfu_bfv_bfw_bfx_bfy_bfz_bga_bgb_bgc_bgd_bge_bgf_bgg_bgh_bgi_bgj_bgk_bgl_bgm_bgn_bgo_bgp_bgq_bgr_bgs_bgt_bgu_bgv_bgw_bgx_bgy_bgz_bha_bhb_bhc_bhd_bhe_bhf_bhg_bhh_bhi_bhj_bhk_bhl_bhm_bhn_bho_bhp_bhq_bhr_bhs_bht_bhu_bhv_bhw_bhx_bhy_bhz_bia_bib_bic_bid_bie_bif_big_bih_bii_bij_bik_bil_bim_bin_bio_bip_biq_bir_bis_bit_biu_biv_biw_bix_biy_biz_bja_bjb_bjc_bjd_bje_bjf_bjg_bjh_bji_bjj_bjk_bjl_bjm_bjn_bjo_bjp_
-  \end{minted}
+  \inputminted[breaklines=true,breakanywhere]{text}{./corpus/all_the_names_of_god.txt}
   \caption{All The Names of God, Nick Montfort, 2010, Selected output}
   \label{output:all_the_names_of_god}
 \end{listing}

@@ -1,0 +1,1 @@
+openParen = (slash + asterix) / equals; 
