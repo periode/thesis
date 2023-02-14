@@ -16,6 +16,10 @@ faire une connexion entre cognition et constructivisme! Seymour Papert, Scratch,
 
 add something about language communities (pythonistas, gophers, rustlings, etc.)
 
+- [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
+> There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
+
+
 ## meeting with nick - 28.12.2022
 
 - for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -> __INTERTWINE!__
