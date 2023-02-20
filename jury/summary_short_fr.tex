@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[hyphens]{url}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{authblk}
+\usepackage[bottom]{footmisc}
+\usepackage[]{natbib}
+
+\graphicspath{ {./images/} }
+
+\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\setmainfont{Bespoke Serif}
+\setmonofont{IBM Plex Mono}
+\linespread{1.50}
+\sloppy
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single
+}
+
+\begin{document}
+\title{Le rôle de l'esthétique dans les compréhensions du code source}
+\author{Pierre Depaz\\sous la direction d'Alexandre Gefen (Paris-3)\\et Nick Montfort (MIT)}
+\affil{ED120 - THALIM}
+\date{Février 2023}
+\maketitle
+
+\section{Introduction}
+
+Si l'expressivité fonctionnelle d'un code source implémentant un algorithme est indéniable, l'expressivité artistique d'un texte de code source demeure élusive. Quelle est donc la place de l'esthétique, d'une manifestation formelle sensuellement plaisante, dans l'écriture ou la lecture du code source? Le code source, basé sur un système syntaxique similaire au language naturel, se révèle être un système de communication aussi bien d'humain à humain que d'humain à machine \citep{abelson_structure_1979}.
+
+Se pose donc la question d'un texte dont les manifestations formelles sont vouées à disparaître, et dont la lecture n'est qu'un processus collatéral de son exécution. La problématique principale de ce projet de recherche est donc celle du \emph{rôle de l'esthétique dans les compréhensions du code sources}. Il s'agit tout d'abord de mettre à jour les propriétés esthétiques propres au code source, et d'identifier comment celles-ci permettent de faire sens, et qu'est-ce qui les justifie. En plus d'une approche empirique des codes sources en eux-mêmes, il s'agit de mettre à jour de quelles manières ces propriétés sont reliées à d'autres domaines de créations mobilisés par les programmeurs, notamment au domaine de la littérature, de l'architecture, des mathématiques et de l'ingénierie. En examinant ces relations, cette thèse s'inscrit donc dans un travail de recherche sur la dimension cognitive du phénomène esthétique.
+
+D'une part, la littérature en informatique et ingénierie prend en compte l'évidence de l'existence d'une esthétique du code source, du point de vue la productivité de ceux et celles qui écrivent du code, et d'un point de vue cognitif de la compréhension des bases de code \citep{oram_beautiful_2007,cox_programming_2009,gabriel_mob_2001,martin_clean_2008,detienne_software_2012,weinberg_psychology_1998}. D'autre part, les recherches en sciences humaines traitent de l'interaction entre esthétique et code, tout en restant majoritairement attachées à une conception abstraite et désincarnée du "code", élaborant une esthétique du digital sans pour autant rentrer dans les détails des codes sources eux-mêmes \citep{cramer_exe_2019,hayles_my_2010,mackenzie_cutting_2006,levy_programmation_1992}. Il existe cependant un certain nombres d'ouvrages de sciences humaines approchant la question matérielle du code de manière directe, que ce soit au niveau culturel \citep{montfort_10_2014}, politique \citep{cox_speaking_2013} ou sociologique \citep{paloque-berges_poetique_2009}.
+
+\section{Méthodologie}
+
+L'approche principale de ce projet est empirique. Il s'agit d'examiner les codes sources eux-mêmes, ainsi que les discours de ceux et celles qui les écrivent et les lisent. Pour cela, je m'appuie sur les travaux de Kintsch et van Dijk et leurs études des stratégies de compréhension du discours \citep{kintsch_model_1978}, l'approche métaphorique étant ici considérée comme une stratégie de compréhension.
+
+Cette approche empirique de cette thèse a fait émerger une variété d'individus écrivant et lisant du code, que j'ai regroupé en quatre catégories \citep{hayes_cultures_2017}, aux frontières néanmoins poreuses. Les \emph{développeurs} dans un contexte économique collaboratif, à but fonctionel et soutenable à long-terme. Les \emph{artistes} écrivants du code dans un cadre expressif et artistique, tels que des \emph{code poems}, principalement destinés à un public d'humains. Les \emph{hackers} se focalisant sur des solutions technique uniques, idiosyncratiques et hautement contextuelles. Enfin, les \emph{académiques} sont les individus qui écrivent du code afin d'illustrer des concepts de computation, représentant des abstractions plutôt que des usages concrets.
+
+La constitution du corpus de cette recherche s'est faite principalement par la consultation de ressources en ligne (e.g. GitHub, BitBucket, blogs ou forums e.g. StackOverflow, Quora). Cette constitution du corpus inclue ces sources primaires (le code en soi), et des sources secondaires (le commentaire par un auteur, ou par un public, justifiant de l'aspect esthétique d'un code présenté).
+
+Enfin, cette examination se fait à travers un cadre théorique partant de la philosophie esthétique et de la littérature afin de définir mon utilisation du terme \emph{esthétique}. D'un point de vue littéraire, je m'appuie sur les travaux de Gérard Genette et sa distinction entre fiction et diction \citep{genette_fiction_1993}, considérant l'esthétique du code comme sa diction, tandis que la poétique serait sa fiction. Entre littérature, philosophie et sciences cognitives se trouvent les oeuvres de Paul Ricoeur \citep{ricoeur_rule_2003} et de George Lakoff \citep{lakoff_metaphors_1980}, reliant composition verbale et évocation d'images mentales. Enfin, cette manifestation en surface est reprise par le philosophe de l'art Nelson Goodman dans son analyse des languages de l'art \citep{goodman_languages_1976}, et notamment dans son exploration entre systèmes syntactiques et communication, ainsi que son approche scientifique des phénomènes artistiques.
+
+Les travaux sur la métaphore de Ricoeur et Lakoff permettent aussi d'identifier des domaines adjacents mobilisés par les programmeurs pour justifier de leurs jugements esthétiques. C'est en étudiant les zones de contact de ces domaines qu'il est possible d'identifier les aspects spécifiques du code source.
+
+\section{Développement}
+
+Premièrement, il n'y a pas "un" code source, abstrait et désincarné, mais bien une multiplicité de codes sources, existant au sein de pratiques et de groups différents. Ces codes sources possèdent tous une possibilité de manifestation esthétique, manifestations soumise à la manifestation et au transfert de \emph{connaissances}. En ce que le code source possède tant un son aspect prescriptif (ce que le code \emph{doit} faire) qu'un aspect effectif (ce que le code \emph{fait}), les esthétiques du code source peuvent se décliner le long de cette axe, avec les poètes et les académiques se concentrant sur l'aspect prescriptif, évoquant des concepts à travers la machine, et les hackeurs se concentrant sur l'aspect effectif, évoquant les concepts de la machine.
+
+Pour communiquer l'intention du programme à travers son implémentation textuelle et en rapport avec son domaine d'activité, les programmeurs disposent de différents possibilités. Il est possible de développer une certaine du problème vers à travers divers niveaux de métaphores linguistiques (rhétorique procédurelle \citep{bogost_rhetoric_2008}, double-codage \citep{cox_speaking_2013}, double-signification \citep{paloque-berges_poetique_2009}) par un choix précis de vocabulaire. Le code est donc ici une double sorte de langue: langue machinique et langue humaine dont les tensions syntactiques peuvent créer une richesse sémantique.
+
+Ensuite, ces mécanismes linguistiques sont complémentés par des choix de structures et de syntaxe faisant appel à des domaines d'architecture et d'ingénierie \citep{gabriel_patterns_1998,schummer_aesthetic_2009}, qui permettent alors de mieux appréhender une exécution du code source—exécution dont la vitesse à laquelle elle se produit la rend incompréhensible pour des humains. L'esthétique du code source permet alors de représenter les espaces d'évolution des flux d'informations lors de l'exécution d'un programme.
+
+Finalement, ces standards esthétiques se regroupent autour de la notion d'élégance—c'est-à-dire de l'utilisation d'une syntaxe minimale pour une expressivité maximale. Particulièrement présente dans les groupes de hackeurs et des académiques, celle-ci se décline aussi le long d'un axe machine-concept. Les hackeurs ont tendance à n'utiliser que ce qui est nécéssaire pour effectuer une action particulière, bien visible dans les concours de \emph{demoscenes} \citep{kudra_aoc_2020}, tandis que les académiques vont témoigner de la même approche, mais pour communiquer des concepts fondamentaux de la science informatique, découplée de la machine spécifique qui exécute le programme en question.
+
+En fin de compte, nous avons montré que les représentations métaphoriques du code, représentations du code comme language, comme architecture, et comme matériau, se retrouvent dans l'expression d'une conception d'un espace sémantique dynamique. Cette conception spatiale infuse donc les propriétés esthétiques propres du code, en ce que la syntaxe et la structure du code source se concentrent principalement à la description et à la navigation d'espaces conceptuels, même si les différents contextes socio-techniques dans lesquels ces codes sources sont écrits vont eux-mêmes moduler la nature de ces espaces.
+
+\pagebreak
+
+\bibliographystyle{../redaction/apa-good.bst}
+\bibliography{../redaction/thesis.bib}
+\end{document}
