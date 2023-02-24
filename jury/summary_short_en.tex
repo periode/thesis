@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[hyphens]{url}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{authblk}
+\usepackage[bottom]{footmisc}
+\usepackage[]{natbib}
+
+\graphicspath{ {./images/} }
+
+\defaultfontfeatures{Mapping=tex-text,Scale=1.00}
+\setmainfont{Bespoke Serif}
+\setmonofont{IBM Plex Mono}
+\linespread{1.50}
+\sloppy
+
+\lstset{
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single
+}
+
+\begin{document}
+\title{The role of aesthetics in the understandings of source}
+\author{Pierre Depaz\\under the direction of Alexandre Gefen (Paris-3)\\and Nick Montfort (MIT)}
+\affil{ED120 - THALIM}
+\date{February 2023}
+\maketitle
+
+\section{Introduction}
+
+While the functional expressiveness and aesthetics of executed code is undeniable, the artistic expressiveness of a source code text remains elusive. This doctoral thesis therefore inquires into the place of aesthetics, of a sensually pleasing formal manifestation, in the writing and reading of source code. The source code, based on a syntactic system similar to the natural language, reveals itself to be a system of communication as well from human to human as from human to machine.
+
+This raises the question of a text whose formal manifestations are destined to disappear, and whose reading is only a collateral process of its execution. The main research question of this project is thus that of the \emph{role of the aesthetics in the comprehensions of the source code}. This entails uncovering the aesthetic properties specific to source code, and identifying how these properties enable sense-making, and what justifies them. In addition to an empirical approach of the source codes themselves, it is also a matter of uncovering the ways in which these properties are related to other fields of creation mobilized by the programmers, notably to the fields of literature, architecture, mathematics and engineering. By examining these relationships, this thesis is thus part of a research work on the cognitive dimension of the aesthetic phenomenon within the specific medium of source code.
+
+On the one hand, the literature in computer science and engineering does take into account the existence of an aesthetic of source code, from the point of view of the productivity of those who write code, and from the cognitive point of view of those who read and need to understand code bases {oram_beautiful_2007,cox_programming_2009,gabriel_mob_2001,martin_clean_2008,detienne_software_2012,weinberg_psychology_1998}. On the other hand, research in the humanities deals with the interaction between aesthetics and code, while remaining mostly attached to an abstract and disembodied conception of "code", elaborating an aesthetics of digital without going into the details of the source code texts themselves \citep{cramer_exe_2019,hayles_my_2010,mackenzie_cutting_2006,levy_programming_1992}. There are however a certain number of works of humanities approaching more directly the material question of the code, that it is at the cultural level \citep{montfort_10_2014}, political \citep{cox_speaking_2013} or sociological \citep{paloque-berges_poetique_2009}.
+
+\section{Methodology}
+
+The main approach of this project is empirical. It consists in examining the source codes themselves, as well as the discourses of those who write and read them. For this, I rely on the work of Kintsch and van Dijk and their studies of discourse comprehension strategies, with a particular attention being paid to the metaphorical approach as a comprehension strategy.
+
+This empirical approach to this thesis has brought forth a variety of code-writing and code-reading individuals, which I have grouped into four categories \citep{hayes_cultures_2017}, with nonetheless porous boundaries. Developers in a collaborative economic context, with a functional goal and sustainable in the long term; artists writing code in an expressive and artistic context, such as \emph{code poems}, mainly intended for a human audience. Hackers focus on unique, idiosyncratic and highly contextual technical solutions. Finally, academics are individuals who write code to illustrate computational concepts, representing abstractions rather than concrete uses.
+
+The constitution of this corpus was done mainly by consulting online resources (e.g. GitHub, BitBucket, blogs or forums e.g. StackOverflow, Quora) and includes these primary sources (the code itself), and secondary sources (the commentary by an author, or by a public, justifying the aesthetic aspect of a presented code).
+
+Finally, the analysis is done through a theoretical framework starting from aesthetic philosophy and literature in order to define my use of the term \emph{aesthetic}. From a literary point of view, I rely on Gérard Genette's work and his distinction between fiction and diction, considering the aesthetics of the code as its diction, while the poetics would be its fiction. Between literature, philosophy and cognitive sciences are the works of Paul Ricoeur \citep{ricoeur_rule_2003} and George Lakoff \citep{lakoff_metaphors_1980}, linking verbal composition and evocation of mental images. Finally, the connection between understanding and surface manifestation of a work is taken up by the art philosopher Nelson Goodman in his analysis of the languages of art \citep{goodman_languages_1976}, and notably in his exploration between syntactic systems and communication, as well as his scientific approach of the artistic phenomena.
+
+Ricoeur and Lakoff's work on metaphor also makes it possible to productively include adjacent areas mobilized by programmers to justify their aesthetic judgments. It is by studying the contact zones of these domains that it is possible to identify the specific aspects of the source code.
+
+\section{Development}
+
+There is not "one" source code, abstract and disembodied, but a multiplicity of source codes, existing within different practices and groups. These source codes all possess a possibility of aesthetic manifestation, manifestations subjected to the manifestation and the transfer of knowledge. Since source code possesses both a prescriptive aspect (what the code \emph{should} do) and an effective aspect (what the code \emph{does}), the aesthetics of the source code are spread along this axis, with poets and academics focusing on the prescriptive aspect, evoking concepts through the machine, and hackers focusing on the effective aspect, evoking concepts from the machine, while deveopers focus on representing the problem-domain and its computational processing.
+
+To communicate the intention of the program through its textual implementation and in relation to its field of activity, programmers emply different techniques. It is possible to develop some representation of the problem through various levels of linguistic metaphors (procedural rhetoric \citep{bogost_rhetoric_2008}, double-coding \citep{cox_speaking_2013}, double-significance \citep{paloque-berges_poetique_2009}) and a precise choice of vocabulary. These techniques are defined by the fact that source code is a double kind of language: machine language and human language whose syntactic tensions can create a semantic richness.
+
+Then, these linguistic mechanisms are complemented by choices of structures and syntax calling upon fields of architecture and engineering {gabriel_patterns_1998,schummer_aesthetic_2009}, which in turn make it possible to better apprehend an execution of the source code-an execution whose speed makes it initially incomprehensible to humans. The aesthetics of the source code then allows to represent in a condensed manner the spaces of evolution of the information flows during the execution of a program.
+
+These aesthetic standards are all grouped around the notion of elegance-that is, the use of a minimal syntax for maximum expressiveness. Particularly present in groups of hackers and academics, this is also declined along a machine-concept axis. Hackers tend to use only what is necessary to perform a particular action, well visible in the competitions of \emph{demoscenes} \citep{kudra_aoc_2020}, while academics will testify of the same approach, but to communicate fundamental concepts of computer science, decoupled from the specific machine that runs the program in question.
+
+Ultimately, we have shown that metaphorical representations of code, representations of code as language, as architecture, and as material, are found in the expression of a dynamic semantic space. This spatial conception thus infuses the aesthetic properties of the code itself, in that the syntax and structure of the source code focus primarily on the description and navigation of those semantic spaces, even if the different socio-technical contexts in which these source codes are written will themselves modulate the nature of these spaces.
+
+\pagebreak
+
+\bibliographystyle{../redaction/apa-good.bst}
+\bibliography{../redaction/thesis.bib}
+\end{document}
