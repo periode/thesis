@@ -1,4 +1,5 @@
 \chapter{Introduction}
+\label{chap:introduction}
 
 This thesis is an inquiry into the formal manifestations of source code, into how particular configurations of lines of code allow for aesthetic judgments and on the purposes that such configurations serve. The implications of this inquiry will lead us to consider the different ways in which people read and the different ways in which source code can be represented, depending on what it aims at accomplishing, and on the contexts in which it operates.
 This study on source code involves the different groups of people which read and write it, the purposes for which they write it, the programming languages they use to write it, and the natural language they use to speak about it. Most importantly, this thesis focuses on source code as a material and linguistic manifestation of a larger digital ecosystem of software and hardware to which it belongs. Since source code is only one component of code, as we will see below, this thesis also aims at studying the reality of written code, rather than its conceptual interpretations.
@@ -12,8 +13,10 @@ The examination of source code, and of the discourses around source code will in
 The rest of this introduction will consist in establishing a more complete view of the context in which this research takes place, from computer science to digital humanities and science and technology studies. With this context at hand, we will proceed to highlight the specific problems which will be tackled regarding the current place of aesthetics in source code. After outlining our methodology and the theoretical frameworks which will be mobilized throughout this study, we will sketch out how the different chapters of this thesis will attempt at providing some responses to our research questions.
 
 \section{Context}
+\label{sec:context}
 
 \subsection{The research territory: code}
+\label{subsec:research-territory}
 
 Most of our modern infrastructure depends, to a more or less dramatic extent, on software systems \citep{kitchin_code_2011}, from commercial spaces to classrooms, transport systems to cultural institutions, scientific production and entertainment products. Software regulates and automates the information stores, exchanges and creation which compose each of these domains of human activities.  The complex processes are described in what is called source code, a vast and invisible set of texts. The number of lines of code involved in running these processes is hard to estimate; one can only rely on disclosures from companies, and publicly available repositories. To give an order of magnitude, all of Google's services amounted to over two billions source lines of code (SLOC) \citep{scale_why_2015}, while the 2005 release of the OSX operating system comprised 86 millions lines of code, and while the version 1.0 of the Linux kernel (an operating system which powers most of the internet and specialized computation) totalled over 175,000 SLOC, version 4.1 jumped to over 19.5 million lines of code in the span of twenty years \citep{wikipedia_linux_2021}.
 
@@ -55,6 +58,7 @@ This definition takes into account a broad view of source code, including steps 
 As for the term \emph{program text}, it is chosen in order to highlight the dual nature of source code: that of a computational artefact to be formally processed and unambiguously understood \citep{detienne_software_2012}, and that of a open-ended, multi-layered document, in the vein of Barthes' distinction between a text and a work \citep{barthes_bruissement_1984}.
 
 \subsection{Beautiful code}
+\label{subsec:beautiful-code}
 
 Under this definition of source code textually represented, we now turn to the existence of the aesthetics of such \emph{program texts}. To contextualize this existence, we first need to touch upon the history and practice of software development. As an economic activity, software development came from a bottom-up dynamic, a \emph{de facto} activity which was not expected in the early days of computing, where most of the work was divided between mathematics and engineering. Its earliest manifestation can be found in the physical rewiring process of mainframes in order to perform a specific computation, something more akin to firmware than to software. These rewiring tasks were done by mostly female assistants, under the direction of mostly male mathematicians \citep{chun_software_2005}, and consisted in a simple translation task which did not require any particular attention, or any particular skill. The recognition of software engineering as its own field came as its unique domain of expertise was required in larger engineering projects—for instance, the term \emph{software engineering} was coined in the late 1960s by Margaret Hamilton and her team as they were working on the Apollo 11 Lunar Module software \citep{mindell_digital_2011}. In the same decade, the first volume of \emph{The Art of Computer Programming}, by Donald Knuth, addresses directly both the existence of programming as an activity separate from both mathematics and engineering, as well as an activity with an "artistic" dimension \citep{knuth_art_1997}. The first volume opens on the following paragraph:
 
@@ -177,6 +181,7 @@ As for the humanities, the focus is predominantly on literary heuristics of a re
 Still, some recent studies, such as those by Paloque-Bergès, Montfort et. al, Cox and McLean and Marino, do engage directly with source code examples, and these constitute important landmarks for a code-specific aesthetic theory and methodology, whether it is as poetic language, speech-act, or critical commentary. Source code is taken as a unique literary device, but it remains unclear in exactly which aspects, besides its executability, it is different from both natural languages and low-level machine languages, and how this literary aspect relates to the effective, mathematical and craft-like nature of source code considered in the computer science and engineering literature.
 
 \section{The aesthetic specificities of source code}
+\label{sec:aesthetic-specificities-code}
 
 We can now turn to some of the gaps and questions left by this review, which can be grouped under three broad areas: dissonant aesthetic fields, lack of correspondance between empirical investigations and theoretical frameworks, and an absence of close-reading of program texts as expressive artifacts.
 
@@ -189,11 +194,9 @@ Finally, and related to the point above, we can identify a methodological gap. D
 
 Having established an overview of the state of the research on this topic, and having identified some gaps remaining in this scholarship, we can now clarify some of the problems resulting from those gaps with the following questions.
 
-
 \emph{What does source code have to say about itself?}
 
 The relative absence of empirical examination of its source component when discussing code does not seem to be consistent with a conception of source code as a literary object. As methodologies for examining the meanings of source code have recently flourished, the techniques of \emph{close-reading}, as focusing first and foremost on "the words on the page" \citep{richards_practical_1930} have been applied for extrinsic means: extract what the lines of code have to say about the world, rather than what they have to say about themselves, about their particular organization as source files, as typographic objects or as symbol systems expressing concepts about the computational entities they describe. In this sense, it is still unclear how the possible combinations of control flow statements, function calls, function definitions, datatypes, variable declaration and variable naming, among other syntactic devices, enable program texts to be expressive. While close-reading will be a useful heuristic for investigating these problems, it will also be necessary to question the unicity of source code, and take into account how it varies across writers and readers and the social groups they constitute. This problem therefore has to be modulated with respect to the social environment in which it exists—it will then be possible to highlight to what extent the aesthetics of source code vary across these groups, and to what extent they don't.
-
 
 \emph{How does source code relate to other aesthetic fields?}
 
@@ -205,6 +208,7 @@ Multiple aesthetic fields are being mapped onto source code, allowing us to gras
 The final, and perhaps most important problem, concerns the status of aesthetics in source code not as an end, but as a means. A cursory investigation on the topic immediately reveals how aesthetics in source code can only be assessed only once the intended functionality of the software described has been verified. This stands in the way of a rather traditional opposition between beauty and functionality, and therefore begs further exploration. How do aesthetics support source code's functional purpose? And are aesthetics limited to supporting such purpose, or do they serve other purposes, beyond a strictly functional one? This paradox will relate to our first problem, regarding the meaning-making affordances of source code, and touch upon how the expressiveness of formal languages engage with different conceptions of use and function, therefore relating back to Goodman's concept of the languages of art, of which programming languages can be part of.
 
 \section{Methodology}
+\label{sec:methodology}
 
 To address such questions, we propose to proceed by looking at two kinds of texts: program texts and meta-texts. The core of our corpus will consist of the two categories, with additional texts and tools involved.
 
@@ -225,6 +229,7 @@ In the end, this process will allow us to construct a framework from empirical o
 This study therefore aims at weaving in empirical observations, discourse analysis and external framing, in order to propose systematic approaches to source code's textuality. However, these will not unfold in a strictly linear sequence; rather, there will be a constant movement between practice and theory and between code-specific aesthetic references and broader ones: this interdisciplinary approach intends to reflect the multifaceted nature of software.
 
 \section{Roadmap}
+\label{subsec:roadmap}
 
 Our first step in this study is an empirical assessment of how programmers consider aesthetics with their practice or reading and writing it, first from a conceptual standpoint. After acknowledging and underlining the diversity of those practices, from software developers and scientists to artists and hackers, we will identify which concepts and references are being used the most when referring to beautiful code—concepts such as clarity, simplicity, cleanliness, and others. These concepts will then allow us to touch upon the field that are being referred to when considering the practice of programming: literature, architecture and mathematics as domains in themselves, and craft as a particular approach to these domains. Finally, we will how how the overlap of these concepts can be found in the process of \emph{understanding}—communicating abstract ideas through concrete manifestations.
 
@@ -243,6 +248,7 @@ We will then turn back to our research questions to suggest some possible answer
 Finally, we will relate the approaches of Goodman of art as cognitively effective symbol systems, and of Simondon's consideration of aesthetic thought as a link between technical thought and religious thought. Starting from a practical perspective on aesthetics taking from the field of craft—the thing well done—, aesthetics also highlight functionality on a cognitive level—the thing well thought. Beauty in source code seems to be dominantly what is useful and thoughtful, even when they are reflected in the distorting mirrors of hacks and esoteric languages, broadening our possible understandings of what aesthetics can do, and what functionality can be.
 
 \section{Implications and readership}
+\label{subsec:implications-readership}
 
 This thesis fits within the field of software studies, and aims at clarifying what do we mean when we refer to code \emph{code as\dots}. Code as literature, architecture or mathematics, code as philosophy or as craft, are metaphors which can be examined productively by looking at the texts themselves, an approach that has only been deployed in relatively recent work.
 

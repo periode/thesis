@@ -12,6 +12,7 @@ Finally, we conclude this chapter by elaborating on one of the points of overlap
 \pagebreak
 
 \section{The practice of programmers}
+\label{sec:practice-programmers}
 
 The history of software development is that of a specific, reserved practice which was born in the aftermath of the second world war, which trickled down to broader and broader audiences at the eve of the twenty-first century. Through this development, various paradigms, platforms and applications have been involved in producing software, resulting in different epistemic communities and communities of practice \citep{cohendet_organisational_2001}, in turn producing different types of source code. Each of these focus on the description of specific instructions to the computer, but do so with particular characteristics. To this end, we take a socio-historical stance on the field of programming, highlighting how diverse practices emerge at different moments in time, how they are connected to contemporary technical and economic organizations, and for specific purposes.
 
@@ -21,7 +22,6 @@ While this overview encompasses most of the programming practices, we leave asid
 
 \subsection{Software developers}
 \label{subsec:software-developers}
-\subsubsection{From local hardware to distributed software}
 
 As Niklaus Wirth puts it, \emph{the history of software is the history of growth in complexity} \citep{wirth_brief_2008}, while paradoxically, a lowering of the barrier to entry. As computers' technical abilities in memory managment and processing power increased year on year since the 1950s, the nature of writing instructions shifted as well.
 
@@ -43,7 +43,7 @@ The most recent step in the history of software developers is the popularization
 
 Software developers have written some of the largest codebases to this date, since this type of activity represents the most significant fraction of programmers. Due to its close ties to commercial distributors, however, source code written in this context often falls under the umbrella of proprietary software, thus made unvailable to the public. Some examples that we include in our corpus are either professional codebases that have been leaked\footnote{Such as the Microsoft Windows XP source code \citep{warren_windows_2020}.}, open-source projects that have come out of business environments, such as Soundcloud's Prometheus, Kirby's CMS System, Facebook's React, or large-scale open-source projects which nonetheless adhere to structured programming guidelines, such as Donald Knuth's TeX typesetting system or the Linux Foundation's Linux kernel.
 
-\subsubsection{Features of the field}
+\spacer
 
 The features of these codebases hint at the qualities that software developers have come to ascribe to their object of practice. First, the program texts they write are large, much larger than any other codebase included in this study. They often feature multiple programming languages and are highly structured and standardized: each file follows a pre-established convention in programming style, which favors an authoring by multiple programmers without any obvious trace to a single individual authorship. These program texts stand the closest to a programming equivalent of engineering, with its formalisms, standards and usability. From this perspective, the IEEE's Software Engineering Body of Knoweldge (SWEBOK) provides a good starting point to survey the specificities of software developers as source code writers and readers \citep{bourque_swebok_2014}; the main features of which include the definition of requirements, design, construction, testing and maintenance.
 
@@ -153,7 +153,7 @@ Meanwhile, the open-source movement took the tenets of hacking culture and adapt
 
 As a community of practice, hackers are programmers which, while overlapping with industry-embedded software developers, hold a set of values and ideals regarding the purpose and state of software. Whether academic hackers, amateurs, security hackers or open-source contributors, all are centered around the object of source code as a vehicle for communicating the knowledge held within the software, and the expertise necessary for writing such software, bypassing auxiliary resources like natural-language documentation. Incidentally, those political and ethical values of expertise and openness often overlap with aesthetic values informing how their code exists in its textual manifestation.
 
-\subsubsection{Sharp and clever}
+\spacer
 
 \begin{quote}
   To hack is, according to the dictionary, "to cut irregularly, without skill or definite purpose; to mangle by or as if by repeated strokes of a cutting instrument". I have already said that the compulsive programmer, or hacker as he calls himself, is usually a superb technician. It seems therefore that he is not "without skill" as the definition will have it. But the definition fits in the deeper sense that the hacker is "without definite purpose": he cannot set before him a clearly defined long-term goal and a plan for achieving it, for he has only technique, not knowledge. He has nothing he can analyze or synthesize; in short, he has nothing to form theories about. His skill is therefore aimless, even disembodied. It is simply not connected with anything other than the instrument on which it may be exercised. His skill is that of a monastic copyist who, though illiterate, is a first rate calligrapher. \citep{weizenbaum_computer_1976}
@@ -257,10 +257,12 @@ The ideals at play in the writing and reading of source code for hackers is thus
 If hacking can be considered a way of doing which deals with the practical intricacies of programming, involving concrete knowledge of the hardware and the language, our third group tends towards the opposite. Programming scientists (of which computer scientists are a subset) engage with progamming first and foremost at the conceptual level, with different locii of implementation: either as a \emph{theory}, or as a \emph{model}.
 
 \subsection{Scientists}
+\label{subsec:scientists}
 
 Historically, then, programming emerged as a distinct practice from the computing sciences: not all programmers are computer scientists, and not all computer scientists are programmers. Nonetheless, scientists engage with programming and source code in two distinct ways, and as such open up the landscape of the type of code which can be written, and of the standards which support the evaluation of formally satisfying code. First, we will look at code being written outside of computer science research activities and, through it, examine how the specific needs of usability, replicability and data structuring link back to standards of software development. Then, we will to the code written by computer scientists, such as programming language designers, and develop how computer implementation exists between the dual scientific pillars of theorization and experimentation \citep{vardi_science_2010}.
 
 \subsubsection{Computation as a means}
+\label{subsubsec:computation-means}
 
 Scientific computing, defined as the use of computation in order to solve non-computer science tasks, started as early as the 1940s and 1950s in the United States, aiding in the design of the first nuclear weapons, among others \citep{oberkampf_verification_2010}. Essentially, calculations necessary to the verification of theories in disciplines such as physics, chemistry or mathematics were handed over to the computing machines of the time. Beyond the military applications of early computer technology, one can point to Harlow and Fromm's article on \emph{Computer Experiments in Fluid Dynamics}, published in 1965, focusing on how the advent of computing technology would prove to be of great assistance in physics and engineering:
 
@@ -301,6 +303,7 @@ Furthermore, a unique aspect of scientific software comes from the lack of clear
 We see a convergence of quality standards of broad academic software towards the quality standards of commercial software development\footnote{See Graphbrain at \url{https://github.com/graphbrain/graphbrain} for such an example. The code's organization and formal features are congruent and on par with commercial software.}.  And yet, this convergence is due to, as we have seen, a past divergence between computation and science, as computer science worked towards asserting and pursuing its own field of research. As a subset of science, computer science nonetheless possesses its own specific standards, taking software not as a means to an end, but as the end itself.
 
 \subsubsection{Computation as an end}
+\label{subsubsec:computation-end}
 
 Computer scientists are scientists whose work focuses on computation as a means, rather than as a tool. They study the phenomenon of computation, investigating its nature and effects through the development of theoretical frameworks around it. Originally derived from computability theory, as a branch of formal mathematical logic, computation emerged as an autonomous field from work in mechanical design and configuration (Ada Lovelace and Charles Babbage),  work on circuit and language design (C. S. Pierce, Konrad Zuse and John Von Neumann), work on mathematical foundations (Alan Turing and Alonzo Church), information theory (Claude Shannon), systems theory (Norbert Wiener) and expert systems (John McCarthy and Marvin Minsky) \citep{ifrah_universal_2001}. In the middle of such a constellation ranging from mathematical theory to practical electronics, computer science establishes its institutional grounding with the inauguration of the first dedicated academic department at Purdue University in 1962.
 
@@ -447,10 +450,12 @@ These are strands of similarity within apparent diversity. The code snippets in 
 \pagebreak
 
 \section{Ideals of beauty}
+\label{sec:ideals-beauty}
 
 With this overview of the varieties of practices at play amongst those who read and write source code, we will analyze more thoroughly what are the aesthetic standards most value by those different groups. The aim here is to formalize our understanding of which source code is considered beautiful, and to do so at multiple levels. The goal here is to capture both the specific manifestations of beautiful code as specified and enunciated by programmers, as well as the semantic contexts from which these enunciations originate. What we will see is that, while a set of aesthetic values and a set of aesthetic manifestations can be pinpointed precisely, the domains that are mobilized to justify these values are clearly distinct. To do so, we will introduce a discourse analysis framework for the empirical study of the corpus, followed by an examination of the broad fields that these discourses refer to. This will be complemented in Chapter 3 by a a medium-specific reading through critical code studies and rhetorical code studies on one hand, and the work done by conceptual metaphors on the other.
 
 \subsection{Introduction to the Methodology}
+\label{subsec:ideals-methodology}
 
 Discourse consists of text, talk and media, which express ways of knowing the world, of experiencing and valuing the world. This study builds on Kintsch and Van Dijk's work on providing tools to analyze an instance of discourse, and is centered around what is said to constitute good source code. While discourse analysis can also be used critically by unearthing which value judgments that occur in power relationships\footnote{See Diana Mullet on Critical Discourse Analysis \citep{mullet_general_2018a}}, we focus here on aesthetic value judgments, as their are first expressed through language. Of all the different approaches to discourse, the one we focus on here is that of \emph{pragmatics}, involving the spatio-temporal and intentional context in which the discourse is uttered. We find this approach particularly fitting through its implication of the \emph{cooperative principle}, in which utterances are ultimately related to one another through communicative cooperation to reveal the intent of the speaker \citep{schiffrin_approaches_1994}. Practically, this means that we assume the position of programmers talking to programmers is cooperative insofar as both speaker and listener want to achieve a similar goal: writing good code. This double understanding—focusing first and foremost on utterances, and then re-examining them within a broader cooperative context—will lead us to encompass a variety of production media (blog post, forums, conferences, text books), in order to depict the cultural background (software practices as outlined above as well as additional factors such as skill levels). Our comprehension of those texts, then, will be set in motion by a a dual movement between local, micro-units of meaning and broader, theoretical macro-structure of the text, and linked by acts of co-reference \citep{kintsch_model_1978}.
 
@@ -471,6 +476,7 @@ Going beyond the role of metaphors manifested in expressions such as \emph{the d
 The corpus studied here consists of texts ranging from textbooks and trade manuals to blog posts and online forum discussions\footnote{Specifically, we have gathered 47 different online sources, from forum discussions to blog posts, 26 journal articles from the Association for Computing Machinery, 20 monographs and 1 edited volume, listed in Appendix I. These constitute our primary sources insofar as they are written by practicioners on the topic of good and beautiful code.}. The rationale behind such a broad approach is to constitute a lexical basis for what practicing programmers consider when assessing good code, as expressed in the everyday interactions of online forums and blog posts, but also inclusive of diverse sources of communication, beyond edited volumes. From authoritative sources, such as canonical textbooks or widely-read blog posts from well-known practicioners, to more casual forum exchanges will support the empirical dimension of our research. From this approach, this section will show how there are \emph{specific} ways to qualify well-written code, which are echoed both from bottom-up and from top-down perspectives, and employing recurring references.
 
 \subsection{Lexical Field in Programmer Discourse}
+\label{subsec:lexical-fields}
 
 In terms of existing studies of the lexical field programmers use, Erik Pineiro has done significant work in his doctoral thesis. In it, he argues that aesthetics exist from a programmers perspective, decoupled from the final, executable form of the software. While this current study draws on his work, and confirms his findings, it also builds upon it in several ways. First, Pineiro focuses on a narrower corpus, that of the Slashdot.org\footnote{\url{https://slashdot.org}} forums \citep{pineiro_aesthetics_2003} (p. 51). Second, he examines aesthetic judgment from a private perspective of software engineers, separate from other possible aesthetic fields which might enter in dialogue with beautiful code \citep{pineiro_aesthetics_2003} (p.52), such as artists or hackers. Finally, his discussion of aesthetics takes place in a broader context of business management and productivity, while this current study situates itself within media studies and aesthetic philosphy, and its implications within how a certain class of communicative artefacts are considered beautiful. Still, Pineiro's work provides valuable insights in terms of identifying the manifestations and rationales for an aesthetic experience of source code. Thus, we continue his research by highlighting the main adjectives in the lexical field of programmers' discourse.
 
@@ -665,10 +671,12 @@ The next step that we propose is to inquire into these specific domains, to exam
 To do so, then, we will look at the three domains most often conjured by programmers when they mention the sensual qualities of, or the aesthetic experiences elicited by, source code: literature, mathematics and architecture. While there are accounts of parallels between programming and painting \citep{graham_hackers_2003} or programming and music\citep{mclean_hacking_2004}, these refer rather to the painter or musician as an individual, rather to the specific medium, and there are, to the best of our knowledge, no account of code being like sculpture or film, for instance.
 
 \subsection{Literary Beauty}
+\label{subsec:literary-beauty}
 
 The most striking, and obvious similarity between code and another medium of expression is that of literature: perhaps because they both require, fundamentally, the use of alphanumeric characters laid out on a two-dimensional plane. Similarly, syntax and semantics interplay in order to convey meaning to a reader. \emph{Code as literature}, then, focuses on this intertwining of natural language and computer language, on its narrative, rhetorical and informative properties, and even on its ability to mimick the traditional forms of poetry.
 
 \subsubsection{Code as a linguistic practice}
+\label{subsubsec:code-linguistic}
 
 In \emph{Geek Sublime}, Vikram Chandra, novelist and programmer, lays out the deep parallels he sees between code and human language, specifically sanskrit. While stopping short of claiming that code is literature, he nonetheless makes the claim that sanskrit is, as a set of generative linguistic rules to compose meaning, a distant ancestor to computer code \citep{chandra_geek_2014}, a fact corroborated by Agathe Keller in her studies of the Āryabhaṭa \citep{keller_textes_2021}. Sanskrit, like computer code, relies on context-free rules and exhibits similar properties as in code, such as recursion and inheritance.
 
@@ -691,6 +699,7 @@ This desire for explicit communication led literacy scholars to investigate sour
 The connections of code to linguistics happens thus at the technical, media, and cultural levels, insofar as it can allow for the expression of ideas and arguments, straddling the line between the rational and the evocative. We now turn more specifically to two instances of program code being considered a literary text, by leading programmers in the field: Yukihiro 'Matz' Matsumoto and Donald Knuth.
 
 \subsubsection{Code as text}
+\label{subsubsec:code-text}
 
 Perhaps the most famous reference to code as a literary object is to be found in Donald Knuth's \emph{literate programming}. In his eponymous 1984 article in \emph{The Computer Journal}, Knuth advocates for a practice of programming in which a tight coupling of documentation with source code can allow one to consider programs as "works of literature" \citep{knuth_literate_1984}. It is unclear, however, what Knuth entails when he refers to a work of literature\footnote{For instance, he refers in the rest of the article as "constructing" programs, rather than "writing" them.}.
 
@@ -725,6 +734,7 @@ These two examples show us that source code can be considered a text, if not a l
 Beyond these theoretical and functional conceptions of code's textuality, a last approach to the literariness of source code can be found in the works of code poetry, in which this ambiguity is embraced.
 
 \subsubsection{Code poetry}
+\label{subsubsec:code-poetry}
 
 Daniel Temkin, in his \emph{Sentences of Code Art}\footnote{A direct reference to Sol Lewitt's \emph{Sentences on Conceptual Art}.}, suggests the ways in which code art (encompassing code poetry, esoteric languages and obfuscated code, among others) touches on code's linguistic features mentioned by Chandra and Cramer, while coming at it from a non-functional perspective, radically opposed to Knuth and Matsumoto.
 
@@ -764,10 +774,12 @@ From software developers to artists, different kinds of writers seem to equate c
 The last example, the tension between \emph{All The Names of God}'s source and output, between notation and ideas, suggests us to look at this kind of elegance not through a literary lens, but through a scientific one—another domain conjured by code writers and readers.
 
 \subsection{Scientific beauty}
+\label{subsec:scientific-beauty}
 
 Having strong roots in scientific thought and practice, via the connection of computer science, the aesthetic experiences of source code are also related to the scientific domain. Nonetheless, it seems to exist in two distinct ways: whether code is beautiful in a similar way that mathematics is, or wether code is beautiful according to equivalent principles at play in engineering.
 
 \subsubsection{Mathematics}
+\label{subsubsec:beauty-mathematics}
 
 A recurring point in programmers' discussions of beauty in programming is oftentimes the duality of the object of discussion: is one talking about an algorithm, or about a particular implementation of an algorithm? While this thesis is concerned with the latter, we now turn to how this relationship between algorithm and implementation presents a similar tension as the relationship between theorem and proof in mathematics.
 
@@ -785,7 +797,8 @@ Specifically, mathematical proofs are supposed to fulfill the requirement of wha
 
 The first to employ such an expression, the mathematician Henri Poincaré describes the rigor of a mathematical process as subsequently obtained by combining this economy of thought, a form of cognitive elegance, with the concept of \emph{harmony} \citep{poincare_science_1908}. By virtue of mathematics being based on formal languages, this linguistic component introduces a certain kind of structure, and the complexity of the problem domain is made more harmonious by the reliance on such an invariant structure (i.e. the syntax of the formal language used). Source code as mathematics can thus be seen as a cognitive structure, which the elements, based on formal linguistics, can exhibit elegant aspects in their communication of a broader concept.
 
-\subsubsection{Engineering} % 500
+\subsubsection{Engineering}
+\label{subsubsec:beauty-engineering}
 
 As we have seen in our discussion of the relationship between computer science and programming as a relationship between the abstract and the concrete, one can see in these two activities a parallel in mathematics and engineering. Engineering is, like programming, the concrete implementation backed by deliberate and careful planning, often with the help of formal notations, of a solution to a given problem. Mathematics, from this perspective, can be considered as one of the languages of engineering, among sketches, diagrams, techniques, tools, etc.
 
@@ -808,12 +821,12 @@ The sciences, and specifically mathematics and engineering, have their own set o
 Another concept touched upon by both approaches is that of structure: mathematics deal with formal structures to represent and frame the complexity of the world, while engineering deal with concrete structures offered as solutions to a specific problem. The last of the main domains to which source code is referred to is at the intersection of concrete and abstract structures, of function and form—architecture.
 
 \subsection{Architectural beauty}
+\label{subsec:beauty-architecture}
 
 \subsubsection{Formal organization}
+\label{subsubsec:formal-organization}
 
 Software architecture emerged as a consequence of the structured revolution \citep{dijkstra_chapter_1972}, which was concerned more with the higher-level organization of code in order to ensure the quality of the software produced. Such an assurance was suggested by Djikstra in two ways: by ensuring the provability of programs in a rigorously mathematic approach, and by ensuring that programs remained as readable as possible for the programmers. Structure has therefore been an essential component of the intelligibility of software since the 1970s. It's only in the late 1990s that software architecture as a discipline has been recognized as such, stemming form a bottom-up approach of recognizing that some ways in which code is organized is better than others.
-
-\subsubsection{Top-down software architecture}
 
 Today,
 \begin{quote}
@@ -847,6 +860,7 @@ Finally, the trade litterature has also been contributing to this overlap betwee
 We recognize here a focus on efficiency, organization and \emph{proper} use, along with the requirement of cleanliness of the tools, workbench and workplace, as a virtue of a good organization. While originally applied to manufacture, Martin makes the case that this can also apply to the knowledge economy—as in our case, with correct naming, correct placement, correct appearance and correct use.
 
 \subsubsection{Vernacular constructions}
+\label{subsubsec:vernacular-construction}
 
 However, considering architecture as a strictly organizational practice does not show the whole picture. As Hill's quote above hints at, there is another side to architecture, concerned with details rather than with plans, feeling rather than rationalizing.
 
@@ -874,7 +888,7 @@ His particular assumption that others will want to modify and extend source code
 
 In a sense, then, beautiful code is also code that is clear enough to inform action and, well-organized enough to warrant actually taking that action. It relates to Alexander's property of \emph{comfort}, by affording involvement instead of estrangement: one is at ease when making changes to a program text, rather than fearing unknown consequences due to a lack of a clear mental model.
 
-\subsubsection{Dual aesthetics}
+\spacer
 
 Architecture, when referenced by software, includes at least two distinct approaches: one tending to the objective, and one tending to the subjective. This distinction, operated by Roger Scruton, equates these to a tendency to, respectively, emotionality or rationality \citep{scruton_aesthetics_2013}. This pair is reflected in how software also refers to architecture: as top-down planning or as bottom-up construction, both holding different, but overlapping aesthetic standards. One the one side, we have cleanliness, orderliness and appropriateness, following interpersonal conventions and style; on the other side, we have familiarity, compression and appropriateness of community patterns.
 
@@ -906,12 +920,14 @@ In their introduction to the field of sofware architecture, Shaw and Garland sum
 So, while links between craftsmanship and programming have existed as self-proclaimed ones by programmers themselves, as well as by academics and writers  \citep{sennett_craftsman_2009,chandra_geek_2014}, they have not yet been elucidated under specific angles. Indeed, craftsmanship as such is an ever-fleeting phenomenon, a practice rather than a theory, in the vein of Michel De Certeau's \textit{tactics}, bottom-up actions designed and implemented by the users of a situation, product or technology as opposed to \textit{strategies} \citep{certeau_invention_1990}, in which ways of doing are prescribed in a top-down fashion. It is this practical approach that this article chooses, the informal manners and standards of working, in order to provide an additional, cultural studies perspective, to its media and software studies counterparts.
 
 \subsection{Craftsmen and architects}
+\label{subsec:craftsmen-architect}
 
 A comparative approach of a broad mode of economic and cultural activity (craftsmanship) with a narrower technical know-how (software development) asks us first to verify to what extent such an approach is even valid. How, then, is the designation by software developers of their own practice as craftsmanship relevant?  By examining formal and informal texts, we focus on the fact that software developers ground their practice in passion, know-how and myths. Particularly, we inspect the place of architecture, both in historical craftsmanship and contemporary software development, in order to qualify further the relationship between design and implementation in those two fields.
 
 Starting from programmers' self-identification with craftstmanship, we analyze how those references by programmers enter into a productive dialogue with our historical and cultural conception of craftsmanship. First, the focus is set on the historical unfoldings of craftsmanship and software development, showing parallels. After inquiring into the modes of organization and the economical development of both craftsmanship and software development, this section focuses on the particular comparison with building, and its involvement with knowledge management and aesthetic judgments.  Building on discussions of beautiful craft and beautiful code, the focus is not on the standards which allow practicioners to ascribe specific beauty to a specific piece of software; instead, we start a discussion into the materiality of code not in terms of bits, bytes and languages, but rather as a conceptual one which is to be worked with and worked through.
 
 \subsubsection{Craftsmanship through the ages}
+\label{subsubsec:history-craftsmanship}
 
 Craftsmanship in our contemporary discourse seems most tied to a retrospective approach: it is often qualified as that which was \emph{before} manufacture, and the mechanical automation of production \citep{thompson_study_1934}. So while the practice of developing a skill in order to build something with a functional design has been considered at its apex of craftsmanship in Western late Middle-Ages, it should be noted here that non-Western craftsmanship are as equally rich and unique as their Western counterparts, for instance in China \citep{zhang_jingdezhen_2015} and Japan \citep{jordan_copying_2003}; however, these lie beyond the immediate scope of this article. Following Sennett, we will use his definition of craftsmanship as \emph{hand-held, tool-based, intrinsically-motivated work which produces functional artefacts, and in the process of which is held the possibility for unique mistakes} \citep{sennett_craftsman_2009}.
 
@@ -924,6 +940,7 @@ Another component of craftsmanship is its alleged incompatibility with manufactu
 These characteristics of tight and rigid communities, implicit knowledge, and ambiguous separation with design, framing the foundation of a desire for good work are particularly highlighted in the field of the built environment, and later in the development of architecture. Before examining how such a field has a connection to software development, we take a look at programming's emergence as a field of craft.
 
 \subsubsection{Software developers as craftsmen}
+\label{subsubsec:software-craftsmen}
 
 Computer programming as an activity came to be as an offshoot of computer science, perhaps best illustrated by the collaboration of Charles Babbage and Ada Lovelace on The Analytical Engine, the prototype of the modern computer. With Babbage acting as the overall designer, Lovelace was key in practically implementing some of the mathematical formulas which The Analytical Engine was built to solve. What we see here is a dyad of work, distinguished between design and conception on one side, and implementation and practice on the other side. These two approaches are echoed throughout the early days of programming (1950s-1970s), with programmers becoming distinct from computer scientists by their approach to the problem (they'd rather write code on a terminal than write algorithms on a piece of paper) and by their background (trained as scientists but more comfortable with tinkering) \citep{ensmenger_computer_2012}. In particular, the group of computer enthusiasts described as hackers developed organizational features similar to their historical counterparts: work was being done on distinct topics and fields in different geographic locations (Stanford, MIT, Bell Labs) \citep{raymond_cathedral_2001}, emphasis was put on engagement with tools, inquiring into peers' work \citep{levy_hackers_2010} and later formalized into bottom-up archives\footnote{The most famous of which is the Jargon File, later to be published as the The New Hacker's Dictionary: \url{http://www.catb.org/jargon/html/}}. Additionally, little accountability was required when it came to design explicitness. As examples, both the UNIX operating system and the TCP/IP protocol were originally realized without overarching supervision and without extensive ongoing documentation \citep{seibel_coders_2009,raymond_cathedral_2001}.
 
@@ -932,6 +949,7 @@ As computer science solidified as a distinct field in the 1960s \citep{tedre_dev
 Comparisons of software development with craftsmanship are abundant, and relate then mostly to the relationship between unstructured practice and formalized theory; as such, it is used to self-categorize programmers as skilled makers rather than passive thinkers\footnote{See code monkey, as a derogative term for such passive, detached practice: \url{http://www.techopedia.com/definition/31469/code-monkey}}.
 
 \subsubsection{Craft in architecture}
+\label{subsubsec:craft-architecture}
 
 The field of architecture helps us tie these two traditions together a little more explicitly. Architecture as a field and the architect as a role have been solidified during the Renaissance \citep{pevsner_term_1942}, consecrating a separation of abstract design and concrete work, in which the craftsman is relegated to the role of executioner, until the arrival of civil engineering and blueprints overwhelmingly formalized the discipline.
 
@@ -947,6 +965,7 @@ The problem of knowledge in software development can be examplified by the "bus 
 Explicit knowledge, in programming as in most disciplines, is carried through books, academic programs and, more recently, web-based content that is either structured (e.g. MOOCs, Codeacademy, Khan Academy) or unstructured (e.g. blog posts, forums, IRC channels), but both seem to be insufficient to reach an expert level \citep{davies_models_1993}. As demonstrated by a popular comic\footnote{See Randall Munroe, \url{https://xkcd.com/844/}}, the road to good code is unclear, particularly when communicated in such a highly-formal language as diagramming. Given the fact that an individual can become a programmer through non-formal training---as opposed to, say, an engineer or a scientist---, the learning process must include implicit knowledge.
 
 \subsubsection{Apprentices and masters}
+\label{subsubsec:apprentices-masters}
 
 The acquisition of such implicit knowledge in craftsmanship takes place in two different ways: the apprentice-master relationship, and the act of copying. First comes the apprentice-master relationship, in which a learner starts by  imitating the way of working of the master (Sennett), resulting in a \emph{teaching by showing}, where important aspects of the craft are being demonstrated to the apprentice by a more experienced practicioner, rather than formalized and learned \emph{a priori} of the practice. Sometimes, this relationship to a master is implemented explicitly through practices such as pair programming \citep{williams_pair_2003} or corporate mentorship programmings (IBM's Master programmer initiative). Other times, it is re-interpretated through fictional accounts designed to impart wisdom on the readers, and taking inspiration from Taoism and Zen \citep{james_tao_1987,raymond_new_1996}. From higher-level programming wisdom featuring leading programmers such as Marvin Minsky and Donald Knuth, this sort of informal teaching by showing has been implemented in various languages as a practical learning experience\footnote{See, for instance: \url{http://rubykoans.com/}}. Without the presence of an actual master, the programming apprentice nonetheless takes the program writer as their master to achieve each of the tasks assigned to them. The experience historically assigned to the master craftsman is delegated into the code itself, containing both the problem, the solution to the problem and hints to solve it, straddling the line between formal exercises and interactive practice.
 
@@ -955,6 +974,7 @@ Code's ability to be copied and executed on various machines provides a counterp
 Practices from Eastern craftsmanship further qualify these essentially different approaches to copying. \emph{Moxie}, a Chinese term for copying and practice, is a key concept to understand how an apprentice can equal his master through thougtful replication  \citep{man_influence_2015}, an approach equally present in Japanese crafts histor \citep{jordan_copying_2003}. Here again, manually copying from established quality work to seize their elusive essence is an essential aspect to craftsmanship.
 
 \subsubsection{The problem with copying}
+\label{subsubsec:craft-copying}
 
 If implicit knowledge can be acquired through a showing and copying of code, software development as a craft presents an additional dimension to this, a sort of \emph{piecemeal knowledge}. Best represented by Stack Overflow, a leading question and answer forum for programmers, on which code snippets are made available as part of the teaching by showing methodology, this piecemeal knowledge can both help programmers in solving issues as well as deter them in solving issues \textit{properly} \citep{treude_understanding_2017}. Code as such is freely and easily accessible as piecemeals, but often lacks the essential context.
 
@@ -969,10 +989,9 @@ If a craftsman learns their trade by comparing their work with work of a higher 
 With implicit knowledge being a key component in both disciplines, its manifestation through the copying of source code in software development is hampered either by decontextualized, uploaded code snippets or by copyrighted protection on works, leading to a lack in an established canon of great works. Nonetheless, the other advice given to beginner programmers—practice\footnote{\url{https://quora.com/What-are-some-of-the-best-ways-to-learn-programming}}—hints at another aspect: direct engagement with code.
 
 \subsection{Material aesthetics}
+\label{subsec:material-aesthetic}
 
 At the heart of knowledge transmission and acquisition stands the \emph{practice}, and inherent in the practice is the \emph{good practice}, the one leading to a beautiful result. The existence of an aesthetic experience of code, and the adjectives used to qualify it (smelly, spaghetti, muddy), already pointed at in the previous section, already points at an appreciation of code beyond its formalisms and rationalisms. We now turn to the aesthetic experience of code within the broader context of the aesthetics of craftsmanship, highlighting code's specificity as a material.
-
-\subsubsection{The beauty of a thing well-made}
 
 A traditional perspective is that motor skills, with dexterity, care and experience, are an essential feature of a craftsman's ability to realize something beautiful \citep{osborne_aesthetic_1977}, along with self-assigned standards of quality \citep{pye_nature_2008,sennett_craftsman_2009}. These qualitative standards which, when pushed to their extreme, result in a craftsperson's \emph{style}, are to be gained through practice and experience, rather than by explicit measurements \citep{pye_nature_2008} \footnote{See Pye's account of craftsmanship, and his intent to make explicit the question of quality craftsmanship and \emph{"answer factually rather than with a series of emotive noises such as protagonists of craftsmanship have too often made instead of answering it."}}. Two things are concerned here, supporting the final result: tools and materials \citep{pye_nature_2008}. According to Pye, a craftsperson should have a deep, implicit knowledge of both, what they use to manipulate (chisels, hammers, ovens, etc.) as well as what they manipulate (stone, wood, steel, etc).
 
@@ -983,8 +1002,6 @@ This relationship to tools and materials is expected to have a relationship to \
 \end{quote}
 
 He opens here up a solution to the paradox of the hand-made and the computer-automated, as programming emerges from the latter as a new skill. This very rise of automation has been criticized for the rise of a Osborne's "soulless society" \citep{osborne_aesthetic_1977}, and has triggered debates about authorship, creativity and humanity at the cross-roads between artificial intelligence and artistic practice \citep{mazzone_art_2019}. One avenue out of this debate is human-machine cooperation, first envisioned by Licklider and proposed throughout the development of Human-Computer Interaction \citep{licklider_mancomputer_1960,grudin_tool_2016}. If machines, more and more driven by computing systems, have replaced traditional craftsmanship's skills and dexterity, this replacement can nonetheless suggest programming as a distinctly 21st-century craftsmanship, as well as other forms of cratsmanship-based work in an information economy.
-
-\subsubsection{Code as material}
 
 Beautiful code, code well-written, is indeed an integral part of software craftsmanship \citep{oram_beautiful_2007}. More than just function for itself, code among programmers is held to certain standards which turn out to hold another relationship with traditional craftsmanship—specifically, form following function.
 
