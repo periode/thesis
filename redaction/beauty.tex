@@ -3,32 +3,82 @@
 
 % 80k chars
 
-This chapter focuses on what beauty has to do with understanding, and specifically how the reference domains manifest this relationship between the surface structure and the deep structure. We start with the development of how aesthetics involve "something beyond".
+This chapter focuses on what beauty has to do with understanding, first from a theoretical perspective, and then diving specifically into how specific domains approach this relationship.  By paying specific attention between surface and deep structure, we will therefore be focusing on a conception of aesthetics which tends to intellectual, rather than emotional, engagement.
 
-This will have us look at cognition in aesthetics; that is, in much more contemporary terms, starting in the 1960s and 1970s with Goodman. Then, we will go domain by domain and see how cognition and aesthetics are conjugated in each of the domains that are being referred to when we talk about source code beauty: literature, engineering, mathematics and architecture.
-
-% todo: show that there is always some sort of relation established between the surface structure and the deep structure
+We will start by expliciting this focus by basing ourselves on the aesthetic theory of Nelson Goodman, and following the threads linking aesthetics to cognition through a psychological perspective. From there, we will highlight how each of the domains contigent to source code— literature, mathematics and architecture—communicate certain concepts through their respective specific means of symbolic representation.
 
 \section{Aesthetics and cognition}
 \label{sec:aesthetic-cognition}
 
 %20k characters, doing an overview of how aesthetic philosophy relates to cognition
 
-- beardsley [beardsley_aesthetic_experience#15 - the metaphorical twist]
+%5k intro
+Starting this research with the assumption that aesthetics exist beyond the work of art, it is nonetheless from philosophy of art that we start from, in order to map out the expressive power of a given formal representation. 
 
-nelson goodman
+The aesthetic experience—that is, the positively received perception of a natural or crafted object—has traditionally been laid out across multiple axes, with more or less overlap. Whether this positive perception is due to an emotional response, to a harmonious assessment, to an axiomatic adherence or to disinterested pleasure has been the topic of debates amongst philosophers for centuries \citep{peacocke_aesthetic_2023}.
 
-[contini_goodman_art_cognition_education.md], summary of goodman and project zero
+Noël Carroll sums up these different directions under the broad areas of affect, axiom and content \citep{carroll_aesthetic_2002}. An aesthetic experience dictated by affect follows Kant's principle of disinterested pleasure via contemplation, removing the object from one's assessment of purpose, value and effect, and limiting it to form. As such, a flower, a sunset or a musical melody can evoke affective aesthetic experiences. Yet, its supposed tendency of this kind of experience to release us from worldly concerns fails, for Carroll, to encompass aesthetic experiences that are rooted in so-called worldly concerns—such as a documentary photography, skillful physical performance, or delicatedly crafted glassware.
 
-[carroll_aesthetic_experience_revisited.md]  theory (affect, axiom, content)
+An axiomatic aesthetic experience is, in turn, based on the sort of value that the object is being associated with—such as depiction of religious topics or a manifestation of a particular style. While Carroll does acknowledge a certain virtue of this aesthetic experience in terms of group cohesion through shared, its limitations are found in a pre-existing answer to the value judgment that is being bestowed upon the object—the material and sensual properties of the object at hand are irrelevant since their quality is already decided \emph{a priori}.
 
-[chatterjee_vartanian_neuroscience_of_aesthetics.md] psychology/cognition, fluency theory
+It is in the content approach that Carroll finds the most satisfying answer to what the aesthetic experience is. Content, here, is defined as the forms being apprehended, along with their combination, juxtaposition and comparison with other forms. More specifically, if attention is directed with understanding to the form of the art work or to its expressive and aesthetic properties or to the interaction between those features, then the experience is said to be aesthetic \citep{carroll_aesthetic_2002}.
 
-[fauconnier_turner_conceptual_blending.md]
+The attention to form—that is, the set of choices intended to realize the point of the purpose of the artwork—will be taken as our starting point. A content approach to the aesthetic experience thus involves questions of function. Particulary, how does the object of aesthetic experience manifest its function in such a way that it can be correctly judged, insofar as its perceived form and perceived purpose are aligned, distinct from any emotional or axiomatic charge?
 
-[goodman_the_status_of_style.md], along with[lopes_goodman_symbol_theory.md]
+A similar analysis is undertaken by Anjan Chatterjee and Oshin Vartanian in their evaluation of the aesthetic experience from a neuroscientific point of view. They highlight a sensory-motor perspective, loosely mapped to an affective experience, an emotion-valuation perspective, similar to an axiological experience, and a meaning-knowledge experience, which we equate to Carroll's content approach to the aesthetic experience \citep{chatterjee_neuroscience_2016}.
 
-[goody_logic_of_writing.md], goody comes here because he is dealing at the same higher level of the symbol system (orality vs. literacy), and then combine it with [ong_orality_literacy.md]
+Additionally, they make the distinction between an aesthetic judgment, which emanates from the process of understanding the work, and an aesthetic emotion, which follows from the ease acquisition of such an understanding. Without being mutually exclusive, these two pendants are dependent on the amount of engagement provided by the person who experiences the aesthetic object. One can have an aesthetic emotion without being able to provide an aesthetic judgment,  a case in which does not hold enough expertise to apprehend or appreciate a particular realisation. This conditioning of the aesthetic experience to a certain kind of skill is supported by the authors' mention of the theory of fluency-based aesthetics \citep{chatterjee_neuroscience_2016}. Their integrated view builds on models that frame aesthetic experiences as the products of sequential and distinct information-processing stages, each of which isolates and analyzes a specific component of a stimulus (e.g., artwork). These stages, based on Leder et. al's model \citep{leder_model_2004}, evolve form perception, to implicit classification, explicit classification, cognitive mastering and evaluation (or fully-qualified aesthetic judgment).
+
+These studies thus show a particular empirical attention to cognitive engagement with respect to the apprehension an object from an aesthetic perspective. While other types of experiences remain valid when apprehending such an object, we focus here on this specific kind of experience: the cognitive approach to the aesthetic experience.
+
+Still, the fact that there is cognitive engagement supporting an aesthetic experience does not immediately explicit the nature and details of such engagement. Speaking of form and object are higher-level concepts which tend to erase the specificities of the various systems of aesthetic properties, and how their arrangement expresses various concepts. We now turn to Goodman's analysis of the languages of art as a representational symbol systems to frame our analysis of specific aesthetic domains.
+
+%10k goodman developmenthow is it used to communicate
+
+From the question of what is at play when an aesthetic emotion is being felt and an aesthetic judgment is being given, we shift our perspective to the object of aesthetic experience, and to the questions of \emph{how does a work represent?} and \emph{what does a work represent?}. To answer these, we rely on answers provided by by Nelson Goodman in his work \emph{Languages of Art: An Approach to a Theory of Symbols} \citep{goodman_languages_1976}.
+
+The starting point for Goodman's analysis is that production and understanding in the arts involve human activities that, though they differ in specific ways among themselves and from other activities, are nevertheless generically related to perception, scientific inquiry, and other cognitive activity. Specifically they also involve symbolic systems.  It is those two components that Goodman aims at expliciting: what constitutes an aesthetic symbol system, and how does it express?
+
+% 5k  -> what is an aesthetic system? 
+A symbolic system, according to him, consists of characters, along with rules to govern their combination with other characters, itself correlated with a field of reference.
+
+Goodman develops in his opus a systematic approach to symbols in art, freed from any media-specificity (he addresses pictorial symbols to musical notations and even time marks on clocks and watches). These symbols and their arrangement within a work of art supports an aesthetic experience\footnote{It should be noted here that Goodman does not limit the aesthetic experience to a positive, pleasurable one. An artistic symbolic system can be seen even if the result is considered bad.}.
+
+This symbol system is based on five requirements: a system should be composed of signs which are unambiguous, syntactically and semantically disjointed, and differentiated. This classification makes it possible to compare the various symbolization systems used in art, science, and life in general: from clocks to counters, from diagrams to maps models, from musical scores to painters’ sketches and scripts (intended in a broad sense as the characters of natural languages). In our case, this provides us for a framework to investigate the extent to which source code qualifies as a language of art.
+
+ A linguistic system in which source code is written is digital in nature, and therefore satisfies at least the syntactic requirements of disjointedness, differentiation (a mark only ever corresponds to that symbol, such as a variable or function name), as well as syntactic repleteness (relatively fewer factors need to be taken into account during the interpretative process).
+
+As Goodman notes, the distinct signs that compose a symbols system do not have intrinsic properties, but a thing serves as a sign only in relation to a symbol system, and a field of reference. Some requirements need to be fulfilled for such a symbol to enable aesthetic experience. Amongst exemplificiation, syntactic density, semantic density and syntactic repleteness, source code fulfills the last two criteria: with a limited set of symbols (at one of the lowest levels, only two symbols, traditionally marked as 0 and 1), programs can refer to and enact complex states and behaviours. The subsequent question is therefore how a symbolic can signify a set of items in a frame of reference.
+
+ % include the strcture of appearance
+
+% 5k -> how is it used to communicate? more like project zero
+
+Goodman highlights the ways in which symbols systems have expressive and communicative power (through the dyads of denotation and exemplification, description and representation, possession and expression).
+
+% the use of labels, references, and metaphorical expression. Contini: On one side, he developed a topography of the many forms of referential practices: denotation and exemplification (samples and labels), description and representation (verbal and non-verbal symbols), possession and expression (literal and metaphorical) are all differentiated, but as various articulations or, as he would later say, “routes of reference” (Goodman 1984: 55).
+
+% specifically for source code
+
+First I just sketch out some possibilities, and then I develop further in the following chapter. 
+
+Source code maintains specific features on its relation to the field of reference. On the one hand, a particular class of characters employed as symbols (also called \emph{tokens} in the context of programming languages), do not maintain a clear relationship with the items in the field of reference. That is, in program texts, two distinct symbols can be referring to the concept, value, or place in memory (see \ref{chap:programming} for a further explanation of these differences). % insert a listing showing a variable that is assigned multiple times
+On the other hand, the representation of a field of reference is done through a disjointed and differentiated system: the boundaries of each items in the field of reference are clearly defined, in virtue of the specific symbol system that programming languages are.
+
+
+beardsley - the metaphorical twist
+
+contini-goodman art cognition-education.md, summary of goodman and project zero
+
+% 5k correlation by more contemporary studies
+
+complement with the fluency-based theory that involves skill as well
+
+fauconnier-turner-conceptual-blending.md
+
+goodman-the-status-of-style.md, along withlopes-goodman-symbol-theory.md
+
+goody-logic-of-writing.md, goody comes here because he is dealing at the same higher level of the symbol system (orality vs. literacy), and then combine it with ong-orality-literacy.md
 
 davis how to make analogies in a digital age
 
@@ -45,11 +95,13 @@ barthes
 
 voleshov and social aesthetics
 
-[mace_styles_critiques_de_nos_formes_de_vie]
+mace-styles-critiques-de-nos-formes-de-vie
 
 rousset: forme et signification
 
-[portela_scripting_reading_motions]
+flusser: bringing into the realm of prose
+
+portela-scripting-reading-motions
 
 % 4k specificity of the digital?
 

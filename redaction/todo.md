@@ -70,6 +70,10 @@ intrinsic characteristics of cs:
 - abstraction/modularity
 - novelty/creativity
 
+## chap 1
+
+- [ ] refine our definition of aesthetics by adding the fact that it enables an  evaluative appraisal of objects
+
 ### ide notes
 
 - __overall__ computer-aided software engineering https://en.wikipedia.org/wiki/Computer-aided_software_engineering (history is interesting, started with [Lisa Workshop](https://www.applefritter.com/content/lisa-workshop-info) for Apple, IBM was also important, and in the 90s there was a peak of software, [Programmer's Workshop](https://archive.org/details/Macintosh_Programmers_Workshop_missing_735736/mode/2up))
