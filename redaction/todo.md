@@ -50,6 +50,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 ## chap 3
 
+- [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
 - [ ] in the hardware existence of software, talk about memory management
 - [ ] in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
