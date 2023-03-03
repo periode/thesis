@@ -19,6 +19,9 @@ add something about language communities (pythonistas, gophers, rustlings, etc.)
 - [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
 > There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
 
+- [ ] in aesthetics and cognition, group according to philosophical and empirical
+- [ ] aesthetics and cognition: reorganize such that we start from goodman, and then focus on carroll, chatterjee, elgin, fluency theory
+
 
 ## meeting with nick - 28.12.2022
 
