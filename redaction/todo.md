@@ -74,9 +74,13 @@ intrinsic characteristics of cs:
 - abstraction/modularity
 - novelty/creativity
 
+## chap 2
+
+- [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
+
 ## chap 1
 
-- [ ] refine our definition of aesthetics by adding the fact that it enables an  evaluative appraisal of objects
+- [ ] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
 
 ### ide notes
 

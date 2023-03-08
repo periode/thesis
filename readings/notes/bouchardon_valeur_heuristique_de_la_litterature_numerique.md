@@ -18,7 +18,7 @@ literary expression: writing, narrative, position of the reader
 
 the digital only refers to itself (yes, but the digital is inseparable from the act of writing, which then involves a human and therefore necessarily (?) a relationship to other worlds- > goodman). __but also the very first thing is hardware__
 
-form and meaning are closely linked (cf. j. rousset, *forme et signification*, 1966)
+form and meaning are closely linked (cf. j. rousset, *forme et signification*, 1962)
 
 the bizarre love triangle of media studies:
 - **technically**
