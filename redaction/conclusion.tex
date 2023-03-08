@@ -25,11 +25,11 @@ One of the gaps we identified in source code-related literature is that there wa
 
 Starting from trade literature on the topic, and complementing it by cases of close-reading, we have highlighted both structural and contextual specificities to source code. Building on existing work, we have found several properties which seem to be unique to source code. Altogether, these properties support our theory of source code as a material used to construct dynamic semantic spaces.
 
-\emph{Conceptual distance} is key at a structural level: correlated expressions, statements or variables that affect or depend on the same concept (e.g. a file operation or a user account), should be located close to one another in the source code. This counterbalances the entropic tendency of source code to tangle itself, such that the reader has to follow the convoluted machine path of execution, rather than the human conceptual grouping of executable statements.
+Conceptual distance is key at a structural level: correlated expressions, statements or variables that affect or depend on the same concept (e.g. a file operation or a user account), should be located close to one another in the source code. This counterbalances the entropic tendency of source code to tangle itself, such that the reader has to follow the convoluted machine path of execution, rather than the human conceptual grouping of executable statements.
 
-\begin{listing}
-    insert example / comparison here
-\end{listing}
+% \begin{listing}
+%     insert example / comparison here
+% \end{listing}
 
 The conceptual coherence, and thus its ease of understandability, is also manifested in \emph{conceptual atomicity} and \emph{conceptual symmetry}, respectively meaning that a given explicit fragment of source code should do only one thing and do it well, and that fragments of source code that do similar things should look similar as well. Also previously identified as \emph{separation of concerns}, these two principles allow for the abstraction of a given syntactic unit by grouping all the statements into a single action or declaration.
 
@@ -100,7 +100,7 @@ Through an empirical take, we have also qualified how Florian Cramer and his app
 
 \begin{listing}
     \inputminted{perl}{./corpus/forkbomb.pl}
-    \caption[]{forkbomb.pl is an artwork in the exhibited sense of the term, displaying conciseness along with expressive power through its technical expansion}
+    \caption{forkbomb.pl is an artwork in the exhibited sense of the term, displaying conciseness along with expressive power through its technical expansion}
     \label{code:forkbomb}
 \end{listing}
 

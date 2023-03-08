@@ -114,7 +114,7 @@ In his book \emph{Making Sense: Cognition, Computing, Art and Embodiment}, Simon
 For instance, pseudo-code is a way to sketch out an algorithmic procedure, which might be considered agnostic when it comes to implementation details. One can consider the pseudo-code in \ref{code:nielsen_chalktalk}, which describes a procedure to recognize a free-hand drawing and transform it into a known, formalized glyph. Disregarding the implementation details means disregarding any reality of an actual system: the operating system (e.g. UNIX or MSDOS), the input mechanism (e.g. mouse, joystick, touch or stylus), the rendering procedure (e.g. raster or vector), or the programming language (e.g. JavaScript or Python).
 
 \begin{listing}
-\inputminted{text}{./corpus/pseudocode.txt}
+    \inputminted{text}{./corpus/pseudocode.txt}
     \caption{Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep{nielsen_working_2017}}
     \label{code:nielsen_chalktalk}
 \end{listing}
@@ -128,11 +128,9 @@ Beyond the syntax of formal logic, there are different ways to transmit cognitio
 Communication, as the transfer of meaning from one individual to one or more other individuals, does not exclusively rely on the use of mathematical based use of formal languages. From Goodman to Goody, the format of representation also affords differences in what can be thought and imagined. Something that was always implicit in the arts—that representation is a complex and ever-fleeting topic—is shown more recently in Marchand-Zañartu and Lauxerois's work on pictural representations made by philosophers, visual artists and novelists (such as Claude Simon's sketches for the structure of his novel \emph{La Route des Flandres}, shown in \ref{graphic:routedesflandres}) \citep{marchand-zanartu_32_2022}. How specific domains, from mathematics to visual arts and construction, engage in the relation between form and cognition is further adressed in chapter \ref{chap:beauty}.
 
 \begin{figure}
-    \begin{center}
-        \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{routedesflandres.png}
-        \caption{Tentative d'organisation visuelle pour le roman La Route des Flandres, années 1960 - Claude Simon, écrivain}
-        \label{graphic:routedesflandres}
-    \end{center}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{routedesflandres.png}
+    \caption{Tentative d'organisation visuelle pour le roman La Route des Flandres, années 1960 - Claude Simon, écrivain}
+    \label{graphic:routedesflandres}
 \end{figure}
 
 Going beyond logical notation, we have seen that there are other conceptions of knowledge which take into account the physical, social and linguistic context of an action. Nonetheless, these can still be systematized, as Goodman highlights in his investagation of referential systems, with a focus on reference of the ideas at hand.
@@ -263,7 +261,7 @@ Now that we have clarified some of what software complexity consists of, we will
 
 When he coins the phrase \emph{abstract artifact}, Nurbay Irmak addresses software partly as an abstract object, similar in his sense to Platonic entities\footnote{Like Joseph Kosuth's aforementioned trio of chairs..}. Nonetheless, he also grants that software holds spatio-temporal properties \citep{irmak_software_2012}. Indeed, software does need to exist as an implementation, in the form of source code \citep{suber_what_1988}; this implies that software is composed of files, has a beginning (start) and an end (exit), meanwhile also representing ideas of structure and procedure which go beyond these limitations of being written to a disk and having an execution time. Typically, the physical aspects of software (its manifestation as source code) can be changed\footnote{A process called \emph{refactoring}.} without changing any of the ideas expressed by the software\footnote{A phenomenon one can also observe in natural languages, in which one can radically change a syntax without drastically changing the semantics of a sentence.}.
 
-Complementing Irmak, Colburn's phrasing is that of a \emph{concrete abstraction}, an oxymoron which echoes the tensions denoted by the concept of an abstract artifact. 
+Complementing Irmak, Colburn's phrasing is that of a \emph{concrete abstraction}, an oxymoron which echoes the tensions denoted by the concept of an abstract artifact.
 
 He grounds these tensions in the distinction between a medium of execution (a—potentially virtual—machine) and a medium of description (source code). He considers that, while any high-level programming language is already the result of layers of abstraction, such language gets reduced to the zeroes and ones input to the central processing unit \citep{colburn_philosophy_2000}. Here, he sees the abstraction provided by languages ultimately bound to the concrete state of being of hardware and binary. And yet, if we follow along along his reasoning, these representations of voltage changes into zeroes and ones are themselves abstractions over yet another concrete, physical event.
 
@@ -326,9 +324,9 @@ Epistemic actions thus contribute to reducing the kinds of complexities involved
 \begin{quote}
     More precisely, we use the term epistemic action to designate a physical action whose primary function is to improve cognition by:
     \begin{enumerate}
-        \item reducing the memory involved in mental computation, that is, space complexity;
-        \item reducing the number of steps involved in mental computation, that is, time complexity;
-        \item reducing the probability of error of mental computation, that is, unreliability.
+        \item{reducing the memory involved in mental computation, that is, space complexity;}
+        \item{reducing the number of steps involved in mental computation, that is, time complexity;}
+        \item{reducing the probability of error of mental computation, that is, unreliability.}
     \end{enumerate}
     \citep{kirsh_distinguishing_1994}
 \end{quote}
@@ -402,7 +400,7 @@ Moving away from userland, in which most of these metaphors exist, we now turn t
 This need to get away from the specificities of the machines has been one of the essential drives in the development of programming languages. Since we cannot easily and intuitively deal with binary notation to represent complex concepts, programming helps us deal with this hurdle by presenting things in terms of other things. Most fundamentally, we represent binary signs in terms of English language (e.g. from binary to Assembly). This is, again, by no means a metaphorical process, but rather an encoding process, in which tokens are being separated and parsed into specific values, which are then processed by the CPU as binary signs. Still, this abstraction layer offered by programming languages allowed us to focus on \emph{what} we want to do, rather than on \emph{how} to do it. The metaphorical aspect comes in when the issue of interpretation arises, as the possibility to deal with more complex concepts required us to grasp them in a non-rigorous way, one which would have a one-to-one mapping between concepts. Allen Newell and Herbert A. Simon, in their 1975 Turing Award lecture, offer a good example of symbolic manipulation relates inherently to understanding and interpretation:
 
 \begin{quote}
-  In none of [Turing and Church's] systems is there, on the surface, a concept of the symbol as something that \emph{designates}.
+    In none of [Turing and Church's] systems is there, on the surface, a concept of the symbol as something that \emph{designates}.
 \end{quote}
 
 The complement to what he calls the work of Turing and Church as automatic formal symbol manipulation is to be completed by this process of \emph{interpretation}, which they define simply as the ability of a system to designate an expression and to execute it. We encounter here one of the essential qualities of programming languages: the ambivalence of the term \emph{interpretation}. A machine interpretation is clearly different from a human interpretation: in fact, most people understand binary as the system comprised of two numbers, 0 and 1, when really it is intepreted by the computer as a system of two distinct signs (red and blue, Alex and Max, hot and cold, etc.). To assist in the process of human interpretation, metaphors have played a part in helping programmers construct useful mental representations related to computing. These metaphors can go both ways: helping humans understand computing concepts, and to a certain extent, helping computers understand human concepts.

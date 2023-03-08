@@ -226,10 +226,11 @@ Further examples of such intimate knowledge of both the language and the machine
   Essentially, demos "show off". They do so in usually one, two, or all three of three following methods:
 
   \begin{itemize}
-    \item They show off the computer's hardware abilities (3D objects, multi-channel sound, etc.)
-    \item They show off the creative abilities of the demo group (artists, musicians)
-    \item They show off the programmer's abilities (fast 3D shaded polygons, complex motion, etc.) \citep{melik_pc_2012}
+    \item{They show off the computer's hardware abilities (3D objects, multi-channel sound, etc.)}
+    \item{They show off the creative abilities of the demo group (artists, musicians)}
+    \item{They show off the programmer's abilities (fast 3D shaded polygons, complex motion, etc.)}
   \end{itemize}
+  \citep{melik_pc_2012}
 \end{quote}
 
 This showing off, however, does not happen through immediate engagement with the code from the reader's part, but rather in the thorough explanation of the minute functionalities of the demo by its writer. Because of these constraints of size, the demos are usually written in C, openGL, Assembly, or the native language of the targeted hardware. Source code listings of demos also make extensive use of shortcuts and tricks, and little attention is paid to whether or not other humans would directly read the source—the only intended recipient is a very specific machine (e.g. Commodore 64, Amiga VCS, etc.). The release of demos, usually in demoparties, are sometimes accompanied by documentation, write-ups or presentations\footnote{You can find \emph{Elevated}'s technical presentation here: \url{https://www.iquilezles.org/www/material/function2009/function2009.pdf}}. However, this presentation format acknowledges a kind of individual, artistic feat, rather than the \emph{egoless programming} lauded by Brooks in professional software development.
@@ -345,7 +346,7 @@ Within the software engineering debates, the theory and practice distinction had
 
 This approach, halfway between science and art, is perhaps best seen in Donald Knuth's magnum opus, \emph{The Art of Computer Programming}. In it, Knuth summarizes the findings and achievements of the field of computer science in terms of algorithm design and implementation, in order to "\emph{to organize and summarize what is known about the fast subject of computer methods and to give it firm mathematical and historical foundations.}" \citep{knuth_art_1997}. The art of computer programming, according to him, is therefore based on mathematics, but nonetheless different from it insofar as it does have to deal with effectiveness, implementation and contingency\footnote{\emph{The Art of Computer Programming} involves a hypothetical computer, called MIX, to implement the algorithms discussed.}. In so doing, Knuth takes on a more empirical approach to programming than his contemporaries, inspecting source code and running software to assess their performance, an approach he first inaugurated for FORTRAN programs when reporting on their concrete effectiveness for the United States Department of Defense \citep{defensetechnicalinformationcenter_dtic_1970}.
 
-\emph{Structure and Interpretation of Computer Programs} is another influential academic textbook dealing not just with computation as a an autotelic phenomenon, in which the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}" \citep{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompanies it, the aesthetic standard in this more engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms} \citep{moss_beautifulalgorithms_2022}. For instance, \ref{code:bubble_sort_julia} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, resulting in an easier grasping of the concept at hand, rather than being distracted by the idiosyncracy of the implementation. The simplicity of scientific algorithms is expressed even further in \ref{code:nearest_neighbor_julia} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
+Another influential textbook insisting that computation is not to be seen as an autotelic phenomenon is \emph{Structure and Interpretation of Computer Programs}. In it, the authors insist that source code is "\emph{must be written for people to read, and only incidentally for machines to execute}" \citep{abelson_structure_1979}. Still, even when confronted with implementation and the plurality of contingencies of non-mathematical elements which accompanies it, the aesthetic standard in this more engineering approach to computer science is the proportionality between the number of lines of code written and the complexity of the idea explained, as we can see in the series \emph{Beautiful Julia Algorithms} \citep{moss_beautifulalgorithms_2022}. For instance, \ref{code:bubble_sort_julia} implements the Bubble Sort sorting algorithm in one loop rather than the usual two loops in C, resulting in an easier grasping of the concept at hand, rather than being distracted by the idiosyncracy of the implementation. The simplicity of scientific algorithms is expressed even further in \ref{code:nearest_neighbor_julia} the one-line implementation of a procedure for finding a given element's nearest neighbor, a crucial component of classification systems, including AI systems.
 
 \begin{listing}
   \inputminted{julia}{./corpus/bubblesort.jl}
@@ -616,7 +617,6 @@ Recursion, or the technique of defining something in terms of itself, is a posit
 
 \begin{listing}
   \inputminted{csharp}{./corpus/recursive_iteration.cs}
-
   \caption{Comparison two functions, one using recursion, the other one using iteration, https://stackoverflow.com/a/12553314/4665412}
   \label{code:recursion_iteration_csharp}
 \end{listing}
@@ -645,7 +645,7 @@ By looking at it from the opposite perspective of highly-confusing code, we see 
 
 Along with this mental property, programmers have another way to refer to code that does not meet aesthetic criteria, which is also relates primarily to a non-cognitive aspect of source code, by refferring to material properties.
 
-\emph{Spaghetti code} refers to a property of source code where the syntax is written in such a way that the order of reading and understanding is akin to disentangling a plate of spaghetti pasta. While still linear in execution, this linearity loses its cognitive benefits due to its extreme convolution, making it unclear what starts and ends where, both in the declaration and the execution of source code. Rather than using a synonym such as \emph{convoluted}, the image evoked by spaghetti is particularly vivid on a sensual level, as a slimy, vaguely structured mass, even if the actual processes at play remain eminently formal \citep{steele_macaroni_1977}. Such a material metaphor can also be in Foote and Yoder's description of code as a "big ball of mud":
+For instance, \emph{Spaghetti code} refers to a property of source code where the syntax is written in such a way that the order of reading and understanding is akin to disentangling a plate of spaghetti pasta. While still linear in execution, this linearity loses its cognitive benefits due to its extreme convolution, making it unclear what starts and ends where, both in the declaration and the execution of source code. Rather than using a synonym such as \emph{convoluted}, the image evoked by spaghetti is particularly vivid on a sensual level, as a slimy, vaguely structured mass, even if the actual processes at play remain eminently formal \citep{steele_macaroni_1977}. Such a material metaphor can also be in Foote and Yoder's description of code as a "big ball of mud":
 
 \begin{quote}
   A Big Ball of Mud is a haphazardly structured, sprawling, sloppy, duct-tape-and-baling-wire, spaghetti-code jungle. These systems show unmistakable signs of unregulated growth, and repeated, expedient repair. Information is shared promiscuously among distant elements of the system, often to the point where nearly all the important information becomes global or duplicated. \citep{foote_big_1997}
@@ -850,11 +850,11 @@ Simon Yuill, in the volume edited by Olga Goriunova and Alexei Shulgin, develop 
 Finally, the trade litterature has also been contributing to this overlap between between architecture and software as formal, high-level organization of inter-connected components. For instance, Robert Martin, in the influential \emph{Clean Code} mentions that the standards of software architecture are based on the \emph{5S} japanese workplace organization method, namely:
 
 \begin{itemize}
-  \item seiri (整理) - naming and sorting all components used
-  \item seiton (整頓) - placing things where they belong
-  \item seisō (清掃) - cleanliness
-  \item seiketsu (清潔) - standardization and consistency in use
-  \item shitsuke (躾) - self-discipline
+  \item{seiri (整理) - naming and sorting all components used}
+  \item{seiton (整頓) - placing things where they belong}
+  \item{seisō (清掃) - cleanliness}
+  \item{seiketsu (清潔) - standardization and consistency in use}
+  \item{shitsuke (躾) - self-discipline}
 \end{itemize}
 
 We recognize here a focus on efficiency, organization and \emph{proper} use, along with the requirement of cleanliness of the tools, workbench and workplace, as a virtue of a good organization. While originally applied to manufacture, Martin makes the case that this can also apply to the knowledge economy—as in our case, with correct naming, correct placement, correct appearance and correct use.
@@ -864,9 +864,7 @@ We recognize here a focus on efficiency, organization and \emph{proper} use, alo
 
 However, considering architecture as a strictly organizational practice does not show the whole picture. As Hill's quote above hints at, there is another side to architecture, concerned with details rather than with plans, feeling rather than rationalizing.
 
-This is particularly salient in the development of software patterns, and their reference to a particular branch of architectural theory: Christopher Alexander's \emph{A Pattern Language}.
-
-\emph{A Pattern Language} kickstarted a whole field of research based around this idea of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, \emph{which expresses a relation between a certain context, a problem, and a solution.}. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
+This is particularly salient in the development of software patterns, and their reference to a particular branch of architectural theory: Christopher Alexander's \emph{A Pattern Language}. This book kickstarted a field of research based around this idea of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, \emph{which expresses a relation between a certain context, a problem, and a solution.}. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
 
 Besides the theoretical similarities between software and architecture mentioned above, it is the lack of learning from practical successes and failures in the field which prompted interest in Alexander's work, along with the development of Object-Oriented Programming, first through the Smalltalk language, then with C++, \footnote{Today most of the programming languages allow for some object-oriented paradigm}. The similarity between a pattern and an object, and their promise of using them which would lead to better results on multiple dimensions, made it very attractive to software developers. Writing in \emph{Patterns of Software} (with a foreword by Alexander), Richard P. Gabriel illustrates that point:
 
