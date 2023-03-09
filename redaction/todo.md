@@ -1,5 +1,13 @@
 # todo
 
+----
+
+MOVE CRAFT INTO BEAUTY ENGINEERING SECTION
+
+And then spread out in the ideals to make each section less heavy
+
+----
+
 - deal with inline quotes properly (using the `dirtytalk` package)
 - - add this to examples, from the rust parser example i forked
 
