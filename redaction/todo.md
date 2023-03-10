@@ -2,6 +2,8 @@
 
 ----
 
+- [ ] add this in the literature review: https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
+
 MOVE CRAFT INTO BEAUTY ENGINEERING SECTION
 
 And then spread out in the ideals to make each section less heavy
@@ -133,6 +135,10 @@ intrinsic characteristics of cs:
 - - [ ] black perl is still in old mode
 - - [ ] explain listing 13
 - [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
+
+## chap 2
+
+- [ ] include the hacker dictionary definition of elegance http://www.catb.org/~esr/jargon/html/E/elegant.html
 
 ## chap 1
 

@@ -65,6 +65,8 @@ Source code maintains specific features on its relation to the field of referenc
     \label{code:multiple_references}
 \end{listing}
 
+% case in point: https://github.com/torvalds/linux/blob/d158fc7f36a25e19791d25a55da5623399a2644f/fs/ext4/resize.c#L698
+
 On the other hand, the representation of a field of reference is done through a disjointed and differentiated system: the boundaries of each items in the field of reference are clearly defined, in virtue of the specific symbol system that programming languages are. These programming languages do dictate the rules of engagement of the symbolic system with the field of reference.
 
 We have shown here that source code qualifies as a symbolic system susceptible of affording symptoms of the aesthetic. We have also highlighted its specificities, particularly in terms of descriptions and representations, and of complex and multiple references. Source code being a dual language, between human and machine, makes it have such complex and multiple references. A final aspect to investigate is the expressiveness of source code, with a particular attention to how source code can manifest of metaphorical exemplification and representation.
@@ -165,7 +167,7 @@ Cave posits that literature is an object of knowledge, a creator of knowledge, a
 
 The work of imagination also relies on how the written word can elicit the recall of sensations. This takes place through the re-creation, the evokation of sensory phenomena in linguistic terms, such as the \emph{perceptual modeling} of literary works, which can be defined as (linguistic) simulations relying on the senses to communicate situations, concepts, and potential realities.
 
-This attention to the sense calls for an approach of literary criticism as seen through embodied cognition, which starts from the postulate human cognition is grounded in sensorimotricity, i.e., the ability to feel, perceive, and move. The pervading cognitive process called perceptual simulation, which is activated when we cognitively process a gesture in a real-life situation, is also recruited when we read about actions, movements, and gestures in texts.
+This attention to the sense calls for an approach of literary criticism as seen through embodied cognition, which starts from the postulate human cognition is grounded in sensorimotricity, i.e., the ability to feel, perceive, and move. Specifically, pervading cognitive process called perceptual simulation, which is activated when we cognitively process a gesture in a real-life situation, is also recruited when we read about actions, movements, and gestures in texts.
 
 Depiciting movement, vision, tactility and other embodied sensations allows us to crystallize and verify the work of the imaginative process. As such, literature unleashes our imaginary by recreating sensual experiences—Lakoff even goes as far as saying that we can only imagine abstract concepts if we can represent them in space\footnote{Geoff Hinton, pioneer of modern deep-learning, has reportedly said that, to visualize 100-dimensional spaces, one should first visualize a 3-dimensional, and then "shout 100 really really loud, over and over again", cited in \citep{akten_journey_2016}}. It seems that the imaginative process depends in part on visual and spatial projections, and suggests the fitness of the conceptual structures depicted. By describing situations which, while fictional, nonetheless are possible in a reality often very similar to the one we live in, it is easy for the reader to connect and understand the point being made by the author. So if literature is an object of knowledge, both sensual and conceptual, offering an interplay between rational and imaginative thought, it still relies on the depiction of mostly familiar situations (the protagonists physiologies, the rules of gravity, the fundamental social norms are rarely challenged). A first issue that we encounter here, in trying to connect source code and computing to this line of thought, is that code has close to no sensual existence, beyond its textual form. In trying to communicate concepts, states and processes related to code and computing, and in being unable to depict them by their own material and sensual properties, we once again resort to linguistic processes which enable the bringing-into-thinking of the program text.
 
@@ -179,62 +181,83 @@ The code poem listed in \ref{code:unhandled-love} suggests a similar phenomenon 
 
 Love is therefore depicted here as an exception that must be handled (with care) , and the use of a particularly dynamic keyword elicits such a feeling in a reader who previously had to throw and handle exceptions.
 
-% todo add a bit more of this cognitive engagement with bootz and jérôme pelletier
-Philippe Bootz has described this mode of reading (e-lit), not sourec code, in programmed digital poetry as cognitive reading, in which the reader assumes a position of metareader
-
 \subsection{Words in space}
 \label{subsec:spatial-literature}
 % 5k space
 
 Beyond the use of metaphor, literature allows the reader to engage cognitively with the world of the work, and the interrelated web of concepts that can then be conversed once they are put into words. This process of putting down intention, through language and into written words, is also the process of transforming a time-based continuum (speech) into a space-based discreete sequence \footnote{This process is called grammatization, and is explored further in \citep{bouchardon_valeur_2014}}. This is valid both for human prose and machine languages: the unfathomably fast execution of sequential instructions is manifested as static space in source code.
 
-Literary theory  also engages with the concept of space. We have seen in the subsection above that there is a particular attention being given to movement in space, through embodied cognition; in that case, the use of a specific syntax elicits a rkinetic reaction in the incarnated reader. Second, attention is also being paid to fictional space—that is, the web of relationships, connotations and suggestions that hint at a broader world than the one immediately at hand in a work of literature.
+Literary theory  also engages with the concept of space. We have seen in the subsection above that there is a particular attention being given to movement in space, through embodied cognition; in that case, the use of a specific syntax elicits a kinetic reaction in the incarnated reader. We now pay attention to how spatiality interplays with meaning in literature, looking at the spatial form of the text in general, and to spatio(-temporal) markers in the text in specific.
 
-% add this ref to the section above
-Guillemette Bolens, Kinesic Humor: Literature, Embodied Cognition, and the Dynamics of Gesture / Le Style des gestes: corporéité et kinésie dans le récit littéraire, Guillemette Bolens
+To do that, we leave behind fictional space: the web of relationships, connotations and suggestions that hint at a broader world than the one immediately at hand in a work of literature. This fictional space, or \emph{storyworld} is not to be equated to what we have denotated as the problem domain. Rather, insofar as it is what exists through, yet beyond, the text itself, we can refer to it as the \emph{world of reference}.
 
-% connect with code as reading direction, and "naturalness" of reading, and refer to the graphical orientation of IDEs and also the people on stack overflow who vertically align their code
+To focus on the specific tokens denoting space, we rely on the distinction operated by Marie-Laure Ryan on the topic \citep{ryan_space_2009}. The starting point she offers is to consider how the spatial extension of the text, its existence in a certain number of dimensions\footnote{An oral narrative exists in zero dimensions, a live TV news ticker exists in one dimension, a printed or digital page exists in two dimensions, while a theater play exists in three dimensions.} impacts the readers' perception of the narrative.
 
-%2k
-Marie-Laure Ryan - Complexity \url{http://marilaur.info/complexity.pdf} / Mapping and Geography \url{http://marilaur.info/2018-mapping.pdf} / \url{https://ohiostatepress.org/books/BookPages/ryanetal_narrating.html}
+Moving a step further, Ryan shifts to the spatial form of the text. Rather than looking at the space in which it is deployed, it is considering
 
-Marie Laure Ryan, touch upon space but also narration:
-- The storyworld (fiction) and the world of reference (non-fiction)
+\begin{quote}
+    a type of narrative organization characteristic of modernism that deemphasizes temporality and causality through compositional devices such as fragmentation, montage of disparate elements, and juxtaposition of parallel plot lines. \citep{ryan_space_2009}.
+\end{quote}
 
-% find some examples of software development that hints at a world of reference (the hardware one that separates changeable variables for hardware clock)
+Narrative, in its traditional sense of coherent, sequential events whose developments involve plot and characters, is seldom mentioned in writing source code. In source code, narrative is already deemphasized and the spatial form of the text mentioned above is therefore better suited to match the material of the code. Indeed, Ryan continues:
 
-%1k contribution de gefen
-Pour Joseph Carroll, il s'agit de construire une "cartographie cognitive", permettant de rendre l'expérience intelligible (parce que visualo-spatiale?)
+\begin{quote}
+    The notion of spatial form can be extended to any kind of design formed by networks of semantic, phonetic or more broadly thematic relations between non-adjacent textual units. When the notion of space refers to a formal pattern, it is taken in a metaphorical sense, since it is not a system of dimensions that determines physical position, but a network of analogical or oppositional relations perceived by the mind. \citep{ryan_space_2009}
+\end{quote}
 
-Thomas Pavel: le roman est une boite a outil pour comprendre le monde, et cela se passe par *l'habitation* du monde dans lequel le roman voit le jour.
+Space, along with interactivity, is a core feature of the digital medium\footnote{As N. Katherine Hayles states in her eponymous essay, \emph{"print is flat, code is deep"} \citep{hayles_print_2004}}. Janet Murray also puts spatiality as one of the core distinguishing features of digital media, at the forefront of which are digital games\footnote{\emph{"The computer's spatial quality is created by the interactive process of navigation. We know that we are in a particular location because when we enter a keyboard or mouse command the (text or graphic) screen display changes appropriately.} \citep{murray_hamlet_1998}}.
 
-to be complemented with Elaine Scarry (notamment le modelage perceptuel inspiré de la théorie de la perception de James J. Gibson)
+An example of this intertwining of flat textual screen and spatial depth is the overall genre of interactive fiction, which displays prompts for textual interaction on a screen, accompanied with the description of where the reader is currently standing in the fictional world. Exploration can only be done in a linear fashion, entering one space at a time; and yet the system reveals itself to contain spaces in multiple dimensions, connected by complex pathways and relationships. The listing in \ref{code:mac_sched} shows how the execution processes of a program text can be expressed spatially in the comments, and then textually in the rest of the file. Since comments are ignored by the computer, this depiction is only to help the human reader in their spatial representation of the executed program.
 
-%1k on the commentary of this and maybe another one
+\begin{listing}
+    \inputminted[]{c}{./corpus/mac_sched.c}
+    \caption{mac\_sched.c}
+    \label{code:mac_sched}
+\end{listing}
+
+% https://github.com/TritonDataCenter/illumos-joyent/blob/dff0473c792fc5c3ef7c3d862e557fe201a5d671/usr/src/uts/common/io/mac/mac_sched.c#L28-L967
+
+As Murray mentions, these features are not limited to those playful interactive systems presented as works to be explored (be it e-literature or digital games), but rather a core component of digitality. Beyond the realm of fiction, one can see instances of this in the syntax used in both programming languages and programming environments (see \ref{subsec:tools-cognition} for an overview of IDEs). For instance, the use of the \lstinline{GOTO} statement in BASIC, of the \lstinline{JMP} and \lstinline{MOV} instructions in x86 Assembly, or the use of the \lstinline{return} in the C family of programming languages all hint at movement, at going places and coming back, representing the non-linear perception of program execution. From the machine perspective, program execution can be considered to be linear, since instructions are executed one after the other\footnote{The use of multi-core architecture and parallel processing does complicate this picture, but programmers rarely engage directly with the specification of which CPU core executes which instruction. What they do engage with, is parallel programming, in which things happen simultaneously, thus complicating the picture insofar as two processes being run in parallel imply some sort of distinct semantic spaces to be reflected in the mental model of the programmer.}.
+
+And yet, Ryan hints at anothe aspect of spatial form specifically in the digital medium:
+
+\begin{quote}
+    But an even more medium-specific type of spatial form resides in the architecture of the underlying code that controls the navigation of the user through a digital text. \citep{ryan_four_2021}
+\end{quote}
+
+As writers and readers of this architecture, we gather information through syntax about developments in space and time into a cognitive map or mental model of narrative space\footnote{The term \emph{narrative} is used here to describe the effective behaviour of the program, once executed. Since source code appreciation is subject to its function, following the narrative of source code would then amount to following its correct execution path(s)}. Mental maps are therefore dynamically constructed in the course of reading and consulted by the reader to orient herself in the program. A very simple example of spatialization of meaning can be seen in \ref{code:nested}. There, the spatial component is rendered specifically through the syntax of the markup language that is HTML, implying that certain elements can only exist in the context of others, and thus spatially delimiting certain semantic areas. This example tends to the poetic through its representatio of God as both the all-including and the all-included, and thus escaping the implicit rules of everyday spatiality, that a thing cannot contain itself.
+
 \begin{listing}
     \inputminted[]{html}{./corpus/nested.html}
     \caption{Nested, by Dan Brown and published in \{code poems\} \citep{bertram_code_2012}}
     \label{code:nested}
 \end{listing}
 
-Space is also a core feature of the digital medium. As N. Katherine Hayles states in her eponymous essay, \emph{"print is flat, code is deep"} \citep{hayles_print_2004}, and thus the spatial dimension must be taken into account when the digital object is being engaged with. Janet Murray also puts spatiality as one of the core distinguishing features of digital media, at the forefront of which are digital games\footnote{\emph{"The computer's spatial quality is created by the interactive process of navigation. We know that we are in a particular location because when we enter a keyboard or mouse command the (text or graphic) screen display changes appropriately.} \citep{murray_hamlet_1998}}.
+A more concrete example can be seen in \ref{gen:alloc}. Written in the style of software engineers, rather than poets, this listing describes a function which adds an owner to a pool of allocated memory. Two aspects stand out: from lines 13-16, the assignment of the fields of the \lstinline{chunk} struct imply a reduction in the space needed to hold that data in (human) memory. At this point, the information regarding physical and virtual memory addresses and owner are abstracted away in  \lstinline{chunk}, reducing the cognitive surface of the program.
 
-An example of this intertwining of flat textual screen and spatial depth is the overall genre of interactive fiction, which displays prompts for textual interaction on a screen, accompanied with the description of where the reader is currently standing in the fictional world. Exploration can only be done in a linear fashion, entering one space at a time; and yet the system reveals itself to contain spaces in multiple dimensions, connected by complex pathways and relationships. The figure shown in \ref{graphic:howling-dogs} shows the map of porpentine's \emph{howling dogs}, a work of interactive fiction made in the Twine engine \citep{porpentine_howling_2012}, illustrates the distinction between the current position of the reader in the reading process and the broader narrative space.
+The second aspect is the function calls on lines 19-21. These three functions are semantically related to one another\footnote{The function calls ensure the proper addition of a chunk in a list, by locking and unlocking the resources}, and yet they abstract way different spaces: one where the spin is locked, one where the addition is made, and one where the spin is unlocked. None of these three functions are declared in the same file as this excerpt, forcing a reader to treat those as black-boxes and singular points, or to explore the program text to find their definitions and expand the single function call into a larger surface of instructions.
 
-\begin{figure}
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{howling_dogs_node_map.png}
-    \caption{The node map of the game howling dogs highlights the spatiality inherent to interactive digital systems.}
-    \label{graphic:howling-dogs}
-\end{figure}
+\begin{listing}
+    \inputminted[]{c}{./corpus/genalloc.c}
+    \caption{genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep{linux_content_2023}}
+    \label{code:genalloc}
+\end{listing}
 
-% and cd and go to.
-As Murray mentions, these features are not limited to those playful interactive systems presented as works to be explored (be it e-literature or digital games), but rather a core component of digitality. Beyond the realm of fiction, one can see instances of this in the syntax used in both programming languages and programming environments (see \ref{subsec:tools-cognition} for an overview of IDEs). For instance, the use of the \lstinline{GOTO} statement in BASIC, of the \lstinline{JMP} and \lstinline{MOV} instructions in x86 Assembly, or the use of the \lstinline{return} in the C family of programming languages all hint at movement, at going places and coming back, representing the non-linear perception of program execution. From the machine perspective, program execution can be considered to be linear, since instructions are executed one after the other. The use of multi-core architecture and parallel processing does complicate this picture, but programmers rarely engage directly with the specification of which CPU core executes which instruction. What they do engage with, is parallel programming, in which things happen simultaneously, thus complicating the picture insofar as two processes being run in parallel imply some sort of distinct semantic spaces to be reflected in the mental model of the programmer.
+Furthermore, the function of the first and last of these function calls are tangled with time: a resource need to be locked \emph{before} modification such that another process does not \emph{simultaneously} modify that resource. One of the earlier approaches to the specific tokens which represent space in the traditional novel has also related it to time: the chronotope is described by Mikhail Bakhtin as the tight entanglement of temporal and spatial relationships that are artistically expressed in literature. Those markers allow for the reification of temporal events and spatial settings during the unfolding of narrative events. These chronotopes execute a double-function:
+
+\begin{quote}
+    Time, as it were, thickens, takes on flesh, becomes artistically visible; likewise, space becomes charged and responsive to the movements of time, plot and history. \citep{bakhtin_dialogic_1981}
+\end{quote}
+
+While Bakhtin introduces the concept from a marxist-historical point of view, analyzing notions of history, ideal, epics and folklore through that lense, it is nonetheless useful for our purposes. Chronotopes are a kind of marker which enable the understanding of where something comes from (such as an explicit module declarations in header files, or inline before a function call), or when something should happen (such as the \emph{async/await} keyword pair in ECMAscript or the \lstinline{\$\:} reactive marker in the Svelte web development framework).
+
+Thus, the chronotopes give flesh to the events described in (and then executed from) source code, and function as the primary means of materializing time in space. From a network of these chronotopes, along with metaphors and other devices that are explicited in \ref{sec:programming-aesthetic-framework}, emerges a concretization of representation which the reader can use to constitue a mental model of the program text.
 
 \spacer
 
-In conclusion, blah blah
+Syntactical literary devices allow readers to engage cognitively with a particular content, through the construction of mental models a particular narrative, through a network metaphors, allusions, ambiguous interpretations and markers of space and time. We have shown these literary devices also apply to source code, how the use of machine tokens and human interpretation suggest an aesthetic experience through metaphors, and with particular markers that are needed to make sense of the time and space of a computer program, which differs radically from that of a printed text. This making sense of a foreign time and space amounts to creating a mental map of the storyworld (in fiction) or the world of reference (in non-fiction).
 
-%mention specifically cognition as ambiguous interpretation, metaphor, kinetic and mapping worlds of reference
+The use of the term map also implies a specific kind of territory. Before the worlds of reference referred to by texts, we can go back to the spatial extension of the text, and its associated medium. As a hybrid between the print's flatness and code's depth, Ryan and Murray—among many others—identify the digital narrative as a highly spatialized one. This feature, Ryan argues, is but a reflection of the inner architecture of source code. Pushing this line of thought further, we now turn to architecture as a discipline to investigate how the built environment elicits understanding.
 
 \section{Architecture and understanding}
 \label{sec:arch-understanding}
@@ -257,9 +280,15 @@ alexander and oop
 
 patterns and beacons
 
+\begin{quote}
+    Architecturally, as well as plot-functionally, narrative space can be described in terms of the partitions, both natural and cultural, that organize it into thematically relevant subspaces: walls, hallways, political boundaries, rivers and mountains, as well as in terms of the openings and passageways that allow these subspaces to communicate [...] \citep{ryan_space_2009}
+\end{quote}
+
 %5k cognition, landscape cognition
 
 specifically the cognition paper. there isn't much but hey
+
+the reference to the spatial architectures of jenkins
 
 %5k craftsmen
 
