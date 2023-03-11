@@ -2,36 +2,21 @@
 
 ----
 
-- [ ] add this in the literature review: https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
-
-MOVE CRAFT INTO BEAUTY ENGINEERING SECTION
-
-And then spread out in the ideals to make each section less heavy
 
 ----
 
 - deal with inline quotes properly (using the `dirtytalk` package)
 - - add this to examples, from the rust parser example i forked
 
-```
+```rust
 // Level-change Operator (what a stupid name)
 operator_level = { operator_exp | operator_subscript |
                    operator_exp ~ operator_subscript |
                    operator_subscript ~ operator_exp
 }
 ```
+
 as an example of how people assign quality to proper scale naming
-
-faire une connexion entre cognition et constructivisme! Seymour Papert, Scratch, education
-
-add something about language communities (pythonistas, gophers, rustlings, etc.)
-
-- [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
-> There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
-
-- [ ] in aesthetics and cognition, group according to philosophical and empirical
-- [ ] aesthetics and cognition: reorganize such that we start from goodman, and then focus on carroll, chatterjee, elgin, fluency theory
-
 
 ## meeting with nick - 28.12.2022
 
@@ -60,6 +45,9 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - should it be about programming languages? or about programming semantics? or wait until i know really what it is about, and why it;s needed?
 - allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 - include \citep{dexter_embodied_2011}
+- [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
+- [ ] literature: include a section about poetry: https://jacket2.org/commentary/poetry-executable-code / https://volltext.net/texte/cornelia-travnicek-code-poetry/
+- [ ] literature: include that code is not literature: https://gigamonkeys.com/code-reading/
 
 ## chap 3
 
@@ -73,6 +61,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - [ ] add to the programmer expertise https://books.google.de/books?hl=en&lr=&id=rMmxq8q0CGYC&oi=fnd&pg=PA8-IA6&dq=L.M.+Berlin,+%E2%80%9CBeyond+Program+Understanding,%E2%80%9D+A+Look+at+Programming+Expertise+in+Industry,+Empirical+Studies+of+Programmers,+Fifth+Workshop,+pp.+6-25,+1993.&ots=gO-IgzpVOE&sig=ozpfd-DluQ3k4IE7TBnCix0TT7I&redir_esc=y#v=onepage&q&f=false __also__ http://scholar.google.com/scholar?hl=en&q=J.+Koenemann+and+S.P.+Robertson%2C+%E2%80%9CExpert+Problem+Solving+Strategies+for+Program+Comprehension%2C%E2%80%9D+Proc.+Conf.+Human+Factors+and+Computing+Systems%2C+pp.+125-130%2C+1991.
 - [ ] at the end of the psychology section, mention the skills needed by a programmer (see below) and this will help us in the followig cognitive tools section to prove that tools indeed help with some of these.
 - [ ] in terms of metaphors, make clear that programmer-facing metaphors are not more complex than user-facing metaphors, or that it's a different kind of cognitive work, but rather that they are referring to a different kind of concept (streams, pipes, volatile memory, etc.)! For instance, mention how there are files/folders for users, and these are manipulated differently on GUI and CLI (CLI -> bash script: "loops", "labels", "wildcards"). these show that the metaphors at work in programming are a combination of different concepts, drawing on different fields of knowledge.
+- [ ] add to means of understanding and IDEs deciding how we write: https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/
 
 Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}
 
@@ -87,10 +76,18 @@ intrinsic characteristics of cs:
 ## chap 2
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
+- [ ] add a reference to MOONBIT in the ideals or in the lit review
 
 ## chap 1
 
 - [ ] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
+- [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
+> There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
+- [ ] add this in the literature review: https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
+
+## structure notes
+
+- [ ] And then spread out in the ideals to make each section less heavy
 
 ### ide notes
 
