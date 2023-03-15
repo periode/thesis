@@ -264,17 +264,20 @@ The use of the term map also implies a specific kind of territory. Before the wo
 
 Beauty in architecture is one of the discipline's fundamental components, and aims, dating back to Vitruvius's maxim that a building should exhibit \emph{firmitas, utilitas, venustas}—solidity, usefulness, beauty. And yet in practice, beauty, or the aesthetic experience, is not sufficient, and sometimes not even required for a building to be appreciated. Even though architecture is considered as an art, it is nonetheless also a product of engineering, and thus a hybrid field, one where function and publicness modulate what could be otherwise a "pure" aesthetic judgment.
 
-This sections looks at architecture through its multiple aspects, to highlight to which extent some of these are reflected in source-code\footnote{Recall how, in \ref{subsubsec:craft-architecture}, programmers tended to refer extensively to themselves as architects.}. By investigating the tensions and overlaps of form, function, construction and materiality in the built space, we also identify similarities in the programmed space.
+This sections looks at architecture through its multiple aspects, to highlight to which extent some of these are reflected in source-code\footnote{Recall how, in \ref{subsubsec:craft-architecture}, programmers tended to refer extensively to themselves as architects.}. By investigating the tensions and overlaps of form, function, context and materiality in the built space, we also identify similarities in the programmed space.
 
+% Architectural objects (as wholes) are systems or system-like, in that they constitute sets of interrelated structural components, with characteristic behavior or processes yielding outputs from inputs, and where the parts are connected by distinctive structural and behavioral relations (Boyce 1969)
+
+% In particular, we have beliefs about architectural objects that reflect functions and interactions of (1) components individually and as parts of systemic wholes, (2) systems as parts of broader environmental contexts, and (3) persons’ behaviors within the systems. Whereas the first two functional and interactional features are typical to all design, the third feature marks architecture as an artform that, in providing an immersive and systemic physical environment, intensely draws on and shapes social, psychological, and economic features of experience. 
+
+% remember that we're focusing on UNDERSTANDING ARCHITECUTRE: what and how do we understand? -> knowing about architecture / knowing through architecture
+% Sauchelli (2012a) proposes the use of cognition in grasping pleasure (“intellectual pleasure”) as a central feature of architectural experience. The idea is that fully comprehending the pleasure of the experience and thereby establishing its aesthetic value requires cognition, in the form of attention to details and understanding of the architectural object. 
+% A blend of the cognitive and sensual is also characteristic of Scruton’s proposed “imaginative perception”—the notion that we may perceive the details of built structures in various ways, depending on directions that our imagination takes us. Scruton (1979/2013) takes this cognitive act—reminiscent of seeing-as and free play of the imagination—as crucial to architectural experience. We are at all turns required to make interpretative choices in parsing ambiguous or multiform aspects of the built environment.
+
+% another axis of separation is theoretical/historical vs. practical
 
 Start with Plato to give an overview, and show which aspect of the research we focus on in this section.
 %\url{https://plato.stanford.edu/entries/architecture/}
-
-Then check the references  from philosophy of Architects
-% \url{https://books.google.de/books/about/Philosophy_for_Architects.html?id=qUJ7KzsXpTsC&redir_esc=y}
-
-cute, literally spatial code city:
-%\url{https://wettel.github.io/codecity.html}
 
 Spatiality and spelunking
 %\url{www.codespelunking.org}
@@ -282,9 +285,6 @@ Spatiality and spelunking
 
 books about open source architecture, edited by greg wilson
 %\url{https://aosabook.org/en/index.html} - \url{https://aosabook.org/en/zeromq.html}
-
-Semantic compression
-%\url{https://caseymuratori.com/blog_0015}
 
 languages also have architecture?
 % \url{http://rigaux.org/language-study/syntax-across-languages/}
@@ -294,9 +294,11 @@ languages also have architecture?
 \subsection{Form and Function}
 \label{subsec:form-function}
 
-While structure is meant to, by definition, stand the test of time\footnote{A purposes exemplified by the still standing structures of Roman and Greek antiquities, resulting from a particular mixing process of concrete.}, utility can be assessed by the extent to which a building fulfills its intended function, and beauty remains elusive, more often igniting debates amongst architects, rather than creating consensus over particularly beautiful constructions\footnote{With the exception, perhaps of Frank Lloyd Wright's Fallingwater, and Ludwig Mies van der Rohe's Neue Nationalgalerie.}. Different schools of beauty in architecture exist, which would could organize across an axis spanning decorating to functioning.
+% Hume's related suggestion (Treatise (1739-40)) that beauty of artifacts consists in their appearing to bear utility), and (b) Kant’s proposal that architecture is an artform capable of generating dependent beauty. (In the latter case, beauty stands in relation to concepts with which we associate architectural objects, which for such objects are typically the ends towards which they are created.) 
 
-In terms of top-down approaches, we've seen that, since beautiful software is, first and foremost, software which runs as intended, perhaps the first architectural standard which we can apply here is that of Louis Sullivan's maxim that \emph{form follows function}. Due to its physical manifestation, Sullivan's statement is inevitably translated into concrete, visible, and sensual consequences.
+While structure is meant to, by definition, stand the test of time\footnote{A purposes exemplified by the still standing structures of Roman and Greek antiquities, resulting from a particular mixing process of concrete.}, utility can be assessed by the extent to which a building fulfills its intended function, and beauty remains elusive, more often igniting debates amongst architects, rather than creating consensus over particularly beautiful constructions\footnote{With the exception, perhaps of Frank Lloyd Wright's Fallingwater, and Ludwig Mies van der Rohe's Barcelona Pavilion.}. Different schools of beauty in architecture exist, which would could organize across an axis spanning decorating to functioning.
+
+Considering the field from a functional perspective, perhaps the first architectural standard which we can apply here is that of Louis Sullivan's maxim that \emph{form follows function}, devised as he was constructing the early office buildings in North America. Sullivan's statement is thus that what the building enables its inhabitants to do, inevitably translates into concrete, visible, and sensual consequences.
 
 \begin{quote}
   All things in nature have a shape, that is to say, a form, an outward semblance, that tells us what they are, that distinguishes them from ourselves and from each other
@@ -304,11 +306,13 @@ In terms of top-down approaches, we've seen that, since beautiful software is, f
   It is the pervading law of all things organic and inorganic, of all things physical and metaphysical, of all things human and all things superhuman, of all true manifestations of the head, of the heart, of the soul, that the life is recognizable in its expression, that form ever follows function. This is the law. \citep{sullivan_tall_1896}
 \end{quote}
 
-We must however keep in mind that Sullivan, within the Chicago School of Architecture, was one of the pioneers of the modern skyscraper, and therefore focused on a very particular kind of architecture, in which productivity became the only, explicit function and the context for his statement. Jacques Rancière, in his study of the Werkbund and the Bauhaus-inspired architecture, offers an alternative approach, away from the strcit functionality laid out by Sullivan and by Loos before him. The simplification of forms and processes, he writes of the AEG Turbinenhalle in Berlin, which is normally associated with the reign of the machine, finds itself, on the contrary, related to art, the only y thing able to spiritualize industrial work and common life \citep{ranciere_aisthesis_2013}.
+% Within this modernist vein, Le Corbusier and a house is a machine to live in
+
+We must however keep in mind that Sullivan, within the Chicago School of Architecture, was one of the pioneers of the modern skyscraper, and therefore focused on a very particular kind of architecture, in which productivity became the only, explicit function and the context for his statement. Jacques Rancière, in his study of the Werkbund and the Bauhaus-inspired architecture, offers an alternative approach, away from the strcit functionality laid out by Sullivan and by Loos before him. The simplification of forms and processes, he writes of the AEG Turbinenhalle in Berlin, which is normally associated with the reign of the machine, finds itself, on the contrary, related to art, the only thing able to spiritualize industrial work and common life \citep{ranciere_aisthesis_2013}.
 
 Rancière offers us an additional perspective, departing form the strict function of an object or of a building, to its \emph{use}. Such a shift moves from a structure-centric perspective (such as Le Corbusier's ideal dimensions), to a human-centric perspective (such as Lacaton \& Vassal's practical extension of space and light). Peter Downton reiterates this point, when he states that "\emph{buildings and design are often judged from artistic perspectives that bear no relation to how the building’s occupants perceive or occupy the building.}" \citep{downton_knowledge_1998}. The bottom-up approach is therefore one which might relate less to software architecture as a top-down, abstraction process, and more to an immediate, usable one of the craftsman as a creator who is highly conscious of the user. The work of Lynch, which we've mentioned above, stands in the tradition of various urban planners and architects such as Jane Jacobs and William H. Whythe. Whythe's work, for instance, focused on empirical observation in order to determine what makes a good space, deducing its aesthetic properties (such as flowing water, movable chairs, the presence of street food vendors, multiple-layered sittings, etc.).
 
-% Palladio and platonic form, the grammar of the facade, etc.
+% Palladio and platonic form, the grammar of the facade, etc. Also Adolf Loos, ornament is crime
 
 % robert venturi for the learning from las vegas, but also contradiction and complexity
 
@@ -338,21 +342,19 @@ Christopher Alexander also belongs to this empirical tradition of examining what
   [...] beautiful places, places where you feel yourself, places where you feel alive \citep{alexander_timeless_1979} [...]
 \end{quote}
 
-In this work, he focuses on how beauty is involved in moving from \emph{disorganized complexity} to \emph{organized complexity}, an organizing process which is not, in itself, the essence of beauty, but rather the condition for such beauty to arise. Alexander's conception of beauty, while very present throughout his work, is however not immediately concerned with the specifics of aesthetics, understood as the sensual, formal properties of an object, but rather with the existence of such objects.
+In this work, he focuses on how beauty is involved in moving from \emph{disorganized complexity} to \emph{organized complexity}, an organizing process which is not, in itself, the essence of beauty, but rather the condition for such beauty to arise. Alexander's conception of beauty, while very present throughout his work, is however not immediately concerned with the specifics of aesthetics, understood as the sensual, formal properties of an object, but rather with the existence of such objects. This existence, in turn, does require to be experienced sensually, including visually.
 
 In this process of achieving organized complexity, he highlights the paradoxical interplay between symmetry and asymmetry, and pinpoints beauty as the "\emph{deep interlock and ambiguity}" of the two, a beauty he also finds the the relationship between static structures of the built environment, and the flow of living individuals in their midst. Architecture as a whole does clearly take into account the role of tension, of which it is yet another manifestation, akin to those we've seen in, amongst others, Ricoeur's analysis of the metaphor, and the resolution of the riddles presented in works of obfuscated source code.
 
-His approach to this quality is successively named as \emph{appropriateness}, \emph{rightness to fit}, \emph{not-simplicity} and \emph{wholeness}. All of these have in common the subsequent need for a purpose, a purpose which he calls the \emph{Quality Without a Name}. This quality, he says, is complicated to name, but nonetheless exists: it is, ultimately, the quality which sustains life, a conclusion which he reached after extensive empirical research: no one can name it precisely, but everyone knows what it refers to. It is the quality which makes one feel at home, which makes one feel like things make sense in a deep, unexplicable way.
+His approach to this quality is successively named as \emph{appropriateness}, \emph{rightness to fit}, \emph{not-simplicity} and \emph{wholeness}. All of these have in common the subsequent need for a purpose, a purpose which he calls the \emph{Quality Without a Name}. This quality, he says, is complicated to name, but nonetheless exists: it is, ultimately, the quality which sustains life, a conclusion which he reached after extensive empirical research: no one can name it precisely, but everyone knows what it refers to. It is the quality which makes one feel at home, which makes one feel like things make sense in a deep, unexplicable way. This reluctance to being linguistically explicited is echoed in the work of the craftsman, where a practicioner often finds herself showing rather than telling \citep{pye_nature_2008}.
 
-Among the adjectives he uses to circle around this quality are \emph{whole, comfortable, free, exact, egoless, eternal}. Since his work applies more broadly to any design-connected discipline, it also applies to software development. Using the word program as an umbrella for \emph{code block}, we can briefly sketch out how such properties could apply to software.
+Among the adjectives he uses to circle around this quality are \emph{whole, comfortable, free, exact, egoless, eternal}. Since software development involves a design process, and that this conception phase borrows other practices from architecture (such as the whole-part relationship), we can attempt a mapping of those qualifiers unto source code.. Using the word program as an umbrella for \emph{code block}, we can briefly sketch out how such properties could apply to software.
 
-A \emph{whole} program is a program which isn't missing any features, whose encounter (or lack thereof) might cause a crash.
+A \emph{whole} program is a program which is not missing any features, whose encounter (or lack thereof) might cause a crash. Conversely, it is also a program which does not have extraneous—useless—features. A program being \emph{comfortable} is a program which might be modified without fear of some unintended side-effects, without inivisible dependencies which might then compromise the whole. There is enough separation of concerns to ensure a somewhat safe working area, in which one can engage in epistemic probing assuming that things will not be breaking in unexpected ways; being whole, it also provides a higher sense of meaning by realizing how one's work relates to the rest of the construction.
 
-I see two interpretations to a program being \emph{comfortable}. First, it is a program which does not work against its material, a piece of code which is not trying to "re-invent the wheel", when the wheel might already be built-in, or which does indeed re-invent it, if the existing wheels aren't satisfying. Second, a comfortable program is one which might be modified without fear of some unintended side-effects, without inivisible dependencies which might then compromise the whole.
+Free programs are programs which, anthropomorphizing set aside for an instant, lead their own lives, while being mindful of the lives of others in the shared environment (the design philosophy of the UNIX operating system of "\emph{doing one thing well}", with its consequence of being able to compose these programs into elaborate chains of data processing, can be a good example of such freedom).
 
-\emph{Free} programs are programs which, anthropomorphizing set aside for an instant, lead their own lives, while being mindful of the lives of others in the shared environment (the design philosophy of the UNIX operating system of "\emph{doing one thing well}", with its consequence of being able to compose these programs into elaborate chains of data processing, can be a good example of such freedom).
-
-\emph{Exact} programs are, then, programs which do not exhibit any verbosity, in which every line is necessary and required, without being so obscure that it hinders comfort.
+Exact programs are, then, programs which do not exhibit any verbosity, in which every line is necessary and required, without being so obscure that it hinders comfort.
 
 A program that is too exact might be exhibiting too much of its writer's \emph{ego}, too specific and requiring a unique kind of background knowledge which other readers might not have\footnote{See \emph{egoless programming}, mentionned above.}.
 
@@ -371,9 +373,9 @@ Alexander did conduct empirical research to find examples of such qualities, in 
 
 % part-whole relations https://plato.stanford.edu/entries/architecture/#ParWhoRel
 
-\emph{A Pattern Language} kickstarted a whole field of research based around this idea of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, \emph{which expresses a relation between a certain context, a problem, and a solution.}. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
+A whole field of research developed around the idea expressed in \emph{A Pattern Language}  of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, which expresses a relation between a certain context, a problem, and a solution. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
 
-Besides the theoretical similarities between software and architecture mentioned above, it is the lack of learning from practical successes and failures in the field which prompted interest in Alexander's work, along with the development of Object-Oriented Programming, first through the Smalltalk language, then with C++, \footnote{today most of the programming languages allow for some object-oriented paradigm}. The similarity between a pattern and an object, and their promise of using them which would lead to better results on multiple dimensions, made it very attractive to software developers. Writing in \emph{Patterns of Software} (with a foreword by Alexander), Richard P. Gabriel illustrates that point:
+Besides the theoretical similarities between software and architecture mentioned above, it is the lack of learning from practical successes and failures in the field which prompted interest in Alexander's work, along with the development of Object-Oriented Programming, first through the Smalltalk language, then with C++, \footnote{today most of the programming languages allow for some object-oriented paradigm}. The similarity between a pattern and an object, insofar as they are self-contained solutions to contextual situations that emerged through practice, made it very attractive to software developers. Writing in \emph{Patterns of Software}, with a foreword by Alexander, Richard P. Gabriel illustrates that point:
 
 \begin{quote}
   The promise of object-oriented programming—and of programming languages themselves—has yet to be fulfilled. That promise is to make plain to computers and to other programmers the communication of the computational intentions of a programmer or a team of programmers, throughout the long and change-plagued life of the program. The failure of programming languages to do this is the result of a variety of failures of some of us as researchers and the rest of us as practitioners to take seriously the needs of people in programming rather than the needs of the computer and the compiler writer. \citep{gabriel_patterns_1998}
@@ -384,9 +386,12 @@ The real issue raised here in programming seems to be, again, not to speak to th
 \subsubsection{Compression and habitability through patterns}
 \label{subsubsec:compression-habitability}
 
+Semantic compression
+%\url{https://caseymuratori.com/blog_0015}
+
 Throughout his work, Gabriel weaves parallels between his experience as a software developer and as a poetry writer, drawing concepts from the latter field into the former, and inspecting it through the lens of pattern languages. Two concepts in particular are worth examining a bit further: \emph{compression} and \emph{habitability}.
 
-Compression, in narrative and poetic text, is the process through which a word is given additional meaning through the rest of the sentence. In a sentence such as "\emph{Last night I dreamt I went to Manderley again.}"\footnote{From Daphne DuMaurier, \emph{Rebecca}.}, the reader is unlikely to be familiar with the exact meaning of \emph{Manderley}, since this is the first sentence of the novel. However, we can infer some of the properties of Manderley from the rest of the sentence: it is most likely a place, and it most likely had something to do with the narrator's past, since it is being returned to. A similar phenomenon happens in source code, in which the meaning of a particular expression or statement can be derived from itself, or from a larger context. In object-oriented programming, the process of inheritance across classes allows for the meaning of a particular subclass to be mostly defined in terms of the fields and methods if its subclasses—its meaning is compressed by relying on a semantic environment, which might or not be immediately visible. This, Gabriel says, induces a tension between extendability (to create a new subclass, one must only extend the parent, and only add the differentiating aspects) and context-awareness (one has to keep in mind the whole chain of properties in order to know exactly what the definition of an interface that is being extended really is). Resolving such a tension, by including enough information to hint at the context, while not over-reaching into verbosity, is a thin line of being self-explanatory without being verbose.
+Compression, in narrative and poetic text, is the process through which a word is given additional meaning through the rest of the sentence. In a sentence such as "\emph{Last night I dreamt I went to Manderley again.}"\footnote{From Daphne DuMaurier, \emph{Rebecca}.}, the reader is unlikely to be familiar with the exact meaning of \emph{Manderley}, since this is the first sentence of the novel. However, we can infer some of the properties of Manderley from the rest of the sentence: it is most likely a place, and it most likely had something to do with the narrator's past, since it is being returned to. A similar phenomenon happens in source code, in which the meaning of a particular expression or statement can be derived from itself, or from a larger context. In object-oriented programming, the process of inheritance across classes allows for the meaning of a particular subclass to be mostly defined in terms of the fields and methods of its subclasses—its meaning is compressed by relying on a semantic environment, which might or not be immediately visible. This, Gabriel says, induces a tension between extendability (to create a new subclass, one must only extend the parent, and only add the differentiating aspects) and context-awareness (one has to keep in mind the whole chain of properties in order to know exactly what the definition of an interface that is being extended really is). Resolving such a tension, by including enough information to hint at the context, while not over-reaching into verbosity, is a thin line of being self-explanatory without being verbose.
 
 This recalls the idea of \emph{semantic proximity}, extracted from our analysis of programmers' comments and opinions on what they found makes code beautiful. Such a pattern does however contrast with the nature of object-oriented programming, in which inheritance (and subsequent local abstraction of subclasses) is considered best practice. Gabriel calls this idea \emph{locality}: it is 
 
@@ -402,7 +407,15 @@ His particular assumption that others will want to modify and extend source code
   the characteristic of source code that enables programmers, coders, bug-fixers, and people coming to the code later in its life to understand its construction and intentions and to change it comfortably and confidently. \citep{gabriel_patterns_1998}
 \end{quote}
 
-In a sense, then, beautiful code is also code that is clear enough to inform action and, well-organized enough to warrant actually taking that action\footnote{Recall the developer who mentioned that beautiful code he saw was code which clearly separated hardware dependent sections from hardware independent sections.}. It relates to Alexander's property of \emph{comfort}, by affording involvement instead of estrangement. A specific instance of habitability, in software patterns, might be difficult to pinpoint, but can pop up in some cases: a beautiful commit is a commit which adds a significant feature, and yet only change the lines of the code that are within well-defined boundaries (e.g. a single function), leaving the rest of the codebase untouched, and yet affecting it in a fundamental way.
+In a sense, then, beautiful code is also code that is clear enough to inform action and, well-organized enough to warrant actually taking that action. For instance, writing in the ACM Queue, an anonymous programmer discusses the beauty in a code where the separation between which sections of the source are hardware-dependent and which are not, as seen in \ref{code:hardware-separation}. In that example, it is clear to the programmer what the problem-domain is: counter incrementation, high-performance computation, or a specific Intel chip.
+
+\begin{listing}
+    \inputminted{rust}{./corpus/hardware_separation.h}
+    \caption{In the C family of languages, header files represent the overall structure of the program. This program text is defining the overall structure and the extent to which it interacts with specific hardware.}
+    \label{code:hardware-separation}
+\end{listing}
+
+This distinction relates to Alexander's property of comfort, by affording involvement instead of estrangement. A specific instance of habitability, in software patterns, might be difficult to pinpoint, but can pop up in some cases: a beautiful commit is a commit which adds a significant feature, and yet only change the lines of the code that are within well-defined boundaries (e.g. a single function), leaving the rest of the codebase untouched, and yet affecting it in a fundamental way.
 
 Still, such a feature of habitability, of supporting life, doesn't specify at all what it could, or should, look like. Rather, we get from Alexander a negative definition:
 
@@ -410,9 +423,7 @@ Still, such a feature of habitability, of supporting life, doesn't specify at al
   The details of a building cannot be made alive when they are made from modular parts.... And for the same reason, the details of a building cannot be made alive when they are drawn at a drawing board. \citep{alexander_timeless_1979}
 \end{quote}
 
-If modularity itself is at odds with making good (software) constructions, then its implementation under the terms of an object-oriented programming paradigm becomes complicated.
-
-Indeed, the technical formalization of the field came with the release of the \emph{Design Patterns: Elements of Reusable Object-Oriented Software} book, which lists 23 design patterns implementable in software \citep{gamma_design_1994}. Its influence (in terms of copies sold, and in terms of papers, conferences and working groups created in its wake) is undeniable, with Alexander himself giving a keynote address at the ACM two years after the release. It has, however, been met with some criticism.
+If modularity itself is at odds with making good (software) constructions, then its implementation under the terms of an object-oriented programming paradigm becomes complicated. Indeed, the technical formalization of the field came with the release of the \emph{Design Patterns: Elements of Reusable Object-Oriented Software} book, which lists 23 design patterns implementable in software \citep{gamma_design_1994}. Its influence (in terms of copies sold, and in terms of papers, conferences and working groups created in its wake) is undeniable, with Alexander himself giving a keynote address at the ACM two years after the release. It has, however, been met with some criticism.
 
 Some of this criticism is that patterns are "external", they look like they come from somewhere else, and are not adapted to the code. In this sense, they join Alexander in being wary of constructions which do not integrate fully within their environments, which do not, in an organic sense, allow for a \emph{piecemeal growth}\footnote{Addressing this concern, the failure of strict top-down hierarchies in software development resulted in the agile methodology for business teams}. If patterns express relations between contexts, problems and solutions, then it seems that one of the main complaints of developers looking at their code and seeing chunks of foreign code dumped in the middle to fix some generic problem\footnote{The example of the best pattern to retro-fit an air conditionner on a building would be a non-problem if the air-conditionning had been designed in from the get-go \url{https://wiki.c2.com/?PatternsAreNotTheLesserOfTwoEvils}.}, is the lack of understanding of \emph{context} offered by those proposed solutions. In this, blindly applying patterns from a textbook might be a solution, but it's not an elegant one.
 
@@ -427,9 +438,13 @@ To conclude this section, we've seen that architecture can offer us some heurist
 % The core idea, in its most prominent form, is that architecture as a corpus of design ideas (realized or otherwise) features a set of fundamental design and style elements which can be combined and related according to a set of rules (syntax), capable of constituting or parlaying meaning (semantics), and subject to contextual sensitivity and internal or relational constraints on deployment and realization (pragmatics). Beyond these structural parallels with basic facets of natural language, it is held that the purposes and possibilities of architecture qua language yield further parallels, best explained by the notion that architecture has, or even is, a language. ///// Even if this is achieved, though, a greater puzzle is whether there are identifiably preferable syntaxes—and what the criteria should look like. 
 % But, ultimately, it's not a language per se (too restrictive) but it's *like* a language
 
+% architecture as language: https://gallica.bnf.fr/ark:/12148/bpt6k1264641j/f163.item
+
 % do we talk about plans or about buildings?
 
 %5k cognition, landscape cognition
+
+being able to orient yourself: cute, literally spatial code city: \url{https://wettel.github.io/codecity.html}
 
 specifically the cognition paper. there isn't much but hey
 
