@@ -262,26 +262,13 @@ The use of the term map also implies a specific kind of territory. Before the wo
 \section{Architecture and understanding}
 \label{sec:arch-understanding}
 
-Beauty in architecture is one of the discipline's fundamental components, and aims, dating back to Vitruvius's maxim that a building should exhibit \emph{firmitas, utilitas, venustas}—solidity, usefulness, beauty. And yet in practice, beauty, or the aesthetic experience, is not sufficient, and sometimes not even required for a building to be appreciated. Even though architecture is considered as an art, it is nonetheless also a product of engineering, and thus a hybrid field, one where function and publicness modulate what could be otherwise a "pure" aesthetic judgment.
+Beauty in architecture is one of the discipline's fundamental components, dating back to Vitruvius's maxim that a building should exhibit \emph{firmitas, utilitas, venustas}—solidity, usefulness, beauty. And yet in practice, beauty, or the abillity to elicit an aesthetic experience, is not sufficient, and sometimes not even required, for a building to be considered architectural. Even though architecture is usually considered as an art, it is nonetheless also a product of engineering, and thus a hybrid field, one where function and publicness modulate what could be otherwise a "pure" aesthetic judgment.
 
-This sections looks at architecture through its multiple aspects, to highlight to which extent some of these are reflected in source-code\footnote{Recall how, in \ref{subsubsec:craft-architecture}, programmers tended to refer extensively to themselves as architects.}. By investigating the tensions and overlaps of form, function, context and materiality in the built space, we also identify similarities in the programmed space.
+This sections looks at architecture through its multiple aspects, to highlight to which extent some of these are reflected in source code\footnote{Recall how, in \ref{subsubsec:craft-architecture}, programmers tended to refer extensively to themselves as architects.}. Through an investigation of the tensions and overlaps of form, function, context and materiality in the built space, we identify similarities in the programmed space.
 
-% Architectural objects (as wholes) are systems or system-like, in that they constitute sets of interrelated structural components, with characteristic behavior or processes yielding outputs from inputs, and where the parts are connected by distinctive structural and behavioral relations (Boyce 1969)
+Particularly, our interest here is with the cognitive involvement in the architectural work. What is there to be understood in a building, and how do buildings make it intelligible? The early theoretical answers to this question is to be found in the work of Italian architects, such as Andrea Palladio, whose conception of its discipline came from ideal platonic form, and mathematical relation between facade and inner elements, but was rejected with the coming of the 20\sup{th} century and the advent of the industrial era.
 
-% In particular, we have beliefs about architectural objects that reflect functions and interactions of (1) components individually and as parts of systemic wholes, (2) systems as parts of broader environmental contexts, and (3) persons’ behaviors within the systems. Whereas the first two functional and interactional features are typical to all design, the third feature marks architecture as an artform that, in providing an immersive and systemic physical environment, intensely draws on and shapes social, psychological, and economic features of experience. 
-
-% remember that we're focusing on UNDERSTANDING ARCHITECUTRE: what and how do we understand? -> knowing about architecture / knowing through architecture
-% Sauchelli (2012a) proposes the use of cognition in grasping pleasure (“intellectual pleasure”) as a central feature of architectural experience. The idea is that fully comprehending the pleasure of the experience and thereby establishing its aesthetic value requires cognition, in the form of attention to details and understanding of the architectural object. 
-% A blend of the cognitive and sensual is also characteristic of Scruton’s proposed “imaginative perception”—the notion that we may perceive the details of built structures in various ways, depending on directions that our imagination takes us. Scruton (1979/2013) takes this cognitive act—reminiscent of seeing-as and free play of the imagination—as crucial to architectural experience. We are at all turns required to make interpretative choices in parsing ambiguous or multiform aspects of the built environment.
-
-% another axis of separation is theoretical/historical vs. practical
-
-Start with Plato to give an overview, and show which aspect of the research we focus on in this section.
-%\url{https://plato.stanford.edu/entries/architecture/}
-
-Spatiality and spelunking
-%\url{www.codespelunking.org}
-% \url{https://martinfowler.com/articles/class-too-large.html}
+While structure is meant to stand the test of time and natural forces\footnote{A purposes exemplified by the still standing structures of Roman and Greek antiquities, resulting from a particular mixing process of concrete.}, utility can be assessed by the extent to which a building fulfills its intended function. How the beauty of a building relates to its function, whether it can be completely dissociated from it, or if it is dependent on the fulfillment of its function, is still a matter of debate between formalists and functionalists. Nonetheless, the position we take here is in line with Parsons and Carlson, in that fitness of an object is a core component of how it is appreciated aesthetically \citep{parsons_functional_2012}, and that form is hardly separable from function.
 
 books about open source architecture, edited by greg wilson
 %\url{https://aosabook.org/en/index.html} - \url{https://aosabook.org/en/zeromq.html}
@@ -289,54 +276,41 @@ books about open source architecture, edited by greg wilson
 languages also have architecture?
 % \url{http://rigaux.org/language-study/syntax-across-languages/}
 
-
 %5k  form and function
 \subsection{Form and Function}
 \label{subsec:form-function}
 
-% Hume's related suggestion (Treatise (1739-40)) that beauty of artifacts consists in their appearing to bear utility), and (b) Kant’s proposal that architecture is an artform capable of generating dependent beauty. (In the latter case, beauty stands in relation to concepts with which we associate architectural objects, which for such objects are typically the ends towards which they are created.) 
-
-While structure is meant to, by definition, stand the test of time\footnote{A purposes exemplified by the still standing structures of Roman and Greek antiquities, resulting from a particular mixing process of concrete.}, utility can be assessed by the extent to which a building fulfills its intended function, and beauty remains elusive, more often igniting debates amongst architects, rather than creating consensus over particularly beautiful constructions\footnote{With the exception, perhaps of Frank Lloyd Wright's Fallingwater, and Ludwig Mies van der Rohe's Barcelona Pavilion.}. Different schools of beauty in architecture exist, which would could organize across an axis spanning decorating to functioning.
-
-Considering the field from a functional perspective, perhaps the first architectural standard which we can apply here is that of Louis Sullivan's maxim that \emph{form follows function}, devised as he was constructing the early office buildings in North America. Sullivan's statement is thus that what the building enables its inhabitants to do, inevitably translates into concrete, visible, and sensual consequences.
+From this perspective, the central modern architectural standard is that of Louis Sullivan's maxim that \emph{form follows function}, devised as he was constructing the early office buildings in North America. Sullivan's statement is thus that what the building enables its inhabitants to do, inevitably translates into concrete, visible, and sensual consequences.
 
 \begin{quote}
   All things in nature have a shape, that is to say, a form, an outward semblance, that tells us what they are, that distinguishes them from ourselves and from each other
-  [...]
+  \dots
   It is the pervading law of all things organic and inorganic, of all things physical and metaphysical, of all things human and all things superhuman, of all true manifestations of the head, of the heart, of the soul, that the life is recognizable in its expression, that form ever follows function. This is the law. \citep{sullivan_tall_1896}
 \end{quote}
 
-% Within this modernist vein, Le Corbusier and a house is a machine to live in
+The value of the building is therefore derived from what it allows the individuals to do: the office building allows them to work, the school to learn, the church to pray and the house to live. To do so, modernist architecture rejects any superfluous decoration, or extraneous addition, as a corruption of the purity of the building's function. In a similar vein, Le Corbusier, another fundamental actor of modern architecture, equates the building with its function, advocating for the suppression of decorative clutter and unnecessary furnishings and possessions, and hailing transparency and simplicity as architectural virtues \citep{lecorbusier_vers_1923}, and culminating in Le Corbusier's assemssment that the architectural plan as a generator, and the house as a machine to be lived in. Indeed, architectural works are a kind of system, in that they constitute sets of interrelated structural components,  where the parts are connected by distinctive structural and behavioral relations.
 
-We must however keep in mind that Sullivan, within the Chicago School of Architecture, was one of the pioneers of the modern skyscraper, and therefore focused on a very particular kind of architecture, in which productivity became the only, explicit function and the context for his statement. Jacques Rancière, in his study of the Werkbund and the Bauhaus-inspired architecture, offers an alternative approach, away from the strcit functionality laid out by Sullivan and by Loos before him. The simplification of forms and processes, he writes of the AEG Turbinenhalle in Berlin, which is normally associated with the reign of the machine, finds itself, on the contrary, related to art, the only thing able to spiritualize industrial work and common life \citep{ranciere_aisthesis_2013}.
+It is clear the modernists thought of function as engineering function, and aligned it with engineering aesthetics\footnote{\emph{Esthétique de l'ingénieur} is the title of one of the chapters of Le Corbusier's manifesto, \emph{Vers une Architecture} \citep{lecorbusier_vers_1923}}. Nonetheless, such a conception of function is definitely machinic, thinking of airflow, heat exchange or drainage, rather than of human function, such as eating, sleeping, or dwelling.
 
-Rancière offers us an additional perspective, departing form the strict function of an object or of a building, to its \emph{use}. Such a shift moves from a structure-centric perspective (such as Le Corbusier's ideal dimensions), to a human-centric perspective (such as Lacaton \& Vassal's practical extension of space and light). Peter Downton reiterates this point, when he states that "\emph{buildings and design are often judged from artistic perspectives that bear no relation to how the building’s occupants perceive or occupy the building.}" \citep{downton_knowledge_1998}. The bottom-up approach is therefore one which might relate less to software architecture as a top-down, abstraction process, and more to an immediate, usable one of the craftsman as a creator who is highly conscious of the user. The work of Lynch, which we've mentioned above, stands in the tradition of various urban planners and architects such as Jane Jacobs and William H. Whythe. Whythe's work, for instance, focused on empirical observation in order to determine what makes a good space, deducing its aesthetic properties (such as flowing water, movable chairs, the presence of street food vendors, multiple-layered sittings, etc.).
+% 1.5k char on the fact that their language of architecture is the plan, talk about Loos who refuses those ornaments because they can be misleading -- also scruton
+% part-whole relations https://plato.stanford.edu/entries/architecture/#ParWhoRel
 
-% Palladio and platonic form, the grammar of the facade, etc. Also Adolf Loos, ornament is crime
+% the most free of all forms, then, are follies, because their function is their own structural existence (pavillions, ishigami)
+
+Jacques Rancière, in his study of the Werkbund and the Bauhaus-inspired architecture, offers an alternative approach, away from the strcit functionality laid out by Sullivan and Le Corbusier before him. The simplification of forms and processes, he writes of the AEG Turbinenhalle in Berlin, which is normally associated with the reign of the machine, finds itself, on the contrary, related to art, the only thing able to spiritualize industrial work and common life \citep{ranciere_aisthesis_2013}.
+
+Rancière offers us an additional perspective, departing form the strict function of an object or of a building, to its \emph{use}. Such a shift moves from a structure-centric perspective (such as Le Corbusier's ideal dimensions), to a human-centric perspective (such as Lacaton \& Vassal's practical extension of space and light). Peter Downton reiterates this point, when he states that "\emph{buildings and design are often judged from artistic perspectives that bear no relation to how the building’s occupants perceive or occupy the building.}" \citep{downton_knowledge_1998}. Indeed, architecture as an artform provides an immersive and systemic physical environment, thus shapes human psychology and agency within it, and forces the dweller to acknowledge and engage with their environment. This suggests that, from a formal, top-down approach which considers architecture as possessing a formal language to be realized exactyl, there exists a complementary, bottom-up approach, centered around human construction and function.
 
 % robert venturi for the learning from las vegas, but also contradiction and complexity
 
-% follies, pavillions, ishigami
+\subsection{Design patterns and habitable spaces}
+\label{subsubsec:design-patterns}
 
-\begin{quote}
-    struct
+% Phenomenology and the Dasein, Heidegger’s lecture, “Building, Dwelling, Thinking” (1951); in Heidegger’s view, human beings dwell in their language. A language is thus not a mere communicative convention used by a set of individuals. Rather, it forms the possible experience of the world humans can have.
 
-    Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head--me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what
-they had originally written. 
-\end{quote}
-% \url{https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html}
-
-\subsection{Bottom-up architecture}
-\label{subsubsec:bottom-up-architecture}
-
-% Phenomenology and the Dasein, Heidegger’s lecture, “Building, Dwelling, Thinking” (1951); in Heidegger’s view, human beings dwell in their language. A language is thus not a mere communicative convention used by a set of individuals. Rather, it forms the possible experience of the world humans can have
 % Phenomenology architectural theorist: Christian Norberg-Schulz
 
-% Winters (2011) sees architecture as a “critical” artform, requiring the creator’s engagement in the environment where other artforms may tolerate a creator’s detached stance.
-
-% Arguments for inclusivity include Carlson’s appeal (1999) to consider the class of architectural objects as of a continuum with the broader class of everyday designed objects, where everything admits of possible aesthetic appreciation.
-
-Christopher Alexander also belongs to this empirical tradition of examining what makes a space \emph{good} or not, by exmaining its uses and the feelings it elicits in the people who tread its grounds. First developing his theory when working on the design of the Bay Area Rapid Transit System, he elaborated an approach of architecture which does not exclusively rely on abstract design, but rather takes into account the multiple layers and factors that go into making 
+Christopher Alexander belongs to this empirical tradition of examining what makes a space \emph{good} or not, by examining its uses and the feelings it elicits in the people who tread its grounds. First developing his theory when working on the design of the Bay Area Rapid Transit System, he elaborated an approach of architecture which does not exclusively rely on abstract design, but rather takes into account the multiple layers and factors that go into making 
 
 \begin{quote}
   [...] beautiful places, places where you feel yourself, places where you feel alive \citep{alexander_timeless_1979} [...]
@@ -366,12 +340,7 @@ Alexander did conduct empirical research to find examples of such qualities, in 
     Architecturally, as well as plot-functionally, narrative space can be described in terms of the partitions, both natural and cultural, that organize it into thematically relevant subspaces: walls, hallways, political boundaries, rivers and mountains, as well as in terms of the openings and passageways that allow these subspaces to communicate [...]  \citep{ryan_space_2009}
 \end{quote}
 
-\subsection{Design patterns and habitable spaces}
-\label{subsubsec:design-patterns}
-
-% also metion the pushback on the patterns when they become hardcore, unflexible forms, like palladio and platonism
-
-% part-whole relations https://plato.stanford.edu/entries/architecture/#ParWhoRel
+% also mention the pushback on the patterns when they become hardcore, unflexible forms, like palladio and platonism
 
 A whole field of research developed around the idea expressed in \emph{A Pattern Language}  of distinct, self-contained but nevertheless composable components. In Alexandrian terms, they are a triad, which expresses a relation between a certain context, a problem, and a solution. Similarly to architectural patterns, these emerged in a bottom-up fashion: individual software developers found that particular ways of writing and organizing code were in fact extensible and reusable solutions to common problems which could be formalized and shared with others.
 
@@ -388,6 +357,10 @@ The real issue raised here in programming seems to be, again, not to speak to th
 
 Semantic compression
 %\url{https://caseymuratori.com/blog_0015}
+
+Spatiality and spelunking
+%\url{www.codespelunking.org}
+% \url{https://martinfowler.com/articles/class-too-large.html}
 
 Throughout his work, Gabriel weaves parallels between his experience as a software developer and as a poetry writer, drawing concepts from the latter field into the former, and inspecting it through the lens of pattern languages. Two concepts in particular are worth examining a bit further: \emph{compression} and \emph{habitability}.
 
@@ -429,10 +402,10 @@ Some of this criticism is that patterns are "external", they look like they come
 
 The other criticism is that software patterns are often workarounds for features that a particular programming language doesn't allow from the get-go, or offer more convoluted implementations when written in Smalltalk and C++ than, for instance, Lisp\footnote{Peter Norvig highlights that most patterns in the original book have much simpler implementations in Lisp, see: url{http://www.norvig.com/design-patterns/design-patterns.pdf}}. One aspect that has been eluded so far, and perhaps the most inescapable context of all, is the programming language used. One doesn't write Ruby like one writes Java(tm), or C++, and certainly not Lisp.
 
-To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that \emph{form should follow function}, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow: \url{https://stackoverflow.com/questions/458242/quality-without-a-name-qwan-examples}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it \emph{habitable}. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. Circling back to our investigation of software as craftsmanship, we now turn to examine more closely both the tools and the material of programmers: programming languages.
+\subsection{Spatial Expression}
+\label{subsec:spatial-expression}
 
-\subsection{Architecture and Cognition}
-\label{subsec:architecture-cognition}
+% A blend of the cognitive and sensual is also characteristic of Scruton’s proposed “imaginative perception”—the notion that we may perceive the details of built structures in various ways, depending on directions that our imagination takes us. Scruton (1979/2013) takes this cognitive act—reminiscent of seeing-as and free play of the imagination—as crucial to architectural experience. We are at all turns required to make interpretative choices in parsing ambiguous or multiform aspects of the built environment.
 
 % architecture as language?? 
 % The core idea, in its most prominent form, is that architecture as a corpus of design ideas (realized or otherwise) features a set of fundamental design and style elements which can be combined and related according to a set of rules (syntax), capable of constituting or parlaying meaning (semantics), and subject to contextual sensitivity and internal or relational constraints on deployment and realization (pragmatics). Beyond these structural parallels with basic facets of natural language, it is held that the purposes and possibilities of architecture qua language yield further parallels, best explained by the notion that architecture has, or even is, a language. ///// Even if this is achieved, though, a greater puzzle is whether there are identifiably preferable syntaxes—and what the criteria should look like. 
@@ -463,6 +436,9 @@ Cette influence des spécificités techniques sur le choix d'une scène ne signi
 Recherche sur \url{https://beautiful.software/}
 
 % HOW DOES ARCHITECTURE EXPRESS?  Scruton (1979/2013) suggests that architecture is a non-representational artform since it need not—and generally does not—represent any content. Despite architecture’s non-representational status, Scruton agrees with Langer (1953) (and anticipates Goodman (1985)) that architectural objects can express or refer; in his view, to thoughts associated with expressed properties.
+
+To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that \emph{form should follow function}, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow: \url{https://stackoverflow.com/questions/458242/quality-without-a-name-qwan-examples}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it \emph{habitable}. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. Circling back to our investigation of software as craftsmanship, extending it through engineering, we turn to scientific aesthetics.
+% transition by going back to craft and engineering (le corbusier, esthétique de l'ingénieur)
 
 \spacer
 

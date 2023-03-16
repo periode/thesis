@@ -16,6 +16,7 @@ in classical western philosophy, socrates says that beauty is being well adapted
 for hume, the feeling of beauty arises when we perceive an object (what kind of object is software??) that we know to serve a useful purpose, or that raises in us an idea of utility -> beauty is produced by an object conveying the idea of some benefit or utility, not just by appearing fit. thus, the observer has to be aware of the function.
 
 ref:
+
 - hogarth, analysis of fitness
 - bishop berkley, alciphron
 - smith, theory of moral sentiments
