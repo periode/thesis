@@ -89,6 +89,9 @@ intrinsic characteristics of cs:
 
 - [ ] add this in the literature review: <https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf> specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
 
+- [ ] add this to the software architecture section: books about open source architecture, edited by greg wilson
+<https://aosabook.org/en/index.html> -<https://aosabook.org/en/zeromq.html>
+
 ## structure notes
 
 - [ ] And then spread out in the ideals to make each section less heavy
@@ -105,9 +108,9 @@ intrinsic characteristics of cs:
 - it looks like eclipse exists since at least 1985
 - eclipse quick fix: <https://dl.acm.org/doi/abs/10.1145/2398857.2384665> mentions the complexities of checking complex changes
 - things that are important for IDEs (<https://arxiv.org/pdf/1404.6602.pdf>):
-    - - continuous processing
-    - - non-linear editing
-    - - dependency analysis and caching
+  - - continuous processing
+  - - non-linear editing
+  - - dependency analysis and caching
 - <https://dl.acm.org/doi/abs/10.1145/1806799.1806866> concept of __code bubbles__
 - "These observations suggest a new model of program understanding grounded in theories of _information foraging_" <https://dl.acm.org/doi/10.1109/TSE.2006.116>
 - designing an IDE specifically with OOP in mind, or with [signal processing](https://ieeexplore.ieee.org/abstract/document/287018)
@@ -124,17 +127,17 @@ intrinsic characteristics of cs:
 ## meeting with nick
 
 - [ ] pare down!
-    - - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
-    - - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
-    - - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
-    - - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
-    - - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
-    - - [ ] move listing 10 to understanding computers
-    - - [ ] one liner: monostiche
-    - - [ ] since the chapter is too long, paraphrase code, rather than quote it
-    - - [ ] listing #2, not style but voices
-    - - [ ] black perl is still in old mode
-    - - [ ] explain listing 13
+  - - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
+  - - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
+  - - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
+  - - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+  - - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
+  - - [ ] move listing 10 to understanding computers
+  - - [ ] one liner: monostiche
+  - - [ ] since the chapter is too long, paraphrase code, rather than quote it
+  - - [ ] listing #2, not style but voices
+  - - [ ] black perl is still in old mode
+  - - [ ] explain listing 13
 - [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
 
 ## chap 2
