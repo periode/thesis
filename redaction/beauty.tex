@@ -266,21 +266,28 @@ Beauty in architecture is one of the discipline's fundamental components, dating
 
 This sections looks at architecture through its multiple aspects, to highlight to which extent some of these are reflected in source code\footnote{Recall how, in \ref{subsubsec:craft-architecture}, programmers tended to refer extensively to themselves as architects.}. Through an investigation of the tensions and overlaps of form, function, context and materiality in the built space, we identify similarities in the programmed space.
 
-Particularly, our interest here is with the cognitive involvement in the architectural work. What is there to be understood in a building, and how do buildings make it intelligible? The early theoretical answers to this question is to be found in the work of Italian architects, such as Andrea Palladio, whose conception of its discipline came from ideal platonic form, and mathematical relation between facade and inner elements, but was rejected with the coming of the 20\sup{th} century and the advent of the industrial era.
+\subsection{Expressive styles}
+\label{subsec:expressive-styles}
+
+Particularly, our interest here is with the cognitive involvement in the architectural work. What is there to be understood in a building, and how do buildings make it intelligible? The early theoretical answers to this question is to be found in the work of Italian architects, such as Andrea Palladio, whose conception of its discipline came from ideal platonic form, and mathematical relation between facade and inner elements, as well as Leon Battista Alberti, whose consideration of beauty in architecture, as such an organization of parts that nothing can be changed without detriment to the whole \citep{scruton_aesthetics_2013}\footnote{Such a definition is a reminiscent of how Vladimir Nabokov defines beauty in literature: "\emph{A really good sentence in prose should be like a good line in poetry, something you cannot change, and just as rhythmic and sonorous}" \citep{nabokov_lectures_2017}}.
 
 While structure is meant to stand the test of time and natural forces\footnote{A purposes exemplified by the still standing structures of Roman and Greek antiquities, resulting from a particular mixing process of concrete.}, utility can be assessed by the extent to which a building fulfills its intended function. How the beauty of a building relates to its function, whether it can be completely dissociated from it, or if it is dependent on the fulfillment of its function, is still a matter of debate between formalists and functionalists. Nonetheless, the position we take here is in line with Parsons and Carlson, in that fitness of an object is a core component of how it is appreciated aesthetically \citep{parsons_functional_2012}, and that form is hardly separable from function.
 
-books about open source architecture, edited by greg wilson
-%\url{https://aosabook.org/en/index.html} - \url{https://aosabook.org/en/zeromq.html}
+Furthermore, Roger Scruton, in his philosophical investigation of architecture, brings up the question of language—if buildings are to be cognitively engaged with, then one should be able to grasp what they communicate, what they stand for, what they express. To do so, one can turn to the fact that architectural works are often composed of interconnected, coherent sub-parts, which then contribute to the whole, in a form of \emph{gestaltung}.
 
-languages also have architecture?
-% \url{http://rigaux.org/language-study/syntax-across-languages/}
+\begin{quote}
+    Architecture seems, in fact, to display a kind of 'syntax': the parts of a building seem to be fitted together in such a way that the meaningfulness of the whole will reflect and depend upon the manner of combination of its parts. \citep{scruton_aesthetics_2013}
+\end{quote}
+
+Yet, he develops an argumentation which, against Goodman, suggests that architecture is not so much articulated as a language, than as a set of conventions and rules, and that it is not a representative medium (which would imply valid and invalid syntax, as well as intent), but rather an expressive one. Architectural significance, then, relies on the presence and arrangement of those evolving conventions—that is, a style—rather than on the depiction of a subject through an exact syntax.
+
+While architecture might not represent a subject matter the same way literature does, it is nonetheless expressive, and relies on particular styles (recurring formal patterns) to express a tone, a feeling, or a \emph{stimmung} in their dwellers. As identified in \ref{subsec:beauty-architecture}, the similarities between software and architecture can be mapped as symmetrical approaches: as top-down or bottom-up. Modernism, and the conventions that make up this architectural thought, are the top-down result of the intersection of function, form and industry.
 
 %5k  form and function
 \subsection{Form and Function}
 \label{subsec:form-function}
 
-From this perspective, the central modern architectural standard is that of Louis Sullivan's maxim that \emph{form follows function}, devised as he was constructing the early office buildings in North America. Sullivan's statement is thus that what the building enables its inhabitants to do, inevitably translates into concrete, visible, and sensual consequences.
+The central modern architectural standard is Louis Sullivan's maxim that \emph{form follows function}, devised as he was constructing the early office buildings in North America. Sullivan's statement is thus that what the building enables its inhabitants to do, inevitably translates into concrete, visible, and sensual consequences.
 
 \begin{quote}
   All things in nature have a shape, that is to say, a form, an outward semblance, that tells us what they are, that distinguishes them from ourselves and from each other
@@ -291,11 +298,6 @@ From this perspective, the central modern architectural standard is that of Loui
 The value of the building is therefore derived from what it allows the individuals to do: the office building allows them to work, the school to learn, the church to pray and the house to live. To do so, modernist architecture rejects any superfluous decoration, or extraneous addition, as a corruption of the purity of the building's function. In a similar vein, Le Corbusier, another fundamental actor of modern architecture, equates the building with its function, advocating for the suppression of decorative clutter and unnecessary furnishings and possessions, and hailing transparency and simplicity as architectural virtues \citep{lecorbusier_vers_1923}, and culminating in Le Corbusier's assemssment that the architectural plan as a generator, and the house as a machine to be lived in. Indeed, architectural works are a kind of system, in that they constitute sets of interrelated structural components,  where the parts are connected by distinctive structural and behavioral relations.
 
 It is clear the modernists thought of function as engineering function, and aligned it with engineering aesthetics\footnote{\emph{Esthétique de l'ingénieur} is the title of one of the chapters of Le Corbusier's manifesto, \emph{Vers une Architecture} \citep{lecorbusier_vers_1923}}. Nonetheless, such a conception of function is definitely machinic, thinking of airflow, heat exchange or drainage, rather than of human function, such as eating, sleeping, or dwelling.
-
-% 1.5k char on the fact that their language of architecture is the plan, talk about Loos who refuses those ornaments because they can be misleading -- also scruton
-% part-whole relations https://plato.stanford.edu/entries/architecture/#ParWhoRel
-
-% the most free of all forms, then, are follies, because their function is their own structural existence (pavillions, ishigami)
 
 Jacques Rancière, in his study of the Werkbund and the Bauhaus-inspired architecture, offers an alternative approach, away from the strcit functionality laid out by Sullivan and Le Corbusier before him. The simplification of forms and processes, he writes of the AEG Turbinenhalle in Berlin, which is normally associated with the reign of the machine, finds itself, on the contrary, related to art, the only thing able to spiritualize industrial work and common life \citep{ranciere_aisthesis_2013}.
 
@@ -309,6 +311,12 @@ Rancière offers us an additional perspective, departing form the strict functio
 % Phenomenology and the Dasein, Heidegger’s lecture, “Building, Dwelling, Thinking” (1951); in Heidegger’s view, human beings dwell in their language. A language is thus not a mere communicative convention used by a set of individuals. Rather, it forms the possible experience of the world humans can have.
 
 % Phenomenology architectural theorist: Christian Norberg-Schulz
+
+books about open source architecture, edited by greg wilson
+%\url{https://aosabook.org/en/index.html} - \url{https://aosabook.org/en/zeromq.html}
+
+languages also have architecture?
+% \url{http://rigaux.org/language-study/syntax-across-languages/}
 
 Christopher Alexander belongs to this empirical tradition of examining what makes a space \emph{good} or not, by examining its uses and the feelings it elicits in the people who tread its grounds. First developing his theory when working on the design of the Bay Area Rapid Transit System, he elaborated an approach of architecture which does not exclusively rely on abstract design, but rather takes into account the multiple layers and factors that go into making 
 
