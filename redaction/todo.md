@@ -53,6 +53,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 ## chap 3
 
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
+- [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
 - [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
 - [ ] in the hardware existence of software, talk about memory management
 - [ ] in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
@@ -79,9 +80,14 @@ intrinsic characteristics of cs:
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add a reference to MOONBIT in the ideals or in the lit review
+- [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
 
 ## chap 1
 
+- [ ] make the connection between abstract code beauty (the doxa) and the mathematical sublime of Kant
+- [ ] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
+- [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
+- [ ] make a __clear__ distinction between `source code` (the medium) and `program text` (the instance)
 - [ ] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
 - [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
 
@@ -108,9 +114,9 @@ intrinsic characteristics of cs:
 - it looks like eclipse exists since at least 1985
 - eclipse quick fix: <https://dl.acm.org/doi/abs/10.1145/2398857.2384665> mentions the complexities of checking complex changes
 - things that are important for IDEs (<https://arxiv.org/pdf/1404.6602.pdf>):
-  - - continuous processing
-  - - non-linear editing
-  - - dependency analysis and caching
+  - continuous processing
+  - non-linear editing
+  - dependency analysis and caching
 - <https://dl.acm.org/doi/abs/10.1145/1806799.1806866> concept of __code bubbles__
 - "These observations suggest a new model of program understanding grounded in theories of _information foraging_" <https://dl.acm.org/doi/10.1109/TSE.2006.116>
 - designing an IDE specifically with OOP in mind, or with [signal processing](https://ieeexplore.ieee.org/abstract/document/287018)
@@ -127,29 +133,18 @@ intrinsic characteristics of cs:
 ## meeting with nick
 
 - [ ] pare down!
-  - - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
-  - - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
-  - - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
-  - - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
-  - - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
-  - - [ ] move listing 10 to understanding computers
-  - - [ ] one liner: monostiche
-  - - [ ] since the chapter is too long, paraphrase code, rather than quote it
-  - - [ ] listing #2, not style but voices
-  - - [ ] black perl is still in old mode
-  - - [ ] explain listing 13
+  - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
+  - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
+  - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
+  - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+  - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
+  - [ ] move listing 10 to understanding computers
+  - [ ] one liner: monostiche
+  - [ ] since the chapter is too long, paraphrase code, rather than quote it
+  - [ ] listing #2, not style but voices
+  - [ ] black perl is still in old mode
+  - [ ] explain listing 13
 - [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
-
-## chap 2
-
-- [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
-
-## chap 1
-
-- [ ] make the connection between abstract code beauty (the doxa) and the mathematical sublime of Kant
-- [ ] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
-- [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
-- [ ] make a __clear__ distinction between `source code` (the medium) and `program text` (the instance)
 
 ## general
 
