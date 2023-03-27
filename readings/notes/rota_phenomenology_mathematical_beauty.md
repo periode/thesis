@@ -6,7 +6,7 @@ beauty is applied first to theorems, then to proofs
 
 then to "a brilliant step" in an otherwise undistinguished proof
 
-"An  example  of  mathematical  beauty  upon  which  all  mathematiciansagree  is  Picard’s  theorem,  asserting  that  an  entire  function  of  a  complexvariable takes all values with at most one exception. The limpid statementof  this  theorem  is  matched  by  the  beauty  of  the  five-line  proof  providedby Picard"
+"An  example  of  mathematical  beauty  upon  which  all  mathematiciansagree  is  Picard’s  theorem,  asserting  that  an  entire  function  of  a  complex variable takes all values with at most one exception. The limpid statement of  this  theorem  is  matched  by  the  beauty  of  the  five-line  proof  providedby Picard"
 
 he gives a lot of examples of theorems/proofs being beautiful
 

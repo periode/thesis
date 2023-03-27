@@ -416,7 +416,7 @@ Finally compression isn't so much a problem in poetry since, ultimately, the def
 In his 1951 lecture, "Building, Dwelling, Thinking", Martin Heidegger offers a perspective on these two forms of architecture: top-down and bottom-up, respectively equating them to building as erecting, and building as cultivating. To dwell is an engagement of thought and of action, one which leads to the construction of buildings in particular locations\footnote{Speaking of a farmhouse in the Schwarzwald, he describes the chain of creation as such: \emph{" A craft which, itself sprung from dwelling, still uses its tools and frames as things, built the farmhouse.}} \citep{heidegger_building_1975}. This active existence in time and space, allowing for deliberate thought and action and resulting in a better structure also equates to Gabriel's concept of habitability:
 
 \begin{quote}
-Habitability is the characteristic of source code that enables programmers coming to the code later in its life to understand its construction and intentions and to change it comfortably and confidently \dots Software needs to be habitable because it always has to change \dots What is important is that it be easy for programmers to come up to speed with the code, to be able to navigate through it effectively, to be able to understand what changes to make, and to be able to make them safely and correctly. \citep{gabriel_patterns_1998}
+    Habitability is the characteristic of source code that enables programmers coming to the code later in its life to understand its construction and intentions and to change it comfortably and confidently \dots Software needs to be habitable because it always has to change \dots What is important is that it be easy for programmers to come up to speed with the code, to be able to navigate through it effectively, to be able to understand what changes to make, and to be able to make them safely and correctly. \citep{gabriel_patterns_1998}
 \end{quote}
 
 As Heidegger returns to the etymological root of dwelling (\emph{bauern}) in order to connect it to the possible experience of the world humans can have through language, he grounds our experience in context. His though, between earth, man, techne and construction, hints at the essence that human construction—craft—as a consequence of thought and as a precedence to construction. Taking into accoun context and materiality, a final connection between software and architecture is actually with the field that predated, and complemented, architecture: craftsmanship.
@@ -470,37 +470,94 @@ The world of architecture has accrued its own set of design values over the year
 
 A final criticism to software patterns is that they are language-independent. As such, they are often workarounds for features that a particular programming language doesn't allow from the get-go, or offers simpler implementations than the pattern's\footnote{For instance, Peter Norvig highlights that most patterns in the original book have much simpler implementations in Lisp than in C++ or Smalltalk \citep{norvig_design_1998}}.
 
-To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that form should follow function, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow \citep{interstar_quality_2017}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it habitable. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. Circling back to our investigation of software as craftsmanship, extending it through engineering, we turn to scientific aesthetics.
-
-\spacer
+To conclude this section, we've seen that architecture can offer us some heuristics when looking for aesthetic features which code can exhibit. Starting from the naïve understanding that form should follow function, we've examined how Alexander's theory of patterns, and its significant influence on the programming community\footnote{even spawning short-lived debates about his quality without a name on stackoverflow \citep{interstar_quality_2017}.}, points not just to an explicit conditioning of form to its function (in which case we would all write hand-made Assembly code), but rather to an elusive, yet present quality, which is both problem- and context-dependent. It is a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it habitable. Software architecture and patterns aren't, however, explicitly praised for their beauty, perhaps because they disregard these contexts—by definition, they're high-level abstractions. Generic solutions are rarely elegant solutions. departing from our investigation of software as craftsmanship, and moving through towards a more abstract discipline, we turn to scientific aesthetics.
 
 \section{Forms of scientific activity}
 \label{sec:aesthetic-scientific}
 
-This section looks at the forms of sciences and activity
+% a bit more on engineering, hacking and the folly, should be explained in the beginning of modernism
 
-% total 15k
+As programmers learned their craft from practice and immediate engagement with their material, computer science was concomittantly developing from a seemingly more abstract discipline. Mathematicians such as Alan Turing, John Von Neumann and Grace Hopper can be seen, not as the foreparents of the discipline of computing, but rather as standing on the shoulders of a long tradition of mathematicians. Computation is, as as such, one of the many branches of contemporary mathematics and, as it turns out, such a tradition has also reccuringly included references to aesthetics. After the metaphors of literature and the patterned structures of architecture, we conclude our analysis of the aesthetic relation of domains contingent to source code by looking at how mathematics integrate formal presentation.
 
-\subsection{Mathematics and elegance}
-\label{subsec:aesthetic-mathematics}
+This section approaches the topic of aesthetics and mathematics in three different steps. First, we look at the objective or status of beauty in mathematics: are mathematical objects eliciting an aesthetic experience in and of themselves, or do they rely on the observer's perception? Considering the difference between abstract objects and their representation: is aesthetic representation ascribed to either, or to both? And what is the place of the observer in this judgment? Having  established a particular focus on the representations of abstract objects, we then turn to the epistemic value of aesthetics, and how positive aesthetic representations in mathematics can enable insight and understanding. Finally, we complement this relation between knowledge and presentation and depart from the ends of a proof, and an evaluative appraisal of aesthetics in mathematics, by investigating the actual process of doing mathematics, concluding with topics of pedagogy and ethics.
+
+\subsection{Beauty in mathematics}
+\label{subsec:beauty-mathematics}
+
+The object of mathematics is to deal first and foremost with abstract entities, such as the circle, the number zero or the derivative, which can find their applications in fields such as engineering, physics or computer science. Because of this historical separation from the practical world through the use and development of symbols, one of the dominant discourses in the field tended to consider mathematical beauty as something intrisic to itself, and independent from time, culture, observer, or representation itself. Indeed, a circle remains a circle in any culture, and its aesthetic properties—uniformity, symmetry—do not, at first glance, seem to be changing across time or space.
+
+According to the Western tradition, mathematics are perhaps the first art. Aristotle, in his \emph{Metaphysics}, wrote of beauty and mathematics as the former being most purely represented by the latter, through properties such as order, symmetry and definiteness\footnote{"\emph{the supreme forms of beauty are order, symmetry, and definiteness, which the mathematical sciences demonstrate in a special degree. And since these (e.g. order and definiteness) are obviously causes of many things, evidently these sciences must treat this sort of causative principles also (i.e. the beautiful) as in some sense a cause.}" \citep{aristotle_metaphysics_2006}}. By offering insight into the harmonious arrangement of parts, it was thought that mathematics could, through beauty, provide knowledge of the nature of things, providing an understanding of how things generally fit together. Beauty then naturally emerges from mathematics, and mathematics can, in turn, provide an example of beauty. At this intersection, it also becomes a source of intellectual pleasure, since gaining mathematical knowledge exercises the human being's best power—that of the mind.
+
+Arguing for this position of objective quality being revealed through beautiful manifestation, Godfrey H. Hardy writes, in his \emph{Mathematician's Apology}, that beauty is constitutive of the objects that compose the field; their abstract quality is what removes them from the contextuality of human judgment.
+
+\begin{quote}
+    A mathematician, like a painter or a poet, is a maker of patterns. If his patterns are more permanent than theirs, it is because they are made with \emph{ideas}. A painter makes patterns with shapes and colours, a poet with words.
+    \dots
+    The mathematician's patterns, like the painter's or the poet's must be \emph{beautiful}; the ideas like the colours or the words, must fit together in a harmonious way. Beauty is the first test: there is no permanent place for ugly mathematics. \citep{hardy_mathematician_2012}
+\end{quote}
+
+It is the arrangement of ideas that possess aesthetic value, and not the arrangement of the representation of ideas. In this, he follows the position of other influential mathematicians, such as Poincaré \citep{poincare_science_1908}, or Dirac \citep{kragh_paul_2002}, who rely on beauty as a property of the mathematical object in itself. For instance, Dirac states that a physical law must necessarily stem from a beautiful mathematical theory, thus asserting that the epistemic content of the theory and its aesthetic presentation are inseparable; a good mathematical theory is therefore intrinsically beautiful. Summing up these positions, Carlo Cellucci establishes proportion, order, symmetry, definiteness, harmony, unexpectedness, inevitablity, economy, simplicity, specificity,  and integrations as the different properties inherent to mathematical objects, as mentioned from an essentialist perspective \citep{cellucci_mathematical_2015}. Ironically, this rather seems to hint at the multiplicity of appreciations of beauty within mathematics, with mathematicians concurring on the existence of beauty, but not agreeing on what kind of beauty pertains to mathematics. Nonetheless, they do agree that beauty is connected to understanding and epistemic acquisition. John Von Neumann, writing in 1947, states that:
+
+\begin{quote}
+    One expects a mathematical theorem or a mathematical theory not only to describe and to classify in a simple and elegant way numerous and a priori disparate special cases. One also expects "'elegance" in its "architectural," structural makeup. Ease in stating the problem, great difficulty in getting hold of it and in all attempts at approaching it, then again some very surprising twist by which the approach, or some part of the approach, becomes easy, etc\dots \citep{vonneumann_mathematician_1947}
+\end{quote}
+
+The point that Von Neuman makes here is a difference between the content of the mathematical object and its structural form. Such a structural form, by organizing the connection of separate parts into a meaningful whole, makes it easy to grasp the problem. In this sense, it is both the crux of aesthetics and the crux of understanding. Similarly, Francois Le Lionnais, a founding member of the Oulipo literary movement in postwar France, wrote an essay on the aesthetic of mathematics, paying attention to both the mathematical objects in and of themselves, such as \lstinline{e} or \lstinline{\pi}, but also to mathematical methods, and how they compare to traditional artistic domains such as classicism or romanticism. Without getting into the intricacies of this argumentation, we can nonetheless note that his descriptions of mathematical beauty find echoes in source code beauty. For instance, his appraisal of the proof by recurrence\footnote{"\emph{It seems to us that a method earns the epithet of classic when it permits the attainment of powerful effects by moderate means. A proof by recurrence is one such method. What wonderful power this procedure possesses! In one leap it can move to the end of a chain of conclusions composed of an infinite number of links, with the same ease and the same infailliability as would enter into deriving the conclusion in a trite three-part syllogism."}" \citep{lelionnais_great_1971}} reflects similar lines of praise given by programmers to the elegance of recursive functions, which are sharing the same mathematical device (for instance, see \ref{code:recursion_iteration_csharp} and \ref{code:scheme_interpreter} for examples of recursion as an aesthetic property). A proof by recurrence is indeed a kind of structure, which can be adapted to demonstrate different kinds of mathematical objects.
+
+To understand is to grasp how each elements fits with others within a greater structure (either in a poem, a symphony or a theorem), with each of these elements being rendered sensible to the observer \citep{cellucci_mathematical_2015}. The beauty of a mathematical object can then be ascribed in its display of the definite relation between its elements. For instance, the equation representing Euler's identity (\ref{graphic:euler}) demonstrates the relation between geometry, algebra and numerical analysis through a restrained set of syntactic symbols, where \lstinline{e} is Euler's number, the base of natural logarithms, \lstinline{i} is the imaginary unit, which by definition satisfies \lstinline{i^2 = -1}, and \lstinline{\pi} is pi, the ratio of the circumference of a circle to its diameter. Each of the symbols is necessary, definite, and establishes clear relations between each other, revealing a deep interlock of simplicity within complexity.
+
+\begin{figure}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{./images/euler.png}
+    \caption{Euler's identity demonstrates the relation between geometry, algebra and numerical analysis through a restrained set of syntactic symbols.}
+    \label{graphic:euler}
+\end{figure}
+
+This equation ranked first in a column in the \emph{Mathematician Intelligencer} about the beauty of mathematical objects; the columnist, David Wells, had asked readers to rank given theorems, on a linear scale from 0 to 10, according to how beautiful they were considered \citep{wells_are_1990}\footnote{Along with, for instance, the infinite prime theorem, and Fermat's "two squares" theorem.}. Again, while this assessment does show that there can be consensus, and thus some aspect of objectivity, in a mathematicians' judgment of beauty in a mathematical object, it also showed that mathematical beauty also depends on the observer, since mathematicians' provided varying accounts.
+
+Rather than focusing on the beauty of the mathematical entities themselves, then, another perspective is to consider beauty to be found in the \emph{representation} of mathematical entities. This disjunctive view, that aesthetics and mathematics can be decoupled (there can be ugly proofs of insightful theorems, and elegant proofs of boring theorems), was first touched upon by Kant. As Starikova highlights, the philosopher operates a distinction between perceptual, disinterested beauty, and intellectual, vested beauty. Perceptual beauty, the one which can be found in the visual representations of mathematical entities, is the only beauty graspable, while intellectual beauty, that of the objects themselves, simply does not exist, "mathematics by itself being nothing but rules" \citep{starikova_aesthetic_2018}.
+
+Such manifestation of perceptual beauty can be found in the phenomenon of re-proving in existing proofs, in order to make them more beautiful; Rota, for instance, associates the beauty of a piece of mathematics with the shortness of its proof, as well as with the knowledge of the existence of other, clumsier proofs\footnote{"\emph{"The beauty of a piece of mathematics is frequently associated with shortness of statement or of proof.}" and \emph{"A proof is viewed as beautiful only after one is made aware of previous, clumsier proofs.}" \citep{rota_phenomenology_1997}} \citep{rota_phenomenology_1997}. Thus, it is not so much the content of the proof itself, nor the abstract mathematical object being proven that is the focus of aesthetic attention, but rather the process of establishing the epistemic validity of such an object.
+
+What is useful here is \emph{technique}, the demonstration of the knowledge from the prover to the observer, through the proof. As such, the asssessment of aesthetics in mathematics, both as a producer and as an observer, depends highly on the expertise of each individual, and on the previous knowledge that this indivual has of mathematics\footnote{"\emph{Mathematical creation is not so free, hence the contrasting analogy of the landscape gardener, who needs a good grasp of the topography before getting down to creating something beautiful which needs to be based on that topography.}" \citep{thomas_beauty_2017}} \citep{thomas_beauty_2017} (an assessment of the aesthetics of mathematics for non-expert is discussed in \ref{subsec:making-understanding} below). It seems that the way that the mathematical object is presented does matter for the assessment.
+
+If beauty is not intrinsic to the mathematical object, but rather connected to the presentation of the mathematician's knowledge, there remains the question of why is beauty taken into account in the doing of mathematics. Looking at the lexical fields used by mathematicians to qualify their aesthetic experience, as reported in \citep{inglis_beauty_2015} provides us with a clue: amongst the most used terms are "ingenious", "striking", "inspired", "creative", "beautiful", "profound" and "elegant". Some of these terms have a connection to the epistemic: for instance, something ingenious enables previously unseen connections between concepts, implying the resourcefulness and the cleverness of the originator of the idea. The next question is therefore that of the relationship between the aesthetic and the epistemic in mathematics; and in how this relation can manifest itself in source code.
+
+\subsection{Epistemic value of aesthetics}
+\label{subsec:epistemic-aesthetics}
 % 10k on elegance, relation between proof and theorem
 
-The point here is to show the stretch between gorgeous abstract theorems and pretty solid mechanisms.
+jullien and goodman to show that mathematical symbols are languages of art, and the implication of this is that representation will matter just as much, and that will provide a segue into mathematics as epistemic.
+% celluci for explaining what understanding means
+a big feature is curiosity
 
-poincaré
+robert root-bernstein, judith wechsler
+
+Rota -> mathematics is enlightening
+
+tymozcko, writing in white
+
+The point here is to investigate whether aesthetics in mathematics have a direct epistemic value.
+
+Irina Sharikova has a point about the fact that "mathematical beauty primarily involves mathematicians' sensitivity to aesthetics of the abstract". distinction between perceptual and intellectual beauty (cain todd 2008)
+
+rafael de clerq (2015), expert-related aesthetic judgment
 
 Epiphany, enlightenment
 
-all the reading resources from alberto
 
-% 5k on constructivism, papert & cie.
+
 
 \subsection{Making and understanding}
-\label{subsec:aesthetic-engineering}
+\label{subsec:making-understanding}
 
-%10k
+% 10k on constructivism, papert & cie. but also dewey, as a heuristic
+Harold Osborne (same guy who was writing about craftsmanship): "the reliance on the heuristic value of mathematical beauty in scientific theory has become something of a commonplace"
 
-Learning by doing, craft, extract from chap 2
+\begin{quote}
+    Pimm's framing offers an avenue of inquiry that shifts attention from the modes of mathematical inquiry of individual mathematicians, as Sinclair's tripartite model, to the practices of the community as a whole, including how truths are named, manipulated and negotiated. \citep{sinclair_aesthetic_2011}
+\end{quote}
+
+Beauty as a heuristic: related to the ethical paper (beautiful code is code of someone who cared)
 
 \spacer
 
