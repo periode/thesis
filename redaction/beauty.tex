@@ -518,7 +518,7 @@ Rather than focusing on the beauty of the mathematical entities themselves, then
 
 Such manifestation of perceptual beauty can be found in the phenomenon of re-proving in existing proofs, in order to make them more beautiful; Rota, for instance, associates the beauty of a piece of mathematics with the shortness of its proof, as well as with the knowledge of the existence of other, clumsier proofs\footnote{"\emph{"The beauty of a piece of mathematics is frequently associated with shortness of statement or of proof.}" and \emph{"A proof is viewed as beautiful only after one is made aware of previous, clumsier proofs.}" \citep{rota_phenomenology_1997}} \citep{rota_phenomenology_1997}. Thus, it is not so much the content of the proof itself, nor the abstract mathematical object being proven that is the focus of aesthetic attention, but rather the process of establishing the epistemic validity of such an object.
 
-What is useful here is \emph{technique}, the demonstration of the knowledge from the prover to the observer, through the proof. As such, the asssessment of aesthetics in mathematics, both as a producer and as an observer, depends highly on the expertise of each individual, and on the previous knowledge that this indivual has of mathematics\footnote{"\emph{Mathematical creation is not so free, hence the contrasting analogy of the landscape gardener, who needs a good grasp of the topography before getting down to creating something beautiful which needs to be based on that topography.}" \citep{thomas_beauty_2017}} \citep{thomas_beauty_2017} (an assessment of the aesthetics of mathematics for non-expert is discussed in \ref{subsec:making-understanding} below). It seems that the way that the mathematical object is presented does matter for the assessment.
+What is useful here is \emph{technique}, the demonstration of the knowledge from the prover to the observer, through the proof. As such, the asssessment of aesthetics in mathematics, both as a producer and as an observer, depends highly on the expertise of each individual, and on the previous knowledge that this indivual has of mathematics\footnote{"\emph{Mathematical creation is not so free, hence the contrasting analogy of the landscape gardener, who needs a good grasp of the topography before getting down to creating something beautiful which needs to be based on that topography.}" \citep{thomas_beauty_2017}} \citep{thomas_beauty_2017} (an assessment of the aesthetics of mathematics for non-expert is discussed in \ref{subsec:aesthetics-heuristics} below). It seems that the way that the mathematical object is presented does matter for the assessment.
 
 If beauty is not intrinsic to the mathematical object, but rather connected to the presentation of the mathematician's knowledge, there remains the question of why is beauty taken into account in the doing of mathematics. Looking at the lexical fields used by mathematicians to qualify their aesthetic experience, as reported in \citep{inglis_beauty_2015} provides us with a clue: amongst the most used terms are "ingenious", "striking", "inspired", "creative", "beautiful", "profound" and "elegant". Some of these terms have a connection to the epistemic: for instance, something ingenious enables previously unseen connections between concepts, implying the resourcefulness and the cleverness of the originator of the idea. The next question is therefore that of the relationship between the aesthetic and the epistemic in mathematics; and in how this relation can manifest itself in source code.
 
@@ -567,23 +567,54 @@ We consider here that both intellectual pleasure and aesthetic pleasure happen i
 
 An aesthetic experience in mathematics involves uncovering the connections between aesthetic and epistemic value being represented through a mathematical sumbol system. However, such a conception seems to take place as a gradual process of discovery, both from the writer and from the reader. Seen in the light of skill-based aesthetic judgment, this chronological unfolding points towards a final aspect of aesthetics in mathematics specifically, and in the sciences in general: aesthetics as heuristics for knowledge acquisition.
 
-\subsection{Making and understanding}
-\label{subsec:making-understanding}
+\subsection{Aesthetics as heuristics}
+\label{subsec:aesthetics-heuristics}
 
-Start with Bernstein:  Aesthetic cognition \url{https://philpapers.org/rec/ROOAC}
-
-% 10k on constructionism, papert & cie. but also dewey, as a heuristic
 Harold Osborne (same guy who was writing about craftsmanship): "the reliance on the heuristic value of mathematical beauty in scientific theory has become something of a commonplace"
+% https://academic.oup.com/bjaesthetics/article/24/4/291/28880
+% https://academic.oup.com/bjaesthetics/article/4/2/160/98684
 
-papert, the mathematical unconscious in \url{https://archive.org/details/onaestheticsinsc00thet/page/n7/mode/2up}
+So far, we had been looking at how aesthetics are evaluated in a finished state—that is, once the form of the object (whether a proof or a program text) has stabilized. In doing so, we have left aside a significant aspect of the matter. Aesthetics in mathematics do not need to be seen exclusively as an end, but also as a mean, as a part of the cognitive process engaged to achieve a result.
+
+% 1k on nathalie sinclair, her distinction between different kinds of roles that aesthetics have
+% 3k on the generative and motivational value of aesthetics, of heuristics (remind the structural engineer that used to say to choose designs that are good because they look good)
+% 1k on dewey and his theory of inquiry: PERSONAL
+
+Nathalie Sinclair: evaluative role, generative role, motivational role. the generative role is the one that is guiding and activates the process of inquiry: generates new ideas and insights (both positively and negatively, i.e. when something looks bad and needs to be fixed because we know there's a way that it can look good)
+
+\begin{quote}
+    The aesthetic capacity of the student relates to her sensibility in combining information and imagination when making purposeful decisions, regarding meaning and pleasure. This is a use of the term aesthetic drawn from interpretations such as dewey \citep{sinclair_roles_2004}
+\end{quote}
+
+She connects it with Dewey's theory of inquiry (1938) and with Polanyi's personal knowledge theory, getting further into psychological perception and/or role of aesthetics.
+
+% 1k on papert, and the functional role of aesthetics as a guide to figure out how to do mathematics
+% particularly, we mention his reliance on Piaget, but also this idea of comparative aesthetics: gestalt vs sequential
+% and we solve this lack of sequentiality with refactoring
+% and we even include some code, showing the process of refactoring
+
+% 2k move from PERSONAL to SOCIAL: on the social role of aesthetics: style, convention, value
 
 \begin{quote}
     Pimm's framing offers an avenue of inquiry that shifts attention from the modes of mathematical inquiry of individual mathematicians, as Sinclair's tripartite model, to the practices of the community as a whole, including how truths are named, manipulated and negotiated. \citep{sinclair_aesthetic_2011}
 \end{quote}
 
-% build up on the linked list example in terms of pedagogy:https://github.com/mkirchner/linked-list-good-taste
+% also include this relation to the ethical paper (beautiful code is code of someone who cared)
 
-Beauty as a heuristic: related to the ethical paper (beautiful code is code of someone who cared)
+%2k expand with bernstein to the rest of sciences
+Root Bernstein broadens this all of scientific activity, not just mathematics. Feelings and emotions are prime allies of investigation, through motivation and attraction, and thus for supporting creative scientific activity.
+
+\begin{quote}
+    I propose four major arguments. First, all scientific problem solving and problem generation involves emotional and sensual responses that are similar if not identical to those associated with the arts. Second, that the experience of knowing what one feels and feeling what one knows constitutes a specific form of understanding that I call “synosia”. Third, there is a “meta-logic” to these intuitive responses that is embedded in what we call scientific aesthetics. Fourth, that aesthetic cognition precedes and is distinct from formal logic, and that an explicit translation process is therefore required before ideas can be communicated and tested logically. In sum, aesthetic cognition combines knowledge and feeling into synosic intuition that has an analyzable “meta-logic” which is the basis for creative scientific thinking. \citep{root-bernstein_aesthetic_2002}
+\end{quote}
+
+\begin{quote}
+    The realization that we recognize problems through our anti-aesthetic response to them provides an important clue as to how we go about de ning the nature of the problem and recognize its solution. The nature of the disjuncture between our aesthetic expectations and what we observe or think we know reveals the detailed characteristics of the specific problem that presents itself. \citep{root-bernstein_aesthetic_2002}
+\end{quote}
+
+"It remains to reify this meta-logic as a set of rules, axioms, or practices.", which is a good segue into the final chapter
+
+He says that the informal insights of aesthetic intuition precede formal logic. Only when we explicitly recognize that the “tools of thinking” and the “tools of communication” are distinct can we understand the intimate, yet tenuous, connection between thought and language, imagination and logic.
 
 \spacer
 
