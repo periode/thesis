@@ -49,6 +49,18 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
 - [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
 - [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
+the code for the irrational equations:
+
+```tex
+    % \begin{align}
+    %     \sqrt{2}     & = p / q        \\
+    %     \sqrt{2} * q & = p            \\
+    %     p            & = \sqrt{2} * q \\
+    %     (\sqrt{2})^2 & = (p/q)^2      \\
+    %     2            & = p^2 / q^2    \\
+    %     p^2          & = 2 * q^2
+    % \end{align}
+```
 
 ## chap 3
 
