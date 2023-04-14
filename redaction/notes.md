@@ -27,7 +27,7 @@ the big picture
 ### context
 
 establish a research territory:
-what the audience needs to know in order to understand the problem you are going to confront. background material which should be familiar to the target audience; a refresher or primer on the topic—e.g. "over the past two decades, research in the field has focused on...")
+what the audience needs to know in order to understand the problem you are going to confront. background material which should be familiar to the target audience; a refresher or primer on the topic—e.g. "over the past two decades, research in the field has focused on..."
 
 in my case, doesn't have to be too extensive because the literature review will come later. but i should at least mention **the best in the field**, the most important references.
 

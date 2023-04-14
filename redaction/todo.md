@@ -1,5 +1,11 @@
 # todo
 
+séminaire adrien puignot: principe de la _sémiotique sociale_, i.e. la fabrique de sens globale.
+
+_architexte_: L’ensemble des catégories générales, ou transcendantes -types de discours, modes d’énonciation, genres littéraires, etc.- dont relève chaque texte singulier (genette). En gros, la méta-catégorie des catégories. Ce qui gouverne le texte. L'outil d'écriture n'est pas neutre, il impose des formes éditoriales et des formats d'écriture au scripteur. Il permet aussi la recomposition des "traces" de lecture (échange, co-construction, démantèlement)
+
+_infra-ordinaire_: infra-ordinaire en tant qu’observation attentive de « ce qui se passe chaque jour et revient chaque jour, le banal, le quotidien, l’évident, le commun, l’ordinaire, l’infra-ordinaire, le bruit de fond, l’habituel. l’attention portée aux détails du réel apparaît comme une constante qui finira par devenir une théorie rassemblant la pensée et la pratique littéraires de l’auteur
+
 - deal with inline quotes properly (using the `dirtytalk` package)
 
 add this to examples, from the rust parser example i forked, as an example of how people assign quality to proper scale naming:
@@ -20,6 +26,41 @@ struct
 Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head--me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what they had originally written.
 https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
 ```
+
+## meeting with nick 14.14
+
+overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
+
+I should also address the status of AI-generated code (include, not include? I consider it the same as compiler code).
+
+For Languages of Art, two things about exemplification vs. implementation:
+
+- different implementations of a concept are necessary but not sufficient for aesthetic judgment. programs exemplify because different implementations exist
+- an implementation does not necessarily exemplify: it needs (amongst other things?) CONTEXT.
+
+In architecture, highlight the fact that the _detail_ is the point of interaction between the human and the structure.
+
+- p.218, clarify and enumerate what those 5 requirements of the language of art are.
+- p.220, make it clear that `var auth_level` is actually two different tokens, one by the designer, one by the programmer
+- listing 35, if i'm talking about OOP use a more oop language (java, python)
+- p. 221 when i talk about source code showing properties of an object. objects only have properties through the fact that they are being modelled: source code is a model of the world in which objects have properties. from a philosophical perspective, objects do not always have properties, but the program's concept of the world GIVES IT properties.
+- p. 223: match the 5 criteria as they were mentioned in the first bullet point
+- p.243: when discussing the god example: again, highlight the ontology of markup: inside and outside. There are differences between conceptual spatialization, layout spatialization (the most obvious that we see), and disk fragmentation. The cartesian view of space is different from the one listing 40 (space in 40 is different from a map).
+- Listing 40: make it expliciti that it is presented in such a way that highlights the indented/contained nature of markup (indentation)
+- Listing 41: no line numbers and most importantly, NOT CLEAR THAT THIS IS RELATED TO SPATIALITY. might be related to SSD/virtual memory/start addresses, but find a better example. maybe start with python, and indentation, related to semantics.
+- p.248: mention what are the specific things in architecture: the main thing in architecture is about sight (develop this in the form/function section). ALSO SITE-SPECIFIC: materials+context. Architecture: building codes and requirements, that is not there in lit or math. architect is neither an engineer nor a fine artist.
+- Figure 4.2: the plan and the program are different: this is a plan, and the program is different. the program is equivalent to the system requirements.
+- Listing 42: hard to tell what this does, might not be worth keeping, or include an extensive discussion of separation of concerns.
+- p.263: nick disagrees, don't say that compression isn't so much a problem in poetry, but rather a different kind of problem.
+- Listing 44: again, the point of these examples as an illustration of refactoring is also not clear, should be commented a lot more
+- p.280: graphical representation/diagram is not uniquely artistic, it is that it adds choices, and calls for attention. not just because its a circle does it mean its better, but rather because it's a different way to represent the same thing, which I argue implies the possibility for a value judgment.
+- Listing 45: maybe give a diagrammatic representation of the linked list? there's an abstract concept, this text is a particular representation of it, and a diagram could be another. strip down the example to the very bare minimum, and include very robust and helpful discussion of that discussion. this is too obscure.
+- listing 46: regex matcher:  regex is a formalism for processing text. convey that this is a complex problem, but that you can actually write a fairly simple program to implement it. In general, I should always discuss extensively the listings.
+- Listing 47: still write about refactoring, but maybe with a shorter program. use the simplest case that makes my point. make that point with elaboration and extent discussion. BUT ALSO PREFACE IT WITH A PYTHON EXAMPLE. So have two listings in the end.
+
+## meeting with nick 07.04
+
+- do not keep the conclusion a secret, state what the theory is in the introduction, straight away, then provide evidence throughout in the conclusion (that aesthetics are multi-faceted, often involve knowledge and communication, either ot machine or to human)
 
 ## meeting with nick - 28.12.2022
 
