@@ -1,5 +1,10 @@
 # todo
 
+recs from guido, neuropsychologists who might be interested:
+
+- stanislas dehaene
+- christophe paillier
+
 séminaire adrien puignot: principe de la _sémiotique sociale_, i.e. la fabrique de sens globale.
 
 _architexte_: L’ensemble des catégories générales, ou transcendantes -types de discours, modes d’énonciation, genres littéraires, etc.- dont relève chaque texte singulier (genette). En gros, la méta-catégorie des catégories. Ce qui gouverne le texte. L'outil d'écriture n'est pas neutre, il impose des formes éditoriales et des formats d'écriture au scripteur. Il permet aussi la recomposition des "traces" de lecture (échange, co-construction, démantèlement)
