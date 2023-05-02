@@ -139,6 +139,7 @@ intrinsic characteristics of cs:
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add a reference to MOONBIT in the ideals or in the lit review
 - [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
+- [ ] add a reference and discussion of Fedorenko (fedorenko_language_2019) in terms of cognitive mapping.
 
 ## chap 1
 
