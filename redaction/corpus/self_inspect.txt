@@ -1,0 +1,32 @@
+...
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+me
+Traceback (most recent call last):                 
+        11913: from poem.rb:16:in `<main>'
+        11912: from poem.rb:13:in `block in <main>'
+        11911: from poem.rb:13:in `block in <main>'
+        11910: from poem.rb:13:in `block in <main>'
+        11909: from poem.rb:13:in `block in <main>'
+        11908: from poem.rb:13:in `block in <main>'          
+        11907: from poem.rb:13:in `block in <main>'
+        11906: from poem.rb:13:in `block in <main>'                             
+         ... 11901 levels...                                                    
+            4: from poem.rb:13:in `block in <main>'                             
+            3: from poem.rb:13:in `block in <main>'                             
+            2: from poem.rb:12:in `block in <main>'                             
+            1: from poem.rb:12:in `puts'                                        
+self_inspect.rb:12:in `puts': stack level too deep (SystemStackError)  
