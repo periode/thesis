@@ -1,5 +1,7 @@
 # todo
 
+__VERY IMPORTANT__: I should state very very clearly what it is that I am doing. Also that a huge majority of the code is software engineer code, and that code poetry are just distinctly related.
+
 recs from guido, neuropsychologists who might be interested:
 
 - stanislas dehaene
@@ -23,6 +25,10 @@ operator_level = { operator_exp | operator_subscript |
 }
 ```
 
+quote from peter neumann: "these techniques may have enormous value in providing nontrivial assurances that the system might actually do what is expected of it . " - "There are many problems arising in complex systems that must be thoroughly comprehended, but that once understood can be structured in a way that conceptually simplifies the design"
+
+Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory
+
 include somehow:
 
 ```text
@@ -32,7 +38,9 @@ Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her 
 https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
 ```
 
-## meeting with nick 14.14
+## chap 5 - programming
+
+### meeting with nick 14.14
 
 overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
 
@@ -62,39 +70,21 @@ In architecture, highlight the fact that the _detail_ is the point of interactio
 - Listing 45: maybe give a diagrammatic representation of the linked list? there's an abstract concept, this text is a particular representation of it, and a diagram could be another. strip down the example to the very bare minimum, and include very robust and helpful discussion of that discussion. this is too obscure.
 - listing 46: regex matcher:  regex is a formalism for processing text. convey that this is a complex problem, but that you can actually write a fairly simple program to implement it. In general, I should always discuss extensively the listings.
 - Listing 47: still write about refactoring, but maybe with a shorter program. use the simplest case that makes my point. make that point with elaboration and extent discussion. BUT ALSO PREFACE IT WITH A PYTHON EXAMPLE. So have two listings in the end.
+- allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 
-## meeting with nick 07.04
+### meeting with nick 07.04
 
 - do not keep the conclusion a secret, state what the theory is in the introduction, straight away, then provide evidence throughout in the conclusion (that aesthetics are multi-faceted, often involve knowledge and communication, either ot machine or to human)
 
-## meeting with nick - 28.12.2022
+## chap 4 - beauty
 
-- for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -> __INTERTWINE!__
-- my approach to metaphors should be more systematic: that is, I should look into how metaphors can represent a SYSTEM (for instance, `symlink` is a limitation when it comes to the files and folder metaphor)
-  - e.g. how does step in a debugger relate to code as terrain, or surface coverage for tests? e.g. how does build and architecture related to code as structure?
-  - ask "why does the metaphor work?" -> how do they (a) combine (b) extend (c) question?
-  - look at all the metaphors that fit together (in the lit domain, the arch domain, etc.)
-  - metaphor of the `macro` (implies scale), of `scope`, of `global`, implies scale as well. `libraries` is also a metaphor that is literary.
-
-- fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
-
-- __case studies__
-  - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
-  - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
-  - find similar problems in different programs, see how they deal with it
-  - find specific cases where the cognitive load is high
-  - again, __DO IT IN PARALLEL__ as a comparative studies.
-
-_side note: are metaphors related to space because it's hard for us to think in terms of time?_
-
-## chap 4
-
-- should it be about programming languages? or about programming semantics? or wait until i know really what it is about, and why it;s needed?
-- allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 - include \citep{dexter_embodied_2011}
+- [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the 
 - [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
 - [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
+- [ ] add meles and UNIX
 - [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
+- [ ] mathematics: add a discussion of dijkstra's shortest path algorithm?
 the code for the irrational equations:
 
 ```tex
@@ -108,20 +98,46 @@ the code for the irrational equations:
     % \end{align}
 ```
 
-## chap 3
+### meeting with nick - 28.12.2022
+
+- for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -> __INTERTWINE!__
+- my approach to metaphors should be more systematic: that is, I should look into how metaphors can represent a SYSTEM (for instance, `symlink` is a limitation when it comes to the files and folder metaphor)
+- e.g. how does step in a debugger relate to code as terrain, or surface coverage for tests? e.g. how does build and architecture related to code as structure?
+- ask "why does the metaphor work?" -> how do they (a) combine (b) extend (c) question?
+- look at all the metaphors that fit together (in the lit domain, the arch domain, etc.)
+- metaphor of the `macro` (implies scale), of `scope`, of `global`, implies scale as well. `libraries` is also a metaphor that is literary.
+- add knuth on dijkstra, simple program, complex proof (knuth, simple, 1990)
+- add wallen_form_1990 with his argument that mathematics rely on the fact that sight is our most developed sense
+
+- fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
+
+- __case studies__
+  - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
+  - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
+  - find similar problems in different programs, see how they deal with it
+  - find specific cases where the cognitive load is high
+  - again, __DO IT IN PARALLEL__ as a comparative studies.
+
+_side note: are metaphors related to space because it's hard for us to think in terms of time?_
+
+## chap 3 - understanding
 
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
+- [ ] wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
 - [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
 - [ ] in the hardware existence of software, talk about memory management
 - [ ] in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
 - [ ] [this](https://www.sciencedirect.com/science/article/abs/pii/0010028581900128) is actually showing that, the more expert a programmer becomes, the less they resort to metaphors, and rather shift to the programming-specific concepts.
 - [ ] add [the initial stages of program comprehension](https://sci-hub.mksa.top/10.1016/s0020-7373(05)80090-2) on __beacons__ (detienne).
 - [ ] add [a conceptual model of cognitive complexity](https://www.sciencedirect.com/science/article/pii/095058499591491H) (chunking, tracing)
+- [ ] add a reference and discussion of Fedorenko (fedorenko_language_2019) in terms of cognitive mapping
+- "Understanding the interdependencies among different requirements and among the different layers is both an important step for, on one hand, representing it formally, as well as, on the other hand, one of the goals to be grasped by the reader."
 - [ ] add to the programmer expertise <https://books.google.de/books?hl=en&lr=&id=rMmxq8q0CGYC&oi=fnd&pg=PA8-IA6&dq=L.M.+Berlin>,+%E2%80%9CBeyond+Program+Understanding,%E2%80%9D+A+Look+at+Programming+Expertise+in+Industry,+Empirical+Studies+of+Programmers,+Fifth+Workshop,+pp.+6-25,+1993.&ots=gO-IgzpVOE&sig=ozpfd-DluQ3k4IE7TBnCix0TT7I&redir_esc=y#v=onepage&q&f=false __also__ <http://scholar.google.com/scholar?hl=en&q=J.+Koenemann+and+S.P.+Robertson%2C+%E2%80%9CExpert+Problem+Solving+Strategies+for+Program+Comprehension%2C%E2%80%9D+Proc.+Conf.+Human+Factors+and+Computing+Systems%2C+pp.+125-130%2C+1991>.
 - [ ] at the end of the psychology section, mention the skills needed by a programmer (see below) and this will help us in the followig cognitive tools section to prove that tools indeed help with some of these.
 - [ ] in terms of metaphors, make clear that programmer-facing metaphors are not more complex than user-facing metaphors, or that it's a different kind of cognitive work, but rather that they are referring to a different kind of concept (streams, pipes, volatile memory, etc.)! For instance, mention how there are files/folders for users, and these are manipulated differently on GUI and CLI (CLI -> bash script: "loops", "labels", "wildcards"). these show that the metaphors at work in programming are a combination of different concepts, drawing on different fields of knowledge.
 - [ ] add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
+- [ ] Peter G. Neumann. Psychosocial implications of computer software development and use: Zen and the art of computing.
 
 Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}
 
@@ -134,12 +150,12 @@ intrinsic characteristics of cs:
 - abstraction/modularity
 - novelty/creativity
 
-## chap 2
+## chap 2 - ideals
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add a reference to MOONBIT in the ideals or in the lit review
 - [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
-- [ ] add a reference and discussion of Fedorenko (fedorenko_language_2019) in terms of cognitive mapping.
+- [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
 
 ## chap 1
 
