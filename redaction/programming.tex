@@ -187,7 +187,7 @@ Referencing is a surface-level consequence of the \emph{use-mention} problem ref
 
 \begin{listing}
   \inputminted{c}{./corpus/references.c}
-  \caption{Pointers are crazy.}
+  \caption{Pointers involve a non-straightforward way to reason about values.}
   \label{code:references-c}
 \end{listing}
 
@@ -423,10 +423,14 @@ Then comes the use of the term \emph{semaphore} itself. In its mechanical form, 
 
 Ultimately, the micro-specific details of the implementation stop making use of metaphors at all and, in doing so, rely on a different kind of representation. The two operations, denoted above \lstinline{wait} and \lstinline{post}, are actually left to implementation details. In Dijkstra's original paper, such operations are denoted \lstinline{P} and \lstinline{V}, and it is still a matter of debate what those letters stand for, due to the author's use of his native Dutch language \citep{wikipedia_semaphore_2023}. Since these appear as arbitrary marks, we argue that their aesthetic properties in communicating the abstract data type of semaphore changes; they take on the appearance of a single letter: one which is very concrete to the machine, and very abstract to the human.
 
-\subsubsection{Openness and indeterminacy}
-\label{subsubsec:openness-indeterminacy}
+\subsubsection{Openness and transparency}
+\label{subsubsec:openness-transparency}
 
-In the case of the pi video looper, we describe the context of adafruit, the project and the location (github, forks), which hints at \emph{extensibility} and \emph{modification}.
+This next example, taken from Adafruit's \lstinline{pi_video_looper}, exhibits interesting features in terms of openness and transparency, hinting at the reader's implied ability to write.
+
+The program text, published by the Adafruit company, is written in Python and is the source code for a video application running on the Raspberry Pi hardware platform. Both the company and the hardware platform it manufactures are strongly rooted in the ethos of open-source, meaning that it is not just meant to be used, but also to be modified by its users. In this context, the \lstinline{pi_video_looper} project is made available on the GitHub platform, which facilitates copying (forking) by other users.
+
+The particular section of the program text whose particular presentation enables understanding for further modiyfing concerns two similar functions, \lstinline{_load_player()} and \lstinline{_load_file_reader()}, in the \lstinline{video_looper.py} text file, reproduced in \ref{code:pi-video-looper}. These two functions are member methods if the \lstinline{VideoLooper} class and return the specific video playback processes (such as VLC media player or OMXplayer) and file reading drivers (such as a USB drive or a network filesystem).
 
 \begin{listing}
   \inputminted{python}{./corpus/pi_video_looper.py}
@@ -434,10 +438,13 @@ In the case of the pi video looper, we describe the context of adafruit, the pro
   \label{code:pi-video-looper}
 \end{listing}
 
-We then analyze the code in terms of interface between the problem domain (the media player) and the hardware domain (omx vs. hello\_video), we talk about the fact that it is explicitly about loading files, which means that adding a new playback engine is as simple as writing the playback engine in a new file, and passing the filename as string as an argument, withouth having to touch these functions themselves. this is an example of a beacon.
+To do so, these two methods operate similarly. Based on the current configuration of the running software, they load actual files through Python's \lstinline{importlib} module, and calls an expected method to return an instantiated object. Since it engages directly with modules in the form of files, rather than through pre-registered abstractions, it gives the end user a glimpse into the workings of the source code as latent scripts of plain text, rather than interpreted code. This might be considered confusing, since this is also the only two occurences of the use of such a technique in a file that is 500 lines long.
 
-We conclude with the implicit abstraction, the need to reveal what should be, to hint at both particular realities (how the playback is actually done) and particular possibilities (changing it). we can also say a word on the fact that the comments create a welcoming space for newcomers.
+And yet, this architectural choice enables the reader to grasp a couple of fundamental concepts never made explicit otherwise. First, the use of the \lstinline{_} character prefix for both methods ensure that these are private methods, and therefore are only directly used in the current class, and thus that these are not called in other, invisible places in the rest of the program text. Second, in a program text whose intention is to be user-friendly, given the number of comments and the culture of the organization from which it stems, an explicit unveiling of dynamic module loading signifies the potential for other modules to be loaded, without having to modify the loading function itself. This expresses the feeling of habitability discussed in \ref{subsubsec:compression-habitability}, in that readers are invited, in turn, to write into the text and make it their own—here, to use a different videop playback or file reading system.
 
+Particularly, the source code is written in such a way that there are hints at the existing parts of the computational environment (the configuration file, the method to be called on the module). This presents a structure in which the writer can insert itself without modifying anything that was not meant to be modified. With three lines of code, each of these methods present an elegant interface between the problem domain (e.g. the media player) and the hardware domain (e.g. \lstinline{omx} vs. \lstinline{hello\_video}); revealing this loading of files, the program text never states how to add to the souce, but rather shows that adding a new playback engine is as simple as writing the playback engine in a new file with at least one specific method as an entrypoint (e.g. \lstinline{create_player}), changing the configuration file value for the new filename, without having to touch these functions themselves. Furthemore, by acting as this textual location through which multiple computational processes interact, this is an example of a beacon (see \ref{subsec:psychology-programming} for a discussion of beacons), a organizing a non-linear reading process by establishing signposts from which to proceed.
+
+This abandoning of abstraction, in order to reveal what should be revealed to a reader-as-potential writer, builds on a community ethos of hacking, where the machine's workings are laid bare in order to support unexpected changes by unknown individuals. This textual hint at both multiple realities (i.e. how the playback is actually done, inside the \lstinline{VideoLooper} abstraction) and particular possibilities (i.e. using, or changing it), creates a particularly welcoming space for newcomers.
 
 % state that the code poetry and the hacker code are limited, and stand in contrast to developer code
 \subsubsection{Emotions and functionality}
@@ -469,14 +476,12 @@ The computer execution of the poem provides an additional layer of meaning to ou
 
 The added depth of meaning from this code poem goes beyond the syntactic and semantic interplay immediately visible when reading the source, as the execution provides a result whose meaning depends on the co-existence of both source and output. Beyond keywords, variable names and data structures, it is also the procedure itself which gains expressive power: a poem initially about \emph{you} results in a humanly infinite, but hardware-bounded, series of \emph{me}\footnote{Another productive comparison could be found in Stein's work, \emph{Rose is a rose is a rose...}}.
 
-% this part might need to be moved as well?
-
 \subsection{Between humans and machines}
 \label{subsec:humans-machines}
 
-These analyses of program texts have highlighted some of the aesthetic features of source code which can elicit a poetic experience during both reading and execution, and therefore offers a concrete example of the semantic layering which we argue is at the heart of source code aesthetics.
+These analyses of program texts above have highlighted some of the aesthetic features of source code which can elicit a aesthetic experience during reading, and therefore offers a concrete example of the semantic layering which we argue is at the core of source code aesthetics. This idea of multiple levels interpretation, at the minimum between human and machine, has also been explored in the literature through different names.
 
-The first is \emph{double-meaning}, taken from Camille Paloque-Bergès's work on networked texts, and her analysis of code poetics \citep{paloque-berges_poetique_2009}. She defines it as the affordance provided by the English-like syntax of keywords reserved for programming to act as natural-language signifiers. As we've seen in \emph{Black Perl}, the Perl functions can indeed be interpreted as regular words when the source is read as a human text. Starting from her analysis of \emph{codeworks}, a body of literature centered around a créole language halfway between humanspeak and computerspeak\footnote{See in particular the work of Alan Sondheim and mezangelle}, it can be extended into the aesthetically productive overlap of syntactic realms.
+Focusing on the creative uses of code, Camille Paloque-Bergès presents the concept of \emph{double-meaning}. In her work on networked texts, and her analysis of code poetics \citep{paloque-berges_poetique_2009}. She defines it as the affordance provided by the English-like syntax of keywords reserved for programming to act as natural-language signifiers. As we've seen in \emph{Black Perl}, the Perl functions can indeed be interpreted as regular words when the source is read as a human text. Starting from her analysis of \emph{codeworks}, a body of literature centered around a créole language halfway between humanspeak and computerspeak\footnote{See in particular the work of Alan Sondheim and mezangelle}, it can be extended into the aesthetically productive overlap of syntactic realms.
 
 Previous research by Philippe Bootz has also highlighted the concept of the \emph{double-text} in the context of computer poetry, a text which exists both in its prototypal, virtual, imagined form, under its source manifestation, and which exists as an instantiated, realized one \citep{bootz_problem_2005}. However, he asserts that, in its virtual form, "a work has no reality", specifically because  it is not realized. Here again, we encounter the dependence of the source on its realized output, indeed a defining feature of the generative aesthetics of computer poetry. As we've seen in the \lstinline{self_inspect.rb} poem, a work of code poetry can very much exist in its prototypal form, with its output providing only additional meaning, further qualifying the themes laid out in source beforehand. Indeed, the output of that poem would have a drastically diminished semantic richness if the source isn't also read and understood. For this double-meaning to take place, we can say that the sitation is inverted: the output becomes the virtual, imagined text, while the source is the concrete instantiation of the poem.
 
@@ -484,7 +489,7 @@ Second, we draw on Geoff Cox and Alex McLean's concept of \emph{double-coding} \
 
 Finally, the tight coupling of the source code and the executed result brings up Ian Bogost's concept of \emph{procedural rhetoric} \citep{bogost_rhetoric_2008}. Bogost presents procedures as a novel means of persuasion, along verbal and visual rhetorics. Working within the realm of videogames, he outlines that the design and execution of processes afford particular stances which, in turn, influence a specific worldview, and therefore arguing for the validity of its existence. Further work has shown that source code examination can already represent these procedures, and hence construct a potential dynamic world from the source \citep{tirrell_dumb_2012}. If procedures are expressive, if they can map to particular versions of a world which the player/reader experiences\footnote{Versions of worlds can be explored further through Goodman's \emph{Ways of Worldmaking}}, then it can be said that their textual description can also already persuasive, and elicit both rational and emotional reactions due to their depiction of higher-order concepts (e.g. consumption, urbanism, identity, morality). As its prototypal version, source code acts as the pre-requisite for such a rhetoric, and part of its expressive power lies in the procedures it deploys (whether from value assignment, execution jumps or from its overall paradigms\footnote{e.g. declarative, imperative, functional}). Manifested at the surface level through code, these procedures however run deeper into the conceptual structure of the program text, and such conceptual structures can nonetheless be echoed in the lived experiences of the reader.
 
-We've seen through this section that the poetic expressivity of source code poems rely on several aesthetic mechanisms, which can be combined for further expressive effect. From layout and syntactic obfuscation, to double-meaning through variables and procedure names, double-coding and the integration of data types and functional code into a program text and a rhetoric of procedures in their written form, all of these activate the connection between programming concepts and human concepts to bring the unthinkable within the reach of the thinkable. The next section will explore this connection further, in terms of mental models, literary metaphors and cognitive structures.
+We've seen through this section that the expressivity of program texts rely on several aesthetic mechanisms, connected in a spatial way between a metaphorical understanding of humans and a functional understanding of mahines. From layout to double-meaning through variables and procedure names, double-coding and the integration of data types and functional code into a program text and a rhetoric of procedures in their written form, all of these activate the connection between programming concepts and human concepts to bring the unthinkable within the reach of the thinkable. Most importantly, these techniques are deployed differently according to the socio-technical environment in which the program text is being written and read. The next section summarizes these environments, and pays attention to their impact on aesthetic criteria.
 
 \section{Contextual aesthetics} %40k
 \label{sec:contextual-aesthetics}
@@ -494,24 +499,24 @@ This concludes on the contextual component. The point is that aesthetics is cond
 \subsection{Technical environments}
 \label{subsec:technical-environments}
 
-The technical environments impact what is considered nice or beautiful: hardware to software, concrete to abstract.
+We show why the technical environments impacts what is considered nice or beautiful: hardware to software, concrete to abstract, through programming languages.
 
-This is where we talk about hackers.
+This section also allows us to develop on the aesthetic of hackers, displaying understanding through obfuscation. The knowledge of the machine is implied through the exclusivity: being able to do what others do not know how to do.
 
-We also highlight a couple of the specific objects that use aesthetic thinking as intellectual intuition (yuk hui).
+Finally, we look at how esolangs are a drastic example of playing with the linguistic-technical environment provided by programming languages.
 
 \subsection{Social environments}
 \label{subsec:social-environments}
 
-Matz is nice, and so we are nice: niceness and social programming in ruby \citep{fleetwood-boldt_matz_2020}.
+Along with technical environments, we also show how the social environment matters: read-only code abides by different standards than read-write code, particularly in terms of explicit metaphors, and beacons of habitability.
 
-Add a footnote to the parallel with \lstinline{nice} in UNIX.
+We also develop on the concept of niceness, both from a human perspective, taking the Ruby community and their motto: "\emph{Matz is nice, and so we are nice}", arguing that aesthetic programming is, in this sense, an altruistic programming and ties back to a moral virtue mentioned in \ref{subsubsec:compression-habitability} \citep{fleetwood-boldt_matz_2020}. We can also make a parallel with the \lstinline{nice} score of process on UNIX, further pushing this idea of cohabitation.
 
 \subsection{Functional environments}
 \label{subsec:functional-environments}
 
-Ultimately, this does relate to function: the requirement for things to function differently will impact the way they look
+Ultimately, we conclude by arguing that all source code aesthetics relate to a certain conception of function: either technical function, or social function. While these two understanding of function further impact the manifestations of source code. Indeed, code that is neither functioning for the machine, nor meaningul for a human holds the least possible value amongst different combinations presented above. Indeed, a program is always a program \emph{about something}, which therefore holds some intentionality.
 
 \spacer
 
-In conclusion, we have shown that programming languages embody multiple dynamics of aesthetics in source code: technical environment, social environment and problem domain. From there on, we have proposed our theory about levels and distances, confirming this idea of mental structures clearly manifested in source code, and of metaphors. And, again, that aesthetics is inseparable from functionality.
+In conclusion, this chapter has argued first that programming languages provide a socio-technical linguistic environment which, without overly-determining the practice of programmers or the content of what is being programming, nonetheless influence how it can be said, through idiosyncracies and stylistic devices. Starting from John Cayley's framework of levels of literary analysis, we then present a layer-based approach to the points in which aesthetic decisions can take place in source code—that is, across structure, syntax and vocabulary. Broadening this approach, we then showed how these different levels involve an engagement with \emph{semantic layers}: between the human reader, the machine reader and the problem domain; we showed how a source code with aesthetic value is one which balances syntactic techniques, structural organization and metaphorical choices in order to communicate a socio-technical intent. We then explicited the two main contexts in which source code is written, as a way to further define how that intent can be judged. These, in turn, determine what kind of aesthetic judgment can be bestowed upon a particular program text. Finally, we have shown that these two main environments, technical and social, share a common basis of functionality, by virtue of always relating to \emph{something}.

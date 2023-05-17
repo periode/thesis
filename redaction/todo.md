@@ -38,7 +38,11 @@ Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her 
 https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
 ```
 
-## chap 5 - programming
+## chap 6 - programming
+
+- [ ] proofread subsec between human and machines
+
+## chap 5 - understanding
 
 ### meeting with nick 14.14
 
