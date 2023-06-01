@@ -6,8 +6,9 @@
 
 ---
 
----
+the authors make a point about the need for a functional approach to beauty, seeking to re-assert it from a philosophical perspective.
 
+---
 
 #### 1. functional beauty in the aesthetic tradition
 
@@ -39,24 +40,17 @@ overall, there is a disdain for functional things as objects of aesthetic inquir
 
 louis sullivan, modernism -> architecture must be 'sincere', 'honest', 'authentic' (in functional beauty) in architecture, functionalism is inherently good, valuable (even though the function of a building is often contested)
 
-
-1. problem of translation: how does awareness of function alter or influence aesthetic judgment? if something is functionally beautiful, something about its function should translate in its appearance (shifts in priorities and attention?). syntax highlighting semantics?
-
-how is function translated in form? perhaps in affordance. why is the arch looking better at holding than, say a scaffoding? (i'd say because less material, less space taken)
-
-finally, it is also about the fact that we are aware that the object is signalling that our needs are going to be met by its function. (it looks nice cause we know it's going to do the job well)
+1. problem of translation: how does awareness of function alter or influence aesthetic judgment? if something is functionally beautiful, something about its function should translate in its appearance (shifts in priorities and attention?). syntax highlighting semantics? __how is function translated in form?__ perhaps in affordance. why is the arch looking better at holding than, say a scaffoding? (i'd say because less material, less space taken) finally, it is also about the fact that we are aware that the object is signalling that our needs are going to be met by its function. (it looks nice cause we know it's going to do the job well)
 
 2. problem of indeterminacy: how do we know what the function of an object is? they say it depends not on the designer but on "the market" (aka the designation of function by broad masses, p.68). psychologically, we decide what the function is, how it fits our purpose. but normatively, it is a bit more complex to define the one true function. socrates comes back and says that yes, functional beauty can be relative, that's fine.
 
-
-__comprehensiveness is a virtue in aesthetic theory__
+important: __comprehensiveness is a virtue in aesthetic theory__
 
 #### 3. indeterminacy and the concept of function
 
 code has a specific function, computing, dictated by its medium. but it also has different application domains. function related to effectiveness (is it bug-free?)
 
 it lifts function from the exclusive realm of intention, and into the broader realm of use.
-
 
 definition i like:
 
@@ -79,7 +73,7 @@ understanding the function of an object could mean
 1. the understanding of the identity of an object's function (what the function is)
 2. the understanding of _how_ or in what way, does the object perform this function
 
-according to Best, functional entities appear graceful when they are free of features that are extraneous, or irrelevant in relation to their function. 
+according to Best, functional entities appear graceful when they are free of features that are extraneous, or irrelevant in relation to their function.
 
 it becomes obvious that, if we were to look at the same object with a different functional framework, it would look different.
 
@@ -116,6 +110,7 @@ re: problem of translation: experience teaches us that many forms can equally fi
 gordon graham uses the example of the gothic spires, which reach into the heavens, as an expression of function through form.
 
 these translations of function into appearance are:
+
 - looking fit (different from "structurally honest", an interesting distinction to explore)
 - being graceful, elegant
 - being contra-standard, creating visual tension

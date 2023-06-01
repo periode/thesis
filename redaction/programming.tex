@@ -363,7 +363,7 @@ Following these visual, auditory and typographical criteria, an aesthetically-pl
 
 The noun given to a variable should be a hint towards the concept addressed, and ideally address what it is, how it is used, and why it is present, things that cannot be deduced from the environment of the program text\footnote{For instance, in statically typed languages, one does not include the type of the variable in its name, since it is enforced by the compiler}. Each of these three aims aren't necessarily easily achieved at the same time, but finding one word which, through multiple means, points to the same end, is an aesthetic goal of source code writers and another testimony of elegant writing. A beautiful name is a name which differentiates between value (obvious, decontextualized, and therefore unhelpful) and intention, informing the reader not just about the current use, but also about future possible use, in code that is written or yet to be written. This is particularly salient in the general distaste of the use of magic numbers, as are called pure values, which do not have a semantic label applied to them. We see here a paradox between direct conceptual relationship between a name and what it denotes, and the multiple meanings that it embodies (its description, its desired immediate behaviour, and its purpose).
 
-Indeed, in the community of software developers, variable names should then have a 1:1 mapping with the object or concept they denote, this isn't the case in other communities, whether those that rely on obfuscation, in which confusion becomes beautiful, or in poetic code, in which \emph{double-meaning} brings an additional, different understanding which ultimately enriches the complexity of the reading \citep{knuth_literate_1984}.  Such the contextual nature of source code aesthetics (see \ref{sec:contextual-aesthetics} below) proposes a different standard for source code poetry: the layering of meanings is a positive aesthetic trait in the community of code poets. This harnessing of the double-meaning is the easiest way for writers to offer metaphors, and provides an entry point in to the possibility that all source code is itself a practical metaphor for the task—and therefore the problem—at hand. This aesthetic criteria of double-meaning comes from poetry in human languages, in which layered meanings are aesthetically pleasing, because they point to the un-utterable, and as such, perhaps, the sublime\citep{aquilina_computational_2015}.
+Indeed, in the community of software developers, variable names should then have a 1:1 mapping with the object or concept they denote, this isn't the case in other communities, whether those that rely on obfuscation, in which confusion becomes beautiful, or in poetic code, in which \emph{double-meaning} brings an additional, different understanding which ultimately enriches the complexity of the reading \citep{knuth_literate_1984}.  Such the contextual nature of source code aesthetics (see \ref{sec:contexts-of-functions} below) proposes a different standard for source code poetry: the layering of meanings is a positive aesthetic trait in the community of code poets. This harnessing of the double-meaning is the easiest way for writers to offer metaphors, and provides an entry point in to the possibility that all source code is itself a practical metaphor for the task—and therefore the problem—at hand. This aesthetic criteria of double-meaning comes from poetry in human languages, in which layered meanings are aesthetically pleasing, because they point to the un-utterable, and as such, perhaps, the sublime\citep{aquilina_computational_2015}.
 
 \subsubsection{Comments}
 \label{subsubsec:framework-comments}
@@ -491,29 +491,93 @@ Finally, the tight coupling of the source code and the executed result brings up
 
 We've seen through this section that the expressivity of program texts rely on several aesthetic mechanisms, connected in a spatial way between a metaphorical understanding of humans and a functional understanding of mahines. From layout to double-meaning through variables and procedure names, double-coding and the integration of data types and functional code into a program text and a rhetoric of procedures in their written form, all of these activate the connection between programming concepts and human concepts to bring the unthinkable within the reach of the thinkable. Most importantly, these techniques are deployed differently according to the socio-technical environment in which the program text is being written and read. The next section summarizes these environments, and pays attention to their impact on aesthetic criteria.
 
-\section{Contextual aesthetics} %40k
-\label{sec:contextual-aesthetics}
+\section{Contexts of functions} %25k
+\label{sec:contexts-of-functions}
 
-This concludes on the contextual component. The point is that aesthetics is conditional to function. And, while the machine might be one in order to execute that function, it exists in a layer of endless hardwares, softwares, concerns and people which then \emph{modulates} the way this function is described and, ultimately represented.
+The diversity of metaphors applied to source code aesthetics, from literature and metaphor, we nonetheless maintains a common ground of functionalism. That is, each program-text that we have examined in this work always implies a necessity of being functioning. This section further investigates how function acts both as base for value judgment, but also how it denotes socio-technical contexts in which the program text is being presented.
 
-\subsection{Technical environments}
-\label{subsec:technical-environments}
+Indeed, even though the aesthetic judgments we have examined are conditional to function, it does not follow that such required function is approached in similar ways in similar contexts. At first, the computer might be the most direct context defining whether or not a program text functions, from a strictly mechanical perspective; but since programs are both doing something, and about something, we can start to see how social concerns which then \emph{modulates} the technical context in which the function of a program text is assessed. To do so, we first need to examine how the function of an artefact could be defined, before turning to the relationship between source code and function, and concluding on how aesthetics and function relate.
+
+\subsection{Definitions of function}
+\label{subsec:definitions-function}
+
+From a computer science perspective, a function is a program unit which produces an output for each input. While there might not be some explicit value given as an output, a function in a computer program is nonetheless an action which has the ability to modify some internal state of the machine—that is, they are \emph{effective} \citep{abelson_structure_1979}, they are commonly expected to provide a tangible change as a result of their execution. Here, function is therefore understood in the lineage of lambda calculus, the immediate mathematical predecessor to the Turing machine. In lambda calculus, such input and output are expected to be a numerical value. As such, the function square, given the number 2, provides the number 4. In fact, the technical environment in which source code exists—computers—are expressedly designed in order to support such a definition of function.
+
+In order to fulfill this definition of function, a given program text must be correctly machine-readable. This means that its syntax must be correct, before its semantics can be executed by the machine. Here, we see a first bifurcation: between what the program text does (represented by its syntax), and what it is about (represented by its semantics). The first can be qualified as an effective function, while the second can be qualified as a useful function.
+
+Rather than looking at function from an ontological perspective, through which all programs that are syntactically correct satisfy the criteria of function in order to support an aesthetic judgment, one can also look at it from a more practical perspective, that of \emph{utility}. In this case, the functionality of an artefact is therefore assessed based on its use, by situated beings facing precise problems, rather than on its essence.
+
+Incidentally, this brings us back to an older conception of beauty as elaborated by Socrates, and as analyzed by Parsons and Carlson \citep{parsons_functional_2012}.  In their work, they emphasis the concept of \emph{fitness}. Fitness, here, is the degree to which a collection of features of an artefact minimize the amount of effort or energy spent in order to achieve the goal of a particular user in a given context—that is, to fulfill a function. Specifically, Parsons and Carlson build on this approach by arguing that beauty can be understood as \emph{looking} fit for function, thus reconciling both appearance and purpose. In their view, aesthetic appreciation can be dependent on the function of an artefact insofar as such fitness can be perceived by the senses \citep{parsons_functional_2012}. Furthermore, while knowledge of function might not be a pre-requisites for aesthetic appreciation, we can nonetheless note that knowledge indeed factors in in aesthetic judgment. This implies that different expert levels will have different appreciations of the same artefact. Moving away from a discreete understanding of function through syntax-correctness (does it function or not?), we can then move towards a more continuous appreciation of how well an artefact functions. If fitness to function can be a principal criteria for aesthetic judgment, the concept function nonetheless remains multifaceted.
+
+For instance, to assess the function of an artefact, one can relate it to the actions that are enabled by its perceptible properties. Such actions can be decided by the designer of the artefact, in which case the a-priori intention defines the function, or it can be defined by the user, suggesting a more pragmatic approach. Developing this action-oriented, rather than ontological, approach to artefacts Houkes and Vermass state that \emph{an artefact function is any role played by an artefact in a use plan that is justified and communicated to prospective users} \citep{houkes_actions_2004}. From this, it follows that the use of an artefact is both the intention of its creator(s) and the action of its user(s), informed by the typology from which such artefact depends\footnote{For instance, the commonly accepted function of a house in architecture, a proof in mathematics or an essay in litterature.}, communicated to its users. Finally, diversity of function definitions also nonetheless that there is some hierarchy of functions. While it is complicated to point out a single proper use for an artifact, some of those uses can be considered more proper than others, based on the interplay of social agreement, ontological status of the artefact, technical properties and individual intention(s).
+
+% then we give an example of these multiple functions within architecture
+As we developed in \ref{subsec:form-function}, architecture is an artistic field where function is of prime importance, a feature which applies to software development when considering architecture as a metaphor for writing (good) code. Sulliavan, on his essay on the relationship between form and function, applies the adjectives sincerity, honesty, and authenticity. Such terms connotate a certain idea of ontological straightforwardness, rather than adaptation to other factors such as effective use or environmental constraints. In this sense, functionalism poses function as a requirement and from which follows  aesthetic value, even though, in practice, the function of a building is often contested.
+
+Existing at the overlap of mulitple intentions and uses, buildings present a variety of practical functions influencing the aesthetic judgments that are expressed related to it. An example of these varying functions and the accompanying aesthetic perceptions: a library can be judged on how well it conserves the books, on how well it handles sound propagation, on how well it enables the focus of its dwellers, on how well it represents its cultural symbolism, or on the carbon footprint of its construction and use. Each of these will be weighted differently according to whether one takes the perspective of the architect, the client, of the reader, or of the employee.
+
+To this strict functionalism as a school of thought,  one can answer that the goal of architecture is not simply to design buildings, but to \emph{create a conception of living} \citep{graham_architecture_2000}, and thus embracing a paradigmatic approach to function as art: the aesthetic value of the built artefact depends on the conception of living that the individual bestowing the judgment ascribes to it. In the case of architecture, one might settle the question of aesthetic value of  a building not by stating that it is because is functional, but rather because it is \emph{useful}, involving both the situated use and the situated intent.
+
+Similarly, in the case of literature, the function of a written work is not just to be decipherable by one other than the other. Starting form an extended conception of literature \citep{gefen_extension_2019}, one can look at artefacts such as press releases, novels, poems, and legal codes as fulfilling different functions (such as informing, immersing, evoking or specifying\footnote{Nonetheless, an artefact can function well, and thus be well-judged aesthetically on multiple functions at the same time. The first sentence of the first paragraph of the first article of the German \emph{Grundgesetz}, "Die Würde des Menschen ist unantastbar." \citep{deutschebundestag_gg_2022}, translated as "The dignity of humans is unviolable.", functions both as a fundamental ground for jurisdiction, and as a condensed narrative evokation of the history of the country in the 20\^{th} century.}). A well-functioning novel will be thus be judged on different criteria than a well-functioning legal code, and so will a piece of investigative journalism, even though all will share the assumed requirement for the artefact to be functioning with respect to its ontological type—here, that it is a system of signs decipherable by others.
+
+Both from a philosophical and from a practical standpoint, aesthetic judgment is not independent from the function of an artefact; here, we consider it as relatively dependent on its fitness to such function. In turn, we have seen that the concept of function itself depends on the socio-technical context from which one poses the aesthetic judgment, involving both human stances and techical properties. After having highlighted the ontological function of source code as embedded in a computational ontology, we then show the other, pragmatic and paradigmatic functions of source code, and develop on how the aesthetic value of program texts are thus related to such functions. 
+
+\subsection{Functions of source code} %8k
+\label{subsec:functions-source-code}
+
+% intro on the interplay of technical and social contexts, both from a teaching (processing/p5) and an knowledge-community (PEP) perspective 2k
+
+And then now we develop on the two main functions of source code, the technical and the social one, and we look at when these align (PEP and list comprehension, educational snippets) and where these are disjointed (code poetry and obfuscated code).
 
 We show why the technical environments impacts what is considered nice or beautiful: hardware to software, concrete to abstract, through programming languages.
 
+% then a detour by the hackers and the inverted context, moving away from one function towards new modes of functioning, and with a grand écart to code poetry, and a section on esolang 4k
 This section also allows us to develop on the aesthetic of hackers, displaying understanding through obfuscation. The knowledge of the machine is implied through the exclusivity: being able to do what others do not know how to do.
 
-Finally, we look at how esolangs are a drastic example of playing with the linguistic-technical environment provided by programming languages.
+For instance, practices of hacking might seem to deviate from the original function of a given hardware platform or software system, but might, on contrary, find a new function in the communication of the skill of the hacker which \emph{repurposes} such platform. there is also \emph{visual tension}: the fact that an object might not look the part, but actually is doing such part (example of the graceful but powerful crane), of the obtuse but expressive code.
 
-\subsection{Social environments}
-\label{subsec:social-environments}
+Particularly, hacking also allows us to consider the aesthetics of dysfunction: how one can find pleasure in addressing, and then subverting, the original intent of the artefact, or of the concept of the artefact. Here, \emph{we develop on the esoteric languages}, showing that the function of computation is a core, if not \emph{the} core, component of value judgment in source code. Indeed, these esolangs can only be taken seriously, meaning eligible for aesthetic judgment, because the satisfy the base requirement of fulfilling the function of computation.
+
+Similar to architecture and mathematics, software can hardly be separated from what it does, except for some fringe cases (such as pavillions, follies, Rube Goldberg machines), which are exceptions confirming the rule.
+
+Finally, we look at how esolangs are a drastic example of playing with the linguistic-technical environment provided by esoteric programming languages.
+
+We show how these extreme examples also help to highlight the default standard, often taken for granted.
+
+% then wrap up of those two dimensions that all relate to both function and functionS - 2k
 
 Along with technical environments, we also show how the social environment matters: read-only code abides by different standards than read-write code, particularly in terms of explicit metaphors, and beacons of habitability.
 
 We also develop on the concept of niceness, both from a human perspective, taking the Ruby community and their motto: "\emph{Matz is nice, and so we are nice}", arguing that aesthetic programming is, in this sense, an altruistic programming and ties back to a moral virtue mentioned in \ref{subsubsec:compression-habitability} \citep{fleetwood-boldt_matz_2020}. We can also make a parallel with the \lstinline{nice} score of process on UNIX, further pushing this idea of cohabitation.
 
-\subsection{Functional environments}
-\label{subsec:functional-environments}
+how is function translated in form? perhaps in affordance. why is the arch looking better at holding than, say a scaffoding? (i'd say because less material, less space taken. more elegance.). Indeed, according to Best, functional entities appear graceful when they are free of features that are extraneous, or irrelevant in relation to their function. 
+
+
+% FUNCTION IN AESTHETICS 8k
+\subsection{Function in aesthetics}
+\label{subsec:function-aesthetics}
+
+% ref: benedetto croce, aesthetic: a science of expression and general linguistic: he defines beauty in terms of expression, by which he means a particular mental process which results in a clear, distinct and particular idea.
+Finally, having looked at the diversity of functions, its relationship to aesthetic perception, and its multiple manifestations in source code, we return to Goodman to conclude on an epistemological and an ethical note of why function should be pushed further into aesthetics in such an epistemic medium as source code.
+
+Start by the translation from function to form, which involves knowledge. From knowledge, ethics.
+
+gordon graham uses the example of the gothic spires, which reach into the heavens, as an expression of function through form.
+
+these translations of function into appearance are:
+
+- looking fit (different from "structurally honest", an interesting distinction to explore)
+- being graceful, elegant
+- being contra-standard, creating visual tension
+
+it looks nice because we know it's going to do the job well: its affordances signals that our needs are going to be met by its use (whether we are the ones directly and actively using it or not).
+
+\begin{quote}
+  things are functionally beautiful where their perceptual appearances are altered by our knowledge of their function
+\end{quote}
+
+that is, they are functionally beautiful when we know where to look, and how to look.
+
 
 Ultimately, we conclude by arguing that all source code aesthetics relate to a certain conception of function: either technical function, or social function. While these two understanding of function further impact the manifestations of source code. Indeed, code that is neither functioning for the machine, nor meaningul for a human holds the least possible value amongst different combinations presented above. Indeed, a program is always a program \emph{about something}, which therefore holds some intentionality.
 

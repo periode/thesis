@@ -38,11 +38,22 @@ Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her 
 https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
 ```
 
-## chap 6 - programming
+**ENHANCE CLARITY**
+
+## chap 5 - programming
 
 - [ ] proofread subsec between human and machines
+- [ ] there is no example of iterating in 5.1.2
+- [ ] all figures (especially fig. 51, 52) need to be very much explicited: "we need to be lead into why that is even an issue" / define reasonable examples for each / show different return types in fig. 51
+- [ ] for the threads, first define what a `process` is so that we can understand what a `thread` is, also show the non-threaded version? explain how the sequential outcome is bouleversé?
+- [ ] look into why we can't return `[]int` in c
+- [ ] in golang, the `_` identifiers are not about the error, but about ignoring things. show that it differs in JS or Python
+- for fig. 62, step through a computer interpretation of the process, before giving a literary interpretation of the process.
+- for the code poems, I need to be able to articulate their relevance when looking at different domains. they're not just related to literature, but also architecture (follies, pavillions) or math (pure math), while other source code (linux kernel) might also be a sort of literature (legal code). but also make it explicit that i talk about the ones that can run, not the code poems that are not executable
+- [ ] rather than having 5.3 as this total disconnect, maybe start by writing a monolith to avoid the pitfalls of structure. particularly because at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
+- in the case of list comprehension in Python, it is both a technical and social environment
 
-## chap 5 - understanding
+## chap 4 - understanding
 
 ### meeting with nick 14.14
 
@@ -80,7 +91,7 @@ In architecture, highlight the fact that the _detail_ is the point of interactio
 
 - do not keep the conclusion a secret, state what the theory is in the introduction, straight away, then provide evidence throughout in the conclusion (that aesthetics are multi-faceted, often involve knowledge and communication, either ot machine or to human)
 
-## chap 4 - beauty
+## chap 3 - beauty
 
 - include \citep{dexter_embodied_2011}
 - [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the 
@@ -124,7 +135,7 @@ the code for the irrational equations:
 
 _side note: are metaphors related to space because it's hard for us to think in terms of time?_
 
-## chap 3 - understanding
+## chap 2 - understanding
 
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
@@ -154,14 +165,14 @@ intrinsic characteristics of cs:
 - abstraction/modularity
 - novelty/creativity
 
-## chap 2 - ideals
+## chap 1 - ideals
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add a reference to MOONBIT in the ideals or in the lit review
 - [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
 - [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
 
-## chap 1
+## introduction
 
 - [ ] make the connection between abstract code beauty (the doxa) and the mathematical sublime of Kant
 - [ ] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
