@@ -139,6 +139,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
+- [ ] __VERY IMPORTANT__: include the methodology from [detienne's analysis of kintsch & von dijk](https://arxiv.org/pdf/cs/0612004.pdf) (check [this one](https://link.springer.com/chapter/10.1007/978-1-4471-0111-6_2) also)
 - [ ] wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
 - [ ] make it clear that we're focusing on two sorts of knowledge: formal, or contextual.
 - [ ] in the hardware existence of software, talk about memory management
