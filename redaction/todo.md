@@ -42,6 +42,7 @@ https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuh
 
 ## chap 5 - programming
 
+- [ ] include the concept of interface by matthew kirschenbaum https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550
 - [ ] proofread subsec between human and machines
 - [ ] there is no example of iterating in 5.1.2
 - [ ] all figures (especially fig. 51, 52) need to be very much explicited: "we need to be lead into why that is even an issue" / define reasonable examples for each / show different return types in fig. 51
