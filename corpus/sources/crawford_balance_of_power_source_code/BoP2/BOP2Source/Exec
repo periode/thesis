@@ -1,0 +1,1 @@
+Make -f "{BOPS}JunkMake" > {BOPS}JunkResult{BOPS}JunkResultMake -f "{BOPS}MakeFile" > {BOPS}MakeResult{BOPS}MakeResultSave -aBeepDataFrame:BOP2_Ä:BOP2

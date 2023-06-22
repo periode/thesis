@@ -38,11 +38,19 @@ Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her 
 https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
 ```
 
-**ENHANCE CLARITY**
+## conclusion
+
+- [ ] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc.
+- [ ] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
+  - [ ] it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
+  - [ ] have one aspect: what do these metaphors highlight all of them together?
+  - [ ]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
+
+> __ENHANCE CLARITY__
 
 ## chap 5 - programming
 
-- [ ] include the concept of interface by matthew kirschenbaum https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550
+- [ ] include the concept of interface by matthew kirschenbaum <https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550>
 - [ ] proofread subsec between human and machines
 - [ ] there is no example of iterating in 5.1.2
 - [ ] all figures (especially fig. 51, 52) need to be very much explicited: "we need to be lead into why that is even an issue" / define reasonable examples for each / show different return types in fig. 51
@@ -53,6 +61,12 @@ https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuh
 - for the code poems, I need to be able to articulate their relevance when looking at different domains. they're not just related to literature, but also architecture (follies, pavillions) or math (pure math), while other source code (linux kernel) might also be a sort of literature (legal code). but also make it explicit that i talk about the ones that can run, not the code poems that are not executable
 - [ ] rather than having 5.3 as this total disconnect, maybe start by writing a monolith to avoid the pitfalls of structure. particularly because at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
 - in the case of list comprehension in Python, it is both a technical and social environment
+
+in the last section, 5.3
+
+- [ ] functions need to be made clearer. there are three levels (1) syntactical/formal validity, (2) what the program down (operational semantics) and (3) what the program should do (intentional semantics). THIS SHOULD BE DISCUSSED AT THE BEGINNING RATHER THAN JUST THE LAME INTRO ON LAMBDA CALCULUS. then start from those to discuss the function/meaning of computer programs
+- [ ] i talk about "_syntactic meaning_" but this makes no sense, meaning is only semantic
+- [ ] again, shorten the code snippets and __explain them__
 
 ## chap 4 - understanding
 
@@ -95,7 +109,7 @@ In architecture, highlight the fact that the _detail_ is the point of interactio
 ## chap 3 - beauty
 
 - include \citep{dexter_embodied_2011}
-- [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the 
+- [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the machine term, and not on the human term: we address this in section 5.3 (syntactical validity, operational semantics, intended semantics)
 - [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
 - [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
 - [ ] add meles and UNIX
