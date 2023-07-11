@@ -29,6 +29,8 @@ quote from peter neumann: "these techniques may have enormous value in providing
 
 Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory
 
+Include Gordon Graham - Philosophy of Art and Aesthetics
+
 include somehow:
 
 ```text
@@ -67,6 +69,7 @@ in the last section, 5.3
 - [ ] functions need to be made clearer. there are three levels (1) syntactical/formal validity, (2) what the program down (operational semantics) and (3) what the program should do (intentional semantics). THIS SHOULD BE DISCUSSED AT THE BEGINNING RATHER THAN JUST THE LAME INTRO ON LAMBDA CALCULUS. then start from those to discuss the function/meaning of computer programs
 - [ ] i talk about "_syntactic meaning_" but this makes no sense, meaning is only semantic
 - [ ] again, shorten the code snippets and __explain them__
+- [ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
 
 ## chap 4 - understanding
 
@@ -141,6 +144,8 @@ the code for the irrational equations:
 
 - fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
 
+- mathematics: Barker, John, 2009, “Mathematical Beauty”, Sztuka i Filozofia, 35: 65–74. (A powerful defence of the claim that mathematical and logical proofs have aesthetic properties.)
+
 - __case studies__
   - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
   - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
@@ -153,6 +158,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 ## chap 2 - understanding
 
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
+- [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
 - [ ] __VERY IMPORTANT__: include the methodology from [detienne's analysis of kintsch & von dijk](https://arxiv.org/pdf/cs/0612004.pdf) (check [this one](https://link.springer.com/chapter/10.1007/978-1-4471-0111-6_2) also)
 - [ ] wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
@@ -187,22 +193,17 @@ intrinsic characteristics of cs:
 - [ ] add a reference to MOONBIT in the ideals or in the lit review
 - [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
 - [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
+- [ ] add this to the software architecture section: books about open source architecture, edited by greg wilson
+<https://aosabook.org/en/index.html> -<https://aosabook.org/en/zeromq.html>
 
 ## introduction
 
-- [ ] make the connection between abstract code beauty (the doxa) and the mathematical sublime of Kant
-- [ ] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
-- [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
-- [ ] make a __clear__ distinction between `source code` (the medium) and `program text` (the instance)
-- [ ] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
-- [ ] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic
-
-> There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
-
-- [ ] add this in the literature review: <https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf> specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
-
-- [ ] add this to the software architecture section: books about open source architecture, edited by greg wilson
-<https://aosabook.org/en/index.html> -<https://aosabook.org/en/zeromq.html>
+- [x] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
+- [x] in methodology, have a note on simplified python examples
+- [x] make a __clear__ distinction between `source code` (the medium) and `program text` (the instance)
+- [x] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
+- [x] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic:  There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
+- [x] add this in the literature review: <https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf> specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
 
 ## structure notes
 
@@ -230,13 +231,7 @@ intrinsic characteristics of cs:
 - more history for the MESA programming environment: <https://dl.acm.org/doi/abs/10.1145/17919.806843>
 - __EMACS__ documentation: <https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf>
 
-## meeting with nick 4.11.2022
-
-- is it clear why i'm addressing definitions of understanding first, and then the actual object of understanding?
-- is it more about understanding, or knowledge communication/knowledge reception?
-- in general, i'm a bit unsure about how clear my approach to understanding is. i know it's necessary to clarify what i mean, and the intent is to provide background for this "dual nature" of software.
-
-## meeting with nick
+## meeting with nick - 4.11.2022
 
 - [ ] pare down!
   - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
@@ -254,7 +249,6 @@ intrinsic characteristics of cs:
 
 ## general
 
-- [ ] add all the refernces in the intro footnotes
 - [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md)
 - [x] rewrite my definition of aesthetics to include more the aesthetics of everyday life?
   - [x] drawing from mckenzie, rewrite his part to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code
