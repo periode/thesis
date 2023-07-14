@@ -43,9 +43,9 @@ https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuh
 ## conclusion
 
 - [x] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc. (e.g. Snippet 0x31, gray code and its visualization)
-- [ ] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
-- [ ] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
-- [ ]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
+- [x] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
+- [x] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
+- [x]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
 
 > __ENHANCE CLARITY__
 
