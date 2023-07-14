@@ -42,11 +42,10 @@ https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuh
 
 ## conclusion
 
-- [ ] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc.
+- [x] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc. (e.g. Snippet 0x31, gray code and its visualization)
 - [ ] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
-  - [ ] it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
-  - [ ] have one aspect: what do these metaphors highlight all of them together?
-  - [ ]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
+- [ ] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
+- [ ]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
 
 > __ENHANCE CLARITY__
 
@@ -195,6 +194,19 @@ intrinsic characteristics of cs:
 - [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
 - [ ] add this to the software architecture section: books about open source architecture, edited by greg wilson
 <https://aosabook.org/en/index.html> -<https://aosabook.org/en/zeromq.html>
+- [ ] pare down!
+  - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
+  - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
+  - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
+  - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+  - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
+  - [ ] move listing 10 to understanding computers
+  - [ ] one liner: monostiche
+  - [ ] since the chapter is too long, paraphrase code, rather than quote it
+  - [ ] listing #2, not style but voices
+  - [ ] black perl is still in old mode
+  - [ ] explain listing 13
+- [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
 
 ## introduction
 
@@ -230,22 +242,6 @@ intrinsic characteristics of cs:
 - demo of how this IDEs can help from the 90s <https://dl.acm.org/doi/abs/10.1145/64140.65020>
 - more history for the MESA programming environment: <https://dl.acm.org/doi/abs/10.1145/17919.806843>
 - __EMACS__ documentation: <https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf>
-
-## meeting with nick - 4.11.2022
-
-- [ ] pare down!
-  - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
-  - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
-  - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
-  - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
-  - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
-  - [ ] move listing 10 to understanding computers
-  - [ ] one liner: monostiche
-  - [ ] since the chapter is too long, paraphrase code, rather than quote it
-  - [ ] listing #2, not style but voices
-  - [ ] black perl is still in old mode
-  - [ ] explain listing 13
-- [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
 
 ## general
 
