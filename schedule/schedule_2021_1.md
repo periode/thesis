@@ -7,11 +7,11 @@
 - - ~~terry winograd~~
 - - niklas wirth
 - - ~~history of programming languages~~
-- ~~semantics in programming languages~~
+- semantics in programming languages
 
 ## feb 8
 
-- ~~aesthetics about means of understanding (lit)~~
+- aesthetics about means of understanding (lit)
 - - conferences + books to order
 - - cognitive psychology
 - - build reference list
@@ -37,7 +37,7 @@
   - rapaport 1999, implementation is semantic interpretation
   - [https://www.ehu.eus/documents/1134202/0/Lamport+-+Who+Builds+a+House+without+Drawing+Blueprints.pdf] -> look for "abstraction is an art"
   - [https://ruccs.rutgers.edu/images/personal-zenon-pylyshyn/class-info/FP2012/FP2012_readings/Dennett_RealPatterns.pdf]
-- ~~aesthetics about means of understanding (lit)~~
+- aesthetics about means of understanding (lit)
 - - go through reference list
 
 ## feb 22
