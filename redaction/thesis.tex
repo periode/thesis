@@ -1,11 +1,12 @@
 \documentclass{report}
 
-\usepackage[utf8]{inputenc}
-\usepackage{csquotes}
 \usepackage{fontspec}
+\usepackage{newunicodechar}
 \usepackage{graphicx}
 \graphicspath{{./images/}}
+\usepackage[export]{adjustbox}
 \usepackage{listings}
+\usepackage{epigraph}
 \usepackage{authblk}
 \usepackage[normalem]{ulem}
 \usepackage[bottom]{footmisc}
@@ -21,7 +22,7 @@
 \AtBeginEnvironment{quote}{\itshape}
 
 \usepackage[]{minted}
-\setminted{fontsize=\footnotesize,baselinestretch=1}
+\setminted{fontsize=\footnotesize,baselinestretch=1,breaklines=true,breakanywhere}
 \usemintedstyle{trac}
 \usepackage{caption}
 \newenvironment{code}{\captionsetup{type=listing}}{}
@@ -30,7 +31,19 @@
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.00}
 \setmainfont{Bespoke Serif}
-\setmonofont{IBM Plex Mono}
+\setmonofont[
+    UprightFont =*,
+    ItalicFont =*,
+    BoldFont=*,
+    BoldItalicFont=*]{MesloLGS NF}
+\newfontfamily\apl{APL385 Unicode}
+\newfontfamily\noto{Noto Serif}
+\newunicodechar{⌿}{{\apl ⌿}}
+\newunicodechar{τ}{{\noto τ}}
+\newunicodechar{ε}{{\noto ε}}
+\newunicodechar{χ}{{\noto χ}}
+\newunicodechar{ν}{{\noto ν}}
+\newunicodechar{η}{{\noto η}}
 \linespread{1.50}
 \sloppy
 
@@ -47,33 +60,23 @@
     This thesis investigates how the aesthetic properties of source code enable the representation of programmed semantic spaces, in relation with the function and understanding of computer processes. By examining program texts and the discourses around it, we highlight how source code aesthetics are both dependent on the context in which they are written, and contingent to other literary, architectural, and scientific aesthetics, depending on different scales of reading. Particularly, we show how the aesthetic properties of source code manifest expressive power due to their existence as a dynamic, functional and shared computational interface to the world.
 \end{abstract}
 
-% To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.
-% Grace Hopper, quoted in Management and the Computer of the Future (1962) by Sloan School of Management, p. 277
+\tableofcontents
+
+\renewcommand{\textflush}{flushright}
+\setlength{\epigraphwidth}{0.5\textwidth}
+\epigraph{To me, programming is more than an important practical art.\linebreak \linebreak It is also a gigantic undertaking in the foundations of knowledge.}{Grace Hopper}
 
 \include{introduction.tex}
-
-\pagebreak
-
 \include{ideals.tex}
-
-\pagebreak
-
 \include{understanding.tex}
-
-\pagebreak
-
 \include{beauty.tex}
-
-\pagebreak
-
 \include{programming.tex}
-
-\pagebreak
-
 \include{conclusion.tex}
 
 
 \bibliographystyle{./apa-good.bst}
 \bibliography{thesis.bib}
+
+\listoflistings
 
 \end{document}

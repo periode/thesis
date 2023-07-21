@@ -7,12 +7,6 @@ recs from guido, neuropsychologists who might be interested:
 - stanislas dehaene
 - christophe paillier
 
-séminaire adrien puignot: principe de la _sémiotique sociale_, i.e. la fabrique de sens globale.
-
-_architexte_: L’ensemble des catégories générales, ou transcendantes -types de discours, modes d’énonciation, genres littéraires, etc.- dont relève chaque texte singulier (genette). En gros, la méta-catégorie des catégories. Ce qui gouverne le texte. L'outil d'écriture n'est pas neutre, il impose des formes éditoriales et des formats d'écriture au scripteur. Il permet aussi la recomposition des "traces" de lecture (échange, co-construction, démantèlement)
-
-_infra-ordinaire_: infra-ordinaire en tant qu’observation attentive de « ce qui se passe chaque jour et revient chaque jour, le banal, le quotidien, l’évident, le commun, l’ordinaire, l’infra-ordinaire, le bruit de fond, l’habituel. l’attention portée aux détails du réel apparaît comme une constante qui finira par devenir une théorie rassemblant la pensée et la pratique littéraires de l’auteur
-
 - deal with inline quotes properly (using the `dirtytalk` package)
 
 add this to examples, from the rust parser example i forked, as an example of how people assign quality to proper scale naming:
@@ -25,29 +19,13 @@ operator_level = { operator_exp | operator_subscript |
 }
 ```
 
-quote from peter neumann: "these techniques may have enormous value in providing nontrivial assurances that the system might actually do what is expected of it . " - "There are many problems arising in complex systems that must be thoroughly comprehended, but that once understood can be structured in a way that conceptually simplifies the design"
-
-Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory
-
-Include Gordon Graham - Philosophy of Art and Aesthetics
-
-include somehow:
-
-```text
-struct
-
-Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head--me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what they had originally written.
-https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html
-```
-
 ## conclusion
 
 - [x] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc. (e.g. Snippet 0x31, gray code and its visualization)
 - [x] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
 - [x] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
 - [x]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
-
-> __ENHANCE CLARITY__
+- [ ] add a footnote about Brenda : Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head--me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what they had originally written. [source](https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html)
 
 ## chap 5 - programming
 
@@ -70,13 +48,15 @@ in the last section, 5.3
 - [ ] again, shorten the code snippets and __explain them__
 - [ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
 
-## chap 4 - understanding
+## chap 3 - beauty
 
 ### meeting with nick 14.14
 
-overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
+- in philosophy section or in mathematics section, inckude iverson_notation_as_tool_for_thought, beardsley: cognitive gratification under ideal circumstances
 
-I should also address the status of AI-generated code (include, not include? I consider it the same as compiler code).
+Include Gordon Graham - Philosophy of Art and Aesthetics
+
+overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
 
 For Languages of Art, two things about exemplification vs. implementation:
 
@@ -84,6 +64,10 @@ For Languages of Art, two things about exemplification vs. implementation:
 - an implementation does not necessarily exemplify: it needs (amongst other things?) CONTEXT.
 
 In architecture, highlight the fact that the _detail_ is the point of interaction between the human and the structure.
+
+In literature, include rousset: forme et signification
+
+Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory
 
 - p.218, clarify and enumerate what those 5 requirements of the language of art are.
 - p.220, make it clear that `var auth_level` is actually two different tokens, one by the designer, one by the programmer
@@ -103,13 +87,6 @@ In architecture, highlight the fact that the _detail_ is the point of interactio
 - listing 46: regex matcher:  regex is a formalism for processing text. convey that this is a complex problem, but that you can actually write a fairly simple program to implement it. In general, I should always discuss extensively the listings.
 - Listing 47: still write about refactoring, but maybe with a shorter program. use the simplest case that makes my point. make that point with elaboration and extent discussion. BUT ALSO PREFACE IT WITH A PYTHON EXAMPLE. So have two listings in the end.
 - allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
-
-### meeting with nick 07.04
-
-- do not keep the conclusion a secret, state what the theory is in the introduction, straight away, then provide evidence throughout in the conclusion (that aesthetics are multi-faceted, often involve knowledge and communication, either ot machine or to human)
-
-## chap 3 - beauty
-
 - include \citep{dexter_embodied_2011}
 - [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the machine term, and not on the human term: we address this in section 5.3 (syntactical validity, operational semantics, intended semantics)
 - [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
@@ -156,6 +133,8 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 ## chap 2 - understanding
 
+> knowledge begins in simple judgments, judgments of feeling or sentience, as yet devoid of explicit conceptual relations, but containing the germs of all higher order functions of thinking [joseph leighton, the objects of knowledge](https://www.jstor.org/stable/2177293?seq=2)
+
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
@@ -172,10 +151,11 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - [ ] add to the programmer expertise <https://books.google.de/books?hl=en&lr=&id=rMmxq8q0CGYC&oi=fnd&pg=PA8-IA6&dq=L.M.+Berlin>,+%E2%80%9CBeyond+Program+Understanding,%E2%80%9D+A+Look+at+Programming+Expertise+in+Industry,+Empirical+Studies+of+Programmers,+Fifth+Workshop,+pp.+6-25,+1993.&ots=gO-IgzpVOE&sig=ozpfd-DluQ3k4IE7TBnCix0TT7I&redir_esc=y#v=onepage&q&f=false __also__ <http://scholar.google.com/scholar?hl=en&q=J.+Koenemann+and+S.P.+Robertson%2C+%E2%80%9CExpert+Problem+Solving+Strategies+for+Program+Comprehension%2C%E2%80%9D+Proc.+Conf.+Human+Factors+and+Computing+Systems%2C+pp.+125-130%2C+1991>.
 - [ ] at the end of the psychology section, mention the skills needed by a programmer (see below) and this will help us in the followig cognitive tools section to prove that tools indeed help with some of these.
 - [ ] in terms of metaphors, make clear that programmer-facing metaphors are not more complex than user-facing metaphors, or that it's a different kind of cognitive work, but rather that they are referring to a different kind of concept (streams, pipes, volatile memory, etc.)! For instance, mention how there are files/folders for users, and these are manipulated differently on GUI and CLI (CLI -> bash script: "loops", "labels", "wildcards"). these show that the metaphors at work in programming are a combination of different concepts, drawing on different fields of knowledge.
+- [ ] include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor
 - [ ] add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
-- [ ] Peter G. Neumann. Psychosocial implications of computer software development and use: Zen and the art of computing.
+- [ ] Peter G. Neumann. Psychosocial implications of computer software development and use: Zen and the art of computing. quote from peter neumann: "these techniques may have enormous value in providing nontrivial assurances that the system might actually do what is expected of it . " - "There are many problems arising in complex systems that must be thoroughly comprehended, but that once understood can be structured in a way that conceptually simplifies the design"
 
-Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}
+Also, Fuller's taxonomy, derived from Bloom's taxonomy. It is represented by two semi-independent dimensions, Producing and Interpreting. Each dimension defines hierarchical linear levels where a deeper level requires the competencies from the previous ones. Producing has three levels (None, Apply, and Create) and Interpreting has four (Remember, Understand,  Analyze, and Evaluate). \citep{fuller_developing_2007}. huh. there is again a spatial component to understanding, at least discursively
 
 intrinsic characteristics of cs:
 
@@ -189,24 +169,25 @@ intrinsic characteristics of cs:
 ## chap 1 - ideals
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
-- [ ] add a reference to MOONBIT in the ideals or in the lit review
-- [ ] include the hacker dictionary definition of elegance <http://www.catb.org/~esr/jargon/html/E/elegant.html>
+- [ ] code poetry: add a reference to MOONBIT in the ideals or in the lit review
+- [ ] __Elegance__: Through a single lens, it communicates the problem it solves and the machinery of its solution.
+- [ ] __elegance__ include the hacker dictionary definition <http://www.catb.org/~esr/jargon/html/E/elegant.html>
 - [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
-- [ ] add this to the software architecture section: books about open source architecture, edited by greg wilson
-<https://aosabook.org/en/index.html> -<https://aosabook.org/en/zeromq.html>
-- [ ] pare down!
-  - [ ] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
-  - [ ] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
-  - [ ] justify the comparison between win2000 and kirby (differences in size, date of creation)
-  - [ ] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
-  - [ ] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
-  - [ ] move listing 10 to understanding computers
-  - [ ] one liner: monostiche
-  - [ ] since the chapter is too long, paraphrase code, rather than quote it
-  - [ ] listing #2, not style but voices
-  - [ ] black perl is still in old mode
-  - [ ] explain listing 13
-- [ ] table of listings: this is what the work is about (variety, meaningful, captioned; the caption is also for me cause it shows i am able to express concisely why the example is there)
+- [ ]   __minimalism__, quote <https://vimeo.com/47364930> -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
+- [ ] __simplicity__, make a difference between ontological and syntactical simplicity: Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+- [ ] __conclusion__: add "It may be hard to understand someone else’s code but the computer is, after all, multi-lingual. In this sense, understanding someone else’s code is very much like listening to poetry in a foreign language - the appreciation goes beyond a mere understanding of the syntax or form of the language used, and as such translation is infamously problematic. Form and function should not be falsely separated" aesthetics of generative code, by cox et. al.
+
+- [x] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+- [x] for hackers, include the underhanded c code contest
+- [x] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
+- [x] one liner: monostiche
+- [x] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
+- [x] for mathematics and hackers, there is a contest in mathematica where you do one-liners
+- [x] add this to the software architecture section: books about open source architecture, edited by greg wilson
+- [x] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
+- [x] justify the comparison between win2000 and kirby (differences in size, date of creation)
+- [x] discuss more explicitly hayes_cultures_of_code in the introduction of the chapter
+- [x] listing #2, not style but voices
 
 ## introduction
 
