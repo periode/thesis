@@ -169,7 +169,6 @@ intrinsic characteristics of cs:
 ## chap 1 - ideals
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
-- [ ] code poetry: add a reference to MOONBIT in the ideals or in the lit review
 - [ ] __Elegance__: Through a single lens, it communicates the problem it solves and the machinery of its solution.
 - [ ] __elegance__ include the hacker dictionary definition <http://www.catb.org/~esr/jargon/html/E/elegant.html>
 - [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
@@ -181,6 +180,7 @@ intrinsic characteristics of cs:
 - [x] for hackers, include the underhanded c code contest
 - [x] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
 - [x] one liner: monostiche
+- [x] code poetry: add a reference to MOONBIT in the ideals or in the lit review
 - [x] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
 - [x] for mathematics and hackers, there is a contest in mathematica where you do one-liners
 - [x] add this to the software architecture section: books about open source architecture, edited by greg wilson

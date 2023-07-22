@@ -1,4 +1,5 @@
 # poetique des codes
+
 ## camille paloque-berges
 
 - computers no longer deal with the expression of idea, but with their constitution (katherine hayles, talking about *incorporated cultural metaphors* in My Mother Was A Computer)
@@ -61,34 +62,34 @@
 - **HACK**: poiesis, surprise, creativity, increase, but also unsubmitted to an optimized logic
 
 - self-reference:
-- - "hello world" (essentially social)
-- - "quine" (essentially ontological, philosophical)
+  - - "hello world" (essentially social)
+  - - "quine" (essentially ontological, philosophical)
 
 - obfuscation > A Box Darkly (Mateas, Montfort)
-- - obfuscation only exists to the human eye, a sort of a hack because it is doing something in an unexpected way
-- - obfuscation can be formal (spaces,tabs,etc.) or cognitive (useless functions, abandoned variables, etc.)
-- - it's about *looking like* what you are *doing*
+  - - obfuscation only exists to the human eye, a sort of a hack because it is doing something in an unexpected way
+  - - obfuscation can be formal (spaces,tabs,etc.) or cognitive (useless functions, abandoned variables, etc.)
+  - - it's about *looking like* what you are *doing*
 
 - weird languages
-- - they comment ironically existing languages, but also existing structures (qlb, trumpscript)
-- - process over result
-- - possibility of an "art language". what would that be?
-- - weird languages as (according to montfort):
-- - - parody
-- - - minimalism (love of computation as an idea)
-- - - puzzle
-- - - staging (double-coding, makes sense to humans on a different lexical register)
-- - - **add:** political
-- - - **add:** technically beautiful (as seen by professionals)
-- - - **add:** double coding but on the linguistic level, absorbing some of the structures that exist *first* in programming languages
+  - - they comment ironically existing languages, but also existing structures (qlb, trumpscript)
+  - - process over result
+  - - possibility of an "art language". what would that be?
+  - - weird languages as (according to montfort):
+    - - - parody
+    - - - minimalism (love of computation as an idea)
+    - - - puzzle
+    - - - staging (double-coding, makes sense to humans on a different lexical register)
+    - - - **add:** political
+    - - - **add:** technically beautiful (as seen by professionals)
+    - - - **add:** double coding but on the linguistic level, absorbing some of the structures that exist *first* in programming languages
 
 - perl poetry
-- - perl has syntactical and morphological rules which correspond (somewhat) to (some sort of) gender: `$` for single, `@` for plural, adding `_` turns into a pronoun)
-- - more about perl poetry: sharon hopkins
+  - - perl has syntactical and morphological rules which correspond (somewhat) to (some sort of) gender: `$` for single, `@` for plural, adding `_` turns into a pronoun)
+  - - more about perl poetry: sharon hopkins
 - in these poems, code becomes explicitly message, and become *re-semantized* and this process *includes a hack*. this is what distinguishes the smart from the poetic (according to the author). the hack adds to the saturation?
-- - perl poetry also sets tones, and genres (e.g. "Just another....") therefore creates a space for legitimacy
-- - perl poems also port "regular" poems into code. this is where the double coding, the separation between content and form becomes obvious, but doesn't necessarily imply an impoverishment of the work (e.g. a rose, by gertrude).
-- - - close/critical readings are easier in this case
+  - - perl poetry also sets tones, and genres (e.g. "Just another....") therefore creates a space for legitimacy
+  - - perl poems also port "regular" poems into code. this is where the double coding, the separation between content and form becomes obvious, but doesn't necessarily imply an impoverishment of the work (e.g. a rose, by gertrude).
+    - - - close/critical readings are easier in this case
 
 - question of the pseudo-code! is that a draft, in the goodman sense (i need to stop referring to goodman all the time :( )
 - **which language, which words, which figures, can express the most?**
@@ -97,12 +98,12 @@
 ### three - tactics and strategies in code (aka michel de certeau is #1 in all of our hearts)
 
 - hack
-- - irony/humour
-- - political (being aware of how commercial it is)
-- - engaged art
+  - - irony/humour
+  - - political (being aware of how commercial it is)
+  - - engaged art
 
 - the **practical** value of playing with code (to make it stronger, or to escape it), and the relations of power that exist within speech (ordre du discours?)
-- - again, the aesthetic values of the temporary, the transitory, variety and innovation
+  - - again, the aesthetic values of the temporary, the transitory, variety and innovation
 
 by getting rid of the nature of code as a tool, one can better highlight the purpose of that tool, and the socio-economic context in which it evolves. one can also subvert the heavy lid of *expertise* which comes along with the idea of functional, efficient code ("there is a best way to do it"). this expertise affects programmers like advertisement affect consumers (maybe that's a stretch lol). **PRODUCTION vs. FABRICATION**. fckn maker movement.
 
@@ -116,12 +117,13 @@ code poetry opens a new space to breathe in computation
 - aesthetics are a way to express oneself (certeau)
 
 - software artists (electronic disturbance theater, critical art ensemble, etc.). **they choose, following walter benjamin, a politics of aesthetics, rather than a political aesthetics**. the starting point *is* politics. we can engage with cultural products only through their technological means of production.
-- - social software
-- - critical software
-- - speculative software
+  - - social software
+  - - critical software
+  - - speculative software
 
 this is no longer software referring to itself, but software *investigating* itself, and through that, investigating the system within which it exists and acts.
 s
+
 - code as/is a virus
 
 - jodi looks good but is fake af because it **looks like** the code is broken but, really, it is acting in a perfectly function, docile way. back to the trappings of the interface. they still provide speculative possibilities, because they illustrate what could be.
@@ -134,14 +136,14 @@ code poetry is the show that the functioning is actually just an illusion, or a 
 ### four - codeworks
 
 - natural language is a code in itself (umberto eco, post-structuralism, relationality)
-- - the need for a dictionary, co-reference, context, intent, etc.
+  - - the need for a dictionary, co-reference, context, intent, etc.
 
 - pragmatical poetics (hackers, amateurs) on one side, and strategical (artists, biennales) on the other
 
 - three levels of codeworks
-- - surface: formal language plays with references to code
-- - intermediate
-- - deep (roots): where code breaks down formal language
+  - - surface: formal language plays with references to code
+  - - intermediate
+  - - deep (roots): where code breaks down formal language
 
 - **what is the process of legitimization code-writing as a literary act?** (this is where bourdieu comes in hehe, priesthood, ritual, etc)
 
@@ -166,15 +168,15 @@ the internet text is both message, code and data, a text that is constantly in a
 *a book written by no one for no one, can it interest any one?*
 
 answers to this lack of machine intent:
+
 - total work, *oeuvre demiurgique*, which generates and controls everything
 - technological sublime, with information overload (mark poster), excess (sondheim)
 - the temporary environment (codeworkers), the broadcast, the communication, the network, the social... "solutions" of net.art vs. "dead-ends" of software art (bof), because codeworkers move from a tactics to a strategy (by becoming legitimate on mailing lists) (and still she quotes sondheim claiming a need for *hacks* in the network)
 
-
 questions of the book:
+
 - who are those literary agents?
 - how do they relate to information?
 - what is their impact? (what is their level of agency, of reality? how do they transform environments?)
-
 
 it's important to study code first, and not remain in the territory of literature > examine them as systems of information-exchange, games of exploration
