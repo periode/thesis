@@ -47,6 +47,9 @@ in the last section, 5.3
 - [ ] i talk about "_syntactic meaning_" but this makes no sense, meaning is only semantic
 - [ ] again, shorten the code snippets and __explain them__
 - [ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
+- [ ] add this quote from The Embodied Aesthetics of Code, quoted in [Sy Brand](https://www.youtube.com/watch?v=CkGqINHZit0): "an object is 'functionally beautiful' to the extent that its aesthetic properties contribute to its overall performance---the functional beauty of an object enhances its fulfilling its primary function" and, in this case, the primary function is not to be executed, but to be understood.
+- [ ] from sy brand talk, gabrielle starr, feeling beauty: the neuroaesthetics of the experience: "Aesthetic response enables the comparison and integration of novel kinds of reward in a process that opens possibilities for new knowledge, or new ways of negotiating the world. The perceptions, images, and emotions we find through our experience of poetry, painting and music put ideas and events into relation with one another that would rarely, if ever, be possible outside the arts."
+
 
 ## chap 3 - beauty
 
@@ -168,16 +171,20 @@ intrinsic characteristics of cs:
 
 ## chap 1 - ideals
 
+- [ ]  add a subsubsec on verbosity?
+
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
-- [ ] __Elegance__: Through a single lens, it communicates the problem it solves and the machinery of its solution.
-- [ ] __elegance__ include the hacker dictionary definition <http://www.catb.org/~esr/jargon/html/E/elegant.html>
-- [ ] add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
-- [ ]   __minimalism__, quote <https://vimeo.com/47364930> -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
-- [ ] __simplicity__, make a difference between ontological and syntactical simplicity: Syntactic simplicity, or elegance, measures the number and conciseness of the theory's basic principles. Ontological simplicity, or parsimony, measures the number of kinds of entities postulated by the theory. code is syntactic simplicity because wrngles together complex concepts (e.g. perl, one liners), or code is ontological simplicity, because all is within computation (e.g. lisp)
+- [ ] add if hemingway wrote javascript as an example of styles
+
+- [ ] __conclusion__ add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
 - [ ] __conclusion__: add "It may be hard to understand someone else’s code but the computer is, after all, multi-lingual. In this sense, understanding someone else’s code is very much like listening to poetry in a foreign language - the appreciation goes beyond a mere understanding of the syntax or form of the language used, and as such translation is infamously problematic. Form and function should not be falsely separated" aesthetics of generative code, by cox et. al.
 
 - [x] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
+- [x] __Elegance__: Through a single lens, it communicates the problem it solves and the machinery of its solution.
+- [x] __elegance__ include the hacker dictionary definition <http://www.catb.org/~esr/jargon/html/E/elegant.html>
+- [x]   __minimalism__, quote <https://vimeo.com/47364930> -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
 - [x] for hackers, include the underhanded c code contest
+- [x] __simplicity__, make a difference between ontological and syntactical simplicty
 - [x] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
 - [x] one liner: monostiche
 - [x] code poetry: add a reference to MOONBIT in the ideals or in the lit review

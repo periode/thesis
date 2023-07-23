@@ -1,0 +1,711 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="/style.css"/>
+		</head>
+		<body>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="online-posts-and-comments-on-aesthetics-of-code">online posts and comments on aesthetics of code</h1>
+
+<h2 id="overall-review">overall review</h2>
+
+<p>a lot of conventional wisdom about what it means to write beautiful code. a lot of blogs posts repeating best practices (clean code, software craftsmanship), constant re-appearance of structure vs. layout.</p>
+
+<p>things that come back over and over:</p>
+
+<ul>
+  <li>structure vs. layout vs. (meaningful) naming</li>
+  <li>write for other programmers, not for yourself</li>
+  <li>aesthetics are subjective, but I give the same advice as everyone else</li>
+</ul>
+
+<p>but then there are disagreements:</p>
+
+<ul>
+  <li>idiomatic vs. not idiomatic?</li>
+  <li>clever vs. explicit?</li>
+  <li>keeping vs. not keeping curly braces</li>
+</ul>
+
+<p>really what this highlights is both some sort of common knowledge, based on practices and thinkers/mentors (“uncle bob”), but at the same time a diversity of communities of practices, and different levels of expertise, which ultimately results in different understandings.</p>
+
+<hr />
+
+<h2 id="beautiful-code-according-to-blogger">beautiful code according to blogger</h2>
+
+<p><a href="https://zinascii.com/2020/goodbye-joyent.html">link 1</a> - <a href="https://github.com/illumos/illumos-gate/commit/2428aad8462660fad2b105777063fea6f4192308">link 2</a></p>
+
+<p>he talks about a beautiful patch for a faster clocktime on illumos, a version of BSD. <code>reached out to the author for explanation</code>. (he never replied)</p>
+
+<h2 id="beautiful-code-exists-acm-queue">beautiful code exists (acm queue)</h2>
+
+<p><a href="https://queue.acm.org/detail.cfm?id=1454458">link</a></p>
+
+<p>he is working on a hadware counter monitor for FreeBSD and explains why this is beautiful code.</p>
+
+<ul>
+  <li>header files as introduction of the structure</li>
+  <li>header constants are directed at what the program does, but at who else is going to modify it (i.e. version numbers)</li>
+</ul>
+
+<p><code>C
+#define PMC_VERSION_MAJOR 0x03
+#define PMC_VERSION_MINOR 0x00
+#define PMC_VERSION_PATCH 0x00
+</code></p>
+
+<p>names are significant, even more so in C/hw-level in which sometimes you have to deal with hex codes. (aesthetic is going against set practices, individual display of skill, for others -&gt; <strong>the reader</strong>).</p>
+
+<p>a bit later, he separates the variables that are machine-dependent, and variables that are machine-independent. this is the most important and effective categorization/labelling. (this constitutes a part of <em>conceptual distancing</em>)</p>
+
+<p>and a final commentary on using C because drivers are written in C, but still remembering lessons and practices from other languages (i.e. data encapsulation in C++)</p>
+
+<h2 id="stackexchange-answer-on-what-is-beautiful-code">stackexchange answer on “what is beautiful code”</h2>
+
+<p><a href="https://softwareengineering.stackexchange.com/questions/49189/writing-discussions-about-the-aesthetics-of-code">link</a></p>
+
+<p>these are recommendations on reading <em>Beautiful Code</em>, <em>Literate Programming</em>.</p>
+
+<h2 id="hamon-beautiful-code-and-japanese-swordmaking">hamon: beautiful code and japanese swordmaking</h2>
+
+<p><a href="http://www.deadprogrammer.com/hamon-or-the-skin-deep-beauty-of-code">link</a></p>
+
+<p>the author states that ugliness is self-explanatory, but that beauty is elusive (they still don’t define ugliness).</p>
+
+<p>his main argument is that of <em>hamon</em>, the wavy pattern on the edge of a japanese blade which indicates its quality. they see the same thing with code, there’s a pattern that’s an indicator of its quality.</p>
+
+<ul>
+  <li>indentation</li>
+  <li>spacing</li>
+  <li>length of keywords</li>
+  <li>length of function names</li>
+</ul>
+
+<p>this introduces the possibility of <strong>different scales</strong> at which we read code. a glance, a deep-dive, a spelunking. and also <strong>different timings</strong> (glancing first, then reading)</p>
+
+<h2 id="literate-programming-resources-after-knuth-lots-of-snippets-from-different-authors">literate programming resources (after knuth, lots of snippets from different authors)</h2>
+
+<p><a href="http://www.literateprogramming.com/">link</a></p>
+
+<p>a series of excerpts from the knuth fan club. one interesting point is that Lit Programming is a <em>paradigm</em>, a sort of <em>meta-text</em> that goes on top. it’s a target. but is it still source code? does it qualify as a craft, or does it just move the craft to another layer, that of writing TeX docs? (which is def a fucking craft). however, while LP highlights the human reader more than the machine reader, i’d argue that the way that humans read source code is different from the way humans read books (i.e. you should be able to understand what the code does by reading/jumping to any part of it <em>and yet</em> you should be able to read it linearly without jumping back and forth: this multiple requirement of code-reading represents the multiple expected uses of code),
+and that there are techniques in source code which help understand the code better (conceptual distances, metaphors, separating concerns), and that those are poorly represented in LP. in fact, LP is efficient, but not elegant on the aesthetic level; because it abstracts the details, some of the beauty is lost.</p>
+
+<h2 id="stackexchange-answer-on-explaining-beautiful-code-ot-non-programmers">stackexchange answer on explaining beautiful code ot non-programmers</h2>
+
+<p><a href="https://softwareengineering.stackexchange.com/questions/65216/how-can-you-explain-beautiful-code-to-a-non-programmer">link</a></p>
+
+<p>(answers are listed by decreasing upvotes)</p>
+
+<p>David Thornley: the one that uses the simpler and fewer ideas whilst doing the job correctly.</p>
+
+<p>user21007: makes an analogy with architecture, but without going beyond “[…] And it is aesthetically pleasing”</p>
+
+<p>Steven Evers: “All of the code is present, is required, and none of it requires explanation” (ideal goal? any code requires explanation, though.)</p>
+
+<p>Mason Wheeler: “When it requires a lot of explanation like that, it’s not “beautiful code” it’s a “clever hack”.</p>
+
+<p>asoundmove: adds “it must also subjectively feel perfect &amp; light”</p>
+
+<p>user21007 (as above): adds that if it’s self-explanatory, it must also be non-trivial. and it must take into account that it is <strong>maintainable</strong>, and in the <strong>right language</strong>. given that, <code>hello, world!</code>, couldn’t be called beautiful; because the <em>why</em> and the <em>how</em> are actually already solved before even looking at it.</p>
+
+<p>Macneil: “coding problems are about conceptualization, so beautiful code represents a remarkable conceptualization of the problem”, and a beautiful execution. (programming really is just the craft of ideas). “for instance, when a problem can be reduced to an existing problem, it gives us an insight into the nature of the problem itself.” (and elegance uses simple trucks to achieve difficult tasks). he concludes with <code>quicksort</code>.</p>
+
+<p>dsmicha: beautiful code can’t be attained because it implies conflicting interests. is it then about <em>balance</em> and <em>compromise</em>?</p>
+
+<ul>
+  <li>Readability</li>
+  <li>Conciseness</li>
+  <li>Efficiency</li>
+  <li>Flexibility</li>
+  <li>Explicitness</li>
+  <li>Robustness</li>
+  <li>Safety/idiot- proofness</li>
+  <li>Completeness</li>
+  <li>Consistency</li>
+  <li>Ease of use (for APIs)</li>
+</ul>
+
+<p>Chris Cudmore: compares beautiful code to beautiful math proofs.</p>
+
+<p>tp1: talks about behaviour than actual writing</p>
+
+<p>guidhouse: states they’re a craftsman</p>
+
+<p>paul d. waite: it’s beautiful when it’s <em>readable</em>.</p>
+
+<p>fortran: you should be able to read it like a book. page after page, without skipping ahead or skipping back to understand the current page.</p>
+
+<p>Erik Reppen: compares it to efficient vs. sloppy bureaucracy</p>
+
+<h2 id="quora-question-on-what-makes-beautiful-code-cf-wr-archive-for-more">quora question on “what makes beautiful code” (cf. WR archive for more)</h2>
+
+<p><a href="https://www.quora.com/What-makes-some-code-beautiful">link</a></p>
+
+<p>Pierre Chapuis: states that it is simplicity, and quotes David Gelernter—”Beauty is more important in computing than anywhere else in technology because software is so complicated. Beauty is the ultimate defence against complexity.”—as the CS who thought most about the beauty of code.</p>
+
+<ul>
+  <li>decoupling</li>
+  <li>simplicity of interface</li>
+  <li>evolutivity (can be adapted to new constraints)</li>
+  <li>coherence</li>
+</ul>
+
+<p>David Seidman: makes a difference between simple (organization) and simply written (naming, structures, etc.), then lists the usual suspects, and then adds <strong>does something interesting</strong> (aka a login page couldn’t be nice). i’m not sure about login pages not being nice, but it says something about ingenuity, craftsmanship.</p>
+
+<p>Brian Schmitz: the python one-liner that makes use of <code>decorators</code>.</p>
+
+<p><code>python
+@lru_cache(3)
+def fib(n):
+    return n if n &lt; 2 else fib(n - 1) + fib(n - 2)
+</code></p>
+
+<p>after a lengthy, technical explainer, he concludes in saying that “the beauty here is the <em>power</em> of a single line of code” (emphasis my own)</p>
+
+<p>Christian Baune: gives thorough code examples, demonstrating that naive approaches can be the most optimal. in the end, beautiful code is:</p>
+
+<ul>
+  <li>concise without compromising readability</li>
+  <li>follows the solution outline (problem domain) closely)</li>
+  <li>can be improved without changing the implementation</li>
+  <li>it’s abastracted (changing for loops to maps with a name)</li>
+  <li>don’t compromise on correctness for performance</li>
+</ul>
+
+<p>Bill C. Reimers: makes the point that what is considered beautiful depends on the data context (adding 10 positive ints, vs. adding all ints between -10^38 to 10^38). his point is that “When you come up with code that is both simple and accurately computes the results, then you have something beautiful.”, followed by the conclusion that, depending on the usage, it’s about <em>divide and conquer</em></p>
+
+<p>Lucas Wiman: difference between two attemps of solving sudoku (norvig vs. ron jeffries). the first one displays a keen understanding of both the problem and the tools. referenced <a href="http://pindancing.blogspot.com/2009/09/sudoku-in-coders-at-work.html">here</a></p>
+
+<p>Alexey Spizhevoy: the balance between easiness (to read, maintain) and smart ideas, originality. he refers to <em>Zen and The Art of Motorcycle Maintenance</em> (craft)</p>
+
+<p>John Rainey: quoting his college prof, “elegant code provides the simplest solution to a problem”</p>
+
+<p>Mario Hines: gives an example, but doesn’t say why.</p>
+
+<p>Anders Borg: code symmetry, using the same constructs for the same tasks. <em>make for easier to understand code, and it looks better too</em> (sic)</p>
+
+<p>Hitesh Sajnani: thinks code isn’t beautiful, the architecture is. if you have a shit architecture, you can’t have beautiful code.</p>
+
+<p>Mark Roberts: it’s not about the <em>what</em> that the comments describe, but the <em>why</em> that they describe (business requirements, problem domain). indeed, for the first case, correct names can take care of the <em>what</em> comments.</p>
+
+<p>Cornel Masson: “fluid interfaces that make it read like natural languages”</p>
+
+<p>Nabarun Mondal: gives an example of beautiful code, but prefaces it with <strong>“Oh, and if you understand predicate logic, this is cake walk.”</strong>, which touches directly upon issues of understanding and requirements.</p>
+
+<p>James Liu (<a href="https://www.quora.com/What-is-beautiful-code">here</a>): code that everyone can appreciate (i.e. read), disregarding their level of expertise</p>
+
+<p>Peat Bakke: beautiful code enlightens the person reading it. “when you read a bit of code that makes you go “ah hah!” … That is beautiful code.”</p>
+
+<h2 id="data-scientist-on-general-description-of-beautiful-source-code">data scientist on general description of beautiful source code</h2>
+
+<p><a href="https://towardsdatascience.com/beautiful-code-ad8a0c6b19">link</a></p>
+
+<p>“beauty is conferred by simplicity and architectural coherence, which go hand in hand with functional precision and creativity applied to the problem”. simplicity, because there is a (at-least) linear relationship between number of lines of code and amount to be understood. but even that isn’t certain (cf. one liners). rather, it is <strong>the amount of tokens</strong> that need to be reduced (semantic elements).</p>
+
+<p>no two people will write exactly the same code: voice of the programmers.</p>
+
+<p>quote of knuth to explore further: “computer programming is an art, because it applies accumulated knowledge to the world”</p>
+
+<p>“The visual appearance of well-formatted code is strongly associated with its quality and many programmers who take pride in their work, derive great satisfaction from polishing it, as they realise that a programmer is remembered for their style and discipline and very rarely for the code itself.”</p>
+
+<p>he calls small enough functions “pure” functions</p>
+
+<h2 id="it-manager-on-general-description-of-beautiful-source-code">IT manager on general description of beautiful source code</h2>
+
+<p><a href="https://medium.com/swlh/excellent-code-clean-and-beautiful-code-b541ca4b5a39">link</a></p>
+
+<p>follows bob martin (<em>Clean Code</em>) a lot. following this idea of software craftsmanship, describes two components necessary to it: <em>knowledge</em> (heuristics, patterns, principles) and <em>work</em> (the embodided component). it’s all about practice.</p>
+
+<p>the name of a variable/function should answer: why it exists, what it does, and how it is used. this requires descriptive/syntactical skills but also a shared cultural background.</p>
+
+<p>“master programmers think of functions as stories to be told rather than code to be written” &gt; but to what extent is that a fantasy? is it confirmed anywhere? by yukihiro matsumoto, i guess.</p>
+
+<p>cleanly formatted code is a matter of presentation, of communication, of reputation</p>
+
+<h2 id="ways-to-make-code-more-beautiful-from-devops-perspective">15 ways to make code more beautiful from devops perspective</h2>
+
+<p><a href="https://dzone.com/articles/15-ways-to-write-beautiful-code">link</a></p>
+
+<p>addresses code clarity as the goal.</p>
+
+<ul>
+  <li>format it</li>
+  <li>hungarian notation for non built-in datatypes (+ RESPECTING CONVENTION)</li>
+  <li>common (reader-known) architecture</li>
+  <li>eliminate nesting, example:</li>
+</ul>
+
+<p>```C
+void SomeMethod(){
+    if(x != y){
+        //– stuff
+    }
+}</p>
+
+<p>void SomeClearerMethod(){
+    if(x == y) return;</p>
+
+<pre><code>//-- do stuff } ```
+</code></pre>
+
+<ul>
+  <li>do not reference variable names in comments</li>
+  <li>SOLID
+    <ul>
+      <li>single responsibility of classes</li>
+      <li>open/close principle</li>
+      <li>liskov substitution</li>
+      <li>interface segregation</li>
+      <li>dependency inversion</li>
+    </ul>
+  </li>
+  <li>force yourself to create a new method everytime you copy 3+ lines of code (hmm, not sure why… <code>TOTHINK</code>)</li>
+  <li>use the vocab of your language</li>
+</ul>
+
+<h2 id="what-makes-code-readable">what makes code readable</h2>
+
+<p><a href="https://simpleprogrammer.com/what-makes-code-readable-not-what-you-think/">link</a></p>
+
+<p>there are standard answers (usual suspects), but he puts the emphasis on “background experience levels”. the experienced programmer bypasses syntax for semantics, while the beginner programmer focuses on syntax. (here: goodman). the essential example is the ternary operator.</p>
+
+<p>also states that the languages constrain your means of expression (they have an upper-limit, but is that upper-limit)</p>
+
+<p>“What we really need to focus on now is programming languages with small vocabularies that can be easily understood and learned, even though they might not be as expressive as more complicated languages.” -&gt; processing language</p>
+
+<p>comments:</p>
+
+<p>informatimago: prog languages are different in that you are constantly redefining the language.</p>
+
+<p>tz1: variable name length should also hint at the importance (hierarchy) of the variable</p>
+
+<p>Spudley: actually, breaking down into smaller functions doesn’t make it more readable, but it makes it more re-usable. <em>there’s a difference between reading to understand, and understanding to act</em>.</p>
+
+<p>rph: Also I don’t agree that large grammars are worth their expressiveness. Firstly, I think languages, like C, with small grammars can still be sufficiently expressive. Sometimes, a large grammar doesn’t really give you the ability to express more types of things. It gives you the ability to express the same thing in multiple ways. I like to contrast Perl and Python in this respect. I can’t stand reading other’s Perl code because it usually uses a style I’m not accustomed to. Python is just as expressive but there’s usually an obvious way to express an algorithm, making it universal, Languages like, C++, with large grammars, are extremely hard to read and it has contributed to developer’s all adopting their own styles, much like natural languages have different dialects and lingoes. How do programming teams solve this problem? They adopt coding guidelines that restrict the developers to a subset of the language’s grammar.</p>
+
+<p>Tamas Rev (related to above): lower level languages express more in terms of computers, and higer level languages express more in terms of humans.</p>
+
+<h2 id="review-of-beautiful-code">review of <em>Beautiful Code</em></h2>
+
+<p><a href="https://blog.codinghorror.com/code-isnt-beautiful/">link</a></p>
+
+<p>(justly) complaining about lack of beauty and familiarity in most of the authors examples, and compares it to explaining poetry in a foreign language. he then goes on to say that what matters is the architecture, the design of the code (in sennett’s terms, still separating the hand from the head)</p>
+
+<p>“focusing on the code is like focusing on the brushstrokes, pigments of the mona lisa”. but i think the discourses around the mona lisa are already established, and already reveal things about our humanity. it is the discourses around <em>the making</em> of the mona lisa that need to catch up.</p>
+
+<p>justinC: highlight that <code>(3…6).each { |num| puts num }</code> is elegant</p>
+
+<p>Jheriko: <code>*dst = *src; while(++*dst = ++*src);</code> is ugly</p>
+
+<h2 id="style-is-substance-by-ken-arnold-selected-by-joel-spolsky-for-his-book">style is substance, by ken arnold (selected by joel spolsky for his book)</h2>
+
+<p><a href="https://www.artima.com/weblogs/viewpost.jsp?thread=74230">link</a></p>
+
+<p>about the strict, compiler-level enforcment of coding styles (number of spaces, etc.). he seems excited by the prospect of no more style wars, but to what extent is the “style war” an essential part of the practice?</p>
+
+<p>implied: whitespaces do matter (cause that’s what a lot of styles are about amyways, and whitespaces make things clearer or more confusing, especially in <code>FORTRAN</code>, cause it has columns-as-whitespace)</p>
+
+<h2 id="rob-martin-clean-code-publishes-the-programmers-oath-related-to-craftsmanship">rob martin (clean code) publishes the programmer’s oath (related to craftsmanship)</h2>
+
+<p><a href="https://blog.cleancoder.com/uncle-bob/2015/11/18/TheProgrammersOath.html">link</a></p>
+
+<p>a manifesto of sorts, tying even further the idea of craftmanship</p>
+
+<h2 id="account-of-a-software-rewrite">account of a software rewrite</h2>
+
+<p><a href="http://damienkatz.net/2005/01/formula-engine-rewrite.html">link</a></p>
+
+<p>with anecdote about MS source code: the expletives in the MS source code, that attest to the very reality of making something in groups.</p>
+
+<h2 id="does-beautiful-code-matter-medium-post-wit-sc-examples">does beautiful code matter? medium post wit sc examples</h2>
+
+<p><a href="https://blog.prismatik.com.au/does-beautiful-code-matter-281934ed7363">link</a></p>
+
+<p>definition of beauty: that which pleases the senses, but which pleases the beholder’s senses. then he immediately acknowledges that comprehension is first and foremost (both a priori and a posteriori).</p>
+
+<p>in any case, <strong>beautiful code will be readable</strong>.</p>
+
+<p>like playing an instrument, there is personality and soul in coding.</p>
+
+<p>so, professionally, where does commercial responsibility end, and artistic license begin?</p>
+
+<h2 id="medium-post-as-lit-review-of-code-complete">medium post as lit review of code complete</h2>
+
+<p><a href="https://developerzen.com/how-do-you-define-good-code-c8a383c207a4">link</a></p>
+
+<p>how do you define good code? maintainability, efficiency, elegance (simple, proper use of language constructs)</p>
+
+<p>the holy grail of self-documenting code!</p>
+
+<p>quotes <a href="https://docs.microsoft.com/en-us/archive/msdn-magazine/2004/july/%7B-end-bracket-%7D-what-makes-good-code-good">this post</a> from microsoft on what good code is.</p>
+
+<p>“Elegance combines simplicity, efficiency, and brilliance, and produces a feeling of pride. Elegance is when you replace a procedure with a table, or realize that you can use recursion—which is almost always elegant”</p>
+
+<p>and then he gives the example of <code>fibonacci</code>, so i’d need to investigate if fibonacci is elegant on its own, or if it’s a playground for elegance. (a couple of months later: nah. there are definitely ugly implementations of fibonacci)</p>
+
+<p>Clarity of code. Clarity of design. Clarity of purpose.  (related to the differrent scales of appreciation)</p>
+
+<p>and, sure, you can do clever hacks, but they <em>need</em> to be clever to be justified.</p>
+
+<p>but really, good code is balance.</p>
+
+<h2 id="python-code-style">python code style</h2>
+
+<p><a href="https://docs.python-guide.org/writing/style/">link</a></p>
+
+<p>because python is praised for readability, it has (needs?) idioms, and they’re all illustrated with code:</p>
+
+<ul>
+  <li>be explicit</li>
+  <li>one statement per line</li>
+  <li>more than knowing possibilities, the important part is knowing when <em>not</em> to use them.</li>
+  <li>community responsibility over the defensiveness of languages like java</li>
+</ul>
+
+<h2 id="overview-of-clean-code-the-book">overview of clean code (the book)</h2>
+
+<p><a href="https://www.butterfly.com.au/blog/website-development/clean-high-quality-code-a-guide-on-how-to-become-a-better-programmer">link</a></p>
+
+<ul>
+  <li>names:</li>
+  <li>intention-revealing names</li>
+  <li>pronounceable name</li>
+  <li>namespaces</li>
+  <li>don’t be cute</li>
+  <li>one word per concept (goodman)</li>
+  <li>solution/problem domain names</li>
+  <li>
+    <p>nouns for classes, verbs for functions</p>
+  </li>
+  <li>functions:</li>
+  <li>smaller the better</li>
+  <li>function should do one thing</li>
+  <li>no nests</li>
+  <li>less arguments (not more than 3 ideally)</li>
+  <li>no side effects</li>
+  <li>no output arguments (<code>email.addSignature() &gt; addSignature(email)</code>)</li>
+  <li>handle errors</li>
+  <li>
+    <p>dry</p>
+  </li>
+  <li>comments:</li>
+  <li>don’t comment bad code, rewrite it</li>
+  <li>explain <em>why</em></li>
+  <li>warn of consequences</li>
+  <li>noise comments are bad</li>
+  <li>
+    <p>never commit commented code (why?)</p>
+  </li>
+  <li>general heuristics:</li>
+  <li>dead code</li>
+  <li>speculative generality (“… what if?”)</li>
+  <li>large classes</li>
+  <li>god object</li>
+  <li>multiple languages in one file</li>
+  <li>framework modifications</li>
+  <li>overuse of static</li>
+  <li>long if conditions</li>
+  <li>call super’s overwritten methods</li>
+  <li>circular dependency</li>
+  <li>circular references</li>
+  <li>sequential coupling</li>
+  <li>hard-coding</li>
+</ul>
+
+<h2 id="the-rails-doctrine-with-best-practices-and-paradigms-and-beautiful-code">the rails doctrine, with best practices and paradigms and beautiful code</h2>
+
+<p><a href="https://rubyonrails.org/doctrine/">link</a></p>
+
+<p>programmer happiness above all else… “doing programming because I fell in love with it as a mode of intellectual exercise and expression”</p>
+
+<p>convention over configuration</p>
+
+<p>ruby/rails looks like domain-specific language (like it’s speaking the language of the problem)</p>
+
+<p>subtlety, flow and focus in: <code>if people.include? person</code> vs. <code>if person.in? people</code></p>
+
+<p>expressing ideas, what we want to say is as close to the truth as possible.</p>
+
+<p>EXPLICITNESS is valuable</p>
+
+<h2 id="same-thing-but-for-python-pep8-style-guide">same thing but for python (PEP8) style guide</h2>
+
+<p><a href="https://realpython.com/python-pep8/">link</a></p>
+
+<p>use blank lines sparingly inside function definitions to show clear steps (like sennett’s “decisive moment”)</p>
+
+<h2 id="learning-and-finding-out-the-beauty-of-cobol">learning and finding out the beauty of cobol</h2>
+
+<p><a href="https://devops.com/the-beauty-of-the-cobol-programming-language-v2/">link</a></p>
+
+<blockquote>
+  <p>“Well-written code is a work of art. Always has been, always will be. A programmer pulls a thought pretty much out of nowhere and transforms it into a working idea that can be used by others. It’s abstract expression made real”</p>
+</blockquote>
+
+<p>COBOL is forcing layout through its division/section/paragraph/statement/character</p>
+
+<p>also considered “natural-language” expressive: the author says it’s similar to <code>chai</code> in <code>nodeJS</code></p>
+
+<h2 id="the-beauty-of-dooms-source-code">the beauty of doom’s source code</h2>
+
+<p><a href="https://kotaku.com/the-exceptional-beauty-of-doom-3s-source-code-5975610">link</a></p>
+
+<p><em>Code should be locally coherent and single-functioned: One function should do exactly one thing. It should be clear about what it’s doing.</em></p>
+
+<p><em>Local code should explain, or at least hint at the overall system design.</em></p>
+
+<p>Self documenting</p>
+
+<p><em>The const rule, and no input/output parameters is probably the single most important thing, in my eyes, that separate good code from beautiful code.</em></p>
+
+<p>examples of ugly libraries (unreadable because of C’s Standard Template Library’s complexity) <a href="http://loki-lib.sourceforge.net/index.php?n=Main.Download">http://loki-lib.sourceforge.net/index.php?n=Main.Download</a> / <a href="https://www.boost.org/">https://www.boost.org/</a></p>
+
+<p>reading id’s source code, there is the hint that “good practice” isn’t beautiful. beautiful could mean leaving “best practice” behind</p>
+
+<p>Doom is beautiful because it is “anti-generic”. in that, it has style.</p>
+
+<p>PARSING BY THE MACHINE VS. PARSING BY THE HUMAN</p>
+
+<p><strong>const</strong> and <strong>no input/output</strong>. Why?? (a couple of months later: local coherence)</p>
+
+<p>beautiful code can be edited (using brackets {} everywhere even when optional)</p>
+
+<h2 id="more-detailed-version">more detailed version</h2>
+
+<p><a href="http://fabiensanglard.net/doom3/index.php">link</a></p>
+
+<p><strong>TODO</strong> lol</p>
+
+<h2 id="princetons-guide-to-writing-clear-code">princeton’s guide to writing clear code</h2>
+
+<p><a href="https://introcs.cs.princeton.edu/java/11style/">link</a></p>
+
+<blockquote>
+  <p>“You will appreciate the importance of good style when it is your task to understand and maintain someone else’s code!”</p>
+</blockquote>
+
+<ul>
+  <li>short and manageable</li>
+  <li>language-specific idioms</li>
+  <li>straightforward control flow</li>
+  <li>no magic numbers</li>
+</ul>
+
+<p>they hint at the difference between <em>meaning</em> and <em>value</em></p>
+
+<p>again, the comments are the <em>why</em></p>
+
+<h2 id="how-to-write-unmaintainable-code">how to write unmaintainable code</h2>
+
+<p><a href="https://archive.is/Pn5hH#selection-233.172-233.174">link1</a> - <a href="https://www.mindprod.com/jgloss/unmain.html">link2</a></p>
+
+<p>definition by the opposite</p>
+
+<h2 id="freecodecamp-opinion-on-writing-comments-in-code">freecodecamp opinion on writing comments in code</h2>
+
+<p><a href="https://www.freecodecamp.org/news/code-comments-the-good-the-bad-and-the-ugly-be9cc65fbf83/">link</a></p>
+
+<p>comments:</p>
+
+<ul>
+  <li>documentation (for APIs and such, because it’s reading the software (applications) and not the code (actual lines)). still, it should be as close as possible to the actual code.</li>
+  <li>clarification (others + future self)</li>
+</ul>
+
+<h2 id="review-of-beautiful-code-1">review of “beautiful code”</h2>
+
+<p><a href="https://blog.eisele.net/2011/01/review-beautiful-code-leading.html">link</a></p>
+
+<p>“you have to understand the equations before you understand the beauty of the code”</p>
+
+<p>excerpt from an interview with the editor:</p>
+
+<p>“Safari: What was the most challenging part of putting together Beautiful Code?
+Wilson: Believe it or not, it was persuading people that they actually had something to contribute. Many of the authors’ first reaction when we approached them was, “That sounds great, but I don’t think I’ve ever written any code I’d call ‘beautiful’.””</p>
+
+<p>this relates to craftsmanship</p>
+
+<h2 id="testimony-on-why-someone-loves-to-code-re-psychology-of-programming">testimony on why someone loves to code (re: psychology of programming)</h2>
+
+<p><a href="https://www.regpacks.com/blog/5-reasons-im-passionate-coding-whats-passion/">link</a></p>
+
+<ul>
+  <li>code is “usable art” (within the realm of softare engineering)</li>
+  <li>collaborative effort</li>
+  <li>has a positive effect (…)</li>
+  <li>“if i can think it, i can make it reality”</li>
+</ul>
+
+<h2 id="clean-code-in-angular">clean code in angular</h2>
+
+<p><a href="https://itnext.io/clean-code-checklist-in-angular-%EF%B8%8F-10d4db877f74">link</a></p>
+
+<p>“Programmers are really authors and other developers are their target audience.”</p>
+
+<p>usual coherence, meaningfulness</p>
+
+<p>“code never lies, comments do”</p>
+
+<p>otherwise it’s highly specific to Angular, advising a lot of tool uses (TS, etc.), but at the same time remaining at the level of “write readable code that is easy to understand” -&gt; this is not a definition at all</p>
+
+<h2 id="best-comments-in-source-code-from-stackoverflow">best comments in source code from stackoverflow</h2>
+
+<p><a href="https://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered">link</a></p>
+
+<p>classic, mostly about fun, personality, emotions
+also about stupidity.</p>
+
+<p>there are no “beautiful comments” (ornament is crime?)</p>
+
+<h2 id="interview-with-one-of-the-authors-included-in-beautiful-code">interview with one of the authors included in <em>beautiful code</em></h2>
+
+<p><a href="https://www.zdnet.com/article/the-secret-to-creating-pretty-code/">link</a></p>
+
+<p>“blending theory”: code that is included should blend in with the original style</p>
+
+<h2 id="personal-account-of-coding">personal account of coding</h2>
+
+<p><a href="http://letsblogalot.blogspot.com/2014/01/code-code-beautiful-code.html">link</a></p>
+
+<p>different kinds of learning: documentation or examples or trial and error (these could be separate fields of practice)</p>
+
+<p>the author is a highschool kid who’s very excited</p>
+
+<h2 id="javascript-specific-clean-code">javascript specific clean code</h2>
+
+<p><a href="https://blog.risingstack.com/javascript-clean-coding-best-practices-node-js-at-scale/">link</a></p>
+
+<p>yet another <em>clean code</em> quote</p>
+
+<p>meaningful naming is <em>intention-revealing</em> names</p>
+
+<p>we never want side-effects</p>
+
+<p>stepdown rule of function declaration (always have the more general functions at the top, the more specific at the bottom)</p>
+
+<h2 id="summary-of-clean-code">summary of <em>clean code</em></h2>
+
+<p><a href="https://cvuorinen.net/2014/04/what-is-clean-code-and-why-should-you-care/">link</a></p>
+
+<p>easy to understand:</p>
+
+<ul>
+  <li>the execution flow of the entire application (HOW)</li>
+  <li>how the different objects collaborate with each other (HOW)</li>
+  <li>the role and responsibility of each class (WHAT)</li>
+  <li>what each method does (WHAT)</li>
+  <li>what is the purpose of each expression and variable (WHY)</li>
+</ul>
+
+<h2 id="personal-take-on-the-aesthetics-of-code">personal take on the aesthetics of code</h2>
+
+<p><a href="http://theorangeduck.com/page/aesthetics-code">link</a></p>
+
+<p>this is written by an <strong>artist</strong>, who assigns to programming “the joy of self-expression”.</p>
+
+<blockquote>
+  <p>“The key is this: to express yourself within programming all decisions must be personal. They cannot be prescribed from a boss, textbook, or dogma. They must come from the head and heart.”</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>“At my most cynical Java, and Design Patterned Object Orientation are paint by numbers. No one would dispute that guidelines, techniques and study are important in all craft - but just ensuring not to color outside the lines doesn’t give any satisfaction. One could never write poetry in Java. It wouldn’t compile.”</p>
+</blockquote>
+
+<p>the tension between individual creativity/genius and need to work in a group</p>
+
+<h2 id="stackoverflow-do-you-care-about-the-aesthetics-of-your-code">stackoverflow: do you care about the aesthetics of your code</h2>
+
+<p><a href="https://stackoverflow.com/questions/1079645/are-you-concerned-about-the-aesthetics-of-your-code">link</a></p>
+
+<p>this was asked in 2009, so a little dated</p>
+
+<p>“beautiful code is not always good, but good code is always beautiful” bauhaus as fuck</p>
+
+<p>David Hall: “I always make my code look good. It’s a visual representation of who I am”</p>
+
+<h2 id="art-of-readable-code-book-chap-4">art of readable code (book), chap. 4</h2>
+
+<p><a href="https://www.oreilly.com/library/view/the-art-of/9781449318482/ch04.html">link</a></p>
+
+<p>mostly about layout. (not as relevant with color-coded IDEs?)</p>
+
+<p>again, the author states that it’s OBVIOUS that it’s easier to work with code that is aesthetically pleasing. and that is because aesthetics alleviate cognitive pain, by leveraging “the emotional side of our brain” (for lack of a better phrase describing the non reason-side of things). there are also two means of understanding: understanding groups of people, understanding groups of languages, (and understanding groups of concepts?)</p>
+
+<p>and does code-as-craftmanship have anything to do with language/litterature?</p>
+
+<p>still, code as paragraphs.</p>
+
+<p>consistency is more important than correctness</p>
+
+<h2 id="sql-aesthetics">sql aesthetics</h2>
+
+<p><a href="https://sql.marcus-belz.de/?p=143">link</a></p>
+
+<p>sql is unique because is doesn’t have a “style” –&gt; does that mean you require a certain level of complexity to get into that style? cf. unix v6</p>
+
+<p>sql is based on mathematical set theory</p>
+
+<p>beauty = structure + format (because meaning and intent can be derived from appearance only, if the appearance is well-enough made)</p>
+
+<p>the rest of the article is more about making it IDE-friendly (another level of machine-understanding?) than about the syntax of sql itself</p>
+
+<h2 id="interesting-personal-post-on-aesthetics-understanding-and-familiarity-in-code">interesting personal post on aesthetics, understanding and familiarity in code</h2>
+
+<p><a href="https://avraam.dev/posts/greek-to-me/">link</a></p>
+
+<p>understanding languages is about familiarity, and not ability</p>
+
+<p><em>Idiomatic: Using, containing, or denoting expressions that are natural to a native speaker.</em></p>
+
+<p><strong>who is reading?</strong> (here, ideally it’s the least experienced developer on the team)</p>
+
+<p>“there is no space for poetry in production systems” &gt; doom? unix?
+probably what they meant is that there is no space for poetry in production organizations.</p>
+
+<h2 id="medium-post-on-clean-code">medium post on clean code</h2>
+
+<p><a href="https://medium.com/@raihansyah.dean/clean-code-aesthetics-of-coding-6ff207f08771">link</a></p>
+
+<p>“clean code should make you smile, the way something that makes you happy would” &gt; emotion in reading</p>
+
+<h2 id="refactoring-and-aesthetics">refactoring and aesthetics</h2>
+
+<p><a href="https://www.sitepoint.com/cleaning-up-code-is-refactoring-for-aesthetics-worth-it/">link</a></p>
+
+<p>obvious summary + examples of clean code</p>
+
+<h2 id="discussion-on-improving-the-aesthetics-of-perl-code">discussion on improving the aesthetics of perl code</h2>
+
+<p><a href="https://www.perlmonks.org/?node_id=423968">link</a></p>
+
+<p>from <a href="https://developers.slashdot.org/comments.pl?sid=126697&amp;cid=10598210">this comment</a>, one of the interesting things is “do not use <code>unless</code> because it’s unique to Perl and confusing”… but what about idiomatic?</p>
+
+<p>and then in the original post comes a lot of (polite) disagreements</p>
+
+<p>AnonymousMonk: “When I was a programming novice, I didn’t comment much.
+When I was a programming acolyte, I commented a lot.
+Now I am a programming master, and I try to minize the comments in my programs. “</p>
+
+<h2 id="personal-account-of-beautiful-code">personal account of beautiful code</h2>
+
+<p><a href="http://hennessy.iat.sfu.ca/wp/stc2018/2018/03/22/programming-esthetics/">link</a></p>
+
+<p>“why is it hard to write clean code?”</p>
+
+<h2 id="google-groups-discussions-about-perl-poemshttpsgroupsgooglecomforumhlenmsgcomplangperljvu7zjn9jcyypmby6scyyej"><a href="https://groups.google.com/forum/?hl=en#!msg/comp.lang.perl/jVu7Zjn9JcY/yPMby6sCyyEJ">google groups discussions about perl poems</a></h2>
+
+<h2 id="hastac-code-critique-forumshttpwwwhastacorgforumshastac-scholars-discussionscode-critiques"><a href="http://www.hastac.org/forums/hastac-scholars-discussions/code-critiques">hastac code critique forums</a></h2>
+
+<h2 id="writeup-on-code-poetry-slamhttpswwwi-programmerinfonews200-art6808-writing-code-as-poetry-poetry-as-codehtml"><a href="https://www.i-programmer.info/news/200-art/6808-writing-code-as-poetry-poetry-as-code.html">writeup on code poetry slam</a></h2>
+
+			</div>
+		</body>
+	</html>

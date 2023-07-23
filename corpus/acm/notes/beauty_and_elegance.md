@@ -1,6 +1,6 @@
 # Beauty and Elegance
-## Gary Anthes
 
+## Gary Anthes
 
 it is essentialy a praise of Leslie Valiant, ACM Turing recipient 2010
 david gelernter: beauty = simplicity + power (gelernter is still a weird dude)

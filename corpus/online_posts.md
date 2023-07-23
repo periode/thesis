@@ -259,7 +259,7 @@ rph: Also I don't agree that large grammars are worth their expressiveness. Firs
 
 Tamas Rev (related to above): lower level languages express more in terms of computers, and higer level languages express more in terms of humans.
 
-## review of *Beautiful Code* 
+## review of *Beautiful Code*
 
  [link](https://blog.codinghorror.com/code-isnt-beautiful/)
 
@@ -419,11 +419,11 @@ also considered "natural-language" expressive: the author says it's similar to `
 
 *Local code should explain, or at least hint at the overall system design.*
 
-*Self documenting*
+Self documenting
 
 *The const rule, and no input/output parameters is probably the single most important thing, in my eyes, that separate good code from beautiful code.*
 
-examples of ugly libraries (unreadable because of C's Standard Template Library's complexity) http://loki-lib.sourceforge.net/index.php?n=Main.Download / https://www.boost.org/
+examples of ugly libraries (unreadable because of C's Standard Template Library's complexity) <http://loki-lib.sourceforge.net/index.php?n=Main.Download> / <https://www.boost.org/>
 
 reading id's source code, there is the hint that "good practice" isn't beautiful. beautiful could mean leaving "best practice" behind
 
@@ -445,7 +445,7 @@ beautiful code can be edited (using brackets {} everywhere even when optional)
 
 [link](https://introcs.cs.princeton.edu/java/11style/)
 
-*"You will appreciate the importance of good style when it is your task to understand and maintain someone else's code!"*
+> "You will appreciate the importance of good style when it is your task to understand and maintain someone else's code!"
 
 - short and manageable
 - language-specific idioms

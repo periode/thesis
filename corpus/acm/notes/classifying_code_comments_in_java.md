@@ -6,8 +6,7 @@ taxonomy of code comments
 
 they say that commented code is better code, but that's contrary to what i've found when practicioners talk about beautiful code
 
-
-### categories of code comments: 
+### categories of code comments
 
 1. purpose (functionality)
    1. summary (behaviour, *what*)

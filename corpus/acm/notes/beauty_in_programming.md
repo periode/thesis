@@ -6,7 +6,7 @@
 
 the whole text tries to make a connection between programmer and artist, forgetting that they're both *artesans* (craftspeople)
 
-**i need to highlight the difference between programmers and artists in order to validate the craftsmanship hypothesis above**
+need: **i need to highlight the difference between programmers and artists in order to validate the craftsmanship hypothesis above**
 
 ---
 
