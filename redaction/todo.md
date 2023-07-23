@@ -50,7 +50,6 @@ in the last section, 5.3
 - [ ] add this quote from The Embodied Aesthetics of Code, quoted in [Sy Brand](https://www.youtube.com/watch?v=CkGqINHZit0): "an object is 'functionally beautiful' to the extent that its aesthetic properties contribute to its overall performance---the functional beauty of an object enhances its fulfilling its primary function" and, in this case, the primary function is not to be executed, but to be understood.
 - [ ] from sy brand talk, gabrielle starr, feeling beauty: the neuroaesthetics of the experience: "Aesthetic response enables the comparison and integration of novel kinds of reward in a process that opens possibilities for new knowledge, or new ways of negotiating the world. The perceptions, images, and emotions we find through our experience of poetry, painting and music put ideas and events into relation with one another that would rarely, if ever, be possible outside the arts."
 
-
 ## chap 3 - beauty
 
 ### meeting with nick 14.14
@@ -97,18 +96,6 @@ Include the fact that aesthetics help compress, and by compressing, people can h
 - [ ] add meles and UNIX
 - [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
 - [ ] mathematics: add a discussion of dijkstra's shortest path algorithm?
-the code for the irrational equations:
-
-```tex
-    % \begin{align}
-    %     \sqrt{2}     & = p / q        \\
-    %     \sqrt{2} * q & = p            \\
-    %     p            & = \sqrt{2} * q \\
-    %     (\sqrt{2})^2 & = (p/q)^2      \\
-    %     2            & = p^2 / q^2    \\
-    %     p^2          & = 2 * q^2
-    % \end{align}
-```
 
 ### meeting with nick - 28.12.2022
 
@@ -175,6 +162,7 @@ intrinsic characteristics of cs:
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add if hemingway wrote javascript as an example of styles
+- [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md) in the part about software developers
 
 - [ ] __conclusion__ add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
 - [ ] __conclusion__: add "It may be hard to understand someone else’s code but the computer is, after all, multi-lingual. In this sense, understanding someone else’s code is very much like listening to poetry in a foreign language - the appreciation goes beyond a mere understanding of the syntax or form of the language used, and as such translation is infamously problematic. Form and function should not be falsely separated" aesthetics of generative code, by cox et. al.
@@ -205,10 +193,6 @@ intrinsic characteristics of cs:
 - [x] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic:  There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
 - [x] add this in the literature review: <https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf> specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
 
-## structure notes
-
-- [ ] And then spread out in the ideals to make each section less heavy
-
 ### ide notes
 
 - __overall__ computer-aided software engineering <https://en.wikipedia.org/wiki/Computer-aided_software_engineering> (history is interesting, started with [Lisa Workshop](https://www.applefritter.com/content/lisa-workshop-info) for Apple, IBM was also important, and in the 90s there was a peak of software, [Programmer's Workshop](https://archive.org/details/Macintosh_Programmers_Workshop_missing_735736/mode/2up))
@@ -233,7 +217,6 @@ intrinsic characteristics of cs:
 
 ## general
 
-- [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md)
 - [x] rewrite my definition of aesthetics to include more the aesthetics of everyday life?
   - [x] drawing from mckenzie, rewrite his part to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code
   - [x] specify that the term _software engineering_ appeared in 1968 at a conference [[wirth_history_software_engineering]]. but actually it's fuzzy, some people say it was around 1967 [src](https://www.princeton.edu/~hos/mike/articles/hcht.pdf)
