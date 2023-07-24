@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.2.2}How does source code relate to other aesthetic fields?}{36}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}How do the aesthetics of source code relate to its functionality?}{37}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Methodology}{38}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Roadmap}{41}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Roadmap}{42}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Implications and readership}{45}{section.1.5}%
 \contentsline {chapter}{\numberline {2}Aesthetic ideals in programming practices}{47}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The practices of programmers}{48}{section.2.1}%
@@ -18,100 +18,100 @@
 \contentsline {subsection}{\numberline {2.1.2}Hackers}{65}{subsection.2.1.2}%
 \contentsline {subsubsection}{Program texts as puzzles}{68}{section*.5}%
 \contentsline {subsection}{\numberline {2.1.3}Scientists}{80}{subsection.2.1.3}%
-\contentsline {subsubsection}{Computation as a means}{80}{section*.7}%
-\contentsline {subsubsection}{Computation as an end}{85}{section*.9}%
-\contentsline {subsection}{\numberline {2.1.4}Poets}{93}{subsection.2.1.4}%
+\contentsline {subsubsection}{Computation as a means}{81}{section*.7}%
+\contentsline {subsubsection}{Computation as an end}{86}{section*.9}%
+\contentsline {subsection}{\numberline {2.1.4}Poets}{94}{subsection.2.1.4}%
 \contentsline {subsubsection}{Code poetry as executed literature}{94}{section*.11}%
-\contentsline {subsubsection}{Layered machine texts}{97}{section*.12}%
-\contentsline {section}{\numberline {2.2}Ideals of beauty}{107}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Introduction to the Methodology}{107}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Lexical Field in Programmer Discourse}{111}{subsection.2.2.2}%
-\contentsline {subsubsection}{Clean}{111}{section*.13}%
-\contentsline {subsubsection}{Obfuscation}{113}{section*.14}%
-\contentsline {subsubsection}{Simple}{116}{section*.15}%
-\contentsline {subsubsection}{Cleverness}{119}{section*.16}%
-\contentsline {subsubsection}{Elegance}{121}{section*.17}%
+\contentsline {subsubsection}{Layered machine texts}{98}{section*.12}%
+\contentsline {section}{\numberline {2.2}Ideals of beauty}{108}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Introduction to the Methodology}{108}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Lexical Field in Programmer Discourse}{112}{subsection.2.2.2}%
+\contentsline {subsubsection}{Clean}{112}{section*.13}%
+\contentsline {subsubsection}{Obfuscation}{114}{section*.14}%
+\contentsline {subsubsection}{Simple}{117}{section*.15}%
+\contentsline {subsubsection}{Cleverness}{120}{section*.16}%
+\contentsline {subsubsection}{Elegance}{122}{section*.17}%
 \contentsline {subsubsection}{Smells}{127}{section*.18}%
-\contentsline {section}{\numberline {2.3}Aesthetic domains}{129}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Literary Beauty}{130}{subsection.2.3.1}%
-\contentsline {subsubsection}{Code as a linguistic practice}{130}{section*.19}%
-\contentsline {subsubsection}{Code as text}{133}{section*.20}%
-\contentsline {subsubsection}{Code poetry}{136}{section*.21}%
-\contentsline {subsection}{\numberline {2.3.2}Scientific beauty}{140}{subsection.2.3.2}%
-\contentsline {subsubsection}{Mathematics}{140}{section*.22}%
-\contentsline {subsubsection}{Engineering}{142}{section*.23}%
-\contentsline {subsection}{\numberline {2.3.3}Architectural beauty}{144}{subsection.2.3.3}%
-\contentsline {subsubsection}{Formal organization}{144}{section*.24}%
-\contentsline {subsubsection}{Crafting software}{149}{section*.25}%
-\contentsline {chapter}{\numberline {3}Understanding source code}{158}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Formal and contextual understandings}{160}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Between formal and informal}{160}{subsection.3.1.1}%
-\contentsline {subsubsection}{Theoretical foundations of formal understanding}{160}{section*.26}%
-\contentsline {subsubsection}{Practical attempts at implementing formal understanding}{164}{section*.27}%
-\contentsline {subsection}{\numberline {3.1.2}Knowing-what and knowing-how}{167}{subsection.3.1.2}%
-\contentsline {subsubsection}{Knoweldge and situation}{168}{section*.28}%
-\contentsline {subsubsection}{Constructing knowledge}{171}{section*.30}%
-\contentsline {section}{\numberline {3.2}Understanding computation}{176}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Software complexity}{176}{subsection.3.2.1}%
-\contentsline {subsubsection}{Levels of software}{177}{section*.31}%
-\contentsline {subsubsection}{Types of complexity}{179}{section*.32}%
-\contentsline {subsection}{\numberline {3.2.2}Software ontology}{182}{subsection.3.2.2}%
-\contentsline {subsubsection}{Software as abstract artifact}{183}{section*.34}%
-\contentsline {subsubsection}{Software as a relational object}{185}{section*.35}%
-\contentsline {subsection}{\numberline {3.2.3}The psychology of programming}{189}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Means of understanding}{196}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Metaphors in computation}{196}{subsection.3.3.1}%
-\contentsline {subsubsection}{Theoretical background}{196}{section*.36}%
-\contentsline {subsubsection}{Metaphors for end-users}{198}{section*.37}%
-\contentsline {subsubsection}{Programmer-facing metaphors}{202}{section*.38}%
-\contentsline {subsection}{\numberline {3.3.2}Tools as a cognitive extension}{205}{subsection.3.3.2}%
-\contentsline {subsubsection}{Extended cognition}{209}{section*.39}%
-\contentsline {chapter}{\numberline {4}Beauty and understanding}{214}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Aesthetics and cognition}{215}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Source code as a language of art}{216}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Contemporary approaches to art and cognition}{223}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Literature and understanding}{228}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Literary metaphors}{228}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Literature and cognitive structures}{233}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Words in space}{237}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Architecture and understanding}{246}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Form and Function}{246}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Patterns and structures}{250}{subsection.4.3.2}%
-\contentsline {subsubsection}{Compression and habitability in functional structures}{255}{section*.41}%
-\contentsline {subsection}{\numberline {4.3.3}Material knowledge}{264}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Forms of scientific activity}{270}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Beauty in mathematics}{271}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Epistemic value of aesthetics}{276}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Aesthetics as heuristics}{283}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}Machine languages}{290}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Linguistic interfaces}{291}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Programming languages}{292}{subsection.5.1.1}%
-\contentsline {subsubsection}{History and developments}{292}{section*.45}%
-\contentsline {subsubsection}{Machine semantics and human semantics}{296}{section*.46}%
-\contentsline {subsection}{\numberline {5.1.2}Qualities of programming languages}{301}{subsection.5.1.2}%
-\contentsline {subsubsection}{Abstraction, simplicity and orthogonality}{301}{section*.47}%
-\contentsline {subsubsection}{Idiosyncratic implementations}{311}{section*.48}%
-\contentsline {subsection}{\numberline {5.1.3}Styles and idioms in programming}{316}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Spatial aesthetics in program texts}{322}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Matters of scale}{322}{subsection.5.2.1}%
-\contentsline {subsubsection}{Structure}{324}{section*.49}%
-\contentsline {subsubsection}{Syntax}{327}{section*.50}%
-\contentsline {subsubsection}{Vocabulary}{330}{section*.51}%
-\contentsline {subsubsection}{Comments}{334}{section*.52}%
-\contentsline {subsection}{\numberline {5.2.2}Semantic layers}{336}{subsection.5.2.2}%
-\contentsline {subsubsection}{Abstraction and metaphors}{338}{section*.53}%
-\contentsline {subsubsection}{Openness and transparency}{341}{section*.54}%
-\contentsline {subsubsection}{Emotions and functionality}{343}{section*.55}%
-\contentsline {subsection}{\numberline {5.2.3}Between humans and machines}{347}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Contexts of functions}{350}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Definitions of function}{351}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Functions of source code}{355}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Function in aesthetics}{359}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Conclusion}{365}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Findings}{366}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}What does source code have to say about itself?}{367}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}How does source code relate to other aesthetic fields?}{371}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}How do the aesthetics of source code relate to its functionality?}{377}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Contribution}{378}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Limitations}{382}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Opening}{383}{section.6.3}%
+\contentsline {section}{\numberline {2.3}Aesthetic domains}{130}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Literary Beauty}{131}{subsection.2.3.1}%
+\contentsline {subsubsection}{Code as a linguistic practice}{131}{section*.19}%
+\contentsline {subsubsection}{Code as text}{134}{section*.20}%
+\contentsline {subsubsection}{Code poetry}{137}{section*.21}%
+\contentsline {subsection}{\numberline {2.3.2}Scientific beauty}{141}{subsection.2.3.2}%
+\contentsline {subsubsection}{Mathematics}{142}{section*.22}%
+\contentsline {subsubsection}{Engineering}{144}{section*.23}%
+\contentsline {subsection}{\numberline {2.3.3}Architectural beauty}{146}{subsection.2.3.3}%
+\contentsline {subsubsection}{Formal organization}{147}{section*.24}%
+\contentsline {subsubsection}{Crafting software}{152}{section*.25}%
+\contentsline {chapter}{\numberline {3}Understanding source code}{160}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Formal and contextual understandings}{162}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Between formal and informal}{162}{subsection.3.1.1}%
+\contentsline {subsubsection}{Theoretical foundations of formal understanding}{162}{section*.26}%
+\contentsline {subsubsection}{Practical attempts at implementing formal understanding}{166}{section*.27}%
+\contentsline {subsection}{\numberline {3.1.2}Knowing-what and knowing-how}{169}{subsection.3.1.2}%
+\contentsline {subsubsection}{Knoweldge and situation}{170}{section*.28}%
+\contentsline {subsubsection}{Constructing knowledge}{173}{section*.30}%
+\contentsline {section}{\numberline {3.2}Understanding computation}{178}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Software complexity}{178}{subsection.3.2.1}%
+\contentsline {subsubsection}{Levels of software}{179}{section*.31}%
+\contentsline {subsubsection}{Types of complexity}{181}{section*.32}%
+\contentsline {subsection}{\numberline {3.2.2}Software ontology}{184}{subsection.3.2.2}%
+\contentsline {subsubsection}{Software as abstract artifact}{185}{section*.34}%
+\contentsline {subsubsection}{Software as a relational object}{187}{section*.35}%
+\contentsline {subsection}{\numberline {3.2.3}The psychology of programming}{191}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Means of understanding}{198}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Metaphors in computation}{198}{subsection.3.3.1}%
+\contentsline {subsubsection}{Theoretical background}{198}{section*.36}%
+\contentsline {subsubsection}{Metaphors for end-users}{200}{section*.37}%
+\contentsline {subsubsection}{Programmer-facing metaphors}{204}{section*.38}%
+\contentsline {subsection}{\numberline {3.3.2}Tools as a cognitive extension}{207}{subsection.3.3.2}%
+\contentsline {subsubsection}{Extended cognition}{211}{section*.39}%
+\contentsline {chapter}{\numberline {4}Beauty and understanding}{216}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aesthetics and cognition}{217}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Source code as a language of art}{218}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Contemporary approaches to art and cognition}{225}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Literature and understanding}{230}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Literary metaphors}{230}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Literature and cognitive structures}{235}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Words in space}{239}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Architecture and understanding}{248}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Form and Function}{249}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Patterns and structures}{253}{subsection.4.3.2}%
+\contentsline {subsubsection}{Compression and habitability in functional structures}{258}{section*.41}%
+\contentsline {subsection}{\numberline {4.3.3}Material knowledge}{267}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Forms of scientific activity}{272}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Beauty in mathematics}{273}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Epistemic value of aesthetics}{279}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Aesthetics as heuristics}{285}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Machine languages}{292}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Linguistic interfaces}{293}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Programming languages}{294}{subsection.5.1.1}%
+\contentsline {subsubsection}{History and developments}{294}{section*.45}%
+\contentsline {subsubsection}{Machine semantics and human semantics}{298}{section*.46}%
+\contentsline {subsection}{\numberline {5.1.2}Qualities of programming languages}{303}{subsection.5.1.2}%
+\contentsline {subsubsection}{Abstraction, simplicity and orthogonality}{303}{section*.47}%
+\contentsline {subsubsection}{Idiosyncratic implementations}{313}{section*.48}%
+\contentsline {subsection}{\numberline {5.1.3}Styles and idioms in programming}{318}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Spatial aesthetics in program texts}{325}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Matters of scale}{325}{subsection.5.2.1}%
+\contentsline {subsubsection}{Structure}{326}{section*.49}%
+\contentsline {subsubsection}{Syntax}{329}{section*.50}%
+\contentsline {subsubsection}{Vocabulary}{333}{section*.51}%
+\contentsline {subsubsection}{Comments}{336}{section*.52}%
+\contentsline {subsection}{\numberline {5.2.2}Semantic layers}{339}{subsection.5.2.2}%
+\contentsline {subsubsection}{Abstraction and metaphors}{340}{section*.53}%
+\contentsline {subsubsection}{Openness and transparency}{343}{section*.54}%
+\contentsline {subsubsection}{Emotions and functionality}{346}{section*.55}%
+\contentsline {subsection}{\numberline {5.2.3}Between humans and machines}{350}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Contexts of functions}{352}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Definitions of function}{353}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Functions of source code}{357}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Function in aesthetics}{362}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{368}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Findings}{369}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}What does source code have to say about itself?}{370}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}How does source code relate to other aesthetic fields?}{374}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}How do the aesthetics of source code relate to its functionality?}{380}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Contribution}{381}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Limitations}{385}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.3}Opening}{386}{section.6.3}%

@@ -29,6 +29,9 @@ operator_level = { operator_exp | operator_subscript |
 
 ## chap 5 - programming
 
+- [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
+- [ ] add if hemingway wrote javascript as an example of styles
+
 - [ ] include the concept of interface by matthew kirschenbaum <https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550>
 - [ ] proofread subsec between human and machines
 - [ ] there is no example of iterating in 5.1.2
@@ -125,6 +128,10 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 > knowledge begins in simple judgments, judgments of feeling or sentience, as yet devoid of explicit conceptual relations, but containing the germs of all higher order functions of thinking [joseph leighton, the objects of knowledge](https://www.jstor.org/stable/2177293?seq=2)
 
+- [ ] __introduction__ add a quote from Ershov, 1972 "We understand what we are able to program."
+
+méles: temps et activité selon UNIX
+
 - [ ] include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 - [ ] If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 - [ ] when mentionning détienne, also mention her framework: _elements_ inside a _context_ are being _perceived_ and _knowledge_ is extracted from it, to be turned into _meaning_
@@ -160,38 +167,11 @@ intrinsic characteristics of cs:
 
 - [ ]  add a subsubsec on verbosity?
 
-- [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
-- [ ] add if hemingway wrote javascript as an example of styles
 - [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md) in the part about software developers
-
-- [ ] __conclusion__ add a quote from Ershov, 1972: "A professional aesthetic influences and is influenced by the ethical code of a profession, by the technical subject matter of the profession, and by the profession's juridical status. [...] The creative nature  of programming does not require special proof. Indeed, I may assert, programming goes a little further than most other progressions, and comes close to mathematics and creative writing." and "We understand what we are able to program."
-- [ ] __conclusion__: add "It may be hard to understand someone else’s code but the computer is, after all, multi-lingual. In this sense, understanding someone else’s code is very much like listening to poetry in a foreign language - the appreciation goes beyond a mere understanding of the syntax or form of the language used, and as such translation is infamously problematic. Form and function should not be falsely separated" aesthetics of generative code, by cox et. al.
-
-- [x] also explain a bit more fast sqrt (greg walsh must have had a deep knowledge of ieee floating points standards)
-- [x] __Elegance__: Through a single lens, it communicates the problem it solves and the machinery of its solution.
-- [x] __elegance__ include the hacker dictionary definition <http://www.catb.org/~esr/jargon/html/E/elegant.html>
-- [x]   __minimalism__, quote <https://vimeo.com/47364930> -> concise code is code as litterature, because he says one of the issues is that there are just too many lines of code that one can wrap its head around. so there's a need for shrinking down content
-- [x] for hackers, include the underhanded c code contest
-- [x] __simplicity__, make a difference between ontological and syntactical simplicty
-- [x] fig. 10: original is color coded, but also too hard to comprehend. [magmarize](https://demozoo.org/productions/305589/) would be a better example
-- [x] one liner: monostiche
-- [x] code poetry: add a reference to MOONBIT in the ideals or in the lit review
-- [x] in the listings, extend the caption to show the relevance of the snippet (e.g. for listing 8, neither is said about APL or about Game of Life: how should readers know this is relevant?)
-- [x] for mathematics and hackers, there is a contest in mathematica where you do one-liners
-- [x] add this to the software architecture section: books about open source architecture, edited by greg wilson
-- [x] for stats comparing different software (windows2000, wp, kirby), use a chart to make the point much quicker
-- [x] justify the comparison between win2000 and kirby (differences in size, date of creation)
-- [x] discuss more explicitly hayes_cultures_of_code in the introduction of the chapter
-- [x] listing #2, not style but voices
 
 ## introduction
 
-- [x] a sentence or two on a fundamental connection between architecture and programming, related to how architecture must connect form and function as other arts are not required to do
-- [x] in methodology, have a note on simplified python examples
-- [x] make a __clear__ distinction between `source code` (the medium) and `program text` (the instance)
-- [x] refine our definition of aesthetics by adding the fact that `it enables an  evaluative appraisal of objects`
-- [x] add this section to the introduction, making sure i frame aesthetic vs. beautiful vs. artistic:  There is also a broad definition of what aesthetic is, and is different from beautiful, which also elicits an emotional response, or gut feeling, and can be implied in definitions of what is artistic. so i don't talk about beauty, but about code which exhbitis positive aesthetic properties—finding beautiful code in an art history sense has not been achieved.
-- [x] add this in the literature review: <https://lectoraatchangemanagement.files.wordpress.com/2020/01/beauty_in_code.pdf> specifically mentioning that there are two kinds of aesthetics (low-level, clear ones, and high-level, more diffuse, subjective, beautiful)
+done
 
 ### ide notes
 
@@ -217,26 +197,4 @@ intrinsic characteristics of cs:
 
 ## general
 
-- [x] rewrite my definition of aesthetics to include more the aesthetics of everyday life?
-  - [x] drawing from mckenzie, rewrite his part to include the fact that he puts a lot of lines of code in his book, but that it's still a mostly social/anthropological interpretation of said code
-  - [x] specify that the term _software engineering_ appeared in 1968 at a conference [[wirth_history_software_engineering]]. but actually it's fuzzy, some people say it was around 1967 [src](https://www.princeton.edu/~hos/mike/articles/hcht.pdf)
-- [x] ideals
-  - [x] add the dope case study <https://queue.acm.org/detail.cfm?id=1039535> also this <http://denninginstitute.com/pjd/GP/gp_summary_toplevel.html>
-  - [x] re read hacker examples part to check for spoilers
-  - [x] add research software engineers to data scientists <https://www.nature.com/articles/d41586-022-01516-2>
-  - [x] tone down on methodology?
-  - [x] add stats about corpus after methodology.
-  - [x] add section on leslie vaillant in the elegance section <https://dl.acm.org/doi/abs/10.1145/1953122.1953131>
-  - [x] add knuth details on elegance (see [notes](../readings/notes/fuller_software_elegance.md))
-  - [x] add section on robin hill on elegance <https://cacm.acm.org/blogs/blog-cacm/208547-what-makes-a-program-elegant/fulltext>
-  - [x] include some further discussion of programming based on [hapoc 21 presentation](https://hapoc2021.sciencesconf.org/data/pages/_Toscano_Intentionalities_of_code_presentation.pdf)
-  - [ ] add a bit more meat to the section on scientific beauty
-  - [ ] deal with frames and page breaks on minted; <https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package>
-  - [x] add "hacking perl" and live code in the artists section <https://www.perl.com/pub/2004/08/31/livecode.html/>
-  - [x] everytime i quote SO, add the specifics of the survey details
-
-~~look into the pdf "program text, style, laber" by brian lennon to address comments in microsoft windows source code~~
-
-~~yullil - code art brutalism refers the _HACKMEM_ document from 1972 MIT, related to architecture.~~
-
-~~communautés épistémiques et communautés de pratique (Cohendet et al., 2001) -> Cohendet, Patrick, Creplet, Frederic & Dupouet, Olivier. « Organisational innovation, communities of practice and epistemic communities : the case of Linux ». In Economics with heterogeneous interacting agents~~
+- [ ] deal with frames and page breaks on minted; <https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package>

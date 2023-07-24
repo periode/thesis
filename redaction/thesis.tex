@@ -22,8 +22,8 @@
 \AtBeginEnvironment{quote}{\itshape}
 
 \usepackage[]{minted}
-\setminted{fontsize=\footnotesize,baselinestretch=1,breaklines=true,breakanywhere}
-\usemintedstyle{trac}
+\setminted{frame=single,fontsize=\footnotesize,baselinestretch=1,breaklines=true,breakanywhere}
+\usemintedstyle{tango}
 \usepackage{caption}
 \newenvironment{code}{\captionsetup{type=listing}}{}
 \newcommand{\spacer}{\vspace{1\baselineskip}\centerline{\rule{0.13334\linewidth}{.4pt}}\vspace{1\baselineskip}}
@@ -38,6 +38,7 @@
     BoldItalicFont=*]{MesloLGS NF}
 \newfontfamily\apl{APL385 Unicode}
 \newfontfamily\noto{Noto Serif}
+\newfontfamily\notocjk{Noto Sans CJK JP}
 \newunicodechar{⌿}{{\apl ⌿}}
 \newunicodechar{τ}{{\noto τ}}
 \newunicodechar{ε}{{\noto ε}}
