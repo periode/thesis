@@ -122,15 +122,11 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 ## chap 2 - understanding
 
+- should i invert software complexity with software ontology? probably
 - deal with the characters: ϕ!^x
+- make the three levels (C, ASM, bytecode)
 
-- [ ] __introduction of software complexity__ intrinsic characteristics of cs: problem solving / domain modelling / knowledge representation / efficiency in problem solving / abstraction/modularity / novelty/creativity (fuller's taxonomy)
-- [ ] __introduction of software complexity__ wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
-- [ ] __introduction to software complexity__ in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
-
-- [ ] __levels of software__ méles: temps et activité selon UNIX
-- [ ] __levels of software__ If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
-- [ ] __levels of software__ in the hardware existence of software, talk about memory management
+- [ ] __types of complexity__ méles: temps et activité selon UNIX
 
 - [ ] __psychology__ Peter G. Neumann. Psychosocial implications of computer software development and use: Zen and the art of computing. quote from peter neumann: "these techniques may have enormous value in providing nontrivial assurances that the system might actually do what is expected of it . " - "There are many problems arising in complex systems that must be thoroughly comprehended, but that once understood can be structured in a way that conceptually simplifies the design" > _no
 - [ ] __psychology__ add a reference and discussion of Fedorenko (fedorenko_language_2019) in terms of cognitive mapping: "Understanding the interdependencies among different requirements and among the different layers is both an important step for, on one hand, representing it formally, as well as, on the other hand, one of the goals to be grasped by the reader." this coudl be a nice connection with the levels of software
@@ -142,6 +138,8 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - [ ] __psychology__ add [a conceptual model of cognitive complexity](https://www.sciencedirect.com/science/article/pii/095058499591491H) (chunking, tracing)
 - [ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier
 - [ ] __knowing-how__ include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor, as a transition to the concrete means
+
+- [ ] __introduction of means of understanding__ intrinsic characteristics of cs: problem solving / domain modelling / knowledge representation / efficiency in problem solving / abstraction/modularity / novelty/creativity (fuller's taxonomy)
 
 - [ ] __metaphors__, make clear that programmer-facing metaphors are not more complex than user-facing metaphors, or that it's a different kind of cognitive work, but rather that they are referring to a different kind of concept (streams, pipes, volatile memory, etc.)! For instance, mention how there are files/folders for users, and these are manipulated differently on GUI and CLI (CLI -> bash script: "loops", "labels", "wildcards"). these show that the metaphors at work in programming are a combination of different concepts, drawing on different fields of knowledge.
 - [ ] __metaphors__ [this](https://www.sciencedirect.com/science/article/abs/pii/0010028581900128) is actually showing that, the more expert a programmer becomes, the less they resort to metaphors, and rather shift to the programming-specific concepts.
@@ -170,7 +168,11 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - more history for the MESA programming environment: <https://dl.acm.org/doi/abs/10.1145/17919.806843>
 - __EMACS__ documentation: <https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf>
 
+- [x] __levels of software__ in the hardware existence of software, talk about memory management
+- [x] __introduction of software complexity__ wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
+- [x] __introduction to software complexity__ in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
 - [x] __introduction__ add a quote from Ershov, 1972 "We understand what we are able to program."
+- [x] __levels of software__ If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 - [x] __conclusion of formal and contextual__ include elgin's paper: from knowledge to understanding, in order to buttress our definition of understanding.
 
 ## chap 1 - ideals
