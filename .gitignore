@@ -17,4 +17,6 @@ export.docx
 *fdb_latexmk
 *.pyg
 *.xdv
+*.lol
+*.toc
 _minted-*/

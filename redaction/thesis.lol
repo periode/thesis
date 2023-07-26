@@ -35,36 +35,36 @@
 \contentsline {listing}{\numberline {35}{\ignorespaces All The Names of God, Nick Montfort, 2010, source\relax }}{139}{listing.35}%
 \contentsline {listing}{\numberline {36}{\ignorespaces All The Names of God, Nick Montfort, 2010, Selected output\relax }}{140}{listing.36}%
 \contentsline {listing}{\numberline {37}{\ignorespaces Implementation of the Floyd-Warshall algorithm, showing an elegant implementation of a complex theory.\relax }}{144}{listing.37}%
-\contentsline {listing}{\numberline {38}{\ignorespaces Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep {nielsen_working_2017}\relax }}{171}{listing.38}%
-\contentsline {listing}{\numberline {39}{\ignorespaces An example of how source code can be a representation an individual, and can exemplify encapsulation, written in Rust.\relax }}{221}{listing.39}%
-\contentsline {listing}{\numberline {40}{\ignorespaces The system of value, references and pointers make source code into a highly complex symbolic system.\relax }}{223}{listing.40}%
-\contentsline {listing}{\numberline {41}{\ignorespaces Cynical American Preamble, by Michael Carlisle, published in code::art \#0 \citep {brand_code_2019}\relax }}{232}{listing.41}%
-\contentsline {listing}{\numberline {42}{\ignorespaces Unhandled Love, by Daniel Bezera, published in \{code poems\} \citep {bertram_code_2012}\relax }}{238}{listing.42}%
-\contentsline {listing}{\numberline {43}{\ignorespaces mac\_sched.c\relax }}{243}{listing.43}%
-\contentsline {listing}{\numberline {44}{\ignorespaces Nested, by Dan Brown and published in \{code poems\} \citep {bertram_code_2012}\relax }}{244}{listing.44}%
-\contentsline {listing}{\numberline {45}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {linux_content_2023}\relax }}{246}{listing.45}%
-\contentsline {listing}{\numberline {46}{\ignorespaces In the C family of languages, header files represent the overall structure of the program. This program text is defining the overall structure and the extent to which it interacts with specific hardware.\relax }}{260}{listing.46}%
-\contentsline {listing}{\numberline {47}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {muratori_semantic_2014}\relax }}{264}{listing.47}%
-\contentsline {listing}{\numberline {48}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {muratori_semantic_2014}\relax }}{265}{listing.48}%
-\contentsline {listing}{\numberline {49}{\ignorespaces A textbook example of a fundamental construct in computer science, the linked list. This header file shows all the parts which compose the concept \citep {kirchner_linked_2022}.\relax }}{281}{listing.49}%
-\contentsline {listing}{\numberline {50}{\ignorespaces A regular expression matcher by Rob Pike, praised for its elegance and conciseness, but not for its utility \citep {oram_beautiful_2007}\relax }}{283}{listing.50}%
-\contentsline {listing}{\numberline {51}{\ignorespaces A comparison of how to remove an element from a list, with elegance depending on the skill level of the author \citep {kirchner_linked_2022a}.\relax }}{284}{listing.51}%
-\contentsline {listing}{\numberline {52}{\ignorespaces A terse example of writing a string to an output in Ruby.\relax }}{305}{listing.52}%
-\contentsline {listing}{\numberline {53}{\ignorespaces A verbose approach to writing a string to an output in Java.\relax }}{305}{listing.53}%
-\contentsline {listing}{\numberline {54}{\ignorespaces Go proposes an elegant way of ignoring errors, with the use of the underscore token.\relax }}{308}{listing.54}%
-\contentsline {listing}{\numberline {55}{\ignorespaces C syntax sometimes behaves arbitrarily.\relax }}{310}{listing.55}%
-\contentsline {listing}{\numberline {56}{\ignorespaces Pointers involve a non-straightforward way to reason about values.\relax }}{314}{listing.56}%
-\contentsline {listing}{\numberline {57}{\ignorespaces Ruby syntax does not allow the programmer to directly manipulate pointers\relax }}{315}{listing.57}%
-\contentsline {listing}{\numberline {58}{\ignorespaces Complex way to do threads in C.\relax }}{317}{listing.58}%
-\contentsline {listing}{\numberline {59}{\ignorespaces Nice way to do threads in Go.\relax }}{317}{listing.59}%
-\contentsline {listing}{\numberline {60}{\ignorespaces These two range operators are semantically equivalent in Python, but the first is more idiomatic than the second.\relax }}{320}{listing.60}%
-\contentsline {listing}{\numberline {61}{\ignorespaces The decorator is the idiotmatic way to calculate the sum of the Fibonacci sequence. \citep {schmitz_what_2015}\relax }}{320}{listing.61}%
-\contentsline {listing}{\numberline {62}{\ignorespaces Ruby features a lot of syntactic sugar.\relax }}{322}{listing.62}%
-\contentsline {listing}{\numberline {63}{\ignorespaces An example of useful comments complementing the source code in Mozilla's layout engine.\relax }}{338}{listing.63}%
-\contentsline {listing}{\numberline {64}{\ignorespaces A textbook semaphore description in pseudo-code \citep {arpaci_ostep_2018}\relax }}{342}{listing.64}%
-\contentsline {listing}{\numberline {65}{\ignorespaces Abstracting hardware specific resources via configuration options in an open-source project. \citep {dicola_pi_2015}\relax }}{344}{listing.65}%
-\contentsline {listing}{\numberline {66}{\ignorespaces A code poem written by Maca in Ruby. \citep {ortega_maca_2011}\relax }}{347}{listing.66}%
-\contentsline {listing}{\numberline {67}{\ignorespaces The executed output from \ref {code:self_inspect}\relax }}{349}{listing.67}%
-\contentsline {listing}{\numberline {68}{\ignorespaces Different ways to write a function in different functional contexts, written in JavaScript.\relax }}{358}{listing.68}%
-\contentsline {listing}{\numberline {69}{\ignorespaces 0x31 does a logical operation on a numbers represented as reflected binary. The structure of the program text itself, through its symmetry, hints at the patterns exhibited by such reflected binary encoding \citep {xorpd_xchg_2014}.\relax }}{373}{listing.69}%
-\contentsline {listing}{\numberline {70}{\ignorespaces forkbomb.pl is an artwork in the exhibited sense of the term, displaying conciseness and metaphorical expression along with expressive power through its technical expansion\relax }}{385}{listing.70}%
+\contentsline {listing}{\numberline {38}{\ignorespaces Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep {nielsen_working_2017}\relax }}{173}{listing.38}%
+\contentsline {listing}{\numberline {39}{\ignorespaces An example of how source code can be a representation an individual, and can exemplify encapsulation, written in Rust.\relax }}{222}{listing.39}%
+\contentsline {listing}{\numberline {40}{\ignorespaces The system of value, references and pointers make source code into a highly complex symbolic system.\relax }}{224}{listing.40}%
+\contentsline {listing}{\numberline {41}{\ignorespaces Cynical American Preamble, by Michael Carlisle, published in code::art \#0 \citep {brand_code_2019}\relax }}{233}{listing.41}%
+\contentsline {listing}{\numberline {42}{\ignorespaces Unhandled Love, by Daniel Bezera, published in \{code poems\} \citep {bertram_code_2012}\relax }}{239}{listing.42}%
+\contentsline {listing}{\numberline {43}{\ignorespaces mac\_sched.c\relax }}{244}{listing.43}%
+\contentsline {listing}{\numberline {44}{\ignorespaces Nested, by Dan Brown and published in \{code poems\} \citep {bertram_code_2012}\relax }}{245}{listing.44}%
+\contentsline {listing}{\numberline {45}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {linux_content_2023}\relax }}{247}{listing.45}%
+\contentsline {listing}{\numberline {46}{\ignorespaces In the C family of languages, header files represent the overall structure of the program. This program text is defining the overall structure and the extent to which it interacts with specific hardware.\relax }}{261}{listing.46}%
+\contentsline {listing}{\numberline {47}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {muratori_semantic_2014}\relax }}{265}{listing.47}%
+\contentsline {listing}{\numberline {48}{\ignorespaces genalloc.c, Basic general purpose allocator for managing special purpose memory from the Linux Kernel, displaying examples of source-code spatiality \citep {muratori_semantic_2014}\relax }}{266}{listing.48}%
+\contentsline {listing}{\numberline {49}{\ignorespaces A textbook example of a fundamental construct in computer science, the linked list. This header file shows all the parts which compose the concept \citep {kirchner_linked_2022}.\relax }}{282}{listing.49}%
+\contentsline {listing}{\numberline {50}{\ignorespaces A regular expression matcher by Rob Pike, praised for its elegance and conciseness, but not for its utility \citep {oram_beautiful_2007}\relax }}{284}{listing.50}%
+\contentsline {listing}{\numberline {51}{\ignorespaces A comparison of how to remove an element from a list, with elegance depending on the skill level of the author \citep {kirchner_linked_2022a}.\relax }}{285}{listing.51}%
+\contentsline {listing}{\numberline {52}{\ignorespaces A terse example of writing a string to an output in Ruby.\relax }}{306}{listing.52}%
+\contentsline {listing}{\numberline {53}{\ignorespaces A verbose approach to writing a string to an output in Java.\relax }}{306}{listing.53}%
+\contentsline {listing}{\numberline {54}{\ignorespaces Go proposes an elegant way of ignoring errors, with the use of the underscore token.\relax }}{309}{listing.54}%
+\contentsline {listing}{\numberline {55}{\ignorespaces C syntax sometimes behaves arbitrarily.\relax }}{311}{listing.55}%
+\contentsline {listing}{\numberline {56}{\ignorespaces Pointers involve a non-straightforward way to reason about values.\relax }}{315}{listing.56}%
+\contentsline {listing}{\numberline {57}{\ignorespaces Ruby syntax does not allow the programmer to directly manipulate pointers\relax }}{316}{listing.57}%
+\contentsline {listing}{\numberline {58}{\ignorespaces Complex way to do threads in C.\relax }}{318}{listing.58}%
+\contentsline {listing}{\numberline {59}{\ignorespaces Nice way to do threads in Go.\relax }}{318}{listing.59}%
+\contentsline {listing}{\numberline {60}{\ignorespaces These two range operators are semantically equivalent in Python, but the first is more idiomatic than the second.\relax }}{321}{listing.60}%
+\contentsline {listing}{\numberline {61}{\ignorespaces The decorator is the idiotmatic way to calculate the sum of the Fibonacci sequence. \citep {schmitz_what_2015}\relax }}{321}{listing.61}%
+\contentsline {listing}{\numberline {62}{\ignorespaces Ruby features a lot of syntactic sugar.\relax }}{323}{listing.62}%
+\contentsline {listing}{\numberline {63}{\ignorespaces An example of useful comments complementing the source code in Mozilla's layout engine.\relax }}{339}{listing.63}%
+\contentsline {listing}{\numberline {64}{\ignorespaces A textbook semaphore description in pseudo-code \citep {arpaci_ostep_2018}\relax }}{343}{listing.64}%
+\contentsline {listing}{\numberline {65}{\ignorespaces Abstracting hardware specific resources via configuration options in an open-source project. \citep {dicola_pi_2015}\relax }}{345}{listing.65}%
+\contentsline {listing}{\numberline {66}{\ignorespaces A code poem written by Maca in Ruby. \citep {ortega_maca_2011}\relax }}{348}{listing.66}%
+\contentsline {listing}{\numberline {67}{\ignorespaces The executed output from \ref {code:self_inspect}\relax }}{350}{listing.67}%
+\contentsline {listing}{\numberline {68}{\ignorespaces Different ways to write a function in different functional contexts, written in JavaScript.\relax }}{359}{listing.68}%
+\contentsline {listing}{\numberline {69}{\ignorespaces 0x31 does a logical operation on a numbers represented as reflected binary. The structure of the program text itself, through its symmetry, hints at the patterns exhibited by such reflected binary encoding \citep {xorpd_xchg_2014}.\relax }}{374}{listing.69}%
+\contentsline {listing}{\numberline {70}{\ignorespaces forkbomb.pl is an artwork in the exhibited sense of the term, displaying conciseness and metaphorical expression along with expressive power through its technical expansion\relax }}{386}{listing.70}%
