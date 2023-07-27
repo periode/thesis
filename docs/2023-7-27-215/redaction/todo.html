@@ -1,0 +1,227 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<title>works in public</title>
+			<link rel="stylesheet" href="/style.css"/>
+		</head>
+		<body>
+			<div class="way">
+				<a href="/index.html">cover</a>
+			</div>
+			<div class="holding tight">
+				<h1 id="todo">todo</h1>
+
+<h2 id="format">format</h2>
+
+<ul>
+  <li>deal with inline quotes properly (using the <code>dirtytalk</code> package)</li>
+  <li>harmonize spacers</li>
+</ul>
+
+<p>add this to examples, from the rust parser example i forked, as an example of how people assign quality to proper scale naming:</p>
+
+<p><code>rust
+// Level-change Operator (what a stupid name)
+operator_level = { operator_exp | operator_subscript |
+                   operator_exp ~ operator_subscript |
+                   operator_subscript ~ operator_exp
+}
+</code></p>
+
+<h2 id="conclusion">conclusion</h2>
+
+<ul>
+  <li>[x] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it’s compiled, etc. for instance, the xchrad; book, where it’s assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc. (e.g. Snippet 0x31, gray code and its visualization)</li>
+  <li>[x] expand on the section on metaphors. essentially, we’ve shown that there are these domains that are used to refer to programming: in the end, <em>what do they tell us?</em> specificlaly, have a section on what is the overlap of math/arch/lit?</li>
+  <li>[x] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.</li>
+  <li>[x]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)</li>
+  <li>[ ] add a footnote about Brenda : Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head–me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what they had originally written. <a href="https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html">source</a></li>
+</ul>
+
+<h2 id="chap-4---programming">chap 4 - programming</h2>
+
+<ul>
+  <li>[ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)</li>
+  <li>
+    <p>[ ] add if hemingway wrote javascript as an example of styles</p>
+  </li>
+  <li>[ ] include the concept of interface by matthew kirschenbaum <a href="https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550">https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550</a></li>
+  <li>[ ] proofread subsec between human and machines</li>
+  <li>[ ] there is no example of iterating in 5.1.2</li>
+  <li>[ ] all figures (especially fig. 51, 52) need to be very much explicited: “we need to be lead into why that is even an issue” / define reasonable examples for each / show different return types in fig. 51</li>
+  <li>[ ] for the threads, first define what a <code>process</code> is so that we can understand what a <code>thread</code> is, also show the non-threaded version? explain how the sequential outcome is bouleversé?</li>
+  <li>[ ] look into why we can’t return <code>[]int</code> in c</li>
+  <li>[ ] in golang, the <code>_</code> identifiers are not about the error, but about ignoring things. show that it differs in JS or Python</li>
+  <li>for fig. 62, step through a computer interpretation of the process, before giving a literary interpretation of the process.</li>
+  <li>for the code poems, I need to be able to articulate their relevance when looking at different domains. they’re not just related to literature, but also architecture (follies, pavillions) or math (pure math), while other source code (linux kernel) might also be a sort of literature (legal code). but also make it explicit that i talk about the ones that can run, not the code poems that are not executable</li>
+  <li>[ ] rather than having 5.3 as this total disconnect, maybe start by writing a monolith to avoid the pitfalls of structure. particularly because at this point i need to synthesize. rather work on <em>connections and disconnections</em> between the social and the functional?</li>
+  <li>in the case of list comprehension in Python, it is both a technical and social environment</li>
+</ul>
+
+<p>in the last section, 5.3</p>
+
+<ul>
+  <li>[ ] functions need to be made clearer. there are three levels (1) syntactical/formal validity, (2) what the program down (operational semantics) and (3) what the program should do (intentional semantics). THIS SHOULD BE DISCUSSED AT THE BEGINNING RATHER THAN JUST THE LAME INTRO ON LAMBDA CALCULUS. then start from those to discuss the function/meaning of computer programs</li>
+  <li>[ ] i talk about “<em>syntactic meaning</em>” but this makes no sense, meaning is only semantic</li>
+  <li>[ ] again, shorten the code snippets and <strong>explain them</strong></li>
+  <li>[ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.</li>
+  <li>[ ] add this quote from The Embodied Aesthetics of Code, quoted in <a href="https://www.youtube.com/watch?v=CkGqINHZit0">Sy Brand</a>: “an object is ‘functionally beautiful’ to the extent that its aesthetic properties contribute to its overall performance—the functional beauty of an object enhances its fulfilling its primary function” and, in this case, the primary function is not to be executed, but to be understood.</li>
+  <li>[ ] from sy brand talk, gabrielle starr, feeling beauty: the neuroaesthetics of the experience: “Aesthetic response enables the comparison and integration of novel kinds of reward in a process that opens possibilities for new knowledge, or new ways of negotiating the world. The perceptions, images, and emotions we find through our experience of poetry, painting and music put ideas and events into relation with one another that would rarely, if ever, be possible outside the arts.”</li>
+</ul>
+
+<h2 id="chap-3---beauty">chap 3 - beauty</h2>
+
+<h3 id="meeting-with-nick-1414">meeting with nick 14.14</h3>
+
+<ul>
+  <li>in philosophy section or in mathematics section, inckude iverson_notation_as_tool_for_thought, beardsley: cognitive gratification under ideal circumstances</li>
+</ul>
+
+<p>Include Gordon Graham - Philosophy of Art and Aesthetics</p>
+
+<p>overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there</p>
+
+<p>For Languages of Art, two things about exemplification vs. implementation:</p>
+
+<ul>
+  <li>different implementations of a concept are necessary but not sufficient for aesthetic judgment. programs exemplify because different implementations exist</li>
+  <li>an implementation does not necessarily exemplify: it needs (amongst other things?) CONTEXT.</li>
+</ul>
+
+<p>In architecture, highlight the fact that the <em>detail</em> is the point of interaction between the human and the structure.</p>
+
+<p>In literature, include rousset: forme et signification</p>
+
+<p>Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory</p>
+
+<ul>
+  <li>p.218, clarify and enumerate what those 5 requirements of the language of art are.</li>
+  <li>p.220, make it clear that <code>var auth_level</code> is actually two different tokens, one by the designer, one by the programmer</li>
+  <li>listing 35, if i’m talking about OOP use a more oop language (java, python)</li>
+  <li>p. 221 when i talk about source code showing properties of an object. objects only have properties through the fact that they are being modelled: source code is a model of the world in which objects have properties. from a philosophical perspective, objects do not always have properties, but the program’s concept of the world GIVES IT properties.</li>
+  <li>p. 223: match the 5 criteria as they were mentioned in the first bullet point</li>
+  <li>p.243: when discussing the god example: again, highlight the ontology of markup: inside and outside. There are differences between conceptual spatialization, layout spatialization (the most obvious that we see), and disk fragmentation. The cartesian view of space is different from the one listing 40 (space in 40 is different from a map).</li>
+  <li>Listing 40: make it expliciti that it is presented in such a way that highlights the indented/contained nature of markup (indentation)</li>
+  <li>Listing 41: no line numbers and most importantly, NOT CLEAR THAT THIS IS RELATED TO SPATIALITY. might be related to SSD/virtual memory/start addresses, but find a better example. maybe start with python, and indentation, related to semantics.</li>
+  <li>p.248: mention what are the specific things in architecture: the main thing in architecture is about sight (develop this in the form/function section). ALSO SITE-SPECIFIC: materials+context. Architecture: building codes and requirements, that is not there in lit or math. architect is neither an engineer nor a fine artist.</li>
+  <li>Figure 4.2: the plan and the program are different: this is a plan, and the program is different. the program is equivalent to the system requirements.</li>
+  <li>Listing 42: hard to tell what this does, might not be worth keeping, or include an extensive discussion of separation of concerns.</li>
+  <li>p.263: nick disagrees, don’t say that compression isn’t so much a problem in poetry, but rather a different kind of problem.</li>
+  <li>Listing 44: again, the point of these examples as an illustration of refactoring is also not clear, should be commented a lot more</li>
+  <li>p.280: graphical representation/diagram is not uniquely artistic, it is that it adds choices, and calls for attention. not just because its a circle does it mean its better, but rather because it’s a different way to represent the same thing, which I argue implies the possibility for a value judgment.</li>
+  <li>Listing 45: maybe give a diagrammatic representation of the linked list? there’s an abstract concept, this text is a particular representation of it, and a diagram could be another. strip down the example to the very bare minimum, and include very robust and helpful discussion of that discussion. this is too obscure.</li>
+  <li>listing 46: regex matcher:  regex is a formalism for processing text. convey that this is a complex problem, but that you can actually write a fairly simple program to implement it. In general, I should always discuss extensively the listings.</li>
+  <li>Listing 47: still write about refactoring, but maybe with a shorter program. use the simplest case that makes my point. make that point with elaboration and extent discussion. BUT ALSO PREFACE IT WITH A PYTHON EXAMPLE. So have two listings in the end.</li>
+  <li>allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)</li>
+  <li>include \citep{dexter_embodied_2011}</li>
+  <li>[ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. <strong>my counter-argument</strong> is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the “idea is a machine that makes the art”. It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the machine term, and not on the human term: we address this in section 5.3 (syntactical validity, operational semantics, intended semantics)</li>
+  <li>[ ] literature: acknowledge that narrativity and authorship aren’t so much a thing here.</li>
+  <li>[ ] literature: include a section about poetry: <a href="https://jacket2.org/commentary/poetry-executable-code">https://jacket2.org/commentary/poetry-executable-code</a> / <a href="https://volltext.net/texte/cornelia-travnicek-code-poetry/">https://volltext.net/texte/cornelia-travnicek-code-poetry/</a></li>
+  <li>[ ] add meles and UNIX</li>
+  <li>[ ] literature: include that code is not literature: <a href="https://gigamonkeys.com/code-reading/">https://gigamonkeys.com/code-reading/</a></li>
+  <li>[ ] mathematics: add a discussion of dijkstra’s shortest path algorithm?</li>
+</ul>
+
+<h3 id="meeting-with-nick---28122022">meeting with nick - 28.12.2022</h3>
+
+<ul>
+  <li>for each of the aesthetic domains (lit, arch, eng, math), add source code examples to show what is similar, and what is different in source code vs. original domains -&gt; <strong>INTERTWINE!</strong></li>
+  <li>my approach to metaphors should be more systematic: that is, I should look into how metaphors can represent a SYSTEM (for instance, <code>symlink</code> is a limitation when it comes to the files and folder metaphor)</li>
+  <li>e.g. how does step in a debugger relate to code as terrain, or surface coverage for tests? e.g. how does build and architecture related to code as structure?</li>
+  <li>ask “why does the metaphor work?” -&gt; how do they (a) combine (b) extend (c) question?</li>
+  <li>look at all the metaphors that fit together (in the lit domain, the arch domain, etc.)</li>
+  <li>metaphor of the <code>macro</code> (implies scale), of <code>scope</code>, of <code>global</code>, implies scale as well. <code>libraries</code> is also a metaphor that is literary.</li>
+  <li>add knuth on dijkstra, simple program, complex proof (knuth, simple, 1990)</li>
+  <li>
+    <p>add wallen_form_1990 with his argument that mathematics rely on the fact that sight is our most developed sense</p>
+  </li>
+  <li>
+    <p>fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan “textual actual worlds”) -&gt; essentially show that fiction might be as relevant as non-fiction in source code</p>
+  </li>
+  <li>
+    <p>mathematics: Barker, John, 2009, “Mathematical Beauty”, Sztuka i Filozofia, 35: 65–74. (A powerful defence of the claim that mathematical and logical proofs have aesthetic properties.)</p>
+  </li>
+  <li><strong>case studies</strong>
+    <ul>
+      <li>choose the case-studies in the way that is the most illustrative of my point. doesn’t have to be huge.</li>
+      <li>i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to <strong>LANGUAGE</strong>, <strong>COMMUNITY</strong> and <strong>PROBLEM</strong> (question of the idiomatic). this is better than having one case study after another, completely discontinued.</li>
+      <li>find similar problems in different programs, see how they deal with it</li>
+      <li>find specific cases where the cognitive load is high</li>
+      <li>again, <strong>DO IT IN PARALLEL</strong> as a comparative studies.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>side note: are metaphors related to space because it’s hard for us to think in terms of time?</em></p>
+
+<h2 id="chap-2---understanding">chap 2 - understanding</h2>
+
+<ul>
+  <li>make the three levels (C, ASM, bytecode)</li>
+  <li>
+    <p>[ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier</p>
+  </li>
+  <li>[ ] <strong>tools</strong> include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor,</li>
+  <li>[ ] <strong>tools</strong> add to means of understanding and IDEs deciding how we write: <a href="https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/">https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/</a></li>
+</ul>
+
+<h3 id="ide-notes">ide notes</h3>
+
+<ul>
+  <li><strong>overall</strong> computer-aided software engineering <a href="https://en.wikipedia.org/wiki/Computer-aided_software_engineering">https://en.wikipedia.org/wiki/Computer-aided_software_engineering</a> (history is interesting, started with <a href="https://www.applefritter.com/content/lisa-workshop-info">Lisa Workshop</a> for Apple, IBM was also important, and in the 90s there was a peak of software, <a href="https://archive.org/details/Macintosh_Programmers_Workshop_missing_735736/mode/2up">Programmer’s Workshop</a>)</li>
+  <li><strong>good social typology</strong> <a href="https://academiccommons.columbia.edu/doi/10.7916/D81261G0">https://academiccommons.columbia.edu/doi/10.7916/D81261G0</a></li>
+  <li><strong>_IDE work framed with activity theory</strong> <a href="https://link.springer.com/article/10.1023/A:1015299228170">https://link.springer.com/article/10.1023/A:1015299228170</a></li>
+  <li><strong>important</strong>: <a href="https://www.sciencedirect.com/science/article/pii/S1071581905001102">meta study of IDEs</a>, and <a href="https://dl.acm.org/doi/abs/10.1145/358506.358512">typology</a></li>
+  <li><strong>study of tool usage</strong> <a href="https://ieeexplore.ieee.org/abstract/document/4222616">https://ieeexplore.ieee.org/abstract/document/4222616</a></li>
+  <li><a href="https://dl.acm.org/doi/abs/10.1145/2047196.2047215">https://dl.acm.org/doi/abs/10.1145/2047196.2047215</a> IDEs can help alleviate some of the complexities (connected, parallel computing), but there are still issues. (collaborative code also <a href="https://dl.acm.org/doi/abs/10.1145/1384271.1384315">here</a>)</li>
+  <li><a href="https://ieeexplore.ieee.org/abstract/document/1463097">https://ieeexplore.ieee.org/abstract/document/1463097</a> history of eclipse, comparison with visual studio .NET “It is inexpensive to use and makes it much easier to integrate their tools with one another.” (more about eclipse here: <a href="https://ieeexplore.ieee.org/abstract/document/1657944">https://ieeexplore.ieee.org/abstract/document/1657944</a>, how it helps to integrate other tools <a href="https://ieeexplore.ieee.org/abstract/document/5386785">here</a> and how programmers use it <a href="https://dl.acm.org/doi/10.1109/MS.2006.105">here</a>)</li>
+  <li>it looks like eclipse exists since at least 1985</li>
+  <li>eclipse quick fix: <a href="https://dl.acm.org/doi/abs/10.1145/2398857.2384665">https://dl.acm.org/doi/abs/10.1145/2398857.2384665</a> mentions the complexities of checking complex changes</li>
+  <li>things that are important for IDEs (<a href="https://arxiv.org/pdf/1404.6602.pdf">https://arxiv.org/pdf/1404.6602.pdf</a>):
+    <ul>
+      <li>continuous processing</li>
+      <li>non-linear editing</li>
+      <li>dependency analysis and caching</li>
+    </ul>
+  </li>
+  <li><a href="https://dl.acm.org/doi/abs/10.1145/1806799.1806866">https://dl.acm.org/doi/abs/10.1145/1806799.1806866</a> concept of <strong>code bubbles</strong></li>
+  <li>“These observations suggest a new model of program understanding grounded in theories of <em>information foraging</em>” <a href="https://dl.acm.org/doi/10.1109/TSE.2006.116">https://dl.acm.org/doi/10.1109/TSE.2006.116</a></li>
+  <li>designing an IDE specifically with OOP in mind, or with <a href="https://ieeexplore.ieee.org/abstract/document/287018">signal processing</a></li>
+  <li>demo of how this IDEs can help from the 90s <a href="https://dl.acm.org/doi/abs/10.1145/64140.65020">https://dl.acm.org/doi/abs/10.1145/64140.65020</a></li>
+  <li>more history for the MESA programming environment: <a href="https://dl.acm.org/doi/abs/10.1145/17919.806843">https://dl.acm.org/doi/abs/10.1145/17919.806843</a></li>
+  <li>
+    <p><strong>EMACS</strong> documentation: <a href="https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf">https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf</a></p>
+  </li>
+  <li>
+    <p>[x] <strong>psychology</strong> <em>VERY IMPORTANT</em>: include the methodology from <a href="https://arxiv.org/pdf/cs/0612004.pdf">detienne’s analysis of kintsch &amp; von dijk</a> (check <a href="https://link.springer.com/chapter/10.1007/978-1-4471-0111-6_2">this one</a> also)</p>
+  </li>
+  <li>[x] <strong>introduction to software complexity</strong> in the discussion of what understanding means, at some point, provide the down to earth definition from: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315">Towards a theory of the comprehension of computer programs</a>, by Ruven Brooks</li>
+  <li>[x] <strong>levels of software</strong> If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code … you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.</li>
+</ul>
+
+<h2 id="chap-1---ideals">chap 1 - ideals</h2>
+
+<ul>
+  <li>
+    <p>[ ]  add a subsubsec on verbosity?</p>
+  </li>
+  <li>
+    <p>[ ] add <a href="../readings/notes/pressman_software_engineering_practicioners_approach.md">pressman - software engineering: a practicioner’s approach</a> in the part about software developers</p>
+  </li>
+</ul>
+
+<h2 id="introduction">introduction</h2>
+
+<p>done</p>
+
+<h2 id="general">general</h2>
+
+<ul>
+  <li>[ ] deal with frames and page breaks on minted; <a href="https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package">https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package</a></li>
+</ul>
+
+			</div>
+		</body>
+	</html>

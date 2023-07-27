@@ -125,10 +125,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - make the three levels (C, ASM, bytecode)
 - [ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier
 
-- [ ] __metaphors__, make clear that programmer-facing metaphors are not more complex than user-facing metaphors, or that it's a different kind of cognitive work, but rather that they are referring to a different kind of concept (streams, pipes, volatile memory, etc.)! For instance, mention how there are files/folders for users, and these are manipulated differently on GUI and CLI (CLI -> bash script: "loops", "labels", "wildcards"). these show that the metaphors at work in programming are a combination of different concepts, drawing on different fields of knowledge.
-- [ ] __metaphors__ [this](https://www.sciencedirect.com/science/article/abs/pii/0010028581900128) is actually showing that, the more expert a programmer becomes, the less they resort to metaphors, and rather shift to the programming-specific concepts.
-
-- [ ] __tools__ include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor, as a transition to the concrete means
+- [ ] __tools__ include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor,
 - [ ] __tools__ add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
 
 ### ide notes
