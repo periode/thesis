@@ -77,7 +77,7 @@ l'art traduit dans d'autres unités temporelles et situationelles
 
 ---
 
-côté social, il dit que l'esthétique agit aussi comme médiation entre les représentations techniques spécialisées de différents groupes. 
+côté social, il dit que l'esthétique agit aussi comme médiation entre les représentations techniques spécialisées de différents groupes.
 
 trouver tous les modes sans sortir d'un mode, c'est **l'interpréteur LISP**
 
@@ -85,9 +85,11 @@ trouver tous les modes sans sortir d'un mode, c'est **l'interpréteur LISP**
 
 #### pensée technique et pensée philosophique
 
-> la pensée théorique issue des techniques est celle au sein de laquelle il est possible de penser d'une manière de nouveau homogène est cohérente la totalité des conditions de l'opération
+technique totalisante:
+> la pensée théorique issue des techniques est celle au sein de laquelle il est possible de penser d'une manière de nouveau homogène et cohérente la totalité des conditions de l'opération
 
-**il n'y a pas de lien analytique entre facilité et efficacité, et pourtant c'est une valeur pour une action d'être à la fois simple et efficace**
+elegance:
+> il n'y a pas de lien analytique entre facilité et efficacité, et pourtant c'est une valeur pour une action d'être à la fois simple et efficace
 
 le réel est la synthèse du virtuel (totalisant) et nécessaire (spécifique) (relation a l'implémentation)
 
