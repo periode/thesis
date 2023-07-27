@@ -122,11 +122,8 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 ## chap 2 - understanding
 
-- should i invert software complexity with software ontology? probably
 - deal with the characters: ϕ!^x
 - make the three levels (C, ASM, bytecode)
-
-- [ ] __types of complexity__ méles: temps et activité selon UNIX
 
 - [ ] __psychology__ Peter G. Neumann. Psychosocial implications of computer software development and use: Zen and the art of computing. quote from peter neumann: "these techniques may have enormous value in providing nontrivial assurances that the system might actually do what is expected of it . " - "There are many problems arising in complex systems that must be thoroughly comprehended, but that once understood can be structured in a way that conceptually simplifies the design" > _no
 - [ ] __psychology__ add a reference and discussion of Fedorenko (fedorenko_language_2019) in terms of cognitive mapping: "Understanding the interdependencies among different requirements and among the different layers is both an important step for, on one hand, representing it formally, as well as, on the other hand, one of the goals to be grasped by the reader." this coudl be a nice connection with the levels of software
@@ -168,6 +165,7 @@ _side note: are metaphors related to space because it's hard for us to think in 
 - more history for the MESA programming environment: <https://dl.acm.org/doi/abs/10.1145/17919.806843>
 - __EMACS__ documentation: <https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf>
 
+- [x] __types of complexity__ méles: temps et activité selon UNIX
 - [x] __levels of software__ in the hardware existence of software, talk about memory management
 - [x] __introduction of software complexity__ wirth: "the computer interprets, i wanted to understand" in beauty is our business, drawing raster lines
 - [x] __introduction to software complexity__ in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
