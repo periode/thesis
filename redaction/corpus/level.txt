@@ -1,1 +1,9 @@
-pseudo code
+how to get the difference in character length between two words
+
+store the first word in a variable
+store the second word in a variable
+
+store the difference between the number of characters in the first word
+and the number of characters in the second word
+
+print the difference to the console

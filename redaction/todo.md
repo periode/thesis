@@ -130,25 +130,14 @@ _side note: are metaphors related to space because it's hard for us to think in 
 
 ### ide notes
 
-- __overall__ computer-aided software engineering <https://en.wikipedia.org/wiki/Computer-aided_software_engineering> (history is interesting, started with [Lisa Workshop](https://www.applefritter.com/content/lisa-workshop-info) for Apple, IBM was also important, and in the 90s there was a peak of software, [Programmer's Workshop](https://archive.org/details/Macintosh_Programmers_Workshop_missing_735736/mode/2up))
-- __good social typology__ <https://academiccommons.columbia.edu/doi/10.7916/D81261G0>
-- ___IDE work framed with activity theory__ <https://link.springer.com/article/10.1023/A:1015299228170>
-- __important__: [meta study of IDEs](https://www.sciencedirect.com/science/article/pii/S1071581905001102), and [typology](https://dl.acm.org/doi/abs/10.1145/358506.358512)
-- __study of tool usage__ <https://ieeexplore.ieee.org/abstract/document/4222616>
-- <https://dl.acm.org/doi/abs/10.1145/2047196.2047215> IDEs can help alleviate some of the complexities (connected, parallel computing), but there are still issues. (collaborative code also [here](https://dl.acm.org/doi/abs/10.1145/1384271.1384315))
+- [x] __good social typology__ <https://academiccommons.columbia.edu/doi/10.7916/D81261G0>
+- [x] ___IDE work framed with activity theory__ <https://link.springer.com/article/10.1023/A:1015299228170>
+- [x] __important__: [meta study of IDEs](https://www.sciencedirect.com/science/article/pii/S1071581905001102), and [typology](https://dl.acm.org/doi/abs/10.1145/358506.358512)
 - <https://ieeexplore.ieee.org/abstract/document/1463097> history of eclipse, comparison with visual studio .NET "It is inexpensive to use and makes it much easier to integrate their tools with one another." (more about eclipse here: <https://ieeexplore.ieee.org/abstract/document/1657944>, how it helps to integrate other tools [here](https://ieeexplore.ieee.org/abstract/document/5386785) and how programmers use it [here](https://dl.acm.org/doi/10.1109/MS.2006.105))
-- it looks like eclipse exists since at least 1985
 - eclipse quick fix: <https://dl.acm.org/doi/abs/10.1145/2398857.2384665> mentions the complexities of checking complex changes
 - things that are important for IDEs (<https://arxiv.org/pdf/1404.6602.pdf>):
-  - continuous processing
-  - non-linear editing
-  - dependency analysis and caching
 - <https://dl.acm.org/doi/abs/10.1145/1806799.1806866> concept of __code bubbles__
 - "These observations suggest a new model of program understanding grounded in theories of _information foraging_" <https://dl.acm.org/doi/10.1109/TSE.2006.116>
-- designing an IDE specifically with OOP in mind, or with [signal processing](https://ieeexplore.ieee.org/abstract/document/287018)
-- demo of how this IDEs can help from the 90s <https://dl.acm.org/doi/abs/10.1145/64140.65020>
-- more history for the MESA programming environment: <https://dl.acm.org/doi/abs/10.1145/17919.806843>
-- __EMACS__ documentation: <https://chrismennie.ca/EMACS-Conceptual-Architecture.pdf>
 
 - [x] __psychology__ _VERY IMPORTANT_: include the methodology from [detienne's analysis of kintsch & von dijk](https://arxiv.org/pdf/cs/0612004.pdf) (check [this one](https://link.springer.com/chapter/10.1007/978-1-4471-0111-6_2) also)
 
