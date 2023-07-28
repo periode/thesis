@@ -55,19 +55,11 @@ Software maintenance, finally, relates not to the planning or writing of softwar
 
 What does this look like in practice? In order to understand the aesthetic preferences of software developers, we must start by assessing the kinds of program texts they write. We look at excerpts from two code bases: the source code for Microsoft Windows XP, which was started in 2001 \citep{warren_windows_2020}, and the Kirby CMS project, started in 2011; the quantitative specificities of both code bases are shown in \ref{table:ms-kirby}. While these two projects differ drastically in their size, in their age, and in the number of developers involved in their creation and maintenance, we nonetheless choose them as the respective ends of a single spectrum of software engineering. In both cases, the prime concern is with function and maintainability.
 
-\begin{table}
-  \begin{tabular}{lll}
-                              & Microsoft XP & Kirby CMS \\
-    \hline
-    number of files           & 28,655       & 1,859     \\
-    \hline
-    total lines               & 13,468,327   & 345,793   \\
-    \hline
-    number of file extensions & 10           & 6
-  \end{tabular}
+\begin{figure}
+  \includegraphics[width=0.8\textwidth,keepaspectratio,center]{windows_kirby.png}
   \caption{Table comparing the scale of two software development projects.}
   \label{table:ms-kirby}
-\end{table}
+\end{figure}
 
 First, the most striking visual feature of the code is its sheer size. In the case of Microsoft XP, representing such a versatile and low-level application such as an operating system results in files that are often above 2000 lines of code. In order to allow abstraction techniques at a higher-level for the end-developer, the operating system needs to do a significant amount of "grunt" work, relating directly to the concrete reality of the hardware platform which needs to be operated on. Looking at the file \lstinline{cmdatini.c}, reproduced partially in \ref{code:ms2000}, we see very long variable names, with a rhythmic, repetitive structure where differences between lines is not obivous at first.
 
@@ -189,8 +181,7 @@ In \ref{code:select_lines_c}, achieving this functionality  using the C programm
 
 In programming, one-liners have their roots in the philosophy of the UNIX operating system, as well as in the early diffusion of computer programs for personal computer hobbyists \citep{montfort_10_2014}. On the one side, the Unix philosophy is fundamentally about building simple tools, which all do one thing well, in order to manipulate text streams \citep{raymond_art_2003}, and each of these tools can then be composed in order to produce complex results—a feature of programming languages we will discuss in \ref{subsec:programming-languages}. Sometimes openly acknowledged by language designers—such as those of AWK—the goal is to write short programs which shouldn't be longer than one line. Given that constraint, a hacker's response would then be: how short can you make it?
 
-Writing the shortest of all programs does become a matter of skill and competiton, coupled with a compulsivity to reach the most syntactically compressed version\footnote{For instance, Guy Steele, and influential langugage designer, who worked on Scheme, ECMAScript and Java, among others, recalls:
-  \emph{This may seem like a terrible waste of my effort, but one of the most satisfying moments of my career was when I realized that I had found a way to shave one word off an 11-word program that [Bill] Gosper had written. It was at the expense of a very small amount of execution time, measured in fractions of a machine cycle, but I actually found a way to shorten his code by 1 word and it had only taken me 20 years to do it. }\citep{seibel_coders_2009}}.
+Writing the shortest of all programs does become a matter of skill and competiton, coupled with a compulsivity to reach the most syntactically compressed version\footnote{For instance, Guy Steele, and influential langugage designer, who worked on Scheme, ECMAScript and Java, among others, recalls:"\emph{This may seem like a terrible waste of my effort, but one of the most satisfying moments of my career was when I realized that I had found a way to shave one word off an 11-word program that [Bill] Gosper had written. It was at the expense of a very small amount of execution time, measured in fractions of a machine cycle, but I actually found a way to shorten his code by 1 word and it had only taken me 20 years to do it.}" \citep{seibel_coders_2009}}.
 This behaviour is also manifested in the practice of \emph{code golf}, challenges in which programmers must solve problems by using the least possible amount of character\footnote{Here, the equivalent of \emph{par} in golf would be the number of character used: the lower the number, the better.}, or in contests such as the Mathematica One-Liner Competition \citep{carlson_mathematica_2010}. Minimizing program length in relation to the problem complexity is therefore a definite feature of one-liners, since choosing the right programming language for the right tasks can lead to a drastic reduction of syntax, while keeping the same expressive and effective power.
 
 On the other hand, however, one-liners can be so condensed that they loose all sense of clarity for a reader who does not have a deep knowledge of the language in which it is written, or of the problem being solved. For instance, \ref{code:game_of_life} is an implementation of Conway's game of life implemented in one line of the APL programming. Conway's Game of Life is a well-known simulation where a small set of initial conditions and rules for evolution produce unexpected emergent complexity. Its combination with APL programming language, which makes an extensive use of symbolic graphical characters to denote functions and operations, leads to particularly dense and terse source code.
