@@ -105,44 +105,11 @@ Include the fact that aesthetics help compress, and by compressing, people can h
 - look at all the metaphors that fit together (in the lit domain, the arch domain, etc.)
 - metaphor of the `macro` (implies scale), of `scope`, of `global`, implies scale as well. `libraries` is also a metaphor that is literary.
 - add knuth on dijkstra, simple program, complex proof (knuth, simple, 1990)
-- add wallen_form_1990 with his argument that mathematics rely on the fact that sight is our most developed sense
-
-- fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
-
-- mathematics: Barker, John, 2009, “Mathematical Beauty”, Sztuka i Filozofia, 35: 65–74. (A powerful defence of the claim that mathematical and logical proofs have aesthetic properties.)
-
-- __case studies__
-  - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
-  - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
-  - find similar problems in different programs, see how they deal with it
-  - find specific cases where the cognitive load is high
-  - again, __DO IT IN PARALLEL__ as a comparative studies.
-
-_side note: are metaphors related to space because it's hard for us to think in terms of time?_
 
 ## chap 2 - understanding
 
-- make the three levels (C, ASM, bytecode)
 - [ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier
-
-- [ ] __tools__ include dexter, embodied aesthetics of code to discuss spatiality, knowing how knowledge and metaphor,
 - [ ] __tools__ add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
-
-### ide notes
-
-- [x] __good social typology__ <https://academiccommons.columbia.edu/doi/10.7916/D81261G0>
-- [x] ___IDE work framed with activity theory__ <https://link.springer.com/article/10.1023/A:1015299228170>
-- [x] __important__: [meta study of IDEs](https://www.sciencedirect.com/science/article/pii/S1071581905001102), and [typology](https://dl.acm.org/doi/abs/10.1145/358506.358512)
-- <https://ieeexplore.ieee.org/abstract/document/1463097> history of eclipse, comparison with visual studio .NET "It is inexpensive to use and makes it much easier to integrate their tools with one another." (more about eclipse here: <https://ieeexplore.ieee.org/abstract/document/1657944>, how it helps to integrate other tools [here](https://ieeexplore.ieee.org/abstract/document/5386785) and how programmers use it [here](https://dl.acm.org/doi/10.1109/MS.2006.105))
-- eclipse quick fix: <https://dl.acm.org/doi/abs/10.1145/2398857.2384665> mentions the complexities of checking complex changes
-- things that are important for IDEs (<https://arxiv.org/pdf/1404.6602.pdf>):
-- <https://dl.acm.org/doi/abs/10.1145/1806799.1806866> concept of __code bubbles__
-- "These observations suggest a new model of program understanding grounded in theories of _information foraging_" <https://dl.acm.org/doi/10.1109/TSE.2006.116>
-
-- [x] __psychology__ _VERY IMPORTANT_: include the methodology from [detienne's analysis of kintsch & von dijk](https://arxiv.org/pdf/cs/0612004.pdf) (check [this one](https://link.springer.com/chapter/10.1007/978-1-4471-0111-6_2) also)
-
-- [x] __introduction to software complexity__ in the discussion of what understanding means, at some point, provide the down to earth definition from: [Towards a theory of the comprehension of computer programs](https://www.sciencedirect.com/science/article/abs/pii/S0020737383800315), by Ruven Brooks
-- [x] __levels of software__ If you want to exhibit the difference between a (reasonably) high-level language, assembly, and machine code, you could contrive an example yourself by writing something very short in C and compiling it in gcc. The GNU Assembler, as, is what is used as part of the gcc toolchain, so if you were to write the corresponding assembly and confirm that it assembles to the same machine code ... you have your example. And you might do it in a half-page of C, a similar amount of assembly, and 32 bytes of machine code.
 
 ## chap 1 - ideals
 
