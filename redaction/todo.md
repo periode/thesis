@@ -17,13 +17,22 @@ operator_level = { operator_exp | operator_subscript |
 
 ## conclusion
 
-- [x] i talk only about the naming, but I should really should be getting deeper, since this is the only way out. Rather, talk also about the structure, about what survives once it's compiled, etc. for instance, the xchrad; book, where it's assembled or disassembled. This would be a good example to show the aspects of the program that survive after you have taken off names/labels/etc. (e.g. Snippet 0x31, gray code and its visualization)
-- [x] expand on the section on metaphors. essentially, we've shown that there are these domains that are used to refer to programming: in the end, _what do they tell us?_ specificlaly, have a section on what is the overlap of math/arch/lit?
-- [x] then, follow with the overlap:conclude on what the metaphors teach us: it is explicitly intellectual, it is not time-based (i.e. persistent, static), it is linear, it requires a certain depth of engagement, etc.
-- [x]  and then both separately: showing that they might be compensating for one another (e.g. architecture introduces the notion of craft)
 - [ ] add a footnote about Brenda : Brenda Baker undertook her Fortan-to-Ratfor converter against the advice of her department head--me. I thought it would likely produce an ad hoc reordering of the orginal, freed of statement numbers, but otherwise no more readable than a properly indented Fortran program. Brenda proved me wrong. She discovered that every Fortran program has a canonically structured form. Programmers preferred the canonicalized form to what they had originally written. [source](https://web.archive.org/web/20200315093052/https://minnie.tuhs.org/pipermail/tuhs/2020-March/020664.html)
 
 ## chap 4 - programming
+
+- __case studies__
+  - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
+  - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
+  - find similar problems in different programs, see how they deal with it
+  - find specific cases where the cognitive load is high
+  - again, __DO IT IN PARALLEL__ as a comparative studies.
+
+### programming languages
+
+- in language design section, inckude iverson_notation_as_tool_for_thought, beardsley: cognitive gratification under ideal circumstances
+
+### styles
 
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers (maybe once the part about simmel is extracted from the craft)
 - [ ] add if hemingway wrote javascript as an example of styles
@@ -51,33 +60,30 @@ in the last section, 5.3
 
 ## chap 3 - beauty
 
-### meeting with nick 14.14
+overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
 
-- in philosophy section or in mathematics section, inckude iverson_notation_as_tool_for_thought, beardsley: cognitive gratification under ideal circumstances
+### aesthetics
 
 Include Gordon Graham - Philosophy of Art and Aesthetics
 
-overall, I should keep in mind that I do not have a technical audience, and I should rework/remove a lot of the examples, and add extensive discussions and rationale as to why those examples are there
+### literature
 
-For Languages of Art, two things about exemplification vs. implementation:
+__most important__: give code examples that are not related to poetry
 
-- different implementations of a concept are necessary but not sufficient for aesthetic judgment. programs exemplify because different implementations exist
-- an implementation does not necessarily exemplify: it needs (amongst other things?) CONTEXT.
-
-In architecture, highlight the fact that the _detail_ is the point of interaction between the human and the structure.
-
-In literature, include rousset: forme et signification
-
-Include the fact that aesthetics help compress, and by compressing, people can hold more things in short term memory
-
-- p.218, clarify and enumerate what those 5 requirements of the language of art are.
-- p.220, make it clear that `var auth_level` is actually two different tokens, one by the designer, one by the programmer
-- listing 35, if i'm talking about OOP use a more oop language (java, python)
-- p. 221 when i talk about source code showing properties of an object. objects only have properties through the fact that they are being modelled: source code is a model of the world in which objects have properties. from a philosophical perspective, objects do not always have properties, but the program's concept of the world GIVES IT properties.
-- p. 223: match the 5 criteria as they were mentioned in the first bullet point
+- In literature, include rousset: forme et signification
 - p.243: when discussing the god example: again, highlight the ontology of markup: inside and outside. There are differences between conceptual spatialization, layout spatialization (the most obvious that we see), and disk fragmentation. The cartesian view of space is different from the one listing 40 (space in 40 is different from a map).
 - Listing 40: make it expliciti that it is presented in such a way that highlights the indented/contained nature of markup (indentation)
 - Listing 41: no line numbers and most importantly, NOT CLEAR THAT THIS IS RELATED TO SPATIALITY. might be related to SSD/virtual memory/start addresses, but find a better example. maybe start with python, and indentation, related to semantics.
+- [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
+- [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
+- [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
+
+- fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
+
+### architecture
+
+In architecture, highlight the fact that the _detail_ is the point of interaction between the human and the structure.
+
 - p.248: mention what are the specific things in architecture: the main thing in architecture is about sight (develop this in the form/function section). ALSO SITE-SPECIFIC: materials+context. Architecture: building codes and requirements, that is not there in lit or math. architect is neither an engineer nor a fine artist.
 - Figure 4.2: the plan and the program are different: this is a plan, and the program is different. the program is equivalent to the system requirements.
 - Listing 42: hard to tell what this does, might not be worth keeping, or include an extensive discussion of separation of concerns.
@@ -90,11 +96,12 @@ Include the fact that aesthetics help compress, and by compressing, people can h
 - allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 - include \citep{dexter_embodied_2011}
 - [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the machine term, and not on the human term: we address this in section 5.3 (syntactical validity, operational semantics, intended semantics)
-- [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
-- [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
-- [ ] add meles and UNIX
-- [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
+
+### mathematics
+
+- add wallen_form_1990 with his argument that mathematics rely on the fact that sight is our most developed sense
 - [ ] mathematics: add a discussion of dijkstra's shortest path algorithm?
+- mathematics: Barker, John, 2009, “Mathematical Beauty”, Sztuka i Filozofia, 35: 65–74. (A powerful defence of the claim that mathematical and logical proofs have aesthetic properties.)
 
 ### meeting with nick - 28.12.2022
 
