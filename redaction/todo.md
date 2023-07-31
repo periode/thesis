@@ -4,16 +4,8 @@
 
 - deal with inline quotes properly (using the `dirtytalk` package)
 - harmonize spacers
-
-add this to examples, from the rust parser example i forked, as an example of how people assign quality to proper scale naming:
-
-```rust
-// Level-change Operator (what a stupid name)
-operator_level = { operator_exp | operator_subscript |
-                   operator_exp ~ operator_subscript |
-                   operator_subscript ~ operator_exp
-}
-```
+- add index
+- harmonize spacer and spacersmall
 
 ## conclusion
 
@@ -49,6 +41,12 @@ operator_level = { operator_exp | operator_subscript |
 - [ ] rather than having 5.3 as this total disconnect, maybe start by writing a monolith to avoid the pitfalls of structure. particularly because at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
 - in the case of list comprehension in Python, it is both a technical and social environment
 
+#### emotions and functionality
+
+- [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code>:
+
+> Implied in the design of the Source Code Poetry competition is the idea that the writing of code is an artistic enterprise. Indeed, "real" programmers are the ones whose code itself is poetry in motion. The emphasis on executable code reveals aesthetic possibilities of programming languages that blend form and function. Such poems are fascinating because they are variably accessible and inaccessible to readers, a function of their readers' knowledge of programming languages and facility with poetry. They also provide means of expression in multiple ways: the visual aesthetics of the code on the page, an aural dimension if read aloud, and the output rendered by the code when compiled. Their possibilities for interpretation, then, are fragmentary, requiring negotiation on these many fronts to appreciate and understand.
+
 in the last section, 5.3
 
 - [ ] functions need to be made clearer. there are three levels (1) syntactical/formal validity, (2) what the program down (operational semantics) and (3) what the program should do (intentional semantics). THIS SHOULD BE DISCUSSED AT THE BEGINNING RATHER THAN JUST THE LAME INTRO ON LAMBDA CALCULUS. then start from those to discuss the function/meaning of computer programs
@@ -64,21 +62,11 @@ overall, I should keep in mind that I do not have a technical audience, and I sh
 
 ### aesthetics
 
-Include Gordon Graham - Philosophy of Art and Aesthetics
+- done
 
 ### literature
 
-__most important__: give code examples that are not related to poetry
-
 - In literature, include rousset: forme et signification
-- p.243: when discussing the god example: again, highlight the ontology of markup: inside and outside. There are differences between conceptual spatialization, layout spatialization (the most obvious that we see), and disk fragmentation. The cartesian view of space is different from the one listing 40 (space in 40 is different from a map).
-- Listing 40: make it expliciti that it is presented in such a way that highlights the indented/contained nature of markup (indentation)
-- Listing 41: no line numbers and most importantly, NOT CLEAR THAT THIS IS RELATED TO SPATIALITY. might be related to SSD/virtual memory/start addresses, but find a better example. maybe start with python, and indentation, related to semantics.
-- [ ] literature: acknowledge that narrativity and authorship aren't so much a thing here.
-- [ ] literature: include a section about poetry: <https://jacket2.org/commentary/poetry-executable-code> / <https://volltext.net/texte/cornelia-travnicek-code-poetry/>
-- [ ] literature: include that code is not literature: <https://gigamonkeys.com/code-reading/>
-
-- fictionality: creates a model of the world. while i make the distinction between fiction and non-fiction, i should focus on why it is fiction that acts as a simulation (i.e. jerome pelletier, nelson goodman, marie laure ryan "textual actual worlds") -> essentially show that fiction might be as relevant as non-fiction in source code
 
 ### architecture
 
@@ -121,6 +109,7 @@ In architecture, highlight the fact that the _detail_ is the point of interactio
 ## chap 1 - ideals
 
 - [ ]  add a subsubsec on verbosity?
+- [ ] harmonize subsubsection (Smells -> smelly?)
 
 - [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md) in the part about software developers
 
