@@ -1,6 +1,12 @@
+#define	PMC_VERSION_MAJOR	0x03
+#define	PMC_VERSION_MINOR	0x00
+#define	PMC_VERSION_PATCH	0x0000
+
 /* * Kinds of CPUs known */
 
 #define __PMC_CPUS() \ __PMC_CPU(AMD_K7, "AMD K7") \ __PMC_CPU(AMD_K8, "AMD K8") \ __PMC_CPU(INTEL_P5, "Intel Pentium")	\ __PMC_CPU(INTEL_P6, "Intel Pentium Pro") \ __PMC_CPU(INTEL_CL, "Intel Celeron") \ __PMC_CPU(INTEL_PII, "Intel Pentium II") \ __PMC_CPU(INTEL_PIII, "Intel Pentium III") \ __PMC_CPU(INTEL_PM, "Intel Pentium M") \ __PMC_CPU(INTEL_PIV, "Intel Pentium IV")
+
+// ...
 
 /*
  * struct pmc_mdep
