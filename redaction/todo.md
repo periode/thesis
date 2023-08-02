@@ -2,6 +2,7 @@
 
 ## format
 
+- [ ] deal with frames and page breaks on minted; <https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package>
 - deal with inline quotes properly (using the `dirtytalk` package)
 - harmonize spacers
 - add index
@@ -62,37 +63,31 @@ overall, I should keep in mind that I do not have a technical audience, and I sh
 
 ### aesthetics
 
-- done
+- mention that knowledge influences how we perceive things (brandy, mathematical beauty)
 
 ### literature
 
 - In literature, include rousset: forme et signification
+- remove god and xml example?
 
 ### architecture
 
-- insert picture from ishigami
-- add more code examples (check the architecture of open source applications?)
+- add more code examples (check the architecture of open source applications? redis?)
 
 ### mathematics
 
-- p.280: graphical representation/diagram is not uniquely artistic, it is that it adds choices, and calls for attention. not just because its a circle does it mean its better, but rather because it's a different way to represent the same thing, which I argue implies the possibility for a value judgment. __check in original file there this maps__
-- Listing 45: maybe give a diagrammatic representation of the linked list? there's an abstract concept, this text is a particular representation of it, and a diagram could be another. strip down the example to the very bare minimum, and include very robust and helpful discussion of that discussion. this is too obscure.
-- listing 46: regex matcher:  regex is a formalism for processing text. convey that this is a complex problem, but that you can actually write a fairly simple program to implement it. In general, I should always discuss extensively the listings.
-- Listing 47: still write about refactoring, but maybe with a shorter program. use the simplest case that makes my point. make that point with elaboration and extent discussion. BUT ALSO PREFACE IT WITH A PYTHON EXAMPLE. So have two listings in the end.
-- allamanis, using ML for code generation and analysis, and mattt (as we may code) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
-- [ ] put less code poems in this section, both nick and alexandre disagree, seem like it is a bit of a far-fetched example, because this is about the uselessness. __my counter-argument__ is that while it seems that code poetry is useless in the sense that art is useless, not directed, not productive, etc. it is nonetheless functional from the point of the machine, in that it does complex operations. One can also draw an equivalent with Sol Lewitt, and his sentences on conceptual art, in which the "idea is a machine that makes the art". It functions in the machine sense of the term, perhaps not on the human sense. Conversely, some algorithms function on the machine term, and not on the human term: we address this in section 5.3 (syntactical validity, operational semantics, intended semantics)
-- add wallen_form_1990 with his argument that mathematics rely on the fact that sight is our most developed sense
-- [ ] mathematics: add a discussion of dijkstra's shortest path algorithm?
-- mathematics: Barker, John, 2009, “Mathematical Beauty”, Sztuka i Filozofia, 35: 65–74. (A powerful defence of the claim that mathematical and logical proofs have aesthetic properties.)
+- mathematics: add a discussion of dijkstra's shortest path algorithm?
 - add knuth on dijkstra, simple program, complex proof (knuth, simple, 1990)
 
 ## chap 2 - understanding
 
 - [ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier
+- [ ] __levels of software__ ([as we may code](https://nshipster.com/as-we-may-code/)) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 - [ ] __tools__ add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
 - [ ] __tools__ including a discussion of how does step in a debugger relate to code as terrain, or surface coverage for tests? e.g. how does build and architecture related to code as structure?
 - [ ] __programmer metaphors__ my approach to metaphors should be more systematic: that is, I should look into how metaphors can represent a SYSTEM (for instance, `symlink` is a limitation when it comes to the files and folder metaphor)
 - [ ] __programmer metaphors__ metaphor of the `macro` (implies scale), of `scope`, of `global`, implies scale as well. `libraries` is also a metaphor that is literary.
+- [ ] __programmer metaphors__ refer to master/slave as a problematic one
 
 ## chap 1 - ideals
 
@@ -103,8 +98,4 @@ overall, I should keep in mind that I do not have a technical audience, and I sh
 
 ## introduction
 
-done
-
-## general
-
-- [ ] deal with frames and page breaks on minted; <https://tex.stackexchange.com/questions/433192/breaking-pages-in-minted-package>
+- explain that beauty might be a metaphor itself of "good" (value judgments, etc.)
