@@ -13,8 +13,8 @@ func recall(date int) {
 }
 
 func main() {
-	go recall(2046)
-	go recall(2047)
+	recall(2045)
+	recall(2046)
 
 	fmt.Println("We're done!")
 }
