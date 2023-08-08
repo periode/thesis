@@ -14,10 +14,11 @@
 
 ## chap 4 - programming
 
-- rewrite intro of chap once the whole thing is re-read
+### nick notes
+
+- rewrite intro of chap once the whole thing is re-read -> semantic compression and spatial navigation, expression and execution
 
 - __case studies__
-  - choose the case-studies in the way that is the most illustrative of my point. doesn't have to be huge.
   - i should definitely have a more comparative approach: multiple code-bases, with aesthetics which are tied to __LANGUAGE__, __COMMUNITY__ and __PROBLEM__ (question of the idiomatic). this is better than having one case study after another, completely discontinued.
   - find similar problems in different programs, see how they deal with it
   - find specific cases where the cognitive load is high
@@ -27,17 +28,14 @@
 
 ### styles
 
-- [ ] language design \url{http://rigaux.org/language-study/syntax-across-languages/}
+- [ ] language design <http://rigaux.org/language-study/syntax-across-languages/>
 - [ ] add marielle macé to a bit of conclusion on the styles of programmers
-
-- for fig. 62 (self_inspect), step through a computer interpretation of the process, before giving a literary interpretation of the process.
-- for the code poems, I need to be able to articulate their relevance when looking at different domains. they're not just related to literature, but also architecture (follies, pavillions) or math (pure math), while other source code (linux kernel) might also be a sort of literature (legal code). but also make it explicit that i talk about the ones that can run, not the code poems that are not executable
-- in the case of list comprehension in Python, it is both a technical and social environment
 
 ### functions
 
-- [ ] rather than having 5.3 as this total disconnect, maybe start by writing a monolith to avoid the pitfalls of structure. particularly because at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
+- in the case of list comprehension in Python, it is both a technical and social environment
 - [ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
+- [ ] at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
 
 ## chap 3 - beauty
 
@@ -77,6 +75,7 @@
 - [ ] harmonize subsubsection (Smells -> smelly?)
 
 - [ ] add [pressman - software engineering: a practicioner's approach](../readings/notes/pressman_software_engineering_practicioners_approach.md) in the part about software developers
+- [ ] justify code poems: I need to be able to articulate their relevance when looking at different domains. they're not just related to literature, but also architecture (follies, pavillions) or math (pure math), while other source code (linux kernel) might also be a sort of literature (legal code). but also make it explicit that i talk about the ones that can run, not the code poems that are not executable
 
 ## introduction
 
