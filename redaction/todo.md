@@ -61,7 +61,6 @@
 ## chap 2 - understanding
 
 - [ ] recs from guido, neuropsychologists who might be interested: stanislas dehaene and christophe paillier
-- [ ] __levels of software__ ([as we may code](https://nshipster.com/as-we-may-code/)) highlights the need for such a thing (quoting: What if, instead of lowering source code down for the purpose of execution, we raised source code for the purpose of understanding?)
 - [ ] __tools__ add to means of understanding and IDEs deciding how we write: <https://thorstenball.com/blog/2020/02/04/how-much-do-we-bend-to-the-will-of-our-tools/>
 - [ ] __tools__ including a discussion of how does step in a debugger relate to code as terrain, or surface coverage for tests? e.g. how does build and architecture related to code as structure?
 - [ ] include the concept of interface by matthew kirschenbaum <https://www.researchgate.net/profile/Nancy-Ide/publication/229666751_Preparation_and_Analysis_of_Linguistic_Corpora/links/5a75ec770f7e9b41dbd04d97/Preparation-and-Analysis-of-Linguistic-Corpora.pdf#page=550>

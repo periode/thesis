@@ -27,3 +27,7 @@ three different theories of style:
 > Individuating thinking therefore defines forms as points of struggle for a subject, who is invited to appropriate a style while rejecting another. It follows that individuation is a fundamentally ethically-engaging stylistic bias.
 
 the last part is about more ethical reflections on the work of style.
+
+---
+
+> À chaque idée de ce qu’est le style (le fait même du style) peuvent en effet s’ouvrir ou se fermer une éthique et une politique : une idée des sujets, une idée de communauté, une idée de la façon dont les sujets savent ou ne savent pas plier au-dehors d’eux-mêmes, dans les images et les gestes dont ils se rendent capables.
