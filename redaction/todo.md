@@ -28,13 +28,12 @@
 
 ### styles
 
-- [ ] language design <http://rigaux.org/language-study/syntax-across-languages/>
-- [ ] add marielle macé to a bit of conclusion on the styles of programmers
+- [ ] add to the idiosyncracies this index of language design <http://rigaux.org/language-study/syntax-across-languages/>
 
 ### functions
 
 - in the case of list comprehension in Python, it is both a technical and social environment
-- [ ] re-quote hayles and her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
+- [ ] re-quote hayles a\nd her regime of computation (surface, depth, etc.) when i also talk about paloque berges et. al.
 - [ ] at this point i need to synthesize. rather work on _connections and disconnections_ between the social and the functional?
 
 ## chap 3 - beauty
