@@ -16,7 +16,6 @@ software quality is *"conformance to explicitly stated functional and performanc
 
 ---
 
-
 i like the idea of implicit vs. explicit requirements
 
 ---
@@ -27,7 +26,6 @@ standard is *reusability*, but how does it relate to source code?
 p. 188:
 standards are *uniform*, or at least *predictable*, in order to make work more *manageable*.
 
-
 there is a thing called **software science**, developed by a guy called [Halstead](https://en.wikipedia.org/wiki/Halstead_complexity_measures), which is highly (exclusively) quantitative -> "intriguing" set of metrics at the source code level
 
 operator: built-in names
@@ -35,10 +33,11 @@ operands: custom names (knuth's identifiers)
 
 software isn't just software as a compiled binary, it's a *software configuration* (in the author's words), which includes programs, documents, and data. which of those can be included in source code?
 
-
-- also what's the difference between **good** and **beautiful**?  
+- also what's the difference between **good** and **beautiful**?
 - does the *"design process"* in software count as source code? or is it more like poetics. it's more like poetics. or is it another kind of higher-higher-level language?
+
 amongst other requirements, he says that design should be:
+
 - **minimizing the intellectual distance between the software and the problem as it exists in the real world** (that's an interesting approach)
 - it should also exhibit **uniformity** and **integration**.
 - should be structured to **accommodate change**.
@@ -52,7 +51,6 @@ BUT PRINCIPLES
 3. interface design (any kind of interface, not just *user* interface, but all the *flow* of information)
 4. procedural design
 
-
 AND CONCEPTS
 
 1. abstraction
@@ -63,8 +61,6 @@ AND CONCEPTS
 6. data structure (we've seen this before, it's a tricky place in between aesthetics and poetics)
 7. software procedure (irrelevant, too high level? it's about order of execution)
 8. information hiding (only necessary information, if they have *no need*, it defines *access constraints*)
-
-
 
 **effective modular design**
 
@@ -91,6 +87,7 @@ and then there's a whole section on OOP, but it's probably better addressed somw
 p. 682
 
 problems of less formal approaches: (i.e. *standards for ugly code?*)
+
 - contradictions
 - ambiguities
 - vagueness
@@ -98,6 +95,7 @@ problems of less formal approaches: (i.e. *standards for ugly code?*)
 - mixed levels of abstraction
 
 requirements/good parts of formal approaches:
+
 - data invariant (always the same)
 - state (stored data which the system accesses and alters)
 - operation (action in/of the system)
@@ -111,26 +109,26 @@ how are these related when it comes to the actual *writing*!?
 
 BUT ITS NOT BEAUTIFUL (?). people adhere to what is beautiful, and they are slow to adopt that which is only good, but not beautiful by their standards.
 
-
 p. 768
 **reverese engineering**: what is the process of reading source code?
 
 it has multiple *levels*:
+
 - system
 - program
 - module
 - pattern
 - statement
 
-
-
 p. 834 - future topics in software engineering
 
 switch in terminology when talking about this field:
+
 - data: no associativity (data processing was the early term)
 - information: associativity in one context (information technology)
 - knowledge: associativity within multiple contexts (knowledge industry? machine learning? data science?)
 - wisdom: creation of generalized principles based on existing knowledge from different sources (the future? inshallah)
+
 ---
 
 interestingly, the author is more in love with the process than with the object (he also refers to it as "generating code" rather than "writing code")
