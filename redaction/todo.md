@@ -3,8 +3,8 @@
 ## format
 
 - add index
-- put names of sections in the \ref{} part
-- put "listing" as a a prefix for all \ref{} (maybe just global search and replace)
+- insert name of listing for each legend
+- figure out how to fucking break these URLs (might just need to shorten them somehow (with the manual spaces, \href, or else....))
 
 ## conclusion
 

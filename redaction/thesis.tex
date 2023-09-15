@@ -10,13 +10,17 @@
 \usepackage{authblk}
 \usepackage[normalem]{ulem}
 \usepackage[bottom]{footmisc}
-\usepackage{hyperref}
-\usepackage{hyphenat}
-\hypersetup{colorlinks=false,breaklinks=true}
 
 \usepackage{float}
 \usepackage[leqno]{amsmath}
 \usepackage[]{natbib}
+
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{hyphenat}
+\def\UrlBreaks{\do\/\do-}
+
+
 \usepackage[style=iso]{datetime2}
 
 \usepackage{etoolbox}
@@ -29,6 +33,7 @@
 \newenvironment{code}{\captionsetup{type=listing}}{}
 \newcommand{\spacer}{\vspace{1\baselineskip}\centerline{\rule{0.13334\linewidth}{.4pt}}\vspace{1\baselineskip}}
 \newcommand{\spacersmall}{\vspace{1\baselineskip}}
+\providecommand*{\listingautorefname}{Listing}
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.00}
 \setmainfont{Bespoke Serif}
@@ -72,10 +77,14 @@
 \include{programming.tex}
 \include{conclusion.tex}
 
-
 \bibliographystyle{./apa-good.bst}
 \bibliography{thesis.bib}
+\addcontentsline{toc}{section}{Bibliography}
 
 \listoflistings
+\addcontentsline{toc}{section}{Listings}
+
+\listoffigures
+\addcontentsline{toc}{section}{Figures}
 
 \end{document}

@@ -1,0 +1,19 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Table comparing the scale of two software development projects.\relax }}{57}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The annotated representation of the compiled version of A Mind Is Born, a demo by Linus Åkesson. The different color overlays highlight the meaningful regions of the program \citep {akesson_mind_2017}.\relax }}{79}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Visualization of a 3D-mesh in Matlab\relax }}{83}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Maxwell's equations form a terse, unified basis for electromagnetism, optics and electric circuitry.\relax }}{90}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Tentative d'organisation visuelle pour le roman La Route des Flandres, années 1960 - Claude Simon, écrivain\relax }}{176}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Visualization of the execution of Pac-Man's source code\relax }}{196}{figure.caption.35}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Description of a software component and its inner relations in the Universal Modelling Language, \citep {wikipedia_unified_2023}\relax }}{273}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Pavillion built by Junya Ishigami + associates, showing a focus on appearance and structural features, rather than habitability. Picture courtesy of Iwan Baan, 2008.\relax }}{275}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces CodeCity is an integrated environment for software analysis, in which software systems are visualized as interactive, navigable 3D cities. The classes are represented as buildings in the city, while the packages are depicted as the districts in which the buildings reside. \citep {wettel_codecity_2008}\relax }}{281}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Euler's identity demonstrates the relation between geometry, algebra and numerical analysis through a restrained set of syntactic symbols.\relax }}{302}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The linked list is an abstract data structure which acts as a fundamental conceptual entitiy in computer science. It is here represented as a graph, and implementations can be seen in \autoref {code:linked_list} and \autoref {code:linked_list_remove}.\relax }}{306}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Steps of transformation to approach an epistemic value in finding whether or not the square root of 2 is an rational number.\relax }}{316}{figure.caption.47}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Implementation of the traditional \lstinline {"Hello, world!"} program in the Folders programming language. \citep {temkin_daniel_2015}\relax }}{402}{figure.caption.61}%
+\addvspace {10\p@ }
