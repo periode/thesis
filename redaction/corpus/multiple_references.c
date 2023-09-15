@@ -12,20 +12,7 @@ static int verify_reserved_gdb(struct super_block *sb,
 
     while ((grp = ext4_list_backups(sb, &three, &five, &seven)) < end)
     {
-        if (le32_to_cpu(*p++) !=
-            grp * EXT4_BLOCKS_PER_GROUP(sb) + blk)
-        {
-            ext4_warning(sb, "reserved GDT %llu"
-                                " missing grp %d (%llu)",
-                                blk, grp,
-                                grp *
-                                (ext4_fsblk_t)EXT4_BLOCKS_PER_GROUP(sb) +
-                                blk);
-            return -EINVAL;
-        }
-
-        if (++gdbackups > EXT4_ADDR_PER_BLOCK(sb))
-            return -EFBIG;
+        // ....
     }
     return gdbackups;
 }
