@@ -5,5 +5,5 @@ func getNumbers() (int, float64, int) {
 }
 
 func main() {
-	first, _, third := getNumbers()
+	first, _, _ := getNumbers()
 }

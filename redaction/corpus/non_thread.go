@@ -18,3 +18,8 @@ func main() {
 
 	fmt.Println("We're done!")
 }
+
+//-- outputs
+// 2045
+// 2046
+// We're done!

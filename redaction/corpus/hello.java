@@ -4,7 +4,7 @@
   {
     public static void main(String[] args)
     {
-      String greeting = "Hey, there";
+      String greeting = "hello";
       System.out.println(greeting);
     }
   }
