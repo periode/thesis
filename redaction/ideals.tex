@@ -24,7 +24,7 @@ As Niklaus Wirth puts it, \emph{the history of software is the history of growth
 \subsubsection{From machine dependence to autonomous language}
 \label{subsubsec:from-machine-to-language}
 
-In his history of the software industry, Martin Campbell-Kelly traces the development of a discipline through an economic and a technological lens, and he identifies three consecutive waves in the production of software \citep{campbell-kelly_airline_2003}. Starting in the 1950s, and continuing throughout the 1960s, software developers were contractors hired to work directly with a specific hardware. These mainframes were large, expensive, and rigid machines, requiring platform-specific knowledge of the corresponding Assembly instruction set, the only programming language available at the time\footnote{One of the first operating systems, MIT's Tape Director, would be only developped in 1956 \citep{ross_personal_1986}, which would facilitate some of the more basic memory allocation, process management, and system calls}. Two distinct groups of people were involved in the operationalization of such machine: electrical engineers, tasked with designing hardware, and programmers, tasked with implementing the software. While the former historically received the most attention \citep{ross_personal_1986}, the latter was mostly composed of women and, as such, not considered essential in the process \citep{light_when_1999}. At this point, then, programming remains hardware-dependent\footnote{\emph{But most important of all, the programmer himself had a very modest view of his own work: his work derived all its significance from the existence of that wonderful machine. Because that was a unique machine, he knew only too well that his programs had only local significance and also, because it was patently obvious that this machine would have a limited lifetime, he knew that very little of his work would have a lasting value. Finally, there is yet another circumstance that had a profound influence on the programmer's attitude to his work: on the one hand, besides being unreliable, his machine was usually too slow and its memory was usually too small, i.e. he was faced with a pinching shoe, while on the other hand its usually somewhat queer order code would cater for the most unexpected constructions. And in those days many a clever programmer derived an immense intellectual satisfaction from the cunning tricks by means of which he contrived to squeeze the impossible into the constraints of his equipment.} \citep{dijkstra_humble_2007}}.
+In his history of the software industry, Martin Campbell-Kelly traces the development of a discipline through an economic and a technological lens, and he identifies three consecutive waves in the production of software \citep{campbell-kelly_airline_2003}. Starting in the 1950s, and continuing throughout the 1960s, software developers were contractors hired to work directly with a specific hardware. These mainframes were large, expensive, and rigid machines, requiring platform-specific knowledge of the corresponding Assembly instruction set, the only programming language available at the time\footnote{One of the first operating systems, MIT's Tape Director, would be only developped in 1956 \citep{ross_personal_1986}, which would facilitate some of the more basic memory allocation, process management, and system calls}. Two distinct groups of people were involved in the operationalization of such machine: electrical engineers, tasked with designing hardware, and programmers, tasked with implementing the software. While the former historically received the most attention \citep{ross_personal_1986}, the latter was mostly composed of women and, as such, not considered essential in the process \citep{light_when_1999}. At this point, then, programming remains hardware-dependent\footnote{"\emph{But most important of all, the programmer himself had a very modest view of his own work: his work derived all its significance from the existence of that wonderful machine. Because that was a unique machine, he knew only too well that his programs had only local significance and also, because it was patently obvious that this machine would have a limited lifetime, he knew that very little of his work would have a lasting value. Finally, there is yet another circumstance that had a profound influence on the programmer's attitude to his work: on the one hand, besides being unreliable, his machine was usually too slow and its memory was usually too small, i.e. he was faced with a pinching shoe, while on the other hand its usually somewhat queer order code would cater for the most unexpected constructions. And in those days many a clever programmer derived an immense intellectual satisfaction from the cunning tricks by means of which he contrived to squeeze the impossible into the constraints of his equipment.}' \citep{dijkstra_humble_2007}}.
 
 In the 1960s, hardware switched from vacuum tubes to transistors and from magnetic core memory to semiconductor memory, making them faster and more capable to handle complex operations.  On the software side, the development of several programming languages, such as FORTRAN, LISP and COBOL, started to address the double issue of portability—having a program run unmodified on different machines—and expressivity—expressing a program text in a high-level, English-like syntax, rather than Assembly instruction codes. Programmers are no longer tied to a specific machine, and therefore acquire a certain autonomy, a recognition which culminates in the naming of the field of \emph{software engineering} \citep{randell_nato_1996}.
 
@@ -47,7 +47,7 @@ Software developers have written some of the largest program texts to this date.
 
 The IEEE's Software Engineering Body of Knoweldge (SWEBOK) provides a good starting point to survey the specificities of software developers as source code writers and readers \citep{bourque_swebok_2014}; the main features of which include the definition of requirements, design, construction, testing and maintenance. Software requirements are the acknowledgement of the importance of the \emph{problem domain}, the domain to which the software takes its inputs from, and to which it applies its outputs. For instance, software written for a calculator has arithmetic as its problem domain; software written for a learning management system has students, faculty, education and courses as its problem domain; software written a banking institution has financial transactions, savings accounts, fraud prevention and credit lines as its problem domain. This essential step in software development aims at formalizing as best as possible the elements that exist beyond software, in order to make those computable, and the design of an adequate formalism is a fundamental requirement for a successful software application.
 
-Software design relates to the overall organization of the software components, considered not in their textual implementation, but in their conceptual agency. Usually represented through diagrams or modelling languages, it is concerned with \emph{understanding how a system should be organized and designing the overall structure of that system} \citep{sommerville_software_2010}. Of particular interest is the relationship that is established between software development and software architecture. Software architecture operates both from a top-down perspective, laying down an abstract blueprint for the implementation of a system and dictating how a program text is structured, how its parts interact, why it's built that way, consisting different components of an existing system interact \citep{brown_architecture_2011}.
+Software design relates to the overall organization of the software components, considered not in their textual implementation, but in their conceptual agency. Usually represented through diagrams or modelling languages, it is concerned with \emph{understanding how a system should be organized and designing the overall structure of that system} \citep{sommerville_software_2010}. Of particular interest is the relationship that is established between software development and software architecture. Software architecture operates both from a top-down perspective, laying down an abstract blueprint for the implementation of a system and dictating how a program text is structured, how its parts interact, why it's built that way, consisting different components of an existing system interact \citep{brown_introduction_2011}.
 
 Software construction relates to the actual writing of software, and how to do so in the most reliable way possible. The SWEBOK emphasizes first and foremost the need to minimize complexity\footnote{Complexity does not exist only at the programming level, but also at the architecture level: \emph{"there are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies."} \citep{hoare_emperor_1981}}, in anticipation of likely changes and possible reuse by other software systems. Here, the emphasis on engineering is particularly salient: while most would refer to the creation of software as \emph{writing} software, the IEEE document refers to it as \emph{constructing} software: the creation of working software through a combination of coding, verification, unit testing, integration testing, and debugging. \citep{bourque_swebok_2014}. The practice of software engineers thus implements functional and reliable mechanical designs through, ultimately, the act of writing in formal languages.
 
@@ -65,7 +65,7 @@ First, the most striking visual feature of the code is its sheer size. In the ca
 
 \begin{listing}
   \inputminted{c}{./corpus/ms2000_abridged.c}
-  \caption{Unicode string initialization in Microsoft 2000 operating system, with a first part showing an explicit repeating pattern, while the second part shows a more compressed approach.}
+  \caption{\emph{ms2000\_abridged.c} - Unicode string initialization in Microsoft 2000 operating system, with a first part showing an explicit repeating pattern, while the second part shows a more compressed approach.}
   \label{code:ms2000}
 \end{listing}
 
@@ -77,7 +77,7 @@ Another significant aesthetic feature of the Windows 2000 program text is its us
 
 \begin{listing}
   \inputminted[]{c}{./corpus/buffer.c}
-  \caption{Overlapping programming voices can be hinted at by different comment styles.}
+  \caption{\emph{buffer.c} - Overlapping programming voices can be hinted at by different comment styles.}
   \label{code:buffer_c}
 \end{listing}
 
@@ -89,7 +89,7 @@ And yet, this chronological and interpersonal spread of the program text, combin
 
 \begin{listing}
   \inputminted{c}{./corpus/enum.c}
-  \caption{pnpenum.c shows the explicit traces of multiple authors collaborating on a single file over time.}
+  \caption{\emph{enum.c} -  This listing shows the explicit traces of multiple authors collaborating on a single file over time.}
   \label{code:enum_c}
 \end{listing}
 
@@ -103,7 +103,7 @@ If we look at a typical function declaration within Kirby, we found one such as 
 
 \begin{listing}
   \inputminted{php}{./corpus/query.php}
-  \caption{The setting of whether a query should be distinct includes some verbose details which prove to be helpful in the long run \citep{allgeier_query_2021}.}
+  \caption{\emph{query.php} - The setting of whether a query should be distinct includes some verbose details which prove to be helpful in the long run \citep{allgeier_query_2021}.}
   \label{code:query_php}
 \end{listing}
 
@@ -113,7 +113,7 @@ Kirby's source code is also interestingly explicit in comments, and succint in c
 
 \begin{listing}
   \inputminted{php}{./corpus/route.php}
-  \caption{The inclusion of comments help guide a programmer through an open-source project \citep{allgeier_route_2021}.}
+  \caption{\emph{route.php} - The inclusion of comments help guide a programmer through an open-source project \citep{allgeier_route_2021}.}
   \label{code:route_php}
 \end{listing}
 
@@ -127,7 +127,7 @@ Looking at some excerpts from the Kirby program texts, we see a small number of 
 
 \begin{listing}
   \inputminted{js}{./corpus/clipboard.js}
-  \caption{Even in a productive and efficient open-source project, one can detect traces of "hacks" \citep{allgeier_clipboard_2021}.}
+  \caption{\emph{clipboard.js} - Even in a productive and efficient open-source project, one can detect traces of "hacks" \citep{allgeier_clipboard_2021}.}
   \label{code:clipboard_js}
 \end{listing}
 
@@ -167,7 +167,7 @@ The \emph{one-liner} is a piece of source code which fits on one line, and is us
 
 \begin{listing}
   \inputminted{cpp}{./corpus/select_lines.c}
-  \caption{This program text selects all the lines from an input file which is longer than 6 characters in the C programming language. See the one-line alternative implementation in \autoref{code:select_lines_awk}.}
+  \caption{\emph{select\_lines.c} - This program text selects all the lines from an input file which is longer than 6 characters in the C programming language. See the one-line alternative implementation in \autoref{code:select_lines_awk}.}
   \label{code:select_lines_c}
 \end{listing}
 
@@ -175,7 +175,7 @@ In \autoref{code:select_lines_c}, achieving this functionality  using the C prog
 
 \begin{listing}
   \inputminted{bash}{./corpus/select_lines.sh}
-  \caption{This program text selects all the lines from an input file which is longer than 6 characters in the C programming language, in just one line of code. See the alternative implementation in 20 lines of code in \autoref{code:select_lines_c}.}
+  \caption{\emph{select\_lines.sh} - This program text selects all the lines from an input file which is longer than 6 characters in the C programming language, in just one line of code. See the alternative implementation in 20 lines of code in \autoref{code:select_lines_c}.}
   \label{code:select_lines_awk}
 \end{listing}
 
@@ -188,7 +188,7 @@ On the other hand, however, one-liners can be so condensed that they loose all s
 
 \begin{listing}
   \inputminted{text}{./corpus/game_of_life.apl}
-  \caption{Conway's Game of Life implemented in APL is a remarkable example of conciseness, at the expanse of readability.}
+  \caption{\emph{game\_of\_life.apl} - Conway's Game of Life implemented in APL is a remarkable example of conciseness, at the expanse of readability.}
   \label{code:game_of_life}
 \end{listing}
 
@@ -198,7 +198,7 @@ Another quality of hacker code is the idiosyncratic solution to an intricate puz
 
 \begin{listing}
   \inputminted{c}{./corpus/fast_inverse_sqrt.c}
-  \caption{This particular implementation of a function calculating the inverse square root of a number has become known in programming circles for both its speed and unscrutability.}
+  \caption{\emph{fast\_inverse\_sqrt.c} - This particular implementation of a function calculating the inverse square root of a number has become known in programming circles for both its speed and unscrutability.}
   \label{code:fast_sqrt_c}
 \end{listing}
 
@@ -208,7 +208,7 @@ This playfulness at writing things that do not do what it seems like they do is 
 
 \begin{listing}
   \inputminted{c}{./corpus/circle.c}
-  \caption{westley.c, entry to the 1988 IOCCC \citep{westley_wayback_1988}}
+  \caption{\emph{westley.c} - Entry to the 1988 IOCCC, it computes an approximation of $\pi$ by calculating the circumference of a circle drawn as text. \citep{westley_international_1988}}
   \label{code:circle_c}
 \end{listing}
 
@@ -267,7 +267,7 @@ Such an endeavour started with the BASIC\footnote{BASIC stands for Beginners' Al
 
 \begin{listing}
   \inputminted{matlab}{./corpus/mesh.matlab}
-  \caption{Mesh.m}
+  \caption{\emph{mesh.m} - Matlab is a specialized language, focused on scientific and mathematical applications.}
   \label{code:mesh_m}
 \end{listing}
 
@@ -300,7 +300,7 @@ The broad difference we can see between these two conceptions of computer scienc
 
 \begin{listing}
   \inputminted{prolog}{./corpus/inductive.pl}
-  \caption{The Prolog programming language focuses first and foremost on logic predicates in order to perform computation, rather than more practical system calls.}
+  \caption{\emph{inductive.pl} - The Prolog programming language focuses first and foremost on logic predicates in order to perform computation, rather than more practical system calls.}
   \label{code:prolog_sample}
 \end{listing}
 
@@ -310,7 +310,7 @@ The base structural elements of Lisp are not symbols, but lists (of symbols, of 
 
 \begin{listing}
   \inputminted{scheme}{./corpus/interpreter.scheme}
-  \caption{Scheme interpreter written in Scheme, revealing the power and self-reference of the language.}
+  \caption{\emph{interpreter.scheme} - Scheme interpreter written in Scheme, revealing the power and self-reference of the language.}
   \label{code:scheme_interpreter}
 \end{listing}
 
@@ -334,13 +334,13 @@ Another influential textbook insisting that computation is not to be seen as an 
 
 \begin{listing}
   \inputminted{julia}{./corpus/bubblesort.jl}
-  \caption{Bubble Sort implementation in Julia uses the language features to use only a single iteration loop. \citep{moss_bubblesort_2021}}
+  \caption{\emph{bubblesort.jl} - Bubble Sort implementation in Julia uses the language features to use only a single iteration loop. \citep{moss_bubblesort_2021}}
   \label{code:bubble_sort_julia}
 \end{listing}
 
 \begin{listing}
   \inputminted{julia}{./corpus/nearest_neighbor.jl}
-  \caption{Nearest neighbor implementation in Julia \citep{moss_nearestneighbors_2021}.}
+  \caption{\emph{nearest\_neighbor.jl} - Nearest neighbor implementation in Julia \citep{moss_nearestneighbors_2021}.}
   \label{code:nearest_neighbor_julia}
 \end{listing}
 
@@ -379,11 +379,11 @@ In their different manifestations, code poems make the boundary between computer
 \subsubsection{Layered machine texts}
 \label{subsubsec:layered-machine-texts}
 
-Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969 in Assembly \citep{garry_lunar_1969}. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{Other files include comments such as "Crank that wheel" or "Burn Baby Burn" when triggering the ignition subroutine.}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \autoref{code:numero_mysterioso_asm}.
+Yet, code poems from the 20th century aren't the first time where a part of the source code is written exclusively to elicit a human reaction, without any machinic side-effects. One of the earliest of those instances is perhaps the Apollo 11 Guidance Computer (AGC) code, written in 1969 in Assembly \citep{garry_lunar_landing_guidance_equations_1969}. Cultural references and jokes are peppered throughout the text as comments, asserting computer code as a means of expression beyond exclusively technical tasks\footnote{Other files include comments such as "Crank that wheel" or "Burn Baby Burn" when triggering the ignition subroutine.}, and independent from a single writer's preferences, since they passed multiple checks and review processes to end up in the final, submitted and executed document, such as reproduced in \autoref{code:numero_mysterioso_asm}.
 
 \begin{listing}
   \inputminted{ca65}{./corpus/numero_mysterioso.asm}
-  \caption{AGC source code for the Lunar Landing Guidance Equation, 1969}
+  \caption{\emph{numero\_mysterioso.asm} - AGC source code for the Lunar Landing Guidance Equation, 1969}
   \label{code:numero_mysterioso_asm}
 \end{listing}
 
@@ -399,7 +399,7 @@ The community of programmers writing in Perl\footnote{Perl programmers refer to 
 
 \begin{listing}
   \inputminted{perl}{./corpus/japh.pl}
-  \caption{Just Another Perl Hacker, japh.pl}
+  \caption{\emph{japh.pl} - Just Another Perl Hacker, part of a typology of program texts showing linguistic ingenuity rather than computational efficiency.}
   \label{code:japh_perl}
 \end{listing}
 
@@ -413,7 +413,7 @@ The poem \emph{Black Perl}, submitted anonymously in 1990, is another example of
 
 \begin{listing}
   \inputminted{perl}{./corpus/black_perl.pl}
-  \caption{Black Perl is one of the first Perl poems, shared anonymously online. It makes creative use of Perl's flexible and high-level syntax.}
+  \caption{\emph{black\_perl.pl} - Black Perl is one of the first Perl poems, shared anonymously online. It makes creative use of Perl's flexible and high-level syntax.}
   \label{code:black_perl}
 \end{listing}
 
@@ -431,7 +431,7 @@ Following in the footsteps of the \emph{perlmonks}, additional communities aroun
 
 \begin{listing}
   \inputminted{perl}{./corpus/prince.java}
-  \caption{\#SongsInCode is an example of functional source code poetry written to represent the tradionally non-functional domain of pop songs.}
+  \caption{\emph{prince.java} - \#SongsInCode is an example of functional source code poetry written to represent the tradionally non-functional domain of pop songs.}
   \label{code:prince_java}
 \end{listing}
 
@@ -441,7 +441,7 @@ There, the physical layout of the program text comes to the forefront, along wit
 
 \begin{listing}
   \inputminted{perl}{./corpus/water.c}
-  \caption{water.c has a very deliberate layout and syntax, reminiscing of \emph{calligrames} \citep{holden_code_2016}.}
+  \caption{\emph{water.c} - This poem has a very deliberate layout and syntax, reminiscing of \emph{calligrames} \citep{holden_code_2016}.}
   \label{code:water_c}
 \end{listing}
 
@@ -449,7 +449,7 @@ Once compiled and executed, \lstinline{water.c} gains an additional quality: its
 
 \begin{listing}
   \inputminted{perl}{./corpus/water.out}
-  \caption{The output of \autoref{code:water_c} consists in ASCII representation of water droplets, bearing a family resemblance to BASIC one liners, and suggesting a complementary representation of water.}
+  \caption{\emph{verbose.out} - The output of \autoref{code:water_c} consists in ASCII representation of water droplets, bearing a family resemblance to BASIC one liners, and suggesting a complementary representation of water.}
   \label{code:water_out}
 \end{listing}
 
@@ -526,13 +526,13 @@ As a corollary to clarity stands obfuscation. It is the act, either intentional 
 
 \begin{listing}
   \inputminted{js}{./corpus/home.js}
-  \caption{home.js is an excerpt of a JavaScript program text as it is written by a human programmer, before minification.}
+  \caption{\emph{home.js} - An excerpt of a JavaScript program text as it is written by a human programmer, before minification.}
   \label{code:home_js}
 \end{listing}
 
 \begin{listing}
   \inputminted{js}{./corpus/home_minified.js}
-  \caption{home.js is the same program as in \autoref{code:home_js}, after minification. Syntactical density is gained at the expense of clarity.}
+  \caption{\emph{home\_minified.js} - The same program as in \autoref{code:home_js}, after minification. Syntactical density is gained at the expense of clarity.}
   \label{code:home_minified_js}
 \end{listing}
 
@@ -561,7 +561,7 @@ Precisely, simplicity is correlated with clarity (of meaning); if the former ref
 
 \begin{listing}
   \inputminted{c}{./corpus/clearer_method.c}
-  \caption{Example of clarity differences between two methods.}
+  \caption{\emph{clearer\_method.c} - Example of clarity differences between two methods.}
   \label{code:clearer_method_c}
 \end{listing}
 
@@ -591,7 +591,7 @@ Cleverness is often found, and sometimes derided, in examples of code written by
 
 \begin{listing}
   \inputminted{python}{./corpus/unique.py}
-  \caption{unique.py: A function to check for the uniqueness of array elements, using a very specific feature of the Python syntax, and as such an example of clever code.}
+  \caption{\emph{unique.py} - A function to check for the uniqueness of array elements, using a very specific feature of the Python syntax, and as such an example of clever code.}
   \label{code:is_unique_python}
 \end{listing}
 
@@ -603,7 +603,7 @@ Cleverness is thus valued positively in certain contexts. Hacker practices in pa
 
 \begin{listing}
   \inputminted{c}{./corpus/smr.c}
-  \caption{smr.c}
+  \caption{\emph{smr.c} - An empty program text which was awarded the IOCC's "World's smallest self-replicating program" and "Worst abuse of rules" \citep{rusinkiewicz_smr_1970}}
   \label{code:smr_c}
 \end{listing}
 
@@ -650,7 +650,7 @@ Connected to simplicity by way of necessity and sufficiency, the perception of e
 
 \begin{listing}
   \inputminted{c}{./corpus/factorial.c}
-  \caption{factorial.c: The use of recursion, rather than iteration, in the computation of a factorial is particularly praised by programmers.}
+  \caption{\emph{factorical.c} - The use of recursion, rather than iteration, in the computation of a factorial is particularly praised by programmers.}
   \label{code:factorial_c}
 \end{listing}
 
@@ -658,7 +658,7 @@ Recursion, or the technique of defining something in terms of itself, is a very 
 
 \begin{listing}
   \inputminted{csharp}{./corpus/recursive_iteration.cs}
-  \caption{The comparison two functions, one using recursion, the other one using iteration, intends to show the computational superiority of recursion. \citep{amit_answer_2012}.}
+  \caption{\emph{recursive\_iteration.cs} - The comparison two functions, one using recursion, the other one using iteration, intends to show the computational superiority of recursion. \citep{amit_answer_2012}.}
   \label{code:recursion_iteration_csharp}
 \end{listing}
 
@@ -675,7 +675,7 @@ One of those hints comes from satirical accounts of how to write bad code. For i
 
 \begin{listing}
   \inputminted{python}{./corpus/unmaintainable.py}
-  \caption{Choose variable names that masquerade as mathematical operators}
+  \caption{\emph{unmaintainable.py} - This listing shows variable names that masquerade as mathematical operators, greatly increasing reader confusion.}
   \label{code:green_unmaintainable}
 \end{listing}
 
@@ -683,7 +683,7 @@ By looking at it from the opposite perspective of highly-confusing code, we see 
 
 \begin{listing}
   \inputminted{c}{./corpus/unmaintainable_2.c}
-  \caption{Code That Masquerades As Comments and Vice Versa}
+  \caption{\emph{unmaintainable\_2.c} - This listing shows code that masquerades as comments, and vice-versa.}
   \label{code:green_unmaintainable_2}
 \end{listing}
 
@@ -798,13 +798,13 @@ Still, machine semantics are considered an essential device in writing code poet
 
 \begin{listing}
   \inputminted{perl}{./corpus/all_the_names_of_god.pl}
-  \caption{All The Names of God, Nick Montfort, 2010, source}
+  \caption{\emph{all\_the\_names\_of\_god.pl} - A perl poem with highly condensed syntax \citep{montfort_shebang_2014}}
   \label{code:all_the_names_of_god}
 \end{listing}
 
 \begin{listing}
   \inputminted{text}{./corpus/all_the_names_of_god.txt}
-  \caption{All The Names of God, Nick Montfort, 2010, Selected output}
+  \caption{\emph{all\_the\_names\_of\_god.txt} - A selected section of the expansive output from \ref{code:all_the_names_of_god}.}
   \label{code:all_the_outputs_of_god}
 \end{listing}
 
@@ -848,7 +848,7 @@ One can find such connections between mathematical and source code elegance in t
 
 \begin{listing}
   \inputminted{perl}{./corpus/floyd_warshall.cpp}
-  \caption{Implementation of the Floyd-Warshall algorithm, showing an elegant implementation of a complex theory.}
+  \caption{\emph{floyd\_warshall.cpp} - Implementation of the Floyd-Warshall algorithm, showing an elegant implementation of a complex theory.}
   \label{code:floyd-warshall}
 \end{listing}
 

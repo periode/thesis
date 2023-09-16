@@ -115,7 +115,7 @@ For instance, pseudo-code is a way to sketch out an algorithmic procedure, which
 
 \begin{listing}
     \inputminted{text}{./corpus/pseudocode.txt}
-    \caption{Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep{nielsen_working_2017}}
+    \caption{\emph{pseudocode.txt} - Example of pseudo-code attempting to reverse-engineer a software system, ignoring any of the actual implementation details, taken from \citep{nielsen_working_2017}}
     \label{code:nielsen_chalktalk}
 \end{listing}
 
@@ -228,7 +228,6 @@ Technical objects imply another mode of being, consequential to the recognition 
 
 This technical mode of existence, based on particulars, can nonetheless circle back to a certain totality through the means of induction; that is, deriving generals from the observed particulars. As such, technical thinking, as inverted religious thinking, stems from practice, but also provide a theory Technology, religion and philosophy are all, according to Simondon, combinations of a theory of knowledge and a theory of action, compensating for the loss of magic's totalizing virtues. While the religious, followed by the philosophical, approach from theory to deduce a practice, and thus lack grounding, technology reverses the process and induces theory from operatoins on individual elements.
 
-
 Simondon complements the technical with the aesthetic mode, and as such counter-balances the apparent split between technics and religion by striving for unity and totality, for the balance between the objective and the subjective. Yet, rather than being a monadic unity of a single principle, Simondon considers the aesthetic mode as a unifying network of relationships \footnote{"\emph{L'impression esthétique n'est pas relative à une œuvre artificielle ; elle signale, dans l'exercice d'un mode de pensée postérieur au dédoublement, une perfection de l'achèvement qui rend l'ensemble d'actes de pensée capable de dépasser les limites de son domaine pour évoquer l'achèvement de la pensée en d'autres domaines ; une œuvre technique assez parfaite pour équivaloir à un acte religieux, une œuvre religieuse assez parfaite pour avoir la force organisatrice et opérante d'une activité technique donnent le sentiment de la perfection.}" \citep{simondon_mode_1958}}. He further argues that the aesthetic mode goes beyond taste and subjective preference, into a fundamental aspect of the way in which human beings relate to the world around them. An aesthetic object therefore acquires the property of being beautiful by virtue of its relationships, of its connections between the subject and the objective, between one's history and one's perceptions, and the various elements of the world, and the actions of the individual. Finally, the aesthetic thought when related to the technical object consists in preparing the communication between different communities of users, between different perspectives on the world, and different modes of action upon this world. Ultimately, the aesthetic mode can therefore be seen as the revealing of a nexus of relationships found in its environment, highlighting the key-points of in the structure of the object \footnote{"\emph{Là apparaît l'impression esthétique, dans cet accord et ce dépassement de la technique qui devient à nouveau concrète, insérée, rattachée au monde par les points-clefs les plus remarquables}" \citep{simondon_mode_1958}.}. How aesthetics enables a holistic thought through the use of sensual markers will be the subject of \autoref{chap:beauty}.
 
 Computation, as a particular kind of computation, is thus both a theory and a practice, and can also be subject to an aesthetic impression. Particularly, one can think of computers as a form of technology through which \emph{meaning is mechanically realized}\footnote{"\emph{\emph{Sans} constraints of meaning or meaningfulness (i.e., some flavour of intentionality), computers would amount to nothing more than "machines"—or even, as I will ultimately argue, to "stuff": mere lumps of clay. Unless it recognizes meaningfulness as essential, even the most highly perfected theory of computation would devolve into neither more not less than a generalized theory of the physical world. \emph{Sans} some notion of efficacy of mechanism m, conversely, no limits could be either discerned or imposed on what could be computed, evacuating the notion of constraint, and hence of intellectual substance. Freed from all strictures of efficacy or mechanism from any requirement to sustain physical realizability, computation would become fantastic (or perhaps theistic): meaning spinning frictionlessly in the void.}"  \citep{smith_aos_2016}.}.
@@ -279,25 +278,25 @@ The third level at which software exists is that of hardware. While the ideal ve
 
 \begin{listing}
     \inputminted{text}{./corpus/level.txt}
-    \caption{Example of a program text represented in pseudo code. See \autoref{code:level_c}, \autoref{code:level_asm} and \autoref{code:level_byte} for lower level representations.}
+    \caption{\emph{level.txt} - Example of a program text represented in pseudo code. See \autoref{code:level_c}, \autoref{code:level_asm} and \autoref{code:level_byte} for lower level representations.}
     \label{code:level_text}
 \end{listing}
 
 \begin{listing}
     \inputminted{c}{./corpus/level.c}
-    \caption{Example of a program text represented in a high level language. See \autoref{code:level_text} for a higher level representation and \autoref{code:level_asm} and \autoref{code:level_byte} for lower level representations.}
+    \caption{\emph{level.c} - Example of a program text represented in a high level language. See \autoref{code:level_text} for a higher level representation and \autoref{code:level_asm} and \autoref{code:level_byte} for lower level representations.}
     \label{code:level_c}
 \end{listing}
 
 \begin{listing}
     \inputminted{asm}{./corpus/level.asm}
-    \caption{Example of a program text represented in an Assembly language. See \autoref{code:level_text} and \autoref{code:level_c} for a higher level representation and \autoref{code:level_byte} for a lower level representation.}
+    \caption{\emph{level.asm} - Example of a program text represented in an Assembly language. See \autoref{code:level_text} and \autoref{code:level_c} for a higher level representation and \autoref{code:level_byte} for a lower level representation.}
     \label{code:level_asm}
 \end{listing}
 
 \begin{listing}
     \inputminted{text}{./corpus/level.byte}
-    \caption{Example of a program text represented in bytecode. See \autoref{code:level_text}, \autoref{code:level_c} and \autoref{code:level_asm} for higher level representations.}
+    \caption{\emph{level.byte} - Example of a program text represented in bytecode. See \autoref{code:level_text}, \autoref{code:level_c} and \autoref{code:level_asm} for higher level representations.}
     \label{code:level_byte}
 \end{listing}
 
@@ -496,13 +495,13 @@ Understanding the source code is impacted both by \emph{legibility} (concerning 
 
 \begin{listing}
     \inputminted{cpp}{./corpus/formatted.cpp}
-    \caption{Example of a program text with syntax highlighting and machine-enforced indentation. See \autoref{code:unformatted_cpp} for a functional equivalent, unformatted.}
+    \caption{\emph{formatted.cpp} - Example of a program text with syntax highlighting and machine-enforced indentation. See \autoref{code:unformatted_cpp} for a functional equivalent, unformatted.}
     \label{code:formatted_cpp}
 \end{listing}
 
 \begin{listing}
     \inputminted{text}{./corpus/unformatted.cpp}
-    \caption{Example of a program text without syntax highlighting nor machine-enforced indentation. See \autoref{code:formatted_cpp} for a functional equivalent, formatted.}
+    \caption{\emph{unformatted.cpp} - Example of a program text without syntax highlighting nor machine-enforced indentation. See \autoref{code:formatted_cpp} for a functional equivalent, formatted.}
     \label{code:unformatted_cpp}
 \end{listing}
 

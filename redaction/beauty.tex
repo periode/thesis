@@ -47,7 +47,7 @@ States are also a particular case in source code: they are both a description an
 
 \begin{listing}
     \inputminted{java}{./corpus/representation.java}
-    \caption{A bespoke example, written in Java, of how source code can be both a representation oif an individual, as well as exemplify encapsulation.}
+    \caption{\emph{representation.java} - An example, written in Java, of how source code can be both a representation oif an individual, as well as exemplify encapsulation.}
     \label{code:representation}
 \end{listing}
 
@@ -61,7 +61,7 @@ Source code maintains a specific kind of relation to the field of reference. The
 
 \begin{listing}
     \inputminted{c}{./corpus/multiple_references.c}
-    \caption{An example from the Linux kernel showing that the name and the value of a variable might refer to different things. Here, the name of the variables \lstinline{three}, \lstinline{five} and \lstinline{seven} actually refers to the power at which the value is considered when scanning the ext4 filesystem. It iterates through the powers of 3, 5 and 7 and the variables \lstinline{three}, \lstinline{five} and \lstinline{seven} hold the next power of each to consider for the sequence. They could all start at the zeroth power (1 in all cases), but there is no need to consider 1 three times, so it is enough to let three start at 1 and the others at the 1st power (5 and 7).  \citep{linux_fs_2023}.}
+    \caption{\emph{multiple\_references.c} - An example from the Linux kernel showing that the name and the value of a variable might refer to different things. Here, the name of the variables \lstinline{three}, \lstinline{five} and \lstinline{seven} actually refers to the power at which the value is considered when scanning the ext4 filesystem. It iterates through the powers of 3, 5 and 7 and the variables \lstinline{three}, \lstinline{five} and \lstinline{seven} hold the next power of each to consider for the sequence. They could all start at the zeroth power (1 in all cases), but there is no need to consider 1 three times, so it is enough to let three start at 1 and the others at the 1st power (5 and 7).  \citep{linux_fs_2023}.}
     \label{code:multiple_references}
 \end{listing}
 
@@ -120,7 +120,7 @@ In this section we've glanced at an overview of research on how cognitive engage
 
 Now that we have sketched out an understanding of source code as a symbolic system supporting an aesthetic experience, we must provide a more detailed account of the specificities of source code. To do so, we first turn to a comparative approach, looking at the set of aesthetic domains metaphorically connected to source code through programmer discourse, and we analyse how each of these domains involve cognition in their formal presentations.
 
-\section{Literature and understanding}
+\section{Representing textual worlds in literature}
 \label{sec:aesthetic-literature}
 
 The relationship between syntax and semantics is most obvious in the written arts, and there is no doubt that textual, sensual form communicates mental spaces\footnote{Jean Rousset starts one of his books with this obvious statement: "\emph{L’art réside dans cette solidarité d’un univers mental et d’une construction sensible, d’une vision et d’une forme.}" \citep{rousset_forme_1964}, only to focus his study on how this connection between the sensual form and the mental universe takes place.}. Literature as a cognitive device relies, as we've seen in \autoref{sec:ideals-beauty}, in part on the use of metaphors to provide a new perspective on a familiar concept, and hence complement and enrich the understanding that one has of it. While Lakoff and Johnson's approach to the conceptual metaphor will serve a basis to explore metaphors in the broad sense across software and narrative, we also argue that Ricoeur's focus on the tension of the \emph{statement} rather than primarily on the \emph{word} will help us better understand some of the aesthetic manifestations of software metaphors, without being limited to tokens, but going beyond to statement and structure. Following a brief overview of his contribution, we examine the various uses of metaphor in software and in literature, touch upon the cognitive turn in literary studies, and conclude with an account of how this turn involves further thinking into the spatial and temporal properties of the written word.
@@ -134,7 +134,7 @@ Secondly, Ricoeur inspects a defining aspect of a metaphor by the \emph{tensions
 
 \begin{listing}
     \inputminted[]{python}{./corpus/cynical_american_preamble.py}
-    \caption{Cynical American Preamble, by Michael Carlisle, published in code::art \#0 \citep{brand_code_2019}}
+    \caption{\emph{cynical\_american\_preamble.py} - Cynical American Preamble, by Michael Carlisle, published in code::art \#0 \citep{brand_code_2019}}
     \label{code:cynical-preamble}
 \end{listing}
 
@@ -173,7 +173,7 @@ A first issue that we encounter here, in trying to connect source code and compu
 
 \begin{listing}
     \inputminted[]{java}{./corpus/unhandled_love.java}
-    \caption{Unhandled Love, by Daniel Bezera, published in \{code poems\} \citep{bertram_code_2012}}
+    \caption{\emph{unhandled\_love.java} - Unhandled Love, by Daniel Bezera, published in \{code poems\} \citep{bertram_code_2012}}
     \label{code:unhandled-love}
 \end{listing}
 
@@ -187,7 +187,7 @@ Another example of how source code can communicate concepts can be seen in \auto
 
 \begin{listing}
     \inputminted[]{java}{./corpus/binary.java}
-    \caption{Binary search, implemented by Tim Bray in \emph{Beautiful Code} highlights variable names (\lstinline{high}, \lstinline{low}, \lstinline{probe}) as indicators of the spatial component of the function's performance \citep{bray_finding_2007}.}
+    \caption{\emph{binary.java} - Binary search, implemented by Tim Bray in \emph{Beautiful Code} highlights variable names (\lstinline{high}, \lstinline{low}, \lstinline{probe}) as indicators of the spatial component of the function's performance \citep{bray_finding_2007}.}
     \label{code:binary-search}
 \end{listing}
 
@@ -212,7 +212,7 @@ To focus on the specific tokens denoting space, we rely on the distinction opera
 
 \begin{listing}
     \inputminted[]{python}{./corpus/spatial_extension.py}
-    \caption{This bespoke snippet shows how the spatial extension of the text—its indentation—corresponds to the structural semantics of the code, in the Python programming language.}
+    \caption{\emph{spatial\_extension.py} - This bespoke snippet shows how the spatial extension of the text—its indentation—corresponds to the structural semantics of the code, in the Python programming language.}
     \label{code:spatial_extension}
 \end{listing}
 
@@ -236,7 +236,7 @@ An example of this intertwining of flat textual screen and spatial depth is the 
 
 \begin{listing}
     \inputminted[]{c}{./corpus/mac_sched.c}
-    \caption{This listing includes as a comment an execution flow diagram inside the program text, testifying to the inherently fragmented and non-linear execution of source code. \citep{mustacchi_mac_2019}}
+    \caption{\emph{mac\_sched.c} - This listing includes as a comment an execution flow diagram inside the program text, testifying to the inherently fragmented and non-linear execution of source code. \citep{mustacchi_mac_2019}}
     \label{code:mac_sched}
 \end{listing}
 
@@ -254,7 +254,7 @@ Mental maps are therefore dynamically constructed in the course of reading and c
 
 \begin{listing}
     \inputminted{html}{./corpus/nested.html}
-    \caption{Nested, by Dan Brown and published in \{code poems\} \citep{bertram_code_2012}}
+    \caption{\emph{nested.html} - Nested, by Dan Brown and published in \{code poems\} \citep{bertram_code_2012}}
     \label{code:nested}
 \end{listing}
 
@@ -262,7 +262,7 @@ A more concrete example can be seen in \autoref{code:shutdown}. Written in the s
 
 \begin{listing}
     \inputminted[]{go}{./corpus/shutdown.go}
-    \caption{This listing represents the various steps taken in order to shutdown a HTTP server, and shows multiple aspects of temporal complexities represented spatially \citep{weidideng_caddyserver_2023}}
+    \caption{\emph{shutdown.go} - This listing represents the various steps taken in order to shutdown a HTTP server, and shows multiple aspects of temporal complexities represented spatially \citep{weidideng_caddyserver_2023}}
     \label{code:shutdown}
 \end{listing}
 
@@ -286,7 +286,7 @@ Syntactical literary devices allow readers to engage cognitively with a particul
 
 The use of the term map also implies a specific kind of territory, enabled by the digital. As a hybrid between the print's flatness and code's depth, Ryan and Murray—among many others—identify the digital narrative as a highly spatialized one. This feature, Ryan argues, is but a reflection of the inner architecture of source code. Pushing this line of thought further, we now turn to architecture as a discipline to investigate how the built environment elicits understanding, and how such possibilities might translate in the space of program texts.
 
-\section{Architecture and understanding}
+\section{Function, style and matter in architecture}
 \label{sec:arch-understanding}
 
 At its most common denominator, architecture is concerned with the gross structure of a system. At its best, architecture can support the understanding of a system by addressing the same problem as cognitive mapping does: simplifying our ability to grasp large system. This phrase appears in Kevin Lynch's work on \emph{The Image of the City}, in which he highlighted that our understanding of an urban environment relies on combinations of patterns (node, edge, area, limit, landmark) to which personal, imagined identities are ascribed. The process is once again that of abstraction, but goes beyond that, and includes a subjective perspective \citep{lynch_image_1959}. Moving from the urban planner's perspective to the architects, we see how each individual component contributes to the overall legibility of the system. This section considers how individual structures, through their assessed beauty, offer a cognitive involvement to their participants.
@@ -406,7 +406,7 @@ In a sense, then, beautiful code is also code that is clear enough to inform act
 
 \begin{listing}
     \inputminted{c}{./corpus/hardware_separation.h}
-    \caption{This header file defines the structure of a program, both in its human use, in its interaction with hardware components, and its decoupling of hardware (mentioned in the comments) and software elements (mentioned in the \lstinline{\#define} macro and the \lstinline{pmc_mdep} struct). Additionally, the header does not contain any executable code, thus reinforcing its role as a plan rather than a full building.}
+    \caption{\emph{hardware\_separation.h} - This header file defines the structure of a program, both in its human use, in its interaction with hardware components, and its decoupling of hardware (mentioned in the comments) and software elements (mentioned in the \lstinline{\#define} macro and the \lstinline{pmc_mdep} struct). Additionally, the header does not contain any executable code, thus reinforcing its role as a plan rather than a full building.}
     \label{code:hardware-separation}
 \end{listing}
 
@@ -448,7 +448,7 @@ For instance, Casey Muratori explores the process of compression in refactoring 
 
 \begin{listing}
     \inputminted[]{c}{./corpus/uncompressed.c}
-    \caption{An uncompressed extract of a program text whose function is to display graphical user interface (GUI) elements. The syntax is very granular and redundant. \citep{muratori_semantic_2014}}
+    \caption{\emph{uncompressed.c} - An uncompressed extract of a program text whose function is to display graphical user interface (GUI) elements. The syntax is very granular and redundant. \citep{muratori_semantic_2014}}
     \label{code:uncompressed}
 \end{listing}
 
@@ -456,7 +456,7 @@ The difference we can see between the compressed and uncompressed goes beyond th
 
 \begin{listing}
     \inputminted[]{c}{./corpus/compressed.c}
-    \caption{A compressed extract of a program text whose function is to display graphical user interface (GUI) elements.  The same functionality as in \autoref{code:uncompressed} is achieved, but with fewer lines of code, and a more expressive syntax. \citep{muratori_semantic_2014}}
+    \caption{\emph{compressed.c} - A compressed extract of a program text whose function is to display graphical user interface (GUI) elements.  The same functionality as in \autoref{code:uncompressed} is achieved, but with fewer lines of code, and a more expressive syntax. \citep{muratori_semantic_2014}}
     \label{code:compressed}
 \end{listing}
 
@@ -527,7 +527,7 @@ To conclude this section, we have seen that architecture can offer us some heuri
 
 Along with the function of the program as an essential component of aesthetic judgment, our inquiry has also shown that program texts can present a quality that is aware of the context that the writer and reader bring with them, and of the context that it provides them, making it habitable. Software architecture and patterns are not, however, explicitly praised for their beauty, perhaps because they disregard these contexts, since they are higher-level abstractions; this implies that generic solutions are rarely elegant solutions. And yet, there is an undeniable connection between the beautiful and the universal. Departing from our investigation of software as craftsmanship, and moving through towards a more abstract discipline, we turn to scientific aesthetics.
 
-\section{Forms of scientific activity}
+\section{Aesthetics and heuristics in mathematics}
 \label{sec:aesthetic-scientific}
 
 As programmers learned their craft from practice and immediate engagement with their material, computer science was concomittantly developing from a seemingly more abstract discipline. Mathematicians such as Alan Turing, John Von Neumann and Grace Hopper can be seen, not just as the foreparents of the discipline of computing, but also as standing on the shoulders of a long tradition of mathematicians. Computation is one of the many branches of contemporary mathematics and, as it turns out, this discipline also has reccuringly included references to aesthetics. After the metaphors of literature and the patterned structures of architecture, we conclude our analysis of the aesthetic relation of domains contingent to source code by looking at how mathematics integrate formal presentation.
@@ -604,7 +604,7 @@ The linked list implementation shown in \autoref{code:linked_list} establishes a
 
 \begin{listing}
     \inputminted{c}{./corpus/linked_list.h}
-    \caption{A textbook example of a fundamental construct in computer science, the linked list. This header file shows all the parts which compose the concept. This program text does not do anything by itself, it only describes a certain data structure in a certain way. \citep{kirchner_linked_2022}.}
+    \caption{\emph{linked\_list.h} - A textbook example of a fundamental construct in computer science, the linked list. This header file shows all the parts which compose the concept. This program text does not do anything by itself, it only describes a certain data structure in a certain way. \citep{kirchner_linked_2022}.}
     \label{code:linked_list}
 \end{listing}
 
@@ -620,7 +620,7 @@ This use of pointers implies a change in the mental model when considering a lin
 
 \begin{listing}
     \inputminted{c}{./corpus/linked_list.c}
-    \caption{A comparison of how to remove an element from a list, with elegance depending on the skill level of the author \citep{kirchner_linked_2022a}.}
+    \caption{\emph{linked\_list.c} - A comparison of how to remove an element from a list, with elegance depending on the skill level of the author \citep{kirchner_linked_2022a}. You are not expected to understand this.}
     \label{code:linked_list_remove}
 \end{listing}
 
@@ -657,7 +657,7 @@ In this case, the essential components of the matcher are implemented, in a clea
 
 \begin{listing}
     \inputminted{c}{./corpus/regex.c}
-    \caption{A regular expression matcher by Rob Pike, praised for its elegance and conciseness, but not for its practical utility \citep{oram_beautiful_2007}}
+    \caption{\emph{regex.c} - A regular expression matcher by Rob Pike, praised for its elegance and conciseness, but not for its practical utility \citep{oram_beautiful_2007}}
     \label{code:regex}
 \end{listing}
 

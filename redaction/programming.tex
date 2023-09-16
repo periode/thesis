@@ -1,13 +1,13 @@
 \chapter{Machine languages}
 \label{chap:programming}
 
-After analyzing the discourses of programmers on beautiful code, after highlighting the specific cognitive complexities inherent to software and how they are dealt with, and after having investigated how aesthetics enable various forms of understanding in adjacent fields, we now offer a framework for the aesthetics of source code.
+After analyzing the discourses of programmers on beautiful code, after highlighting the specific cognitive complexities inherent to software and how they are dealt with, and after having investigated how aesthetics enable various forms of understanding in adjacent fields, we now lay out a framework for the aesthetics of source code.
 
-To do this, this chapter begins with the medium of source code: programming languages. Understanding what they are and how they are used will allow us to highlight two important aspects. First, that there is a tension between human-meaning and machine-meaning, a tension between different interpretations of the same syntax. Second, it will allow us to highlight another contextual aspect of source code aesthetics—just like natural languages, machine languages also act as linguistic communities.
+To do this, this chapter begins with the medium of source code: programming languages. Understanding what they are and how they are used will allow us to highlight two important aspects. First, that the tension between human-meaning and machine-meaning is located in the different interpretations of the same syntax. Second, it will allow us to highlight another contextual aspect of source code aesthetics—just like natural languages, machine languages also act as linguistic communities of practice.
 
-Once we laid this material groundwork, we propose two approaches to the aesthetic manifestations in program texts. First, we build on a close-reading approach to suggest a framework composed of various scales.  Focusing on the spatiality of program texts, we will show how programming languages act as an interface between a program text and a mental model. We then develop on how syntax and vocabulary make use of metaphors to enable the representation of positive values such as abstraction, openness and function.
+Once we laid this material groundwork, we propose two approaches to the aesthetic manifestations in program texts. First, we build on a close-reading approach to suggest a framework composed of various scales. Focusing on the spatiality of program texts, we will show how programming languages act as an interface between a program text and a mental model. A first aesthetic function of source is thus shown to be the enabling (or denying) of spatial navigation in a program text. We then develop on how syntax and vocabulary make use of metaphors to enable the representation of positive values such as abstraction, openness and function. Recalling our discussions on elegance, we show how each of these values rely on the aesthetic function of compression.
 
-It is with the concept of function that we conclude the chapter, and with the essential role that function plays in aesthetic appreciation. That is, we will show that such role is dual: a functional source code is required for aesthetic judgment to take place, and the aesthetic experience has the function of enabling understanding.
+We conclude the chapter with a discussion on the relationship between aesthetics and function. We examine such a relationship through a dual perspective: a functional source code is required for aesthetic judgment to take place, and that aesthetic properties experienced as such hold the function of enabling understanding.
 
 \section{Linguistic interfaces}
 \label{sec:linguistic-interfaces}
@@ -111,13 +111,13 @@ Of the two programs presented in \autoref{code:hello-ruby} and in \autoref{code:
 
 \begin{listing}
   \inputminted{ruby}{./corpus/hello.rb}
-  \caption{A terse example of writing a string to an output in Ruby.}
+  \caption{\emph{hello.rb} - A terse example of writing a string to an output in Ruby.}
   \label{code:hello-ruby}
 \end{listing}
 
 \begin{listing}
   \inputminted{java}{./corpus/hello.java}
-  \caption{A verbose approach to writing a string to an output in Java.}
+  \caption{\emph{hello.java} - A verbose approach to writing a string to an output in Java.}
   \label{code:hello-java}
 \end{listing}
 
@@ -138,7 +138,7 @@ A particularly note-worthy example of an elegant solution to the tradeoff betwee
 
 \begin{listing}
   \inputminted{go}{./corpus/multiple_returns.go}
-  \caption{Go proposes an elegant way of ignoring certain variables, with the use of the underscore token.}
+  \caption{\emph{multiple\_returns.go} - Go proposes an elegant way of ignoring certain variables, with the use of the underscore token.}
   \label{code:multiple-returns-go}
 \end{listing}
 
@@ -146,7 +146,7 @@ The \lstinline{_} character which we see on the first line is the choice made by
 
 \begin{listing}
   \inputminted{js}{./corpus/multiple_returns.js}
-  \caption{JavaScript does not have any built-in syntax to ignore certain variables, resulting in more cumbersome code.}
+  \caption{\emph{multiple\_returns.js} - JavaScript does not have any built-in syntax to ignore certain variables, resulting in more cumbersome code.}
   \label{code:multiple-returns-js}
 \end{listing}
 
@@ -195,50 +195,41 @@ The tension arises when it comes to the criteria of unambiguity, from a human pe
 \subsubsection{Idiosyncratic implementations}
 \label{subsubsec:idiosyncracies-implementations}
 
-Software, as an abstract artifact, can be understood at the physical, design and intentional levels\citep{moor_three_1978}. With modern programming languages allowing us to safely ignore the hardware level, it is at the interaction of the design (programming) and intentional (human) level that things get complicated; all programming languages can do the same thing, but they all do it in a slightly different way. In order to illustrate the expressivity of programming languages, we highlight three programming concepts which are innate to any modern computing environment, and yet relatively complex to deal with for humans: \emph{iterating}, \emph{referencing} and \emph{threading}.
+Software, as an abstract artifact, can be understood at the physical, design and intentional levels\citep{moor_three_1978}. With modern programming languages allowing us to safely ignore the hardware level, it is at the interaction of the design (programming) and intentional (human) level that things get complicated; all programming languages can do the same thing, but they all do it in a slightly different way\footnote{For an exhaustive overview of the way syntax differs and overlaps across programming languages, see \citep{rigaux_syntax_2023}}. In order to illustrate the expressivity of programming languages, we highlight three programming concepts which are innate to any modern computing environment, and yet relatively complex to deal with for humans: \emph{iterating}, \emph{referencing} and \emph{threading}.
 
 The first and the most straightforward example is iteration, or the process of counting through the items of a list. Since, ultimately, all program text is organized as continuours series of binary encodings, going through such a list in a fundamental operation in programming. Different implementations of such an operation are shown in \autoref{code:iterating-c} for the C language and in \autoref{code:iterating-py}.
 
 \begin{listing}
   \inputminted{c}{./corpus/iterating.c}
-  \caption{Iterating in C involves keeping track of an iterating counter and knowing the maximum value of a list beforehand.}
+  \caption{\emph{iterating.c} - Iterating in C involves keeping track of an iterating counter and knowing the maximum value of a list beforehand.}
   \label{code:iterating-c}
 \end{listing}
 
 \begin{listing}
   \inputminted{py}{./corpus/iterating.py}
-  \caption{Iterating in Python is done through a specific syntax which abstracts away the details of the process.}
+  \caption{\emph{iterating.py} - Iterating in Python is done through a specific syntax which abstracts away the details of the process.}
   \label{code:iterating-py}
 \end{listing}
 
 This comparison shows how a similar function can be performed via different syntaxes. Particularly, we can see how the Python listing implies a more human-readable syntax, getting rid of machine-required punctuation, and thus facilitating the pronounciation out loud. In contrast, the C listing states the parts of the loop in an order that is not intuitive to human comprehension. Read out loud, the C listing would be equivalent to "\emph{For an index named i starting at 0, and while i is less than a value named max\_count, increase i by one on each iteration}", which focuses more on the index management than on the list itself; while the Python listing would read "\emph{for an item in my list}", much more concise and expressive.
 
-Referencing is a more complex problem than iterating. It is a surface-level consequence of the \emph{use-mention} problem referred to above, the separation between a name and its value, with the two being bound together by the address of the physical location in memory. As somewhat independent entities, it is possible to manipulate them separately, with consequences that are not intuitive to grasp. For instance, when one sees the name of a variable in a program text, is the name referencing the value of the variable, or the location at which this value is stored? Here, we need a mark which allows the programmer to tell the difference.
-
-Notation attempts at remediating those issues by offering symbols to represent these differences, such as in \autoref{code:references-c}, or to hide it completely as in \autoref{code:references-ruby}.
+Referencing is a more complex problem than iterating\footnote{Interestingly, the problem of referencing only appears to be non-straightforward for programmers who started by writing in higher-level languages. Programming in Assembly, the concept of reference is more straightforward.}. It is a surface-level consequence of the \emph{use-mention} problem referred to above, the separation between a name and its value, with the two being bound together by the address of the physical location in memory. As somewhat independent entities, it is possible to manipulate them separately, with consequences that are not intuitive to grasp. For instance, when one sees the name of a variable in a program text, is the name referencing the value of the variable, or the location at which this value is stored? Here, we need a mark which allows the programmer to tell the difference. Programming language notation attempts at remediating those issues by offering symbols to represent these differences, as we can see in \autoref{code:references-c}.
 
 \begin{listing}
   \inputminted{c}{./corpus/references.c}
-  \caption{Pointers involve a non-straightforward way to reason about values.}
+  \caption{\emph{references.c} - Pointers involve a non-straightforward way to reason about values.}
   \label{code:references-c}
 \end{listing}
 
-The characters \lstinline{*} and \lstinline{&} are used to signal that one is dealing with a variable of type pointer, and that one is accessing the pointed location of a variable, respectively. Line 2 of the snippet above is an expression called \emph{dereferencing}, a neologism which is perhaps indicative of the lack of existing words for referring\footnote{No pun intended.} to that concept. In turns, this hints at a lack of conventional conceptual structures to which we can map such a phenomenon, showing some of the limits of metaphorical tools to think through concepts.
+The characters \lstinline{*} and \lstinline{&} are used to signal that one is dealing with a variable of type pointer, and that one is accessing the pointed location of a variable, respectively. Line 2 of the snippet above is an expression called \emph{dereferencing}, a neologism which is perhaps indicative of the lack of existing words for referring to that concept. In turns, this hints at a lack of conventional conceptual structures to which we can map such a phenomenon, showing some of the limits of metaphorical tools to think through concepts.
 
-\begin{listing}
-  \inputminted{python}{./corpus/references.rb}
-  \caption{Ruby syntax does not allow the programmer to directly manipulate pointers}
-  \label{code:references-ruby}
-\end{listing}
+Meanwhile, Ruby syntax does not allow the programmer to directly manipulate pointers, so two variables would actually be referring to the same data. The design decision here is not to allow the programmer to make the difference between a reference and an actual value, and instead prefer that the programmer constructs programs which, on one side, might be less memory-efficient but are, on the other side, easier to read and write, since variable manipulation only ever occurs in one single way—through reference.
 
-Meanwhile, in \autoref{code:references-ruby}, we see that the two variables are actually referring to the same data. The design decision here is not to allow the programmer to make the difference between a reference and an actual value, and instead prefer that the programmer constructs programs which, on one side, might be less memory-efficient but are, on the other side, easier to read and write, since variable manipulation only ever occurs in one single way—through reference.
+Notation does not exclusively operate at the surface level. Some programming languages signify, by their use of the above characters, that they allow for this direct manipulation, through something called \emph{pointer arithmetic}\footnote{For better or worse, C is very liberal with what can be done with pointers. Programmers sometimes refer to it as "a shotgun which you are free to shoot yourself in the foot with".}. Indeed, the possibility to add and substract memory locations independent of the values held in these locations, as well as the ability to do arithmetic operations between an address and its value isn't a process whose meaning comes from a purely experiential or social perspective, but rather exists meaningfully for humans only through logical grounding, by understanding the theoretical architecture of the computer. What also transpires from these operations is another dimension of the non-linearity of programming languages, demanding complex mental models to be constructed and updated to anticipate what the program will ultimately result in when executed.
 
-Notation does not exclusively operate at the surface level. Some programming languages signify, by their use of the above characters, that they allow for this direct manipulation, through something called \emph{pointer arithmetic}\footnote{For better or worse, C is very liberal with what can be done with pointers.}. Indeed, the possibility to add and substract memory locations independent of the values held in these locations, as well as the ability to do arithmetic operations between an address and its value isn't a process whose meaning comes from a purely experiential or social perspective, but rather exists meaningfully for humans only through logical grounding, by understanding the theoretical architecture of the computer. What also transpires from these operations is another dimension of the non-linearity of programming languages, demanding complex mental models to be constructed and updated to anticipate what the program will ultimately result in when executed.
+Threading is the ability to do multiple things at the same time, in parallel. The concept itself is simple, to the point that we take it for granted in modern computer applications since the advent of time-sharing systems: we can have a text editor take input and scan that input for typos at the same time, as well as scanning for updates in a linked bibliography file. However, the proper handling of threading when writing and reading software is quite a complex task\footnote{"\emph{Although threads seem to be a small step from sequential computation, in fact, they represent a huge step. They discard the most essential and appealing properties of sequential computation: understandability, predictability, and determinism. Threads, as a model of computation, are wildly non-deterministic, and the job of the programmer becomes one of pruning that nondeterminism.}" \citep{lee_problem_2006}.}.
 
-Threading is the ability to do multiple things at the same time, in parallel. The concept itself is simple, to the point that we take it for granted in modern computer applications since the advent of time-sharing systems: we can have a text editor take input and scan that input for typos at the same time, as well as scanning for updates in a linked bibliography file. However, the proper handling of threading when writing and reading software is quite a complex task\footnote{As Edward A. Lee puts it: "\emph{Although threads seem to be a small step from sequential computation, in fact, they represent a huge step. They discard the most essential and appealing properties of sequential computation: understandability, predictability, and determinism. Threads, as a model of computation, are wildly non-deterministic, and the job of the programmer becomes one of pruning that nondeterminism.}" \citep{lee_problem_2006}.}.
-
-First, every program is executed as a process. Such a process can then create children subprocesses for which it is responsible. From the hardware standpoint, unpredictability arises from the fact that CPU cores will run different threads of the same process, and yet, as they are under different loads, some processes will get done faster at times and later at other
-times. The task of the programmer involves figuring out how do the children process communicate information back to the parent process, how do they communicate between each other, and how does the parent process make sure all the children process have exited before exiting itself.
+First, every program is executed as a process. Such a process can then create children subprocesses for which it is responsible. From the hardware standpoint, unpredictability arises from the fact that CPU cores will run different threads of the same process, and yet, as they are under different loads, some processes will get done faster at times and later at other times. The task of the programmer involves figuring out how do the children process communicate information back to the parent process, how do they communicate between each other, and how does the parent process make sure all the children process have exited before exiting itself.
 
 This involves the ability to demultiply the behaviour of routines (whose execution is already non-linear) to keep track of what could be going on at any point in the execution of the program, including use and modification of shared resources, the scheduling of thread start and end, as well as synchronization of race conditions (e.g. if two things happen at the same time, which one happens first, such that the consistence of the global state is preserved?).
 
@@ -246,7 +237,7 @@ For instance, we can look at printing numbers at a random interval. As seen in t
 
 \begin{listing}
   \inputminted{python}{./corpus/non_thread.go}
-  \caption{Nice way to do threads in Go.}
+  \caption{\emph{non\_thread.go} - A sequential execution of a Go program, with random timeouts. The order of the output is guaranteed, but not its timing.}
   \label{code:non_threading-go}
 \end{listing}
 
@@ -254,13 +245,13 @@ Nonetheless, the threading syntax in \autoref{code:threading-go} allows the prog
 
 \begin{listing}
   \inputminted{python}{./corpus/thread.go}
-  \caption{Nice way to do threads in Go.}
+  \caption{\emph{thread.go} - A concurrent execution of a Go program, with random timeouts. Neither the order nor the timing of the output is guaranteed. The keyword \lstinline{go} when calling the functions \lstinline{recall} instructs the program to run the function in parallel.}
   \label{code:threading-go}
 \end{listing}
 
 \begin{listing}
   \inputminted{python}{./corpus/thread.c}
-  \caption{Complex way to do threads in C.}
+  \caption{\emph{thread.c} - In C, the syntax to write thread, and the representation of the concept, is more verbose, as it forces separate variable declaration, separate creation and join, and specific positional arguments.}
   \label{code:threading-c}
 \end{listing}
 
@@ -291,7 +282,7 @@ This epigram sets the focus on a specific feature of the code, rather than on a 
 
 \begin{listing}
   \inputminted{python}{./corpus/range.py}
-  \caption{These two range operators are semantically equivalent in Python, but the first is more idiomatic than the second.}
+  \caption{\emph{range.py} - These two range operators are semantically equivalent in Python, but the first is more idiomatic than the second.}
   \label{code:range-operator}
 \end{listing}
 
@@ -299,7 +290,7 @@ Beautiful code, then seems to be a function of knowledge, not just of what the i
 
 \begin{listing}
   \inputminted{python}{./corpus/fibonacci.py}
-  \caption{The decorator is the idiotmatic way to calculate the sum of the Fibonacci sequence. \citep{schmitz_what_2015}}
+  \caption{\emph{fibonacci.py} - The decorator \lstinline{@lru} is the idiotmatic way to calculate the sum of the Fibonacci sequence. \citep{schmitz_what_2015}}
   \label{code:fibonacci}
 \end{listing}
 
@@ -311,15 +302,15 @@ Idiomaticity reflects what the social and aesthetic intent of the language desig
   And it's not hard to "prove" it: If two people write code to solve the same problem and one makes a terrible spaghetti monster in COBOL while the other goes for super-elegant and highly abstracted solution in Haskell, does it really matter to the computer? As long as the two are compiled to the same machine code, the machine does not care. All the clever constructs used, all the elegance, they are there only to guide our intuition about the code. \citep{sustrik_nature_2021}
 \end{quote}
 
-Another way to encourage writing good code is through the addition of \emph{syntactic sugar}. Syntactic sugar describes the aesthetic features of the language who are variants of a similar computational feature, and where the only difference between them is their appearance—i.e. visual, semantic shortcuts. The looping examples above are good instances of syntactic sugar, albeit with performance differences. The Ruby language is riddled with syntactic sugar, and highlights how syntactic sugar can "sweeten" the reading process, aiming for more clarity, conciseness, and proximity to natural languages. In Ruby, to access a boolean value on an attribute of an object, one would write it as in any other language. The added syntactic sugar in Ruby comes in the form of the question mark in control flow statements, as shown in \autoref{code:ruby-alive}.
+Another way to encourage writing good code is through the addition of \emph{syntactic sugar}. Syntactic sugar describes the aesthetic features of the language who are variants of a similar computational feature, and where the only difference between them is their appearance—i.e. visual, semantic shortcuts. The looping examples above are good instances of syntactic sugar, albeit with performance differences. The Ruby language is riddled with syntactic sugar, and highlights how syntactic sugar can "sweeten" the reading process, aiming for more clarity, conciseness, and proximity to natural languages. In Ruby, to access a boolean value on an attribute of an object, one would write it as in any other language. The added syntactic sugar in Ruby comes in the form of the question mark in control flow statements, as shown in \autoref{code:ruby-alive}, or exclamation mark in method calls, to highlight the destructive nature of the method.
 
 \begin{listing}
   \inputminted{python}{./corpus/alive.rb}
-  \caption{Ruby features a lot of syntactic sugar.}
+  \caption{\emph{alive.rb} - Ruby features a lot of syntactic sugar. For instance, one can add the \lstinline{?} at the end of a method call in order to signify more clearly the boolean nature of the return value. Other languages tend to disallow the use of special characters in method names.}
   \label{code:ruby-alive}
 \end{listing}
 
-In C, syntactic sugar includes \lstinline{my_array[i]} to access the \lstinline{i}th element of the array \lstinline{my_array}, rather than the more cryptic \lstinline{*(my_array + i)}.In Python, opening a file could be written as \lstinline{f = open("notes.md")}, but it also proposes the syntactic sugar of \lstinline{with open("notes.md") as f:}, which consists in a block which both opens the file, and implicitly closes it at the end of the block.
+In C, syntactic sugar includes \lstinline{my_array[i]} to access the \lstinline{i}th element of the array \lstinline{my_array}, rather than the more cryptic \lstinline{*(my_array + i)}. In Python, opening a file could be written as \lstinline{f = open("notes.md")}, but it also proposes the syntactic sugar of \lstinline{with open("notes.md") as f:}, which consists in a block which both opens the file, and implicitly closes it at the end of the block.
 
 There are absolutely no functional differences in the statements above, and the question mark is just here to make the code seem more natural and intuitive to humans. Checking for a boolean (or non-nil value) in an if statement is, in the end, the equivalent of asking a question about that value. Here, Ruby makes that explicit, therefore making it easier to read with the most minimal amount of additional visual noise (i.e. one character).
 
@@ -357,6 +348,8 @@ The ambivalence of source code has also been explored in the literature through 
 
 Also focusing on the more fringe and creative uses of code, Camille Paloque-Bergès presents the related concept of \emph{double-meaning} in her work on networked texts and code poetics \citep{paloque-berges_poetique_2009}. She defines it as the affordance provided by the English-like syntax of keywords reserved for programming to act as natural-language signifiers. As we've seen in \emph{Black Perl} (\autoref{code:black_perl}), the Perl functions can indeed be interpreted as regular words when the source is read as a human text. As she continues her analysis of \emph{codeworks}, a body of literature centered around a créole language halfway between humanspeak and computerspeak\footnote{See in particular the work of Alan Sondheim and mezangelle}, it can be extended into the aesthetically productive overlap of syntactic realms, however leaving aside any functional or productive aspect of source code.
 
+Such a layered approach echoes the stratas that N. Katherine Hayles envisions when discussing the medium-specificity of electronic hypertexts\footnote{"\emph{It is crucially important, however, to recognize that the computer can simulate so successfully only because it differs profoundly from print in its physical properties and dynamic processes. These differences matter in multiple ways and on many different levels, from the macroscale to the microscale—and they matter more all the time as writers of electronic literature and texts become more adept at exploiting the medium’s specificity}" \citep{hayles_print_2004}}. While the object of her study is the electronic hypertext, meaning a text written and accessed via a computer but not necessarily exclusively written in source code, she scores several points which corroborate our work. First, these texts operate in three dimensions (and thus navigable), are hybrids of programming and natural languages, and rely on distributed cognition for their reading and writing. This "cyborg reading practice" involves digital apparatuses such as the IDE (see \ref{subsubsec:extended-cognition}) in order to fully access the aforementioned points of spatiality and hybridity. As such, these cyborg apparatuses act as a (software) interface to what is a (linguistic) interface—source code.
+
 Previous research by Philippe Bootz has also highlighted the concept of the \emph{double-text} in the context of computer poetry, a text which exists both in its prototypal, virtual, imagined form, under its source manifestation, and which exists as an executed, instantiated, realized one \citep{bootz_problem_2005}. However, he asserts that, in its virtual form, "a work has no reality", specifically because it is not realized. Here, we encounter the dependence of the source on its realized output, indeed a defining feature of the generative aesthetics of computer poetry. A work of code poetry can very much exist as a prototypal form, with its output providing only additional meaning, further qualifying the themes laid out in source beforehand. From this perspective, the output of a code poem would have a drastically diminished semantic richness if the source is only read, or only executed. For this double-meaning to take place, we can say that the sitation is inverted: the output becomes the virtual, imagined text, while the source is the concrete instantiation of the poem.
 
 The role of execution is even more embedded in Geoff Cox and Alex McLean's take of \emph{double-coding} \citep{cox_speaking_2013}. According to them, double-coding \emph{"exemplifies the material aspects of code both on a functional and an expressive level"} (p.9). Cox and McLean's work, in a thorough exploration of source code as an expressive medium, focus on the political features of speaking through code, as a subversive praxis. They work on the broad social implications of written and spoken code, rather than exclusively on the specific features of what makes source code expressive in the first place, with a particular attention to the practice of live coding. Double-coding nonetheless helps us identify the unique structural features of programming languages which support this expressivity, such as reserved keywords, data types and control flow. As we show below, notably through the use of data types such as symbols and arrays in source code poetry, programming languages and their syntax hold within them a specific kind of semantics which enable, for those who are familiar with them and understand them, expressive power, once the computer semantics are understood both in their literal sense, and in their metaphorical sense. The succint and relevant use of these linguistic features can thicken the meaning of a program text and, in the case of code poetry, bringing into the realm of the thinkable ways to approach metaphysical topics.
@@ -368,7 +361,7 @@ The ambivalence between human meaning and machine meaning is thus at the core of
 \subsection{Matters of scale}
 \label{subsec:matters-of-scale}
 
-The discourses of programmers in our corpus do not contain uni-dimensional criteria, but rather criteria which can be applied at multiple levels of reading. Some tend to relate more to the over-arching design of the code examined while others focus on the specific formal features exhibited by a a given token or successions of tokens in a source code snippet. To address this variability of focus, we borrow from John Cayley's distinction between structures, syntaxes and vocabularies \citep{cayley_code_2012}.  Cayley's framework will allow us to take into account an essential aspect of source code: that of scales at which aesthetic judgment operates. From the psychological accounts of understanding source code in \autoref{subsec:psychology-programming} to the uses of space in domain-specific aesthetics in \autoref{subsec:spatial-literature} or \autoref{subsec:beauty-architecture}, one of the specificities of source is the multiple dimensions of its deep structure hidden behind the two-dimensional layout of a text file, and the need for programmers to navigate such space.
+The discourses of programmers in our corpus do not contain uni-dimensional criteria, but rather criteria which can be applied at multiple levels of reading. Some tend to relate more to the over-arching design of the code examined while others focus on the specific formal features exhibited by a a given token or successions of tokens in a source code snippet. To address this variability of focus, we borrow from John Cayley's distinction between structures, syntaxes and vocabularies \citep{cayley_code_2012}.  Cayley's framework will allow us to take into account an essential aspect of source code: that of scales at which aesthetic judgment operates. Beyond literary studies, this framework is also used by Dijkstra when he introduces his approach to structured programming, from the high-level of the program taken as a whole down to the details of line-by-line syntactic choices \citep{dijkstra_humble_2007}. From the psychological accounts of understanding source code in \autoref{subsec:psychology-programming} to the uses of space in domain-specific aesthetics in \autoref{subsec:spatial-literature} or \autoref{subsec:beauty-architecture}, one of the specificities of source is the multiple dimensions of its deep structure hidden behind the two-dimensional layout of a text file, and the need for programmers to navigate such space.
 
 Structure is defined by the relative location of a particular statement within the broader context of the program text, as well as the groupings of particular statements in relation to each other and in relation to the other groups of statements within the program-text, whether it is across the same file, series of files, or a sprawling network of folders and files. This also includes questions of formatting, indenting and linting as purely pattern-based formal arrangements, as seen in \autoref{subsec:tools-cognition}, since these affect the whole of the program-text.
 
@@ -440,7 +433,7 @@ By functional aesthetic exchange we mean an exchange in which a skilled writer i
 
 \begin{listing}
   \inputminted{c}{./corpus/nsCSSRenderingBorders.cpp}
-  \caption{An example of useful comments complementing the source code in Mozilla's layout engine, literally drawing out the graphical task executed by the code.}
+  \caption{\emph{nsCSSRenderingBorders.cpp} - An example of useful comments complementing the source code in Mozilla's layout engine, literally drawing out the graphical task executed by the code.}
   \label{code:rendering-borders}
 \end{listing}
 
@@ -480,7 +473,7 @@ For instance, say two separates users (P and J) want watch an online video at th
 
 \begin{listing}
   \inputminted{cpp}{./corpus/semaphore.cpp}
-  \caption{A textbook semaphore description in pseudo-code \citep{arpaci_ostep_2018}}
+  \caption{\emph{semaphore.cpp} - A textbook semaphore description in pseudo-code \citep{arpaci_ostep_2018}}
   \label{code:semaphore-pseudocode}
 \end{listing}
 
@@ -503,7 +496,7 @@ The particular section of the program text, whose presentation enables understan
 
 \begin{listing}
   \inputminted{python}{./corpus/pi_video_looper.py}
-  \caption{Abstracting hardware specific resources via configuration options in an open-source project. \citep{dicola_pi_2015}}
+  \caption{\emph{pi\_video\_looper.py} - Abstracting hardware specific resources via configuration options in an open-source project. Both of these rely on getting a \lstinline{module} variable from the configuration file, before loading the file whose name corresponds to the value of that variable. This architectural choice enables broad generalization via a simple loading mechanism. \citep{dicola_pi_video_looper_2015}}
   \label{code:pi-video-looper}
 \end{listing}
 
@@ -524,7 +517,7 @@ The poem presented in \autoref{code:self_inspect}, written in Ruby by Macario Or
 
 \begin{listing}
   \inputminted{ruby}{./corpus/self_inspect.rb}
-  \caption{A code poem written by Maca in Ruby. \citep{ortega_maca_2011}}
+  \caption{\emph{self\_inspect.rb} - A code poem written in Ruby, exhbiting complex interactions between human reference, machine reference, language idioms, source code description and runtime execution. \citep{ortega_maca_2011}}
   \label{code:self_inspect}
 \end{listing}
 
@@ -540,7 +533,7 @@ A final feature exhibited by the poem is the execution of the procedure. When ru
 
 \begin{listing}
   \inputminted{text}{./corpus/self_inspect.txt}
-  \caption{The executed output from \autoref{code:self_inspect}}
+  \caption{\emph{self\_inspect.txt} - The executed output from \autoref{code:self_inspect}}
   \label{code:self_inspect_output}
 \end{listing}
 
@@ -618,7 +611,7 @@ For instance, achieving a task such as the demonstration of the properties of a 
 
 \begin{listing}
   \inputminted{text}{./corpus/p5.js}
-  \caption{Different ways to write a JavaScript function in different functional contexts, with either a focus on pedagogy or skill.}
+  \caption{\emph{p5\_sketch.js} - Different ways to write a JavaScript function in different functional contexts, with either a focus on pedagogy or skill.}
   \label{code:p5-teaching}
 \end{listing}
 
@@ -630,7 +623,7 @@ Practices of hacking thus tend to deviate from the original, intended function o
 
 By switching the paradigms of what an artefact can do, or should do, hacking takes on an epistemological role, providing new knowledge about the possibilities of an artefact, and displaying material proof, in the form of an executed output and a program text. Indeed, hacking relies not on the proclamation of skill, but on its execution: it is the combination of the intended action of the writer and the effective operation of the computer which grants to the function of the artefact a particular quality. This is purposefully at odds with hacker syntax, which tends to be more obscuring than enlightening. It is this unexpected ability to perform the intended function while not revealing its function through syntactical means which in turn informs aesthetic judgment. Here, the aesthetic judgment is directly informed by the relation between written syntax and executed action, and such an executed action affords intellectual engagement with understanding how such action is even possible. This epistemological approach, of understanding how such a hack can be done, thus relies on a visual component: such component of the hacking aesthetic is the \emph{visual tension}, the fact that an object might not look the part, but actually is doing such part is reflected in practices of obfuscation and obscurity. In cases of obfuscated code, being able to hide visually the purpose of a program text while conserving its invsible, technical-functional properties\footnote{For instance, in the cases of Perl one-liners or obfuscted C code} is thus considered a virtue, and suggests a positive aesthetic judgment.
 
-Hacking allows us to consider the aesthetics of dysfunction, in which one can find pleasure in addressing, and then subverting, the original function of the artefact. An example of this subversive approach can be seen in the design and use of \emph{esolangs}, esoteric programming languages whose sole purpose is to exist as playful perspectives on the arbitrariness and yet unescapable exhaustivity of computational syntax. Rather than being usable in practical situations and thus useful, they rather function as a commentary on the material of source code, displaying the extent to which something else can be a programming language. For instance, Daniel Temkin's \lstinline{Folders} language, seen in \autoref{graphic:folders}, uses directories in order to perform computational operations. While this might not have any reason for existing in a productive environment, this nonetheless performs the function of expanding one's understanding of what is a programming language, at a more fundamental level than everyday software development. There can be effective function separately from utility: here, the extent to which some programs seem to stray from practical function has itself the epistemological function of enriching our understanding of the nature of computation.
+Hacking allows us to consider the aesthetics of dysfunction, in which one can find pleasure in addressing, and then subverting, the original function of the artefact. An example of this subversive approach can be seen in the design and use of \emph{esolangs}, esoteric programming languages whose sole purpose is to exist as playfully critical perspectives on the arbitrariness and yet unescapable exhaustivity of computational syntax\footnote{"\emph{They were reacting to and building on the aesthetics of commercial coding and the often unstated values of computer science. These disciplines, which are sometimes at odds with each other, are both driven by a pragmatism that esolangs actively eschew. In rejecting practicality, esolangs carve out their own aesthetic and make clear the contradictory factors at work in mainstream code aesthetics.}" \citep{temkin_less_2023}}. Rather than being usable in practical situations and thus useful, they rather function as a commentary on the material of source code, displaying the extent to which something else can be a programming language. For instance, Daniel Temkin's \lstinline{Folders} language, seen in \autoref{graphic:folders}, uses directories in order to perform computational operations. While this might not have any reason for existing in a productive environment, this nonetheless performs the function of expanding one's understanding of what is a programming language, at a more fundamental level than everyday software development. There can be effective function separately from utility: here, the extent to which some programs seem to stray from practical function has itself the epistemological function of enriching our understanding of the nature of computation.
 
 \begin{figure}
   \includegraphics[width=0.8\textwidth,height=\textheight,keepaspectratio,center]{PureFolders_HelloWorld_explained.png}
@@ -675,7 +668,7 @@ In the overwhelming majority of cases of program texts, the expectation is to un
 
 \spacer
 
-In conclusion, this chapter has argued first that programming languages provide a socio-technical linguistic environment for the writing of program texts. Acting first as an interface to the computer, programming languages, without overly-determining the practice of programmers or the content of what is being programming, nonetheless influence how it can be said, through idiosyncracies and stylistic devices. This has established the idiosyncratic status of source code as a medium, and its existence between technical and social, expressive and communicative, individual and collaborative.
+Programming languages can thus be considered materially, as \emph{the interplay between a text’s physical characteristics and its signifying strategies} \citep{hayles_print_2004}, which in turn depend on socio-technical dynamics. As an interface to the computer, programming languages, without overly-determining the practice of programmers or the content of what is being programming, programming languages nonetheless influence how it can be said, through idiosyncracies and stylistic devices. This has established the idiosyncratic status of source code as a medium, and its existence between technical and social, expressive and communicative, individual and collaborative.
 
 We then presented a framework for aesthetics of source code, through the dual lense of semantic compression and spatial navigation. To do so, we started from a layer-based approach to the points in which aesthetic decisions can take place in source code—that is, across structure, syntax and vocabulary. Broadening this approach, we then showed how these different levels involve an engagement with semantic layers: between the human reader, the machine reader and the problem domain. The minimizing of syntax while best representing the different concepts involved at these different layers results in semantic compression. A source code with aesthetic value is one which balances syntactic techniques, structural organization and metaphorical choices in order to communicate a socio-technical intent of a functional artefact. In turn, semantic compression supports the shifts from different scales or perspectives the engaged programmer needs to operate as she navigates through her non-linear exploration of a program text.
 

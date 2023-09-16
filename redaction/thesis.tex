@@ -13,13 +13,13 @@
 
 \usepackage{float}
 \usepackage[leqno]{amsmath}
+\usepackage[natbibapa]{apacite} 
 \usepackage[]{natbib}
+\setlength{\bibsep}{10pt}
 
 \usepackage{xurl}
 \usepackage{hyperref}
 \usepackage{hyphenat}
-\def\UrlBreaks{\do\/\do-}
-
 
 \usepackage[style=iso]{datetime2}
 
@@ -55,16 +55,35 @@
 
 \begin{document}
 \title{The role of aesthetics in understanding source code}
-\author{Pierre Depaz\\under the direction of\\Alexandre Gefen (Paris-3)\\and Nick Montfort (MIT)}
+\author{Pierre Depaz\linebreak\linebreak under the direction of\\Alexandre Gefen (Paris-3)\\and Nick Montfort (MIT)}
+\affil{Université Sorbonne Nouvelle}
 \affil{ED120 - THALIM}
+\affil{Comparative Literature Doctorate}
 \date{last updated: \today}
 \maketitle
 
+\renewcommand{\abstractname}{Résumé}
 \begin{abstract}
-    This thesis investigates how the aesthetic properties of source code enable the representation of programmed semantic spaces, in relation with the function and understanding of computer processes. By examining program texts and the discourses around it, we highlight how source code aesthetics are both dependent on the context in which they are written, and contingent to other literary, architectural, and mathematical aesthetics, varying along different scales of reading. Particularly, we show how the aesthetic properties of source code manifest expressive power due to their existence as a dynamic, functional, and shared computational interface to the world, through formal organizations which facilitate semantic compression and spatial exploration.
+    Cette thèse examine comment les propriétés esthétiques du code source permettent la représentation d'espaces sémantiques programmés, et leur implication dans la compréhension de la fonction de processus computationels. Se basant sur un corpus de programmes-textes et des discours les accompagnant, nous montrons en quoi l'esthétique du code source est contingente d'autres domaines esthétiques littéraires, architecturaux et mathématiques, tout en demeurant dépendante du contexte au sein duquel circulent les programmes-textes, et se transformant à différentes échelles de lecture. En particulier, nous montrons que les propriétés esthétiques du code source permettent une certaine expressivité, en vertu de leur appartenance à une interface linguistique partagée et dynamique permettant de calculer le monde. Enfin, nous montrons comment une telle interface, organisée formellement, favorise la compression sémantique et l'exploration spatiale.
+    \linebreak
+    \linebreak
+    \textbf{Mots-clés}: Esthétique, Code source, Programmation, Cognition
 \end{abstract}
 
+\renewcommand{\abstractname}{Summary}
+\begin{abstract}
+    This thesis investigates how the aesthetic properties of source code enable the representation of programmed semantic spaces, in relation with the function and understanding of computer processes. By examining program texts and the discourses around it, we highlight how source code aesthetics are both dependent on the context in which they are written, and contingent to other literary, architectural, and mathematical aesthetics, varying along different scales of reading. Particularly, we show how the aesthetic properties of source code manifest expressive power due to their existence as a dynamic, functional, and shared computational interface to the world, through formal organizations which facilitate semantic compression and spatial exploration.
+    \linebreak
+    \linebreak
+    \textbf{Keywords}: Aesthetics, Source Code, Programming, Cognition
+\end{abstract}
+
+\include{acknowledgments.tex}
+\include{foreword.tex}
+
 \tableofcontents
+
+\pagebreak
 
 \renewcommand{\textflush}{flushright}
 \setlength{\epigraphwidth}{0.5\textwidth}
@@ -77,7 +96,9 @@
 \include{programming.tex}
 \include{conclusion.tex}
 
-\bibliographystyle{./apa-good.bst}
+\bibliographystyle{apacite}
+\raggedright
+\urlstyle{same}
 \bibliography{thesis.bib}
 \addcontentsline{toc}{section}{Bibliography}
 
@@ -86,5 +107,9 @@
 
 \listoffigures
 \addcontentsline{toc}{section}{Figures}
+
+\pagebreak
+
+\include{closing.tex}
 
 \end{document}
