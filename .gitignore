@@ -19,5 +19,6 @@ exports/
 *.pyg
 *.xdv
 *.lol
+*.lof
 *.toc
 _minted-*/
