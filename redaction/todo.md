@@ -4,9 +4,10 @@
 
 - [documents](https://www.dbu.univ-paris3.fr/recherche/depot-des-theses/4480-documents-necessaires-au-depot#formulaires)
 - [ ] autorisation du directeur (dire à gefen que le bail compilatio doit prendre en compte les sources de enframed.net)
-- [ ] bordereau d'enregistrement
-- [ ] charte de dépot
-- [ ] contrat de diffusion
+- [x] bordereau d'enregistrement
+    - [ ] résumé 20 pages
+- [x] charte de dépot
+- [x] contrat de diffusion
 
 ## format
 
