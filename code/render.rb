@@ -125,7 +125,15 @@ space = %{
 				}
 
 				.tight{
-					width: 70%;
+					width: 40%;
+				}
+
+				@media (max-width:1250px){
+					.tight {
+						width: 90%;
+						font-size: 2em;
+						overflow-x: hidden;
+					}
 				}
 			</style>
 			<div class="holding tight">
@@ -133,7 +141,7 @@ space = %{
 				<p>what you see here is the automatic rendering of all the notes taken during <a href="https://pierredepaz.net">my</a> phd thesis. since it is a thesis on source code, might as well show its own source code.</p>
 				<p>the main question i'm asking is: <i>how do aesthetics enable understanding in source code, what kind of understanding(s) might derive from their presence, or absence, and how does this highlight code as textual matter?</i> this touches upon issues of style, clarity, epistemology, psychology, programming and literature.</p>
 				<p>this doctoral work is being done at the university of sorbonne nouvelle, under the joint direction of alexandre gefen (Paris-3, CNRS) and nick montfort (MIT Comparative Media Studies).</p>
-                                <p>you can start with the <a href="latest.pdf" target="_blank">most recent summary</a>, the current state of the <a href="thesis.pdf" target="_blank">final manuscript</a> or the whole <a href="https://github.com/periode/thesis">github repository</a>.</p>
+                                <p>you can find the final version <a href="https://source.enframed.net" target="_blank">here</a> or the whole repository <a href="https://gitlab.com/periode/thesis">here</a>.</p>
 				<hr/>
 				<% all.each_key do | year | %>
 					<% all[year].each_key do | month | %>
