@@ -2,19 +2,21 @@
 
 ## Diana Mullet
 
-### https://sci-hub.mksa.top/10.1177/1932202X18758260
+### <https://sci-hub.mksa.top/10.1177/1932202X18758260>
 
 ---
 
 CDA rests on the notion that the way we use language is purposeful, regardless of whether discursive choices are conscious or unconscious. I would rather use Discourse Analysis, rather than the Critical plug-in (critical focuses on power relation, which is not the main topic here). It's mostly inductive.
 
 analysis process is:
+
 - systematic
 - interpretive
 - descriptive
 - explanatory
 
 makes use of:
+
 - analysis of semiotic data
 - situation of the discourse in time and space (context)
 - inductive reasoning
@@ -22,8 +24,8 @@ makes use of:
 - speech-act theory
 - systemic functional linguistics (???) (word order, topic choice, lexical field)
 
-
 steps:
+
 1. select the discourse
 2. locate and prepare data sources
 3. explore the background of each text (social and historical)
