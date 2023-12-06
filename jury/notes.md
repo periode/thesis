@@ -1,15 +1,53 @@
 # notes
 
-dápot thèse avant 30 septembre (odile francois bongarcon)
-plutôt semaine du 11 ou 18 décembre
-
 ## todo
 
-- [ ] write summary
+- [x] write summary
   - [x] french
-  - [ ] english
-- [ ] confirm date
-- [ ] write members
+  - [x] english
+- [x] confirm date
+- [x] write members
+
+# attendants
+
+- pierre
+- antonio
+- nick
+- alexandre
+- yves
+- winnie
+- baptiste
+- aleth
+- olivier
+- edouard
+- juliette
+- justyna
+- heloise
+- titien
+- ida
+- thibault
+- vadim
+- aurore
+- tomas
+- celine
+- gabriel
+- arnaud
+- carla
+- edgar
+- nadja
+- nadja + 1
+- nadja + 2
+- benjamin
+- maxime
+- farid
+- tobi
+- christian
+- celestin
+- nico
+- irem
+- romain
+- pauline
+- sarah
 
 ## jury
 
@@ -18,24 +56,15 @@ plutôt semaine du 11 ou 18 décembre
    -  [x] ENVOYÉ antonio.somaini@sorbonne-nouvelle.fr
 -  [x] baptiste mélès (pas de HDR)
    -  [x] ENVOYÉ baptiste.meles@normalesup.org
--  [ ] winnie soon 
+-  [x] winnie soon 
    -  [x] SENT
--  [ ] wendy chun
-   -  [ ] SENT
--  [ ] katherine hayles
--  [ ] yves citton (HDR)
+-  [x] yves citton (HDR)
    -  [x] ENVOYÉ yves.citton@gmail.com
 -  [x] nick montfort
 -  [x] alexandre gefen (HDR)
 
-### remplacants
--  [ ] dominique cardon
--  [ ] pascal mougin
--  [ ] katherine hayles?
--  [ ] [section 71 du crns ???](https://conseil-national-des-universites.fr/cnu/#/entite/entiteName/CNU/idChild/34/idNode/4471-4497)
-
 ## requirements
-- [ ] parité (3 F, 4 H)
+- [x] parité (3 F, 4 H)
 - [x] au moins la moitié de HDR
 - [x] la moitié externes à Paris-3
 
