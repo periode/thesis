@@ -20,11 +20,10 @@
 - aleth
 - olivier
 - edouard
-- juliette
 - justyna
-- heloise
+- heloise (?)
 - titien
-- ida
+- ida (?)
 - thibault
 - vadim
 - aurore
